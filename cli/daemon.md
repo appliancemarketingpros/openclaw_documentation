@@ -1,0 +1,95 @@
+---
+title: daemon
+source_url: https://docs.openclaw.ai/cli/daemon
+scraped_at: 2026-03-20
+---
+
+[OpenClaw home page](</>)
+
+![US](https://d3gk2c5xim1je2.cloudfront.net/flags/US.svg)
+
+English
+
+Search...
+
+⌘K
+
+Search...
+
+Navigation
+
+Gateway and service
+
+daemon
+
+# 
+
+​
+
+`openclaw daemon`
+
+Legacy alias for Gateway service management commands. `openclaw daemon ...` maps to the same service control surface as `openclaw gateway ...` service commands.
+
+## 
+
+​
+
+Usage
+
+Copy
+[code]
+    openclaw daemon status
+    openclaw daemon install
+    openclaw daemon start
+    openclaw daemon stop
+    openclaw daemon restart
+    openclaw daemon uninstall
+    
+[/code]
+
+## 
+
+​
+
+Subcommands
+
+  * `status`: show service install state and probe Gateway health
+  * `install`: install service (`launchd`/`systemd`/`schtasks`)
+  * `uninstall`: remove service
+  * `start`: start service
+  * `stop`: stop service
+  * `restart`: restart service
+
+
+## 
+
+​
+
+Common options
+
+  * `status`: `--url`, `--token`, `--password`, `--timeout`, `--no-probe`, `--require-rpc`, `--deep`, `--json`
+  * `install`: `--port`, `--runtime <node|bun>`, `--token`, `--force`, `--json`
+  * lifecycle (`uninstall|start|stop|restart`): `--json`
+
+Notes:
+
+  * `status` resolves configured auth SecretRefs for probe auth when possible.
+  * If a required auth SecretRef is unresolved in this command path, `daemon status --json` reports `rpc.authWarning` when probe connectivity/auth fails; pass `--token`/`--password` explicitly or resolve the secret source first.
+  * If the probe succeeds, unresolved auth-ref warnings are suppressed to avoid false positives.
+  * On Linux systemd installs, `status` token-drift checks include both `Environment=` and `EnvironmentFile=` unit sources.
+  * When token auth requires a token and `gateway.auth.token` is SecretRef-managed, `install` validates that the SecretRef is resolvable but does not persist the resolved token into service environment metadata.
+  * If token auth requires a token and the configured token SecretRef is unresolved, install fails closed.
+  * If both `gateway.auth.token` and `gateway.auth.password` are configured and `gateway.auth.mode` is unset, install is blocked until mode is set explicitly.
+
+
+## 
+
+​
+
+Prefer
+
+Use [`openclaw gateway`](</cli/gateway>) for current docs and examples.
+
+[backup](</cli/backup>)[doctor](</cli/doctor>)
+
+⌘I

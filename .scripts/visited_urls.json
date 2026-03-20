@@ -1,0 +1,2120 @@
+{
+  "https://docs.openclaw.ai/": {
+    "title": "OpenClaw",
+    "filepath": "/home/ubuntu/openclaw_docs/index.md",
+    "hash": "a4b58bd2dbe775e1656cc5a1d8e7703d",
+    "last_scraped": "2026-03-20 15:16:14"
+  },
+  "https://docs.openclaw.ai/install": {
+    "title": "Install",
+    "filepath": "/home/ubuntu/openclaw_docs/install.md",
+    "hash": "0ec39ee80c6a4e141c434d66cc8e7f2b",
+    "last_scraped": "2026-03-20 15:16:14"
+  },
+  "https://docs.openclaw.ai/channels": {
+    "title": "Chat Channels",
+    "filepath": "/home/ubuntu/openclaw_docs/channels.md",
+    "hash": "cd1a76e38b94d2c265d8882e5e471fcb",
+    "last_scraped": "2026-03-20 15:16:15"
+  },
+  "https://docs.openclaw.ai/concepts/architecture": {
+    "title": "Gateway Architecture",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/architecture.md",
+    "hash": "d9c3b7c10de49802356126fd6ff64cbc",
+    "last_scraped": "2026-03-20 15:16:16"
+  },
+  "https://docs.openclaw.ai/tools": {
+    "title": "Tools and Plugins",
+    "filepath": "/home/ubuntu/openclaw_docs/tools.md",
+    "hash": "f69b2dbf6f9e8acda9dcf0ceee7ad5dd",
+    "last_scraped": "2026-03-20 15:16:16"
+  },
+  "https://docs.openclaw.ai/providers": {
+    "title": "Provider Directory",
+    "filepath": "/home/ubuntu/openclaw_docs/providers.md",
+    "hash": "696ca17a889a7b9edd646b19072c5de5",
+    "last_scraped": "2026-03-20 15:16:17"
+  },
+  "https://docs.openclaw.ai/platforms": {
+    "title": "Platforms",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms.md",
+    "hash": "950e549e327872d9d73cd5aaee69b5d3",
+    "last_scraped": "2026-03-20 15:16:18"
+  },
+  "https://docs.openclaw.ai/gateway": {
+    "title": "Gateway Runbook",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway.md",
+    "hash": "52a2419729c5c8f144ce89683f749d80",
+    "last_scraped": "2026-03-20 15:16:19"
+  },
+  "https://docs.openclaw.ai/cli": {
+    "title": "CLI Reference",
+    "filepath": "/home/ubuntu/openclaw_docs/cli.md",
+    "hash": "77665c85a450a65c4e0831b6a1828c11",
+    "last_scraped": "2026-03-20 15:16:20"
+  },
+  "https://docs.openclaw.ai/help": {
+    "title": "Help",
+    "filepath": "/home/ubuntu/openclaw_docs/help.md",
+    "hash": "c6f44714ce31734a285b7b44d331de7c",
+    "last_scraped": "2026-03-20 15:16:20"
+  },
+  "https://docs.openclaw.ai/start/getting-started": {
+    "title": "Getting Started",
+    "filepath": "/home/ubuntu/openclaw_docs/start/getting-started.md",
+    "hash": "84a71de494c887ec3fb3db23a514d713",
+    "last_scraped": "2026-03-20 15:16:21"
+  },
+  "https://docs.openclaw.ai/start/onboarding-overview": {
+    "title": "Onboarding Overview",
+    "filepath": "/home/ubuntu/openclaw_docs/start/onboarding-overview.md",
+    "hash": "70a0f0f38bb666f0c527005fd910df42",
+    "last_scraped": "2026-03-20 15:16:22"
+  },
+  "https://docs.openclaw.ai/start/wizard": {
+    "title": "Onboarding (CLI)",
+    "filepath": "/home/ubuntu/openclaw_docs/start/wizard.md",
+    "hash": "de426a89d93e4870cd3bba5c8d2d1983",
+    "last_scraped": "2026-03-20 15:16:22"
+  },
+  "https://docs.openclaw.ai/start/onboarding": {
+    "title": "Onboarding (macOS App)",
+    "filepath": "/home/ubuntu/openclaw_docs/start/onboarding.md",
+    "hash": "314410ff604dbafbfc6f052ebbf1a26b",
+    "last_scraped": "2026-03-20 15:16:23"
+  },
+  "https://docs.openclaw.ai/start/openclaw": {
+    "title": "Personal Assistant Setup",
+    "filepath": "/home/ubuntu/openclaw_docs/start/openclaw.md",
+    "hash": "9c85f70ca955998a6af4a97469ef1042",
+    "last_scraped": "2026-03-20 15:16:24"
+  },
+  "https://docs.openclaw.ai/start/wizard-cli-reference": {
+    "title": "CLI Setup Reference",
+    "filepath": "/home/ubuntu/openclaw_docs/start/wizard-cli-reference.md",
+    "hash": "e6b29a51508cc8340f6b398265bfe163",
+    "last_scraped": "2026-03-20 15:16:24"
+  },
+  "https://docs.openclaw.ai/start/wizard-cli-automation": {
+    "title": "CLI Automation",
+    "filepath": "/home/ubuntu/openclaw_docs/start/wizard-cli-automation.md",
+    "hash": "cd1050988afae3c936dd50efab7c0e34",
+    "last_scraped": "2026-03-20 15:16:25"
+  },
+  "https://docs.openclaw.ai/start/showcase": {
+    "title": "Showcase",
+    "filepath": "/home/ubuntu/openclaw_docs/start/showcase.md",
+    "hash": "2a0c4a6f0498e9e6d12c057cfa5419a6",
+    "last_scraped": "2026-03-20 15:16:26"
+  },
+  "https://docs.openclaw.ai/concepts/features": {
+    "title": "Features",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/features.md",
+    "hash": "8db0106f214bd247784041e7df0be467",
+    "last_scraped": "2026-03-20 15:16:27"
+  },
+  "https://docs.openclaw.ai/start/setup": {
+    "title": "Setup",
+    "filepath": "/home/ubuntu/openclaw_docs/start/setup.md",
+    "hash": "dd4baa3abc2083790ce060d03aff9c3b",
+    "last_scraped": "2026-03-20 15:16:27"
+  },
+  "https://docs.openclaw.ai/vps": {
+    "title": "Linux Server",
+    "filepath": "/home/ubuntu/openclaw_docs/vps.md",
+    "hash": "8e9ccce2b481b1a95199e6f9c5ee12f9",
+    "last_scraped": "2026-03-20 15:16:28"
+  },
+  "https://docs.openclaw.ai/web": {
+    "title": "Web",
+    "filepath": "/home/ubuntu/openclaw_docs/web.md",
+    "hash": "f8320d45b6cc8e14321e9b41b240b88f",
+    "last_scraped": "2026-03-20 15:16:29"
+  },
+  "https://docs.openclaw.ai/channels/telegram": {
+    "title": "Telegram",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/telegram.md",
+    "hash": "656aa76bcb0a990bcc973c2d68a336bb",
+    "last_scraped": "2026-03-20 15:16:30"
+  },
+  "https://docs.openclaw.ai/gateway/tailscale": {
+    "title": "Tailscale",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/tailscale.md",
+    "hash": "083b93923275188aa485b3a2b156e9ab",
+    "last_scraped": "2026-03-20 15:16:31"
+  },
+  "https://docs.openclaw.ai/install/oracle": {
+    "title": "Oracle Cloud",
+    "filepath": "/home/ubuntu/openclaw_docs/install/oracle.md",
+    "hash": "5badc4be4703a11482b864cabfd747ca",
+    "last_scraped": "2026-03-20 15:16:31"
+  },
+  "https://docs.openclaw.ai/install/azure": {
+    "title": "Azure",
+    "filepath": "/home/ubuntu/openclaw_docs/install/azure.md",
+    "hash": "7ee3b6357a5a4ce635b7239260a6ac5d",
+    "last_scraped": "2026-03-20 15:16:32"
+  },
+  "https://docs.openclaw.ai/install/docker-vm-runtime": {
+    "title": "Docker VM Runtime",
+    "filepath": "/home/ubuntu/openclaw_docs/install/docker-vm-runtime.md",
+    "hash": "6b2a51bc729ed1eb7e33f19f7dbc44a2",
+    "last_scraped": "2026-03-20 15:16:33"
+  },
+  "https://docs.openclaw.ai/install/docker": {
+    "title": "Docker",
+    "filepath": "/home/ubuntu/openclaw_docs/install/docker.md",
+    "hash": "7339528e57f9d2351a78c839c34ee739",
+    "last_scraped": "2026-03-20 15:16:34"
+  },
+  "https://docs.openclaw.ai/install/nix": {
+    "title": "Nix",
+    "filepath": "/home/ubuntu/openclaw_docs/install/nix.md",
+    "hash": "4986358c7ae7e4bd5f93f18fba186ffc",
+    "last_scraped": "2026-03-20 15:16:34"
+  },
+  "https://docs.openclaw.ai/install/kubernetes": {
+    "title": "Kubernetes",
+    "filepath": "/home/ubuntu/openclaw_docs/install/kubernetes.md",
+    "hash": "e6f479fdbd0eb9502c1b9e30894a8469",
+    "last_scraped": "2026-03-20 15:16:35"
+  },
+  "https://docs.openclaw.ai/install/railway": {
+    "title": "Railway",
+    "filepath": "/home/ubuntu/openclaw_docs/install/railway.md",
+    "hash": "e536baadf5d43a9f39ff52fceddde1f0",
+    "last_scraped": "2026-03-20 15:16:36"
+  },
+  "https://docs.openclaw.ai/install/podman": {
+    "title": "Podman",
+    "filepath": "/home/ubuntu/openclaw_docs/install/podman.md",
+    "hash": "9ef7f9fc5ddeee2c922a91734ab71bbd",
+    "last_scraped": "2026-03-20 15:16:37"
+  },
+  "https://docs.openclaw.ai/install/gcp": {
+    "title": "GCP",
+    "filepath": "/home/ubuntu/openclaw_docs/install/gcp.md",
+    "hash": "0985312497c35d267f3255447779b4e2",
+    "last_scraped": "2026-03-20 15:16:38"
+  },
+  "https://docs.openclaw.ai/install/ansible": {
+    "title": "Ansible",
+    "filepath": "/home/ubuntu/openclaw_docs/install/ansible.md",
+    "hash": "6ad1050c27c88904325dfb4ea6ac21ba",
+    "last_scraped": "2026-03-20 15:16:38"
+  },
+  "https://docs.openclaw.ai/install/installer": {
+    "title": "Installer Internals",
+    "filepath": "/home/ubuntu/openclaw_docs/install/installer.md",
+    "hash": "422147f018b1ab218cf0f1e03a44ba99",
+    "last_scraped": "2026-03-20 15:16:39"
+  },
+  "https://docs.openclaw.ai/install/northflank": {
+    "title": "Northflank",
+    "filepath": "/home/ubuntu/openclaw_docs/install/northflank.md",
+    "hash": "862448dbf5b2f5f5049e51e6fbdb5981",
+    "last_scraped": "2026-03-20 15:16:40"
+  },
+  "https://docs.openclaw.ai/install/hetzner": {
+    "title": "Hetzner",
+    "filepath": "/home/ubuntu/openclaw_docs/install/hetzner.md",
+    "hash": "a10a390a57940761124f3176d9a1a0cf",
+    "last_scraped": "2026-03-20 15:16:41"
+  },
+  "https://docs.openclaw.ai/install/exe-dev": {
+    "title": "exe.dev",
+    "filepath": "/home/ubuntu/openclaw_docs/install/exe-dev.md",
+    "hash": "282252ea1e1483adcf22bdf004e37c8b",
+    "last_scraped": "2026-03-20 15:16:42"
+  },
+  "https://docs.openclaw.ai/install/render": {
+    "title": "Render",
+    "filepath": "/home/ubuntu/openclaw_docs/install/render.md",
+    "hash": "a70d5313d7c301c9e7317cf9e5af9efe",
+    "last_scraped": "2026-03-20 15:16:42"
+  },
+  "https://docs.openclaw.ai/install/bun": {
+    "title": "Bun (Experimental)",
+    "filepath": "/home/ubuntu/openclaw_docs/install/bun.md",
+    "hash": "2ef731f21f513152c97138230687cb3d",
+    "last_scraped": "2026-03-20 15:16:43"
+  },
+  "https://docs.openclaw.ai/install/migrating": {
+    "title": "Migration Guide",
+    "filepath": "/home/ubuntu/openclaw_docs/install/migrating.md",
+    "hash": "ab5f491280bedfc3b91b4c609a885de8",
+    "last_scraped": "2026-03-20 15:16:44"
+  },
+  "https://docs.openclaw.ai/install/updating": {
+    "title": "Updating",
+    "filepath": "/home/ubuntu/openclaw_docs/install/updating.md",
+    "hash": "ed8aa5be895d2b75f00b67fa3e0a7825",
+    "last_scraped": "2026-03-20 15:16:44"
+  },
+  "https://docs.openclaw.ai/install/digitalocean": {
+    "title": "DigitalOcean",
+    "filepath": "/home/ubuntu/openclaw_docs/install/digitalocean.md",
+    "hash": "cbe951384a5acf50590dd544b8d25caa",
+    "last_scraped": "2026-03-20 15:16:45"
+  },
+  "https://docs.openclaw.ai/install/uninstall": {
+    "title": "Uninstall",
+    "filepath": "/home/ubuntu/openclaw_docs/install/uninstall.md",
+    "hash": "7dd30cb566f7a3f2aae3a1cc2c67c383",
+    "last_scraped": "2026-03-20 15:16:46"
+  },
+  "https://docs.openclaw.ai/platforms/windows": {
+    "title": "Windows",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/windows.md",
+    "hash": "9ac7ee32a0be0b2090a2c237fb902302",
+    "last_scraped": "2026-03-20 15:16:47"
+  },
+  "https://docs.openclaw.ai/install/raspberry-pi": {
+    "title": "Raspberry Pi",
+    "filepath": "/home/ubuntu/openclaw_docs/install/raspberry-pi.md",
+    "hash": "ff80bacd6ecb72b8e53e0b1c332d72a3",
+    "last_scraped": "2026-03-20 15:16:47"
+  },
+  "https://docs.openclaw.ai/install/development-channels": {
+    "title": "Release Channels",
+    "filepath": "/home/ubuntu/openclaw_docs/install/development-channels.md",
+    "hash": "af03a34753e5f4cf63f68072b29f9d4f",
+    "last_scraped": "2026-03-20 15:16:48"
+  },
+  "https://docs.openclaw.ai/install/node": {
+    "title": "Node.js",
+    "filepath": "/home/ubuntu/openclaw_docs/install/node.md",
+    "hash": "629349a018db02fdf70d614589fc9e4a",
+    "last_scraped": "2026-03-20 15:16:49"
+  },
+  "https://docs.openclaw.ai/install/fly": {
+    "title": "Fly.io",
+    "filepath": "/home/ubuntu/openclaw_docs/install/fly.md",
+    "hash": "da029fdea68035bbef55eb12a8715ad8",
+    "last_scraped": "2026-03-20 15:16:50"
+  },
+  "https://docs.openclaw.ai/install/macos-vm": {
+    "title": "macOS VMs",
+    "filepath": "/home/ubuntu/openclaw_docs/install/macos-vm.md",
+    "hash": "26c8e711aac62c88929a15ab738b7783",
+    "last_scraped": "2026-03-20 15:16:51"
+  },
+  "https://docs.openclaw.ai/channels/signal": {
+    "title": "Signal",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/signal.md",
+    "hash": "ade60879e21ce990b38f1aaa02618d7f",
+    "last_scraped": "2026-03-20 15:16:51"
+  },
+  "https://docs.openclaw.ai/channels/nostr": {
+    "title": "Nostr",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/nostr.md",
+    "hash": "9db6f2fd2af6ceabaa8e4d29d589738c",
+    "last_scraped": "2026-03-20 15:16:52"
+  },
+  "https://docs.openclaw.ai/plugins/voice-call": {
+    "title": "Voice Call Plugin",
+    "filepath": "/home/ubuntu/openclaw_docs/plugins/voice-call.md",
+    "hash": "83501f9839318137d46803ce2347bae2",
+    "last_scraped": "2026-03-20 15:16:53"
+  },
+  "https://docs.openclaw.ai/channels/msteams": {
+    "title": "Microsoft Teams",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/msteams.md",
+    "hash": "a1d6a2c2f26403516944b15afd2f3188",
+    "last_scraped": "2026-03-20 15:16:54"
+  },
+  "https://docs.openclaw.ai/gateway/security": {
+    "title": "Security",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/security.md",
+    "hash": "0306163267d03225c80d4f76dea3f859",
+    "last_scraped": "2026-03-20 15:16:55"
+  },
+  "https://docs.openclaw.ai/channels/nextcloud-talk": {
+    "title": "Nextcloud Talk",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/nextcloud-talk.md",
+    "hash": "34af2bbd077787642fb419c5e0ed602a",
+    "last_scraped": "2026-03-20 15:16:56"
+  },
+  "https://docs.openclaw.ai/channels/twitch": {
+    "title": "Twitch",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/twitch.md",
+    "hash": "abf6fd2aba1e2c705bcf3b6978c7a3ab",
+    "last_scraped": "2026-03-20 15:16:57"
+  },
+  "https://docs.openclaw.ai/channels/matrix": {
+    "title": "Matrix",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/matrix.md",
+    "hash": "4ccf629a682cba49534847215546d872",
+    "last_scraped": "2026-03-20 15:16:58"
+  },
+  "https://docs.openclaw.ai/channels/feishu": {
+    "title": "Feishu",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/feishu.md",
+    "hash": "902724fe6f4b366d042c363da8236621",
+    "last_scraped": "2026-03-20 15:16:59"
+  },
+  "https://docs.openclaw.ai/channels/irc": {
+    "title": "IRC",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/irc.md",
+    "hash": "481b3bf7b68a3cd0d0d4f905fe69bacd",
+    "last_scraped": "2026-03-20 15:17:00"
+  },
+  "https://docs.openclaw.ai/channels/zalouser": {
+    "title": "Zalo Personal",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/zalouser.md",
+    "hash": "eac12dfe3778430e3811c608fc6f4c49",
+    "last_scraped": "2026-03-20 15:17:00"
+  },
+  "https://docs.openclaw.ai/channels/line": {
+    "title": "LINE",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/line.md",
+    "hash": "2bf9b58134467493caa3fb98cdbaf9d2",
+    "last_scraped": "2026-03-20 15:17:01"
+  },
+  "https://docs.openclaw.ai/channels/discord": {
+    "title": "Discord",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/discord.md",
+    "hash": "d4d2b75a80375642b43552f01e39d9cb",
+    "last_scraped": "2026-03-20 15:17:02"
+  },
+  "https://docs.openclaw.ai/channels/imessage": {
+    "title": "iMessage",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/imessage.md",
+    "hash": "0c08bc445a0613341173c9abdd4e684d",
+    "last_scraped": "2026-03-20 15:17:03"
+  },
+  "https://docs.openclaw.ai/channels/broadcast-groups": {
+    "title": "Broadcast Groups",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/broadcast-groups.md",
+    "hash": "b6e6e0bc8031215ad270904c34dc3f8e",
+    "last_scraped": "2026-03-20 15:17:04"
+  },
+  "https://docs.openclaw.ai/channels/tlon": {
+    "title": "Tlon",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/tlon.md",
+    "hash": "5e3ed29f588e48bf3db466a3e72ae182",
+    "last_scraped": "2026-03-20 15:17:05"
+  },
+  "https://docs.openclaw.ai/channels/whatsapp": {
+    "title": "WhatsApp",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/whatsapp.md",
+    "hash": "e39a34ddb6f08805f9e1bdfdc866fd62",
+    "last_scraped": "2026-03-20 15:17:06"
+  },
+  "https://docs.openclaw.ai/web/webchat": {
+    "title": "WebChat",
+    "filepath": "/home/ubuntu/openclaw_docs/web/webchat.md",
+    "hash": "095f950e57ce432b36545a34c523ea09",
+    "last_scraped": "2026-03-20 15:17:06"
+  },
+  "https://docs.openclaw.ai/channels/location": {
+    "title": "Channel Location Parsing",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/location.md",
+    "hash": "478c90c116406ecee5f0b8195e88f8f5",
+    "last_scraped": "2026-03-20 15:17:07"
+  },
+  "https://docs.openclaw.ai/channels/pairing": {
+    "title": "Pairing",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/pairing.md",
+    "hash": "b49ba74b8b276c920a6cdd0a647beb07",
+    "last_scraped": "2026-03-20 15:17:08"
+  },
+  "https://docs.openclaw.ai/channels/troubleshooting": {
+    "title": "Channel Troubleshooting",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/troubleshooting.md",
+    "hash": "77022bf5a2f08ce167c64da573b9d2bf",
+    "last_scraped": "2026-03-20 15:17:09"
+  },
+  "https://docs.openclaw.ai/channels/groups": {
+    "title": "Groups",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/groups.md",
+    "hash": "f9be7d2de13fc80c6795be528997414e",
+    "last_scraped": "2026-03-20 15:17:09"
+  },
+  "https://docs.openclaw.ai/channels/synology-chat": {
+    "title": "Synology Chat",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/synology-chat.md",
+    "hash": "c6147a374f2d264a28b4c3ead09860d5",
+    "last_scraped": "2026-03-20 15:17:10"
+  },
+  "https://docs.openclaw.ai/channels/mattermost": {
+    "title": "Mattermost",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/mattermost.md",
+    "hash": "42a478a9cfa9f8a24bb66bf1300dc2f4",
+    "last_scraped": "2026-03-20 15:17:11"
+  },
+  "https://docs.openclaw.ai/channels/bluebubbles": {
+    "title": "BlueBubbles",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/bluebubbles.md",
+    "hash": "e8839ab36b36897593b66c4f245b70b4",
+    "last_scraped": "2026-03-20 15:17:12"
+  },
+  "https://docs.openclaw.ai/channels/googlechat": {
+    "title": "Google Chat",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/googlechat.md",
+    "hash": "610e7746c8cf81d2553177385c31129c",
+    "last_scraped": "2026-03-20 15:17:13"
+  },
+  "https://docs.openclaw.ai/channels/channel-routing": {
+    "title": "Channel Routing",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/channel-routing.md",
+    "hash": "b3e81b8e39b69a84f484dae22647edd7",
+    "last_scraped": "2026-03-20 15:17:13"
+  },
+  "https://docs.openclaw.ai/channels/group-messages": {
+    "title": "Group Messages",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/group-messages.md",
+    "hash": "0f9e635a9de4005fa0abbd25926aa1cf",
+    "last_scraped": "2026-03-20 15:17:14"
+  },
+  "https://docs.openclaw.ai/channels/zalo": {
+    "title": "Zalo",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/zalo.md",
+    "hash": "8fa46d2903a1bff1a172fea8c33d7d35",
+    "last_scraped": "2026-03-20 15:17:15"
+  },
+  "https://docs.openclaw.ai/channels/slack": {
+    "title": "Slack",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/slack.md",
+    "hash": "0f7c17bf7bb6861c26ffecb726d98702",
+    "last_scraped": "2026-03-20 15:17:16"
+  },
+  "https://docs.openclaw.ai/providers/models": {
+    "title": "Model Provider Quickstart",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/models.md",
+    "hash": "ff7a8f65fe0c0429a2ba41e3397a14eb",
+    "last_scraped": "2026-03-20 15:17:17"
+  },
+  "https://docs.openclaw.ai/concepts/compaction": {
+    "title": "Compaction",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/compaction.md",
+    "hash": "1f370c4bdee67338e666ee68bc4d2f87",
+    "last_scraped": "2026-03-20 15:17:17"
+  },
+  "https://docs.openclaw.ai/concepts/agent-workspace": {
+    "title": "Agent Workspace",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/agent-workspace.md",
+    "hash": "7e737b1d4bcdbc1c68eac0691da2d78f",
+    "last_scraped": "2026-03-20 15:17:18"
+  },
+  "https://docs.openclaw.ai/concepts/memory": {
+    "title": "Memory",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/memory.md",
+    "hash": "706b723466010c461fc1e53e759dc5f3",
+    "last_scraped": "2026-03-20 15:17:19"
+  },
+  "https://docs.openclaw.ai/concepts/agent": {
+    "title": "Agent Runtime",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/agent.md",
+    "hash": "ec0b62a8ce795c6b3d3754306dab1253",
+    "last_scraped": "2026-03-20 15:17:20"
+  },
+  "https://docs.openclaw.ai/start/bootstrapping": {
+    "title": "Agent Bootstrapping",
+    "filepath": "/home/ubuntu/openclaw_docs/start/bootstrapping.md",
+    "hash": "d36b32ec9e609841776112c75b8430a3",
+    "last_scraped": "2026-03-20 15:17:20"
+  },
+  "https://docs.openclaw.ai/concepts/presence": {
+    "title": "Presence",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/presence.md",
+    "hash": "f1a2acc505ac30da8af7cd435833cefa",
+    "last_scraped": "2026-03-20 15:17:21"
+  },
+  "https://docs.openclaw.ai/concepts/queue": {
+    "title": "Command Queue",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/queue.md",
+    "hash": "816733dcd714717ab458f68bb2cca449",
+    "last_scraped": "2026-03-20 15:17:22"
+  },
+  "https://docs.openclaw.ai/concepts/messages": {
+    "title": "Messages",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/messages.md",
+    "hash": "3139d586187a2c8d912dbefe149a18eb",
+    "last_scraped": "2026-03-20 15:17:23"
+  },
+  "https://docs.openclaw.ai/gateway/protocol": {
+    "title": "Gateway Protocol",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/protocol.md",
+    "hash": "744529fefd4b54ac6437da5bae8a3653",
+    "last_scraped": "2026-03-20 15:17:23"
+  },
+  "https://docs.openclaw.ai/concepts/context-engine": {
+    "title": "Context Engine",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/context-engine.md",
+    "hash": "efa7720602b0bcea8e37648b75d07854",
+    "last_scraped": "2026-03-20 15:17:24"
+  },
+  "https://docs.openclaw.ai/concepts/multi-agent": {
+    "title": "Multi-Agent Routing",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/multi-agent.md",
+    "hash": "9a221cbdb0ceade664d2af16e2e35f43",
+    "last_scraped": "2026-03-20 15:17:25"
+  },
+  "https://docs.openclaw.ai/concepts/system-prompt": {
+    "title": "System Prompt",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/system-prompt.md",
+    "hash": "b7097ed78615de45c50fc333e2ceedfb",
+    "last_scraped": "2026-03-20 15:17:26"
+  },
+  "https://docs.openclaw.ai/concepts/agent-loop": {
+    "title": "Agent Loop",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/agent-loop.md",
+    "hash": "69cbba822ceff4b869b56f4ae0244ddc",
+    "last_scraped": "2026-03-20 15:17:26"
+  },
+  "https://docs.openclaw.ai/concepts/session-pruning": {
+    "title": "Session Pruning",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/session-pruning.md",
+    "hash": "eb518e7d8209352515f87909ffd7aa9d",
+    "last_scraped": "2026-03-20 15:17:27"
+  },
+  "https://docs.openclaw.ai/concepts/streaming": {
+    "title": "Streaming and Chunking",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/streaming.md",
+    "hash": "4c4ad7e2814296bbdaed20660f4aa81c",
+    "last_scraped": "2026-03-20 15:17:28"
+  },
+  "https://docs.openclaw.ai/concepts/delegate-architecture": {
+    "title": "Delegate Architecture",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/delegate-architecture.md",
+    "hash": "8b85673556a083a972e6fc59bbbefb36",
+    "last_scraped": "2026-03-20 15:17:29"
+  },
+  "https://docs.openclaw.ai/concepts/session": {
+    "title": "Session Management",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/session.md",
+    "hash": "72979b2ac41c420c85e6eca5397dcf8c",
+    "last_scraped": "2026-03-20 15:17:30"
+  },
+  "https://docs.openclaw.ai/concepts/retry": {
+    "title": "Retry Policy",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/retry.md",
+    "hash": "877ec2860372b89c428279d39016741e",
+    "last_scraped": "2026-03-20 15:17:30"
+  },
+  "https://docs.openclaw.ai/concepts/context": {
+    "title": "Context",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/context.md",
+    "hash": "db41d2504ce78eb2d183677acd750327",
+    "last_scraped": "2026-03-20 15:17:31"
+  },
+  "https://docs.openclaw.ai/concepts/session-tool": {
+    "title": "Session Tools",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/session-tool.md",
+    "hash": "4c4006ce8cbe5d7033c624d79ce3f022",
+    "last_scraped": "2026-03-20 15:17:32"
+  },
+  "https://docs.openclaw.ai/concepts/oauth": {
+    "title": "OAuth",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/oauth.md",
+    "hash": "aa2c39e14d27830cc82045388ddf1979",
+    "last_scraped": "2026-03-20 15:17:33"
+  },
+  "https://docs.openclaw.ai/automation/gmail-pubsub": {
+    "title": "Gmail PubSub",
+    "filepath": "/home/ubuntu/openclaw_docs/automation/gmail-pubsub.md",
+    "hash": "5fefc146a2bbb35ce05354e5c4daa276",
+    "last_scraped": "2026-03-20 15:17:34"
+  },
+  "https://docs.openclaw.ai/tools/reactions": {
+    "title": "Reactions",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/reactions.md",
+    "hash": "b6be6a902f6caf265dda14d70d053335",
+    "last_scraped": "2026-03-20 15:17:34"
+  },
+  "https://docs.openclaw.ai/plugins/architecture": {
+    "title": "Plugin Internals",
+    "filepath": "/home/ubuntu/openclaw_docs/plugins/architecture.md",
+    "hash": "2365cb5367ef38a995a0022a41fe8484",
+    "last_scraped": "2026-03-20 15:17:35"
+  },
+  "https://docs.openclaw.ai/tools/plugin": {
+    "title": "Plugins",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/plugin.md",
+    "hash": "2418a31c3f19d6ef3de0280e3e84d5a8",
+    "last_scraped": "2026-03-20 15:17:36"
+  },
+  "https://docs.openclaw.ai/automation/standing-orders": {
+    "title": "Standing Orders",
+    "filepath": "/home/ubuntu/openclaw_docs/automation/standing-orders.md",
+    "hash": "1e6decb2e706a2a76318c92c18792578",
+    "last_scraped": "2026-03-20 15:17:37"
+  },
+  "https://docs.openclaw.ai/plugins/bundles": {
+    "title": "Plugin Bundles",
+    "filepath": "/home/ubuntu/openclaw_docs/plugins/bundles.md",
+    "hash": "76457dba8bee1e89bbec56e942568252",
+    "last_scraped": "2026-03-20 15:17:38"
+  },
+  "https://docs.openclaw.ai/plugins/manifest": {
+    "title": "Plugin Manifest",
+    "filepath": "/home/ubuntu/openclaw_docs/plugins/manifest.md",
+    "hash": "638b5eb864f7612e9bf22b928cf234f4",
+    "last_scraped": "2026-03-20 15:17:39"
+  },
+  "https://docs.openclaw.ai/tools/browser": {
+    "title": "Browser (OpenClaw-managed)",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/browser.md",
+    "hash": "b555bf5eabd27d429a0a03553f0b794c",
+    "last_scraped": "2026-03-20 15:17:40"
+  },
+  "https://docs.openclaw.ai/tools/agent-send": {
+    "title": "Agent Send",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/agent-send.md",
+    "hash": "31e76150ace38245b426d5a7c5a69237",
+    "last_scraped": "2026-03-20 15:17:40"
+  },
+  "https://docs.openclaw.ai/plugins/sdk-migration": {
+    "title": "Plugin SDK Migration",
+    "filepath": "/home/ubuntu/openclaw_docs/plugins/sdk-migration.md",
+    "hash": "0695b569c3ce627ee88946c55dabda7e",
+    "last_scraped": "2026-03-20 15:17:41"
+  },
+  "https://docs.openclaw.ai/tools/pdf": {
+    "title": "PDF Tool",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/pdf.md",
+    "hash": "8b2be251633e330ad24fd1e516da4db1",
+    "last_scraped": "2026-03-20 15:17:42"
+  },
+  "https://docs.openclaw.ai/tools/apply-patch": {
+    "title": "apply_patch Tool",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/apply-patch.md",
+    "hash": "1d7620bcdaddadb569f7858c3ddb23ed",
+    "last_scraped": "2026-03-20 15:17:43"
+  },
+  "https://docs.openclaw.ai/tools/acp-agents": {
+    "title": "ACP Agents",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/acp-agents.md",
+    "hash": "5ea09cb19f61559492f624550e2e3ff6",
+    "last_scraped": "2026-03-20 15:17:44"
+  },
+  "https://docs.openclaw.ai/tools/slash-commands": {
+    "title": "Slash Commands",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/slash-commands.md",
+    "hash": "16a3fc3c4e5ad5086860f73210f1f6f4",
+    "last_scraped": "2026-03-20 15:17:45"
+  },
+  "https://docs.openclaw.ai/automation/webhook": {
+    "title": "Webhooks",
+    "filepath": "/home/ubuntu/openclaw_docs/automation/webhook.md",
+    "hash": "2f55b3dceb4450a66dd62f8ec8ffae90",
+    "last_scraped": "2026-03-20 15:17:45"
+  },
+  "https://docs.openclaw.ai/tools/subagents": {
+    "title": "Sub-Agents",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/subagents.md",
+    "hash": "3447c246eaecdd4b1b8dfa346be1c26f",
+    "last_scraped": "2026-03-20 15:17:46"
+  },
+  "https://docs.openclaw.ai/tools/exec": {
+    "title": "Exec Tool",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/exec.md",
+    "hash": "ca8a644a8afb1ad9f8493d5d7ae9c945",
+    "last_scraped": "2026-03-20 15:17:47"
+  },
+  "https://docs.openclaw.ai/tools/exec-approvals": {
+    "title": "Exec Approvals",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/exec-approvals.md",
+    "hash": "4826c5c1ce168fef4e8d9dd830a0c644",
+    "last_scraped": "2026-03-20 15:17:48"
+  },
+  "https://docs.openclaw.ai/tools/multi-agent-sandbox-tools": {
+    "title": "Multi-Agent Sandbox & Tools",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/multi-agent-sandbox-tools.md",
+    "hash": "ad4c9316d26678aa09cdd1a281a382f9",
+    "last_scraped": "2026-03-20 15:17:48"
+  },
+  "https://docs.openclaw.ai/automation/auth-monitoring": {
+    "title": "Auth Monitoring",
+    "filepath": "/home/ubuntu/openclaw_docs/automation/auth-monitoring.md",
+    "hash": "fcd627bfe69c94054281f8557a4a9019",
+    "last_scraped": "2026-03-20 15:17:49"
+  },
+  "https://docs.openclaw.ai/tools/thinking": {
+    "title": "Thinking Levels",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/thinking.md",
+    "hash": "5022f9d4ac12a8af657bcfa45da52a94",
+    "last_scraped": "2026-03-20 15:17:50"
+  },
+  "https://docs.openclaw.ai/tools/creating-skills": {
+    "title": "Creating Skills",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/creating-skills.md",
+    "hash": "561c558ff39b74c491d5bb7d13a19f49",
+    "last_scraped": "2026-03-20 15:17:51"
+  },
+  "https://docs.openclaw.ai/tools/loop-detection": {
+    "title": "Tool-loop detection",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/loop-detection.md",
+    "hash": "7955cb332c97b163453a96ea594d7b34",
+    "last_scraped": "2026-03-20 15:17:51"
+  },
+  "https://docs.openclaw.ai/tools/diffs": {
+    "title": "Diffs",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/diffs.md",
+    "hash": "b3804c9245e6b63bdcf5c27a298e8df9",
+    "last_scraped": "2026-03-20 15:17:52"
+  },
+  "https://docs.openclaw.ai/automation/hooks": {
+    "title": "Hooks",
+    "filepath": "/home/ubuntu/openclaw_docs/automation/hooks.md",
+    "hash": "b002c90ea7cd980beb33da87cac68dbd",
+    "last_scraped": "2026-03-20 15:17:53"
+  },
+  "https://docs.openclaw.ai/automation/troubleshooting": {
+    "title": "Automation Troubleshooting",
+    "filepath": "/home/ubuntu/openclaw_docs/automation/troubleshooting.md",
+    "hash": "fe0513cdd853ab32650ec339d0296619",
+    "last_scraped": "2026-03-20 15:17:54"
+  },
+  "https://docs.openclaw.ai/prose": {
+    "title": "OpenProse",
+    "filepath": "/home/ubuntu/openclaw_docs/prose.md",
+    "hash": "706b3d34f48254385294de3eb72eb7be",
+    "last_scraped": "2026-03-20 15:17:55"
+  },
+  "https://docs.openclaw.ai/automation/cron-vs-heartbeat": {
+    "title": "Cron vs Heartbeat",
+    "filepath": "/home/ubuntu/openclaw_docs/automation/cron-vs-heartbeat.md",
+    "hash": "424d2d1b3a4abb66025b4e9a644b4185",
+    "last_scraped": "2026-03-20 15:17:56"
+  },
+  "https://docs.openclaw.ai/tools/skills-config": {
+    "title": "Skills Config",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/skills-config.md",
+    "hash": "3244fd1e7eba8749f80c922740a7a500",
+    "last_scraped": "2026-03-20 15:17:58"
+  },
+  "https://docs.openclaw.ai/automation/cron-jobs": {
+    "title": "Cron Jobs",
+    "filepath": "/home/ubuntu/openclaw_docs/automation/cron-jobs.md",
+    "hash": "afea6984cb7e87bbcc1173ff51ae27fa",
+    "last_scraped": "2026-03-20 15:18:00"
+  },
+  "https://docs.openclaw.ai/tools/lobster": {
+    "title": "Lobster",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/lobster.md",
+    "hash": "2007329cbc787b2e43c2d0ad1918d176",
+    "last_scraped": "2026-03-20 15:18:01"
+  },
+  "https://docs.openclaw.ai/plugins/community": {
+    "title": "Community Plugins",
+    "filepath": "/home/ubuntu/openclaw_docs/plugins/community.md",
+    "hash": "b178b32f145928b3788303ea9b81c779",
+    "last_scraped": "2026-03-20 15:18:02"
+  },
+  "https://docs.openclaw.ai/tools/skills": {
+    "title": "Skills",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/skills.md",
+    "hash": "c04b2552fd3d0d950098fb9ea66aaf9d",
+    "last_scraped": "2026-03-20 15:18:04"
+  },
+  "https://docs.openclaw.ai/tools/clawhub": {
+    "title": "ClawHub",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/clawhub.md",
+    "hash": "17dac47f03506b3acb4b1b947ab47e25",
+    "last_scraped": "2026-03-20 15:18:05"
+  },
+  "https://docs.openclaw.ai/plugins/building-plugins": {
+    "title": "Building Plugins",
+    "filepath": "/home/ubuntu/openclaw_docs/plugins/building-plugins.md",
+    "hash": "4c7d73f74b64cb2062e7d9724c1da67b",
+    "last_scraped": "2026-03-20 15:18:07"
+  },
+  "https://docs.openclaw.ai/tools/web": {
+    "title": "Web Tools",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/web.md",
+    "hash": "365ab688c176635b5f1a8a3c7ee3fb40",
+    "last_scraped": "2026-03-20 15:18:09"
+  },
+  "https://docs.openclaw.ai/tools/btw": {
+    "title": "BTW Side Questions",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/btw.md",
+    "hash": "b78b56e1faba9e5e6b9bb2647f1d5a79",
+    "last_scraped": "2026-03-20 15:18:10"
+  },
+  "https://docs.openclaw.ai/tools/llm-task": {
+    "title": "LLM Task",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/llm-task.md",
+    "hash": "deb20f33aa442acd22e70791f4bab5a7",
+    "last_scraped": "2026-03-20 15:18:12"
+  },
+  "https://docs.openclaw.ai/tools/elevated": {
+    "title": "Elevated Mode",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/elevated.md",
+    "hash": "be370cbb5ace24de94a8cd750021b707",
+    "last_scraped": "2026-03-20 15:18:12"
+  },
+  "https://docs.openclaw.ai/automation/poll": {
+    "title": "Polls",
+    "filepath": "/home/ubuntu/openclaw_docs/automation/poll.md",
+    "hash": "2c4ade90bf5d79c6d37c7be3427b4c39",
+    "last_scraped": "2026-03-20 15:18:13"
+  },
+  "https://docs.openclaw.ai/providers/cloudflare-ai-gateway": {
+    "title": "Cloudflare AI Gateway",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/cloudflare-ai-gateway.md",
+    "hash": "deaaefd10cc26ba89fdf686c68efc42e",
+    "last_scraped": "2026-03-20 15:18:14"
+  },
+  "https://docs.openclaw.ai/providers/synthetic": {
+    "title": "Synthetic",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/synthetic.md",
+    "hash": "09781ef0fbe54c188c0b37cec0f19fa5",
+    "last_scraped": "2026-03-20 15:18:15"
+  },
+  "https://docs.openclaw.ai/providers/openai": {
+    "title": "OpenAI",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/openai.md",
+    "hash": "107e763942907cc2f8efc2ca52717612",
+    "last_scraped": "2026-03-20 15:18:17"
+  },
+  "https://docs.openclaw.ai/concepts/model-providers": {
+    "title": "Model Providers",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/model-providers.md",
+    "hash": "38567b84458d7ba5a92591f23735aa71",
+    "last_scraped": "2026-03-20 15:18:18"
+  },
+  "https://docs.openclaw.ai/providers/ollama": {
+    "title": "Ollama",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/ollama.md",
+    "hash": "804427068018beb07e05c6b649a651c7",
+    "last_scraped": "2026-03-20 15:18:20"
+  },
+  "https://docs.openclaw.ai/concepts/model-failover": {
+    "title": "Model Failover",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/model-failover.md",
+    "hash": "9dd9e87a4c3721fc383bf659960d2dd9",
+    "last_scraped": "2026-03-20 15:18:20"
+  },
+  "https://docs.openclaw.ai/providers/qianfan": {
+    "title": "Qianfan",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/qianfan.md",
+    "hash": "b3025fe6101cb5cf061ba1466fc1a0c0",
+    "last_scraped": "2026-03-20 15:18:21"
+  },
+  "https://docs.openclaw.ai/providers/venice": {
+    "title": "Venice AI",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/venice.md",
+    "hash": "e7ba172cd49cafe476772889205490a0",
+    "last_scraped": "2026-03-20 15:18:22"
+  },
+  "https://docs.openclaw.ai/providers/github-copilot": {
+    "title": "GitHub Copilot",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/github-copilot.md",
+    "hash": "67a147dfc70edadbef0656e0f29900f9",
+    "last_scraped": "2026-03-20 15:18:23"
+  },
+  "https://docs.openclaw.ai/providers/bedrock": {
+    "title": "Amazon Bedrock",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/bedrock.md",
+    "hash": "94b5aa7b86e243f103637415b3cdb268",
+    "last_scraped": "2026-03-20 15:18:24"
+  },
+  "https://docs.openclaw.ai/providers/kilocode": {
+    "title": "Kilo Gateway",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/kilocode.md",
+    "hash": "3e05e868c70b4a8803b34779754449d5",
+    "last_scraped": "2026-03-20 15:18:25"
+  },
+  "https://docs.openclaw.ai/concepts/models": {
+    "title": "Models CLI",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/models.md",
+    "hash": "33ef35edb6ad9d7eebff98bed0bc3786",
+    "last_scraped": "2026-03-20 15:18:27"
+  },
+  "https://docs.openclaw.ai/providers/sglang": {
+    "title": "SGLang",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/sglang.md",
+    "hash": "2ad83f5b1c1089ff93fec2a9d069b932",
+    "last_scraped": "2026-03-20 15:18:29"
+  },
+  "https://docs.openclaw.ai/providers/claude-max-api-proxy": {
+    "title": "Claude Max API Proxy",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/claude-max-api-proxy.md",
+    "hash": "f40395fa04b5b16406b9e49f21a1ee43",
+    "last_scraped": "2026-03-20 15:18:30"
+  },
+  "https://docs.openclaw.ai/providers/nvidia": {
+    "title": "NVIDIA",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/nvidia.md",
+    "hash": "9771910c464be1f4a7307a1aa9d23bc9",
+    "last_scraped": "2026-03-20 15:18:31"
+  },
+  "https://docs.openclaw.ai/providers/vllm": {
+    "title": "vLLM",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/vllm.md",
+    "hash": "f0ed3721802947cc01aafeb13dd2ba80",
+    "last_scraped": "2026-03-20 15:18:32"
+  },
+  "https://docs.openclaw.ai/providers/opencode-go": {
+    "title": "OpenCode Go",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/opencode-go.md",
+    "hash": "ed65c687f54e4f46766d578696d50be1",
+    "last_scraped": "2026-03-20 15:18:34"
+  },
+  "https://docs.openclaw.ai/providers/minimax": {
+    "title": "MiniMax",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/minimax.md",
+    "hash": "32f4bff070f46ff0f92ff8c5e584ac42",
+    "last_scraped": "2026-03-20 15:18:35"
+  },
+  "https://docs.openclaw.ai/providers/groq": {
+    "title": "Groq",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/groq.md",
+    "hash": "d3f641058834215844f32583194ffed1",
+    "last_scraped": "2026-03-20 15:18:36"
+  },
+  "https://docs.openclaw.ai/providers/perplexity-provider": {
+    "title": "Perplexity (Provider)",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/perplexity-provider.md",
+    "hash": "ed134494571fef513b4e2da4ad359818",
+    "last_scraped": "2026-03-20 15:18:37"
+  },
+  "https://docs.openclaw.ai/providers/glm": {
+    "title": "GLM Models",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/glm.md",
+    "hash": "16e319afea5350cc62da2fce0c494727",
+    "last_scraped": "2026-03-20 15:18:38"
+  },
+  "https://docs.openclaw.ai/providers/google": {
+    "title": "Google (Gemini)",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/google.md",
+    "hash": "4b3de6b48127592f91ea8dc0e7324222",
+    "last_scraped": "2026-03-20 15:18:39"
+  },
+  "https://docs.openclaw.ai/providers/qwen": {
+    "title": "Qwen",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/qwen.md",
+    "hash": "3edb75cc7b82fcbfc9ce5be638a15d39",
+    "last_scraped": "2026-03-20 15:18:41"
+  },
+  "https://docs.openclaw.ai/providers/anthropic": {
+    "title": "Anthropic",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/anthropic.md",
+    "hash": "9b834a50eaff6e7bed78ac09712b4ad0",
+    "last_scraped": "2026-03-20 15:18:42"
+  },
+  "https://docs.openclaw.ai/providers/volcengine": {
+    "title": "Volcengine (Doubao)",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/volcengine.md",
+    "hash": "74b99cab7c36c8ba30e8c0d78a941199",
+    "last_scraped": "2026-03-20 15:18:43"
+  },
+  "https://docs.openclaw.ai/providers/zai": {
+    "title": "Z.AI",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/zai.md",
+    "hash": "bd8c2383e9bc6e7bac1e0a4cd41907d2",
+    "last_scraped": "2026-03-20 15:18:44"
+  },
+  "https://docs.openclaw.ai/providers/vercel-ai-gateway": {
+    "title": "Vercel AI Gateway",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/vercel-ai-gateway.md",
+    "hash": "ee74411cc2b8d4d11b8328987ccbb1c5",
+    "last_scraped": "2026-03-20 15:18:46"
+  },
+  "https://docs.openclaw.ai/providers/xai": {
+    "title": "xAI",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/xai.md",
+    "hash": "dc3c9db63e9672d01baff4d430f42fa7",
+    "last_scraped": "2026-03-20 15:18:47"
+  },
+  "https://docs.openclaw.ai/providers/deepgram": {
+    "title": "Deepgram",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/deepgram.md",
+    "hash": "2c5028d5a9bb6ff8e632708fd616df76",
+    "last_scraped": "2026-03-20 15:18:48"
+  },
+  "https://docs.openclaw.ai/providers/huggingface": {
+    "title": "Hugging Face (Inference)",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/huggingface.md",
+    "hash": "737c0d3545804b594e50aadf7c0ed854",
+    "last_scraped": "2026-03-20 15:18:49"
+  },
+  "https://docs.openclaw.ai/providers/xiaomi": {
+    "title": "Xiaomi MiMo",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/xiaomi.md",
+    "hash": "9b04bee7066a0beeb694cedd8d38860e",
+    "last_scraped": "2026-03-20 15:18:50"
+  },
+  "https://docs.openclaw.ai/providers/opencode": {
+    "title": "OpenCode",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/opencode.md",
+    "hash": "6e5690adea4c567766788c4a49b61089",
+    "last_scraped": "2026-03-20 15:18:51"
+  },
+  "https://docs.openclaw.ai/providers/together": {
+    "title": "Together AI",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/together.md",
+    "hash": "d944361b4b3c74ecd9a03f33b06a5a31",
+    "last_scraped": "2026-03-20 15:18:52"
+  },
+  "https://docs.openclaw.ai/providers/mistral": {
+    "title": "Mistral",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/mistral.md",
+    "hash": "8cae485d9815bdfbcc307bca03c3969a",
+    "last_scraped": "2026-03-20 15:18:55"
+  },
+  "https://docs.openclaw.ai/providers/openrouter": {
+    "title": "OpenRouter",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/openrouter.md",
+    "hash": "8a33748d7ec884f347c08407f973a52d",
+    "last_scraped": "2026-03-20 15:18:56"
+  },
+  "https://docs.openclaw.ai/providers/moonshot": {
+    "title": "Moonshot AI",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/moonshot.md",
+    "hash": "bccff0ecd6e9179708fe77ab97c9da16",
+    "last_scraped": "2026-03-20 15:18:57"
+  },
+  "https://docs.openclaw.ai/providers/litellm": {
+    "title": "LiteLLM",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/litellm.md",
+    "hash": "0d899e6ec0be8198ca2458f31f3cd946",
+    "last_scraped": "2026-03-20 15:18:59"
+  },
+  "https://docs.openclaw.ai/providers/modelstudio": {
+    "title": "Model Studio",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/modelstudio.md",
+    "hash": "4835890009b0c43b666b0c625359d7f2",
+    "last_scraped": "2026-03-20 15:19:00"
+  },
+  "https://docs.openclaw.ai/platforms/mac/icon": {
+    "title": "Menu Bar Icon",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/icon.md",
+    "hash": "b4a02ad7083302b886c36d4d1acec013",
+    "last_scraped": "2026-03-20 15:19:02"
+  },
+  "https://docs.openclaw.ai/platforms/mac/bundled-gateway": {
+    "title": "Gateway on macOS",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/bundled-gateway.md",
+    "hash": "527b81ba9fc818dde665cdf82a3bdeea",
+    "last_scraped": "2026-03-20 15:19:03"
+  },
+  "https://docs.openclaw.ai/platforms/mac/xpc": {
+    "title": "macOS IPC",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/xpc.md",
+    "hash": "2912c905e1e89025224104bb4f71d26d",
+    "last_scraped": "2026-03-20 15:19:04"
+  },
+  "https://docs.openclaw.ai/platforms/mac/signing": {
+    "title": "macOS Signing",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/signing.md",
+    "hash": "5a8e107a0433d5ba31de61a4d7f9e74d",
+    "last_scraped": "2026-03-20 15:19:05"
+  },
+  "https://docs.openclaw.ai/platforms/mac/voice-overlay": {
+    "title": "Voice Overlay",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/voice-overlay.md",
+    "hash": "44425ef0e894568747699a403674035a",
+    "last_scraped": "2026-03-20 15:19:06"
+  },
+  "https://docs.openclaw.ai/platforms/macos": {
+    "title": "macOS App",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/macos.md",
+    "hash": "92d651cff1be4de0225c86103baa99fe",
+    "last_scraped": "2026-03-20 15:19:08"
+  },
+  "https://docs.openclaw.ai/platforms/mac/webchat": {
+    "title": "WebChat (macOS)",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/webchat.md",
+    "hash": "e537c6274408be35d6aea8e7908e88cc",
+    "last_scraped": "2026-03-20 15:19:10"
+  },
+  "https://docs.openclaw.ai/platforms/mac/health": {
+    "title": "Health Checks (macOS)",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/health.md",
+    "hash": "3c83be2b65cc7bdbdfb03878c7ffd44a",
+    "last_scraped": "2026-03-20 15:19:11"
+  },
+  "https://docs.openclaw.ai/platforms/mac/canvas": {
+    "title": "Canvas",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/canvas.md",
+    "hash": "7dc2f9d5217aeafe608f04a14207656d",
+    "last_scraped": "2026-03-20 15:19:12"
+  },
+  "https://docs.openclaw.ai/platforms/mac/skills": {
+    "title": "Skills (macOS)",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/skills.md",
+    "hash": "94fe7480ad03f693d2d13f032261b97d",
+    "last_scraped": "2026-03-20 15:19:13"
+  },
+  "https://docs.openclaw.ai/platforms/mac/remote": {
+    "title": "Remote Control",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/remote.md",
+    "hash": "836f97d30f735c92a4700fb6ca5bc6a3",
+    "last_scraped": "2026-03-20 15:19:15"
+  },
+  "https://docs.openclaw.ai/platforms/linux": {
+    "title": "Linux App",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/linux.md",
+    "hash": "0de025eb6f260d3f2afa9f6d5774d39d",
+    "last_scraped": "2026-03-20 15:19:16"
+  },
+  "https://docs.openclaw.ai/platforms/android": {
+    "title": "Android App",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/android.md",
+    "hash": "88dc36013709c659bc4e401bc04966d5",
+    "last_scraped": "2026-03-20 15:19:18"
+  },
+  "https://docs.openclaw.ai/platforms/mac/dev-setup": {
+    "title": "macOS Dev Setup",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/dev-setup.md",
+    "hash": "7c21a80fe270e367e25dbf745170793c",
+    "last_scraped": "2026-03-20 15:19:19"
+  },
+  "https://docs.openclaw.ai/platforms/mac/peekaboo": {
+    "title": "Peekaboo Bridge",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/peekaboo.md",
+    "hash": "569f788289c81c127cd602ea3dc37e83",
+    "last_scraped": "2026-03-20 15:19:21"
+  },
+  "https://docs.openclaw.ai/platforms/mac/child-process": {
+    "title": "Gateway Lifecycle",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/child-process.md",
+    "hash": "3892bd9d6277ebfc5205e24d2a16d73c",
+    "last_scraped": "2026-03-20 15:19:22"
+  },
+  "https://docs.openclaw.ai/platforms/ios": {
+    "title": "iOS App",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/ios.md",
+    "hash": "ed32da055adeb3edeb39eace943e312f",
+    "last_scraped": "2026-03-20 15:19:23"
+  },
+  "https://docs.openclaw.ai/gateway/configuration": {
+    "title": "Configuration",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/configuration.md",
+    "hash": "11a2b14bae45f8c7e151e85495651da7",
+    "last_scraped": "2026-03-20 15:19:25"
+  },
+  "https://docs.openclaw.ai/platforms/mac/voicewake": {
+    "title": "Voice Wake (macOS)",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/voicewake.md",
+    "hash": "ec65c279ea838a3ccd7a3880fdf24d56",
+    "last_scraped": "2026-03-20 15:19:27"
+  },
+  "https://docs.openclaw.ai/platforms/mac/menu-bar": {
+    "title": "Menu Bar",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/menu-bar.md",
+    "hash": "138998f8fbb9761cf7fc92ec3ff3ecfc",
+    "last_scraped": "2026-03-20 15:19:28"
+  },
+  "https://docs.openclaw.ai/platforms/mac/permissions": {
+    "title": "macOS Permissions",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/permissions.md",
+    "hash": "f16b3b58a1265b2e0c259f5b8d87fc63",
+    "last_scraped": "2026-03-20 15:19:29"
+  },
+  "https://docs.openclaw.ai/platforms/mac/logging": {
+    "title": "macOS Logging",
+    "filepath": "/home/ubuntu/openclaw_docs/platforms/mac/logging.md",
+    "hash": "d8c5a3924ecdc362f77fa2c1bb4ff044",
+    "last_scraped": "2026-03-20 15:19:31"
+  },
+  "https://docs.openclaw.ai/nodes/talk": {
+    "title": "Talk Mode",
+    "filepath": "/home/ubuntu/openclaw_docs/nodes/talk.md",
+    "hash": "362d2cdec78c7b13689f169926f23e40",
+    "last_scraped": "2026-03-20 15:19:32"
+  },
+  "https://docs.openclaw.ai/web/tui": {
+    "title": "TUI",
+    "filepath": "/home/ubuntu/openclaw_docs/web/tui.md",
+    "hash": "36c80a82e8d1f7a036711d621802af4b",
+    "last_scraped": "2026-03-20 15:19:33"
+  },
+  "https://docs.openclaw.ai/gateway/multiple-gateways": {
+    "title": "Multiple Gateways",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/multiple-gateways.md",
+    "hash": "4e29886775bc472909efbf41bbcdb9ff",
+    "last_scraped": "2026-03-20 15:19:35"
+  },
+  "https://docs.openclaw.ai/nodes/audio": {
+    "title": "Audio and Voice Notes",
+    "filepath": "/home/ubuntu/openclaw_docs/nodes/audio.md",
+    "hash": "80317504dd229abcf409139ed3751d69",
+    "last_scraped": "2026-03-20 15:19:37"
+  },
+  "https://docs.openclaw.ai/web/control-ui": {
+    "title": "Control UI",
+    "filepath": "/home/ubuntu/openclaw_docs/web/control-ui.md",
+    "hash": "cd8ae05be24bb4ed5fb6357314a64849",
+    "last_scraped": "2026-03-20 15:19:38"
+  },
+  "https://docs.openclaw.ai/security/THREAT-MODEL-ATLAS": {
+    "title": "Threat Model (MITRE ATLAS)",
+    "filepath": "/home/ubuntu/openclaw_docs/security/THREAT-MODEL-ATLAS.md",
+    "hash": "9f0c545df46846685ee911d90f639656",
+    "last_scraped": "2026-03-20 15:19:40"
+  },
+  "https://docs.openclaw.ai/nodes/location-command": {
+    "title": "Location Command",
+    "filepath": "/home/ubuntu/openclaw_docs/nodes/location-command.md",
+    "hash": "2914c9ed7d34c640345645bbf9454e4a",
+    "last_scraped": "2026-03-20 15:19:41"
+  },
+  "https://docs.openclaw.ai/nodes/voicewake": {
+    "title": "Voice Wake",
+    "filepath": "/home/ubuntu/openclaw_docs/nodes/voicewake.md",
+    "hash": "13797132acdbe52123e9b3d10a23a0ee",
+    "last_scraped": "2026-03-20 15:19:42"
+  },
+  "https://docs.openclaw.ai/nodes/camera": {
+    "title": "Camera Capture",
+    "filepath": "/home/ubuntu/openclaw_docs/nodes/camera.md",
+    "hash": "4b05f4d16eaea76e6010beeedbfa8d2e",
+    "last_scraped": "2026-03-20 15:19:43"
+  },
+  "https://docs.openclaw.ai/nodes/images": {
+    "title": "Image and Media Support",
+    "filepath": "/home/ubuntu/openclaw_docs/nodes/images.md",
+    "hash": "93e95d5c8c29c92b817de3dc3bb5878c",
+    "last_scraped": "2026-03-20 15:19:44"
+  },
+  "https://docs.openclaw.ai/tools/tts": {
+    "title": "Text-to-Speech",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/tts.md",
+    "hash": "2968965b9532cca358a69d4090f80c3f",
+    "last_scraped": "2026-03-20 15:19:46"
+  },
+  "https://docs.openclaw.ai/nodes/media-understanding": {
+    "title": "Media Understanding",
+    "filepath": "/home/ubuntu/openclaw_docs/nodes/media-understanding.md",
+    "hash": "c59e0bc34ebddfafb208d6e4f09e2216",
+    "last_scraped": "2026-03-20 15:19:47"
+  },
+  "https://docs.openclaw.ai/gateway/remote-gateway-readme": {
+    "title": "Remote Gateway Setup",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/remote-gateway-readme.md",
+    "hash": "739bb12b1fc0e5673b86011a19461543",
+    "last_scraped": "2026-03-20 15:19:48"
+  },
+  "https://docs.openclaw.ai/gateway/doctor": {
+    "title": "Doctor",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/doctor.md",
+    "hash": "80277a9ec0d6e192902cc98785edeba7",
+    "last_scraped": "2026-03-20 15:19:49"
+  },
+  "https://docs.openclaw.ai/gateway/health": {
+    "title": "Health Checks",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/health.md",
+    "hash": "ad1c10cde4ca7cd910534fcbf7fd39e0",
+    "last_scraped": "2026-03-20 15:19:50"
+  },
+  "https://docs.openclaw.ai/gateway/remote": {
+    "title": "Remote Access",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/remote.md",
+    "hash": "a325fb48adbcc20bd50c3d7f5a190d57",
+    "last_scraped": "2026-03-20 15:19:51"
+  },
+  "https://docs.openclaw.ai/gateway/authentication": {
+    "title": "Authentication",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/authentication.md",
+    "hash": "92da08b5b60aeaf8b42be0be481c3d2c",
+    "last_scraped": "2026-03-20 15:19:52"
+  },
+  "https://docs.openclaw.ai/gateway/troubleshooting": {
+    "title": "Troubleshooting",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/troubleshooting.md",
+    "hash": "e2704c87eb47a4f6b1396456cf4e74f4",
+    "last_scraped": "2026-03-20 15:19:53"
+  },
+  "https://docs.openclaw.ai/gateway/background-process": {
+    "title": "Background Exec and Process Tool",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/background-process.md",
+    "hash": "fa4256dbd7e35a35c192ff835006be0d",
+    "last_scraped": "2026-03-20 15:19:54"
+  },
+  "https://docs.openclaw.ai/web/dashboard": {
+    "title": "Dashboard",
+    "filepath": "/home/ubuntu/openclaw_docs/web/dashboard.md",
+    "hash": "d6e30c7f6a563a519ffac98f639dfe02",
+    "last_scraped": "2026-03-20 15:19:55"
+  },
+  "https://docs.openclaw.ai/security/formal-verification": {
+    "title": "Formal Verification (Security Models)",
+    "filepath": "/home/ubuntu/openclaw_docs/security/formal-verification.md",
+    "hash": "dd67e484d1f388d32a6f16676176b7a7",
+    "last_scraped": "2026-03-20 15:19:56"
+  },
+  "https://docs.openclaw.ai/security/CONTRIBUTING-THREAT-MODEL": {
+    "title": "Contributing to the Threat Model",
+    "filepath": "/home/ubuntu/openclaw_docs/security/CONTRIBUTING-THREAT-MODEL.md",
+    "hash": "24015c590eee95d4bd81a24832f66466",
+    "last_scraped": "2026-03-20 15:19:57"
+  },
+  "https://docs.openclaw.ai/nodes/troubleshooting": {
+    "title": "Node Troubleshooting",
+    "filepath": "/home/ubuntu/openclaw_docs/nodes/troubleshooting.md",
+    "hash": "1a5c8d8f6250fce51f4bf7627784d273",
+    "last_scraped": "2026-03-20 15:19:58"
+  },
+  "https://docs.openclaw.ai/nodes": {
+    "title": "Nodes",
+    "filepath": "/home/ubuntu/openclaw_docs/nodes.md",
+    "hash": "14f7e1c98722f265abba117e8c03e04a",
+    "last_scraped": "2026-03-20 15:19:59"
+  },
+  "https://docs.openclaw.ai/cli/dns": {
+    "title": "dns",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/dns.md",
+    "hash": "bc33309122e3db2279b006adbcd83c08",
+    "last_scraped": "2026-03-20 15:20:00"
+  },
+  "https://docs.openclaw.ai/cli/qr": {
+    "title": "qr",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/qr.md",
+    "hash": "cd4bb8397f48b65789b71215aced7498",
+    "last_scraped": "2026-03-20 15:20:01"
+  },
+  "https://docs.openclaw.ai/cli/node": {
+    "title": "node",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/node.md",
+    "hash": "f5538f4c35941969fc03b5f499a2891f",
+    "last_scraped": "2026-03-20 15:20:02"
+  },
+  "https://docs.openclaw.ai/pi": {
+    "title": "Pi Integration Architecture",
+    "filepath": "/home/ubuntu/openclaw_docs/pi.md",
+    "hash": "af87832c9f91253c6acec4fb6ffcb73e",
+    "last_scraped": "2026-03-20 15:20:03"
+  },
+  "https://docs.openclaw.ai/cli/gateway": {
+    "title": "gateway",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/gateway.md",
+    "hash": "9016aedc664626d34ea11d0dc24f2a5b",
+    "last_scraped": "2026-03-20 15:20:04"
+  },
+  "https://docs.openclaw.ai/cli/models": {
+    "title": "models",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/models.md",
+    "hash": "3b626e7abeb7f8f28b6316099180ef1b",
+    "last_scraped": "2026-03-20 15:20:05"
+  },
+  "https://docs.openclaw.ai/reference/transcript-hygiene": {
+    "title": "Transcript Hygiene",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/transcript-hygiene.md",
+    "hash": "decd8b901dea97453d3441e1a4f218af",
+    "last_scraped": "2026-03-20 15:20:05"
+  },
+  "https://docs.openclaw.ai/cli/directory": {
+    "title": "directory",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/directory.md",
+    "hash": "c00703ebd19ddf535a276a9f4ef58cfd",
+    "last_scraped": "2026-03-20 15:20:06"
+  },
+  "https://docs.openclaw.ai/reference/secretref-credential-surface": {
+    "title": "SecretRef Credential Surface",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/secretref-credential-surface.md",
+    "hash": "21c4de585d35ab43583a428de6def228",
+    "last_scraped": "2026-03-20 15:20:07"
+  },
+  "https://docs.openclaw.ai/reference/templates/AGENTS": {
+    "title": "AGENTS.md Template",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/templates/AGENTS.md",
+    "hash": "c12cda5918c09b8300e153d136414218",
+    "last_scraped": "2026-03-20 15:20:08"
+  },
+  "https://docs.openclaw.ai/date-time": {
+    "title": "Date and Time",
+    "filepath": "/home/ubuntu/openclaw_docs/date-time.md",
+    "hash": "00a3bea53c16f124d59bc477c12173b2",
+    "last_scraped": "2026-03-20 15:20:09"
+  },
+  "https://docs.openclaw.ai/cli/cron": {
+    "title": "cron",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/cron.md",
+    "hash": "44524e5775d34ba2b70905081eb7a714",
+    "last_scraped": "2026-03-20 15:20:10"
+  },
+  "https://docs.openclaw.ai/cli/skills": {
+    "title": "skills",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/skills.md",
+    "hash": "6cbbcbb0572a12a090a021dee2b00f58",
+    "last_scraped": "2026-03-20 15:20:10"
+  },
+  "https://docs.openclaw.ai/reference/templates/BOOTSTRAP": {
+    "title": "BOOTSTRAP.md Template",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/templates/BOOTSTRAP.md",
+    "hash": "a2f1d26968f5efa50d65264d73671a89",
+    "last_scraped": "2026-03-20 15:20:11"
+  },
+  "https://docs.openclaw.ai/cli/reset": {
+    "title": "reset",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/reset.md",
+    "hash": "b8d37860cbb9bf75bfb19f2d9dddabda",
+    "last_scraped": "2026-03-20 15:20:12"
+  },
+  "https://docs.openclaw.ai/cli/setup": {
+    "title": "setup",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/setup.md",
+    "hash": "f638e4d7bbbd667730f92e5e140239df",
+    "last_scraped": "2026-03-20 15:20:13"
+  },
+  "https://docs.openclaw.ai/cli/completion": {
+    "title": "completion",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/completion.md",
+    "hash": "d7024a6a9dfe8abb678de9303ec9d498",
+    "last_scraped": "2026-03-20 15:20:14"
+  },
+  "https://docs.openclaw.ai/concepts/typing-indicators": {
+    "title": "Typing Indicators",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/typing-indicators.md",
+    "hash": "b3d72bf7d3e97e2592d78c3ef13ca9d8",
+    "last_scraped": "2026-03-20 15:20:15"
+  },
+  "https://docs.openclaw.ai/cli/sandbox": {
+    "title": "Sandbox CLI",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/sandbox.md",
+    "hash": "0736b5e81385e05e7083da78f88e3a51",
+    "last_scraped": "2026-03-20 15:20:16"
+  },
+  "https://docs.openclaw.ai/cli/tui": {
+    "title": "tui",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/tui.md",
+    "hash": "4c2819b34b711988500abecbd4c5e438",
+    "last_scraped": "2026-03-20 15:20:17"
+  },
+  "https://docs.openclaw.ai/reference/api-usage-costs": {
+    "title": "API Usage and Costs",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/api-usage-costs.md",
+    "hash": "e0fb90ec02b1092c55b89de11ef6599f",
+    "last_scraped": "2026-03-20 15:20:18"
+  },
+  "https://docs.openclaw.ai/cli/webhooks": {
+    "title": "webhooks",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/webhooks.md",
+    "hash": "709c2b700225cf88df0c7374cd2a15a6",
+    "last_scraped": "2026-03-20 15:20:18"
+  },
+  "https://docs.openclaw.ai/concepts/usage-tracking": {
+    "title": "Usage Tracking",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/usage-tracking.md",
+    "hash": "9cb82685c59f22063d2ef41c22d64275",
+    "last_scraped": "2026-03-20 15:20:19"
+  },
+  "https://docs.openclaw.ai/cli/dashboard": {
+    "title": "dashboard",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/dashboard.md",
+    "hash": "31f1a95ae94f51e224a87a6e14286ef7",
+    "last_scraped": "2026-03-20 15:20:20"
+  },
+  "https://docs.openclaw.ai/cli/doctor": {
+    "title": "doctor",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/doctor.md",
+    "hash": "fb0bd6a41790963fa1829e784348e0f6",
+    "last_scraped": "2026-03-20 15:20:21"
+  },
+  "https://docs.openclaw.ai/cli/status": {
+    "title": "status",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/status.md",
+    "hash": "73958a16131cde0d488ebd449e831704",
+    "last_scraped": "2026-03-20 15:20:22"
+  },
+  "https://docs.openclaw.ai/reference/test": {
+    "title": "Tests",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/test.md",
+    "hash": "56a866a42b70fbb8dabfcce7b8f6c3dd",
+    "last_scraped": "2026-03-20 15:20:22"
+  },
+  "https://docs.openclaw.ai/concepts/typebox": {
+    "title": "TypeBox",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/typebox.md",
+    "hash": "6a77664223c1c05097d874ce51554f8a",
+    "last_scraped": "2026-03-20 15:20:23"
+  },
+  "https://docs.openclaw.ai/concepts/timezone": {
+    "title": "Timezones",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/timezone.md",
+    "hash": "534ab5f55f139975ffea5e2e48888b05",
+    "last_scraped": "2026-03-20 15:20:24"
+  },
+  "https://docs.openclaw.ai/cli/update": {
+    "title": "update",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/update.md",
+    "hash": "6eb243d853a31aa8ba12a4075c5cd68e",
+    "last_scraped": "2026-03-20 15:20:25"
+  },
+  "https://docs.openclaw.ai/cli/browser": {
+    "title": "browser",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/browser.md",
+    "hash": "6aca7ca6c175228776a683786b9a8a1f",
+    "last_scraped": "2026-03-20 15:20:26"
+  },
+  "https://docs.openclaw.ai/cli/agents": {
+    "title": "agents",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/agents.md",
+    "hash": "dc8a8ddf829c02dd2d66c1a3a7f39320",
+    "last_scraped": "2026-03-20 15:20:27"
+  },
+  "https://docs.openclaw.ai/concepts/markdown-formatting": {
+    "title": "Markdown Formatting",
+    "filepath": "/home/ubuntu/openclaw_docs/concepts/markdown-formatting.md",
+    "hash": "e7e7cbafbbea502cf3ef5abcdfd4eb17",
+    "last_scraped": "2026-03-20 15:20:27"
+  },
+  "https://docs.openclaw.ai/reference/templates/IDENTITY": {
+    "title": "IDENTITY",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/templates/IDENTITY.md",
+    "hash": "06dc5872ab3d21acf81b6cc0abab78d5",
+    "last_scraped": "2026-03-20 15:20:28"
+  },
+  "https://docs.openclaw.ai/reference/device-models": {
+    "title": "Device Model Database",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/device-models.md",
+    "hash": "643a5ecf9acf4bf479d75bd416e98c94",
+    "last_scraped": "2026-03-20 15:20:29"
+  },
+  "https://docs.openclaw.ai/cli/system": {
+    "title": "system",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/system.md",
+    "hash": "926564113e70ddcd3a5b16f358da0c45",
+    "last_scraped": "2026-03-20 15:20:30"
+  },
+  "https://docs.openclaw.ai/reference/token-use": {
+    "title": "Token Use and Costs",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/token-use.md",
+    "hash": "f803a3db8eb771f8e8a7732e46598275",
+    "last_scraped": "2026-03-20 15:20:31"
+  },
+  "https://docs.openclaw.ai/cli/pairing": {
+    "title": "pairing",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/pairing.md",
+    "hash": "978d179f11cfc4e19187987691dbd6b2",
+    "last_scraped": "2026-03-20 15:20:31"
+  },
+  "https://docs.openclaw.ai/cli/logs": {
+    "title": "logs",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/logs.md",
+    "hash": "976cdcc5eb5ef5094b0fc5027d760cb1",
+    "last_scraped": "2026-03-20 15:20:32"
+  },
+  "https://docs.openclaw.ai/reference/wizard": {
+    "title": "Onboarding Reference",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/wizard.md",
+    "hash": "8f11726ef07517bf7ffa03dd10f85231",
+    "last_scraped": "2026-03-20 15:20:33"
+  },
+  "https://docs.openclaw.ai/cli/secrets": {
+    "title": "secrets",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/secrets.md",
+    "hash": "4d062a66c08df444066428939131c32b",
+    "last_scraped": "2026-03-20 15:20:34"
+  },
+  "https://docs.openclaw.ai/reference/templates/BOOT": {
+    "title": "BOOT.md Template",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/templates/BOOT.md",
+    "hash": "1407a504dae3b06266327153c5042233",
+    "last_scraped": "2026-03-20 15:20:35"
+  },
+  "https://docs.openclaw.ai/reference/templates/TOOLS": {
+    "title": "TOOLS.md Template",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/templates/TOOLS.md",
+    "hash": "43e996b8d28300bebcbaafe99d57ccfa",
+    "last_scraped": "2026-03-20 15:20:35"
+  },
+  "https://docs.openclaw.ai/cli/config": {
+    "title": "config",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/config.md",
+    "hash": "f60bf3c32250b5d8e2585f72762c2a8e",
+    "last_scraped": "2026-03-20 15:20:36"
+  },
+  "https://docs.openclaw.ai/cli/channels": {
+    "title": "channels",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/channels.md",
+    "hash": "cf97743729572d8c15441c3957f788f6",
+    "last_scraped": "2026-03-20 15:20:37"
+  },
+  "https://docs.openclaw.ai/cli/agent": {
+    "title": "agent",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/agent.md",
+    "hash": "f81c0eb874e520364858bce502653682",
+    "last_scraped": "2026-03-20 15:20:38"
+  },
+  "https://docs.openclaw.ai/cli/backup": {
+    "title": "backup",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/backup.md",
+    "hash": "34485f873d8e145a804042d9a3a78f31",
+    "last_scraped": "2026-03-20 15:20:38"
+  },
+  "https://docs.openclaw.ai/reference/templates/SOUL": {
+    "title": "SOUL.md Template",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/templates/SOUL.md",
+    "hash": "5e3352b2fe98d522083b6cdc1b5d495c",
+    "last_scraped": "2026-03-20 15:20:39"
+  },
+  "https://docs.openclaw.ai/cli/configure": {
+    "title": "configure",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/configure.md",
+    "hash": "f268af1c085991ca8847cb4fc368eff0",
+    "last_scraped": "2026-03-20 15:20:40"
+  },
+  "https://docs.openclaw.ai/cli/onboard": {
+    "title": "onboard",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/onboard.md",
+    "hash": "c96a606dbe7551b1aaa84d378fed4396",
+    "last_scraped": "2026-03-20 15:20:41"
+  },
+  "https://docs.openclaw.ai/cli/security": {
+    "title": "security",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/security.md",
+    "hash": "4af60be4c766f07e9db6504228cdf287",
+    "last_scraped": "2026-03-20 15:20:41"
+  },
+  "https://docs.openclaw.ai/cli/devices": {
+    "title": "devices",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/devices.md",
+    "hash": "b8cf080bfe9713be1a7a17e872602525",
+    "last_scraped": "2026-03-20 15:20:42"
+  },
+  "https://docs.openclaw.ai/cli/daemon": {
+    "title": "daemon",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/daemon.md",
+    "hash": "7f66487b9962decfffe7f65eea0548a9",
+    "last_scraped": "2026-03-20 15:20:43"
+  },
+  "https://docs.openclaw.ai/cli/acp": {
+    "title": "acp",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/acp.md",
+    "hash": "e428a8789811de7bb185de83549bf069",
+    "last_scraped": "2026-03-20 15:20:44"
+  },
+  "https://docs.openclaw.ai/reference/AGENTS.default": {
+    "title": "Default AGENTS.md",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/AGENTS.default.md",
+    "hash": "9c3185857b5cdaf39bb45d10fe0ece74",
+    "last_scraped": "2026-03-20 15:20:45"
+  },
+  "https://docs.openclaw.ai/reference/credits": {
+    "title": "Credits",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/credits.md",
+    "hash": "86a2592549f2159bfc167648f8516ec5",
+    "last_scraped": "2026-03-20 15:20:46"
+  },
+  "https://docs.openclaw.ai/cli/clawbot": {
+    "title": "clawbot",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/clawbot.md",
+    "hash": "3725eec5891e4196d17f98484daf62d9",
+    "last_scraped": "2026-03-20 15:20:46"
+  },
+  "https://docs.openclaw.ai/cli/message": {
+    "title": "message",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/message.md",
+    "hash": "6dd6ca8ef8efe1f42a0affd0a858f184",
+    "last_scraped": "2026-03-20 15:20:47"
+  },
+  "https://docs.openclaw.ai/reference/templates/USER": {
+    "title": "USER",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/templates/USER.md",
+    "hash": "9a7ddfea371ab4595c68ae6a18b5cc4a",
+    "last_scraped": "2026-03-20 15:20:48"
+  },
+  "https://docs.openclaw.ai/reference/RELEASING": {
+    "title": "Release Policy",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/RELEASING.md",
+    "hash": "21b9e08dc2cb8836db8162a68f82a61f",
+    "last_scraped": "2026-03-20 15:20:49"
+  },
+  "https://docs.openclaw.ai/reference/rpc": {
+    "title": "RPC Adapters",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/rpc.md",
+    "hash": "8c4141247a5b632e7b946a6c4999d63e",
+    "last_scraped": "2026-03-20 15:20:50"
+  },
+  "https://docs.openclaw.ai/reference/prompt-caching": {
+    "title": "Prompt Caching",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/prompt-caching.md",
+    "hash": "1cf9b1ad0d59f5e2c78c9b72d0f47ae8",
+    "last_scraped": "2026-03-20 15:20:50"
+  },
+  "https://docs.openclaw.ai/cli/approvals": {
+    "title": "approvals",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/approvals.md",
+    "hash": "556463f2e125d9298ed5149a41018bdd",
+    "last_scraped": "2026-03-20 15:20:51"
+  },
+  "https://docs.openclaw.ai/cli/hooks": {
+    "title": "hooks",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/hooks.md",
+    "hash": "99727d0bade22645dca21a91b47516e8",
+    "last_scraped": "2026-03-20 15:20:52"
+  },
+  "https://docs.openclaw.ai/cli/uninstall": {
+    "title": "uninstall",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/uninstall.md",
+    "hash": "f7fb32964b07b1467dd48834d73a6f33",
+    "last_scraped": "2026-03-20 15:20:53"
+  },
+  "https://docs.openclaw.ai/gateway/discovery": {
+    "title": "Discovery and Transports",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/discovery.md",
+    "hash": "d232ae105aeeb0c43e92741d52c09955",
+    "last_scraped": "2026-03-20 15:20:53"
+  },
+  "https://docs.openclaw.ai/reference/memory-config": {
+    "title": "Memory configuration reference",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/memory-config.md",
+    "hash": "1e89e35018de905b4cacce423cd2c663",
+    "last_scraped": "2026-03-20 15:20:54"
+  },
+  "https://docs.openclaw.ai/cli/voicecall": {
+    "title": "voicecall",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/voicecall.md",
+    "hash": "8a8bab66d7fea3476f3f6ae0c4b6f499",
+    "last_scraped": "2026-03-20 15:20:55"
+  },
+  "https://docs.openclaw.ai/cli/health": {
+    "title": "health",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/health.md",
+    "hash": "88c59e6bf4fff77c79501c6c8c86f8a8",
+    "last_scraped": "2026-03-20 15:20:56"
+  },
+  "https://docs.openclaw.ai/cli/memory": {
+    "title": "memory",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/memory.md",
+    "hash": "0964a310387f2aa4efbd0721fb979d6d",
+    "last_scraped": "2026-03-20 15:20:57"
+  },
+  "https://docs.openclaw.ai/cli/sessions": {
+    "title": "sessions",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/sessions.md",
+    "hash": "430c994be89395b2003dbfbbb8150646",
+    "last_scraped": "2026-03-20 15:20:57"
+  },
+  "https://docs.openclaw.ai/reference/templates/HEARTBEAT": {
+    "title": "HEARTBEAT.md Template",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/templates/HEARTBEAT.md",
+    "hash": "3c28c5240d2de7d65d4f5ee8e03d9e02",
+    "last_scraped": "2026-03-20 15:20:58"
+  },
+  "https://docs.openclaw.ai/cli/plugins": {
+    "title": "plugins",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/plugins.md",
+    "hash": "d4b93ce0fa768e37db7fa44056dbc7ae",
+    "last_scraped": "2026-03-20 15:20:59"
+  },
+  "https://docs.openclaw.ai/cli/nodes": {
+    "title": "nodes",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/nodes.md",
+    "hash": "096aff26c0ef409fe2b6b38ed500d01c",
+    "last_scraped": "2026-03-20 15:21:00"
+  },
+  "https://docs.openclaw.ai/cli/docs": {
+    "title": "docs",
+    "filepath": "/home/ubuntu/openclaw_docs/cli/docs.md",
+    "hash": "e0faa54a37f2442bab782af2e86415f5",
+    "last_scraped": "2026-03-20 15:21:01"
+  },
+  "https://docs.openclaw.ai/help/scripts": {
+    "title": "Scripts",
+    "filepath": "/home/ubuntu/openclaw_docs/help/scripts.md",
+    "hash": "bd2d2a563390b028570c8cd9bf6ebb0a",
+    "last_scraped": "2026-03-20 15:21:01"
+  },
+  "https://docs.openclaw.ai/debug/node-issue": {
+    "title": "Node + tsx Crash",
+    "filepath": "/home/ubuntu/openclaw_docs/debug/node-issue.md",
+    "hash": "3beb121cabd597b9ed6ff2f02ca0edcd",
+    "last_scraped": "2026-03-20 15:21:02"
+  },
+  "https://docs.openclaw.ai/pi-dev": {
+    "title": "Pi Development Workflow",
+    "filepath": "/home/ubuntu/openclaw_docs/pi-dev.md",
+    "hash": "db0346def1077e9ca308f7f60c189251",
+    "last_scraped": "2026-03-20 15:21:03"
+  },
+  "https://docs.openclaw.ai/diagnostics/flags": {
+    "title": "Diagnostics Flags",
+    "filepath": "/home/ubuntu/openclaw_docs/diagnostics/flags.md",
+    "hash": "99e1ec71db55a9fe5b33edb8f9dc9099",
+    "last_scraped": "2026-03-20 15:21:04"
+  },
+  "https://docs.openclaw.ai/start/hubs": {
+    "title": "Docs Hubs",
+    "filepath": "/home/ubuntu/openclaw_docs/start/hubs.md",
+    "hash": "b18b9a166fca62f41bfff9295a0d9f97",
+    "last_scraped": "2026-03-20 15:21:04"
+  },
+  "https://docs.openclaw.ai/start/lore": {
+    "title": "OpenClaw Lore",
+    "filepath": "/home/ubuntu/openclaw_docs/start/lore.md",
+    "hash": "65ccdac081967b3da61524906424237d",
+    "last_scraped": "2026-03-20 15:21:05"
+  },
+  "https://docs.openclaw.ai/help/environment": {
+    "title": "Environment Variables",
+    "filepath": "/home/ubuntu/openclaw_docs/help/environment.md",
+    "hash": "33ca9f35a83d7fd6aa73b3aa2078240e",
+    "last_scraped": "2026-03-20 15:21:06"
+  },
+  "https://docs.openclaw.ai/logging": {
+    "title": "Logging",
+    "filepath": "/home/ubuntu/openclaw_docs/logging.md",
+    "hash": "67babbc255a8756fb571e45c8ec4fe7e",
+    "last_scraped": "2026-03-20 15:21:07"
+  },
+  "https://docs.openclaw.ai/help/debugging": {
+    "title": "Debugging",
+    "filepath": "/home/ubuntu/openclaw_docs/help/debugging.md",
+    "hash": "86ed97c63398e34f5ad12d4339abbd6f",
+    "last_scraped": "2026-03-20 15:21:08"
+  },
+  "https://docs.openclaw.ai/start/docs-directory": {
+    "title": "Docs directory",
+    "filepath": "/home/ubuntu/openclaw_docs/start/docs-directory.md",
+    "hash": "e09974bf0605d4f12d98ffd5996bfd34",
+    "last_scraped": "2026-03-20 15:21:09"
+  },
+  "https://docs.openclaw.ai/gateway/logging": {
+    "title": "Logging",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/logging.md",
+    "hash": "de9e58df3001663adea54c4c6d2dae3e",
+    "last_scraped": "2026-03-20 15:21:09"
+  },
+  "https://docs.openclaw.ai/help/troubleshooting": {
+    "title": "General Troubleshooting",
+    "filepath": "/home/ubuntu/openclaw_docs/help/troubleshooting.md",
+    "hash": "eeea9a1cfd5ee6f14e957d6ade12be7f",
+    "last_scraped": "2026-03-20 15:21:10"
+  },
+  "https://docs.openclaw.ai/ci": {
+    "title": "CI Pipeline",
+    "filepath": "/home/ubuntu/openclaw_docs/ci.md",
+    "hash": "9e48166d483329ae384c1e262d681223",
+    "last_scraped": "2026-03-20 15:21:11"
+  },
+  "https://docs.openclaw.ai/reference/session-management-compaction": {
+    "title": "Session Management Deep Dive",
+    "filepath": "/home/ubuntu/openclaw_docs/reference/session-management-compaction.md",
+    "hash": "c1aa29c506521f9ad631ddf324d8d7a9",
+    "last_scraped": "2026-03-20 15:21:12"
+  },
+  "https://docs.openclaw.ai/help/testing": {
+    "title": "Testing",
+    "filepath": "/home/ubuntu/openclaw_docs/help/testing.md",
+    "hash": "ec7b66cb18e02b4a60ab1e54dd3e0b2d",
+    "last_scraped": "2026-03-20 15:21:13"
+  },
+  "https://docs.openclaw.ai/help/faq": {
+    "title": "FAQ",
+    "filepath": "/home/ubuntu/openclaw_docs/help/faq.md",
+    "hash": "026a1c07b67d370b361676382720c686",
+    "last_scraped": "2026-03-20 15:21:14"
+  },
+  "https://docs.openclaw.ai/gateway/configuration-reference": {
+    "title": "Configuration Reference",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/configuration-reference.md",
+    "hash": "96be42fc931282af76a868714f5b68f2",
+    "last_scraped": "2026-03-20 15:21:16"
+  },
+  "https://docs.openclaw.ai/gateway/sandboxing": {
+    "title": "Sandboxing",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/sandboxing.md",
+    "hash": "31208327bcf4f8bc51543109b50f84ad",
+    "last_scraped": "2026-03-20 15:21:17"
+  },
+  "https://docs.openclaw.ai/gateway/openshell": {
+    "title": "OpenShell",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/openshell.md",
+    "hash": "49be81f8c6af7a2d98507cf1007970e7",
+    "last_scraped": "2026-03-20 15:21:18"
+  },
+  "https://docs.openclaw.ai/gateway/sandbox-vs-tool-policy-vs-elevated": {
+    "title": "Sandbox vs Tool Policy vs Elevated",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/sandbox-vs-tool-policy-vs-elevated.md",
+    "hash": "ec32629124f167e2fa164edb168f01b0",
+    "last_scraped": "2026-03-20 15:21:19"
+  },
+  "https://docs.openclaw.ai/gateway/trusted-proxy-auth": {
+    "title": "Trusted Proxy Auth",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/trusted-proxy-auth.md",
+    "hash": "2eedc00a5af392d798331f62e587fd3b",
+    "last_scraped": "2026-03-20 15:21:20"
+  },
+  "https://docs.openclaw.ai/install/migrating-matrix": {
+    "title": "Matrix migration",
+    "filepath": "/home/ubuntu/openclaw_docs/install/migrating-matrix.md",
+    "hash": "ad784c5d5b779e81e3ee0eb6d5b1b31a",
+    "last_scraped": "2026-03-20 15:21:21"
+  },
+  "https://docs.openclaw.ai/gateway/secrets": {
+    "title": "Secrets Management",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/secrets.md",
+    "hash": "68f6200a138506401746ae17aab79cac",
+    "last_scraped": "2026-03-20 15:21:21"
+  },
+  "https://docs.openclaw.ai/gateway/openai-http-api": {
+    "title": "OpenAI Chat Completions",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/openai-http-api.md",
+    "hash": "dbcb7aec9008d9525384ed7a2e880d0b",
+    "last_scraped": "2026-03-20 15:21:22"
+  },
+  "https://docs.openclaw.ai/gateway/cli-backends": {
+    "title": "CLI Backends",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/cli-backends.md",
+    "hash": "d7fecd0dbc41df19a63f0f879acc4591",
+    "last_scraped": "2026-03-20 15:21:23"
+  },
+  "https://docs.openclaw.ai/gateway/tools-invoke-http-api": {
+    "title": "Tools Invoke API",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/tools-invoke-http-api.md",
+    "hash": "f66af99fe0f91b9e362398c2ce637a0a",
+    "last_scraped": "2026-03-20 15:21:24"
+  },
+  "https://docs.openclaw.ai/gateway/bridge-protocol": {
+    "title": "Bridge Protocol",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/bridge-protocol.md",
+    "hash": "fd6ac38729462ed976aade6bdc298175",
+    "last_scraped": "2026-03-20 15:21:25"
+  },
+  "https://docs.openclaw.ai/gateway/local-models": {
+    "title": "Local Models",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/local-models.md",
+    "hash": "7126e08a0905c0d97898ddb991573fbf",
+    "last_scraped": "2026-03-20 15:21:26"
+  },
+  "https://docs.openclaw.ai/gateway/openresponses-http-api": {
+    "title": "OpenResponses API",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/openresponses-http-api.md",
+    "hash": "c753e2a49844fd2266b2877f5b31020a",
+    "last_scraped": "2026-03-20 15:21:27"
+  },
+  "https://docs.openclaw.ai/tools/capability-cookbook": {
+    "title": "Plugin Internals",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/capability-cookbook.md",
+    "hash": "4b3d0cbe7c421acdf7e530e3face7823",
+    "last_scraped": "2026-03-20 15:21:28"
+  },
+  "https://docs.openclaw.ai/plugins/agent-tools": {
+    "title": "Building Plugins",
+    "filepath": "/home/ubuntu/openclaw_docs/plugins/agent-tools.md",
+    "hash": "c9c16fda061c216f08aea0c035a20a86",
+    "last_scraped": "2026-03-20 15:21:30"
+  },
+  "https://docs.openclaw.ai/plugins/zalouser": {
+    "title": "Zalo Personal Plugin",
+    "filepath": "/home/ubuntu/openclaw_docs/plugins/zalouser.md",
+    "hash": "0303a9c0b740691d308091e1a24a3f4f",
+    "last_scraped": "2026-03-20 15:21:30"
+  },
+  "https://docs.openclaw.ai/configuration": {
+    "title": "Configuration",
+    "filepath": "/home/ubuntu/openclaw_docs/configuration.md",
+    "hash": "de13d7c446342ca894160992192dab68",
+    "last_scraped": "2026-03-20 15:21:32"
+  },
+  "https://docs.openclaw.ai/tools/browser-linux-troubleshooting": {
+    "title": "Browser Troubleshooting",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/browser-linux-troubleshooting.md",
+    "hash": "999d22300d161c8abb37ddc217aab3a9",
+    "last_scraped": "2026-03-20 15:21:33"
+  },
+  "https://docs.openclaw.ai/tools/browser-login": {
+    "title": "Browser Login",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/browser-login.md",
+    "hash": "e97a4e035658ccf19048a64101fde59b",
+    "last_scraped": "2026-03-20 15:21:34"
+  },
+  "https://docs.openclaw.ai/tools/browser-wsl2-windows-remote-cdp-troubleshooting": {
+    "title": "WSL2 + Windows + remote Chrome CDP troubleshooting",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/browser-wsl2-windows-remote-cdp-troubleshooting.md",
+    "hash": "e1a18bea438295458857f78aeb20a3bf",
+    "last_scraped": "2026-03-20 15:21:35"
+  },
+  "https://docs.openclaw.ai/tools/tavily": {
+    "title": "Tavily",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/tavily.md",
+    "hash": "88313d763e22c5c4cca0071a846735f0",
+    "last_scraped": "2026-03-20 15:21:36"
+  },
+  "https://docs.openclaw.ai/gateway/heartbeat": {
+    "title": "Heartbeat",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/heartbeat.md",
+    "hash": "d9de529811c2f32315d21f307e9828a8",
+    "last_scraped": "2026-03-20 15:21:36"
+  },
+  "https://docs.openclaw.ai/tools/brave-search": {
+    "title": "Brave Search",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/brave-search.md",
+    "hash": "359612ec289955ef3ed6616f33012bb5",
+    "last_scraped": "2026-03-20 15:21:37"
+  },
+  "https://docs.openclaw.ai/tools/perplexity-search": {
+    "title": "Perplexity Search",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/perplexity-search.md",
+    "hash": "153ea7682203a4f2340ae41ce177185c",
+    "last_scraped": "2026-03-20 15:21:38"
+  },
+  "https://docs.openclaw.ai/tools/firecrawl": {
+    "title": "Firecrawl",
+    "filepath": "/home/ubuntu/openclaw_docs/tools/firecrawl.md",
+    "hash": "e83c07e191dcabfec6771bb8c3bd5b5b",
+    "last_scraped": "2026-03-20 15:21:39"
+  },
+  "https://docs.openclaw.ai/providers/index": {
+    "title": "Provider Directory",
+    "filepath": "/home/ubuntu/openclaw_docs/providers/index.md",
+    "hash": "bc85168be7e40d226cac72a1385f938a",
+    "last_scraped": "2026-03-20 15:21:40"
+  },
+  "https://docs.openclaw.ai/gateway/bonjour": {
+    "title": "Bonjour Discovery",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/bonjour.md",
+    "hash": "66ad625c0e82b59caba85a661eaa78f3",
+    "last_scraped": "2026-03-20 15:21:40"
+  },
+  "https://docs.openclaw.ai/auth-credential-semantics": {
+    "title": "Auth Credential Semantics",
+    "filepath": "/home/ubuntu/openclaw_docs/auth-credential-semantics.md",
+    "hash": "81d51d6cccaa2904cf097f6ccd7b50e2",
+    "last_scraped": "2026-03-20 15:21:41"
+  },
+  "https://docs.openclaw.ai/gateway/gateway-lock": {
+    "title": "Gateway Lock",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/gateway-lock.md",
+    "hash": "a6ecba967e00053255758b69099ebb7e",
+    "last_scraped": "2026-03-20 15:21:42"
+  },
+  "https://docs.openclaw.ai/gateway/configuration-examples": {
+    "title": "Configuration Examples",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/configuration-examples.md",
+    "hash": "16f4eca3df3332e3bfcd568b19ea0c4f",
+    "last_scraped": "2026-03-20 15:21:43"
+  },
+  "https://docs.openclaw.ai/gateway/secrets-plan-contract": {
+    "title": "Secrets Apply Plan Contract",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/secrets-plan-contract.md",
+    "hash": "14ea52bb85fbb4a96063009cb01099fe",
+    "last_scraped": "2026-03-20 15:21:44"
+  },
+  "https://docs.openclaw.ai/gateway/pairing": {
+    "title": "Gateway-Owned Pairing",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/pairing.md",
+    "hash": "7a57fa884549456e1d4bbab64842fd34",
+    "last_scraped": "2026-03-20 15:21:44"
+  },
+  "https://docs.openclaw.ai/nodes/index": {
+    "title": "Nodes",
+    "filepath": "/home/ubuntu/openclaw_docs/nodes/index.md",
+    "hash": "c8fdb1e161eae1d63408ac5552070467",
+    "last_scraped": "2026-03-20 15:21:46"
+  },
+  "https://docs.openclaw.ai/channels/index": {
+    "title": "Chat Channels",
+    "filepath": "/home/ubuntu/openclaw_docs/channels/index.md",
+    "hash": "d5284f20167a3c9f5a74e065dea41f72",
+    "last_scraped": "2026-03-20 15:21:46"
+  },
+  "https://docs.openclaw.ai/gateway/network-model": {
+    "title": "Network model",
+    "filepath": "/home/ubuntu/openclaw_docs/gateway/network-model.md",
+    "hash": "3a7dfc68f7b0fee9e91714b1e3700ba5",
+    "last_scraped": "2026-03-20 15:21:47"
+  },
+  "https://docs.openclaw.ai/network": {
+    "title": "Network",
+    "filepath": "/home/ubuntu/openclaw_docs/network.md",
+    "hash": "90f2d0cffc8c596aeb8c6f098e3224a2",
+    "last_scraped": "2026-03-20 15:21:48"
+  }
+}

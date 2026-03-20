@@ -1,0 +1,53 @@
+name: Weekly Documentation Update
+
+on:
+  schedule:
+    # Runs every Monday at 06:00 UTC
+    - cron: '0 6 * * 1'
+  workflow_dispatch:
+    # Allow manual triggering from the GitHub Actions UI
+
+jobs:
+  update-docs:
+    name: Scrape and Update Openclaw Documentation
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install Python dependencies
+        run: |
+          pip install requests beautifulsoup4 html2text markdownify
+
+      - name: Run documentation scraper
+        run: |
+          python .scripts/scrape_docs.py
+
+      - name: Check for changes
+        id: check_changes
+        run: |
+          git diff --quiet && echo "no_changes=true" >> $GITHUB_OUTPUT || echo "no_changes=false" >> $GITHUB_OUTPUT
+          git status --short | head -30
+
+      - name: Commit and push if changes detected
+        if: steps.check_changes.outputs.no_changes == 'false'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          CHANGED=$(git diff --cached --name-only | wc -l)
+          git commit -m "docs: weekly update — ${CHANGED} file(s) changed [$(date '+%Y-%m-%d')]"
+          git push
+
+      - name: No changes detected
+        if: steps.check_changes.outputs.no_changes == 'true'
+        run: |
+          echo "No documentation changes detected. Repository is up to date."

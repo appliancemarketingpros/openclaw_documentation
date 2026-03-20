@@ -1,0 +1,217 @@
+---
+title: Moonshot AI
+source_url: https://docs.openclaw.ai/providers/moonshot
+scraped_at: 2026-03-20
+---
+
+[OpenClaw home page](</>)
+
+![US](https://d3gk2c5xim1je2.cloudfront.net/flags/US.svg)
+
+English
+
+Search...
+
+⌘K
+
+Search...
+
+Navigation
+
+Providers
+
+Moonshot AI
+
+# 
+
+​
+
+Moonshot AI (Kimi)
+
+Moonshot provides the Kimi API with OpenAI-compatible endpoints. Configure the provider and set the default model to `moonshot/kimi-k2.5`, or use Kimi Coding with `kimi-coding/k2p5`. Current Kimi K2 model IDs:
+
+  * `kimi-k2.5`
+  * `kimi-k2-0905-preview`
+  * `kimi-k2-turbo-preview`
+  * `kimi-k2-thinking`
+  * `kimi-k2-thinking-turbo`
+
+
+Copy
+[code]
+    openclaw onboard --auth-choice moonshot-api-key
+    
+[/code]
+
+Kimi Coding:
+
+Copy
+[code]
+    openclaw onboard --auth-choice kimi-code-api-key
+    
+[/code]
+
+Note: Moonshot and Kimi Coding are separate providers. Keys are not interchangeable, endpoints differ, and model refs differ (Moonshot uses `moonshot/...`, Kimi Coding uses `kimi-coding/...`).
+
+## 
+
+​
+
+Config snippet (Moonshot API)
+
+Copy
+[code]
+    {
+      env: { MOONSHOT_API_KEY: "sk-..." },
+      agents: {
+        defaults: {
+          model: { primary: "moonshot/kimi-k2.5" },
+          models: {
+            // moonshot-kimi-k2-aliases:start
+            "moonshot/kimi-k2.5": { alias: "Kimi K2.5" },
+            "moonshot/kimi-k2-0905-preview": { alias: "Kimi K2" },
+            "moonshot/kimi-k2-turbo-preview": { alias: "Kimi K2 Turbo" },
+            "moonshot/kimi-k2-thinking": { alias: "Kimi K2 Thinking" },
+            "moonshot/kimi-k2-thinking-turbo": { alias: "Kimi K2 Thinking Turbo" },
+            // moonshot-kimi-k2-aliases:end
+          },
+        },
+      },
+      models: {
+        mode: "merge",
+        providers: {
+          moonshot: {
+            baseUrl: "https://api.moonshot.ai/v1",
+            apiKey: "${MOONSHOT_API_KEY}",
+            api: "openai-completions",
+            models: [
+              // moonshot-kimi-k2-models:start
+              {
+                id: "kimi-k2.5",
+                name: "Kimi K2.5",
+                reasoning: false,
+                input: ["text"],
+                cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+                contextWindow: 256000,
+                maxTokens: 8192,
+              },
+              {
+                id: "kimi-k2-0905-preview",
+                name: "Kimi K2 0905 Preview",
+                reasoning: false,
+                input: ["text"],
+                cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+                contextWindow: 256000,
+                maxTokens: 8192,
+              },
+              {
+                id: "kimi-k2-turbo-preview",
+                name: "Kimi K2 Turbo",
+                reasoning: false,
+                input: ["text"],
+                cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+                contextWindow: 256000,
+                maxTokens: 8192,
+              },
+              {
+                id: "kimi-k2-thinking",
+                name: "Kimi K2 Thinking",
+                reasoning: true,
+                input: ["text"],
+                cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+                contextWindow: 256000,
+                maxTokens: 8192,
+              },
+              {
+                id: "kimi-k2-thinking-turbo",
+                name: "Kimi K2 Thinking Turbo",
+                reasoning: true,
+                input: ["text"],
+                cost: { input: 0, output: 0, cacheRead: 0, cacheWrite: 0 },
+                contextWindow: 256000,
+                maxTokens: 8192,
+              },
+              // moonshot-kimi-k2-models:end
+            ],
+          },
+        },
+      },
+    }
+    
+[/code]
+
+## 
+
+​
+
+Kimi Coding
+
+Copy
+[code]
+    {
+      env: { KIMI_API_KEY: "sk-..." },
+      agents: {
+        defaults: {
+          model: { primary: "kimi-coding/k2p5" },
+          models: {
+            "kimi-coding/k2p5": { alias: "Kimi K2.5" },
+          },
+        },
+      },
+    }
+    
+[/code]
+
+## 
+
+​
+
+Notes
+
+  * Moonshot model refs use `moonshot/<modelId>`. Kimi Coding model refs use `kimi-coding/<modelId>`.
+  * Override pricing and context metadata in `models.providers` if needed.
+  * If Moonshot publishes different context limits for a model, adjust `contextWindow` accordingly.
+  * Use `https://api.moonshot.ai/v1` for the international endpoint, and `https://api.moonshot.cn/v1` for the China endpoint.
+
+
+## 
+
+​
+
+Native thinking mode (Moonshot)
+
+Moonshot Kimi supports binary native thinking:
+
+  * `thinking: { type: "enabled" }`
+  * `thinking: { type: "disabled" }`
+
+Configure it per model via `agents.defaults.models.<provider/model>.params`:
+
+Copy
+[code]
+    {
+      agents: {
+        defaults: {
+          models: {
+            "moonshot/kimi-k2.5": {
+              params: {
+                thinking: { type: "disabled" },
+              },
+            },
+          },
+        },
+      },
+    }
+    
+[/code]
+
+OpenClaw also maps runtime `/think` levels for Moonshot:
+
+  * `/think off` -> `thinking.type=disabled`
+  * any non-off thinking level -> `thinking.type=enabled`
+
+When Moonshot thinking is enabled, `tool_choice` must be `auto` or `none`. OpenClaw normalizes incompatible `tool_choice` values to `auto` for compatibility.
+
+[Model Studio](</providers/modelstudio>)[Mistral](</providers/mistral>)
+
+⌘I
