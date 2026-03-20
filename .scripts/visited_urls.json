@@ -3,127 +3,127 @@
     "title": "OpenClaw",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/index.md",
     "hash": "a4b58bd2dbe775e1656cc5a1d8e7703d",
-    "last_scraped": "2026-03-20 19:59:15"
+    "last_scraped": "2026-03-20 20:01:48"
   },
   "https://docs.openclaw.ai/install": {
     "title": "Install",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/install.md",
     "hash": "0ec39ee80c6a4e141c434d66cc8e7f2b",
-    "last_scraped": "2026-03-20 19:59:16"
+    "last_scraped": "2026-03-20 20:01:49"
   },
   "https://docs.openclaw.ai/channels": {
     "title": "Chat Channels",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/channels.md",
     "hash": "cd1a76e38b94d2c265d8882e5e471fcb",
-    "last_scraped": "2026-03-20 19:59:16"
+    "last_scraped": "2026-03-20 20:01:49"
   },
   "https://docs.openclaw.ai/concepts/architecture": {
     "title": "Gateway Architecture",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/architecture.md",
     "hash": "d9c3b7c10de49802356126fd6ff64cbc",
-    "last_scraped": "2026-03-20 19:59:17"
+    "last_scraped": "2026-03-20 20:01:50"
   },
   "https://docs.openclaw.ai/tools": {
     "title": "Tools and Plugins",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tools.md",
     "hash": "f69b2dbf6f9e8acda9dcf0ceee7ad5dd",
-    "last_scraped": "2026-03-20 19:59:18"
+    "last_scraped": "2026-03-20 20:01:51"
   },
   "https://docs.openclaw.ai/providers": {
     "title": "Provider Directory",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers.md",
     "hash": "696ca17a889a7b9edd646b19072c5de5",
-    "last_scraped": "2026-03-20 19:59:18"
+    "last_scraped": "2026-03-20 20:01:51"
   },
   "https://docs.openclaw.ai/platforms": {
     "title": "Platforms",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/platforms.md",
     "hash": "950e549e327872d9d73cd5aaee69b5d3",
-    "last_scraped": "2026-03-20 19:59:19"
+    "last_scraped": "2026-03-20 20:01:52"
   },
   "https://docs.openclaw.ai/gateway": {
     "title": "Gateway Runbook",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway.md",
     "hash": "52a2419729c5c8f144ce89683f749d80",
-    "last_scraped": "2026-03-20 19:59:20"
+    "last_scraped": "2026-03-20 20:01:53"
   },
   "https://docs.openclaw.ai/cli": {
     "title": "CLI Reference",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/cli.md",
     "hash": "77665c85a450a65c4e0831b6a1828c11",
-    "last_scraped": "2026-03-20 19:59:21"
+    "last_scraped": "2026-03-20 20:01:54"
   },
   "https://docs.openclaw.ai/help": {
     "title": "Help",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/help.md",
     "hash": "c6f44714ce31734a285b7b44d331de7c",
-    "last_scraped": "2026-03-20 19:59:21"
+    "last_scraped": "2026-03-20 20:01:54"
   },
   "https://docs.openclaw.ai/start/getting-started": {
     "title": "Getting Started",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/getting-started.md",
     "hash": "84a71de494c887ec3fb3db23a514d713",
-    "last_scraped": "2026-03-20 19:59:22"
+    "last_scraped": "2026-03-20 20:01:55"
   },
   "https://docs.openclaw.ai/start/onboarding-overview": {
     "title": "Onboarding Overview",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/onboarding-overview.md",
     "hash": "70a0f0f38bb666f0c527005fd910df42",
-    "last_scraped": "2026-03-20 19:59:22"
+    "last_scraped": "2026-03-20 20:01:55"
   },
   "https://docs.openclaw.ai/start/wizard": {
     "title": "Onboarding (CLI)",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard.md",
     "hash": "de426a89d93e4870cd3bba5c8d2d1983",
-    "last_scraped": "2026-03-20 19:59:23"
+    "last_scraped": "2026-03-20 20:01:56"
   },
   "https://docs.openclaw.ai/start/onboarding": {
     "title": "Onboarding (macOS App)",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/onboarding.md",
     "hash": "314410ff604dbafbfc6f052ebbf1a26b",
-    "last_scraped": "2026-03-20 19:59:24"
+    "last_scraped": "2026-03-20 20:01:57"
   },
   "https://docs.openclaw.ai/start/openclaw": {
     "title": "Personal Assistant Setup",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/openclaw.md",
     "hash": "9c85f70ca955998a6af4a97469ef1042",
-    "last_scraped": "2026-03-20 19:59:24"
+    "last_scraped": "2026-03-20 20:01:57"
   },
   "https://docs.openclaw.ai/start/wizard-cli-reference": {
     "title": "CLI Setup Reference",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard-cli-reference.md",
     "hash": "e6b29a51508cc8340f6b398265bfe163",
-    "last_scraped": "2026-03-20 19:59:25"
+    "last_scraped": "2026-03-20 20:01:58"
   },
   "https://docs.openclaw.ai/start/wizard-cli-automation": {
     "title": "CLI Automation",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard-cli-automation.md",
     "hash": "cd1050988afae3c936dd50efab7c0e34",
-    "last_scraped": "2026-03-20 19:59:26"
+    "last_scraped": "2026-03-20 20:01:59"
   },
   "https://docs.openclaw.ai/start/showcase": {
     "title": "Showcase",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/showcase.md",
     "hash": "2a0c4a6f0498e9e6d12c057cfa5419a6",
-    "last_scraped": "2026-03-20 19:59:27"
+    "last_scraped": "2026-03-20 20:02:00"
   },
   "https://docs.openclaw.ai/concepts/features": {
     "title": "Features",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/features.md",
     "hash": "8db0106f214bd247784041e7df0be467",
-    "last_scraped": "2026-03-20 19:59:27"
+    "last_scraped": "2026-03-20 20:02:00"
   },
   "https://docs.openclaw.ai/start/setup": {
     "title": "Setup",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/setup.md",
     "hash": "dd4baa3abc2083790ce060d03aff9c3b",
-    "last_scraped": "2026-03-20 19:59:28"
+    "last_scraped": "2026-03-20 20:02:01"
   },
   "https://docs.openclaw.ai/vps": {
     "title": "Linux Server",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vps.md",
     "hash": "8e9ccce2b481b1a95199e6f9c5ee12f9",
-    "last_scraped": "2026-03-20 19:59:29"
+    "last_scraped": "2026-03-20 20:02:02"
   },
   "https://docs.openclaw.ai/web": {
     "title": "Web",
