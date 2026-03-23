@@ -1,7 +1,7 @@
 ---
 title: Gateway Architecture
 source_url: https://docs.openclaw.ai/concepts/architecture
-scraped_at: 2026-03-20
+scraped_at: 2026-03-23
 ---
 
 [OpenClaw home page](</>)

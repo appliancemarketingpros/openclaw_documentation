@@ -1,7 +1,7 @@
 ---
 title: Tools and Plugins
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-03-20
+scraped_at: 2026-03-23
 ---
 
 [OpenClaw home page](</>)
@@ -78,6 +78,8 @@ Tool| What it does| Page
 `image` / `image_generate`| Analyze or generate images|   
 `sessions_*` / `agents_list`| Session management, sub-agents| [Sub-agents](</tools/subagents>)  
   
+For image work, use `image` for analysis and `image_generate` for generation or editing. If you target `openai/*`, `google/*`, `fal/*`, or another non-default image provider, configure that provider’s auth/API key first.
+
 ### 
 
 ​

@@ -1,7 +1,7 @@
 ---
 title: CLI Setup Reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-03-20
+scraped_at: 2026-03-23
 ---
 
 [OpenClaw home page](</>)
@@ -207,7 +207,7 @@ Browser flow; paste `code#state`.Sets `agents.defaults.model` to `openai-codex/g
 
 OpenAI API key
 
-Uses `OPENAI_API_KEY` if present or prompts for a key, then stores the credential in auth profiles.Sets `agents.defaults.model` to `openai/gpt-5.1-codex` when model is unset, `openai/*`, or `openai-codex/*`.
+Uses `OPENAI_API_KEY` if present or prompts for a key, then stores the credential in auth profiles.Sets `agents.defaults.model` to `openai/gpt-5.4` when model is unset, `openai/*`, or `openai-codex/*`.
 
 xAI (Grok) API key
 
