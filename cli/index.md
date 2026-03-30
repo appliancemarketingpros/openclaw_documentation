@@ -1,6 +1,6 @@
 ---
 title: CLI Reference
-source_url: https://docs.openclaw.ai/cli
+source_url: https://docs.openclaw.ai/cli/index
 scraped_at: 2026-03-30
 ---
 

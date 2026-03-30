@@ -25,6 +25,7 @@
 
 ### Install
 
+- [ClawDock](install/clawdock.md) — [source](https://docs.openclaw.ai/install/clawdock)
 - [Install](install.md) — [source](https://docs.openclaw.ai/install)
 
 ### Channels
@@ -38,14 +39,12 @@
 
 ### Tools
 
-- [Code Execution](tools/code-execution.md) — [source](https://docs.openclaw.ai/tools/code-execution)
+- [Image Generation](tools/image-generation.md) — [source](https://docs.openclaw.ai/tools/image-generation)
 - [Tools and Plugins](tools.md) — [source](https://docs.openclaw.ai/tools)
 
 ### Providers
 
-- [Deepseek](providers/deepseek.md) — [source](https://docs.openclaw.ai/providers/deepseek)
 - [Provider Directory](providers.md) — [source](https://docs.openclaw.ai/providers)
-- [Qwen / Model Studio](providers/qwen_modelstudio.md) — [source](https://docs.openclaw.ai/providers/qwen_modelstudio)
 
 ### Platforms
 
@@ -58,7 +57,7 @@
 ### Cli
 
 - [CLI Reference](cli.md) — [source](https://docs.openclaw.ai/cli)
-- [mcp](cli/mcp.md) — [source](https://docs.openclaw.ai/cli/mcp)
+- [CLI Reference](cli/index.md) — [source](https://docs.openclaw.ai/cli/index)
 
 ### Help
 
@@ -67,6 +66,11 @@
 ### Vps
 
 - [Linux Server](vps.md) — [source](https://docs.openclaw.ai/vps)
+
+### Automation
+
+- [Automation Overview](automation.md) — [source](https://docs.openclaw.ai/automation)
+- [Background Tasks](automation/tasks.md) — [source](https://docs.openclaw.ai/automation/tasks)
 
 ---
 
