@@ -1,7 +1,7 @@
 ---
 title: Provider Directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -40,8 +40,7 @@ Quick start
   2. Set the default model:
 
 
-Copy
-[code]
+[code] 
     {
       agents: { defaults: { model: { primary: "anthropic/claude-opus-4-6" } } },
     }
@@ -57,6 +56,8 @@ Provider docs
   * [Amazon Bedrock](</providers/bedrock>)
   * [Anthropic (API + Claude Code CLI)](</providers/anthropic>)
   * [Cloudflare AI Gateway](</providers/cloudflare-ai-gateway>)
+  * [DeepSeek](</providers/deepseek>)
+  * [GitHub Copilot](</providers/github-copilot>)
   * [GLM models](</providers/glm>)
   * [Google (Gemini)](</providers/google>)
   * [Groq (LPU inference)](</providers/groq>)
@@ -65,20 +66,21 @@ Provider docs
   * [LiteLLM (unified gateway)](</providers/litellm>)
   * [MiniMax](</providers/minimax>)
   * [Mistral](</providers/mistral>)
-  * [Model Studio (Alibaba Cloud)](</providers/modelstudio>)
   * [Moonshot AI (Kimi + Kimi Coding)](</providers/moonshot>)
   * [NVIDIA](</providers/nvidia>)
   * [Ollama (cloud + local models)](</providers/ollama>)
   * [OpenAI (API + Codex)](</providers/openai>)
-  * [OpenCode (Zen + Go)](</providers/opencode>)
+  * [OpenCode](</providers/opencode>)
+  * [OpenCode Go](</providers/opencode-go>)
   * [OpenRouter](</providers/openrouter>)
   * [Perplexity (web search)](</providers/perplexity-provider>)
   * [Qianfan](</providers/qianfan>)
-  * [Qwen (OAuth)](</providers/qwen>)
+  * [Qwen / Model Studio (Alibaba Cloud)](</providers/qwen_modelstudio>)
   * [SGLang (local models)](</providers/sglang>)
+  * [Synthetic](</providers/synthetic>)
   * [Together AI](</providers/together>)
-  * [Vercel AI Gateway](</providers/vercel-ai-gateway>)
   * [Venice (Venice AI, privacy-focused)](</providers/venice>)
+  * [Vercel AI Gateway](</providers/vercel-ai-gateway>)
   * [vLLM (local models)](</providers/vllm>)
   * [Volcengine (Doubao)](</providers/volcengine>)
   * [xAI](</providers/xai>)

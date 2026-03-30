@@ -1,7 +1,7 @@
 ---
 title: OpenClaw
 source_url: https://docs.openclaw.ai/
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -60,7 +60,7 @@ OpenClaw is a **self-hosted gateway** that connects your favorite chat apps — 
   * **Agent-native** : built for coding agents with tool use, sessions, memory, and multi-agent routing
   * **Open source** : MIT licensed, community-driven
 
-**What do you need?** Node 24 (recommended), or Node 22 LTS (`22.16+`) for compatibility, an API key from your chosen provider, and 5 minutes. For best quality and security, use the strongest latest-generation model available.
+**What do you need?** Node 24 (recommended), or Node 22 LTS (`22.14+`) for compatibility, an API key from your chosen provider, and 5 minutes. For best quality and security, use the strongest latest-generation model available.
 
 ## 
 
@@ -109,8 +109,6 @@ Quick start
 1
 
 Install OpenClaw
-
-Copy
 [code]
     npm install -g openclaw@latest
     
@@ -119,8 +117,6 @@ Copy
 2
 
 Onboard and install the service
-
-Copy
 [code]
     openclaw onboard --install-daemon
     
@@ -131,8 +127,6 @@ Copy
 Chat
 
 Open the Control UI in your browser and send a message:
-
-Copy
 [code]
     openclaw dashboard
     
@@ -168,9 +162,7 @@ Config lives at `~/.openclaw/openclaw.json`.
   * If you want to lock it down, start with `channels.whatsapp.allowFrom` and (for groups) mention rules.
 
 Example:
-
-Copy
-[code]
+[code] 
     {
       channels: {
         whatsapp: {

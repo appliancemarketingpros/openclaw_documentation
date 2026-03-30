@@ -1,7 +1,7 @@
 ---
 title: Gateway Architecture
 source_url: https://docs.openclaw.ai/concepts/architecture
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -154,9 +154,7 @@ Remote access
 
   * Preferred: Tailscale or VPN.
   * Alternative: SSH tunnel
-
-Copy
-[code]ssh -N -L 18789:127.0.0.1:18789 user@host
+[code] ssh -N -L 18789:127.0.0.1:18789 user@host
         
 [/code]
 

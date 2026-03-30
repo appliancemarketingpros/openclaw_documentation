@@ -1,7 +1,7 @@
 ---
 title: Linux Server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -120,9 +120,7 @@ You can keep the Gateway in the cloud and pair **nodes** on your local devices (
 Startup tuning for small VMs and ARM hosts
 
 If CLI commands feel slow on low-power VMs (or ARM hosts), enable Node’s module compile cache:
-
-Copy
-[code]
+[code] 
     grep -q 'NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cache' ~/.bashrc || cat >> ~/.bashrc <<'EOF'
     export NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cache
     mkdir -p /var/tmp/openclaw-compile-cache
@@ -156,15 +154,11 @@ For VM hosts using `systemd`, consider:
   * Prefer SSD-backed disks for state/cache paths to reduce random-I/O cold-start penalties.
 
 Example:
-
-Copy
-[code]
+[code] 
     sudo systemctl edit openclaw
     
 [/code]
-
-Copy
-[code]
+[code] 
     [Service]
     Environment=OPENCLAW_NO_RESPAWN=1
     Environment=NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cache

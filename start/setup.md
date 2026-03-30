@@ -1,7 +1,7 @@
 ---
 title: Setup
 source_url: https://docs.openclaw.ai/start/setup
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -47,7 +47,7 @@ TL;DR
 
 Prereqs (from source)
 
-  * Node 24 recommended (Node 22 LTS, currently `22.16+`, still supported)
+  * Node 24 recommended (Node 22 LTS, currently `22.14+`, still supported)
   * `pnpm`
   * Docker (optional; only for containerized setup/e2e — see [Docker](</install/docker>))
 
@@ -64,17 +64,13 @@ If you want “100% tailored to me” _and_ easy updates, keep your customizatio
   * **Workspace:** `~/.openclaw/workspace` (skills, prompts, memories; make it a private git repo)
 
 Bootstrap once:
-
-Copy
-[code]
+[code] 
     openclaw setup
     
 [/code]
 
 From inside this repo, use the local CLI entry:
-
-Copy
-[code]
+[code] 
     openclaw setup
     
 [/code]
@@ -88,9 +84,7 @@ If you don’t have a global install yet, run it via `pnpm openclaw setup`.
 Run the Gateway from this repo
 
 After `pnpm build`, you can run the packaged CLI directly:
-
-Copy
-[code]
+[code] 
     node openclaw.mjs gateway --port 18789 --verbose
     
 [/code]
@@ -107,8 +101,7 @@ Stable workflow (macOS app first)
   4. Link surfaces (example: WhatsApp):
 
 
-Copy
-[code]
+[code] 
     openclaw channels login
     
 [/code]
@@ -116,8 +109,7 @@ Copy
   5. Sanity check:
 
 
-Copy
-[code]
+[code] 
     openclaw health
     
 [/code]
@@ -142,9 +134,7 @@ Goal: work on the TypeScript Gateway, get hot reload, keep the macOS app UI atta
 0) (Optional) Run the macOS app from source too
 
 If you also want the macOS app on the bleeding edge:
-
-Copy
-[code]
+[code] 
     ./scripts/restart-mac.sh
     
 [/code]
@@ -154,9 +144,7 @@ Copy
 ​
 
 1) Start the dev Gateway
-
-Copy
-[code]
+[code] 
     pnpm install
     pnpm gateway:watch
     
@@ -185,8 +173,7 @@ In **OpenClaw.app** :
   * Or via CLI:
 
 
-Copy
-[code]
+[code] 
     openclaw health
     
 [/code]
@@ -241,9 +228,7 @@ Updating (without wrecking your setup)
 Linux (systemd user service)
 
 Linux installs use a systemd **user** service. By default, systemd stops user services on logout/idle, which kills the Gateway. Onboarding attempts to enable lingering for you (may prompt for sudo). If it’s still off, run:
-
-Copy
-[code]
+[code] 
     sudo loginctl enable-linger $USER
     
 [/code]

@@ -1,7 +1,7 @@
 ---
 title: CLI Automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -37,9 +37,7 @@ Use `--non-interactive` to automate `openclaw onboard`.
 ​
 
 Baseline non-interactive example
-
-Copy
-[code]
+[code] 
     openclaw onboard --non-interactive \
       --mode local \
       --auth-choice apiKey \
@@ -54,9 +52,7 @@ Copy
 [/code]
 
 Add `--json` for a machine-readable summary. Use `--secret-input-mode ref` to store env-backed refs in auth profiles instead of plaintext values. Interactive selection between env refs and configured provider refs (`file` or `exec`) is available in the onboarding flow. In non-interactive `ref` mode, provider env vars must be set in the process environment. Passing inline key flags without the matching env var now fails fast. Example:
-
-Copy
-[code]
+[code] 
     openclaw onboard --non-interactive \
       --mode local \
       --auth-choice openai-api-key \
@@ -72,8 +68,6 @@ Copy
 Provider-specific examples
 
 Gemini example
-
-Copy
 [code]
     openclaw onboard --non-interactive \
       --mode local \
@@ -85,8 +79,6 @@ Copy
 [/code]
 
 Z.AI example
-
-Copy
 [code]
     openclaw onboard --non-interactive \
       --mode local \
@@ -98,8 +90,6 @@ Copy
 [/code]
 
 Vercel AI Gateway example
-
-Copy
 [code]
     openclaw onboard --non-interactive \
       --mode local \
@@ -111,8 +101,6 @@ Copy
 [/code]
 
 Cloudflare AI Gateway example
-
-Copy
 [code]
     openclaw onboard --non-interactive \
       --mode local \
@@ -126,8 +114,6 @@ Copy
 [/code]
 
 Moonshot example
-
-Copy
 [code]
     openclaw onboard --non-interactive \
       --mode local \
@@ -139,8 +125,6 @@ Copy
 [/code]
 
 Mistral example
-
-Copy
 [code]
     openclaw onboard --non-interactive \
       --mode local \
@@ -152,8 +136,6 @@ Copy
 [/code]
 
 Synthetic example
-
-Copy
 [code]
     openclaw onboard --non-interactive \
       --mode local \
@@ -165,8 +147,6 @@ Copy
 [/code]
 
 OpenCode example
-
-Copy
 [code]
     openclaw onboard --non-interactive \
       --mode local \
@@ -180,8 +160,6 @@ Copy
 Swap to `--auth-choice opencode-go --opencode-go-api-key "$OPENCODE_API_KEY"` for the Go catalog.
 
 Ollama example
-
-Copy
 [code]
     openclaw onboard --non-interactive \
       --mode local \
@@ -194,8 +172,6 @@ Copy
 [/code]
 
 Custom provider example
-
-Copy
 [code]
     openclaw onboard --non-interactive \
       --mode local \
@@ -211,8 +187,6 @@ Copy
 [/code]
 
 `--custom-api-key` is optional. If omitted, onboarding checks `CUSTOM_API_KEY`.Ref-mode variant:
-
-Copy
 [code]
     export CUSTOM_API_KEY="your-key"
     openclaw onboard --non-interactive \
@@ -237,9 +211,7 @@ In this mode, onboarding stores `apiKey` as `{ source: "env", provider: "default
 Add another agent
 
 Use `openclaw agents add <name>` to create a separate agent with its own workspace, sessions, and auth profiles. Running without `--workspace` launches the wizard.
-
-Copy
-[code]
+[code] 
     openclaw agents add work \
       --workspace ~/.openclaw/workspace-work \
       --model openai/gpt-5.2 \

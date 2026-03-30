@@ -3,7 +3,7 @@
 > This repository contains a local Markdown mirror of the official [Openclaw documentation](https://docs.openclaw.ai/).
 > It is automatically updated every Monday to reflect any changes in the upstream documentation.
 
-**Last updated:** 2026-03-23
+**Last updated:** 2026-03-30
 
 ## Documentation Index
 
@@ -38,11 +38,14 @@
 
 ### Tools
 
+- [Code Execution](tools/code-execution.md) — [source](https://docs.openclaw.ai/tools/code-execution)
 - [Tools and Plugins](tools.md) — [source](https://docs.openclaw.ai/tools)
 
 ### Providers
 
+- [Deepseek](providers/deepseek.md) — [source](https://docs.openclaw.ai/providers/deepseek)
 - [Provider Directory](providers.md) — [source](https://docs.openclaw.ai/providers)
+- [Qwen / Model Studio](providers/qwen_modelstudio.md) — [source](https://docs.openclaw.ai/providers/qwen_modelstudio)
 
 ### Platforms
 
@@ -55,6 +58,7 @@
 ### Cli
 
 - [CLI Reference](cli.md) — [source](https://docs.openclaw.ai/cli)
+- [mcp](cli/mcp.md) — [source](https://docs.openclaw.ai/cli/mcp)
 
 ### Help
 

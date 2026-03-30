@@ -1,7 +1,7 @@
 ---
 title: Onboarding (CLI)
 source_url: https://docs.openclaw.ai/start/wizard
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -29,9 +29,7 @@ Onboarding (CLI)
 Onboarding (CLI)
 
 CLI onboarding is the **recommended** way to set up OpenClaw on macOS, Linux, or Windows (via WSL2; strongly recommended). It configures a local Gateway or a remote Gateway connection, plus channels, skills, and workspace defaults in one guided flow.
-
-Copy
-[code]
+[code] 
     openclaw onboard
     
 [/code]
@@ -39,9 +37,7 @@ Copy
 Fastest first chat: open the Control UI (no channel setup needed). Run `openclaw dashboard` and chat in the browser. Docs: [Dashboard](</web/dashboard>).
 
 To reconfigure later:
-
-Copy
-[code]
+[code] 
     openclaw configure
     openclaw agents add <name>
     

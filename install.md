@@ -1,7 +1,7 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -41,13 +41,10 @@ The fastest way to install. It detects your OS, installs Node if needed, install
   * Windows (PowerShell)
 
 
-Copy
 [code]
     curl -fsSL https://openclaw.ai/install.sh | bash
     
 [/code]
-
-Copy
 [code]
     iwr -useb https://openclaw.ai/install.ps1 | iex
     
@@ -60,13 +57,10 @@ To install without running onboarding:
   * Windows (PowerShell)
 
 
-Copy
 [code]
     curl -fsSL https://openclaw.ai/install.sh | bash -s -- --no-onboard
     
 [/code]
-
-Copy
 [code]
     & ([scriptblock]::Create((iwr -useb https://openclaw.ai/install.ps1))) -NoOnboard
     
@@ -80,7 +74,7 @@ For all flags and CI/automation options, see [Installer internals](</install/ins
 
 System requirements
 
-  * **Node 24** (recommended) or Node 22.16+ — the installer script handles this automatically
+  * **Node 24** (recommended) or Node 22.14+ — the installer script handles this automatically
   * **macOS, Linux, or Windows** — both native Windows and WSL2 are supported; WSL2 is more stable. See [Windows](</platforms/windows>).
   * `pnpm` is only needed if you build from source
 
@@ -104,14 +98,11 @@ If you already manage Node yourself:
   * pnpm
 
 
-Copy
 [code]
     npm install -g openclaw@latest
     openclaw onboard --install-daemon
     
 [/code]
-
-Copy
 [code]
     pnpm add -g openclaw@latest
     pnpm approve-builds -g
@@ -124,8 +115,6 @@ pnpm requires explicit approval for packages with build scripts. Run `pnpm appro
 Troubleshooting: sharp build errors (npm)
 
 If `sharp` fails due to a globally installed libvips:
-
-Copy
 [code]
     SHARP_IGNORE_GLOBAL_LIBVIPS=1 npm install -g openclaw@latest
     
@@ -138,9 +127,7 @@ Copy
 From source
 
 For contributors or anyone who wants to run from a local checkout:
-
-Copy
-[code]
+[code] 
     git clone https://github.com/openclaw/openclaw.git
     cd openclaw
     pnpm install && pnpm ui:build && pnpm build
@@ -156,9 +143,7 @@ Or skip the link and use `pnpm openclaw ...` from inside the repo. See [Setup](<
 ​
 
 Install from GitHub main
-
-Copy
-[code]
+[code] 
     npm install -g github:openclaw/openclaw#main
     
 [/code]
@@ -194,9 +179,7 @@ CLI-only usage via the Bun runtime.
 ​
 
 Verify the install
-
-Copy
-[code]
+[code] 
     openclaw --version      # confirm the CLI is available
     openclaw doctor         # check for config issues
     openclaw gateway status # verify the Gateway is running
@@ -276,9 +259,7 @@ Remove OpenClaw completely.
 Troubleshooting: `openclaw` not found
 
 If the install succeeded but `openclaw` is not found in your terminal:
-
-Copy
-[code]
+[code] 
     node -v           # Node installed?
     npm prefix -g     # Where are global packages?
     echo "$PATH"      # Is the global bin dir in PATH?
@@ -286,9 +267,7 @@ Copy
 [/code]
 
 If `$(npm prefix -g)/bin` is not in your `$PATH`, add it to your shell startup file (`~/.zshrc` or `~/.bashrc`):
-
-Copy
-[code]
+[code] 
     export PATH="$(npm prefix -g)/bin:$PATH"
     
 [/code]

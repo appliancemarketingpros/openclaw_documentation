@@ -1,7 +1,7 @@
 ---
 title: CLI Setup Reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -186,7 +186,9 @@ Anthropic API key
 
 Uses `ANTHROPIC_API_KEY` if present or prompts for a key, then saves it for daemon use.
 
-Anthropic OAuth (Claude Code CLI)
+Anthropic Claude CLI
+
+Reuses a local Claude CLI login on the gateway host and switches model selection to `claude-cli/...`.
 
   * macOS: checks Keychain item “Claude Code-credentials”
   * Linux and Windows: reuses `~/.claude/.credentials.json` if present
@@ -231,7 +233,7 @@ Prompts for account ID, gateway ID, and `CLOUDFLARE_AI_GATEWAY_API_KEY`. More de
 
 MiniMax
 
-Config is auto-written. Hosted default is `MiniMax-M2.7`; `MiniMax-M2.5` stays available. More detail: [MiniMax](</providers/minimax>).
+Config is auto-written. Hosted default is `MiniMax-M2.7`. More detail: [MiniMax](</providers/minimax>).
 
 Synthetic (Anthropic-compatible)
 
@@ -313,7 +315,7 @@ Typical fields in `~/.openclaw/openclaw.json`:
   * `tools.profile` (local onboarding defaults to `"coding"` when unset; existing explicit values are preserved)
   * `gateway.*` (mode, bind, auth, tailscale)
   * `session.dmScope` (local onboarding defaults this to `per-channel-peer` when unset; existing explicit values are preserved)
-  * `channels.telegram.botToken`, `channels.discord.token`, `channels.signal.*`, `channels.imessage.*`
+  * `channels.telegram.botToken`, `channels.discord.token`, `channels.matrix.*`, `channels.signal.*`, `channels.imessage.*`
   * Channel allowlists (Slack, Discord, Matrix, Microsoft Teams) when you opt in during prompts (names resolve to IDs when possible)
   * `skills.install.nodeManager`
   * `wizard.lastRunAt`

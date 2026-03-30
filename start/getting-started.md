@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 source_url: https://docs.openclaw.ai/start/getting-started
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -36,7 +36,7 @@ Install OpenClaw, run onboarding, and chat with your AI assistant — all in abo
 
 What you need
 
-  * **Node.js** — Node 24 recommended (Node 22.16+ also supported)
+  * **Node.js** — Node 24 recommended (Node 22.14+ also supported)
   * **An API key** from a model provider (Anthropic, OpenAI, Google, etc.) — onboarding will prompt you
 
 
@@ -57,15 +57,12 @@ Install OpenClaw
   * Windows (PowerShell)
 
 
-Copy
 [code]
     curl -fsSL https://openclaw.ai/install.sh | bash
     
 [/code]
 
 ![Install Script Process](https://mintcdn.com/clawdhub/U8jr7qEbUc9OU9YR/assets/install-script.svg?fit=max&auto=format&n=U8jr7qEbUc9OU9YR&q=85&s=50706f81e3210a610262f14facb11f65)
-
-Copy
 [code]
     iwr -useb https://openclaw.ai/install.ps1 | iex
     
@@ -76,8 +73,6 @@ Other install methods (Docker, Nix, npm): [Install](</install>).
 2
 
 Run onboarding
-
-Copy
 [code]
     openclaw onboard --install-daemon
     
@@ -88,8 +83,6 @@ The wizard walks you through choosing a model provider, setting an API key, and 
 3
 
 Verify the Gateway is running
-
-Copy
 [code]
     openclaw gateway status
     
@@ -100,8 +93,6 @@ You should see the Gateway listening on port 18789.
 4
 
 Open the dashboard
-
-Copy
 [code]
     openclaw dashboard
     

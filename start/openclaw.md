@@ -1,7 +1,7 @@
 ---
 title: Personal Assistant Setup
 source_url: https://docs.openclaw.ai/start/openclaw
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -76,8 +76,7 @@ You want this: If you link your personal WhatsApp to OpenClaw, every message to 
   1. Pair WhatsApp Web (shows QR; scan with the assistant phone):
 
 
-Copy
-[code]
+[code] 
     openclaw channels login
     
 [/code]
@@ -85,8 +84,7 @@ Copy
   2. Start the Gateway (leave it running):
 
 
-Copy
-[code]
+[code] 
     openclaw gateway --port 18789
     
 [/code]
@@ -94,8 +92,7 @@ Copy
   3. Put a minimal config in `~/.openclaw/openclaw.json`:
 
 
-Copy
-[code]
+[code] 
     {
       channels: { whatsapp: { allowFrom: ["+15555550123"] } },
     }
@@ -111,17 +108,13 @@ Now message the assistant number from your allowlisted phone. When onboarding fi
 Give the agent a workspace (AGENTS)
 
 OpenClaw reads operating instructions and “memory” from its workspace directory. By default, OpenClaw uses `~/.openclaw/workspace` as the agent workspace, and will create it (plus starter `AGENTS.md`, `SOUL.md`, `TOOLS.md`, `IDENTITY.md`, `USER.md`, `HEARTBEAT.md`) automatically on setup/first agent run. `BOOTSTRAP.md` is only created when the workspace is brand new (it should not come back after you delete it). `MEMORY.md` is optional (not auto-created); when present, it is loaded for normal sessions. Subagent sessions only inject `AGENTS.md` and `TOOLS.md`. Tip: treat this folder like OpenClaw’s “memory” and make it a git repo (ideally private) so your `AGENTS.md` \+ memory files are backed up. If git is installed, brand-new workspaces are auto-initialized.
-
-Copy
-[code]
+[code] 
     openclaw setup
     
 [/code]
 
 Full workspace layout + backup guide: [Agent workspace](</concepts/agent-workspace>) Memory workflow: [Memory](</concepts/memory>) Optional: choose a different workspace with `agents.defaults.workspace` (supports `~`).
-
-Copy
-[code]
+[code] 
     {
       agent: {
         workspace: "~/.openclaw/workspace",
@@ -131,9 +124,7 @@ Copy
 [/code]
 
 If you already ship your own workspace files from a repo, you can disable bootstrap file creation entirely:
-
-Copy
-[code]
+[code] 
     {
       agent: {
         skipBootstrap: true,
@@ -155,9 +146,7 @@ OpenClaw defaults to a good assistant setup, but you’ll usually want to tune:
   * heartbeats (once you trust it)
 
 Example:
-
-Copy
-[code]
+[code] 
     {
       logging: { level: "info" },
       agent: {
@@ -221,8 +210,7 @@ By default, OpenClaw runs a heartbeat every 30 minutes with the prompt: `Read HE
   * Heartbeats run full agent turns — shorter intervals burn more tokens.
 
 
-Copy
-[code]
+[code] 
     {
       agent: {
         heartbeat: { every: "30m" },
@@ -244,9 +232,7 @@ Inbound attachments (images/audio/docs) can be surfaced to your command via temp
   * `{{Transcript}}` (if audio transcription is enabled)
 
 Outbound attachments from the agent: include `MEDIA:<path-or-url>` on its own line (no spaces). Example:
-
-Copy
-[code]
+[code] 
     Here’s the screenshot.
     MEDIA:https://example.com/screenshot.png
     
@@ -259,9 +245,7 @@ OpenClaw extracts these and sends them as media alongside the text. For local pa
 ​
 
 Operations checklist
-
-Copy
-[code]
+[code] 
     openclaw status          # local status (creds, sessions, queued events)
     openclaw status --all    # full diagnosis (read-only, pasteable)
     openclaw status --deep   # adds gateway health probes (Telegram + Discord)

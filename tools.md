@@ -1,7 +1,7 @@
 ---
 title: Tools and Plugins
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -67,8 +67,9 @@ These tools ship with OpenClaw and are available without installing any plugins:
 Tool| What it does| Page  
 ---|---|---  
 `exec` / `process`| Run shell commands, manage background processes| [Exec](</tools/exec>)  
+`code_execution`| Run sandboxed remote Python analysis| [Code Execution](</tools/code-execution>)  
 `browser`| Control a Chromium browser (navigate, click, screenshot)| [Browser](</tools/browser>)  
-`web_search` / `web_fetch`| Search the web, fetch page content| [Web](</tools/web>)  
+`web_search` / `x_search` / `web_fetch`| Search the web, search X posts, fetch page content| [Web](</tools/web>)  
 `read` / `write` / `edit`| File I/O in the workspace|   
 `apply_patch`| Multi-hunk file patches| [Apply Patch](</tools/apply-patch>)  
 `message`| Send messages across all channels| [Agent Send](</tools/agent-send>)  
@@ -107,9 +108,7 @@ Tool configuration
 Allow and deny lists
 
 Control which tools the agent can call via `tools.allow` / `tools.deny` in config. Deny always wins over allow.
-
-Copy
-[code]
+[code] 
     {
       tools: {
         allow: ["group:fs", "browser", "web_search"],
@@ -144,11 +143,11 @@ Use `group:*` shorthands in allow/deny lists:
 
 Group| Tools  
 ---|---  
-`group:runtime`| exec, bash, process  
+`group:runtime`| exec, bash, process, code_execution  
 `group:fs`| read, write, edit, apply_patch  
-`group:sessions`| sessions_list, sessions_history, sessions_send, sessions_spawn, session_status  
+`group:sessions`| sessions_list, sessions_history, sessions_send, sessions_spawn, sessions_yield, subagents, session_status  
 `group:memory`| memory_search, memory_get  
-`group:web`| web_search, web_fetch  
+`group:web`| web_search, x_search, web_fetch  
 `group:ui`| browser, canvas  
 `group:automation`| cron, gateway  
 `group:messaging`| message  
@@ -162,9 +161,7 @@ Group| Tools
 Provider-specific restrictions
 
 Use `tools.byProvider` to restrict tools for specific providers without changing global defaults:
-
-Copy
-[code]
+[code] 
     {
       tools: {
         profile: "coding",

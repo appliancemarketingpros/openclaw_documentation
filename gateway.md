@@ -1,7 +1,7 @@
 ---
 title: Gateway Runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -55,8 +55,6 @@ Exact `secrets apply` target/path rules and ref-only auth-profile behavior.
 1
 
 Start the Gateway
-
-Copy
 [code]
     openclaw gateway --port 18789
     # debug/trace mirrored to stdio
@@ -69,8 +67,6 @@ Copy
 2
 
 Verify service health
-
-Copy
 [code]
     openclaw gateway status
     openclaw status
@@ -83,14 +79,12 @@ Healthy baseline: `Runtime: running` and `RPC probe: ok`.
 3
 
 Validate channel readiness
-
-Copy
 [code]
     openclaw channels status --probe
     
 [/code]
 
-Gateway config reload watches the active config file path (resolved from profile/state defaults, or `OPENCLAW_CONFIG_PATH` when set). Default mode is `gateway.reload.mode="hybrid"`.
+Gateway config reload watches the active config file path (resolved from profile/state defaults, or `OPENCLAW_CONFIG_PATH` when set). Default mode is `gateway.reload.mode="hybrid"`. After the first successful load, the running process serves the active in-memory config snapshot; successful reload swaps that snapshot atomically.
 
 ## 
 
@@ -101,11 +95,39 @@ Runtime model
   * One always-on process for routing, control plane, and channel connections.
   * Single multiplexed port for:
     * WebSocket control/RPC
-    * HTTP APIs (OpenAI-compatible, Responses, tools invoke)
+    * HTTP APIs, OpenAI compatible (`/v1/models`, `/v1/embeddings`, `/v1/chat/completions`, `/v1/responses`, `/tools/invoke`)
     * Control UI and hooks
   * Default bind mode: `loopback`.
   * Auth is required by default (`gateway.auth.token` / `gateway.auth.password`, or `OPENCLAW_GATEWAY_TOKEN` / `OPENCLAW_GATEWAY_PASSWORD`).
 
+
+## 
+
+​
+
+OpenAI-compatible endpoints
+
+OpenClaw’s highest-leverage compatibility surface is now:
+
+  * `GET /v1/models`
+  * `GET /v1/models/{id}`
+  * `POST /v1/embeddings`
+  * `POST /v1/chat/completions`
+  * `POST /v1/responses`
+
+Why this set matters:
+
+  * Most Open WebUI, LobeChat, and LibreChat integrations probe `/v1/models` first.
+  * Many RAG and memory pipelines expect `/v1/embeddings`.
+  * Agent-native clients increasingly prefer `/v1/responses`.
+
+Planning note:
+
+  * `/v1/models` is agent-first: it returns `openclaw`, `openclaw/default`, and `openclaw/<agentId>`.
+  * `openclaw/default` is the stable alias that always maps to the configured default agent.
+  * Use `x-openclaw-model` when you want a backend provider/model override; otherwise the selected agent’s normal model and embedding setup stays in control.
+
+All of these run on the main Gateway port and use the same trusted operator auth boundary as the rest of the Gateway HTTP API.
 
 ### 
 
@@ -136,9 +158,7 @@ Hot reload modes
 ​
 
 Operator command set
-
-Copy
-[code]
+[code] 
     openclaw gateway status
     openclaw gateway status --deep
     openclaw gateway status --json
@@ -158,9 +178,7 @@ Copy
 Remote access
 
 Preferred: Tailscale/VPN. Fallback: SSH tunnel.
-
-Copy
-[code]
+[code] 
     ssh -N -L 18789:127.0.0.1:18789 user@host
     
 [/code]
@@ -186,7 +204,6 @@ Use supervised runs for production-like reliability.
   * Linux (system service)
 
 
-Copy
 [code]
     openclaw gateway install
     openclaw gateway status
@@ -196,8 +213,6 @@ Copy
 [/code]
 
 LaunchAgent labels are `ai.openclaw.gateway` (default) or `ai.openclaw.<profile>` (named profile). `openclaw doctor` audits and repairs service config drift.
-
-Copy
 [code]
     openclaw gateway install
     systemctl --user enable --now openclaw-gateway[-<profile>].service
@@ -206,16 +221,12 @@ Copy
 [/code]
 
 For persistence after logout, enable lingering:
-
-Copy
 [code]
     sudo loginctl enable-linger <user>
     
 [/code]
 
 Use a system unit for multi-user/always-on hosts.
-
-Copy
 [code]
     sudo systemctl daemon-reload
     sudo systemctl enable --now openclaw-gateway[-<profile>].service
@@ -236,9 +247,7 @@ Most setups should run **one** Gateway. Use multiple only for strict isolation/r
   * Unique `agents.defaults.workspace`
 
 Example:
-
-Copy
-[code]
+[code] 
     OPENCLAW_CONFIG_PATH=~/.openclaw/a.json OPENCLAW_STATE_DIR=~/.openclaw-a openclaw gateway --port 19001
     OPENCLAW_CONFIG_PATH=~/.openclaw/b.json OPENCLAW_STATE_DIR=~/.openclaw-b openclaw gateway --port 19002
     
@@ -251,9 +260,7 @@ See: [Multiple gateways](</gateway/multiple-gateways>).
 ​
 
 Dev profile quick path
-
-Copy
-[code]
+[code] 
     openclaw --dev setup
     openclaw --dev gateway --allow-unconfigured
     openclaw --dev status
@@ -301,9 +308,7 @@ Liveness
 ​
 
 Readiness
-
-Copy
-[code]
+[code] 
     openclaw gateway status
     openclaw channels status --probe
     openclaw health

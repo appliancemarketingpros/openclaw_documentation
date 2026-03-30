@@ -1,7 +1,7 @@
 ---
 title: Onboarding Overview
 source_url: https://docs.openclaw.ai/start/onboarding-overview
-scraped_at: 2026-03-23
+scraped_at: 2026-03-30
 ---
 
 [OpenClaw home page](</>)
@@ -68,9 +68,7 @@ Regardless of which path you choose, onboarding sets up:
 CLI onboarding
 
 Run in any terminal:
-
-Copy
-[code]
+[code] 
     openclaw onboard
     
 [/code]
