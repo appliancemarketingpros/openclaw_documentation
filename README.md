@@ -30,32 +30,19 @@
 ### Channels
 
 - [Chat Channels](channels.md) — [source](https://docs.openclaw.ai/channels)
-- [QQ Bot](channels/qqbot.md) — [source](https://docs.openclaw.ai/channels/qqbot)
 
 ### Concepts
 
 - [Features](concepts/features.md) — [source](https://docs.openclaw.ai/concepts/features)
 - [Gateway Architecture](concepts/architecture.md) — [source](https://docs.openclaw.ai/concepts/architecture)
-- [SOUL.md Personality Guide](concepts/soul.md) — [source](https://docs.openclaw.ai/concepts/soul)
 
 ### Tools
 
-- [Music Generation](tools/music-generation.md) — [source](https://docs.openclaw.ai/tools/music-generation)
 - [Tools and Plugins](tools.md) — [source](https://docs.openclaw.ai/tools)
-- [Video Generation](tools/video-generation.md) — [source](https://docs.openclaw.ai/tools/video-generation)
 
 ### Providers
 
-- [Alibaba Model Studio](providers/alibaba.md) — [source](https://docs.openclaw.ai/providers/alibaba)
-- [Amazon Bedrock Mantle](providers/bedrock-mantle.md) — [source](https://docs.openclaw.ai/providers/bedrock-mantle)
-- [Chutes](providers/chutes.md) — [source](https://docs.openclaw.ai/providers/chutes)
-- [ComfyUI](providers/comfy.md) — [source](https://docs.openclaw.ai/providers/comfy)
-- [Fireworks](providers/fireworks.md) — [source](https://docs.openclaw.ai/providers/fireworks)
 - [Provider Directory](providers.md) — [source](https://docs.openclaw.ai/providers)
-- [Runway](providers/runway.md) — [source](https://docs.openclaw.ai/providers/runway)
-- [StepFun](providers/stepfun.md) — [source](https://docs.openclaw.ai/providers/stepfun)
-- [Vydra](providers/vydra.md) — [source](https://docs.openclaw.ai/providers/vydra)
-- [fal](providers/fal.md) — [source](https://docs.openclaw.ai/providers/fal)
 
 ### Platforms
 
@@ -68,7 +55,6 @@
 ### Cli
 
 - [CLI Reference](cli.md) — [source](https://docs.openclaw.ai/cli)
-- [flows (redirect)](cli/flows.md) — [source](https://docs.openclaw.ai/cli/flows)
 
 ### Help
 
@@ -77,10 +63,6 @@
 ### Vps
 
 - [Linux Server](vps.md) — [source](https://docs.openclaw.ai/vps)
-
-### Automation
-
-- [Task Flow](automation/taskflow.md) — [source](https://docs.openclaw.ai/automation/taskflow)
 
 ---
 
