@@ -1,7 +1,7 @@
 ---
 title: Linux Server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-03-30
+scraped_at: 2026-04-06
 ---
 
 [OpenClaw home page](</>)
@@ -153,9 +153,9 @@ For VM hosts using `systemd`, consider:
     * `TimeoutStartSec=90`
   * Prefer SSD-backed disks for state/cache paths to reduce random-I/O cold-start penalties.
 
-Example:
+For the standard `openclaw onboard --install-daemon` path, edit the user unit:
 [code] 
-    sudo systemctl edit openclaw
+    systemctl --user edit openclaw-gateway.service
     
 [/code]
 [code] 
@@ -168,7 +168,7 @@ Example:
     
 [/code]
 
-How `Restart=` policies help automated recovery: [systemd can automate service recovery](<https://www.redhat.com/en/blog/systemd-automate-recovery>).
+If you deliberately installed a system unit instead, edit `openclaw-gateway.service` via `sudo systemctl edit openclaw-gateway.service`. How `Restart=` policies help automated recovery: [systemd can automate service recovery](<https://www.redhat.com/en/blog/systemd-automate-recovery>).
 
 [Kubernetes](</install/kubernetes>)[macOS VMs](</install/macos-vm>)
 

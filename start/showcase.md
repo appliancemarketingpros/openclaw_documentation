@@ -1,7 +1,7 @@
 ---
 title: Showcase
 source_url: https://docs.openclaw.ai/start/showcase
-scraped_at: 2026-03-30
+scraped_at: 2026-04-06
 ---
 
 [OpenClaw home page](</>)
@@ -30,7 +30,7 @@ Showcase
 
 Real projects from the community. See what people are building with OpenClaw.
 
-**Want to be featured?** Share your project in [#showcase on Discord](<https://discord.gg/clawd>) or [tag @openclaw on X](<https://x.com/openclaw>).
+**Want to be featured?** Share your project in [#self-promotion on Discord](<https://discord.gg/clawd>) or [tag @openclaw on X](<https://x.com/openclaw>).
 
 ## 
 
@@ -262,7 +262,7 @@ Have something to share? We’d love to feature it!
 
 Share It
 
-Post in [#showcase on Discord](<https://discord.gg/clawd>) or [tweet @openclaw](<https://x.com/openclaw>)
+Post in [#self-promotion on Discord](<https://discord.gg/clawd>) or [tweet @openclaw](<https://x.com/openclaw>)
 
 2
 

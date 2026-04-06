@@ -1,7 +1,7 @@
 ---
 title: Onboarding (macOS App)
 source_url: https://docs.openclaw.ai/start/onboarding
-scraped_at: 2026-03-30
+scraped_at: 2026-04-06
 ---
 
 [OpenClaw home page](</>)
@@ -100,7 +100,7 @@ CLI
 
 This step is optional
 
-The app can install the global `openclaw` CLI via npm/pnpm so terminal workflows and launchd tasks work out of the box.
+The app can install the global `openclaw` CLI via npm, pnpm, or bun. It prefers npm first, then pnpm, then bun if that is the only detected package manager. For the Gateway runtime, Node remains the recommended path.
 
 7
 

@@ -1,7 +1,7 @@
 ---
 title: Getting Started
 source_url: https://docs.openclaw.ai/start/getting-started
-scraped_at: 2026-03-30
+scraped_at: 2026-04-06
 ---
 
 [OpenClaw home page](</>)
@@ -106,6 +106,35 @@ Send your first message
 
 Type a message in the Control UI chat and you should get an AI reply.Want to chat from your phone instead? The fastest channel to set up is [Telegram](</channels/telegram>) (just a bot token). See [Channels](</channels>) for all options.
 
+Advanced: mount a custom Control UI build
+
+If you maintain a localized or customized dashboard build, point `gateway.controlUi.root` to a directory that contains your built static assets and `index.html`.
+[code]
+    mkdir -p "$HOME/.openclaw/control-ui-custom"
+    # Copy your built static files into that directory.
+    
+[/code]
+
+Then set:
+[code]
+    {
+      "gateway": {
+        "controlUi": {
+          "enabled": true,
+          "root": "$HOME/.openclaw/control-ui-custom"
+        }
+      }
+    }
+    
+[/code]
+
+Restart the gateway and reopen the dashboard:
+[code]
+    openclaw gateway restart
+    openclaw dashboard
+    
+[/code]
+
 ## 
 
 ​
@@ -114,7 +143,7 @@ What to do next
 
 ## Connect a channel
 
-WhatsApp, Telegram, Discord, iMessage, and more.
+Discord, Feishu, iMessage, Matrix, Microsoft Teams, Signal, Slack, Telegram, WhatsApp, Zalo, and more.
 
 ## Pairing and safety
 

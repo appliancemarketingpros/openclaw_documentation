@@ -1,7 +1,7 @@
 ---
 title: CLI Automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-03-30
+scraped_at: 2026-04-06
 ---
 
 [OpenClaw home page](</>)
@@ -66,6 +66,17 @@ Add `--json` for a machine-readable summary. Use `--secret-input-mode ref` to st
 ​
 
 Provider-specific examples
+
+Anthropic API key example
+[code]
+    openclaw onboard --non-interactive \
+      --mode local \
+      --auth-choice apiKey \
+      --anthropic-api-key "$ANTHROPIC_API_KEY" \
+      --gateway-port 18789 \
+      --gateway-bind loopback
+    
+[/code]
 
 Gemini example
 [code]
@@ -204,6 +215,8 @@ Custom provider example
 
 In this mode, onboarding stores `apiKey` as `{ source: "env", provider: "default", id: "CUSTOM_API_KEY" }`.
 
+Anthropic setup-token is available again as a legacy/manual onboarding path. Use it with the expectation that Anthropic told OpenClaw users the OpenClaw Claude-login path requires **Extra Usage**. For production, prefer an Anthropic API key.
+
 ## 
 
 ​
@@ -214,7 +227,7 @@ Use `openclaw agents add <name>` to create a separate agent with its own workspa
 [code] 
     openclaw agents add work \
       --workspace ~/.openclaw/workspace-work \
-      --model openai/gpt-5.2 \
+      --model openai/gpt-5.4 \
       --bind whatsapp:biz \
       --non-interactive \
       --json

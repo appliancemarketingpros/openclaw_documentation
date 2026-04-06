@@ -1,7 +1,7 @@
 ---
 title: Gateway Runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-03-30
+scraped_at: 2026-04-06
 ---
 
 [OpenClaw home page](</>)
@@ -84,6 +84,8 @@ Validate channel readiness
     
 [/code]
 
+With a reachable gateway this runs live per-account channel probes and optional audits. If the gateway is unreachable, the CLI falls back to config-only channel summaries instead of live probe output.
+
 Gateway config reload watches the active config file path (resolved from profile/state defaults, or `OPENCLAW_CONFIG_PATH` when set). Default mode is `gateway.reload.mode="hybrid"`. After the first successful load, the running process serves the active in-memory config snapshot; successful reload swaps that snapshot atomically.
 
 ## 
@@ -98,7 +100,7 @@ Runtime model
     * HTTP APIs, OpenAI compatible (`/v1/models`, `/v1/embeddings`, `/v1/chat/completions`, `/v1/responses`, `/tools/invoke`)
     * Control UI and hooks
   * Default bind mode: `loopback`.
-  * Auth is required by default (`gateway.auth.token` / `gateway.auth.password`, or `OPENCLAW_GATEWAY_TOKEN` / `OPENCLAW_GATEWAY_PASSWORD`).
+  * Auth is required by default. Shared-secret setups use `gateway.auth.token` / `gateway.auth.password` (or `OPENCLAW_GATEWAY_TOKEN` / `OPENCLAW_GATEWAY_PASSWORD`), and non-loopback reverse-proxy setups can use `gateway.auth.mode: "trusted-proxy"`.
 
 
 ## 
@@ -160,7 +162,7 @@ Hot reload modes
 Operator command set
 [code] 
     openclaw gateway status
-    openclaw gateway status --deep
+    openclaw gateway status --deep   # adds a system-level service scan
     openclaw gateway status --json
     openclaw gateway install
     openclaw gateway restart
@@ -170,6 +172,29 @@ Operator command set
     openclaw doctor
     
 [/code]
+
+`gateway status --deep` is for extra service discovery (LaunchDaemons/systemd system units/schtasks), not a deeper RPC health probe.
+
+## 
+
+​
+
+Multiple gateways (same host)
+
+Most installs should run one gateway per machine. A single gateway can host multiple agents and channels. You only need multiple gateways when you intentionally want isolation or a rescue bot. Useful checks:
+[code] 
+    openclaw gateway status --deep
+    openclaw gateway probe
+    
+[/code]
+
+What to expect:
+
+  * `gateway status --deep` can report `Other gateway-like services detected (best effort)` and print cleanup hints when stale launchd/systemd/schtasks installs are still around.
+  * `gateway probe` can warn about `multiple reachable gateways` when more than one target answers.
+  * If that is intentional, isolate ports, config/state, and workspace roots per gateway.
+
+Detailed setup: [/gateway/multiple-gateways](</gateway/multiple-gateways>).
 
 ## 
 
@@ -185,7 +210,7 @@ Preferred: Tailscale/VPN. Fallback: SSH tunnel.
 
 Then connect clients to `ws://127.0.0.1:18789` locally.
 
-If gateway auth is configured, clients still must send auth (`token`/`password`) even over SSH tunnels.
+SSH tunnels do not bypass gateway auth. For shared-secret auth, clients still must send `token`/`password` even over the tunnel. For identity-bearing modes, the request still has to satisfy that auth path.
 
 See: [Remote Gateway](</gateway/remote>), [Authentication](</gateway/authentication>), [Tailscale](</gateway/tailscale>).
 
@@ -200,6 +225,8 @@ Use supervised runs for production-like reliability.
   * macOS (launchd)
 
   * Linux (systemd user)
+
+  * Windows (native)
 
   * Linux (system service)
 
@@ -226,12 +253,44 @@ For persistence after logout, enable lingering:
     
 [/code]
 
+Manual user-unit example when you need a custom install path:
+[code]
+    [Unit]
+    Description=OpenClaw Gateway
+    After=network-online.target
+    Wants=network-online.target
+    
+    [Service]
+    ExecStart=/usr/local/bin/openclaw gateway --port 18789
+    Restart=always
+    RestartSec=5
+    TimeoutStopSec=30
+    TimeoutStartSec=30
+    SuccessExitStatus=0 143
+    KillMode=control-group
+    
+    [Install]
+    WantedBy=default.target
+    
+[/code]
+[code]
+    openclaw gateway install
+    openclaw gateway status --json
+    openclaw gateway restart
+    openclaw gateway stop
+    
+[/code]
+
+Native Windows managed startup uses a Scheduled Task named `OpenClaw Gateway` (or `OpenClaw Gateway (<profile>)` for named profiles). If Scheduled Task creation is denied, OpenClaw falls back to a per-user Startup-folder launcher that points at `gateway.cmd` inside the state directory.
+
 Use a system unit for multi-user/always-on hosts.
 [code]
     sudo systemctl daemon-reload
     sudo systemctl enable --now openclaw-gateway[-<profile>].service
     
 [/code]
+
+Use the same service body as the user unit, but install it under `/etc/systemd/system/openclaw-gateway[-<profile>].service` and adjust `ExecStart=` if your `openclaw` binary lives elsewhere.
 
 ## 
 
@@ -277,8 +336,9 @@ Protocol quick reference (operator view)
 
   * First client frame must be `connect`.
   * Gateway returns `hello-ok` snapshot (`presence`, `health`, `stateVersion`, `uptimeMs`, limits/policy).
+  * `hello-ok.features.methods` / `events` are a conservative discovery list, not a generated dump of every callable helper route.
   * Requests: `req(method, params)` → `res(ok/payload|error)`.
-  * Common events: `connect.challenge`, `agent`, `chat`, `presence`, `tick`, `health`, `heartbeat`, `shutdown`.
+  * Common events include `connect.challenge`, `agent`, `chat`, `session.message`, `session.tool`, `sessions.changed`, `presence`, `tick`, `health`, `heartbeat`, pairing/approval lifecycle events, and `shutdown`.
 
 Agent runs are two-stage:
 
@@ -331,9 +391,9 @@ Common failure signatures
 
 Signature| Likely issue  
 ---|---  
-`refusing to bind gateway ... without auth`| Non-loopback bind without token/password  
+`refusing to bind gateway ... without auth`| Non-loopback bind without a valid gateway auth path  
 `another gateway instance is already listening` / `EADDRINUSE`| Port conflict  
-`Gateway start blocked: set gateway.mode=local`| Config set to remote mode  
+`Gateway start blocked: set gateway.mode=local`| Config set to remote mode, or local-mode stamp is missing from a damaged config  
 `unauthorized` during connect| Auth mismatch between client and gateway  
   
 For full diagnosis ladders, use [Gateway Troubleshooting](</gateway/troubleshooting>).

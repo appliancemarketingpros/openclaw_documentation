@@ -1,7 +1,7 @@
 ---
 title: Setup
 source_url: https://docs.openclaw.ai/start/setup
-scraped_at: 2026-03-30
+scraped_at: 2026-04-06
 ---
 
 [OpenClaw home page](</>)
@@ -48,7 +48,7 @@ TL;DR
 Prereqs (from source)
 
   * Node 24 recommended (Node 22 LTS, currently `22.14+`, still supported)
-  * `pnpm`
+  * `pnpm` preferred (or Bun if you intentionally use the [Bun workflow](</install/bun>))
   * Docker (optional; only for containerized setup/e2e — see [Docker](</install/docker>))
 
 
@@ -75,7 +75,7 @@ From inside this repo, use the local CLI entry:
     
 [/code]
 
-If you don’t have a global install yet, run it via `pnpm openclaw setup`.
+If you don’t have a global install yet, run it via `pnpm openclaw setup` (or `bun run openclaw setup` if you are using the Bun workflow).
 
 ## 
 
@@ -150,7 +150,12 @@ If you also want the macOS app on the bleeding edge:
     
 [/code]
 
-`gateway:watch` runs the gateway in watch mode and reloads on relevant source, config, and bundled-plugin metadata changes.
+`gateway:watch` runs the gateway in watch mode and reloads on relevant source, config, and bundled-plugin metadata changes. If you are intentionally using the Bun workflow, the equivalent commands are:
+[code] 
+    bun install
+    bun run gateway:watch
+    
+[/code]
 
 ### 
 
@@ -186,7 +191,8 @@ Common footguns
 
   * **Wrong port:** Gateway WS defaults to `ws://127.0.0.1:18789`; keep app + CLI on the same port.
   * **Where state lives:**
-    * Credentials: `~/.openclaw/credentials/`
+    * Channel/provider state: `~/.openclaw/credentials/`
+    * Model auth profiles: `~/.openclaw/agents/<agentId>/agent/auth-profiles.json`
     * Sessions: `~/.openclaw/agents/<agentId>/sessions/`
     * Logs: `/tmp/openclaw/`
 
@@ -218,7 +224,7 @@ Use this when debugging auth or deciding what to back up:
 Updating (without wrecking your setup)
 
   * Keep `~/.openclaw/workspace` and `~/.openclaw/` as “your stuff”; don’t put personal prompts/config into the `openclaw` repo.
-  * Updating source: `git pull` \+ `pnpm install` (when lockfile changed) + keep using `pnpm gateway:watch`.
+  * Updating source: `git pull` \+ your chosen package-manager install step (`pnpm install` by default; `bun install` for Bun workflow) + keep using the matching `gateway:watch` command.
 
 
 ## 

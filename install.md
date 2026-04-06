@@ -1,7 +1,7 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-03-30
+scraped_at: 2026-04-06
 ---
 
 [OpenClaw home page](</>)
@@ -89,13 +89,29 @@ Alternative install methods
 
 ​
 
-npm or pnpm
+Local prefix installer (`install-cli.sh`)
+
+Use this when you want OpenClaw and Node kept under a local prefix such as `~/.openclaw`, without depending on a system-wide Node install:
+[code] 
+    curl -fsSL https://openclaw.ai/install-cli.sh | bash
+    
+[/code]
+
+It supports npm installs by default, plus git-checkout installs under the same prefix flow. Full reference: [Installer internals](</install/installer#install-clish>).
+
+### 
+
+​
+
+npm, pnpm, or bun
 
 If you already manage Node yourself:
 
   * npm
 
   * pnpm
+
+  * bun
 
 
 [code]
@@ -111,6 +127,13 @@ If you already manage Node yourself:
 [/code]
 
 pnpm requires explicit approval for packages with build scripts. Run `pnpm approve-builds -g` after the first install.
+[code]
+    bun add -g openclaw@latest
+    openclaw onboard --install-daemon
+    
+[/code]
+
+Bun is supported for the global CLI install path. For the Gateway runtime, Node remains the recommended daemon runtime.
 
 Troubleshooting: sharp build errors (npm)
 
@@ -185,6 +208,13 @@ Verify the install
     openclaw gateway status # verify the Gateway is running
     
 [/code]
+
+If you want managed startup after install:
+
+  * macOS: LaunchAgent via `openclaw onboard --install-daemon` or `openclaw gateway install`
+  * Linux/WSL2: systemd user service via the same commands
+  * Native Windows: Scheduled Task first, with a per-user Startup-folder login item fallback if task creation is denied
+
 
 ## 
 
