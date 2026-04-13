@@ -1,7 +1,7 @@
 ---
 title: Personal Assistant Setup
 source_url: https://docs.openclaw.ai/start/openclaw
-scraped_at: 2026-04-06
+scraped_at: 2026-04-13
 ---
 
 [OpenClaw home page](</>)

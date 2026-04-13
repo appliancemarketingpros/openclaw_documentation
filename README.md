@@ -3,7 +3,7 @@
 > This repository contains a local Markdown mirror of the official [Openclaw documentation](https://docs.openclaw.ai/).
 > It is automatically updated every Monday to reflect any changes in the upstream documentation.
 
-**Last updated:** 2026-04-06
+**Last updated:** 2026-04-13
 
 ## Documentation Index
 
@@ -38,11 +38,15 @@
 
 ### Tools
 
+- [Media Overview](tools/media-overview.md) — [source](https://docs.openclaw.ai/tools/media-overview)
 - [Tools and Plugins](tools.md) — [source](https://docs.openclaw.ai/tools)
 
 ### Providers
 
+- [Arcee AI](providers/arcee.md) — [source](https://docs.openclaw.ai/providers/arcee)
+- [LM Studio](providers/lmstudio.md) — [source](https://docs.openclaw.ai/providers/lmstudio)
 - [Provider Directory](providers.md) — [source](https://docs.openclaw.ai/providers)
+- [inferrs](providers/inferrs.md) — [source](https://docs.openclaw.ai/providers/inferrs)
 
 ### Platforms
 
@@ -55,6 +59,8 @@
 ### Cli
 
 - [CLI Reference](cli.md) — [source](https://docs.openclaw.ai/cli)
+- [Inference CLI](cli/infer.md) — [source](https://docs.openclaw.ai/cli/infer)
+- [wiki](cli/wiki.md) — [source](https://docs.openclaw.ai/cli/wiki)
 
 ### Help
 
@@ -63,6 +69,24 @@
 ### Vps
 
 - [Linux Server](vps.md) — [source](https://docs.openclaw.ai/vps)
+
+### Plugins
+
+- [Agent Harness Plugins](plugins/sdk-agent-harness.md) — [source](https://docs.openclaw.ai/plugins/sdk-agent-harness)
+- [Building Channel Plugins](plugins/sdk-channel-plugins.md) — [source](https://docs.openclaw.ai/plugins/sdk-channel-plugins)
+- [Building Provider Plugins](plugins/sdk-provider-plugins.md) — [source](https://docs.openclaw.ai/plugins/sdk-provider-plugins)
+- [Codex Harness](plugins/codex-harness.md) — [source](https://docs.openclaw.ai/plugins/codex-harness)
+- [Memory Wiki](plugins/memory-wiki.md) — [source](https://docs.openclaw.ai/plugins/memory-wiki)
+- [Plugin Entry Points](plugins/sdk-entrypoints.md) — [source](https://docs.openclaw.ai/plugins/sdk-entrypoints)
+- [Plugin Runtime Helpers](plugins/sdk-runtime.md) — [source](https://docs.openclaw.ai/plugins/sdk-runtime)
+- [Plugin SDK Overview](plugins/sdk-overview.md) — [source](https://docs.openclaw.ai/plugins/sdk-overview)
+- [Plugin Setup and Config](plugins/sdk-setup.md) — [source](https://docs.openclaw.ai/plugins/sdk-setup)
+- [Plugin Testing](plugins/sdk-testing.md) — [source](https://docs.openclaw.ai/plugins/sdk-testing)
+- [Webhooks Plugin](plugins/webhooks.md) — [source](https://docs.openclaw.ai/plugins/webhooks)
+
+### Reference
+
+- [Rich output protocol](reference/rich-output-protocol.md) — [source](https://docs.openclaw.ai/reference/rich-output-protocol)
 
 ---
 

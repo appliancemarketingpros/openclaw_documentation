@@ -1,7 +1,7 @@
 ---
 title: Gateway Runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-04-06
+scraped_at: 2026-04-13
 ---
 
 [OpenClaw home page](</>)
@@ -208,7 +208,7 @@ Preferred: Tailscale/VPN. Fallback: SSH tunnel.
     
 [/code]
 
-Then connect clients to `ws://127.0.0.1:18789` locally.
+Then connect clients locally to `ws://127.0.0.1:18789`.
 
 SSH tunnels do not bypass gateway auth. For shared-secret auth, clients still must send `token`/`password` even over the tunnel. For identity-bearing modes, the request still has to satisfy that auth path.
 

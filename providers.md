@@ -1,7 +1,7 @@
 ---
 title: Provider Directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-04-06
+scraped_at: 2026-04-13
 ---
 
 [OpenClaw home page](</>)
@@ -56,6 +56,7 @@ Provider docs
   * [Alibaba Model Studio](</providers/alibaba>)
   * [Amazon Bedrock](</providers/bedrock>)
   * [Anthropic (API + Claude CLI)](</providers/anthropic>)
+  * [Arcee AI (Trinity models)](</providers/arcee>)
   * [BytePlus (International)](</concepts/model-providers#byteplus-international>)
   * [Chutes](</providers/chutes>)
   * [ComfyUI](</providers/comfy>)
@@ -68,8 +69,10 @@ Provider docs
   * [Google (Gemini)](</providers/google>)
   * [Groq (LPU inference)](</providers/groq>)
   * [Hugging Face (Inference)](</providers/huggingface>)
+  * [inferrs (local models)](</providers/inferrs>)
   * [Kilocode](</providers/kilocode>)
   * [LiteLLM (unified gateway)](</providers/litellm>)
+  * [LM Studio (local models)](</providers/lmstudio>)
   * [MiniMax](</providers/minimax>)
   * [Mistral](</providers/mistral>)
   * [Moonshot AI (Kimi + Kimi Coding)](</providers/moonshot>)

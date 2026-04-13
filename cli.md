@@ -1,7 +1,7 @@
 ---
 title: CLI Reference
 source_url: https://docs.openclaw.ai/cli
-scraped_at: 2026-04-06
+scraped_at: 2026-04-13
 ---
 
 [OpenClaw home page](</>)
@@ -59,7 +59,9 @@ Command pages
   * [`logs`](</cli/logs>)
   * [`system`](</cli/system>)
   * [`models`](</cli/models>)
+  * [`infer`](</cli/infer>)
   * [`memory`](</cli/memory>)
+  * [`wiki`](</cli/wiki>)
   * [`directory`](</cli/directory>)
   * [`nodes`](</cli/nodes>)
   * [`devices`](</cli/devices>)
@@ -203,6 +205,19 @@ Command tree
         status
         index
         search
+      wiki
+        status
+        doctor
+        init
+        ingest
+        compile
+        lint
+        search
+        get
+        apply
+        bridge import
+        unsafe-local import
+        obsidian status|search|open|command|daily
       message
         send
         broadcast
@@ -290,6 +305,16 @@ Command tree
         fallbacks list|add|remove|clear
         image-fallbacks list|add|remove|clear
         scan
+      infer (alias: capability)
+        list
+        inspect
+        model run|list|inspect|providers|auth login|logout|status
+        image generate|edit|describe|describe-many|providers
+        audio transcribe|providers
+        tts convert|voices|providers|status|enable|disable|set-provider
+        video generate|describe|providers
+        web search|fetch|providers
+        embedding create|providers
         auth add|login|login-github-copilot|setup-token|paste-token
         auth order get|set|clear
       sandbox
@@ -517,6 +542,7 @@ Chat slash commands
 Chat messages support `/...` commands (text and native). See [/tools/slash-commands](</tools/slash-commands>). Highlights:
 
   * `/status` for quick diagnostics.
+  * `/trace` for session-scoped plugin trace/debug lines.
   * `/config` for persisted config changes.
   * `/debug` for runtime-only config overrides (memory, not disk; requires `commands.debug: true`).
 
@@ -577,7 +603,7 @@ Interactive onboarding for gateway, workspace, and skills. Options:
   * `--non-interactive`
   * `--mode <local|remote>`
   * `--flow <quickstart|advanced|manual>` (manual is an alias for advanced)
-  * `--auth-choice <choice>` where `<choice>` is one of: `chutes`, `deepseek-api-key`, `openai-codex`, `openai-api-key`, `openrouter-api-key`, `kilocode-api-key`, `litellm-api-key`, `ai-gateway-api-key`, `cloudflare-ai-gateway-api-key`, `moonshot-api-key`, `moonshot-api-key-cn`, `kimi-code-api-key`, `synthetic-api-key`, `venice-api-key`, `together-api-key`, `huggingface-api-key`, `apiKey`, `gemini-api-key`, `zai-api-key`, `zai-coding-global`, `zai-coding-cn`, `zai-global`, `zai-cn`, `xiaomi-api-key`, `minimax-global-oauth`, `minimax-global-api`, `minimax-cn-oauth`, `minimax-cn-api`, `opencode-zen`, `opencode-go`, `github-copilot`, `copilot-proxy`, `xai-api-key`, `mistral-api-key`, `volcengine-api-key`, `byteplus-api-key`, `qianfan-api-key`, `qwen-standard-api-key-cn`, `qwen-standard-api-key`, `qwen-api-key-cn`, `qwen-api-key`, `modelstudio-standard-api-key-cn`, `modelstudio-standard-api-key`, `modelstudio-api-key-cn`, `modelstudio-api-key`, `custom-api-key`, `skip`
+  * `--auth-choice <choice>` where `<choice>` is one of: `chutes`, `deepseek-api-key`, `openai-codex`, `openai-api-key`, `openrouter-api-key`, `kilocode-api-key`, `litellm-api-key`, `ai-gateway-api-key`, `cloudflare-ai-gateway-api-key`, `moonshot-api-key`, `moonshot-api-key-cn`, `kimi-code-api-key`, `synthetic-api-key`, `venice-api-key`, `together-api-key`, `huggingface-api-key`, `apiKey`, `gemini-api-key`, `google-gemini-cli`, `zai-api-key`, `zai-coding-global`, `zai-coding-cn`, `zai-global`, `zai-cn`, `xiaomi-api-key`, `minimax-global-oauth`, `minimax-global-api`, `minimax-cn-oauth`, `minimax-cn-api`, `opencode-zen`, `opencode-go`, `github-copilot`, `copilot-proxy`, `xai-api-key`, `mistral-api-key`, `volcengine-api-key`, `byteplus-api-key`, `qianfan-api-key`, `qwen-standard-api-key-cn`, `qwen-standard-api-key`, `qwen-api-key-cn`, `qwen-api-key`, `modelstudio-standard-api-key-cn`, `modelstudio-standard-api-key`, `modelstudio-api-key-cn`, `modelstudio-api-key`, `custom-api-key`, `skip`
   * Qwen note: `qwen-*` is the canonical auth-choice family. `modelstudio-*` ids remain accepted as legacy compatibility aliases only.
   * `--secret-input-mode <plaintext|ref>` (default `plaintext`; use `ref` to store provider default env refs instead of plaintext keys)
   * `--anthropic-api-key <key>`
@@ -927,7 +953,7 @@ Manage gateway device pairing entries and per-role device tokens. Subcommands:
 Notes:
 
   * `devices list` and `devices approve` can fall back to local pairing files on local loopback when direct pairing scope is unavailable.
-  * `devices approve` auto-selects the newest pending request when no `requestId` is passed or `--latest` is set.
+  * `devices approve` requires an explicit request ID before minting tokens; omitting `requestId` or passing `--latest` only previews the newest pending request.
   * Stored-token reconnects reuse the token’s cached approved scopes; explicit `devices rotate --scope ...` updates that stored scope set for future cached-token reconnects.
   * `devices rotate` and `devices revoke` return JSON payloads.
 
@@ -1581,6 +1607,7 @@ Run the WebSocket Gateway. Options:
   * `--reset` (reset dev config + credentials + sessions + workspace)
   * `--force` (kill existing listener on port)
   * `--verbose`
+  * `--cli-backend-logs`
   * `--ws-log <auto|full|compact>`
   * `--compact` (alias for `--ws-log compact`)
   * `--raw-stream`
@@ -1712,7 +1739,7 @@ Tip: when calling `config.set`/`config.apply`/`config.patch` directly, pass `bas
 
 Models
 
-See [/concepts/models](</concepts/models>) for fallback behavior and scanning strategy. Billing note: for Anthropic in OpenClaw, the practical split is **API key** or **Claude subscription with Extra Usage**. Anthropic notified OpenClaw users on **April 4, 2026 at 12:00 PM PT / 8:00 PM BST** that the **OpenClaw** Claude-login path counts as third-party harness usage and requires **Extra Usage** billed separately from the subscription. Our local repros also show the OpenClaw-identifying prompt string does not reproduce on the Anthropic SDK + API-key path. For production, prefer an Anthropic API key or another supported subscription-style provider such as OpenAI Codex, Alibaba Cloud Model Studio Coding Plan, MiniMax Coding Plan, or Z.AI / GLM Coding Plan. Anthropic setup-token is available again as a legacy/manual auth path. Use it only with the expectation that Anthropic told OpenClaw users the OpenClaw-managed Anthropic subscription path requires **Extra Usage**.
+See [/concepts/models](</concepts/models>) for fallback behavior and scanning strategy. Anthropic note: Anthropic staff told us OpenClaw-style Claude CLI usage is allowed again, so OpenClaw treats Claude CLI reuse and `claude -p` usage as sanctioned for this integration unless Anthropic publishes a new policy. For production, prefer an Anthropic API key or another supported subscription-style provider such as OpenAI Codex, Alibaba Cloud Model Studio Coding Plan, MiniMax Coding Plan, or Z.AI / GLM Coding Plan. Anthropic setup-token remains available as a supported token-auth path, but OpenClaw now prefers Claude CLI reuse and `claude -p` when available.
 
 ### 
 
@@ -1860,7 +1887,7 @@ Notes:
   * `setup-token` and `paste-token` are generic token commands for providers that expose token auth methods.
   * `setup-token` requires an interactive TTY and runs the provider’s token-auth method.
   * `paste-token` prompts for the token value and defaults to auth profile id `<provider>:manual` when `--profile-id` is omitted.
-  * Anthropic `setup-token` / `paste-token` are available again as a legacy/manual OpenClaw path. Anthropic told OpenClaw users this path requires **Extra Usage** on the Claude account.
+  * Anthropic `setup-token` / `paste-token` remain available as a supported OpenClaw token path, but OpenClaw now prefers Claude CLI reuse and `claude -p` when available.
 
 
 ### 
