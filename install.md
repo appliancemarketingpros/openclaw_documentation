@@ -1,7 +1,7 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-04-13
+scraped_at: 2026-04-20
 ---
 
 [OpenClaw home page](</>)
@@ -153,7 +153,7 @@ For contributors or anyone who wants to run from a local checkout:
 [code] 
     git clone https://github.com/openclaw/openclaw.git
     cd openclaw
-    pnpm install && pnpm ui:build && pnpm build
+    pnpm install && pnpm build && pnpm ui:build
     pnpm link --global
     openclaw onboard --install-daemon
     

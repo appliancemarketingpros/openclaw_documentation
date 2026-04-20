@@ -3,7 +3,7 @@
 > This repository contains a local Markdown mirror of the official [Openclaw documentation](https://docs.openclaw.ai/).
 > It is automatically updated every Monday to reflect any changes in the upstream documentation.
 
-**Last updated:** 2026-04-13
+**Last updated:** 2026-04-20
 
 ## Documentation Index
 
@@ -25,14 +25,17 @@
 
 ### Install
 
+- [Hostinger](install/hostinger.md) — [source](https://docs.openclaw.ai/install/hostinger)
 - [Install](install.md) — [source](https://docs.openclaw.ai/install)
 
 ### Channels
 
 - [Chat Channels](channels.md) — [source](https://docs.openclaw.ai/channels)
+- [WeChat](channels/wechat.md) — [source](https://docs.openclaw.ai/channels/wechat)
 
 ### Concepts
 
+- [Experimental Features](concepts/experimental-features.md) — [source](https://docs.openclaw.ai/concepts/experimental-features)
 - [Features](concepts/features.md) — [source](https://docs.openclaw.ai/concepts/features)
 - [Gateway Architecture](concepts/architecture.md) — [source](https://docs.openclaw.ai/concepts/architecture)
 

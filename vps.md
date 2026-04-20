@@ -1,7 +1,7 @@
 ---
 title: Linux Server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-04-13
+scraped_at: 2026-04-20
 ---
 
 [OpenClaw home page](</>)
@@ -59,6 +59,10 @@ Fly Machines
 ## Hetzner
 
 Docker on Hetzner VPS
+
+## Hostinger
+
+VPS with one-click setup
 
 ## GCP
 

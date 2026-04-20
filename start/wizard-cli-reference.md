@@ -1,7 +1,7 @@
 ---
 title: CLI Setup Reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-04-13
+scraped_at: 2026-04-20
 ---
 
 [OpenClaw home page](</>)
@@ -235,7 +235,7 @@ Prompts for `SYNTHETIC_API_KEY`. More detail: [Synthetic](</providers/synthetic>
 
 Ollama (Cloud and local open models)
 
-Prompts for base URL (default `http://127.0.0.1:11434`), then offers Cloud + Local or Local mode. Discovers available models and suggests defaults. More detail: [Ollama](</providers/ollama>).
+Prompts for `Cloud + Local`, `Cloud only`, or `Local only` first. `Cloud only` uses `OLLAMA_API_KEY` with `https://ollama.com`. The host-backed modes prompt for base URL (default `http://127.0.0.1:11434`), discover available models, and suggest defaults. `Cloud + Local` also checks whether that Ollama host is signed in for cloud access. More detail: [Ollama](</providers/ollama>).
 
 Moonshot and Kimi Coding
 
