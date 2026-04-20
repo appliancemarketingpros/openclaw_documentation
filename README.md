@@ -25,17 +25,14 @@
 
 ### Install
 
-- [Hostinger](install/hostinger.md) — [source](https://docs.openclaw.ai/install/hostinger)
 - [Install](install.md) — [source](https://docs.openclaw.ai/install)
 
 ### Channels
 
 - [Chat Channels](channels.md) — [source](https://docs.openclaw.ai/channels)
-- [WeChat](channels/wechat.md) — [source](https://docs.openclaw.ai/channels/wechat)
 
 ### Concepts
 
-- [Experimental Features](concepts/experimental-features.md) — [source](https://docs.openclaw.ai/concepts/experimental-features)
 - [Features](concepts/features.md) — [source](https://docs.openclaw.ai/concepts/features)
 - [Gateway Architecture](concepts/architecture.md) — [source](https://docs.openclaw.ai/concepts/architecture)
 
