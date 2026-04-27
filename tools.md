@@ -1,7 +1,7 @@
 ---
-title: Tools and Plugins
+title: Tools and plugins
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -20,13 +20,7 @@ Navigation
 
 Overview
 
-Tools and Plugins
-
-# 
-
-​
-
-Tools and Plugins
+Tools and plugins
 
 Everything the agent does beyond generating text happens through **tools**. Tools are how the agent reads files, runs commands, browses the web, sends messages, and interacts with devices.
 
@@ -66,10 +60,10 @@ These tools ship with OpenClaw and are available without installing any plugins:
 
 Tool| What it does| Page  
 ---|---|---  
-`exec` / `process`| Run shell commands, manage background processes| [Exec](</tools/exec>)  
+`exec` / `process`| Run shell commands, manage background processes| [Exec](</tools/exec>), [Exec Approvals](</tools/exec-approvals>)  
 `code_execution`| Run sandboxed remote Python analysis| [Code Execution](</tools/code-execution>)  
 `browser`| Control a Chromium browser (navigate, click, screenshot)| [Browser](</tools/browser>)  
-`web_search` / `x_search` / `web_fetch`| Search the web, search X posts, fetch page content| [Web](</tools/web>)  
+`web_search` / `x_search` / `web_fetch`| Search the web, search X posts, fetch page content| [Web](</tools/web>), [Web Fetch](</tools/web-fetch>)  
 `read` / `write` / `edit`| File I/O in the workspace|   
 `apply_patch`| Multi-hunk file patches| [Apply Patch](</tools/apply-patch>)  
 `message`| Send messages across all channels| [Agent Send](</tools/agent-send>)  
@@ -91,7 +85,7 @@ For image work, use `image` for analysis and `image_generate` for generation or 
   * `config.apply` only for full-config replacement
   * `update.run` for explicit self-update + restart
 
-For partial changes, prefer `config.schema.lookup` then `config.patch`. Use `config.apply` only when you intentionally replace the entire config. The tool also refuses to change `tools.exec.ask` or `tools.exec.security`; legacy `tools.bash.*` aliases normalize to the same protected exec paths.
+For partial changes, prefer `config.schema.lookup` then `config.patch`. Use `config.apply` only when you intentionally replace the entire config. For broader config docs, read [Configuration](</gateway/configuration>) and [Configuration reference](</gateway/configuration-reference>). The tool also refuses to change `tools.exec.ask` or `tools.exec.security`; legacy `tools.bash.*` aliases normalize to the same protected exec paths.
 
 ### 
 
@@ -101,11 +95,12 @@ Plugin-provided tools
 
 Plugins can register additional tools. Some examples:
 
-  * [Lobster](</tools/lobster>) — typed workflow runtime with resumable approvals
-  * [LLM Task](</tools/llm-task>) — JSON-only LLM step for structured output
-  * [Music Generation](</tools/music-generation>) — shared `music_generate` tool with workflow-backed providers
   * [Diffs](</tools/diffs>) — diff viewer and renderer
+  * [LLM Task](</tools/llm-task>) — JSON-only LLM step for structured output
+  * [Lobster](</tools/lobster>) — typed workflow runtime with resumable approvals
+  * [Music Generation](</tools/music-generation>) — shared `music_generate` tool with workflow-backed providers
   * [OpenProse](</prose>) — markdown-first workflow orchestration
+  * [Tokenjuice](</tools/tokenjuice>) — compact noisy `exec` and `bash` tool results
 
 
 ## 
@@ -131,6 +126,8 @@ Control which tools the agent can call via `tools.allow` / `tools.deny` in confi
     
 [/code]
 
+OpenClaw fails closed when an explicit allowlist resolves to no callable tools. For example, `tools.allow: ["query_db"]` only works if a loaded plugin actually registers `query_db`. If no built-in, plugin, or bundled MCP tool matches the allowlist, the run stops before the model call instead of continuing as a text-only run that could hallucinate tool results.
+
 ### 
 
 ​
@@ -146,6 +143,8 @@ Profile| What it includes
 `messaging`| `group:messaging`, `sessions_list`, `sessions_history`, `sessions_send`, `session_status`  
 `minimal`| `session_status` only  
   
+`coding` includes lightweight web tools (`web_search`, `web_fetch`, `x_search`) but not the full browser-control tool. Browser automation can drive real sessions and logged-in profiles, so add it explicitly with `tools.alsoAllow: ["browser"]` or a per-agent `agents.list[].tools.alsoAllow: ["browser"]`. The `coding` and `messaging` profiles also allow configured bundle MCP tools under the plugin key `bundle-mcp`. Add `tools.deny: ["bundle-mcp"]` when you want a profile to keep its normal built-ins but hide all configured MCP tools. The `minimal` profile does not include bundle MCP tools.
+
 ### 
 
 ​

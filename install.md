@@ -1,7 +1,7 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -22,11 +22,16 @@ Install overview
 
 Install
 
-# 
+## 
 
 ​
 
-Install
+System requirements
+
+  * **Node 24** (recommended) or Node 22.14+ — the installer script handles this automatically
+  * **macOS, Linux, or Windows** — both native Windows and WSL2 are supported; WSL2 is more stable. See [Windows](</platforms/windows>).
+  * `pnpm` is only needed if you build from source
+
 
 ## 
 
@@ -72,17 +77,6 @@ For all flags and CI/automation options, see [Installer internals](</install/ins
 
 ​
 
-System requirements
-
-  * **Node 24** (recommended) or Node 22.14+ — the installer script handles this automatically
-  * **macOS, Linux, or Windows** — both native Windows and WSL2 are supported; WSL2 is more stable. See [Windows](</platforms/windows>).
-  * `pnpm` is only needed if you build from source
-
-
-## 
-
-​
-
 Alternative install methods
 
 ### 
@@ -97,7 +91,7 @@ Use this when you want OpenClaw and Node kept under a local prefix such as `~/.o
     
 [/code]
 
-It supports npm installs by default, plus git-checkout installs under the same prefix flow. Full reference: [Installer internals](</install/installer#install-clish>).
+It supports npm installs by default, plus git-checkout installs under the same prefix flow. Full reference: [Installer internals](</install/installer#install-clish>). Already installed? Switch between package and git installs with `openclaw update --channel dev` and `openclaw update --channel stable`. See [Updating](</install/updating#switch-between-npm-and-git-installs>).
 
 ### 
 
@@ -304,6 +298,6 @@ If `$(npm prefix -g)/bin` is not in your `$PATH`, add it to your shell startup f
 
 Then open a new terminal. See [Node setup](</install/node>) for more details.
 
-[Installer Internals](</install/installer>)
+[Installer internals](</install/installer>)
 
 ⌘I

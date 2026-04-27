@@ -1,7 +1,7 @@
 ---
-title: Linux Server
+title: Linux server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -20,13 +20,7 @@ Navigation
 
 Hosting
 
-Linux Server
-
-# 
-
-​
-
-Linux Server
+Linux server
 
 Run the OpenClaw Gateway on any Linux server or cloud VPS. This page helps you pick a provider, explains how cloud deployments work, and covers generic Linux tuning that applies everywhere.
 
@@ -172,7 +166,19 @@ For the standard `openclaw onboard --install-daemon` path, edit the user unit:
     
 [/code]
 
-If you deliberately installed a system unit instead, edit `openclaw-gateway.service` via `sudo systemctl edit openclaw-gateway.service`. How `Restart=` policies help automated recovery: [systemd can automate service recovery](<https://www.redhat.com/en/blog/systemd-automate-recovery>).
+If you deliberately installed a system unit instead, edit `openclaw-gateway.service` via `sudo systemctl edit openclaw-gateway.service`. How `Restart=` policies help automated recovery: [systemd can automate service recovery](<https://www.redhat.com/en/blog/systemd-automate-recovery>). For Linux OOM behavior, child process victim selection, and `exit 137` diagnostics, see [Linux memory pressure and OOM kills](</platforms/linux#memory-pressure-and-oom-kills>).
+
+## 
+
+​
+
+Related
+
+  * [Install overview](</install>)
+  * [DigitalOcean](</install/digitalocean>)
+  * [Fly.io](</install/fly>)
+  * [Hetzner](</install/hetzner>)
+
 
 [Kubernetes](</install/kubernetes>)[macOS VMs](</install/macos-vm>)
 

@@ -1,7 +1,7 @@
 ---
-title: CLI Setup Reference
+title: CLI setup reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -20,13 +20,7 @@ Navigation
 
 Guides
 
-CLI Setup Reference
-
-# 
-
-​
-
-CLI Setup Reference
+CLI setup reference
 
 This page is the full reference for `openclaw onboard`. For the short guide, see [Onboarding (CLI)](</start/wizard>).
 
@@ -189,17 +183,17 @@ Anthropic API key
 
 Uses `ANTHROPIC_API_KEY` if present or prompts for a key, then saves it for daemon use.
 
-OpenAI Code subscription (Codex CLI reuse)
-
-If `~/.codex/auth.json` exists, the wizard can reuse it. Reused Codex CLI credentials stay managed by Codex CLI; on expiry OpenClaw re-reads that source first and, when the provider can refresh it, writes the refreshed credential back to Codex storage instead of taking ownership itself.
-
 OpenAI Code subscription (OAuth)
 
-Browser flow; paste `code#state`.Sets `agents.defaults.model` to `openai-codex/gpt-5.4` when model is unset or `openai/*`.
+Browser flow; paste `code#state`.Sets `agents.defaults.model` to `openai-codex/gpt-5.5` when model is unset or already OpenAI-family.
+
+OpenAI Code subscription (device pairing)
+
+Browser pairing flow with a short-lived device code.Sets `agents.defaults.model` to `openai-codex/gpt-5.5` when model is unset or already OpenAI-family.
 
 OpenAI API key
 
-Uses `OPENAI_API_KEY` if present or prompts for a key, then stores the credential in auth profiles.Sets `agents.defaults.model` to `openai/gpt-5.4` when model is unset, `openai/*`, or `openai-codex/*`.
+Uses `OPENAI_API_KEY` if present or prompts for a key, then stores the credential in auth profiles.Sets `agents.defaults.model` to `openai/gpt-5.5` when model is unset, `openai/*`, or `openai-codex/*`.
 
 xAI (Grok) API key
 
@@ -307,6 +301,7 @@ Outputs and internals
 Typical fields in `~/.openclaw/openclaw.json`:
 
   * `agents.defaults.workspace`
+  * `agents.defaults.skipBootstrap` when `--skip-bootstrap` is passed
   * `agents.defaults.model` / `models.providers` (if Minimax chosen)
   * `tools.profile` (local onboarding defaults to `"coding"` when unset; existing explicit values are preserved)
   * `gateway.*` (mode, bind, auth, tailscale)
@@ -354,6 +349,6 @@ Related docs
   * Command reference: [`openclaw onboard`](</cli/onboard>)
 
 
-[Personal Assistant Setup](</start/openclaw>)[CLI automation](</start/wizard-cli-automation>)
+[Personal assistant setup](</start/openclaw>)[CLI automation](</start/wizard-cli-automation>)
 
 ⌘I

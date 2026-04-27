@@ -1,7 +1,7 @@
 ---
-title: Gateway Runbook
+title: Gateway runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -19,12 +19,6 @@ Search...
 Navigation
 
 Gateway
-
-Gateway Runbook
-
-# 
-
-​
 
 Gateway runbook
 
@@ -142,6 +136,8 @@ Setting| Resolution order
 Gateway port| `--port` → `OPENCLAW_GATEWAY_PORT` → `gateway.port` → `18789`  
 Bind mode| CLI/override → `gateway.bind` → `loopback`  
   
+Gateway startup uses the same effective port and bind when it seeds local Control UI origins for non-loopback binds. For example, `--bind lan --port 3000` seeds `http://localhost:3000` and `http://127.0.0.1:3000` before runtime validation runs. Add any remote browser origins, such as HTTPS proxy URLs, to `gateway.controlUi.allowedOrigins` explicitly.
+
 ### 
 
 ​
@@ -194,7 +190,43 @@ What to expect:
   * `gateway probe` can warn about `multiple reachable gateways` when more than one target answers.
   * If that is intentional, isolate ports, config/state, and workspace roots per gateway.
 
+Checklist per instance:
+
+  * Unique `gateway.port`
+  * Unique `OPENCLAW_CONFIG_PATH`
+  * Unique `OPENCLAW_STATE_DIR`
+  * Unique `agents.defaults.workspace`
+
+Example:
+[code] 
+    OPENCLAW_CONFIG_PATH=~/.openclaw/a.json OPENCLAW_STATE_DIR=~/.openclaw-a openclaw gateway --port 19001
+    OPENCLAW_CONFIG_PATH=~/.openclaw/b.json OPENCLAW_STATE_DIR=~/.openclaw-b openclaw gateway --port 19002
+    
+[/code]
+
 Detailed setup: [/gateway/multiple-gateways](</gateway/multiple-gateways>).
+
+## 
+
+​
+
+VoiceClaw real-time brain endpoint
+
+OpenClaw exposes a VoiceClaw-compatible real-time WebSocket endpoint at `/voiceclaw/realtime`. Use it when a VoiceClaw desktop client should talk directly to a real-time OpenClaw brain instead of going through a separate relay process. The endpoint uses Gemini Live for real-time audio and calls OpenClaw as the brain by exposing OpenClaw tools directly to Gemini Live. Tool calls return an immediate `working` result to keep the voice turn responsive, then OpenClaw executes the actual tool asynchronously and injects the result back into the live session. Set `GEMINI_API_KEY` in the gateway process environment. If gateway auth is enabled, the desktop client sends the gateway token or password in its first `session.config` message. Real-time brain access runs owner-authorized OpenClaw agent commands. Keep `gateway.auth.mode: "none"` limited to loopback-only test instances. Non-local real-time brain connections require gateway auth. For an isolated test gateway, run a separate instance with its own port, config, and state:
+[code] 
+    OPENCLAW_CONFIG_PATH=/path/to/openclaw-realtime/openclaw.json \
+    OPENCLAW_STATE_DIR=/path/to/openclaw-realtime/state \
+    OPENCLAW_SKIP_CHANNELS=1 \
+    GEMINI_API_KEY=... \
+    openclaw gateway --port 19789
+    
+[/code]
+
+Then configure VoiceClaw to use:
+[code] 
+    ws://127.0.0.1:19789/voiceclaw/realtime
+    
+[/code]
 
 ## 
 
@@ -239,7 +271,7 @@ Use supervised runs for production-like reliability.
     
 [/code]
 
-LaunchAgent labels are `ai.openclaw.gateway` (default) or `ai.openclaw.<profile>` (named profile). `openclaw doctor` audits and repairs service config drift.
+Use `openclaw gateway restart` for restarts. Do not chain `openclaw gateway stop` and `openclaw gateway start`; on macOS, `gateway stop` intentionally disables the LaunchAgent before stopping it.LaunchAgent labels are `ai.openclaw.gateway` (default) or `ai.openclaw.<profile>` (named profile). `openclaw doctor` audits and repairs service config drift.
 [code]
     openclaw gateway install
     systemctl --user enable --now openclaw-gateway[-<profile>].service
@@ -293,28 +325,6 @@ Use a system unit for multi-user/always-on hosts.
 Use the same service body as the user unit, but install it under `/etc/systemd/system/openclaw-gateway[-<profile>].service` and adjust `ExecStart=` if your `openclaw` binary lives elsewhere.
 
 ## 
-
-​
-
-Multiple gateways on one host
-
-Most setups should run **one** Gateway. Use multiple only for strict isolation/redundancy (for example a rescue profile). Checklist per instance:
-
-  * Unique `gateway.port`
-  * Unique `OPENCLAW_CONFIG_PATH`
-  * Unique `OPENCLAW_STATE_DIR`
-  * Unique `agents.defaults.workspace`
-
-Example:
-[code] 
-    OPENCLAW_CONFIG_PATH=~/.openclaw/a.json OPENCLAW_STATE_DIR=~/.openclaw-a openclaw gateway --port 19001
-    OPENCLAW_CONFIG_PATH=~/.openclaw/b.json OPENCLAW_STATE_DIR=~/.openclaw-b openclaw gateway --port 19002
-    
-[/code]
-
-See: [Multiple gateways](</gateway/multiple-gateways>).
-
-### 
 
 ​
 
@@ -419,6 +429,18 @@ Related:
   * [Health](</gateway/health>)
   * [Doctor](</gateway/doctor>)
   * [Authentication](</gateway/authentication>)
+
+
+## 
+
+​
+
+Related
+
+  * [Configuration](</gateway/configuration>)
+  * [Gateway troubleshooting](</gateway/troubleshooting>)
+  * [Remote access](</gateway/remote>)
+  * [Secrets management](</gateway/secrets>)
 
 
 [Configuration](</gateway/configuration>)

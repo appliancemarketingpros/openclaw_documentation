@@ -1,7 +1,7 @@
 ---
 title: Setup
 source_url: https://docs.openclaw.ai/start/setup
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -18,13 +18,7 @@ Search...
 
 Navigation
 
-Developer setup
-
-Setup
-
-# 
-
-​
+Advanced setup
 
 Setup
 
@@ -36,9 +30,11 @@ If you are setting up for the first time, start with [Getting Started](</start/g
 
 TL;DR
 
-  * **Tailoring lives outside the repo:** `~/.openclaw/workspace` (workspace) + `~/.openclaw/openclaw.json` (config).
-  * **Stable workflow:** install the macOS app; let it run the bundled Gateway.
-  * **Bleeding edge workflow:** run the Gateway yourself via `pnpm gateway:watch`, then let the macOS app attach in Local mode.
+Pick a setup workflow based on how often you want updates and whether you want to run the Gateway yourself:
+
+  * **Tailoring lives outside the repo:** keep your config and workspace in `~/.openclaw/openclaw.json` and `~/.openclaw/workspace/` so repo updates don’t touch them.
+  * **Stable workflow (recommended for most):** install the macOS app and let it run the bundled Gateway.
+  * **Bleeding edge workflow (dev):** run the Gateway yourself via `pnpm gateway:watch`, then let the macOS app attach in Local mode.
 
 
 ## 
@@ -258,6 +254,6 @@ Related docs
   * [macOS app](</platforms/macos>) (gateway lifecycle)
 
 
-[Session Management Deep Dive](</reference/session-management-compaction>)[Pi Development Workflow](</pi-dev>)
+[Release Channels](</install/development-channels>)[Pi development workflow](</pi-dev>)
 
 ⌘I

@@ -1,7 +1,7 @@
 ---
-title: Getting Started
+title: Getting started
 source_url: https://docs.openclaw.ai/start/getting-started
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -20,13 +20,7 @@ Navigation
 
 First steps
 
-Getting Started
-
-# 
-
-​
-
-Getting Started
+Getting started
 
 Install OpenClaw, run onboarding, and chat with your AI assistant — all in about 5 minutes. By the end you will have a running Gateway, configured auth, and a working chat session.
 
@@ -166,6 +160,17 @@ If you run OpenClaw as a service account or want custom paths:
   * `OPENCLAW_CONFIG_PATH` — override the config file path
 
 Full reference: [Environment variables](</help/environment>).
+
+## 
+
+​
+
+Related
+
+  * [Install overview](</install>)
+  * [Channels overview](</channels>)
+  * [Setup](</start/setup>)
+
 
 [Features](</concepts/features>)[Onboarding Overview](</start/onboarding-overview>)
 

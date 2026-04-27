@@ -1,7 +1,7 @@
 ---
-title: CLI Automation
+title: CLI automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -20,13 +20,7 @@ Navigation
 
 Guides
 
-CLI Automation
-
-# 
-
-​
-
-CLI Automation
+CLI automation
 
 Use `--non-interactive` to automate `openclaw onboard`.
 
@@ -47,11 +41,12 @@ Baseline non-interactive example
       --gateway-bind loopback \
       --install-daemon \
       --daemon-runtime node \
+      --skip-bootstrap \
       --skip-skills
     
 [/code]
 
-Add `--json` for a machine-readable summary. Use `--secret-input-mode ref` to store env-backed refs in auth profiles instead of plaintext values. Interactive selection between env refs and configured provider refs (`file` or `exec`) is available in the onboarding flow. In non-interactive `ref` mode, provider env vars must be set in the process environment. Passing inline key flags without the matching env var now fails fast. Example:
+Add `--json` for a machine-readable summary. Use `--skip-bootstrap` when your automation pre-seeds workspace files and does not want onboarding to create the default bootstrap files. Use `--secret-input-mode ref` to store env-backed refs in auth profiles instead of plaintext values. Interactive selection between env refs and configured provider refs (`file` or `exec`) is available in the onboarding flow. In non-interactive `ref` mode, provider env vars must be set in the process environment. Passing inline key flags without the matching env var now fails fast. Example:
 [code] 
     openclaw onboard --non-interactive \
       --mode local \
@@ -227,7 +222,7 @@ Use `openclaw agents add <name>` to create a separate agent with its own workspa
 [code] 
     openclaw agents add work \
       --workspace ~/.openclaw/workspace-work \
-      --model openai/gpt-5.4 \
+      --model openai/gpt-5.5 \
       --bind whatsapp:biz \
       --non-interactive \
       --json

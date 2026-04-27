@@ -1,7 +1,7 @@
 ---
 title: Features
 source_url: https://docs.openclaw.ai/concepts/features
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -19,12 +19,6 @@ Search...
 Navigation
 
 Overview
-
-Features
-
-# 
-
-​
 
 Features
 
@@ -108,6 +102,16 @@ Full list
   * Skills, plugins, and workflow pipelines (Lobster)
 
 
-[Showcase](</start/showcase>)[Getting Started](</start/getting-started>)
+## 
+
+​
+
+Related
+
+  * [Experimental features](</concepts/experimental-features>)
+  * [Agent runtime](</concepts/agent>)
+
+
+[Showcase](</start/showcase>)[Getting started](</start/getting-started>)
 
 ⌘I

@@ -1,7 +1,7 @@
 ---
-title: Onboarding Overview
+title: Onboarding overview
 source_url: https://docs.openclaw.ai/start/onboarding-overview
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -20,13 +20,7 @@ Navigation
 
 First steps
 
-Onboarding Overview
-
-# 
-
-​
-
-Onboarding Overview
+Onboarding overview
 
 OpenClaw has two onboarding paths. Both configure auth, the Gateway, and optional chat channels — they just differ in how you interact with the setup.
 
@@ -97,6 +91,16 @@ If your provider is not listed in onboarding, choose **Custom Provider** and ent
 
 Multiple custom endpoints can coexist — each gets its own endpoint ID.
 
-[Getting Started](</start/getting-started>)[Onboarding: CLI](</start/wizard>)
+## 
+
+​
+
+Related
+
+  * [Getting started](</start/getting-started>)
+  * [CLI setup reference](</start/wizard-cli-reference>)
+
+
+[Getting started](</start/getting-started>)[Onboarding: CLI](</start/wizard>)
 
 ⌘I

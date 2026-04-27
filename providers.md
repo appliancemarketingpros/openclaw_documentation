@@ -1,7 +1,7 @@
 ---
-title: Provider Directory
+title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -20,7 +20,7 @@ Navigation
 
 Overview
 
-Provider Directory
+Provider directory
 
 # 
 
@@ -55,16 +55,20 @@ Provider docs
 
   * [Alibaba Model Studio](</providers/alibaba>)
   * [Amazon Bedrock](</providers/bedrock>)
+  * [Amazon Bedrock Mantle](</providers/bedrock-mantle>)
   * [Anthropic (API + Claude CLI)](</providers/anthropic>)
   * [Arcee AI (Trinity models)](</providers/arcee>)
+  * [Azure Speech](</providers/azure-speech>)
   * [BytePlus (International)](</concepts/model-providers#byteplus-international>)
   * [Chutes](</providers/chutes>)
-  * [ComfyUI](</providers/comfy>)
   * [Cloudflare AI Gateway](</providers/cloudflare-ai-gateway>)
+  * [ComfyUI](</providers/comfy>)
   * [DeepSeek](</providers/deepseek>)
+  * [ElevenLabs](</providers/elevenlabs>)
   * [fal](</providers/fal>)
   * [Fireworks](</providers/fireworks>)
   * [GitHub Copilot](</providers/github-copilot>)
+  * [Gradium](</providers/gradium>)
   * [GLM models](</providers/glm>)
   * [Google (Gemini)](</providers/google>)
   * [Groq (LPU inference)](</providers/groq>)
@@ -86,15 +90,17 @@ Provider docs
   * [Qianfan](</providers/qianfan>)
   * [Qwen Cloud](</providers/qwen>)
   * [Runway](</providers/runway>)
+  * [SenseAudio](</providers/senseaudio>)
   * [SGLang (local models)](</providers/sglang>)
   * [StepFun](</providers/stepfun>)
   * [Synthetic](</providers/synthetic>)
+  * [Tencent Cloud (TokenHub)](</providers/tencent>)
   * [Together AI](</providers/together>)
   * [Venice (Venice AI, privacy-focused)](</providers/venice>)
   * [Vercel AI Gateway](</providers/vercel-ai-gateway>)
-  * [Vydra](</providers/vydra>)
   * [vLLM (local models)](</providers/vllm>)
   * [Volcengine (Doubao)](</providers/volcengine>)
+  * [Vydra](</providers/vydra>)
   * [xAI](</providers/xai>)
   * [Xiaomi](</providers/xiaomi>)
   * [Z.AI](</providers/zai>)
@@ -119,6 +125,11 @@ Shared overview pages
 Transcription providers
 
   * [Deepgram (audio transcription)](</providers/deepgram>)
+  * [ElevenLabs](</providers/elevenlabs#speech-to-text>)
+  * [Mistral](</providers/mistral#audio-transcription-voxtral>)
+  * [OpenAI](</providers/openai#speech-to-text>)
+  * [SenseAudio](</providers/senseaudio>)
+  * [xAI](</providers/xai#speech-to-text>)
 
 
 ## 
@@ -131,6 +142,6 @@ Community tools
 
 For the full provider catalog (xAI, Groq, Mistral, etc.) and advanced configuration, see [Model providers](</concepts/model-providers>).
 
-[Model Provider Quickstart](</providers/models>)
+[Model provider quickstart](</providers/models>)
 
 ⌘I

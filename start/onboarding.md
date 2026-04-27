@@ -1,7 +1,7 @@
 ---
-title: Onboarding (macOS App)
+title: Onboarding (macOS app)
 source_url: https://docs.openclaw.ai/start/onboarding
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -20,13 +20,7 @@ Navigation
 
 First steps
 
-Onboarding (macOS App)
-
-# 
-
-​
-
-Onboarding (macOS App)
+Onboarding (macOS app)
 
 This doc describes the **current** first‑run setup flow. The goal is a smooth “day 0” experience: pick where the Gateway runs, connect auth, run the wizard, and let the agent bootstrap itself. For a general overview of onboarding paths, see [Onboarding Overview](</start/onboarding-overview>).
 
@@ -108,6 +102,16 @@ Onboarding Chat (dedicated session)
 
 After setup, the app opens a dedicated onboarding chat session so the agent can introduce itself and guide next steps. This keeps first‑run guidance separate from your normal conversation. See [Bootstrapping](</start/bootstrapping>) for what happens on the gateway host during the first agent run.
 
-[Onboarding: CLI](</start/wizard>)[Personal Assistant Setup](</start/openclaw>)
+## 
+
+​
+
+Related
+
+  * [Onboarding overview](</start/onboarding-overview>)
+  * [Getting started](</start/getting-started>)
+
+
+[Onboarding: CLI](</start/wizard>)[Personal assistant setup](</start/openclaw>)
 
 ⌘I

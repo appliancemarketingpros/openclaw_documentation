@@ -1,7 +1,7 @@
 ---
-title: Personal Assistant Setup
+title: Personal assistant setup
 source_url: https://docs.openclaw.ai/start/openclaw
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -20,7 +20,7 @@ Navigation
 
 Guides
 
-Personal Assistant Setup
+Personal assistant setup
 
 # 
 
@@ -100,7 +100,7 @@ You want this: If you link your personal WhatsApp to OpenClaw, every message to 
     
 [/code]
 
-Now message the assistant number from your allowlisted phone. When onboarding finishes, we auto-open the dashboard and print a clean (non-tokenized) link. If it prompts for auth, paste the configured shared secret into Control UI settings. Onboarding uses a token by default (`gateway.auth.token`), but password auth works too if you switched `gateway.auth.mode` to `password`. To reopen later: `openclaw dashboard`.
+Now message the assistant number from your allowlisted phone. When onboarding finishes, OpenClaw auto-opens the dashboard and prints a clean (non-tokenized) link. If the dashboard prompts for auth, paste the configured shared secret into Control UI settings. Onboarding uses a token by default (`gateway.auth.token`), but password auth works too if you switched `gateway.auth.mode` to `password`. To reopen later: `openclaw dashboard`.
 
 ## 
 
@@ -108,7 +108,9 @@ Now message the assistant number from your allowlisted phone. When onboarding fi
 
 Give the agent a workspace (AGENTS)
 
-OpenClaw reads operating instructions and “memory” from its workspace directory. By default, OpenClaw uses `~/.openclaw/workspace` as the agent workspace, and will create it (plus starter `AGENTS.md`, `SOUL.md`, `TOOLS.md`, `IDENTITY.md`, `USER.md`, `HEARTBEAT.md`) automatically on setup/first agent run. `BOOTSTRAP.md` is only created when the workspace is brand new (it should not come back after you delete it). `MEMORY.md` is optional (not auto-created); when present, it is loaded for normal sessions. Subagent sessions only inject `AGENTS.md` and `TOOLS.md`. Tip: treat this folder like OpenClaw’s “memory” and make it a git repo (ideally private) so your `AGENTS.md` \+ memory files are backed up. If git is installed, brand-new workspaces are auto-initialized.
+OpenClaw reads operating instructions and “memory” from its workspace directory. By default, OpenClaw uses `~/.openclaw/workspace` as the agent workspace, and will create it (plus starter `AGENTS.md`, `SOUL.md`, `TOOLS.md`, `IDENTITY.md`, `USER.md`, `HEARTBEAT.md`) automatically on setup/first agent run. `BOOTSTRAP.md` is only created when the workspace is brand new (it should not come back after you delete it). `MEMORY.md` is optional (not auto-created); when present, it is loaded for normal sessions. Subagent sessions only inject `AGENTS.md` and `TOOLS.md`.
+
+Treat this folder like OpenClaw’s memory and make it a git repo (ideally private) so your `AGENTS.md` and memory files are backed up. If git is installed, brand-new workspaces are auto-initialized.
 [code] 
     openclaw setup
     
@@ -117,8 +119,10 @@ OpenClaw reads operating instructions and “memory” from its workspace direct
 Full workspace layout + backup guide: [Agent workspace](</concepts/agent-workspace>) Memory workflow: [Memory](</concepts/memory>) Optional: choose a different workspace with `agents.defaults.workspace` (supports `~`).
 [code] 
     {
-      agent: {
-        workspace: "~/.openclaw/workspace",
+      agents: {
+        defaults: {
+          workspace: "~/.openclaw/workspace",
+        },
       },
     }
     
@@ -127,8 +131,10 @@ Full workspace layout + backup guide: [Agent workspace](</concepts/agent-workspa
 If you already ship your own workspace files from a repo, you can disable bootstrap file creation entirely:
 [code] 
     {
-      agent: {
-        skipBootstrap: true,
+      agents: {
+        defaults: {
+          skipBootstrap: true,
+        },
       },
     }
     
@@ -277,6 +283,17 @@ Next steps
   * Windows status: [Windows (WSL2)](</platforms/windows>)
   * Linux status: [Linux app](</platforms/linux>)
   * Security: [Security](</gateway/security>)
+
+
+## 
+
+​
+
+Related
+
+  * [Getting started](</start/getting-started>)
+  * [Setup](</start/setup>)
+  * [Channels overview](</channels>)
 
 
 [Onboarding: macOS App](</start/onboarding>)[CLI reference](</start/wizard-cli-reference>)

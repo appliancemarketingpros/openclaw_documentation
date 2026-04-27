@@ -1,7 +1,7 @@
 ---
-title: Gateway Architecture
+title: Gateway architecture
 source_url: https://docs.openclaw.ai/concepts/architecture
-scraped_at: 2026-04-20
+scraped_at: 2026-04-27
 ---
 
 [OpenClaw home page](</>)
@@ -19,12 +19,6 @@ Search...
 Navigation
 
 Fundamentals
-
-Gateway Architecture
-
-# 
-
-​
 
 Gateway architecture
 
@@ -201,6 +195,6 @@ Related
   * [Security](</gateway/security>) — trust model and hardening
 
 
-[Agent Runtime](</concepts/agent>)
+[Agent runtime](</concepts/agent>)
 
 ⌘I
