@@ -1,7 +1,7 @@
 ---
 title: Linux server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-04-27
+scraped_at: 2026-05-04
 ---
 
 [OpenClaw home page](</>)
@@ -21,6 +21,12 @@ Navigation
 Hosting
 
 Linux server
+
+> ## Documentation Index
+> 
+> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
+> 
+> Use this file to discover all available pages before exploring further.
 
 Run the OpenClaw Gateway on any Linux server or cloud VPS. This page helps you pick a provider, explains how cloud deployments work, and covers generic Linux tuning that applies everywhere.
 
@@ -88,6 +94,20 @@ How cloud setups work
   * Secure default: keep the Gateway on loopback and access it via SSH tunnel or Tailscale Serve. If you bind to `lan` or `tailnet`, require `gateway.auth.token` or `gateway.auth.password`.
 
 Related pages: [Gateway remote access](</gateway/remote>), [Platforms hub](</platforms>).
+
+## 
+
+​
+
+Harden admin access first
+
+Before you install OpenClaw on a public VPS, decide how you want to administer the box itself.
+
+  * If you want Tailnet-only admin access, install Tailscale first, join the VPS to your tailnet, verify a second SSH session over the Tailscale IP or MagicDNS name, then restrict public SSH.
+  * If you are not using Tailscale, apply the equivalent hardening for your SSH path before exposing more services.
+  * This is separate from Gateway access. You can still keep OpenClaw bound to loopback and use an SSH tunnel or Tailscale Serve for the dashboard.
+
+Tailscale-specific Gateway options live in [Tailscale](</gateway/tailscale>).
 
 ## 
 

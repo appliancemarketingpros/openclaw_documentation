@@ -1,7 +1,7 @@
 ---
 title: Gateway runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-04-27
+scraped_at: 2026-05-04
 ---
 
 [OpenClaw home page](</>)
@@ -21,6 +21,12 @@ Navigation
 Gateway
 
 Gateway runbook
+
+> ## Documentation Index
+> 
+> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
+> 
+> Use this file to discover all available pages before exploring further.
 
 Use this page for day-1 startup and day-2 operations of the Gateway service.
 
@@ -136,7 +142,7 @@ Setting| Resolution order
 Gateway port| `--port` → `OPENCLAW_GATEWAY_PORT` → `gateway.port` → `18789`  
 Bind mode| CLI/override → `gateway.bind` → `loopback`  
   
-Gateway startup uses the same effective port and bind when it seeds local Control UI origins for non-loopback binds. For example, `--bind lan --port 3000` seeds `http://localhost:3000` and `http://127.0.0.1:3000` before runtime validation runs. Add any remote browser origins, such as HTTPS proxy URLs, to `gateway.controlUi.allowedOrigins` explicitly.
+Installed gateway services record the resolved `--port` in supervisor metadata. After changing `gateway.port`, run `openclaw doctor --fix` or `openclaw gateway install --force` so launchd/systemd/schtasks starts the process on the new port. Gateway startup uses the same effective port and bind when it seeds local Control UI origins for non-loopback binds. For example, `--bind lan --port 3000` seeds `http://localhost:3000` and `http://127.0.0.1:3000` before runtime validation runs. Add any remote browser origins, such as HTTPS proxy URLs, to `gateway.controlUi.allowedOrigins` explicitly.
 
 ### 
 
@@ -322,7 +328,7 @@ Use a system unit for multi-user/always-on hosts.
     
 [/code]
 
-Use the same service body as the user unit, but install it under `/etc/systemd/system/openclaw-gateway[-<profile>].service` and adjust `ExecStart=` if your `openclaw` binary lives elsewhere.
+Use the same service body as the user unit, but install it under `/etc/systemd/system/openclaw-gateway[-<profile>].service` and adjust `ExecStart=` if your `openclaw` binary lives elsewhere.Do not also let `openclaw doctor --fix` install a user-level gateway service for the same profile/port. Doctor refuses that automatic install when it finds a system-level OpenClaw gateway service; use `OPENCLAW_SERVICE_REPAIR_POLICY=external` when the system unit owns the lifecycle.
 
 ## 
 

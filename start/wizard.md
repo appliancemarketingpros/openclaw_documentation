@@ -1,7 +1,7 @@
 ---
 title: Onboarding (CLI)
 source_url: https://docs.openclaw.ai/start/wizard
-scraped_at: 2026-04-27
+scraped_at: 2026-05-04
 ---
 
 [OpenClaw home page](</>)
@@ -21,6 +21,12 @@ Navigation
 First steps
 
 Onboarding (CLI)
+
+> ## Documentation Index
+> 
+> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
+> 
+> Use this file to discover all available pages before exploring further.
 
 CLI onboarding is the **recommended** way to set up OpenClaw on macOS, Linux, or Windows (via WSL2; strongly recommended). It configures a local Gateway or a remote Gateway connection, plus channels, skills, and workspace defaults in one guided flow.
 [code] 

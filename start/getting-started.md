@@ -1,7 +1,7 @@
 ---
 title: Getting started
 source_url: https://docs.openclaw.ai/start/getting-started
-scraped_at: 2026-04-27
+scraped_at: 2026-05-04
 ---
 
 [OpenClaw home page](</>)
@@ -21,6 +21,12 @@ Navigation
 First steps
 
 Getting started
+
+> ## Documentation Index
+> 
+> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
+> 
+> Use this file to discover all available pages before exploring further.
 
 Install OpenClaw, run onboarding, and chat with your AI assistant — all in about 5 minutes. By the end you will have a running Gateway, configured auth, and a working chat session.
 

@@ -1,7 +1,7 @@
 ---
 title: CLI reference
 source_url: https://docs.openclaw.ai/cli
-scraped_at: 2026-04-27
+scraped_at: 2026-05-04
 ---
 
 [OpenClaw home page](</>)
@@ -22,6 +22,12 @@ CLI commands
 
 CLI reference
 
+> ## Documentation Index
+> 
+> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
+> 
+> Use this file to discover all available pages before exploring further.
+
 `openclaw` is the main CLI entry point. Each core command has either a dedicated reference page or is documented with the command it aliases; this index lists the commands, the global flags, and the output styling rules that apply across the CLI.
 
 ## 
@@ -37,7 +43,7 @@ Reset and uninstall| [`backup`](</cli/backup>) · [`reset`](</cli/reset>) · [`u
 Messaging and agents| [`message`](</cli/message>) · [`agent`](</cli/agent>) · [`agents`](</cli/agents>) · [`acp`](</cli/acp>) · [`mcp`](</cli/mcp>)  
 Health and sessions| [`status`](</cli/status>) · [`health`](</cli/health>) · [`sessions`](</cli/sessions>)  
 Gateway and logs| [`gateway`](</cli/gateway>) · [`logs`](</cli/logs>) · [`system`](</cli/system>)  
-Models and inference| [`models`](</cli/models>) · [`infer`](</cli/infer>) · `capability` (alias for [`infer`](</cli/infer>)) · [`memory`](</cli/memory>) · [`wiki`](</cli/wiki>)  
+Models and inference| [`models`](</cli/models>) · [`infer`](</cli/infer>) · `capability` (alias for [`infer`](</cli/infer>)) · [`memory`](</cli/memory>) · [`commitments`](</cli/commitments>) · [`wiki`](</cli/wiki>)  
 Network and nodes| [`directory`](</cli/directory>) · [`nodes`](</cli/nodes>) · [`devices`](</cli/devices>) · [`node`](</cli/node>)  
 Runtime and sandbox| [`approvals`](</cli/approvals>) · `exec-policy` (see [`approvals`](</cli/approvals>)) · [`sandbox`](</cli/sandbox>) · [`tui`](</cli/tui>) · `chat`/`terminal` (aliases for [`tui --local`](</cli/tui>)) · [`browser`](</cli/browser>)  
 Automation| [`cron`](</cli/cron>) · [`tasks`](</cli/tasks>) · [`hooks`](</cli/hooks>) · [`webhooks`](</cli/webhooks>)  
@@ -148,6 +154,9 @@ Full command tree
         status
         index
         search
+      commitments
+        list
+        dismiss
       wiki
         status
         doctor

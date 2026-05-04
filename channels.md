@@ -1,7 +1,7 @@
 ---
 title: Chat channels
 source_url: https://docs.openclaw.ai/channels
-scraped_at: 2026-04-27
+scraped_at: 2026-05-04
 ---
 
 [OpenClaw home page](</>)
@@ -22,6 +22,12 @@ Overview
 
 Chat channels
 
+> ## Documentation Index
+> 
+> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
+> 
+> Use this file to discover all available pages before exploring further.
+
 OpenClaw can talk to you on any chat app you already use. Each channel connects via the Gateway. Text is supported everywhere; media and reactions vary by channel.
 
 ## 
@@ -32,7 +38,7 @@ Delivery notes
 
   * Telegram replies that contain markdown image syntax, such as `![alt](url)`, are converted into media replies on the final outbound path when possible.
   * Slack multi-person DMs route as group chats, so group policy, mention behavior, and group-session rules apply to MPIM conversations.
-  * WhatsApp setup is install-on-demand: onboarding can show the setup flow before Baileys runtime dependencies are staged, and the Gateway loads the WhatsApp runtime only when the channel is actually active.
+  * WhatsApp setup is install-on-demand: onboarding can show the setup flow before the plugin package is installed, and the Gateway loads the WhatsApp runtime only when the channel is actually active.
 
 
 ## 
@@ -44,12 +50,12 @@ Supported channels
   * [BlueBubbles](</channels/bluebubbles>) — **Recommended for iMessage** ; uses the BlueBubbles macOS server REST API with full feature support (bundled plugin; edit, unsend, effects, reactions, group management — edit currently broken on macOS 26 Tahoe).
   * [Discord](</channels/discord>) — Discord Bot API + Gateway; supports servers, channels, and DMs.
   * [Feishu](</channels/feishu>) — Feishu/Lark bot via WebSocket (bundled plugin).
-  * [Google Chat](</channels/googlechat>) — Google Chat API app via HTTP webhook.
+  * [Google Chat](</channels/googlechat>) — Google Chat API app via HTTP webhook (downloadable plugin).
   * [iMessage (legacy)](</channels/imessage>) — Legacy macOS integration via imsg CLI (deprecated, use BlueBubbles for new setups).
   * [IRC](</channels/irc>) — Classic IRC servers; channels + DMs with pairing/allowlist controls.
-  * [LINE](</channels/line>) — LINE Messaging API bot (bundled plugin).
-  * [Matrix](</channels/matrix>) — Matrix protocol (bundled plugin).
-  * [Mattermost](</channels/mattermost>) — Bot API + WebSocket; channels, groups, DMs (bundled plugin).
+  * [LINE](</channels/line>) — LINE Messaging API bot (downloadable plugin).
+  * [Matrix](</channels/matrix>) — Matrix protocol (downloadable plugin).
+  * [Mattermost](</channels/mattermost>) — Bot API + WebSocket; channels, groups, DMs (downloadable plugin).
   * [Microsoft Teams](</channels/msteams>) — Bot Framework; enterprise support (bundled plugin).
   * [Nextcloud Talk](</channels/nextcloud-talk>) — Self-hosted chat via Nextcloud Talk (bundled plugin).
   * [Nostr](</channels/nostr>) — Decentralized DMs via NIP-04 (bundled plugin).
@@ -64,6 +70,7 @@ Supported channels
   * [WebChat](</web/webchat>) — Gateway WebChat UI over WebSocket.
   * [WeChat](</channels/wechat>) — Tencent iLink Bot plugin via QR login; private chats only (external plugin).
   * [WhatsApp](</channels/whatsapp>) — Most popular; uses Baileys and requires QR pairing.
+  * [Yuanbao](</channels/yuanbao>) — Tencent Yuanbao bot (external plugin).
   * [Zalo](</channels/zalo>) — Zalo Bot API; Vietnam’s popular messenger (bundled plugin).
   * [Zalo Personal](</channels/zalouser>) — Zalo personal account via QR login (bundled plugin).
 

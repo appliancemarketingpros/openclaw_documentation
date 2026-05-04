@@ -1,7 +1,7 @@
 ---
 title: CLI setup reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-04-27
+scraped_at: 2026-05-04
 ---
 
 [OpenClaw home page](</>)
@@ -21,6 +21,12 @@ Navigation
 Guides
 
 CLI setup reference
+
+> ## Documentation Index
+> 
+> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
+> 
+> Use this file to discover all available pages before exploring further.
 
 This page is the full reference for `openclaw onboard`. For the short guide, see [Onboarding (CLI)](</start/wizard>).
 
@@ -250,6 +256,7 @@ Non-interactive flags:
   * `--custom-api-key` (optional; falls back to `CUSTOM_API_KEY`)
   * `--custom-provider-id` (optional)
   * `--custom-compatibility <openai|anthropic>` (optional; default `openai`)
+  * `--custom-image-input` / `--custom-text-input` (optional; override inferred model input capability)
 
 
 Skip
@@ -259,6 +266,7 @@ Leaves auth unconfigured.
 Model behavior:
 
   * Pick default model from detected options, or enter provider and model manually.
+  * Custom-provider onboarding infers image support for common model IDs and asks only when the model name is unknown.
   * When onboarding starts from a provider auth choice, the model picker prefers that provider automatically. For Volcengine and BytePlus, the same preference also matches their coding-plan variants (`volcengine-plan/*`, `byteplus-plan/*`).
   * If that preferred-provider filter would be empty, the picker falls back to the full catalog instead of showing no models.
   * Wizard runs a model check and warns if the configured model is unknown or missing auth.

@@ -1,7 +1,7 @@
 ---
 title: Tools and plugins
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-04-27
+scraped_at: 2026-05-04
 ---
 
 [OpenClaw home page](</>)
@@ -21,6 +21,12 @@ Navigation
 Overview
 
 Tools and plugins
+
+> ## Documentation Index
+> 
+> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
+> 
+> Use this file to discover all available pages before exploring further.
 
 Everything the agent does beyond generating text happens through **tools**. Tools are how the agent reads files, runs commands, browses the web, sends messages, and interacts with devices.
 
@@ -102,6 +108,7 @@ Plugins can register additional tools. Some examples:
   * [OpenProse](</prose>) — markdown-first workflow orchestration
   * [Tokenjuice](</tools/tokenjuice>) — compact noisy `exec` and `bash` tool results
 
+Plugin tools are still authored with `api.registerTool(...)` and declared in the plugin manifest’s `contracts.tools` list. OpenClaw captures the validated tool descriptor during discovery and caches it by plugin source and contract, so later tool planning can skip plugin runtime loading. Tool execution still loads the owning plugin and calls the live registered implementation.
 
 ## 
 
@@ -138,12 +145,26 @@ Tool profiles
 
 Profile| What it includes  
 ---|---  
-`full`| No restriction (same as unset)  
+`full`| All core and optional plugin tools; unrestricted baseline for broader command/control access  
 `coding`| `group:fs`, `group:runtime`, `group:web`, `group:sessions`, `group:memory`, `cron`, `image`, `image_generate`, `music_generate`, `video_generate`  
 `messaging`| `group:messaging`, `sessions_list`, `sessions_history`, `sessions_send`, `session_status`  
 `minimal`| `session_status` only  
   
-`coding` includes lightweight web tools (`web_search`, `web_fetch`, `x_search`) but not the full browser-control tool. Browser automation can drive real sessions and logged-in profiles, so add it explicitly with `tools.alsoAllow: ["browser"]` or a per-agent `agents.list[].tools.alsoAllow: ["browser"]`. The `coding` and `messaging` profiles also allow configured bundle MCP tools under the plugin key `bundle-mcp`. Add `tools.deny: ["bundle-mcp"]` when you want a profile to keep its normal built-ins but hide all configured MCP tools. The `minimal` profile does not include bundle MCP tools.
+`tools.profile: "messaging"` is intentionally narrow for channel-focused agents. It leaves out broader command/control tools such as filesystem, runtime, browser, canvas, nodes, cron, and gateway control. Use `tools.profile: "full"` as the unrestricted baseline for broader command/control access, then trim access with `tools.allow` / `tools.deny` when needed.
+
+`coding` includes lightweight web tools (`web_search`, `web_fetch`, `x_search`) but not the full browser-control tool. Browser automation can drive real sessions and logged-in profiles, so add it explicitly with `tools.alsoAllow: ["browser"]` or a per-agent `agents.list[].tools.alsoAllow: ["browser"]`.
+
+Configuring `tools.exec` or `tools.fs` under a restrictive profile (`messaging`, `minimal`) does not implicitly widen the profile’s allowlist. Add explicit `tools.alsoAllow` entries (for example `["exec", "process"]` for exec, or `["read", "write", "edit"]` for fs) when you want a restrictive profile to use those configured sections. OpenClaw logs a startup warning when a config section is present without a matching `alsoAllow` grant.
+
+The `coding` and `messaging` profiles also allow configured bundle MCP tools under the plugin key `bundle-mcp`. Add `tools.deny: ["bundle-mcp"]` when you want a profile to keep its normal built-ins but hide all configured MCP tools. The `minimal` profile does not include bundle MCP tools. Example (broadest tool surface by default):
+[code] 
+    {
+      tools: {
+        profile: "full",
+      },
+    }
+    
+[/code]
 
 ### 
 

@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-04-27
+scraped_at: 2026-05-04
 ---
 
 [OpenClaw home page](</>)
@@ -21,6 +21,12 @@ Navigation
 Overview
 
 Provider directory
+
+> ## Documentation Index
+> 
+> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
+> 
+> Use this file to discover all available pages before exploring further.
 
 # 
 
@@ -60,6 +66,7 @@ Provider docs
   * [Arcee AI (Trinity models)](</providers/arcee>)
   * [Azure Speech](</providers/azure-speech>)
   * [BytePlus (International)](</concepts/model-providers#byteplus-international>)
+  * [Cerebras](</providers/cerebras>)
   * [Chutes](</providers/chutes>)
   * [Cloudflare AI Gateway](</providers/cloudflare-ai-gateway>)
   * [ComfyUI](</providers/comfy>)
@@ -68,9 +75,9 @@ Provider docs
   * [fal](</providers/fal>)
   * [Fireworks](</providers/fireworks>)
   * [GitHub Copilot](</providers/github-copilot>)
-  * [Gradium](</providers/gradium>)
   * [GLM models](</providers/glm>)
   * [Google (Gemini)](</providers/google>)
+  * [Gradium](</providers/gradium>)
   * [Groq (LPU inference)](</providers/groq>)
   * [Hugging Face (Inference)](</providers/huggingface>)
   * [inferrs (local models)](</providers/inferrs>)

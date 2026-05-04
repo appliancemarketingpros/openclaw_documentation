@@ -1,7 +1,7 @@
 ---
 title: CLI automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-04-27
+scraped_at: 2026-05-04
 ---
 
 [OpenClaw home page](</>)
@@ -21,6 +21,12 @@ Navigation
 Guides
 
 CLI automation
+
+> ## Documentation Index
+> 
+> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
+> 
+> Use this file to discover all available pages before exploring further.
 
 Use `--non-interactive` to automate `openclaw onboard`.
 
@@ -187,12 +193,13 @@ Custom provider example
       --custom-api-key "$CUSTOM_API_KEY" \
       --custom-provider-id "my-custom" \
       --custom-compatibility anthropic \
+      --custom-image-input \
       --gateway-port 18789 \
       --gateway-bind loopback
     
 [/code]
 
-`--custom-api-key` is optional. If omitted, onboarding checks `CUSTOM_API_KEY`.Ref-mode variant:
+`--custom-api-key` is optional. If omitted, onboarding checks `CUSTOM_API_KEY`. OpenClaw marks common vision model IDs as image-capable automatically. Add `--custom-image-input` for unknown custom vision IDs, or `--custom-text-input` to force text-only metadata.Ref-mode variant:
 [code]
     export CUSTOM_API_KEY="your-key"
     openclaw onboard --non-interactive \
@@ -203,6 +210,7 @@ Custom provider example
       --secret-input-mode ref \
       --custom-provider-id "my-custom" \
       --custom-compatibility anthropic \
+      --custom-image-input \
       --gateway-port 18789 \
       --gateway-bind loopback
     

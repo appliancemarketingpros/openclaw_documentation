@@ -1,0 +1,55 @@
+---
+title: BytePlus plugin
+source_url: https://docs.openclaw.ai/plugins/reference/byteplus
+scraped_at: 2026-05-04
+---
+
+[OpenClaw home page](</>)
+
+![US](https://d3gk2c5xim1je2.cloudfront.net/flags/US.svg)
+
+English
+
+Search...
+
+⌘K
+
+Search...
+
+Navigation
+
+BytePlus plugin
+
+> ## Documentation Index
+> 
+> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
+> 
+> Use this file to discover all available pages before exploring further.
+
+# 
+
+​
+
+BytePlus plugin
+
+Adds BytePlus, BytePlus Plan model provider support to OpenClaw.
+
+## 
+
+​
+
+Distribution
+
+  * Package: `@openclaw/byteplus-provider`
+  * Install route: included in OpenClaw
+
+
+## 
+
+​
+
+Surface
+
+providers: byteplus, byteplus-plan; contracts: videoGenerationProviders
+
+⌘I

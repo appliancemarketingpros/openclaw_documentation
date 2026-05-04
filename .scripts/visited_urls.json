@@ -2,128 +2,128 @@
   "https://docs.openclaw.ai/": {
     "title": "OpenClaw",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/index.md",
-    "hash": "8b4939958c48b0dc9dd4a680b9409773",
-    "last_scraped": "2026-04-27 08:02:09"
+    "hash": "81db7277b805100cc13a346c4937336c",
+    "last_scraped": "2026-05-04 08:13:27"
   },
   "https://docs.openclaw.ai/install": {
     "title": "Install",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/install.md",
-    "hash": "4197d064ae68f35e3e48ae8ac4ce2324",
-    "last_scraped": "2026-04-27 08:02:10"
+    "hash": "be91ea62ac5383af27932f7c6e155543",
+    "last_scraped": "2026-05-04 08:13:28"
   },
   "https://docs.openclaw.ai/channels": {
     "title": "Chat channels",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/channels.md",
-    "hash": "49b0f3fdac668cce8622e7ccaad8002a",
-    "last_scraped": "2026-04-27 08:02:10"
+    "hash": "73c43c7609fcc3d905beb46643118ee4",
+    "last_scraped": "2026-05-04 08:13:29"
   },
   "https://docs.openclaw.ai/concepts/architecture": {
     "title": "Gateway architecture",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/architecture.md",
-    "hash": "90967c24041c97b9b199975e90ab6235",
-    "last_scraped": "2026-04-27 08:02:11"
+    "hash": "22aaf447bb88ca3ade9db1ae0ea16479",
+    "last_scraped": "2026-05-04 08:13:30"
   },
   "https://docs.openclaw.ai/tools": {
     "title": "Tools and plugins",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tools.md",
-    "hash": "07510a4ea3ac6ec29aa60df9ad1eda4a",
-    "last_scraped": "2026-04-27 08:02:12"
+    "hash": "a6eef9493e561c8bb9f7f23a9f9efd24",
+    "last_scraped": "2026-05-04 08:13:31"
   },
   "https://docs.openclaw.ai/providers": {
     "title": "Provider directory",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers.md",
-    "hash": "78e1357f9ed3467bf0bd8bbb5da71877",
-    "last_scraped": "2026-04-27 08:02:13"
+    "hash": "8a762a6d76a8d1836ee133975fd79f66",
+    "last_scraped": "2026-05-04 08:13:32"
   },
   "https://docs.openclaw.ai/platforms": {
     "title": "Platforms",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/platforms.md",
-    "hash": "90f47f2cb85b0eeb37939956a9d63f30",
-    "last_scraped": "2026-04-27 08:02:14"
+    "hash": "3f958665775e03ab2bf18bb78e52233e",
+    "last_scraped": "2026-05-04 08:13:33"
   },
   "https://docs.openclaw.ai/gateway": {
     "title": "Gateway runbook",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway.md",
-    "hash": "2eb31edc90432fb0bc6d264a2a10cb67",
-    "last_scraped": "2026-04-27 08:02:15"
+    "hash": "1b9726bc0b02389997e3c1438cde897a",
+    "last_scraped": "2026-05-04 08:13:34"
   },
   "https://docs.openclaw.ai/cli": {
     "title": "CLI reference",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/cli.md",
-    "hash": "67cd00f9d4e0d5f7cef265f7c0ac2eda",
-    "last_scraped": "2026-04-27 08:02:16"
+    "hash": "a7473990df888b91ace84efcf63afdde",
+    "last_scraped": "2026-05-04 08:13:35"
   },
   "https://docs.openclaw.ai/help": {
     "title": "Help",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/help.md",
-    "hash": "834e83b6d0279d15b47b288fbc82f4d2",
-    "last_scraped": "2026-04-27 08:02:17"
+    "hash": "fc60388599b78f682a9afaee21ab8b38",
+    "last_scraped": "2026-05-04 08:13:36"
   },
   "https://docs.openclaw.ai/start/getting-started": {
     "title": "Getting started",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/getting-started.md",
-    "hash": "6f4a10d1b43348d357abef6707de114d",
-    "last_scraped": "2026-04-27 08:02:17"
+    "hash": "75d8cea88725d2e903170a6d7b1259ab",
+    "last_scraped": "2026-05-04 08:13:37"
   },
   "https://docs.openclaw.ai/start/onboarding-overview": {
     "title": "Onboarding overview",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/onboarding-overview.md",
-    "hash": "629ace53d90b6b8f66274e0da98e18e1",
-    "last_scraped": "2026-04-27 08:02:18"
+    "hash": "b31e3eccf3fd103607a89a30960a7701",
+    "last_scraped": "2026-05-04 08:13:38"
   },
   "https://docs.openclaw.ai/start/wizard": {
     "title": "Onboarding (CLI)",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard.md",
-    "hash": "eb25c53c75af070f58bf62ea411e95da",
-    "last_scraped": "2026-04-27 08:02:19"
+    "hash": "9200c6b53a066c70ad51ecc1e9a2dc90",
+    "last_scraped": "2026-05-04 08:13:39"
   },
   "https://docs.openclaw.ai/start/onboarding": {
     "title": "Onboarding (macOS app)",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/onboarding.md",
-    "hash": "0a2cb6443b2e5a12a8461ce5ea09cf5e",
-    "last_scraped": "2026-04-27 08:02:20"
+    "hash": "c1409f947138dc37396b802f1862f76c",
+    "last_scraped": "2026-05-04 08:13:40"
   },
   "https://docs.openclaw.ai/start/openclaw": {
     "title": "Personal assistant setup",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/openclaw.md",
-    "hash": "f15cf15afeae74574d67eeda8a0b2898",
-    "last_scraped": "2026-04-27 08:02:21"
+    "hash": "63108c154fe8299f0cc26159dbd8b0ba",
+    "last_scraped": "2026-05-04 08:13:40"
   },
   "https://docs.openclaw.ai/start/wizard-cli-reference": {
     "title": "CLI setup reference",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard-cli-reference.md",
-    "hash": "e7785dc55c28ebe9675811eddc94204c",
-    "last_scraped": "2026-04-27 08:02:22"
+    "hash": "eda0ead509356ec532b884923a2265f3",
+    "last_scraped": "2026-05-04 08:13:41"
   },
   "https://docs.openclaw.ai/start/wizard-cli-automation": {
     "title": "CLI automation",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard-cli-automation.md",
-    "hash": "5d58a42bf0a3a13ee77cb2b37e39ca47",
-    "last_scraped": "2026-04-27 08:02:23"
+    "hash": "5881364c3a33f83890d2886d90e630c4",
+    "last_scraped": "2026-05-04 08:13:42"
   },
   "https://docs.openclaw.ai/start/showcase": {
     "title": "Showcase",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/showcase.md",
-    "hash": "29c038311f0ab204bc27645201ece146",
-    "last_scraped": "2026-04-27 08:02:23"
+    "hash": "a32db4fc0e7fe41a9dec1ef593dbfe91",
+    "last_scraped": "2026-05-04 08:13:43"
   },
   "https://docs.openclaw.ai/concepts/features": {
     "title": "Features",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/features.md",
-    "hash": "c6c1d4c822cdeb2db59a59ccff23890b",
-    "last_scraped": "2026-04-27 08:02:24"
+    "hash": "df7c34de7bc416321085f96f94418c92",
+    "last_scraped": "2026-05-04 08:13:44"
   },
   "https://docs.openclaw.ai/start/setup": {
     "title": "Setup",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/setup.md",
-    "hash": "17a6d57ebf7032b827b878a26b5c3a67",
-    "last_scraped": "2026-04-27 08:02:25"
+    "hash": "f7d37d55c5353c61f14ecfaf9a783008",
+    "last_scraped": "2026-05-04 08:13:45"
   },
   "https://docs.openclaw.ai/vps": {
     "title": "Linux server",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vps.md",
-    "hash": "9c65f5e32b3722cbf87f69207315c522",
-    "last_scraped": "2026-04-27 08:02:26"
+    "hash": "5ba71c48efb1bdd603f08e2f0243d35e",
+    "last_scraped": "2026-05-04 08:13:46"
   },
   "https://docs.openclaw.ai/web": {
     "title": "Web",
@@ -2608,5 +2608,904 @@
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/sdk-subpaths.md",
     "hash": "cf3d7ba9a120aec06a07e7e613421630",
     "last_scraped": "2026-04-27 08:03:00"
+  },
+  "https://docs.openclaw.ai/llms.txt": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-05-04 08:13:47"
+  },
+  "https://docs.openclaw.ai/channels/matrix-migration": {
+    "title": "Matrix migration",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/channels/matrix-migration.md",
+    "hash": "c1aca4d4c661b6cf5ad9e703b1267306",
+    "last_scraped": "2026-05-04 08:13:48"
+  },
+  "https://docs.openclaw.ai/channels/yuanbao": {
+    "title": "Yuanbao",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/channels/yuanbao.md",
+    "hash": "8d2a6d51a17cc6bb9508aff83f232ec2",
+    "last_scraped": "2026-05-04 08:13:49"
+  },
+  "https://docs.openclaw.ai/channels/access-groups": {
+    "title": "Access groups",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/channels/access-groups.md",
+    "hash": "b29994aea39241305d9646a1b87a0925",
+    "last_scraped": "2026-05-04 08:13:50"
+  },
+  "https://docs.openclaw.ai/concepts/channel-docking": {
+    "title": "Channel docking",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/channel-docking.md",
+    "hash": "c466dbe28f0b7248cf70a8f6cd09fecd",
+    "last_scraped": "2026-05-04 08:13:51"
+  },
+  "https://docs.openclaw.ai/concepts/parallel-specialist-lanes": {
+    "title": "Parallel specialist lanes",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/parallel-specialist-lanes.md",
+    "hash": "984579278879f4a347b9a0de6bf224e4",
+    "last_scraped": "2026-05-04 08:13:52"
+  },
+  "https://docs.openclaw.ai/concepts/progress-drafts": {
+    "title": "Progress drafts",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/progress-drafts.md",
+    "hash": "ed5786eaee78cbceacd7f26c996b5d65",
+    "last_scraped": "2026-05-04 08:13:53"
+  },
+  "https://docs.openclaw.ai/concepts/qa-matrix": {
+    "title": "Matrix QA",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/qa-matrix.md",
+    "hash": "3f84d1b287a8b4ae811aa970e13ff63c",
+    "last_scraped": "2026-05-04 08:13:53"
+  },
+  "https://docs.openclaw.ai/concepts/queue-steering": {
+    "title": "Steering queue",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/queue-steering.md",
+    "hash": "069a8ddaed8ce26320dfbf31e57289af",
+    "last_scraped": "2026-05-04 08:13:54"
+  },
+  "https://docs.openclaw.ai/plugins/manage-plugins": {
+    "title": "Manage plugins",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/manage-plugins.md",
+    "hash": "f6c851d218fd0d894938523bac964368",
+    "last_scraped": "2026-05-04 08:13:55"
+  },
+  "https://docs.openclaw.ai/tools/steer": {
+    "title": "Steer",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tools/steer.md",
+    "hash": "8926c98ffc8d6487d09ab2f7a5129ef7",
+    "last_scraped": "2026-05-04 08:13:56"
+  },
+  "https://docs.openclaw.ai/plugins/codex-computer-use": {
+    "title": "Codex Computer Use",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/codex-computer-use.md",
+    "hash": "daa35e680380d991d490b279996e01e0",
+    "last_scraped": "2026-05-04 08:13:57"
+  },
+  "https://docs.openclaw.ai/plugins/dependency-resolution": {
+    "title": "Plugin dependency resolution",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/dependency-resolution.md",
+    "hash": "e92f9c5f0daaf72de82c7ed51cfacb45",
+    "last_scraped": "2026-05-04 08:13:58"
+  },
+  "https://docs.openclaw.ai/plugins/memory-lancedb": {
+    "title": "Memory LanceDB",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/memory-lancedb.md",
+    "hash": "dd7196c904b732b526c7211cb93b1c91",
+    "last_scraped": "2026-05-04 08:13:59"
+  },
+  "https://docs.openclaw.ai/plugins/reference": {
+    "title": "Plugin reference",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference.md",
+    "hash": "9b72e9b6556addca95ea998628d0e46f",
+    "last_scraped": "2026-05-04 08:14:00"
+  },
+  "https://docs.openclaw.ai/plugins/plugin-inventory": {
+    "title": "Plugin inventory",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/plugin-inventory.md",
+    "hash": "7d1cf29b3c8149e075d052fed5e311b1",
+    "last_scraped": "2026-05-04 08:14:01"
+  },
+  "https://docs.openclaw.ai/providers/deepinfra": {
+    "title": "Deepinfra",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers/deepinfra.md",
+    "hash": "bddcb87720d20edfcdd4a534162ea00e",
+    "last_scraped": "2026-05-04 08:14:02"
+  },
+  "https://docs.openclaw.ai/providers/cerebras": {
+    "title": "Cerebras",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers/cerebras.md",
+    "hash": "2ca4c4f34a6d5d1d49cf6d21b9080641",
+    "last_scraped": "2026-05-04 08:14:03"
+  },
+  "https://docs.openclaw.ai/security/network-proxy": {
+    "title": "Network proxy",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/security/network-proxy.md",
+    "hash": "e0eb77f42ccbc6590879bee9d2982f0c",
+    "last_scraped": "2026-05-04 08:14:04"
+  },
+  "https://docs.openclaw.ai/reference/openclaw-sdk-api-design": {
+    "title": "OpenClaw App SDK API design",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/reference/openclaw-sdk-api-design.md",
+    "hash": "ab5c0c6314cb97cc251820b6b5ff7ff5",
+    "last_scraped": "2026-05-04 08:14:05"
+  },
+  "https://docs.openclaw.ai/cli/commitments": {
+    "title": "`openclaw commitments`",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/cli/commitments.md",
+    "hash": "2a68ca84b75a60cfc481b904167753eb",
+    "last_scraped": "2026-05-04 08:14:06"
+  },
+  "https://docs.openclaw.ai/concepts/openclaw-sdk": {
+    "title": "OpenClaw App SDK",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/openclaw-sdk.md",
+    "hash": "95bf83023fb6b105092d75bfe9a554ce",
+    "last_scraped": "2026-05-04 08:14:07"
+  },
+  "https://docs.openclaw.ai/reference/full-release-validation": {
+    "title": "Full release validation",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/reference/full-release-validation.md",
+    "hash": "2c4225a24b77880484c3f97626618a39",
+    "last_scraped": "2026-05-04 08:14:08"
+  },
+  "https://docs.openclaw.ai/reference/application-modernization-plan": {
+    "title": "Application modernization plan",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/reference/application-modernization-plan.md",
+    "hash": "3b045e8964221685387b33f2d8ea4602",
+    "last_scraped": "2026-05-04 08:14:09"
+  },
+  "https://docs.openclaw.ai/help/testing-updates-plugins": {
+    "title": "Testing: updates and plugins",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/help/testing-updates-plugins.md",
+    "hash": "2c325bf79dc6215d4000b27d27984990",
+    "last_scraped": "2026-05-04 08:14:10"
+  },
+  "https://docs.openclaw.ai/gateway/config-channels": {
+    "title": "Configuration \u2014 channels",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/config-channels.md",
+    "hash": "b3cdbb1a490ef6a72010bf220cf54602",
+    "last_scraped": "2026-05-04 08:14:11"
+  },
+  "https://docs.openclaw.ai/concepts/active-memory": {
+    "title": "Active memory",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/active-memory.md",
+    "hash": "11e017c704e7a736f4576f8b1a7995bf",
+    "last_scraped": "2026-05-04 08:14:12"
+  },
+  "https://docs.openclaw.ai/concepts/memory-search": {
+    "title": "Memory search",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/memory-search.md",
+    "hash": "a9354ea8ae1c5eb1f2dbb294016fa561",
+    "last_scraped": "2026-05-04 08:14:13"
+  },
+  "https://docs.openclaw.ai/plugins/reference/microsoft": {
+    "title": "Microsoft plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/microsoft.md",
+    "hash": "88846dce517fc6876753bccf5d45cb29",
+    "last_scraped": "2026-05-04 08:14:14"
+  },
+  "https://docs.openclaw.ai/plugins/reference/arcee": {
+    "title": "Arcee plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/arcee.md",
+    "hash": "626cfd64065e1eb31496ddec3fa315df",
+    "last_scraped": "2026-05-04 08:14:15"
+  },
+  "https://docs.openclaw.ai/plugins/reference/zai": {
+    "title": "Z.AI plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/zai.md",
+    "hash": "e0e1347a7be5446890b3ad5d9d88fe8b",
+    "last_scraped": "2026-05-04 08:14:16"
+  },
+  "https://docs.openclaw.ai/plugins/reference/memory-core": {
+    "title": "Memory Core plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/memory-core.md",
+    "hash": "30b4d8d3cc512b97e62a00c814f41d50",
+    "last_scraped": "2026-05-04 08:14:17"
+  },
+  "https://docs.openclaw.ai/plugins/reference/azure-speech": {
+    "title": "Azure Speech plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/azure-speech.md",
+    "hash": "570c9085628beecc9f4b3c6d4c04add1",
+    "last_scraped": "2026-05-04 08:14:18"
+  },
+  "https://docs.openclaw.ai/plugins/reference/alibaba": {
+    "title": "Alibaba plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/alibaba.md",
+    "hash": "f2c57b34c8e947735b2a5a4042fc3a10",
+    "last_scraped": "2026-05-04 08:14:18"
+  },
+  "https://docs.openclaw.ai/plugins/reference/github-copilot": {
+    "title": "GitHub Copilot plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/github-copilot.md",
+    "hash": "ddc8c9d2ab83293fd79ebe125bc2e1fa",
+    "last_scraped": "2026-05-04 08:14:19"
+  },
+  "https://docs.openclaw.ai/plugins/reference/openshell": {
+    "title": "Openshell plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/openshell.md",
+    "hash": "da1ff50b39bcf7082d6033d77eccf49c",
+    "last_scraped": "2026-05-04 08:14:20"
+  },
+  "https://docs.openclaw.ai/plugins/reference/deepinfra": {
+    "title": "DeepInfra plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/deepinfra.md",
+    "hash": "164c29767079d535422030100f418bd7",
+    "last_scraped": "2026-05-04 08:14:21"
+  },
+  "https://docs.openclaw.ai/plugins/reference/cloudflare-ai-gateway": {
+    "title": "Cloudflare AI Gateway plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/cloudflare-ai-gateway.md",
+    "hash": "22d65af522fcdd9e97f5e9ff7325e809",
+    "last_scraped": "2026-05-04 08:14:22"
+  },
+  "https://docs.openclaw.ai/plugins/reference/qa-matrix": {
+    "title": "QA Matrix plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/qa-matrix.md",
+    "hash": "07ef379a08cf03753fae24af63a46139",
+    "last_scraped": "2026-05-04 08:14:23"
+  },
+  "https://docs.openclaw.ai/plugins/reference/anthropic": {
+    "title": "Anthropic plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/anthropic.md",
+    "hash": "0ec8da5c34c51230e35f3e4fcc4b7bcc",
+    "last_scraped": "2026-05-04 08:14:24"
+  },
+  "https://docs.openclaw.ai/plugins/reference/senseaudio": {
+    "title": "Senseaudio plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/senseaudio.md",
+    "hash": "36a37f023c0306bf3864cd319143ad70",
+    "last_scraped": "2026-05-04 08:14:25"
+  },
+  "https://docs.openclaw.ai/plugins/reference/memory-lancedb": {
+    "title": "Memory Lancedb plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/memory-lancedb.md",
+    "hash": "bbbac486a9d9d6e98ee9311d5bcc8abb",
+    "last_scraped": "2026-05-04 08:14:26"
+  },
+  "https://docs.openclaw.ai/plugins/reference/twitch": {
+    "title": "Twitch plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/twitch.md",
+    "hash": "b3b3d59edfa4c020e4a8973e58255014",
+    "last_scraped": "2026-05-04 08:14:27"
+  },
+  "https://docs.openclaw.ai/plugins/reference/google": {
+    "title": "Google plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/google.md",
+    "hash": "498ef3fe95e690274ccf9bda365de6d3",
+    "last_scraped": "2026-05-04 08:14:28"
+  },
+  "https://docs.openclaw.ai/plugins/reference/exa": {
+    "title": "Exa plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/exa.md",
+    "hash": "edb9fdd3bc2287743e022b7fad96b7d0",
+    "last_scraped": "2026-05-04 08:14:29"
+  },
+  "https://docs.openclaw.ai/plugins/reference/tokenjuice": {
+    "title": "Tokenjuice plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/tokenjuice.md",
+    "hash": "07b8ef78bea0b6e8ea9538ff0d9cca04",
+    "last_scraped": "2026-05-04 08:14:29"
+  },
+  "https://docs.openclaw.ai/plugins/reference/skill-workshop": {
+    "title": "Skill Workshop plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/skill-workshop.md",
+    "hash": "6d0d3b4c928fee4732de526bf6c6e904",
+    "last_scraped": "2026-05-04 08:14:30"
+  },
+  "https://docs.openclaw.ai/plugins/reference/chutes": {
+    "title": "Chutes plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/chutes.md",
+    "hash": "efd6bf8bac8175935ef9af71b6cad40a",
+    "last_scraped": "2026-05-04 08:14:31"
+  },
+  "https://docs.openclaw.ai/plugins/reference/firecrawl": {
+    "title": "Firecrawl plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/firecrawl.md",
+    "hash": "08fcf58e3e4b043183baf909fc4f3a7f",
+    "last_scraped": "2026-05-04 08:14:32"
+  },
+  "https://docs.openclaw.ai/plugins/reference/google-meet": {
+    "title": "Google Meet plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/google-meet.md",
+    "hash": "96c35294b46c1b8cc3ef5bba5a5733cd",
+    "last_scraped": "2026-05-04 08:14:33"
+  },
+  "https://docs.openclaw.ai/plugins/reference/llm-task": {
+    "title": "LLM Task plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/llm-task.md",
+    "hash": "77b57020f12d7f4978e2709307c54f02",
+    "last_scraped": "2026-05-04 08:14:34"
+  },
+  "https://docs.openclaw.ai/plugins/reference/duckduckgo": {
+    "title": "DuckDuckGo plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/duckduckgo.md",
+    "hash": "41204d61cf76291bb8253b323380db8f",
+    "last_scraped": "2026-05-04 08:14:35"
+  },
+  "https://docs.openclaw.ai/plugins/reference/openai": {
+    "title": "OpenAI plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/openai.md",
+    "hash": "e8aa2b8d84dfa8d098d7216ca7cabfdb",
+    "last_scraped": "2026-05-04 08:14:36"
+  },
+  "https://docs.openclaw.ai/plugins/reference/fal": {
+    "title": "fal plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/fal.md",
+    "hash": "4cc2d4a1f6e083ea1c7914a9226ab280",
+    "last_scraped": "2026-05-04 08:14:37"
+  },
+  "https://docs.openclaw.ai/plugins/reference/runway": {
+    "title": "Runway plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/runway.md",
+    "hash": "0fc1842ce0fc4330bb24ab04965340a9",
+    "last_scraped": "2026-05-04 08:14:38"
+  },
+  "https://docs.openclaw.ai/plugins/reference/ollama": {
+    "title": "Ollama plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/ollama.md",
+    "hash": "1809f454bd72b5852dd5b4ec70b70a04",
+    "last_scraped": "2026-05-04 08:14:39"
+  },
+  "https://docs.openclaw.ai/plugins/reference/elevenlabs": {
+    "title": "Elevenlabs plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/elevenlabs.md",
+    "hash": "a7bc68a7bff7d58d4e2e0c8adf29ed0a",
+    "last_scraped": "2026-05-04 08:14:39"
+  },
+  "https://docs.openclaw.ai/plugins/reference/qqbot": {
+    "title": "QQ Bot plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/qqbot.md",
+    "hash": "7929c2ab56c387a87e1a27aa18e08f47",
+    "last_scraped": "2026-05-04 08:14:40"
+  },
+  "https://docs.openclaw.ai/plugins/reference/microsoft-foundry": {
+    "title": "Microsoft Foundry plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/microsoft-foundry.md",
+    "hash": "b797040a91813d8e2c1fed43aea03255",
+    "last_scraped": "2026-05-04 08:14:41"
+  },
+  "https://docs.openclaw.ai/plugins/reference/slack": {
+    "title": "Slack plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/slack.md",
+    "hash": "8877ee095ccf6023a2b07b4aa9b47574",
+    "last_scraped": "2026-05-04 08:14:42"
+  },
+  "https://docs.openclaw.ai/plugins/reference/together": {
+    "title": "Together plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/together.md",
+    "hash": "71f2db3316e394f2e13fff49e9a8682d",
+    "last_scraped": "2026-05-04 08:14:43"
+  },
+  "https://docs.openclaw.ai/plugins/reference/web-readability": {
+    "title": "Web Readability plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/web-readability.md",
+    "hash": "2f3a65c73d119be1e2acca90f3bf282d",
+    "last_scraped": "2026-05-04 08:14:44"
+  },
+  "https://docs.openclaw.ai/plugins/reference/lobster": {
+    "title": "Lobster plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/lobster.md",
+    "hash": "b0310b693d18cb8593854cc5b410e67c",
+    "last_scraped": "2026-05-04 08:14:45"
+  },
+  "https://docs.openclaw.ai/plugins/reference/deepgram": {
+    "title": "Deepgram plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/deepgram.md",
+    "hash": "c9eedd8b9aa10559f5b475724139b1b0",
+    "last_scraped": "2026-05-04 08:14:46"
+  },
+  "https://docs.openclaw.ai/plugins/reference/diagnostics-prometheus": {
+    "title": "Diagnostics Prometheus plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/diagnostics-prometheus.md",
+    "hash": "4d107cb4aef4469acb7f7c9713fb2182",
+    "last_scraped": "2026-05-04 08:14:47"
+  },
+  "https://docs.openclaw.ai/plugins/reference/document-extract": {
+    "title": "Document Extract plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/document-extract.md",
+    "hash": "77942aa8150f8de7a502481d8ef456bb",
+    "last_scraped": "2026-05-04 08:14:48"
+  },
+  "https://docs.openclaw.ai/plugins/reference/bonjour": {
+    "title": "Bonjour plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/bonjour.md",
+    "hash": "c4235d98f412b9ccab1bac2ddfa8474f",
+    "last_scraped": "2026-05-04 08:14:49"
+  },
+  "https://docs.openclaw.ai/plugins/reference/xai": {
+    "title": "xAI plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/xai.md",
+    "hash": "575acf31e85fc393027d2c74fdba31d1",
+    "last_scraped": "2026-05-04 08:14:50"
+  },
+  "https://docs.openclaw.ai/plugins/reference/gradium": {
+    "title": "Gradium plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/gradium.md",
+    "hash": "706734593932b253f3cbbd3a87855179",
+    "last_scraped": "2026-05-04 08:14:50"
+  },
+  "https://docs.openclaw.ai/plugins/reference/copilot-proxy": {
+    "title": "Copilot Proxy plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/copilot-proxy.md",
+    "hash": "0f7bb9f0d61b73ffbe60d7bb3a1636e2",
+    "last_scraped": "2026-05-04 08:14:51"
+  },
+  "https://docs.openclaw.ai/plugins/reference/nostr": {
+    "title": "Nostr plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/nostr.md",
+    "hash": "f7646af2c76796babee454fe1c0b9038",
+    "last_scraped": "2026-05-04 08:14:52"
+  },
+  "https://docs.openclaw.ai/plugins/reference/nextcloud-talk": {
+    "title": "Nextcloud Talk plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/nextcloud-talk.md",
+    "hash": "1f1351cc9769cb88b456098a3205b2c2",
+    "last_scraped": "2026-05-04 08:14:53"
+  },
+  "https://docs.openclaw.ai/plugins/reference/kilocode": {
+    "title": "Kilocode plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/kilocode.md",
+    "hash": "75ec8ce4f9d5604abc08bfae639a0d63",
+    "last_scraped": "2026-05-04 08:14:54"
+  },
+  "https://docs.openclaw.ai/plugins/reference/moonshot": {
+    "title": "Moonshot plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/moonshot.md",
+    "hash": "ae02443cae270843d1237e32a077bd53",
+    "last_scraped": "2026-05-04 08:14:55"
+  },
+  "https://docs.openclaw.ai/plugins/reference/discord": {
+    "title": "Discord plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/discord.md",
+    "hash": "aae92e3373ebe1bdc8b731f05a2f5995",
+    "last_scraped": "2026-05-04 08:14:56"
+  },
+  "https://docs.openclaw.ai/plugins/reference/qianfan": {
+    "title": "Qianfan plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/qianfan.md",
+    "hash": "8bf362169d267baced9de1d260e38c05",
+    "last_scraped": "2026-05-04 08:14:57"
+  },
+  "https://docs.openclaw.ai/plugins/reference/perplexity": {
+    "title": "Perplexity plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/perplexity.md",
+    "hash": "d44ead8390c5bb89a44b89f5d68534fd",
+    "last_scraped": "2026-05-04 08:14:58"
+  },
+  "https://docs.openclaw.ai/plugins/reference/xiaomi": {
+    "title": "Xiaomi plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/xiaomi.md",
+    "hash": "f147232882fe7543f5b3cf70c50ad904",
+    "last_scraped": "2026-05-04 08:14:59"
+  },
+  "https://docs.openclaw.ai/plugins/reference/diagnostics-otel": {
+    "title": "Diagnostics OpenTelemetry plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/diagnostics-otel.md",
+    "hash": "509c0353af9fb19c71906e5721dfaf0e",
+    "last_scraped": "2026-05-04 08:15:00"
+  },
+  "https://docs.openclaw.ai/plugins/reference/line": {
+    "title": "LINE plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/line.md",
+    "hash": "12088d89d3931999fc1763bdd3da1a76",
+    "last_scraped": "2026-05-04 08:15:00"
+  },
+  "https://docs.openclaw.ai/plugins/reference/webhooks": {
+    "title": "Webhooks plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/webhooks.md",
+    "hash": "25b296196bee76c0eece077c8ebfe6e8",
+    "last_scraped": "2026-05-04 08:15:01"
+  },
+  "https://docs.openclaw.ai/plugins/reference/opencode": {
+    "title": "OpenCode plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/opencode.md",
+    "hash": "b6dc646c7f88d40d34172526aa1fc1a9",
+    "last_scraped": "2026-05-04 08:15:02"
+  },
+  "https://docs.openclaw.ai/plugins/reference/migrate-hermes": {
+    "title": "Migrate Hermes plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/migrate-hermes.md",
+    "hash": "45b8160fb9859cc80d4b0321e9d38098",
+    "last_scraped": "2026-05-04 08:15:03"
+  },
+  "https://docs.openclaw.ai/plugins/reference/tlon": {
+    "title": "Tlon plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/tlon.md",
+    "hash": "f629e09fad7dfb0854ce07b690673a11",
+    "last_scraped": "2026-05-04 08:15:04"
+  },
+  "https://docs.openclaw.ai/plugins/reference/acpx": {
+    "title": "ACPx plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/acpx.md",
+    "hash": "b1dc154f2e92d6633e5121b9c770492c",
+    "last_scraped": "2026-05-04 08:15:05"
+  },
+  "https://docs.openclaw.ai/plugins/reference/zalo": {
+    "title": "Zalo plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/zalo.md",
+    "hash": "3405c0f548b7357b85ccaee00fbf2a5b",
+    "last_scraped": "2026-05-04 08:15:06"
+  },
+  "https://docs.openclaw.ai/plugins/reference/feishu": {
+    "title": "Feishu plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/feishu.md",
+    "hash": "d3ba2f36ea978447f11742464581295f",
+    "last_scraped": "2026-05-04 08:15:07"
+  },
+  "https://docs.openclaw.ai/plugins/reference/byteplus": {
+    "title": "BytePlus plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/byteplus.md",
+    "hash": "9939c53b1bf44479eeaebc100c4729b7",
+    "last_scraped": "2026-05-04 08:15:08"
+  },
+  "https://docs.openclaw.ai/plugins/reference/brave": {
+    "title": "Brave plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/brave.md",
+    "hash": "0424394b5a0b054409a0675a47b441d6",
+    "last_scraped": "2026-05-04 08:15:09"
+  },
+  "https://docs.openclaw.ai/plugins/reference/irc": {
+    "title": "IRC plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/irc.md",
+    "hash": "e64ce9d6b3bb3ca8bd40c96401c149a1",
+    "last_scraped": "2026-05-04 08:15:10"
+  },
+  "https://docs.openclaw.ai/plugins/reference/imessage": {
+    "title": "iMessage plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/imessage.md",
+    "hash": "d9aa3feb10b982ae2cc83a3b2bb86405",
+    "last_scraped": "2026-05-04 08:15:11"
+  },
+  "https://docs.openclaw.ai/plugins/reference/fireworks": {
+    "title": "Fireworks plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/fireworks.md",
+    "hash": "7c1b59b41e91fd445a984f33308c0f43",
+    "last_scraped": "2026-05-04 08:15:12"
+  },
+  "https://docs.openclaw.ai/plugins/reference/huggingface": {
+    "title": "Hugging Face plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/huggingface.md",
+    "hash": "1d191c9a00cd172b84d9eb1bfacff6c7",
+    "last_scraped": "2026-05-04 08:15:13"
+  },
+  "https://docs.openclaw.ai/plugins/reference/vllm": {
+    "title": "vLLM plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/vllm.md",
+    "hash": "b35130dac5f9fd5f3ab571d8659bb744",
+    "last_scraped": "2026-05-04 08:15:13"
+  },
+  "https://docs.openclaw.ai/plugins/reference/tencent": {
+    "title": "Tencent plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/tencent.md",
+    "hash": "201aa4cca056888127f0db60af866752",
+    "last_scraped": "2026-05-04 08:15:14"
+  },
+  "https://docs.openclaw.ai/plugins/reference/voice-call": {
+    "title": "Voice Call plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/voice-call.md",
+    "hash": "cac8e10132beb9cc2fac8588f76bb5d8",
+    "last_scraped": "2026-05-04 08:15:15"
+  },
+  "https://docs.openclaw.ai/plugins/reference/volcengine": {
+    "title": "Volcengine plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/volcengine.md",
+    "hash": "508cf7b6d5771c47de19034b44eaba34",
+    "last_scraped": "2026-05-04 08:15:16"
+  },
+  "https://docs.openclaw.ai/plugins/reference/vydra": {
+    "title": "Vydra plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/vydra.md",
+    "hash": "79dc63d61ca7fd1766f380a643d7cc63",
+    "last_scraped": "2026-05-04 08:15:17"
+  },
+  "https://docs.openclaw.ai/plugins/reference/kimi": {
+    "title": "Kimi plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/kimi.md",
+    "hash": "4a45079f4375e5f768ee794d87d7ac88",
+    "last_scraped": "2026-05-04 08:15:18"
+  },
+  "https://docs.openclaw.ai/plugins/reference/whatsapp": {
+    "title": "WhatsApp plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/whatsapp.md",
+    "hash": "fc8cdc550d1c47ccafb43b15888efca6",
+    "last_scraped": "2026-05-04 08:15:19"
+  },
+  "https://docs.openclaw.ai/plugins/reference/opencode-go": {
+    "title": "OpenCode Go plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/opencode-go.md",
+    "hash": "0c641cfbfe5e53a32ec1a73f2d59be03",
+    "last_scraped": "2026-05-04 08:15:20"
+  },
+  "https://docs.openclaw.ai/plugins/reference/tts-local-cli": {
+    "title": "TTS Local CLI plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/tts-local-cli.md",
+    "hash": "a31d86de80c3dc5bfcf5f053e9b890b5",
+    "last_scraped": "2026-05-04 08:15:21"
+  },
+  "https://docs.openclaw.ai/plugins/reference/vercel-ai-gateway": {
+    "title": "Vercel AI Gateway plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/vercel-ai-gateway.md",
+    "hash": "acab039fc4d63a48537e993375e8ef60",
+    "last_scraped": "2026-05-04 08:15:22"
+  },
+  "https://docs.openclaw.ai/plugins/reference/qa-channel": {
+    "title": "QA Channel plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/qa-channel.md",
+    "hash": "511fe41c1fe62c0d1b62beb28ed1a077",
+    "last_scraped": "2026-05-04 08:15:23"
+  },
+  "https://docs.openclaw.ai/plugins/reference/synthetic": {
+    "title": "Synthetic plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/synthetic.md",
+    "hash": "636ba42a3251576a3d9fcb4f96969263",
+    "last_scraped": "2026-05-04 08:15:24"
+  },
+  "https://docs.openclaw.ai/plugins/reference/stepfun": {
+    "title": "StepFun plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/stepfun.md",
+    "hash": "a3b691252e5fb5237165732d0e4101d1",
+    "last_scraped": "2026-05-04 08:15:25"
+  },
+  "https://docs.openclaw.ai/plugins/reference/comfy": {
+    "title": "ComfyUI plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/comfy.md",
+    "hash": "e20262eca006714a1b1ff3c6d54107fa",
+    "last_scraped": "2026-05-04 08:15:25"
+  },
+  "https://docs.openclaw.ai/plugins/reference/browser": {
+    "title": "Browser plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/browser.md",
+    "hash": "3242cd2deb0d9201144600ecd7806d30",
+    "last_scraped": "2026-05-04 08:15:26"
+  },
+  "https://docs.openclaw.ai/plugins/reference/signal": {
+    "title": "Signal plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/signal.md",
+    "hash": "9dcf03270f21b56d847817a15053e89c",
+    "last_scraped": "2026-05-04 08:15:27"
+  },
+  "https://docs.openclaw.ai/plugins/reference/open-prose": {
+    "title": "Open Prose plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/open-prose.md",
+    "hash": "a74516e1d96840e6c0b5418b56fdfd5d",
+    "last_scraped": "2026-05-04 08:15:28"
+  },
+  "https://docs.openclaw.ai/plugins/reference/lmstudio": {
+    "title": "LM Studio plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/lmstudio.md",
+    "hash": "7e1ac2e7e89c32de64ab353192e89ed9",
+    "last_scraped": "2026-05-04 08:15:29"
+  },
+  "https://docs.openclaw.ai/plugins/reference/memory-wiki": {
+    "title": "Memory Wiki plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/memory-wiki.md",
+    "hash": "8eb8ede00f4039e698d8fc04476f22cf",
+    "last_scraped": "2026-05-04 08:15:30"
+  },
+  "https://docs.openclaw.ai/plugins/reference/migrate-claude": {
+    "title": "Migrate Claude plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/migrate-claude.md",
+    "hash": "64b1db00444338445f9f36e766885f86",
+    "last_scraped": "2026-05-04 08:15:31"
+  },
+  "https://docs.openclaw.ai/plugins/reference/cerebras": {
+    "title": "Cerebras plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/cerebras.md",
+    "hash": "49aa4481519a12a2cd9707307fce0b46",
+    "last_scraped": "2026-05-04 08:15:32"
+  },
+  "https://docs.openclaw.ai/plugins/reference/openrouter": {
+    "title": "OpenRouter plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/openrouter.md",
+    "hash": "dfed0039a60f4d9b5dbc850a41ce709f",
+    "last_scraped": "2026-05-04 08:15:33"
+  },
+  "https://docs.openclaw.ai/plugins/reference/diffs": {
+    "title": "Diffs plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/diffs.md",
+    "hash": "9f57e21b171c5c2e0ceec17690349241",
+    "last_scraped": "2026-05-04 08:15:34"
+  },
+  "https://docs.openclaw.ai/plugins/reference/msteams": {
+    "title": "Microsoft Teams plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/msteams.md",
+    "hash": "61124eceaa89ade58f0b2ebd588b8e1f",
+    "last_scraped": "2026-05-04 08:15:35"
+  },
+  "https://docs.openclaw.ai/plugins/reference/tavily": {
+    "title": "Tavily plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/tavily.md",
+    "hash": "4370471e5954bed8112c76f5a4716ada",
+    "last_scraped": "2026-05-04 08:15:36"
+  },
+  "https://docs.openclaw.ai/plugins/reference/zalouser": {
+    "title": "Zalo Personal plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/zalouser.md",
+    "hash": "6ff520041fc3cb95a6f4814012d2dbac",
+    "last_scraped": "2026-05-04 08:15:36"
+  },
+  "https://docs.openclaw.ai/plugins/reference/minimax": {
+    "title": "MiniMax plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/minimax.md",
+    "hash": "0e98ce6b18cf0f809c38a687ce3cb5b4",
+    "last_scraped": "2026-05-04 08:15:37"
+  },
+  "https://docs.openclaw.ai/plugins/reference/bluebubbles": {
+    "title": "BlueBubbles plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/bluebubbles.md",
+    "hash": "2ef62ea110f1a17d191d7a3d810eb56d",
+    "last_scraped": "2026-05-04 08:15:38"
+  },
+  "https://docs.openclaw.ai/plugins/reference/litellm": {
+    "title": "LiteLLM plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/litellm.md",
+    "hash": "06d1d0138969ab6ab0d835856c9b96e9",
+    "last_scraped": "2026-05-04 08:15:39"
+  },
+  "https://docs.openclaw.ai/plugins/reference/mistral": {
+    "title": "Mistral plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/mistral.md",
+    "hash": "1b590fce8c82ca1c4b764eedc30ef1ef",
+    "last_scraped": "2026-05-04 08:15:40"
+  },
+  "https://docs.openclaw.ai/plugins/reference/nvidia": {
+    "title": "NVIDIA plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/nvidia.md",
+    "hash": "c12c9e0f420bf296255894fd1863e00b",
+    "last_scraped": "2026-05-04 08:15:41"
+  },
+  "https://docs.openclaw.ai/plugins/reference/synology-chat": {
+    "title": "Synology Chat plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/synology-chat.md",
+    "hash": "904aa8cffe75f8a6174d351f9a09c332",
+    "last_scraped": "2026-05-04 08:15:42"
+  },
+  "https://docs.openclaw.ai/plugins/reference/amazon-bedrock": {
+    "title": "Amazon Bedrock plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/amazon-bedrock.md",
+    "hash": "c435a1089691384a200e466d35ed6fb6",
+    "last_scraped": "2026-05-04 08:15:43"
+  },
+  "https://docs.openclaw.ai/plugins/reference/anthropic-vertex": {
+    "title": "Anthropic Vertex plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/anthropic-vertex.md",
+    "hash": "53969c57c15d7c4241e9a7fabe0a288d",
+    "last_scraped": "2026-05-04 08:15:44"
+  },
+  "https://docs.openclaw.ai/plugins/reference/googlechat": {
+    "title": "Google Chat plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/googlechat.md",
+    "hash": "7112deb8df3567887d2968248a91db60",
+    "last_scraped": "2026-05-04 08:15:45"
+  },
+  "https://docs.openclaw.ai/plugins/reference/telegram": {
+    "title": "Telegram plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/telegram.md",
+    "hash": "6c7a2b281ae4eec74c8727e489c9ed05",
+    "last_scraped": "2026-05-04 08:15:45"
+  },
+  "https://docs.openclaw.ai/plugins/reference/inworld": {
+    "title": "Inworld plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/inworld.md",
+    "hash": "f5550f3dfd86f872016b48f03d01da78",
+    "last_scraped": "2026-05-04 08:15:46"
+  },
+  "https://docs.openclaw.ai/plugins/reference/searxng": {
+    "title": "SearXNG plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/searxng.md",
+    "hash": "ecae84945679c5c23cab260c8ac9e6b4",
+    "last_scraped": "2026-05-04 08:15:47"
+  },
+  "https://docs.openclaw.ai/plugins/reference/qwen": {
+    "title": "Qwen plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/qwen.md",
+    "hash": "d881c5a17ef44f9d3deb3319030443cd",
+    "last_scraped": "2026-05-04 08:15:48"
+  },
+  "https://docs.openclaw.ai/plugins/reference/codex": {
+    "title": "Codex plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/codex.md",
+    "hash": "008ffba092abf227ec9f050d62ef1ee0",
+    "last_scraped": "2026-05-04 08:15:49"
+  },
+  "https://docs.openclaw.ai/plugins/reference/qa-lab": {
+    "title": "QA Lab plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/qa-lab.md",
+    "hash": "0eb7c2ab739ca271fda7058260e02772",
+    "last_scraped": "2026-05-04 08:15:50"
+  },
+  "https://docs.openclaw.ai/plugins/reference/amazon-bedrock-mantle": {
+    "title": "Amazon Bedrock Mantle plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/amazon-bedrock-mantle.md",
+    "hash": "78cfe502ebb33421a23542d775ffdad2",
+    "last_scraped": "2026-05-04 08:15:51"
+  },
+  "https://docs.openclaw.ai/plugins/reference/deepseek": {
+    "title": "DeepSeek plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/deepseek.md",
+    "hash": "50810dd26c8b9ceb53a3f4098bada00d",
+    "last_scraped": "2026-05-04 08:15:52"
+  },
+  "https://docs.openclaw.ai/plugins/reference/venice": {
+    "title": "Venice plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/venice.md",
+    "hash": "97ba4be189dde35ea0abe8834eb0f776",
+    "last_scraped": "2026-05-04 08:15:53"
+  },
+  "https://docs.openclaw.ai/plugins/reference/file-transfer": {
+    "title": "File Transfer plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/file-transfer.md",
+    "hash": "9a33b2b9091d762aecf21eeeefa7a362",
+    "last_scraped": "2026-05-04 08:15:54"
+  },
+  "https://docs.openclaw.ai/plugins/reference/matrix": {
+    "title": "Matrix plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/matrix.md",
+    "hash": "2ccc25e0db2129679e1d24255c4ba4a6",
+    "last_scraped": "2026-05-04 08:15:55"
+  },
+  "https://docs.openclaw.ai/plugins/reference/mattermost": {
+    "title": "Mattermost plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/mattermost.md",
+    "hash": "f1cfd67a03c6e215d05a43dfb1575995",
+    "last_scraped": "2026-05-04 08:15:56"
+  },
+  "https://docs.openclaw.ai/plugins/reference/sglang": {
+    "title": "SGLang plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/sglang.md",
+    "hash": "149e208ac25f0274b77717ae59671809",
+    "last_scraped": "2026-05-04 08:15:57"
+  },
+  "https://docs.openclaw.ai/plugins/reference/groq": {
+    "title": "Groq plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/groq.md",
+    "hash": "04ff48567c564280a20e9cfc8da46e28",
+    "last_scraped": "2026-05-04 08:15:58"
+  },
+  "https://docs.openclaw.ai/plugins/reference/voyage": {
+    "title": "Voyage plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/voyage.md",
+    "hash": "e3739bceda3f2688d11465f0d3302e75",
+    "last_scraped": "2026-05-04 08:15:59"
+  },
+  "https://docs.openclaw.ai/concepts/commitments": {
+    "title": "Inferred commitments",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/commitments.md",
+    "hash": "7ec36b284dbf0c3882002e36e1c29683",
+    "last_scraped": "2026-05-04 08:16:00"
+  },
+  "https://docs.openclaw.ai/gateway/config-agents": {
+    "title": "Configuration \u2014 agents",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/config-agents.md",
+    "hash": "1b94305689f13ced55c0963b4041bf0d",
+    "last_scraped": "2026-05-04 08:16:01"
+  },
+  "https://docs.openclaw.ai/gateway/config-tools": {
+    "title": "Configuration \u2014 tools and custom providers",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/config-tools.md",
+    "hash": "695931910376119d63fd3314bf444da5",
+    "last_scraped": "2026-05-04 08:16:02"
+  },
+  "https://docs.openclaw.ai/concepts/dreaming": {
+    "title": "Dreaming",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/dreaming.md",
+    "hash": "f5d55f6023f4099a8b026e1d81fc36b7",
+    "last_scraped": "2026-05-04 08:16:03"
+  },
+  "https://docs.openclaw.ai/concepts/memory-qmd": {
+    "title": "QMD memory engine",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/memory-qmd.md",
+    "hash": "f800a96a3ef417fa53d73dc1e0d21316",
+    "last_scraped": "2026-05-04 08:16:04"
+  },
+  "https://docs.openclaw.ai/concepts/memory-builtin": {
+    "title": "Builtin memory engine",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/memory-builtin.md",
+    "hash": "5a35b47f97f4bdc65024ca8eeed04fe7",
+    "last_scraped": "2026-05-04 08:16:05"
+  },
+  "https://docs.openclaw.ai/concepts/memory-honcho": {
+    "title": "Honcho memory",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/memory-honcho.md",
+    "hash": "9a2209df97cc4e308e9241afcd1d9623",
+    "last_scraped": "2026-05-04 08:16:06"
   }
 }
