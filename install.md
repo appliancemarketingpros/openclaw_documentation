@@ -1,7 +1,7 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-05-04
+scraped_at: 2026-05-11
 ---
 
 [OpenClaw home page](</>)
@@ -34,8 +34,8 @@ Install
 
 System requirements
 
-  * **Node 24** (recommended) or Node 22.14+ — the installer script handles this automatically
-  * **macOS, Linux, or Windows** — both native Windows and WSL2 are supported; WSL2 is more stable. See [Windows](</platforms/windows>).
+  * **Node 24** (recommended) or Node 22.16+ - the installer script handles this automatically
+  * **macOS, Linux, or Windows** \- both native Windows and WSL2 are supported; WSL2 is more stable. See [Windows](</platforms/windows>).
   * `pnpm` is only needed if you build from source
 
 

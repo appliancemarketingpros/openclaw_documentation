@@ -1,7 +1,7 @@
 ---
 title: Personal assistant setup
 source_url: https://docs.openclaw.ai/start/openclaw
-scraped_at: 2026-05-04
+scraped_at: 2026-05-11
 ---
 
 [OpenClaw home page](</>)
@@ -27,12 +27,6 @@ Personal assistant setup
 > Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
 > 
 > Use this file to discover all available pages before exploring further.
-
-# 
-
-​
-
-Building a personal assistant with OpenClaw
 
 OpenClaw is a self-hosted gateway that connects Discord, Google Chat, iMessage, Matrix, Microsoft Teams, Signal, Slack, Telegram, WhatsApp, Zalo, and more to AI agents. This guide covers the “personal assistant” setup: a dedicated WhatsApp number that behaves like your always-on AI assistant.
 
@@ -61,7 +55,7 @@ Start conservative:
 
 Prerequisites
 
-  * OpenClaw installed and onboarded — see [Getting Started](</start/getting-started>) if you haven’t done this yet
+  * OpenClaw installed and onboarded - see [Getting Started](</start/getting-started>) if you haven’t done this yet
   * A second phone number (SIM/eSIM/prepaid) for the assistant
 
 
@@ -220,7 +214,7 @@ By default, OpenClaw runs a heartbeat every 30 minutes with the prompt: `Read HE
   * If the file is missing, the heartbeat still runs and the model decides what to do.
   * If the agent replies with `HEARTBEAT_OK` (optionally with short padding; see `agents.defaults.heartbeat.ackMaxChars`), OpenClaw suppresses outbound delivery for that heartbeat.
   * By default, heartbeat delivery to DM-style `user:<id>` targets is allowed. Set `agents.defaults.heartbeat.directPolicy: "block"` to suppress direct-target delivery while keeping heartbeat runs active.
-  * Heartbeats run full agent turns — shorter intervals burn more tokens.
+  * Heartbeats run full agent turns - shorter intervals burn more tokens.
 
 
 [code] 
@@ -246,7 +240,7 @@ Inbound attachments (images/audio/docs) can be surfaced to your command via temp
 
 Outbound attachments from the agent: include `MEDIA:<path-or-url>` on its own line (no spaces). Example:
 [code] 
-    Here’s the screenshot.
+    Here's the screenshot.
     MEDIA:https://example.com/screenshot.png
     
 [/code]

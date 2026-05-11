@@ -1,7 +1,7 @@
 ---
 title: Help
 source_url: https://docs.openclaw.ai/help
-scraped_at: 2026-05-04
+scraped_at: 2026-05-11
 ---
 
 [OpenClaw home page](</>)
@@ -30,11 +30,11 @@ Help
 
 Quick “get unstuck” path for the most common problems:
 
-  * [Troubleshooting](</help/troubleshooting>) — symptom-first decision tree
-  * [Debugging](</help/debugging>) — watch mode, raw streams, dev profile
-  * [Install sanity](</install/node#troubleshooting>) — Node / npm / PATH checks
-  * [Gateway troubleshooting](</gateway/troubleshooting>) — gateway-specific issues
-  * [Doctor](</gateway/doctor>) — automated repair + diagnostic bundle
+  * [Troubleshooting](</help/troubleshooting>) \- symptom-first decision tree
+  * [Debugging](</help/debugging>) \- watch mode, raw streams, dev profile
+  * [Install sanity](</install/node#troubleshooting>) \- Node / npm / PATH checks
+  * [Gateway troubleshooting](</gateway/troubleshooting>) \- gateway-specific issues
+  * [Doctor](</gateway/doctor>) \- automated repair + diagnostic bundle
 
 
 ## 
@@ -43,9 +43,9 @@ Quick “get unstuck” path for the most common problems:
 
 FAQ
 
-  * [FAQ](</help/faq>) — day-to-day concepts and operational questions
-  * [First-run FAQ](</help/faq-first-run>) — install, onboard, auth, subscriptions, early failures
-  * [Models FAQ](</help/faq-models>) — model selection, failover, auth profiles
+  * [FAQ](</help/faq>) \- day-to-day concepts and operational questions
+  * [First-run FAQ](</help/faq-first-run>) \- install, onboard, auth, subscriptions, early failures
+  * [Models FAQ](</help/faq-models>) \- model selection, failover, auth profiles
 
 
 ## 
@@ -54,9 +54,9 @@ FAQ
 
 Diagnostics
 
-  * [Environment variables](</help/environment>) — where OpenClaw loads env vars and precedence
-  * [Diagnostics flags](</diagnostics/flags>) — runtime diagnostics and verbose modes
-  * [Node + tsx crash](</debug/node-issue>) — specific Node / tsx runtime crash scenarios
+  * [Environment variables](</help/environment>) \- where OpenClaw loads env vars and precedence
+  * [Diagnostics flags](</diagnostics/flags>) \- runtime diagnostics and verbose modes
+  * [Node + tsx crash](</debug/node-issue>) \- specific Node / tsx runtime crash scenarios
 
 
 ## 
@@ -65,9 +65,9 @@ Diagnostics
 
 Testing
 
-  * [Testing](</help/testing>) — test suites and Docker runners
-  * [Update and plugin tests](</help/testing-updates-plugins>) — package update, migration, and plugin install validation
-  * [Live tests](</help/testing-live>) — network-touching provider and CLI smokes
+  * [Testing](</help/testing>) \- test suites and Docker runners
+  * [Update and plugin tests](</help/testing-updates-plugins>) \- package update, migration, and plugin install validation
+  * [Live tests](</help/testing-live>) \- network-touching provider and CLI smokes
 
 
 ## 
@@ -76,9 +76,9 @@ Testing
 
 Community and meta
 
-  * [OpenClaw lore](</start/lore>) — the story
-  * [Docs hubs](</start/hubs>) — how this documentation is organized
-  * [Docs directory](</start/docs-directory>) — full file map
+  * [OpenClaw lore](</start/lore>) \- the story
+  * [Docs hubs](</start/hubs>) \- how this documentation is organized
+  * [Docs directory](</start/docs-directory>) \- full file map
 
 
 [General troubleshooting](</help/troubleshooting>)

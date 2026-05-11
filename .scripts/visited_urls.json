@@ -1,129 +1,129 @@
 {
   "https://docs.openclaw.ai/": {
     "title": "OpenClaw",
-    "filepath": "/home/ubuntu/openclaw_documentation/index.md",
-    "hash": "81db7277b805100cc13a346c4937336c",
-    "last_scraped": "2026-05-04 07:03:53"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/index.md",
+    "hash": "3dfc53b1c54aa818d1d403d84aa3e847",
+    "last_scraped": "2026-05-11 08:54:36"
   },
   "https://docs.openclaw.ai/install": {
     "title": "Install",
-    "filepath": "/home/ubuntu/openclaw_documentation/install.md",
-    "hash": "be91ea62ac5383af27932f7c6e155543",
-    "last_scraped": "2026-05-04 07:03:57"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/install.md",
+    "hash": "d8601c4b6f78d70d9fc40cd05fac14b3",
+    "last_scraped": "2026-05-11 08:54:37"
   },
   "https://docs.openclaw.ai/channels": {
     "title": "Chat channels",
-    "filepath": "/home/ubuntu/openclaw_documentation/channels.md",
-    "hash": "73c43c7609fcc3d905beb46643118ee4",
-    "last_scraped": "2026-05-04 07:04:00"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/channels.md",
+    "hash": "4ee1b118694e8392839965e2e1529d65",
+    "last_scraped": "2026-05-11 08:54:38"
   },
   "https://docs.openclaw.ai/concepts/architecture": {
     "title": "Gateway architecture",
-    "filepath": "/home/ubuntu/openclaw_documentation/concepts/architecture.md",
-    "hash": "22aaf447bb88ca3ade9db1ae0ea16479",
-    "last_scraped": "2026-05-04 07:04:03"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/architecture.md",
+    "hash": "ad44eed90747535375bb5138c770ca2d",
+    "last_scraped": "2026-05-11 08:54:39"
   },
   "https://docs.openclaw.ai/tools": {
     "title": "Tools and plugins",
-    "filepath": "/home/ubuntu/openclaw_documentation/tools.md",
-    "hash": "a6eef9493e561c8bb9f7f23a9f9efd24",
-    "last_scraped": "2026-05-04 07:04:06"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tools.md",
+    "hash": "0d9dedd3ef5e67aa462b198037d6847b",
+    "last_scraped": "2026-05-11 08:54:40"
   },
   "https://docs.openclaw.ai/providers": {
     "title": "Provider directory",
-    "filepath": "/home/ubuntu/openclaw_documentation/providers.md",
-    "hash": "8a762a6d76a8d1836ee133975fd79f66",
-    "last_scraped": "2026-05-04 07:04:09"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers.md",
+    "hash": "9fb1f5c39eac5b1c4aa787bc7e74c7e9",
+    "last_scraped": "2026-05-11 08:54:41"
   },
   "https://docs.openclaw.ai/platforms": {
     "title": "Platforms",
-    "filepath": "/home/ubuntu/openclaw_documentation/platforms.md",
-    "hash": "3f958665775e03ab2bf18bb78e52233e",
-    "last_scraped": "2026-05-04 07:04:13"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/platforms.md",
+    "hash": "dead0020ad75a6270b7b69e1218c4758",
+    "last_scraped": "2026-05-11 08:54:41"
   },
   "https://docs.openclaw.ai/gateway": {
     "title": "Gateway runbook",
-    "filepath": "/home/ubuntu/openclaw_documentation/gateway.md",
-    "hash": "1b9726bc0b02389997e3c1438cde897a",
-    "last_scraped": "2026-05-04 07:04:16"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway.md",
+    "hash": "c133d862366ee7f4d0dd791031ac5064",
+    "last_scraped": "2026-05-11 08:54:42"
   },
   "https://docs.openclaw.ai/cli": {
     "title": "CLI reference",
-    "filepath": "/home/ubuntu/openclaw_documentation/cli.md",
-    "hash": "a7473990df888b91ace84efcf63afdde",
-    "last_scraped": "2026-05-04 07:04:20"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/cli.md",
+    "hash": "87d22d1566bef3f3ac08c4585ddd14a7",
+    "last_scraped": "2026-05-11 08:54:43"
   },
   "https://docs.openclaw.ai/help": {
     "title": "Help",
-    "filepath": "/home/ubuntu/openclaw_documentation/help.md",
-    "hash": "fc60388599b78f682a9afaee21ab8b38",
-    "last_scraped": "2026-05-04 07:04:23"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/help.md",
+    "hash": "9ee5a6baba26d4bca6ca5efa96d830b7",
+    "last_scraped": "2026-05-11 08:54:44"
   },
   "https://docs.openclaw.ai/start/getting-started": {
     "title": "Getting started",
-    "filepath": "/home/ubuntu/openclaw_documentation/start/getting-started.md",
-    "hash": "75d8cea88725d2e903170a6d7b1259ab",
-    "last_scraped": "2026-05-04 07:04:26"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/getting-started.md",
+    "hash": "677bb3b5a0a54cb1925be503dcd0e5b7",
+    "last_scraped": "2026-05-11 08:54:45"
   },
   "https://docs.openclaw.ai/start/onboarding-overview": {
     "title": "Onboarding overview",
-    "filepath": "/home/ubuntu/openclaw_documentation/start/onboarding-overview.md",
-    "hash": "b31e3eccf3fd103607a89a30960a7701",
-    "last_scraped": "2026-05-04 07:04:29"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/onboarding-overview.md",
+    "hash": "d244e0bcce9694cc2447c0b107553697",
+    "last_scraped": "2026-05-11 08:54:46"
   },
   "https://docs.openclaw.ai/start/wizard": {
     "title": "Onboarding (CLI)",
-    "filepath": "/home/ubuntu/openclaw_documentation/start/wizard.md",
-    "hash": "9200c6b53a066c70ad51ecc1e9a2dc90",
-    "last_scraped": "2026-05-04 07:04:33"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard.md",
+    "hash": "4d58f1ee8df1a7e25c1aa7717fc6d015",
+    "last_scraped": "2026-05-11 08:54:47"
   },
   "https://docs.openclaw.ai/start/onboarding": {
     "title": "Onboarding (macOS app)",
-    "filepath": "/home/ubuntu/openclaw_documentation/start/onboarding.md",
-    "hash": "c1409f947138dc37396b802f1862f76c",
-    "last_scraped": "2026-05-04 07:04:36"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/onboarding.md",
+    "hash": "efaeeeb6685fc9a61a9c97c1fd59cde8",
+    "last_scraped": "2026-05-11 08:54:48"
   },
   "https://docs.openclaw.ai/start/openclaw": {
     "title": "Personal assistant setup",
-    "filepath": "/home/ubuntu/openclaw_documentation/start/openclaw.md",
-    "hash": "63108c154fe8299f0cc26159dbd8b0ba",
-    "last_scraped": "2026-05-04 07:04:39"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/openclaw.md",
+    "hash": "f2c2034f8528df42acb61637b9b151b2",
+    "last_scraped": "2026-05-11 08:54:49"
   },
   "https://docs.openclaw.ai/start/wizard-cli-reference": {
     "title": "CLI setup reference",
-    "filepath": "/home/ubuntu/openclaw_documentation/start/wizard-cli-reference.md",
-    "hash": "eda0ead509356ec532b884923a2265f3",
-    "last_scraped": "2026-05-04 07:04:42"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard-cli-reference.md",
+    "hash": "6ca80fdf1f890895e6113c6535e34b78",
+    "last_scraped": "2026-05-11 08:54:50"
   },
   "https://docs.openclaw.ai/start/wizard-cli-automation": {
     "title": "CLI automation",
-    "filepath": "/home/ubuntu/openclaw_documentation/start/wizard-cli-automation.md",
-    "hash": "5881364c3a33f83890d2886d90e630c4",
-    "last_scraped": "2026-05-04 07:04:46"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard-cli-automation.md",
+    "hash": "bc3205d81b1e1dd04544d660a313d6ee",
+    "last_scraped": "2026-05-11 08:54:51"
   },
   "https://docs.openclaw.ai/start/showcase": {
     "title": "Showcase",
-    "filepath": "/home/ubuntu/openclaw_documentation/start/showcase.md",
-    "hash": "a32db4fc0e7fe41a9dec1ef593dbfe91",
-    "last_scraped": "2026-05-04 07:04:49"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/showcase.md",
+    "hash": "e4a932ddeb97f5b577650d00c9213809",
+    "last_scraped": "2026-05-11 08:54:52"
   },
   "https://docs.openclaw.ai/concepts/features": {
     "title": "Features",
-    "filepath": "/home/ubuntu/openclaw_documentation/concepts/features.md",
-    "hash": "df7c34de7bc416321085f96f94418c92",
-    "last_scraped": "2026-05-04 07:04:52"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/features.md",
+    "hash": "f5d464678c8fe654c93a127b16e7f36f",
+    "last_scraped": "2026-05-11 08:54:53"
   },
   "https://docs.openclaw.ai/start/setup": {
     "title": "Setup",
-    "filepath": "/home/ubuntu/openclaw_documentation/start/setup.md",
-    "hash": "f7d37d55c5353c61f14ecfaf9a783008",
-    "last_scraped": "2026-05-04 07:04:56"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/setup.md",
+    "hash": "3c21b61f6d58195b0667051e5cb186e2",
+    "last_scraped": "2026-05-11 08:54:54"
   },
   "https://docs.openclaw.ai/vps": {
     "title": "Linux server",
-    "filepath": "/home/ubuntu/openclaw_documentation/vps.md",
-    "hash": "5ba71c48efb1bdd603f08e2f0243d35e",
-    "last_scraped": "2026-05-04 07:04:59"
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vps.md",
+    "hash": "bb97f6fdc0717b6b1f8d6648c420502f",
+    "last_scraped": "2026-05-11 08:54:55"
   },
   "https://docs.openclaw.ai/web": {
     "title": "Web",
@@ -3507,5 +3507,227 @@
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/memory-honcho.md",
     "hash": "9a2209df97cc4e308e9241afcd1d9623",
     "last_scraped": "2026-05-04 08:16:06"
+  },
+  "https://docs.openclaw.ai/clawhub": {
+    "title": "ClawHub",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub.md",
+    "hash": "dd3b70647ef9ba345067bfadf5eef6af",
+    "last_scraped": "2026-05-11 08:54:56"
+  },
+  "https://docs.openclaw.ai/channels/matrix-presentation": {
+    "title": "Matrix presentation metadata",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/channels/matrix-presentation.md",
+    "hash": "c6c5db0fb2d175a1045f6cc812adcd3d",
+    "last_scraped": "2026-05-11 08:54:57"
+  },
+  "https://docs.openclaw.ai/channels/imessage-from-bluebubbles": {
+    "title": "Coming from BlueBubbles",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/channels/imessage-from-bluebubbles.md",
+    "hash": "4291f4584ed0c995a15ce2e577ec2024",
+    "last_scraped": "2026-05-11 08:54:58"
+  },
+  "https://docs.openclaw.ai/concepts/message-lifecycle-refactor": {
+    "title": "Message lifecycle refactor",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/message-lifecycle-refactor.md",
+    "hash": "1a344130570c58ed1568428427eb9c55",
+    "last_scraped": "2026-05-11 08:54:59"
+  },
+  "https://docs.openclaw.ai/tools/tool-search": {
+    "title": "Tool Search",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tools/tool-search.md",
+    "hash": "081962f00f16613649c9dd5af03a72f8",
+    "last_scraped": "2026-05-11 08:55:00"
+  },
+  "https://docs.openclaw.ai/plugins/install-overrides": {
+    "title": "Plugin install overrides",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/install-overrides.md",
+    "hash": "2acdfa77c43c79953f626a663df3d15e",
+    "last_scraped": "2026-05-11 08:55:01"
+  },
+  "https://docs.openclaw.ai/plugins/oc-path": {
+    "title": "OC Path plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/oc-path.md",
+    "hash": "2767edd8218b9a9ec26dd4c78992848f",
+    "last_scraped": "2026-05-11 08:55:02"
+  },
+  "https://docs.openclaw.ai/plugins/reference/canvas": {
+    "title": "Canvas plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/canvas.md",
+    "hash": "b5e97c791cbf708b94200ee4c86d2a0f",
+    "last_scraped": "2026-05-11 08:55:03"
+  },
+  "https://docs.openclaw.ai/plugins/codex-native-plugins": {
+    "title": "Native Codex plugins",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/codex-native-plugins.md",
+    "hash": "5f03b75c9dfd00e2dfb4c061f3256169",
+    "last_scraped": "2026-05-11 08:55:04"
+  },
+  "https://docs.openclaw.ai/plugins/codex-harness-reference": {
+    "title": "Codex harness reference",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/codex-harness-reference.md",
+    "hash": "7bb2699d0bcf844a9a2aeafd8c6158fb",
+    "last_scraped": "2026-05-11 08:55:05"
+  },
+  "https://docs.openclaw.ai/plugins/codex-harness-runtime": {
+    "title": "Codex harness runtime",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/codex-harness-runtime.md",
+    "hash": "8f83b560e2e82f9fc0016f50220c4f40",
+    "last_scraped": "2026-05-11 08:55:05"
+  },
+  "https://docs.openclaw.ai/cli/path": {
+    "title": "Path",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/cli/path.md",
+    "hash": "6978f951fc0ee3a357f00cb5c6935a15",
+    "last_scraped": "2026-05-11 08:55:06"
+  },
+  "https://docs.openclaw.ai/clawhub/security": {
+    "title": "Security",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/security.md",
+    "hash": "3f4ad1167d38d3089ce013273bcfc1ae",
+    "last_scraped": "2026-05-11 08:55:07"
+  },
+  "https://docs.openclaw.ai/clawhub/acceptable-usage": {
+    "title": "Acceptable usage",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/acceptable-usage.md",
+    "hash": "16fbd47455a7c896d5292d456c678914",
+    "last_scraped": "2026-05-11 08:55:08"
+  },
+  "https://docs.openclaw.ai/clawhub/soul-format": {
+    "title": "Soul format",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/soul-format.md",
+    "hash": "486d33da332057d942f020111ff3080c",
+    "last_scraped": "2026-05-11 08:55:09"
+  },
+  "https://docs.openclaw.ai/clawhub/how-it-works": {
+    "title": "How it works",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/how-it-works.md",
+    "hash": "4edc6bd20f17bd8aa58e053c7aa293c4",
+    "last_scraped": "2026-05-11 08:55:10"
+  },
+  "https://docs.openclaw.ai/clawhub/publishing": {
+    "title": "Publishing",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/publishing.md",
+    "hash": "c5d141c9eefc862e6f280003e2b37a54",
+    "last_scraped": "2026-05-11 08:55:11"
+  },
+  "https://docs.openclaw.ai/clawhub/auth": {
+    "title": "Auth",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/auth.md",
+    "hash": "832c9dd0e195507365abe70509ac5378",
+    "last_scraped": "2026-05-11 08:55:12"
+  },
+  "https://docs.openclaw.ai/clawhub/http-api": {
+    "title": "Http api",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/http-api.md",
+    "hash": "82e247022ca368a2472ce1171f3c9912",
+    "last_scraped": "2026-05-11 08:55:13"
+  },
+  "https://docs.openclaw.ai/clawhub/quickstart": {
+    "title": "Quickstart",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/quickstart.md",
+    "hash": "ea95b231400b89a88bba6bd2bc24ab5a",
+    "last_scraped": "2026-05-11 08:55:14"
+  },
+  "https://docs.openclaw.ai/clawhub/cli": {
+    "title": "Cli",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/cli.md",
+    "hash": "b5fc3afacbf75ed0ea4943f72abccca0",
+    "last_scraped": "2026-05-11 08:55:15"
+  },
+  "https://docs.openclaw.ai/clawhub/troubleshooting": {
+    "title": "Troubleshooting",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/troubleshooting.md",
+    "hash": "bc8309254c29961e5c8ce96337094402",
+    "last_scraped": "2026-05-11 08:55:16"
+  },
+  "https://docs.openclaw.ai/clawhub/telemetry": {
+    "title": "Telemetry",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/telemetry.md",
+    "hash": "3a0e919d03e843c88a04a58f66e1b5ab",
+    "last_scraped": "2026-05-11 08:55:17"
+  },
+  "https://docs.openclaw.ai/clawhub/skill-format": {
+    "title": "Skill format",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/skill-format.md",
+    "hash": "4df4239b42aa7a167704dd8898351ac0",
+    "last_scraped": "2026-05-11 08:55:18"
+  },
+  "https://docs.openclaw.ai/clawhub/api": {
+    "title": "Api",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/clawhub/api.md",
+    "hash": "eff862d318093e3589a877d9cabcd621",
+    "last_scraped": "2026-05-11 08:55:19"
+  },
+  "https://docs.openclaw.ai/plugins/sdk-channel-turn": {
+    "title": "Channel turn kernel",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/sdk-channel-turn.md",
+    "hash": "ca2f7b16bc9dbd85200b253ea26ff2fe",
+    "last_scraped": "2026-05-11 08:55:20"
+  },
+  "https://docs.openclaw.ai/cli/migrate": {
+    "title": "Migrate",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/cli/migrate.md",
+    "hash": "9af5abed8712c70dba4812fa5c5c616e",
+    "last_scraped": "2026-05-11 08:55:21"
+  },
+  "https://docs.openclaw.ai/gateway/diagnostics": {
+    "title": "Diagnostics export",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/diagnostics.md",
+    "hash": "dedff7ba62321e0c03b09417c21440bc",
+    "last_scraped": "2026-05-11 08:55:22"
+  },
+  "https://docs.openclaw.ai/plugins/hooks": {
+    "title": "Plugin hooks",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/hooks.md",
+    "hash": "344d1ad17fca0fa69a684e14776fb2c2",
+    "last_scraped": "2026-05-11 08:55:23"
+  },
+  "https://docs.openclaw.ai/install/migrating-hermes": {
+    "title": "Migrating from Hermes",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/install/migrating-hermes.md",
+    "hash": "4fbb9c85ac2f636bb64bac4265421fba",
+    "last_scraped": "2026-05-11 08:55:24"
+  },
+  "https://docs.openclaw.ai/install/migrating-claude": {
+    "title": "Migrating from Claude",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/install/migrating-claude.md",
+    "hash": "97d0515b1e82095b049189bcc8b60bc5",
+    "last_scraped": "2026-05-11 08:55:25"
+  },
+  "https://docs.openclaw.ai/gateway/opentelemetry": {
+    "title": "OpenTelemetry export",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/opentelemetry.md",
+    "hash": "e4a074b04e7dae368b3f692d79ca4749",
+    "last_scraped": "2026-05-11 08:55:26"
+  },
+  "https://docs.openclaw.ai/gateway/prometheus": {
+    "title": "Prometheus metrics",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/prometheus.md",
+    "hash": "2743c43f2812c99b40599b7919d297a7",
+    "last_scraped": "2026-05-11 08:55:27"
+  },
+  "https://docs.openclaw.ai/plugins/sdk-channel-message": {
+    "title": "Channel message API",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/sdk-channel-message.md",
+    "hash": "dad30f8126e0b798092737d8e2f8532f",
+    "last_scraped": "2026-05-11 08:55:28"
+  },
+  "https://docs.openclaw.ai/plugins/compatibility": {
+    "title": "Plugin compatibility",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/compatibility.md",
+    "hash": "094e90d48d21bb8d85fd1555237f4ba4",
+    "last_scraped": "2026-05-11 08:55:29"
+  },
+  "https://docs.openclaw.ai/plugins/cli-backend-plugins": {
+    "title": "Building CLI backend plugins",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/cli-backend-plugins.md",
+    "hash": "c3bd29a3ba60ff8c2d6fd5ccc42e32b1",
+    "last_scraped": "2026-05-11 08:55:30"
+  },
+  "https://docs.openclaw.ai/plugins/adding-capabilities": {
+    "title": "Adding capabilities (contributor guide)",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/adding-capabilities.md",
+    "hash": "4a85252043cc904e5ab1e9c6f571df0d",
+    "last_scraped": "2026-05-11 08:55:31"
   }
 }

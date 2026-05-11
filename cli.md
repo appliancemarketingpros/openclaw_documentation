@@ -1,7 +1,7 @@
 ---
 title: CLI reference
 source_url: https://docs.openclaw.ai/cli
-scraped_at: 2026-05-04
+scraped_at: 2026-05-11
 ---
 
 [OpenClaw home page](</>)
@@ -28,7 +28,13 @@ CLI reference
 > 
 > Use this file to discover all available pages before exploring further.
 
-`openclaw` is the main CLI entry point. Each core command has either a dedicated reference page or is documented with the command it aliases; this index lists the commands, the global flags, and the output styling rules that apply across the CLI.
+`openclaw` is the main CLI entry point. Each core command has either a dedicated reference page or is documented with the command it aliases; this index lists the commands, the global flags, and the output styling rules that apply across the CLI. Use the setup commands by intent:
+
+  * `openclaw setup` creates the baseline config and workspace without walking the full guided onboarding flow.
+  * `openclaw onboard` is the full guided first-run path for gateway, model auth, workspace, channels, skills, and health.
+  * `openclaw configure` changes targeted parts of an existing setup, such as model auth, gateway, channels, plugins, or skills.
+  * `openclaw channels add` configures channel accounts after the baseline exists; run it without flags for guided channel setup or with channel-specific flags for scripts.
+
 
 ## 
 
@@ -51,7 +57,7 @@ Discovery and docs| [`dns`](</cli/dns>) · [`docs`](</cli/docs>)
 Pairing and channels| [`pairing`](</cli/pairing>) · [`qr`](</cli/qr>) · [`channels`](</cli/channels>)  
 Security and plugins| [`security`](</cli/security>) · [`secrets`](</cli/secrets>) · [`skills`](</cli/skills>) · [`plugins`](</cli/plugins>) · [`proxy`](</cli/proxy>)  
 Legacy aliases| [`daemon`](</cli/daemon>) (gateway service) · [`clawbot`](</cli/clawbot>) (namespace)  
-Plugins (optional)| [`voicecall`](</cli/voicecall>) (if installed)  
+Plugins (optional)| [`path`](</cli/path>) · [`voicecall`](</cli/voicecall>) (if installed)  
   
 ## 
 
@@ -154,6 +160,12 @@ Full command tree
         status
         index
         search
+      path
+        resolve
+        find
+        set
+        validate
+        emit
       commitments
         list
         dismiss

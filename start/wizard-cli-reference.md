@@ -1,7 +1,7 @@
 ---
 title: CLI setup reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-05-04
+scraped_at: 2026-05-11
 ---
 
 [OpenClaw home page](</>)
@@ -41,7 +41,7 @@ Local mode (default) walks you through:
   * Model and auth setup (OpenAI Code subscription OAuth, Anthropic Claude CLI or API key, plus MiniMax, GLM, Ollama, Moonshot, StepFun, and AI Gateway options)
   * Workspace location and bootstrap files
   * Gateway settings (port, bind, auth, tailscale)
-  * Channels and providers (Telegram, WhatsApp, Discord, Google Chat, Mattermost, Signal, BlueBubbles, and other bundled channel plugins)
+  * Channels and providers (Telegram, WhatsApp, Discord, Google Chat, Mattermost, Signal, iMessage, and other bundled channel plugins)
   * Daemon install (LaunchAgent, systemd user unit, or native Windows Scheduled Task with Startup-folder fallback)
   * Health check
   * Skills setup
@@ -111,8 +111,7 @@ Channels
   * [Google Chat](</channels/googlechat>): service account JSON + webhook audience
   * [Mattermost](</channels/mattermost>): bot token + base URL
   * [Signal](</channels/signal>): optional `signal-cli` install + account config
-  * [BlueBubbles](</channels/bluebubbles>): recommended for iMessage; server URL + password + webhook
-  * [iMessage](</channels/imessage>): legacy `imsg` CLI path + DB access
+  * [iMessage](</channels/imessage>): `imsg` CLI path + Messages DB access; use an SSH wrapper when the Gateway runs off-Mac
   * DM security: default is pairing. First DM sends a code; approve via `openclaw pairing approve <channel> <code>` or use allowlists.
 
 
@@ -191,11 +190,11 @@ Uses `ANTHROPIC_API_KEY` if present or prompts for a key, then saves it for daem
 
 OpenAI Code subscription (OAuth)
 
-Browser flow; paste `code#state`.Sets `agents.defaults.model` to `openai-codex/gpt-5.5` when model is unset or already OpenAI-family.
+Browser flow; paste `code#state`.Sets `agents.defaults.model` to `openai/gpt-5.5` through the Codex runtime when model is unset or already OpenAI-family.
 
 OpenAI Code subscription (device pairing)
 
-Browser pairing flow with a short-lived device code.Sets `agents.defaults.model` to `openai-codex/gpt-5.5` when model is unset or already OpenAI-family.
+Browser pairing flow with a short-lived device code.Sets `agents.defaults.model` to `openai/gpt-5.5` through the Codex runtime when model is unset or already OpenAI-family.
 
 OpenAI API key
 

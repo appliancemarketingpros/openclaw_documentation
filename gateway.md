@@ -1,7 +1,7 @@
 ---
 title: Gateway runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-05-04
+scraped_at: 2026-05-11
 ---
 
 [OpenClaw home page](</>)
@@ -216,28 +216,6 @@ Detailed setup: [/gateway/multiple-gateways](</gateway/multiple-gateways>).
 
 ​
 
-VoiceClaw real-time brain endpoint
-
-OpenClaw exposes a VoiceClaw-compatible real-time WebSocket endpoint at `/voiceclaw/realtime`. Use it when a VoiceClaw desktop client should talk directly to a real-time OpenClaw brain instead of going through a separate relay process. The endpoint uses Gemini Live for real-time audio and calls OpenClaw as the brain by exposing OpenClaw tools directly to Gemini Live. Tool calls return an immediate `working` result to keep the voice turn responsive, then OpenClaw executes the actual tool asynchronously and injects the result back into the live session. Set `GEMINI_API_KEY` in the gateway process environment. If gateway auth is enabled, the desktop client sends the gateway token or password in its first `session.config` message. Real-time brain access runs owner-authorized OpenClaw agent commands. Keep `gateway.auth.mode: "none"` limited to loopback-only test instances. Non-local real-time brain connections require gateway auth. For an isolated test gateway, run a separate instance with its own port, config, and state:
-[code] 
-    OPENCLAW_CONFIG_PATH=/path/to/openclaw-realtime/openclaw.json \
-    OPENCLAW_STATE_DIR=/path/to/openclaw-realtime/state \
-    OPENCLAW_SKIP_CHANNELS=1 \
-    GEMINI_API_KEY=... \
-    openclaw gateway --port 19789
-    
-[/code]
-
-Then configure VoiceClaw to use:
-[code] 
-    ws://127.0.0.1:19789/voiceclaw/realtime
-    
-[/code]
-
-## 
-
-​
-
 Remote access
 
 Preferred: Tailscale/VPN. Fallback: SSH tunnel.
@@ -277,7 +255,7 @@ Use supervised runs for production-like reliability.
     
 [/code]
 
-Use `openclaw gateway restart` for restarts. Do not chain `openclaw gateway stop` and `openclaw gateway start`; on macOS, `gateway stop` intentionally disables the LaunchAgent before stopping it.LaunchAgent labels are `ai.openclaw.gateway` (default) or `ai.openclaw.<profile>` (named profile). `openclaw doctor` audits and repairs service config drift.
+Use `openclaw gateway restart` for restarts. Do not chain `openclaw gateway stop` and `openclaw gateway start` as a restart substitute.On macOS, `gateway stop` uses `launchctl bootout` by default — this removes the LaunchAgent from the current boot session without persisting a disable, so KeepAlive auto-recovery still works after unexpected crashes and `gateway start` re-enables cleanly. To persistently suppress auto-respawn across reboots, pass `--disable`: `openclaw gateway stop --disable`.LaunchAgent labels are `ai.openclaw.gateway` (default) or `ai.openclaw.<profile>` (named profile). `openclaw doctor` audits and repairs service config drift.
 [code]
     openclaw gateway install
     systemctl --user enable --now openclaw-gateway[-<profile>].service

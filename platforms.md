@@ -1,7 +1,7 @@
 ---
 title: Platforms
 source_url: https://docs.openclaw.ai/platforms
-scraped_at: 2026-05-04
+scraped_at: 2026-05-11
 ---
 
 [OpenClaw home page](</>)
@@ -47,7 +47,7 @@ Choose your OS
 
 ​
 
-VPS & hosting
+VPS and hosting
 
   * VPS hub: [VPS hosting](</vps>)
   * Fly.io: [Fly.io](</install/fly>)

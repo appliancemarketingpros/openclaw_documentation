@@ -1,7 +1,7 @@
 ---
 title: Gateway architecture
 source_url: https://docs.openclaw.ai/concepts/architecture
-scraped_at: 2026-05-04
+scraped_at: 2026-05-11
 ---
 
 [OpenClaw home page](</>)
@@ -34,7 +34,7 @@ Gateway architecture
 
 Overview
 
-  * A single long‑lived **Gateway** owns all messaging surfaces (WhatsApp via Baileys, Telegram via grammY, Slack, Discord, Signal, iMessage, WebChat).
+  * A single long-lived **Gateway** owns all messaging surfaces (WhatsApp via Baileys, Telegram via grammY, Slack, Discord, Signal, iMessage, WebChat).
   * Control-plane clients (macOS app, CLI, web UI, automations) connect to the Gateway over **WebSocket** on the configured bind host (default `127.0.0.1:18789`).
   * **Nodes** (macOS/iOS/Android/headless) also connect over **WebSocket** , but declare `role: node` with explicit caps/commands.
   * One Gateway per host; it is the only place that opens a WhatsApp session.
@@ -56,7 +56,7 @@ Components and flows
 Gateway (daemon)
 
   * Maintains provider connections.
-  * Exposes a typed WS API (requests, responses, server‑push events).
+  * Exposes a typed WS API (requests, responses, server-push events).
   * Validates inbound frames against JSON Schema.
   * Emits events like `agent`, `chat`, `presence`, `health`, `heartbeat`, `cron`.
 
@@ -79,7 +79,7 @@ Clients (mac app / CLI / web admin)
 Nodes (macOS / iOS / Android / headless)
 
   * Connect to the **same WS server** with `role: node`.
-  * Provide a device identity in `connect`; pairing is **device‑based** (role `node`) and approval lives in the device pairing store.
+  * Provide a device identity in `connect`; pairing is **device-based** (role `node`) and approval lives in the device pairing store.
   * Expose commands like `canvas.*`, `camera.*`, `screen.record`, `location.get`.
 
 Protocol details:
@@ -118,7 +118,7 @@ Wire protocol (summary)
   * Shared-secret auth uses `connect.params.auth.token` or `connect.params.auth.password`, depending on the configured gateway auth mode.
   * Identity-bearing modes such as Tailscale Serve (`gateway.auth.allowTailscale: true`) or non-loopback `gateway.auth.mode: "trusted-proxy"` satisfy auth from request headers instead of `connect.params.auth.*`.
   * Private-ingress `gateway.auth.mode: "none"` disables shared-secret auth entirely; keep that mode off public/untrusted ingress.
-  * Idempotency keys are required for side‑effecting methods (`send`, `agent`) to safely retry; the server keeps a short‑lived dedupe cache.
+  * Idempotency keys are required for side-effecting methods (`send`, `agent`) to safely retry; the server keeps a short-lived dedupe cache.
   * Nodes must include `role: "node"` plus caps/commands/permissions in `connect`.
 
 
@@ -135,7 +135,7 @@ Pairing + local trust
   * Tailnet and LAN connects, including same-host tailnet binds, still require explicit pairing approval.
   * All connects must sign the `connect.challenge` nonce.
   * Signature payload `v3` also binds `platform` \+ `deviceFamily`; the gateway pins paired metadata on reconnect and requires repair pairing for metadata changes.
-  * **Non‑local** connects still require explicit approval.
+  * **Non-local** connects still require explicit approval.
   * Gateway auth (`gateway.auth.*`) still applies to **all** connections, local or remote.
 
 Details: [Gateway protocol](</gateway/protocol>), [Pairing](</channels/pairing>), [Security](</gateway/security>).
@@ -175,7 +175,7 @@ Operations snapshot
 
   * Start: `openclaw gateway` (foreground, logs to stdout).
   * Health: `health` over WS (also included in `hello-ok`).
-  * Supervision: launchd/systemd for auto‑restart.
+  * Supervision: launchd/systemd for auto-restart.
 
 
 ## 
@@ -185,7 +185,7 @@ Operations snapshot
 Invariants
 
   * Exactly one Gateway controls a single Baileys session per host.
-  * Handshake is mandatory; any non‑JSON or non‑connect first frame is a hard close.
+  * Handshake is mandatory; any non-JSON or non-connect first frame is a hard close.
   * Events are not replayed; clients must refresh on gaps.
 
 

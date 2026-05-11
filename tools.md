@@ -1,7 +1,7 @@
 ---
 title: Tools and plugins
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-05-04
+scraped_at: 2026-05-11
 ---
 
 [OpenClaw home page](</>)
@@ -73,7 +73,6 @@ Tool| What it does| Page
 `read` / `write` / `edit`| File I/O in the workspace|   
 `apply_patch`| Multi-hunk file patches| [Apply Patch](</tools/apply-patch>)  
 `message`| Send messages across all channels| [Agent Send](</tools/agent-send>)  
-`canvas`| Drive node Canvas (present, eval, snapshot)|   
 `nodes`| Discover and target paired devices|   
 `cron` / `gateway`| Manage scheduled jobs; inspect, patch, restart, or update the gateway|   
 `image` / `image_generate`| Analyze or generate images| [Image Generation](</tools/image-generation>)  
@@ -101,6 +100,7 @@ Plugin-provided tools
 
 Plugins can register additional tools. Some examples:
 
+  * [Canvas](</plugins/reference/canvas>) — experimental bundled plugin for node Canvas control and A2UI rendering
   * [Diffs](</tools/diffs>) — diff viewer and renderer
   * [LLM Task](</tools/llm-task>) — JSON-only LLM step for structured output
   * [Lobster](</tools/lobster>) — typed workflow runtime with resumable approvals
@@ -108,7 +108,7 @@ Plugins can register additional tools. Some examples:
   * [OpenProse](</prose>) — markdown-first workflow orchestration
   * [Tokenjuice](</tools/tokenjuice>) — compact noisy `exec` and `bash` tool results
 
-Plugin tools are still authored with `api.registerTool(...)` and declared in the plugin manifest’s `contracts.tools` list. OpenClaw captures the validated tool descriptor during discovery and caches it by plugin source and contract, so later tool planning can skip plugin runtime loading. Tool execution still loads the owning plugin and calls the live registered implementation.
+Plugin tools are still authored with `api.registerTool(...)` and declared in the plugin manifest’s `contracts.tools` list. OpenClaw captures the validated tool descriptor during discovery and caches it by plugin source and contract, so later tool planning can skip plugin runtime loading. Tool execution still loads the owning plugin and calls the live registered implementation. [Tool Search](</tools/tool-search>) is the compact surface for large catalogs. Instead of putting every OpenClaw, MCP, or client tool schema into the prompt, OpenClaw can give the model an isolated Node runtime with `openclaw.tools.search`, `openclaw.tools.describe`, and `openclaw.tools.call`. Calls still flow back through the Gateway, so tool policy, approvals, hooks, and session logs remain authoritative.
 
 ## 
 
@@ -181,11 +181,11 @@ Group| Tools
 `group:sessions`| sessions_list, sessions_history, sessions_send, sessions_spawn, sessions_yield, subagents, session_status  
 `group:memory`| memory_search, memory_get  
 `group:web`| web_search, x_search, web_fetch  
-`group:ui`| browser, canvas  
-`group:automation`| cron, gateway  
+`group:ui`| browser, canvas when the bundled Canvas plugin is enabled  
+`group:automation`| heartbeat_respond, cron, gateway  
 `group:messaging`| message  
 `group:nodes`| nodes  
-`group:agents`| agents_list  
+`group:agents`| agents_list, update_plan  
 `group:media`| image, image_generate, music_generate, video_generate, tts  
 `group:openclaw`| All built-in OpenClaw tools (excludes plugin tools)  
   

@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-05-04
+scraped_at: 2026-05-11
 ---
 
 [OpenClaw home page](</>)
@@ -27,12 +27,6 @@ Provider directory
 > Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
 > 
 > Use this file to discover all available pages before exploring further.
-
-# 
-
-​
-
-Model Providers
 
 OpenClaw can use many LLM providers. Pick a provider, authenticate, then set the default model as `provider/model`. Looking for chat channel docs (WhatsApp/Telegram/Discord/Slack/Mattermost (plugin)/etc.)? See [Channels](</channels>).
 

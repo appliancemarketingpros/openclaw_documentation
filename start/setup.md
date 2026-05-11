@@ -1,7 +1,7 @@
 ---
 title: Setup
 source_url: https://docs.openclaw.ai/start/setup
-scraped_at: 2026-05-04
+scraped_at: 2026-05-11
 ---
 
 [OpenClaw home page](</>)
@@ -49,9 +49,9 @@ Pick a setup workflow based on how often you want updates and whether you want t
 
 Prereqs (from source)
 
-  * Node 24 recommended (Node 22 LTS, currently `22.14+`, still supported)
+  * Node 24 recommended (Node 22 LTS, currently `22.16+`, still supported)
   * `pnpm` required for source checkouts. OpenClaw loads bundled plugins from the `extensions/*` pnpm workspace packages in dev mode, so root `npm install` does not prepare the full source tree.
-  * Docker (optional; only for containerized setup/e2e — see [Docker](</install/docker>))
+  * Docker (optional; only for containerized setup/e2e - see [Docker](</install/docker>))
 
 
 ## 
