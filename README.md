@@ -26,24 +26,18 @@
 ### Install
 
 - [Install](install.md) — [source](https://docs.openclaw.ai/install)
-- [Migrating from Claude](install/migrating-claude.md) — [source](https://docs.openclaw.ai/install/migrating-claude)
-- [Migrating from Hermes](install/migrating-hermes.md) — [source](https://docs.openclaw.ai/install/migrating-hermes)
 
 ### Channels
 
 - [Chat channels](channels.md) — [source](https://docs.openclaw.ai/channels)
-- [Coming from BlueBubbles](channels/imessage-from-bluebubbles.md) — [source](https://docs.openclaw.ai/channels/imessage-from-bluebubbles)
-- [Matrix presentation metadata](channels/matrix-presentation.md) — [source](https://docs.openclaw.ai/channels/matrix-presentation)
 
 ### Concepts
 
 - [Features](concepts/features.md) — [source](https://docs.openclaw.ai/concepts/features)
 - [Gateway architecture](concepts/architecture.md) — [source](https://docs.openclaw.ai/concepts/architecture)
-- [Message lifecycle refactor](concepts/message-lifecycle-refactor.md) — [source](https://docs.openclaw.ai/concepts/message-lifecycle-refactor)
 
 ### Tools
 
-- [Tool Search](tools/tool-search.md) — [source](https://docs.openclaw.ai/tools/tool-search)
 - [Tools and plugins](tools.md) — [source](https://docs.openclaw.ai/tools)
 
 ### Providers
@@ -56,16 +50,11 @@
 
 ### Gateway
 
-- [Diagnostics export](gateway/diagnostics.md) — [source](https://docs.openclaw.ai/gateway/diagnostics)
 - [Gateway runbook](gateway.md) — [source](https://docs.openclaw.ai/gateway)
-- [OpenTelemetry export](gateway/opentelemetry.md) — [source](https://docs.openclaw.ai/gateway/opentelemetry)
-- [Prometheus metrics](gateway/prometheus.md) — [source](https://docs.openclaw.ai/gateway/prometheus)
 
 ### Cli
 
 - [CLI reference](cli.md) — [source](https://docs.openclaw.ai/cli)
-- [Migrate](cli/migrate.md) — [source](https://docs.openclaw.ai/cli/migrate)
-- [Path](cli/path.md) — [source](https://docs.openclaw.ai/cli/path)
 
 ### Help
 
@@ -74,38 +63,6 @@
 ### Vps
 
 - [Linux server](vps.md) — [source](https://docs.openclaw.ai/vps)
-
-### Plugins
-
-- [Adding capabilities (contributor guide)](plugins/adding-capabilities.md) — [source](https://docs.openclaw.ai/plugins/adding-capabilities)
-- [Building CLI backend plugins](plugins/cli-backend-plugins.md) — [source](https://docs.openclaw.ai/plugins/cli-backend-plugins)
-- [Canvas plugin](plugins/reference/canvas.md) — [source](https://docs.openclaw.ai/plugins/reference/canvas)
-- [Channel message API](plugins/sdk-channel-message.md) — [source](https://docs.openclaw.ai/plugins/sdk-channel-message)
-- [Channel turn kernel](plugins/sdk-channel-turn.md) — [source](https://docs.openclaw.ai/plugins/sdk-channel-turn)
-- [Codex harness reference](plugins/codex-harness-reference.md) — [source](https://docs.openclaw.ai/plugins/codex-harness-reference)
-- [Codex harness runtime](plugins/codex-harness-runtime.md) — [source](https://docs.openclaw.ai/plugins/codex-harness-runtime)
-- [Native Codex plugins](plugins/codex-native-plugins.md) — [source](https://docs.openclaw.ai/plugins/codex-native-plugins)
-- [OC Path plugin](plugins/oc-path.md) — [source](https://docs.openclaw.ai/plugins/oc-path)
-- [Plugin compatibility](plugins/compatibility.md) — [source](https://docs.openclaw.ai/plugins/compatibility)
-- [Plugin hooks](plugins/hooks.md) — [source](https://docs.openclaw.ai/plugins/hooks)
-- [Plugin install overrides](plugins/install-overrides.md) — [source](https://docs.openclaw.ai/plugins/install-overrides)
-
-### Clawhub
-
-- [Acceptable usage](clawhub/acceptable-usage.md) — [source](https://docs.openclaw.ai/clawhub/acceptable-usage)
-- [Api](clawhub/api.md) — [source](https://docs.openclaw.ai/clawhub/api)
-- [Auth](clawhub/auth.md) — [source](https://docs.openclaw.ai/clawhub/auth)
-- [ClawHub](clawhub.md) — [source](https://docs.openclaw.ai/clawhub)
-- [Cli](clawhub/cli.md) — [source](https://docs.openclaw.ai/clawhub/cli)
-- [How it works](clawhub/how-it-works.md) — [source](https://docs.openclaw.ai/clawhub/how-it-works)
-- [Http api](clawhub/http-api.md) — [source](https://docs.openclaw.ai/clawhub/http-api)
-- [Publishing](clawhub/publishing.md) — [source](https://docs.openclaw.ai/clawhub/publishing)
-- [Quickstart](clawhub/quickstart.md) — [source](https://docs.openclaw.ai/clawhub/quickstart)
-- [Security](clawhub/security.md) — [source](https://docs.openclaw.ai/clawhub/security)
-- [Skill format](clawhub/skill-format.md) — [source](https://docs.openclaw.ai/clawhub/skill-format)
-- [Soul format](clawhub/soul-format.md) — [source](https://docs.openclaw.ai/clawhub/soul-format)
-- [Telemetry](clawhub/telemetry.md) — [source](https://docs.openclaw.ai/clawhub/telemetry)
-- [Troubleshooting](clawhub/troubleshooting.md) — [source](https://docs.openclaw.ai/clawhub/troubleshooting)
 
 ---
 

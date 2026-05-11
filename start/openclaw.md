@@ -156,13 +156,24 @@ Example:
 [code] 
     {
       logging: { level: "info" },
-      agent: {
-        model: "anthropic/claude-opus-4-6",
-        workspace: "~/.openclaw/workspace",
-        thinkingDefault: "high",
-        timeoutSeconds: 1800,
-        // Start with 0; enable later.
-        heartbeat: { every: "0m" },
+      agents: {
+        defaults: {
+          model: { primary: "anthropic/claude-opus-4-6" },
+          workspace: "~/.openclaw/workspace",
+          thinkingDefault: "high",
+          timeoutSeconds: 1800,
+          // Start with 0; enable later.
+          heartbeat: { every: "0m" },
+        },
+        list: [
+          {
+            id: "main",
+            default: true,
+            groupChat: {
+              mentionPatterns: ["@openclaw", "openclaw"],
+            },
+          },
+        ],
       },
       channels: {
         whatsapp: {
@@ -170,11 +181,6 @@ Example:
           groups: {
             "*": { requireMention: true },
           },
-        },
-      },
-      routing: {
-        groupChat: {
-          mentionPatterns: ["@openclaw", "openclaw"],
         },
       },
       session: {
@@ -219,8 +225,10 @@ By default, OpenClaw runs a heartbeat every 30 minutes with the prompt: `Read HE
 
 [code] 
     {
-      agent: {
-        heartbeat: { every: "30m" },
+      agents: {
+        defaults: {
+          heartbeat: { every: "30m" },
+        },
       },
     }
     
