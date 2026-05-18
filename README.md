@@ -29,15 +29,12 @@
 
 ### Channels
 
-- [Ambient room events](channels/ambient-room-events.md) — [source](https://docs.openclaw.ai/channels/ambient-room-events)
-- [Bot loop protection](channels/bot-loop-protection.md) — [source](https://docs.openclaw.ai/channels/bot-loop-protection)
 - [Chat channels](channels.md) — [source](https://docs.openclaw.ai/channels)
 
 ### Concepts
 
 - [Features](concepts/features.md) — [source](https://docs.openclaw.ai/concepts/features)
 - [Gateway architecture](concepts/architecture.md) — [source](https://docs.openclaw.ai/concepts/architecture)
-- [Personal agent benchmark pack](concepts/personal-agent-benchmark-pack.md) — [source](https://docs.openclaw.ai/concepts/personal-agent-benchmark-pack)
 
 ### Tools
 
@@ -46,7 +43,6 @@
 ### Providers
 
 - [Provider directory](providers.md) — [source](https://docs.openclaw.ai/providers)
-- [ds4](providers/ds4.md) — [source](https://docs.openclaw.ai/providers/ds4)
 
 ### Platforms
 
@@ -55,10 +51,6 @@
 ### Gateway
 
 - [Gateway runbook](gateway.md) — [source](https://docs.openclaw.ai/gateway)
-- [Local model services](gateway/local-model-services.md) — [source](https://docs.openclaw.ai/gateway/local-model-services)
-- [Operator scopes](gateway/operator-scopes.md) — [source](https://docs.openclaw.ai/gateway/operator-scopes)
-- [Secure file operations](gateway/security/secure-file-operations.md) — [source](https://docs.openclaw.ai/gateway/security/secure-file-operations)
-- [Security audit checks](gateway/security/audit-checks.md) — [source](https://docs.openclaw.ai/gateway/security/audit-checks)
 
 ### Cli
 
@@ -71,19 +63,6 @@
 ### Vps
 
 - [Linux server](vps.md) — [source](https://docs.openclaw.ai/vps)
-
-### Plugins
-
-- [Admin HTTP RPC plugin](plugins/admin-http-rpc.md) — [source](https://docs.openclaw.ai/plugins/admin-http-rpc)
-- [Channel ingress API](plugins/sdk-channel-ingress.md) — [source](https://docs.openclaw.ai/plugins/sdk-channel-ingress)
-
-### Reference
-
-- [Code mode](reference/code-mode.md) — [source](https://docs.openclaw.ai/reference/code-mode)
-
-### Announcements
-
-- [BlueBubbles removal and the imsg iMessage path](announcements/bluebubbles-imessage.md) — [source](https://docs.openclaw.ai/announcements/bluebubbles-imessage)
 
 ---
 
