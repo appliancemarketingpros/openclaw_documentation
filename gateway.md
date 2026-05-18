@@ -1,12 +1,10 @@
 ---
 title: Gateway runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-05-11
+scraped_at: 2026-05-18
 ---
 
 [OpenClaw home page](</>)
-
-![US](https://d3gk2c5xim1je2.cloudfront.net/flags/US.svg)
 
 English
 
@@ -97,7 +95,8 @@ Runtime model
   * One always-on process for routing, control plane, and channel connections.
   * Single multiplexed port for:
     * WebSocket control/RPC
-    * HTTP APIs, OpenAI compatible (`/v1/models`, `/v1/embeddings`, `/v1/chat/completions`, `/v1/responses`, `/tools/invoke`)
+    * HTTP APIs (`/v1/models`, `/v1/embeddings`, `/v1/chat/completions`, `/v1/responses`, `/tools/invoke`)
+    * Plugin HTTP routes, such as optional `/api/v1/admin/rpc`
     * Control UI and hooks
   * Default bind mode: `loopback`.
   * Auth is required by default. Shared-secret setups use `gateway.auth.token` / `gateway.auth.password` (or `OPENCLAW_GATEWAY_TOKEN` / `OPENCLAW_GATEWAY_PASSWORD`), and non-loopback reverse-proxy setups can use `gateway.auth.mode: "trusted-proxy"`.
@@ -129,7 +128,7 @@ Planning note:
   * `openclaw/default` is the stable alias that always maps to the configured default agent.
   * Use `x-openclaw-model` when you want a backend provider/model override; otherwise the selected agent’s normal model and embedding setup stays in control.
 
-All of these run on the main Gateway port and use the same trusted operator auth boundary as the rest of the Gateway HTTP API.
+All of these run on the main Gateway port and use the same trusted operator auth boundary as the rest of the Gateway HTTP API. Admin HTTP RPC (`POST /api/v1/admin/rpc`) is a separate, default-off plugin route for host tooling that cannot use WebSocket RPC. See [Admin HTTP RPC](</plugins/admin-http-rpc>).
 
 ### 
 
@@ -332,7 +331,7 @@ Protocol quick reference (operator view)
   * Gateway returns `hello-ok` snapshot (`presence`, `health`, `stateVersion`, `uptimeMs`, limits/policy).
   * `hello-ok.features.methods` / `events` are a conservative discovery list, not a generated dump of every callable helper route.
   * Requests: `req(method, params)` → `res(ok/payload|error)`.
-  * Common events include `connect.challenge`, `agent`, `chat`, `session.message`, `session.tool`, `sessions.changed`, `presence`, `tick`, `health`, `heartbeat`, pairing/approval lifecycle events, and `shutdown`.
+  * Common events include `connect.challenge`, `agent`, `chat`, `session.message`, `session.operation`, `session.tool`, `sessions.changed`, `presence`, `tick`, `health`, `heartbeat`, pairing/approval lifecycle events, and `shutdown`.
 
 Agent runs are two-stage:
 

@@ -1,12 +1,10 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-05-11
+scraped_at: 2026-05-18
 ---
 
 [OpenClaw home page](</>)
-
-![US](https://d3gk2c5xim1je2.cloudfront.net/flags/US.svg)
 
 English
 
@@ -119,6 +117,8 @@ If you already manage Node yourself:
     openclaw onboard --install-daemon
     
 [/code]
+
+The hosted installer clears npm freshness filters such as `min-release-age` for the OpenClaw package install. If you install manually with npm, your own npm policy still applies.
 [code]
     pnpm add -g openclaw@latest
     pnpm approve-builds -g

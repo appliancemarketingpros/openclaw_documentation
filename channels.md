@@ -1,12 +1,10 @@
 ---
 title: Chat channels
 source_url: https://docs.openclaw.ai/channels
-scraped_at: 2026-05-11
+scraped_at: 2026-05-18
 ---
 
 [OpenClaw home page](</>)
-
-![US](https://d3gk2c5xim1je2.cloudfront.net/flags/US.svg)
 
 English
 
@@ -38,7 +36,9 @@ Delivery notes
 
   * Telegram replies that contain markdown image syntax, such as `![alt](url)`, are converted into media replies on the final outbound path when possible.
   * Slack multi-person DMs route as group chats, so group policy, mention behavior, and group-session rules apply to MPIM conversations.
-  * WhatsApp setup is install-on-demand: onboarding can show the setup flow before the plugin package is installed, and the Gateway loads the WhatsApp runtime only when the channel is actually active.
+  * WhatsApp setup is install-on-demand: onboarding can show the setup flow before the plugin package is installed, and the Gateway loads the external ClawHub/npm plugin only when the channel is actually active.
+  * Channels that accept bot-authored inbound messages can use shared [bot loop protection](</channels/bot-loop-protection>) to prevent bot pairs from replying to each other indefinitely.
+  * Supported always-on rooms can use [ambient room events](</channels/ambient-room-events>) so unmentioned room chatter becomes quiet context unless the agent sends with the `message` tool.
 
 
 ## 
@@ -88,6 +88,6 @@ Notes
   * Model providers are documented separately; see [Model Providers](</providers/models>).
 
 
-[Discord](</channels/discord>)
+[BlueBubbles removal and the imsg iMessage path](</announcements/bluebubbles-imessage>)
 
 ⌘I

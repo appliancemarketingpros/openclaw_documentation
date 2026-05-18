@@ -1,12 +1,10 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-05-11
+scraped_at: 2026-05-18
 ---
 
 [OpenClaw home page](</>)
-
-![US](https://d3gk2c5xim1je2.cloudfront.net/flags/US.svg)
 
 English
 
@@ -65,6 +63,7 @@ Provider docs
   * [Cloudflare AI Gateway](</providers/cloudflare-ai-gateway>)
   * [ComfyUI](</providers/comfy>)
   * [DeepSeek](</providers/deepseek>)
+  * [ds4 (local DeepSeek V4)](</providers/ds4>)
   * [ElevenLabs](</providers/elevenlabs>)
   * [fal](</providers/fal>)
   * [Fireworks](</providers/fireworks>)

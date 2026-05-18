@@ -1,12 +1,10 @@
 ---
 title: Features
 source_url: https://docs.openclaw.ai/concepts/features
-scraped_at: 2026-05-11
+scraped_at: 2026-05-18
 ---
 
 [OpenClaw home page](</>)
-
-![US](https://d3gk2c5xim1je2.cloudfront.net/flags/US.svg)
 
 English
 

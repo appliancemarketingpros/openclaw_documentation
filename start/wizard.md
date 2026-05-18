@@ -1,12 +1,10 @@
 ---
 title: Onboarding (CLI)
 source_url: https://docs.openclaw.ai/start/wizard
-scraped_at: 2026-05-11
+scraped_at: 2026-05-18
 ---
 
 [OpenClaw home page](</>)
-
-![US](https://d3gk2c5xim1je2.cloudfront.net/flags/US.svg)
 
 English
 
@@ -33,6 +31,20 @@ CLI onboarding is the **recommended** way to set up OpenClaw on macOS, Linux, or
     openclaw onboard
     
 [/code]
+
+## 
+
+​
+
+Locale
+
+The CLI wizard localizes fixed onboarding copy. It resolves locale from `OPENCLAW_LOCALE`, then `LC_ALL`, then `LC_MESSAGES`, then `LANG`, and falls back to English. Supported wizard locales are `en`, `zh-CN`, and `zh-TW`.
+[code] 
+    OPENCLAW_LOCALE=zh-CN openclaw onboard
+    
+[/code]
+
+Names and stable identifiers stay literal: `OpenClaw`, `Gateway`, `Tailscale`, commands, config keys, URLs, provider IDs, model IDs, and plugin/channel labels are not translated.
 
 Fastest first chat: open the Control UI (no channel setup needed). Run `openclaw dashboard` and chat in the browser. Docs: [Dashboard](</web/dashboard>).
 
@@ -84,7 +96,7 @@ What onboarding configures
   1. **Model/Auth** — choose any supported provider/auth flow (API key, OAuth, or provider-specific manual auth), including Custom Provider (OpenAI-compatible, Anthropic-compatible, or Unknown auto-detect). Pick a default model. Security note: if this agent will run tools or process webhook/hooks content, prefer the strongest latest-generation model available and keep tool policy strict. Weaker/older tiers are easier to prompt-inject. For non-interactive runs, `--secret-input-mode ref` stores env-backed refs in auth profiles instead of plaintext API key values. In non-interactive `ref` mode, the provider env var must be set; passing inline key flags without that env var fails fast. In interactive runs, choosing secret reference mode lets you point at either an environment variable or a configured provider ref (`file` or `exec`), with a fast preflight validation before saving. For Anthropic, interactive onboarding/configure offers **Anthropic Claude CLI** as the preferred local path and **Anthropic API key** as the recommended production path. Anthropic setup-token also remains available as a supported token-auth path.
   2. **Workspace** — Location for agent files (default `~/.openclaw/workspace`). Seeds bootstrap files.
   3. **Gateway** — Port, bind address, auth mode, Tailscale exposure. In interactive token mode, choose default plaintext token storage or opt into SecretRef. Non-interactive token SecretRef path: `--gateway-token-ref-env <ENV_VAR>`.
-  4. **Channels** — built-in and bundled chat channels such as iMessage, Discord, Feishu, Google Chat, Mattermost, Microsoft Teams, QQ Bot, Signal, Slack, Telegram, WhatsApp, and more.
+  4. **Channels** — built-in and official plugin chat channels such as iMessage, Discord, Feishu, Google Chat, Mattermost, Microsoft Teams, QQ Bot, Signal, Slack, Telegram, WhatsApp, and more.
   5. **Daemon** — Installs a LaunchAgent (macOS), systemd user unit (Linux/WSL2), or native Windows Scheduled Task with per-user Startup-folder fallback. If token auth requires a token and `gateway.auth.token` is SecretRef-managed, daemon install validates it but does not persist the resolved token into supervisor service environment metadata. If token auth requires a token and the configured token SecretRef is unresolved, daemon install is blocked with actionable guidance. If both `gateway.auth.token` and `gateway.auth.password` are configured and `gateway.auth.mode` is unset, daemon install is blocked until mode is set explicitly.
   6. **Health check** — Starts the Gateway and verifies it’s running.
   7. **Skills** — Installs recommended skills and optional dependencies.
