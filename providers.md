@@ -1,55 +1,24 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-05-18
+scraped_at: 2026-05-25
 ---
 
-[OpenClaw home page](</>)
+OpenClaw can use many LLM providers. Pick a provider, authenticate, then set the default model as `provider/model`.
 
-English
+Looking for chat channel docs (WhatsApp/Telegram/Discord/Slack/Mattermost (plugin)/etc.)? See [Channels](</channels>).
 
-Search...
-
-⌘K
-
-Search...
-
-Navigation
-
-Overview
-
-Provider directory
-
-> ## Documentation Index
-> 
-> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
-> 
-> Use this file to discover all available pages before exploring further.
-
-OpenClaw can use many LLM providers. Pick a provider, authenticate, then set the default model as `provider/model`. Looking for chat channel docs (WhatsApp/Telegram/Discord/Slack/Mattermost (plugin)/etc.)? See [Channels](</channels>).
-
-## 
-
-​
-
-Quick start
+## Quick start
 
   1. Authenticate with the provider (usually via `openclaw onboard`).
   2. Set the default model:
 
-
-[code] 
-    {
-      agents: { defaults: { model: { primary: "anthropic/claude-opus-4-6" } } },
-    }
-    
+json5Copy code
+[code]
+    {  agents: { defaults: { model: { primary: "anthropic/claude-opus-4-6" } } },}
 [/code]
 
-## 
-
-​
-
-Provider docs
+## Provider docs
 
   * [Alibaba Model Studio](</providers/alibaba>)
   * [Amazon Bedrock](</providers/bedrock>)
@@ -68,7 +37,6 @@ Provider docs
   * [fal](</providers/fal>)
   * [Fireworks](</providers/fireworks>)
   * [GitHub Copilot](</providers/github-copilot>)
-  * [GLM models](</providers/glm>)
   * [Google (Gemini)](</providers/google>)
   * [Gradium](</providers/gradium>)
   * [Groq (LPU inference)](</providers/groq>)
@@ -103,14 +71,10 @@ Provider docs
   * [Vydra](</providers/vydra>)
   * [xAI](</providers/xai>)
   * [Xiaomi](</providers/xiaomi>)
-  * [Z.AI](</providers/zai>)
+  * [Z.AI (GLM)](</providers/zai>)
 
 
-## 
-
-​
-
-Shared overview pages
+## Shared overview pages
 
   * [Additional bundled variants](</providers/models#additional-bundled-provider-variants>) \- Anthropic Vertex, Copilot Proxy, and Gemini CLI OAuth
   * [Image Generation](</tools/image-generation>) \- Shared `image_generate` tool, provider selection, and failover
@@ -118,11 +82,7 @@ Shared overview pages
   * [Video Generation](</tools/video-generation>) \- Shared `video_generate` tool, provider selection, and failover
 
 
-## 
-
-​
-
-Transcription providers
+## Transcription providers
 
   * [Deepgram (audio transcription)](</providers/deepgram>)
   * [ElevenLabs](</providers/elevenlabs#speech-to-text>)
@@ -132,16 +92,11 @@ Transcription providers
   * [xAI](</providers/xai#speech-to-text>)
 
 
-## 
-
-​
-
-Community tools
+## Community tools
 
   * [Claude Max API Proxy](</providers/claude-max-api-proxy>) \- Community proxy for Claude subscription credentials (verify Anthropic policy/terms before use)
 
+
 For the full provider catalog (xAI, Groq, Mistral, etc.) and advanced configuration, see [Model providers](</concepts/model-providers>).
 
-[Model provider quickstart](</providers/models>)
-
-⌘I
+Was this useful?YesNo

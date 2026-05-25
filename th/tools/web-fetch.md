@@ -1,0 +1,105 @@
+---
+title: การดึงข้อมูลจากเว็บ
+source_url: https://docs.openclaw.ai/th/tools/web-fetch
+scraped_at: 2026-05-25
+---
+
+เครื่องมือ `web_fetch` ทำ HTTP GET แบบธรรมดาและดึงเนื้อหาที่อ่านได้ (HTML เป็น markdown หรือข้อความ) เครื่องมือนี้ **ไม่** เรียกใช้ JavaScript.
+
+สำหรับเว็บไซต์ที่ใช้ JS หนักหรือหน้าที่ป้องกันด้วยการเข้าสู่ระบบ ให้ใช้ [เว็บเบราว์เซอร์](</th/tools/browser>) แทน
+
+## เริ่มต้นอย่างรวดเร็ว
+
+`web_fetch` **เปิดใช้งานตามค่าเริ่มต้น** \-- ไม่ต้องกำหนดค่า Agent สามารถ เรียกใช้ได้ทันที:
+
+javascriptCopy code
+[code]
+    await web_fetch({ url: "https://example.com/article" });
+[/code]
+
+## พารามิเตอร์ของเครื่องมือ
+
+URL ที่จะดึงข้อมูล รองรับเฉพาะ `http(s)` เท่านั้น
+
+รูปแบบเอาต์พุตหลังจากดึงเนื้อหาหลักแล้ว
+
+ตัดเอาต์พุตให้เหลือจำนวนอักขระเท่านี้
+
+## วิธีการทำงาน
+
+* ### Fetch
+
+ส่ง HTTP GET พร้อม User-Agent ที่คล้าย Chrome และส่วนหัว `Accept-Language` บล็อกชื่อโฮสต์ส่วนตัว/ภายในและตรวจสอบการเปลี่ยนเส้นทางซ้ำ
+
+* ### Extract
+
+รัน Readability (การดึงเนื้อหาหลัก) กับการตอบกลับ HTML
+
+* ### Fallback (optional)
+
+หาก Readability ล้มเหลวและมีการกำหนดค่า Firecrawl ไว้ จะลองใหม่ผ่าน Firecrawl API ด้วยโหมดหลบเลี่ยงบอต
+
+* ### Cache
+
+ผลลัพธ์จะถูกแคชเป็นเวลา 15 นาที (กำหนดค่าได้) เพื่อลดการดึงข้อมูลซ้ำ จาก URL เดิม
+
+## การกำหนดค่า
+
+json5Copy code
+[code]
+    {  tools: {    web: {      fetch: {        enabled: true, // default: true        provider: "firecrawl", // optional; omit for auto-detect        maxChars: 50000, // max output chars        maxCharsCap: 50000, // hard cap for maxChars param        maxResponseBytes: 2000000, // max download size before truncation        timeoutSeconds: 30,        cacheTtlMinutes: 15,        maxRedirects: 3,        useTrustedEnvProxy: false, // let a trusted HTTP(S) env proxy resolve DNS        readability: true, // use Readability extraction        userAgent: "Mozilla/5.0 ...", // override User-Agent        ssrfPolicy: {          allowRfc2544BenchmarkRange: true, // opt-in for trusted fake-IP proxies using 198.18.0.0/15          allowIpv6UniqueLocalRange: true, // opt-in for trusted fake-IP proxies using fc00::/7        },      },    },  },}
+[/code]
+
+## Firecrawl สำรอง
+
+หากการดึงข้อมูลด้วย Readability ล้มเหลว `web_fetch` สามารถสำรองไปใช้ [Firecrawl](</th/tools/firecrawl>) เพื่อหลบเลี่ยงบอตและดึงข้อมูลได้ดีขึ้น:
+
+json5Copy code
+[code]
+    {  tools: {    web: {      fetch: {        provider: "firecrawl", // optional; omit for auto-detect from available credentials      },    },  },  plugins: {    entries: {      firecrawl: {        enabled: true,        config: {          webFetch: {            apiKey: "fc-...", // optional if FIRECRAWL_API_KEY is set            baseUrl: "https://api.firecrawl.dev",            onlyMainContent: true,            maxAgeMs: 86400000, // cache duration (1 day)            timeoutSeconds: 60,          },        },      },    },  },}
+[/code]
+
+`plugins.entries.firecrawl.config.webFetch.apiKey` รองรับออบเจ็กต์ SecretRef การกำหนดค่าเดิม `tools.web.fetch.firecrawl.*` จะถูกย้ายโดยอัตโนมัติด้วย `openclaw doctor --fix`
+
+พฤติกรรม runtime ปัจจุบัน:
+
+  * `tools.web.fetch.provider` เลือกผู้ให้บริการสำรองสำหรับการดึงข้อมูลอย่างชัดเจน
+  * หากละ `provider` ไว้ OpenClaw จะตรวจหา provider สำหรับ web-fetch ตัวแรกที่พร้อมใช้งาน จากข้อมูลรับรองที่มีโดยอัตโนมัติ `web_fetch` ที่ไม่อยู่ใน sandbox สามารถใช้ plugins ที่ติดตั้งไว้ซึ่งประกาศ `contracts.webFetchProviders` และลงทะเบียน provider ที่ตรงกันใน runtime ได้ ปัจจุบัน provider ที่รวมมาให้คือ Firecrawl
+  * การเรียก `web_fetch` แบบ sandboxed ยังคงจำกัดไว้เฉพาะ provider ที่รวมมาให้
+  * หากปิดใช้งาน Readability `web_fetch` จะข้ามตรงไปยัง provider สำรองที่เลือกไว้ หากไม่มี provider ที่พร้อมใช้งาน จะล้มเหลวแบบปิด
+
+
+## พร็อกซี env ที่เชื่อถือได้
+
+หาก deployment ของคุณต้องให้ `web_fetch` ผ่านพร็อกซีขาออก HTTP(S) ที่เชื่อถือได้ ให้ตั้งค่า `tools.web.fetch.useTrustedEnvProxy: true`
+
+ในโหมดนี้ OpenClaw ยังคงใช้การตรวจ SSRF ตามชื่อโฮสต์ก่อนส่งคำขอ แต่จะให้พร็อกซี resolve DNS แทนการทำ DNS pinning ภายในเครื่อง เปิดใช้สิ่งนี้เฉพาะเมื่อพร็อกซีถูกควบคุมโดยผู้ปฏิบัติการและบังคับใช้นโยบาย ขาออกหลังจากการ resolve DNS แล้วเท่านั้น
+
+## ขีดจำกัดและความปลอดภัย
+
+  * `maxChars` ถูกจำกัดไม่ให้เกิน `tools.web.fetch.maxCharsCap`
+  * เนื้อหาการตอบกลับถูกจำกัดที่ `maxResponseBytes` ก่อน parsing; การตอบกลับที่ใหญ่เกินไป จะถูกตัดพร้อมคำเตือน
+  * ชื่อโฮสต์ส่วนตัว/ภายในถูกบล็อก
+  * `tools.web.fetch.ssrfPolicy.allowRfc2544BenchmarkRange` และ `tools.web.fetch.ssrfPolicy.allowIpv6UniqueLocalRange` เป็นการ opt-in แบบจำกัด สำหรับสแต็กพร็อกซี fake-IP ที่เชื่อถือได้; อย่าตั้งค่าเว้นแต่พร็อกซีของคุณเป็นเจ้าของ ช่วงสังเคราะห์เหล่านั้นและบังคับใช้นโยบายปลายทางของตัวเอง
+  * การเปลี่ยนเส้นทางจะถูกตรวจสอบและจำกัดด้วย `maxRedirects`
+  * `useTrustedEnvProxy` เป็นการ opt-in ที่ชัดเจน และควรเปิดใช้เฉพาะกับ พร็อกซีที่ถูกควบคุมโดยผู้ปฏิบัติการซึ่งยังคงบังคับใช้นโยบายขาออกหลังจาก การ resolve DNS
+  * `web_fetch` เป็นแบบ best-effort -- บางเว็บไซต์ต้องใช้ [เว็บเบราว์เซอร์](</th/tools/browser>)
+
+
+## โปรไฟล์เครื่องมือ
+
+หากคุณใช้โปรไฟล์เครื่องมือหรือ allowlists ให้เพิ่ม `web_fetch` หรือ `group:web`:
+
+json5Copy code
+[code]
+    {  tools: {    allow: ["web_fetch"],    // or: allow: ["group:web"]  (includes web_fetch, web_search, and x_search)  },}
+[/code]
+
+## ที่เกี่ยวข้อง
+
+  * [การค้นหาเว็บ](</th/tools/web>) \-- ค้นหาเว็บด้วย provider หลายตัว
+  * [เว็บเบราว์เซอร์](</th/tools/browser>) \-- ระบบอัตโนมัติของเบราว์เซอร์เต็มรูปแบบสำหรับเว็บไซต์ที่ใช้ JS หนัก
+  * [Firecrawl](</th/tools/firecrawl>) \-- เครื่องมือค้นหาและ scrape ของ Firecrawl
+
+
+Was this useful?YesNo

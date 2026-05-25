@@ -1,0 +1,129 @@
+---
+title: Vydra
+source_url: https://docs.openclaw.ai/ar/providers/vydra
+scraped_at: 2026-05-25
+---
+
+يضيف Plugin المضمّن Vydra ما يلي:
+
+  * توليد الصور عبر `vydra/grok-imagine`
+  * توليد الفيديو عبر `vydra/veo3` و`vydra/kling`
+  * تركيب الكلام عبر مسار TTS المدعوم من ElevenLabs في Vydra
+
+
+يستخدم OpenClaw المفتاح نفسه `VYDRA_API_KEY` للإمكانات الثلاث جميعها.
+
+الخاصية | القيمة  
+---|---  
+معرّف المزوّد | `vydra`  
+Plugin | مضمّن، `enabledByDefault: true`  
+متغير بيئة المصادقة | `VYDRA_API_KEY`  
+علم التهيئة الأولية | `--auth-choice vydra-api-key`  
+علم CLI المباشر | `--vydra-api-key <key>`  
+العقود | `imageGenerationProviders`, `videoGenerationProviders`, `speechProviders`  
+عنوان URL الأساسي | `https://www.vydra.ai/api/v1` (استخدم مضيف www)  
+  
+## الإعداد
+
+* ### تشغيل التهيئة الأولية التفاعلية
+
+bashCopy code
+[code]
+    openclaw onboard --auth-choice vydra-api-key
+[/code]
+
+أو عيّن متغير البيئة مباشرة:
+
+bashCopy code
+[code]
+    export VYDRA_API_KEY="vydra_live_..."
+[/code]
+
+* ### اختيار إمكانية افتراضية
+
+اختر واحدة أو أكثر من الإمكانات أدناه (الصورة أو الفيديو أو الكلام) وطبّق الإعداد المطابق.
+
+## الإمكانات
+
+توليد الصور
+
+نموذج الصور الافتراضي:
+
+  * `vydra/grok-imagine`
+
+
+عيّنه كمزوّد الصور الافتراضي:
+
+json5Copy code
+[code]
+    {  agents: {    defaults: {      imageGenerationModel: {        primary: "vydra/grok-imagine",      },    },  },}
+[/code]
+
+يقتصر الدعم المضمّن الحالي على تحويل النص إلى صورة فقط. تتوقع مسارات التحرير المستضافة لدى Vydra عناوين URL بعيدة للصور، ولا يضيف OpenClaw حتى الآن جسر رفع خاصًا بـ Vydra في Plugin المضمّن.
+
+توليد الفيديو
+
+نماذج الفيديو المسجلة:
+
+  * `vydra/veo3` لتحويل النص إلى فيديو
+  * `vydra/kling` لتحويل الصورة إلى فيديو
+
+
+عيّن Vydra كمزوّد الفيديو الافتراضي:
+
+json5Copy code
+[code]
+    {  agents: {    defaults: {      videoGenerationModel: {        primary: "vydra/veo3",      },    },  },}
+[/code]
+
+ملاحظات:
+
+  * يتم تضمين `vydra/veo3` كتحويل من نص إلى فيديو فقط.
+  * يتطلب `vydra/kling` حاليًا مرجع عنوان URL بعيدًا لصورة. تُرفض عمليات رفع الملفات المحلية مسبقًا.
+  * كان مسار HTTP الحالي `kling` في Vydra غير متسق بشأن ما إذا كان يتطلب `image_url` أو `video_url`؛ يربط المزوّد المضمّن عنوان URL البعيد نفسه للصورة بكلا الحقلين.
+  * يبقى Plugin المضمّن محافظًا ولا يمرر عناصر تحكم غير موثقة في النمط مثل نسبة العرض إلى الارتفاع أو الدقة أو العلامة المائية أو الصوت المولّد.
+
+اختبارات الفيديو الحية
+
+تغطية حية خاصة بالمزوّد:
+
+bashCopy code
+[code]
+    OPENCLAW_LIVE_TEST=1 \OPENCLAW_LIVE_VYDRA_VIDEO=1 \pnpm test:live -- extensions/vydra/vydra.live.test.ts
+[/code]
+
+يغطي ملف Vydra الحي المضمّن الآن:
+
+  * تحويل النص إلى فيديو عبر `vydra/veo3`
+  * تحويل الصورة إلى فيديو عبر `vydra/kling` باستخدام عنوان URL بعيد لصورة
+
+
+تجاوز مُثبّت الصورة البعيد عند الحاجة:
+
+bashCopy code
+[code]
+    export OPENCLAW_LIVE_VYDRA_KLING_IMAGE_URL="https://example.com/reference.png"
+[/code]
+
+تركيب الكلام
+
+عيّن Vydra كمزوّد الكلام:
+
+json5Copy code
+[code]
+    {  messages: {    tts: {      provider: "vydra",      providers: {        vydra: {          apiKey: "${VYDRA_API_KEY}",          voiceId: "21m00Tcm4TlvDq8ikWAM",        },      },    },  },}
+[/code]
+
+الإعدادات الافتراضية:
+
+  * النموذج: `elevenlabs/tts`
+  * معرّف الصوت: `21m00Tcm4TlvDq8ikWAM`
+
+
+يعرِض Plugin المضمّن حاليًا صوتًا افتراضيًا واحدًا معروفًا بجودته، ويعيد ملفات صوتية بصيغة MP3.
+
+## ذو صلة
+
+[**دليل المزوّدين** تصفح جميع المزوّدين المتاحين. ](</ar/providers>) [**توليد الصور** معلمات أداة الصور المشتركة واختيار المزوّد. ](</ar/tools/image-generation>) [**توليد الفيديو** معلمات أداة الفيديو المشتركة واختيار المزوّد. ](</ar/tools/video-generation>) [**مرجع الإعدادات** إعدادات الوكيل الافتراضية وإعدادات النموذج. ](</ar/gateway/config-agents#agent-defaults>)
+
+Was this useful?YesNo

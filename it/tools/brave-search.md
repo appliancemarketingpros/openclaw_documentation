@@ -1,0 +1,80 @@
+---
+title: Ricerca Brave
+source_url: https://docs.openclaw.ai/it/tools/brave-search
+scraped_at: 2026-05-25
+---
+
+OpenClaw supporta Brave Search API come provider `web_search`.
+
+## Ottieni una chiave API
+
+  1. Crea un account Brave Search API su <https://brave.com/search/api/>
+  2. Nel dashboard, scegli il piano **Search** e genera una chiave API.
+  3. Archivia la chiave nella configurazione o imposta `BRAVE_API_KEY` nell'ambiente del Gateway.
+
+
+## Esempio di configurazione
+
+json5Copy code
+[code]
+    {  plugins: {    entries: {      brave: {        config: {          webSearch: {            apiKey: "BRAVE_API_KEY_HERE",            mode: "web", // or "llm-context"            baseUrl: "https://api.search.brave.com", // optional proxy/base URL override          },        },      },    },  },  tools: {    web: {      search: {        provider: "brave",        maxResults: 5,        timeoutSeconds: 30,      },    },  },}
+[/code]
+
+Le impostazioni di ricerca Brave specifiche del provider ora si trovano in `plugins.entries.brave.config.webSearch.*`. Il valore legacy `tools.web.search.apiKey` viene ancora caricato tramite lo shim di compatibilità, ma non è più il percorso di configurazione canonico.
+
+`webSearch.mode` controlla il trasporto Brave:
+
+  * `web` (predefinito): normale ricerca web Brave con titoli, URL e snippet
+  * `llm-context`: Brave LLM Context API con blocchi di testo pre-estratti e fonti per il grounding
+
+
+`webSearch.baseUrl` può indirizzare le richieste Brave a un proxy o gateway attendibile compatibile con Brave. OpenClaw aggiunge `/res/v1/web/search` o `/res/v1/llm/context` all'URL di base configurato e mantiene l'URL di base nella chiave della cache. Gli endpoint pubblici devono usare `https://`; `http://` è accettato solo per host proxy attendibili di loopback o di rete privata.
+
+## Parametri dello strumento
+
+Query di ricerca.
+
+Numero di risultati da restituire (1–10).
+
+Codice paese ISO a 2 lettere (ad es. `US`, `DE`).
+
+Codice lingua ISO 639-1 per i risultati di ricerca (ad es. `en`, `de`, `fr`).
+
+Codice della lingua di ricerca Brave (ad es. `en`, `en-gb`, `zh-hans`).
+
+Codice lingua ISO per gli elementi dell'interfaccia utente.
+
+Filtro temporale — `day` indica 24 ore.
+
+Solo risultati pubblicati dopo questa data (`YYYY-MM-DD`).
+
+Solo risultati pubblicati prima di questa data (`YYYY-MM-DD`).
+
+**Esempi:**
+
+javascriptCopy code
+[code]
+    // Country and language-specific searchawait web_search({  query: "renewable energy",  country: "DE",  language: "de",}); // Recent results (past week)await web_search({  query: "AI news",  freshness: "week",}); // Date range searchawait web_search({  query: "AI developments",  date_after: "2024-01-01",  date_before: "2024-06-30",});
+[/code]
+
+## Note
+
+  * OpenClaw usa il piano Brave **Search**. Se hai un abbonamento legacy (ad es. il piano Free originale con 2.000 query/mese), rimane valido ma non include funzionalità più recenti come LLM Context o limiti di frequenza più elevati.
+  * Ogni piano Brave include **$5/mese di credito gratuito** (rinnovabile). Il piano Search costa $5 per 1.000 richieste, quindi il credito copre 1.000 query/mese. Imposta il limite di utilizzo nel dashboard Brave per evitare addebiti imprevisti. Consulta il [portale API Brave](<https://brave.com/search/api/>) per i piani attuali.
+  * Il piano Search include l'endpoint LLM Context e i diritti di inferenza IA. L'archiviazione dei risultati per addestrare o ottimizzare modelli richiede un piano con diritti di archiviazione espliciti. Consulta i [Termini di servizio](<https://api-dashboard.search.brave.com/terms-of-service>) di Brave.
+  * La modalità `llm-context` restituisce voci di fonti con grounding invece della normale forma degli snippet di ricerca web.
+  * La modalità `llm-context` supporta `freshness` e intervalli limitati `date_after` \+ `date_before`. Non supporta `ui_lang`; `date_before` senza `date_after` viene rifiutato perché Brave richiede che gli intervalli di freshness personalizzati includano sia la data di inizio sia quella di fine.
+  * `ui_lang` deve includere un sottotag di regione come `en-US`.
+  * I risultati vengono memorizzati nella cache per 15 minuti per impostazione predefinita (configurabile tramite `cacheTtlMinutes`).
+  * I valori personalizzati di `webSearch.baseUrl` sono inclusi nell'identità della cache Brave, quindi le risposte specifiche del proxy non entrano in collisione.
+  * Abilita il flag di diagnostica `brave.http` per registrare URL/parametri di query delle richieste Brave, stato/tempi delle risposte ed eventi di hit/miss/scrittura della cache di ricerca durante la risoluzione dei problemi. Il flag non registra mai la chiave API né i corpi delle risposte, ma le query di ricerca possono essere sensibili.
+
+
+## Correlati
+
+  * [Panoramica di Web Search](</it/tools/web>) \-- tutti i provider e il rilevamento automatico
+  * [Perplexity Search](</it/tools/perplexity-search>) \-- risultati strutturati con filtro per dominio
+  * [Exa Search](</it/tools/exa-search>) \-- ricerca neurale con estrazione dei contenuti
+
+
+Was this useful?YesNo

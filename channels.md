@@ -1,38 +1,12 @@
 ---
 title: Chat channels
 source_url: https://docs.openclaw.ai/channels
-scraped_at: 2026-05-18
+scraped_at: 2026-05-25
 ---
-
-[OpenClaw home page](</>)
-
-English
-
-Search...
-
-⌘K
-
-Search...
-
-Navigation
-
-Overview
-
-Chat channels
-
-> ## Documentation Index
-> 
-> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
-> 
-> Use this file to discover all available pages before exploring further.
 
 OpenClaw can talk to you on any chat app you already use. Each channel connects via the Gateway. Text is supported everywhere; media and reactions vary by channel.
 
-## 
-
-​
-
-Delivery notes
+## Delivery notes
 
   * Telegram replies that contain markdown image syntax, such as `![alt](url)`, are converted into media replies on the final outbound path when possible.
   * Slack multi-person DMs route as group chats, so group policy, mention behavior, and group-session rules apply to MPIM conversations.
@@ -41,11 +15,7 @@ Delivery notes
   * Supported always-on rooms can use [ambient room events](</channels/ambient-room-events>) so unmentioned room chatter becomes quiet context unless the agent sends with the `message` tool.
 
 
-## 
-
-​
-
-Supported channels
+## Supported channels
 
   * [Discord](</channels/discord>) \- Discord Bot API + Gateway; supports servers, channels, and DMs.
   * [Feishu](</channels/feishu>) \- Feishu/Lark bot via WebSocket (bundled plugin).
@@ -70,15 +40,11 @@ Supported channels
   * [WeChat](</channels/wechat>) \- Tencent iLink Bot plugin via QR login; private chats only (external plugin).
   * [WhatsApp](</channels/whatsapp>) \- Most popular; uses Baileys and requires QR pairing.
   * [Yuanbao](</channels/yuanbao>) \- Tencent Yuanbao bot (external plugin).
-  * [Zalo](</channels/zalo>) \- Zalo Bot API; Vietnam’s popular messenger (bundled plugin).
+  * [Zalo](</channels/zalo>) \- Zalo Bot API; Vietnam's popular messenger (bundled plugin).
   * [Zalo Personal](</channels/zalouser>) \- Zalo personal account via QR login (bundled plugin).
 
 
-## 
-
-​
-
-Notes
+## Notes
 
   * Channels can run simultaneously; configure multiple and OpenClaw will route per chat.
   * Fastest setup is usually **Telegram** (simple bot token). WhatsApp requires QR pairing and stores more state on disk.
@@ -88,6 +54,4 @@ Notes
   * Model providers are documented separately; see [Model Providers](</providers/models>).
 
 
-[BlueBubbles removal and the imsg iMessage path](</announcements/bluebubbles-imessage>)
-
-⌘I
+Was this useful?YesNo

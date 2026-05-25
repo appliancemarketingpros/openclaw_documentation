@@ -1,0 +1,349 @@
+---
+title: MiniMax
+source_url: https://docs.openclaw.ai/es/providers/minimax
+scraped_at: 2026-05-25
+---
+
+OpenClaw's MiniMax provider defaults to **MiniMax M2.7**.
+
+MiniMax also provides:
+
+  * Bundled speech synthesis via T2A v2
+  * Bundled image understanding via `MiniMax-VL-01`
+  * Bundled music generation via `music-2.6`
+  * Bundled `web_search` through the MiniMax Token Plan search API
+
+
+Provider split:
+
+Provider ID | Auth | Capabilities  
+---|---|---  
+`minimax` | API key | Text, image generation, music generation, video generation, image understanding, speech, web search  
+`minimax-portal` | OAuth | Text, image generation, music generation, video generation, image understanding, speech  
+  
+## Built-in catalog
+
+Model | Type | Description  
+---|---|---  
+`MiniMax-M2.7` | Chat (reasoning) | Default hosted reasoning model  
+`MiniMax-M2.7-highspeed` | Chat (reasoning) | Faster M2.7 reasoning tier  
+`MiniMax-VL-01` | Vision | Image understanding model  
+`image-01` | Image generation | Text-to-image and image-to-image editing  
+`music-2.6` | Music generation | Default music model  
+`music-2.5` | Music generation | Previous music generation tier  
+`music-2.0` | Music generation | Legacy music generation tier  
+`MiniMax-Hailuo-2.3` | Video generation | Text-to-video and image reference flows  
+  
+## Getting started
+
+Choose your preferred auth method and follow the setup steps.
+
+### OAuth (Coding Plan)
+
+**Best for:** quick setup with MiniMax Coding Plan via OAuth, no API key required.
+
+### International
+
+* ### Run onboarding
+
+bashCopy code
+[code]
+    openclaw onboard --auth-choice minimax-global-oauth
+[/code]
+
+This authenticates against `api.minimax.io`.
+
+* ### Verify the model is available
+
+bashCopy code
+[code]
+    openclaw models list --provider minimax-portal
+[/code]
+
+### China
+
+* ### Run onboarding
+
+bashCopy code
+[code]
+    openclaw onboard --auth-choice minimax-cn-oauth
+[/code]
+
+This authenticates against `api.minimaxi.com`.
+
+* ### Verify the model is available
+
+bashCopy code
+[code]
+    openclaw models list --provider minimax-portal
+[/code]
+
+### API key
+
+**Best for:** hosted MiniMax with Anthropic-compatible API.
+
+### International
+
+* ### Run onboarding
+
+bashCopy code
+[code]
+    openclaw onboard --auth-choice minimax-global-api
+[/code]
+
+This configures `api.minimax.io` as the base URL.
+
+* ### Verify the model is available
+
+bashCopy code
+[code]
+    openclaw models list --provider minimax
+[/code]
+
+### China
+
+* ### Run onboarding
+
+bashCopy code
+[code]
+    openclaw onboard --auth-choice minimax-cn-api
+[/code]
+
+This configures `api.minimaxi.com` as the base URL.
+
+* ### Verify the model is available
+
+bashCopy code
+[code]
+    openclaw models list --provider minimax
+[/code]
+
+### Config example
+
+json5Copy code
+[code]
+    {  env: { MINIMAX_API_KEY: "sk-..." },  agents: { defaults: { model: { primary: "minimax/MiniMax-M2.7" } } },  models: {    mode: "merge",    providers: {      minimax: {        baseUrl: "https://api.minimax.io/anthropic",        apiKey: "${MINIMAX_API_KEY}",        api: "anthropic-messages",        models: [          {            id: "MiniMax-M2.7",            name: "MiniMax M2.7",            reasoning: true,            input: ["text"],            cost: { input: 0.3, output: 1.2, cacheRead: 0.06, cacheWrite: 0.375 },            contextWindow: 204800,            maxTokens: 131072,          },          {            id: "MiniMax-M2.7-highspeed",            name: "MiniMax M2.7 Highspeed",            reasoning: true,            input: ["text"],            cost: { input: 0.6, output: 2.4, cacheRead: 0.06, cacheWrite: 0.375 },            contextWindow: 204800,            maxTokens: 131072,          },        ],      },    },  },}
+[/code]
+
+## Configure via `openclaw configure`
+
+Use the interactive config wizard to set MiniMax without editing JSON:
+
+* ### Inicia el asistente
+
+bashCopy code
+[code]
+    openclaw configure
+[/code]
+
+* ### Selecciona Modelo/autenticación
+
+Elige **Modelo/autenticación** en el menú.
+
+* ### Elige una opción de autenticación de MiniMax
+
+Elige una de las opciones disponibles de MiniMax:
+
+Opción de autenticación | Descripción  
+---|---  
+`minimax-global-oauth` | OAuth internacional (Coding Plan)  
+`minimax-cn-oauth` | OAuth de China (Coding Plan)  
+`minimax-global-api` | Clave de API internacional  
+`minimax-cn-api` | Clave de API de China  
+* ### Elige tu modelo predeterminado
+
+Selecciona tu modelo predeterminado cuando se te solicite.
+
+## Capacidades
+
+### Generación de imágenes
+
+El Plugin MiniMax registra el modelo `image-01` para la herramienta `image_generate`. Admite:
+
+  * **Generación de texto a imagen** con control de relación de aspecto
+  * **Edición de imagen a imagen** (referencia de sujeto) con control de relación de aspecto
+  * Hasta **9 imágenes de salida** por solicitud
+  * Hasta **1 imagen de referencia** por solicitud de edición
+  * Relaciones de aspecto admitidas: `1:1`, `16:9`, `4:3`, `3:2`, `2:3`, `3:4`, `9:16`, `21:9`
+
+
+Para usar MiniMax en la generación de imágenes, configúralo como proveedor de generación de imágenes:
+
+json5Copy code
+[code]
+    {  agents: {    defaults: {      imageGenerationModel: { primary: "minimax/image-01" },    },  },}
+[/code]
+
+El Plugin usa la misma autenticación `MINIMAX_API_KEY` u OAuth que los modelos de texto. No se necesita configuración adicional si MiniMax ya está configurado.
+
+Tanto `minimax` como `minimax-portal` registran `image_generate` con el mismo modelo `image-01`. Las configuraciones con clave de API usan `MINIMAX_API_KEY`; las configuraciones con OAuth pueden usar la ruta de autenticación `minimax-portal` incluida en su lugar.
+
+La generación de imágenes siempre usa el endpoint dedicado de imágenes de MiniMax (`/v1/image_generation`) e ignora `models.providers.minimax.baseUrl`, ya que ese campo configura la URL base compatible con chat/Anthropic. Configura `MINIMAX_API_HOST=https://api.minimaxi.com` para enrutar la generación de imágenes a través del endpoint de CN; el endpoint global predeterminado es `https://api.minimax.io`.
+
+Cuando la incorporación o la configuración con clave de API escribe entradas explícitas de `models.providers.minimax`, OpenClaw materializa `MiniMax-M2.7` y `MiniMax-M2.7-highspeed` como modelos de chat solo de texto. La comprensión de imágenes se expone por separado mediante el proveedor de medios `MiniMax-VL-01` propiedad del Plugin.
+
+### Texto a voz
+
+El Plugin `minimax` incluido registra MiniMax T2A v2 como proveedor de voz para `messages.tts`.
+
+  * Modelo TTS predeterminado: `speech-2.8-hd`
+  * Voz predeterminada: `English_expressive_narrator`
+  * Los ids de modelos incluidos admitidos incluyen `speech-2.8-hd`, `speech-2.8-turbo`, `speech-2.6-hd`, `speech-2.6-turbo`, `speech-02-hd`, `speech-02-turbo`, `speech-01-hd` y `speech-01-turbo`.
+  * La resolución de autenticación es `messages.tts.providers.minimax.apiKey`, luego los perfiles de autenticación OAuth/token de `minimax-portal`, luego las claves de entorno de Token Plan (`MINIMAX_OAUTH_TOKEN`, `MINIMAX_CODE_PLAN_KEY`, `MINIMAX_CODING_API_KEY`) y luego `MINIMAX_API_KEY`.
+  * Si no se configura ningún host de TTS, OpenClaw reutiliza el host OAuth configurado de `minimax-portal` y elimina los sufijos de ruta compatibles con Anthropic como `/anthropic`.
+  * Los adjuntos de audio normales permanecen en MP3.
+  * Los destinos de notas de voz como Feishu y Telegram se transcodifican de MP3 de MiniMax a Opus de 48 kHz con `ffmpeg`, porque la API de archivos de Feishu/Lark solo acepta `file_type: "opus"` para mensajes de audio nativos.
+  * MiniMax T2A acepta `speed` y `vol` fraccionarios, pero `pitch` se envía como entero; OpenClaw trunca los valores fraccionarios de `pitch` antes de la solicitud a la API.
+
+Configuración | Variable de entorno | Predeterminado | Descripción  
+---|---|---|---  
+`messages.tts.providers.minimax.baseUrl` | `MINIMAX_API_HOST` | `https://api.minimax.io` | Host de la API MiniMax T2A.  
+`messages.tts.providers.minimax.model` | `MINIMAX_TTS_MODEL` | `speech-2.8-hd` | Id del modelo TTS.  
+`messages.tts.providers.minimax.voiceId` | `MINIMAX_TTS_VOICE_ID` | `English_expressive_narrator` | Id de voz usado para la salida de voz.  
+`messages.tts.providers.minimax.speed` |  | `1.0` | Velocidad de reproducción, `0.5..2.0`.  
+`messages.tts.providers.minimax.vol` |  | `1.0` | Volumen, `(0, 10]`.  
+`messages.tts.providers.minimax.pitch` |  | `0` | Cambio de tono entero, `-12..12`.  
+  
+### Generación de música
+
+El Plugin MiniMax incluido registra la generación de música mediante la herramienta compartida `music_generate` tanto para `minimax` como para `minimax-portal`.
+
+  * Modelo de música predeterminado: `minimax/music-2.6`
+  * Modelo de música OAuth: `minimax-portal/music-2.6`
+  * También admite `minimax/music-2.5` y `minimax/music-2.0`
+  * Controles de prompt: `lyrics`, `instrumental`, `durationSeconds`
+  * Formato de salida: `mp3`
+  * Las ejecuciones respaldadas por sesión se desacoplan mediante el flujo compartido de tarea/estado, incluido `action: "status"`
+
+
+Para usar MiniMax como proveedor de música predeterminado:
+
+json5Copy code
+[code]
+    {  agents: {    defaults: {      musicGenerationModel: {        primary: "minimax/music-2.6",      },    },  },}
+[/code]
+
+### Generación de video
+
+El Plugin MiniMax incluido registra la generación de video mediante la herramienta compartida `video_generate` tanto para `minimax` como para `minimax-portal`.
+
+  * Modelo de video predeterminado: `minimax/MiniMax-Hailuo-2.3`
+  * Modelo de video OAuth: `minimax-portal/MiniMax-Hailuo-2.3`
+  * Modos: flujos de texto a video y de referencia de una sola imagen
+  * Admite `aspectRatio` y `resolution`
+
+
+Para usar MiniMax como proveedor de video predeterminado:
+
+json5Copy code
+[code]
+    {  agents: {    defaults: {      videoGenerationModel: {        primary: "minimax/MiniMax-Hailuo-2.3",      },    },  },}
+[/code]
+
+### Comprensión de imágenes
+
+El Plugin de MiniMax registra la comprensión de imágenes por separado del catálogo de texto:
+
+ID de proveedor | Modelo de imagen predeterminado  
+---|---  
+`minimax` | `MiniMax-VL-01`  
+`minimax-portal` | `MiniMax-VL-01`  
+  
+Por eso el enrutamiento automático de medios puede usar la comprensión de imágenes de MiniMax incluso cuando el catálogo de proveedores de texto incluido sigue mostrando referencias de chat M2.7 solo de texto.
+
+### Búsqueda web
+
+El Plugin de MiniMax también registra `web_search` mediante la API de búsqueda MiniMax Token Plan.
+
+  * ID de proveedor: `minimax`
+  * Resultados estructurados: títulos, URL, fragmentos, consultas relacionadas
+  * Variable de entorno preferida: `MINIMAX_CODE_PLAN_KEY`
+  * Alias de entorno aceptados: `MINIMAX_CODING_API_KEY`, `MINIMAX_OAUTH_TOKEN`
+  * Fallback de compatibilidad: `MINIMAX_API_KEY` cuando ya apunta a una credencial de plan de tokens
+  * Reutilización de región: `plugins.entries.minimax.config.webSearch.region`, luego `MINIMAX_API_HOST`, luego las URL base del proveedor MiniMax
+  * La búsqueda permanece en el ID de proveedor `minimax`; la configuración OAuth CN/global puede dirigir la región indirectamente mediante `models.providers.minimax-portal.baseUrl` y puede proporcionar autenticación bearer mediante `MINIMAX_OAUTH_TOKEN`
+
+
+La configuración vive en `plugins.entries.minimax.config.webSearch.*`.
+
+## Configuración avanzada
+
+Opciones de configuración Opción | Descripción  
+---|---  
+`models.providers.minimax.baseUrl` | Prefiere `https://api.minimax.io/anthropic` (compatible con Anthropic); `https://api.minimax.io/v1` es opcional para cargas útiles compatibles con OpenAI  
+`models.providers.minimax.api` | Prefiere `anthropic-messages`; `openai-completions` es opcional para cargas útiles compatibles con OpenAI  
+`models.providers.minimax.apiKey` | Clave de API de MiniMax (`MINIMAX_API_KEY`)  
+`models.providers.minimax.models` | Define `id`, `name`, `reasoning`, `contextWindow`, `maxTokens`, `cost`  
+`agents.defaults.models` | Modelos de alias que quieres en la lista de permitidos  
+`models.mode` | Mantén `merge` si quieres agregar MiniMax junto con los integrados  
+Valores predeterminados de pensamiento
+
+En `api: "anthropic-messages"`, OpenClaw inyecta `thinking: { type: "disabled" }` salvo que el pensamiento ya esté definido explícitamente en params/config.
+
+Esto evita que el endpoint de streaming de MiniMax emita `reasoning_content` en fragmentos delta de estilo OpenAI, lo que filtraría el razonamiento interno en la salida visible.
+
+Modo rápido
+
+`/fast on` o `params.fastMode: true` reescribe `MiniMax-M2.7` como `MiniMax-M2.7-highspeed` en la ruta de stream compatible con Anthropic.
+
+Ejemplo de fallback
+
+**Ideal para:** mantener tu modelo de generación más reciente y más potente como principal, con fallback a MiniMax M2.7. El ejemplo siguiente usa Opus como principal concreto; cámbialo por tu modelo principal preferido de última generación.
+
+json5Copy code
+[code]
+    {  env: { MINIMAX_API_KEY: "sk-..." },  agents: {    defaults: {      models: {        "anthropic/claude-opus-4-6": { alias: "primary" },        "minimax/MiniMax-M2.7": { alias: "minimax" },      },      model: {        primary: "anthropic/claude-opus-4-6",        fallbacks: ["minimax/MiniMax-M2.7"],      },    },  },}
+[/code]
+
+Detalles de uso de Coding Plan
+
+  * API de uso de Coding Plan: `https://api.minimaxi.com/v1/token_plan/remains` o `https://api.minimax.io/v1/token_plan/remains` (requiere una clave de plan de programación).
+  * El sondeo de uso deriva el host de `models.providers.minimax-portal.baseUrl` o `models.providers.minimax.baseUrl` cuando están configurados, por lo que las configuraciones globales que usan `https://api.minimax.io/anthropic` sondean `api.minimax.io`. Las URL base ausentes o mal formadas mantienen el fallback CN por compatibilidad.
+  * OpenClaw normaliza el uso del plan de programación de MiniMax a la misma visualización de `% restante` usada por otros proveedores. Los campos sin procesar `usage_percent` / `usagePercent` de MiniMax son cuota restante, no cuota consumida, por lo que OpenClaw los invierte. Los campos basados en recuento tienen prioridad cuando están presentes.
+  * Cuando la API devuelve `model_remains`, OpenClaw prefiere la entrada del modelo de chat, deriva la etiqueta de ventana desde `start_time` / `end_time` cuando es necesario e incluye el nombre del modelo seleccionado en la etiqueta del plan para que las ventanas de coding-plan sean más fáciles de distinguir.
+  * Las instantáneas de uso tratan `minimax`, `minimax-cn` y `minimax-portal` como la misma superficie de cuota de MiniMax, y prefieren el OAuth almacenado de MiniMax antes de recurrir a variables de entorno de clave de Coding Plan.
+
+
+## Notas
+
+  * Las referencias de modelo siguen la ruta de autenticación: 
+    * Configuración con clave de API: `minimax/<model>`
+    * Configuración OAuth: `minimax-portal/<model>`
+  * Modelo de chat predeterminado: `MiniMax-M2.7`
+  * Modelo de chat alternativo: `MiniMax-M2.7-highspeed`
+  * La incorporación y la configuración directa con clave de API escriben definiciones de modelos solo de texto para ambas variantes M2.7
+  * La comprensión de imágenes usa el proveedor de medios `MiniMax-VL-01` propiedad del Plugin
+  * Actualiza los valores de precios en `models.json` si necesitas seguimiento de costos exacto
+  * Usa `openclaw models list` para confirmar el ID de proveedor actual, luego cambia con `openclaw models set minimax/MiniMax-M2.7` o `openclaw models set minimax-portal/MiniMax-M2.7`
+
+
+## Solución de problemas
+
+"Unknown model: minimax/MiniMax-M2.7"
+
+Esto suele significar que el **proveedor MiniMax no está configurado** (no se encontró una entrada de proveedor coincidente ni un perfil de autenticación/clave de entorno de MiniMax). Hay una corrección para esta detección en **2026.1.12**. Corrígelo así:
+
+  * Actualiza a **2026.1.12** (o ejecuta desde el código fuente `main`) y luego reinicia el Gateway.
+  * Ejecuta `openclaw configure` y selecciona una opción de autenticación de **MiniMax** , o
+  * Agrega manualmente el bloque `models.providers.minimax` o `models.providers.minimax-portal` correspondiente, o
+  * Define `MINIMAX_API_KEY`, `MINIMAX_OAUTH_TOKEN` o un perfil de autenticación de MiniMax para que se pueda inyectar el proveedor correspondiente.
+
+
+Asegúrate de que el ID de modelo sea **sensible a mayúsculas y minúsculas** :
+
+  * Ruta con clave de API: `minimax/MiniMax-M2.7` o `minimax/MiniMax-M2.7-highspeed`
+  * Ruta OAuth: `minimax-portal/MiniMax-M2.7` o `minimax-portal/MiniMax-M2.7-highspeed`
+
+
+Luego vuelve a comprobar con:
+
+bashCopy code
+[code]
+    openclaw models list
+[/code]
+
+## Relacionado
+
+[**Selección de modelo** Elección de proveedores, referencias de modelo y comportamiento de conmutación por error. ](</es/concepts/model-providers>) [**Generación de imágenes** Parámetros compartidos de la herramienta de imágenes y selección de proveedor. ](</es/tools/image-generation>) [**Generación de música** Parámetros compartidos de la herramienta de música y selección de proveedor. ](</es/tools/music-generation>) [**Generación de video** Parámetros compartidos de la herramienta de video y selección de proveedor. ](</es/tools/video-generation>) [**Búsqueda de MiniMax** Configuración de búsqueda web mediante MiniMax Token Plan. ](</es/tools/minimax-search>) [**Solución de problemas** Solución de problemas general y preguntas frecuentes. ](</es/help/troubleshooting>)
+
+Was this useful?YesNo

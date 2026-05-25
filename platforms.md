@@ -1,38 +1,14 @@
 ---
 title: Platforms
 source_url: https://docs.openclaw.ai/platforms
-scraped_at: 2026-05-18
+scraped_at: 2026-05-25
 ---
 
-[OpenClaw home page](</>)
+OpenClaw core is written in TypeScript. **Node is the recommended runtime**. Bun is not recommended for the Gateway — known issues with WhatsApp and Telegram channels; see [Bun (experimental)](</install/bun>) for details.
 
-English
+Companion apps exist for macOS (menu bar app) and mobile nodes (iOS/Android). Windows and Linux companion apps are planned, but the Gateway is fully supported today. Native companion apps for Windows are also planned; the Gateway is recommended via WSL2.
 
-Search...
-
-⌘K
-
-Search...
-
-Navigation
-
-Platforms overview
-
-Platforms
-
-> ## Documentation Index
-> 
-> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
-> 
-> Use this file to discover all available pages before exploring further.
-
-OpenClaw core is written in TypeScript. **Node is the recommended runtime**. Bun is not recommended for the Gateway — known issues with WhatsApp and Telegram channels; see [Bun (experimental)](</install/bun>) for details. Companion apps exist for macOS (menu bar app) and mobile nodes (iOS/Android). Windows and Linux companion apps are planned, but the Gateway is fully supported today. Native companion apps for Windows are also planned; the Gateway is recommended via WSL2.
-
-## 
-
-​
-
-Choose your OS
+## Choose your OS
 
   * macOS: [macOS](</platforms/macos>)
   * iOS: [iOS](</platforms/ios>)
@@ -41,25 +17,18 @@ Choose your OS
   * Linux: [Linux](</platforms/linux>)
 
 
-## 
-
-​
-
-VPS and hosting
+## VPS and hosting
 
   * VPS hub: [VPS hosting](</vps>)
-  * Fly.io: [Fly.io](</install/fly>)
+  * [Fly.io](<http://Fly.io>): [Fly.io](</install/fly>)
   * Hetzner (Docker): [Hetzner](</install/hetzner>)
   * GCP (Compute Engine): [GCP](</install/gcp>)
   * Azure (Linux VM): [Azure](</install/azure>)
   * exe.dev (VM + HTTPS proxy): [exe.dev](</install/exe-dev>)
+  * EasyRunner (Podman + Caddy): [EasyRunner](</platforms/easyrunner>)
 
 
-## 
-
-​
-
-Common links
+## Common links
 
   * Install guide: [Getting Started](</start/getting-started>)
   * Gateway runbook: [Gateway](</gateway>)
@@ -67,11 +36,7 @@ Common links
   * Service status: `openclaw gateway status`
 
 
-## 
-
-​
-
-Gateway service install (CLI)
+## Gateway service install (CLI)
 
 Use one of these (all supported):
 
@@ -80,6 +45,7 @@ Use one of these (all supported):
   * Configure flow: `openclaw configure` → select **Gateway service**
   * Repair/migrate: `openclaw doctor` (offers to install or fix the service)
 
+
 The service target depends on OS:
 
   * macOS: LaunchAgent (`ai.openclaw.gateway` or `ai.openclaw.<profile>`; legacy `com.openclaw.*`)
@@ -87,17 +53,11 @@ The service target depends on OS:
   * Native Windows: Scheduled Task (`OpenClaw Gateway` or `OpenClaw Gateway (<profile>)`), with a per-user Startup-folder login item fallback if task creation is denied
 
 
-## 
-
-​
-
-Related
+## Related
 
   * [Install overview](</install>)
   * [macOS app](</platforms/macos>)
   * [iOS app](</platforms/ios>)
 
 
-[macOS app](</platforms/macos>)
-
-⌘I
+Was this useful?YesNo

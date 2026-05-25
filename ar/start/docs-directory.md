@@ -1,0 +1,70 @@
+---
+title: مجلد التوثيق
+source_url: https://docs.openclaw.ai/ar/start/docs-directory
+scraped_at: 2026-05-25
+---
+
+## ابدأ من هنا
+
+  * [محاور الوثائق (كل الصفحات مرتبطة)](</ar/start/hubs>)
+  * [المساعدة](</ar/help>)
+  * [التكوين](</ar/gateway/configuration>)
+  * [أمثلة التكوين](</ar/gateway/configuration-examples>)
+  * [أوامر الشرطة المائلة](</ar/tools/slash-commands>)
+  * [التوجيه متعدد الوكلاء](</ar/concepts/multi-agent>)
+  * [التحديث والتراجع](</ar/install/updating>)
+  * [الإقران (الرسائل المباشرة والعُقَد)](</ar/channels/pairing>)
+  * [وضع Nix](</ar/install/nix>)
+  * [إعداد مساعد OpenClaw](</ar/start/openclaw>)
+  * [Skills](</ar/tools/skills>)
+  * [تكوين Skills](</ar/tools/skills-config>)
+  * [قوالب مساحة العمل](</ar/reference/templates/AGENTS>)
+  * [محولات RPC](</ar/reference/rpc>)
+  * [دليل تشغيل Gateway](</ar/gateway>)
+  * [العُقَد (iOS وAndroid)](</ar/nodes>)
+  * [واجهات الويب (واجهة التحكم)](</ar/web>)
+  * [الاكتشاف ووسائط النقل](</ar/gateway/discovery>)
+  * [الوصول عن بُعد](</ar/gateway/remote>)
+
+
+## المزوّدون وتجربة المستخدم
+
+  * [WebChat](</ar/web/webchat>)
+  * [واجهة التحكم (المتصفح)](</ar/web/control-ui>)
+  * [Telegram](</ar/channels/telegram>)
+  * [Discord](</ar/channels/discord>)
+  * [Mattermost](</ar/channels/mattermost>)
+  * [QQ Bot](</ar/channels/qqbot>)
+  * [iMessage](</ar/channels/imessage>)
+  * [المجموعات](</ar/channels/groups>)
+  * [رسائل مجموعات WhatsApp](</ar/channels/group-messages>)
+  * [صور الوسائط](</ar/nodes/images>)
+  * [صوت الوسائط](</ar/nodes/audio>)
+
+
+## التطبيقات المصاحبة
+
+  * [تطبيق macOS](</ar/platforms/macos>)
+  * [تطبيق iOS](</ar/platforms/ios>)
+  * [تطبيق Android](</ar/platforms/android>)
+  * [Windows (WSL2)](</ar/platforms/windows>)
+  * [تطبيق Linux](</ar/platforms/linux>)
+
+
+## العمليات والسلامة
+
+  * [الجلسات](</ar/concepts/session>)
+  * [مهام Cron](</ar/automation/cron-jobs>)
+  * [Webhooks](</ar/automation/cron-jobs#webhooks>)
+  * [خطافات Gmail (Pub/Sub)](</ar/automation/cron-jobs#gmail-pubsub-integration>)
+  * [الأمان](</ar/gateway/security>)
+  * [استكشاف الأخطاء وإصلاحها](</ar/gateway/troubleshooting>)
+
+
+## ذات صلة
+
+  * [بدء الاستخدام](</ar/start/getting-started>)
+  * [محاور الوثائق](</ar/start/hubs>)
+
+
+Was this useful?YesNo

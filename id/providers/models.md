@@ -1,0 +1,65 @@
+---
+title: Panduan memulai cepat penyedia model
+source_url: https://docs.openclaw.ai/id/providers/models
+scraped_at: 2026-05-25
+---
+
+OpenClaw dapat menggunakan banyak penyedia LLM. Pilih salah satu, autentikasikan, lalu tetapkan model default sebagai `provider/model`.
+
+## Mulai cepat (dua langkah)
+
+  1. Autentikasikan dengan penyedia (biasanya melalui `openclaw onboard`).
+  2. Tetapkan model default:
+
+json5Copy code
+[code]
+    {  agents: { defaults: { model: { primary: "anthropic/claude-opus-4-6" } } },}
+[/code]
+
+## Penyedia yang didukung (set awal)
+
+  * [Alibaba Model Studio](</id/providers/alibaba>)
+  * [Amazon Bedrock](</id/providers/bedrock>)
+  * [Anthropic (API + Claude CLI)](</id/providers/anthropic>)
+  * [BytePlus (Internasional)](</id/concepts/model-providers#byteplus-international>)
+  * [Chutes](</id/providers/chutes>)
+  * [ComfyUI](</id/providers/comfy>)
+  * [Cloudflare AI Gateway](</id/providers/cloudflare-ai-gateway>)
+  * [DeepInfra](</id/providers/deepinfra>)
+  * [fal](</id/providers/fal>)
+  * [Fireworks](</id/providers/fireworks>)
+  * [model GLM](</id/providers/glm>)
+  * [MiniMax](</id/providers/minimax>)
+  * [Mistral](</id/providers/mistral>)
+  * [Moonshot AI (Kimi + Kimi Coding)](</id/providers/moonshot>)
+  * [OpenAI (API + Codex)](</id/providers/openai>)
+  * [OpenCode (Zen + Go)](</id/providers/opencode>)
+  * [OpenRouter](</id/providers/openrouter>)
+  * [Qianfan](</id/providers/qianfan>)
+  * [Qwen](</id/providers/qwen>)
+  * [Runway](</id/providers/runway>)
+  * [StepFun](</id/providers/stepfun>)
+  * [Synthetic](</id/providers/synthetic>)
+  * [Vercel AI Gateway](</id/providers/vercel-ai-gateway>)
+  * [Venice (Venice AI)](</id/providers/venice>)
+  * [xAI](</id/providers/xai>)
+  * [Z.AI](</id/providers/zai>)
+
+
+## Varian penyedia tambahan yang dibundel
+
+  * `anthropic-vertex` \- dukungan Anthropic implisit di Google Vertex saat kredensial Vertex tersedia; tidak ada pilihan autentikasi onboarding terpisah
+  * `copilot-proxy` \- bridge Proxy VS Code Copilot lokal; gunakan `openclaw onboard --auth-choice copilot-proxy`
+  * `google-gemini-cli` \- alur OAuth Gemini CLI tidak resmi; memerlukan instalasi `gemini` lokal (`brew install gemini-cli` atau `npm install -g @google/gemini-cli`); model default `google-gemini-cli/gemini-3-flash-preview`; gunakan `openclaw onboard --auth-choice google-gemini-cli` atau `openclaw models auth login --provider google-gemini-cli --set-default`
+
+
+Untuk katalog penyedia lengkap (xAI, Groq, Mistral, dll.) dan konfigurasi lanjutan, lihat [Penyedia model](</id/concepts/model-providers>).
+
+## Terkait
+
+  * [Pemilihan model](</id/concepts/model-providers>)
+  * [Failover model](</id/concepts/model-failover>)
+  * [CLI model](</id/cli/models>)
+
+
+Was this useful?YesNo

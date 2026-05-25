@@ -1,50 +1,20 @@
 ---
 title: Onboarding (macOS app)
 source_url: https://docs.openclaw.ai/start/onboarding
-scraped_at: 2026-05-18
+scraped_at: 2026-05-25
 ---
 
-[OpenClaw home page](</>)
+This doc describes the **current** first-run setup flow. The goal is a smooth "day 0" experience: pick where the Gateway runs, connect auth, run the wizard, and let the agent bootstrap itself. For a general overview of onboarding paths, see [Onboarding Overview](</start/onboarding-overview>).
 
-English
+* ### Approve macOS warning
 
-Search...
+![](/assets/macos-onboarding/01-macos-warning.jpeg)
+* ### Approve find local networks
 
-⌘K
+![](/assets/macos-onboarding/02-local-networks.jpeg)
+* ### Welcome and security notice
 
-Search...
-
-Navigation
-
-First steps
-
-Onboarding (macOS app)
-
-> ## Documentation Index
-> 
-> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
-> 
-> Use this file to discover all available pages before exploring further.
-
-This doc describes the **current** first-run setup flow. The goal is a smooth “day 0” experience: pick where the Gateway runs, connect auth, run the wizard, and let the agent bootstrap itself. For a general overview of onboarding paths, see [Onboarding Overview](</start/onboarding-overview>).
-
-1
-
-Approve macOS warning
-
-![](https://mintcdn.com/clawdhub/zr61AlCx-k7XN8so/assets/macos-onboarding/01-macos-warning.jpeg?fit=max&auto=format&n=zr61AlCx-k7XN8so&q=85&s=7ade99ff85eba6a2fe743ff1f7799087)
-
-2
-
-Approve find local networks
-
-![](https://mintcdn.com/clawdhub/zr61AlCx-k7XN8so/assets/macos-onboarding/02-local-networks.jpeg?fit=max&auto=format&n=zr61AlCx-k7XN8so&q=85&s=e9fcec535d0cdca207cff0cf2379e951)
-
-3
-
-Welcome and security notice
-
-![](https://mintcdn.com/clawdhub/zr61AlCx-k7XN8so/assets/macos-onboarding/03-security-notice.png?fit=max&auto=format&n=zr61AlCx-k7XN8so&q=85&s=8866e4aaac170614a163d990091addac)
+Read the security notice displayed and decide accordingly ![](/assets/macos-onboarding/03-security-notice.png)
 
 Security trust model:
 
@@ -54,31 +24,20 @@ Security trust model:
   * If hooks/webhooks or other untrusted content feeds are enabled, use a strong modern model tier and keep strict tool policy/sandboxing.
 
 
-4
+* ### Local vs Remote
 
-Local vs Remote
-
-![](https://mintcdn.com/clawdhub/zr61AlCx-k7XN8so/assets/macos-onboarding/04-choose-gateway.png?fit=max&auto=format&n=zr61AlCx-k7XN8so&q=85&s=7e923f389e6d774363064140691b4fbe)
+![](/assets/macos-onboarding/04-choose-gateway.png)
 
 Where does the **Gateway** run?
 
   * **This Mac (Local only):** onboarding can configure auth and write credentials locally.
-  * **Remote (over SSH/Tailnet):** onboarding does **not** configure local auth; credentials must exist on the gateway host.
+  * **Remote (over SSH/Tailnet):** onboarding does **not** configure local auth; credentials must exist on the gateway host. The remote gateway token field stores the token used by the macOS app to connect to that Gateway; existing non-plaintext `gateway.remote.token` values are preserved until you replace them.
   * **Configure later:** skip setup and leave the app unconfigured.
 
 
-**Gateway auth tip:**
+* ### Permissions
 
-  * The wizard now generates a **token** even for loopback, so local WS clients must authenticate.
-  * If you disable auth, any local process can connect; use that only on fully trusted machines.
-  * Use a **token** for multi-machine access or non-loopback binds.
-
-
-5
-
-Permissions
-
-![](https://mintcdn.com/clawdhub/zr61AlCx-k7XN8so/assets/macos-onboarding/05-permissions.png?fit=max&auto=format&n=zr61AlCx-k7XN8so&q=85&s=6c45fa49282cf491a1425a714ec68f18)
+Choose what permissions do you want to give OpenClaw ![](/assets/macos-onboarding/05-permissions.png)
 
 Onboarding requests TCC permissions needed for:
 
@@ -92,30 +51,16 @@ Onboarding requests TCC permissions needed for:
   * Location
 
 
-6
+* ### CLI
 
-CLI
-
-This step is optional
-
-The app can install the global `openclaw` CLI via npm, pnpm, or bun. It prefers npm first, then pnpm, then bun if that is the only detected package manager. For the Gateway runtime, Node remains the recommended path.
-
-7
-
-Onboarding Chat (dedicated session)
+* ### Onboarding Chat (dedicated session)
 
 After setup, the app opens a dedicated onboarding chat session so the agent can introduce itself and guide next steps. This keeps first-run guidance separate from your normal conversation. See [Bootstrapping](</start/bootstrapping>) for what happens on the gateway host during the first agent run.
 
-## 
-
-​
-
-Related
+## Related
 
   * [Onboarding overview](</start/onboarding-overview>)
   * [Getting started](</start/getting-started>)
 
 
-[Onboarding: CLI](</start/wizard>)[Personal assistant setup](</start/openclaw>)
-
-⌘I
+Was this useful?YesNo

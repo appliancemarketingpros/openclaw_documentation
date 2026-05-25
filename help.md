@@ -1,32 +1,10 @@
 ---
 title: Help
 source_url: https://docs.openclaw.ai/help
-scraped_at: 2026-05-18
+scraped_at: 2026-05-25
 ---
 
-[OpenClaw home page](</>)
-
-English
-
-Search...
-
-⌘K
-
-Search...
-
-Navigation
-
-Start here
-
-Help
-
-> ## Documentation Index
-> 
-> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
-> 
-> Use this file to discover all available pages before exploring further.
-
-Quick “get unstuck” path for the most common problems:
+Quick "get unstuck" path for the most common problems:
 
   * [Troubleshooting](</help/troubleshooting>) \- symptom-first decision tree
   * [Debugging](</help/debugging>) \- watch mode, raw streams, dev profile
@@ -35,50 +13,32 @@ Quick “get unstuck” path for the most common problems:
   * [Doctor](</gateway/doctor>) \- automated repair + diagnostic bundle
 
 
-## 
-
-​
-
-FAQ
+## FAQ
 
   * [FAQ](</help/faq>) \- day-to-day concepts and operational questions
   * [First-run FAQ](</help/faq-first-run>) \- install, onboard, auth, subscriptions, early failures
   * [Models FAQ](</help/faq-models>) \- model selection, failover, auth profiles
 
 
-## 
-
-​
-
-Diagnostics
+## Diagnostics
 
   * [Environment variables](</help/environment>) \- where OpenClaw loads env vars and precedence
   * [Diagnostics flags](</diagnostics/flags>) \- runtime diagnostics and verbose modes
   * [Node + tsx crash](</debug/node-issue>) \- specific Node / tsx runtime crash scenarios
 
 
-## 
-
-​
-
-Testing
+## Testing
 
   * [Testing](</help/testing>) \- test suites and Docker runners
   * [Update and plugin tests](</help/testing-updates-plugins>) \- package update, migration, and plugin install validation
   * [Live tests](</help/testing-live>) \- network-touching provider and CLI smokes
 
 
-## 
-
-​
-
-Community and meta
+## Community and meta
 
   * [OpenClaw lore](</start/lore>) \- the story
   * [Docs hubs](</start/hubs>) \- how this documentation is organized
   * [Docs directory](</start/docs-directory>) \- full file map
 
 
-[General troubleshooting](</help/troubleshooting>)
-
-⌘I
+Was this useful?YesNo

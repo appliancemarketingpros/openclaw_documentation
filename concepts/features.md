@@ -1,66 +1,14 @@
 ---
 title: Features
 source_url: https://docs.openclaw.ai/concepts/features
-scraped_at: 2026-05-18
+scraped_at: 2026-05-25
 ---
 
-[OpenClaw home page](</>)
+## Highlights
 
-English
+[**Channels** Discord, iMessage, Signal, Slack, Telegram, WhatsApp, WebChat, and more with a single Gateway. ](</channels>) [**Plugins** Bundled plugins add Matrix, Nextcloud Talk, Nostr, Twitch, Zalo, and more without separate installs in normal current releases. ](</tools/plugin>) [**Routing** Multi-agent routing with isolated sessions. ](</concepts/multi-agent>) [**Media** Images, audio, video, documents, and image/video generation. ](</nodes/images>) [**Apps and UI** Web Control UI and macOS companion app. ](</web/control-ui>) [**Mobile nodes** iOS and Android nodes with pairing, voice/chat, and rich device commands. ](</nodes>)
 
-Search...
-
-⌘K
-
-Search...
-
-Navigation
-
-Overview
-
-Features
-
-> ## Documentation Index
-> 
-> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
-> 
-> Use this file to discover all available pages before exploring further.
-
-## 
-
-​
-
-Highlights
-
-## Channels
-
-Discord, iMessage, Signal, Slack, Telegram, WhatsApp, WebChat, and more with a single Gateway.
-
-## Plugins
-
-Bundled plugins add Matrix, Nextcloud Talk, Nostr, Twitch, Zalo, and more without separate installs in normal current releases.
-
-## Routing
-
-Multi-agent routing with isolated sessions.
-
-## Media
-
-Images, audio, video, documents, and image/video generation.
-
-## Apps and UI
-
-Web Control UI and macOS companion app.
-
-## Mobile nodes
-
-iOS and Android nodes with pairing, voice/chat, and rich device commands.
-
-## 
-
-​
-
-Full list
+## Full list
 
 **Channels:**
 
@@ -71,6 +19,7 @@ Full list
   * Group chat support with mention-based activation
   * DM safety with allowlists and pairing
 
+
 **Agent:**
 
   * Embedded agent runtime with tool streaming
@@ -78,11 +27,13 @@ Full list
   * Sessions: direct chats collapse into shared `main`; groups are isolated
   * Streaming and chunking for long responses
 
+
 **Auth and providers:**
 
   * 35+ model providers (Anthropic, OpenAI, Google, and more)
   * Subscription auth via OAuth (e.g. OpenAI Codex)
   * Custom and self-hosted provider support (vLLM, SGLang, Ollama, and any OpenAI-compatible or Anthropic-compatible endpoint)
+
 
 **Media:**
 
@@ -91,12 +42,14 @@ Full list
   * Voice note transcription
   * Text-to-speech with multiple providers
 
+
 **Apps and interfaces:**
 
   * WebChat and browser Control UI
   * macOS menu bar companion app
   * iOS node with pairing, Canvas, camera, screen recording, location, and voice
   * Android node with pairing, chat, voice, Canvas, camera, and device commands
+
 
 **Tools and automation:**
 
@@ -106,28 +59,8 @@ Full list
   * Skills, plugins, and workflow pipelines (Lobster)
 
 
-## 
+## Related
 
-​
+[**Experimental features** Opt-in features that have not yet shipped to the default surface. ](</concepts/experimental-features>) [**Agent runtime** Agent runtime model and how runs are dispatched. ](</concepts/agent>) [**Channels** Connect Telegram, WhatsApp, Discord, Slack, and more from one Gateway. ](</channels>) [**Plugins** Bundled and third-party plugins that extend OpenClaw. ](</tools/plugin>)
 
-Related
-
-## Experimental features
-
-Opt-in features that have not yet shipped to the default surface.
-
-## Agent runtime
-
-Agent runtime model and how runs are dispatched.
-
-## Channels
-
-Connect Telegram, WhatsApp, Discord, Slack, and more from one Gateway.
-
-## Plugins
-
-Bundled and third-party plugins that extend OpenClaw.
-
-[Showcase](</start/showcase>)[Getting started](</start/getting-started>)
-
-⌘I
+Was this useful?YesNo

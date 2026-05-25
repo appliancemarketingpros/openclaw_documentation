@@ -1,238 +1,112 @@
 ---
 title: CLI automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-05-18
+scraped_at: 2026-05-25
 ---
-
-[OpenClaw home page](</>)
-
-English
-
-Search...
-
-⌘K
-
-Search...
-
-Navigation
-
-Guides
-
-CLI automation
-
-> ## Documentation Index
-> 
-> Fetch the complete documentation index at: <https://docs.openclaw.ai/llms.txt>
-> 
-> Use this file to discover all available pages before exploring further.
 
 Use `--non-interactive` to automate `openclaw onboard`.
 
-`--json` does not imply non-interactive mode. Use `--non-interactive` (and `--workspace`) for scripts.
+## Baseline non-interactive example
 
-## 
-
-​
-
-Baseline non-interactive example
-[code] 
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice apiKey \
-      --anthropic-api-key "$ANTHROPIC_API_KEY" \
-      --secret-input-mode plaintext \
-      --gateway-port 18789 \
-      --gateway-bind loopback \
-      --install-daemon \
-      --daemon-runtime node \
-      --skip-bootstrap \
-      --skip-skills
-    
-[/code]
-
-Add `--json` for a machine-readable summary. Use `--skip-bootstrap` when your automation pre-seeds workspace files and does not want onboarding to create the default bootstrap files. Use `--secret-input-mode ref` to store env-backed refs in auth profiles instead of plaintext values. Interactive selection between env refs and configured provider refs (`file` or `exec`) is available in the onboarding flow. In non-interactive `ref` mode, provider env vars must be set in the process environment. Passing inline key flags without the matching env var now fails fast. Example:
-[code] 
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice openai-api-key \
-      --secret-input-mode ref \
-      --accept-risk
-    
-[/code]
-
-## 
-
-​
-
-Provider-specific examples
-
-Anthropic API key example
+bashCopy code
 [code]
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice apiKey \
-      --anthropic-api-key "$ANTHROPIC_API_KEY" \
-      --gateway-port 18789 \
-      --gateway-bind loopback
-    
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice apiKey \  --anthropic-api-key "$ANTHROPIC_API_KEY" \  --secret-input-mode plaintext \  --gateway-port 18789 \  --gateway-bind loopback \  --install-daemon \  --daemon-runtime node \  --skip-bootstrap \  --skip-skills
 [/code]
 
-Gemini example
+Add `--json` for a machine-readable summary.
+
+Use `--skip-bootstrap` when your automation pre-seeds workspace files and does not want onboarding to create the default bootstrap files.
+
+Use `--secret-input-mode ref` to store env-backed refs in auth profiles instead of plaintext values. Interactive selection between env refs and configured provider refs (`file` or `exec`) is available in the onboarding flow.
+
+In non-interactive `ref` mode, provider env vars must be set in the process environment. Passing inline key flags without the matching env var now fails fast.
+
+Example:
+
+bashCopy code
 [code]
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice gemini-api-key \
-      --gemini-api-key "$GEMINI_API_KEY" \
-      --gateway-port 18789 \
-      --gateway-bind loopback
-    
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice openai-api-key \  --secret-input-mode ref \  --accept-risk
 [/code]
 
-Z.AI example
+## Provider-specific examples
+
+Anthropic API key example bashCopy code
 [code]
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice zai-api-key \
-      --zai-api-key "$ZAI_API_KEY" \
-      --gateway-port 18789 \
-      --gateway-bind loopback
-    
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice apiKey \  --anthropic-api-key "$ANTHROPIC_API_KEY" \  --gateway-port 18789 \  --gateway-bind loopback
 [/code]
 
-Vercel AI Gateway example
+Gemini example bashCopy code
 [code]
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice ai-gateway-api-key \
-      --ai-gateway-api-key "$AI_GATEWAY_API_KEY" \
-      --gateway-port 18789 \
-      --gateway-bind loopback
-    
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice gemini-api-key \  --gemini-api-key "$GEMINI_API_KEY" \  --gateway-port 18789 \  --gateway-bind loopback
 [/code]
 
-Cloudflare AI Gateway example
+Z.AI example bashCopy code
 [code]
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice cloudflare-ai-gateway-api-key \
-      --cloudflare-ai-gateway-account-id "your-account-id" \
-      --cloudflare-ai-gateway-gateway-id "your-gateway-id" \
-      --cloudflare-ai-gateway-api-key "$CLOUDFLARE_AI_GATEWAY_API_KEY" \
-      --gateway-port 18789 \
-      --gateway-bind loopback
-    
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice zai-api-key \  --zai-api-key "$ZAI_API_KEY" \  --gateway-port 18789 \  --gateway-bind loopback
 [/code]
 
-Moonshot example
+Vercel AI Gateway example bashCopy code
 [code]
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice moonshot-api-key \
-      --moonshot-api-key "$MOONSHOT_API_KEY" \
-      --gateway-port 18789 \
-      --gateway-bind loopback
-    
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice ai-gateway-api-key \  --ai-gateway-api-key "$AI_GATEWAY_API_KEY" \  --gateway-port 18789 \  --gateway-bind loopback
 [/code]
 
-Mistral example
+Cloudflare AI Gateway example bashCopy code
 [code]
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice mistral-api-key \
-      --mistral-api-key "$MISTRAL_API_KEY" \
-      --gateway-port 18789 \
-      --gateway-bind loopback
-    
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice cloudflare-ai-gateway-api-key \  --cloudflare-ai-gateway-account-id "your-account-id" \  --cloudflare-ai-gateway-gateway-id "your-gateway-id" \  --cloudflare-ai-gateway-api-key "$CLOUDFLARE_AI_GATEWAY_API_KEY" \  --gateway-port 18789 \  --gateway-bind loopback
 [/code]
 
-Synthetic example
+Moonshot example bashCopy code
 [code]
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice synthetic-api-key \
-      --synthetic-api-key "$SYNTHETIC_API_KEY" \
-      --gateway-port 18789 \
-      --gateway-bind loopback
-    
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice moonshot-api-key \  --moonshot-api-key "$MOONSHOT_API_KEY" \  --gateway-port 18789 \  --gateway-bind loopback
 [/code]
 
-OpenCode example
+Mistral example bashCopy code
 [code]
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice opencode-zen \
-      --opencode-zen-api-key "$OPENCODE_API_KEY" \
-      --gateway-port 18789 \
-      --gateway-bind loopback
-    
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice mistral-api-key \  --mistral-api-key "$MISTRAL_API_KEY" \  --gateway-port 18789 \  --gateway-bind loopback
+[/code]
+
+Synthetic example bashCopy code
+[code]
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice synthetic-api-key \  --synthetic-api-key "$SYNTHETIC_API_KEY" \  --gateway-port 18789 \  --gateway-bind loopback
+[/code]
+
+OpenCode example bashCopy code
+[code]
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice opencode-zen \  --opencode-zen-api-key "$OPENCODE_API_KEY" \  --gateway-port 18789 \  --gateway-bind loopback
 [/code]
 
 Swap to `--auth-choice opencode-go --opencode-go-api-key "$OPENCODE_API_KEY"` for the Go catalog.
 
-Ollama example
+Ollama example bashCopy code
 [code]
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice ollama \
-      --custom-model-id "qwen3.5:27b" \
-      --accept-risk \
-      --gateway-port 18789 \
-      --gateway-bind loopback
-    
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice ollama \  --custom-model-id "qwen3.5:27b" \  --accept-risk \  --gateway-port 18789 \  --gateway-bind loopback
 [/code]
 
-Custom provider example
+Custom provider example bashCopy code
 [code]
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice custom-api-key \
-      --custom-base-url "https://llm.example.com/v1" \
-      --custom-model-id "foo-large" \
-      --custom-api-key "$CUSTOM_API_KEY" \
-      --custom-provider-id "my-custom" \
-      --custom-compatibility anthropic \
-      --custom-image-input \
-      --gateway-port 18789 \
-      --gateway-bind loopback
-    
+    openclaw onboard --non-interactive \  --mode local \  --auth-choice custom-api-key \  --custom-base-url "https://llm.example.com/v1" \  --custom-model-id "foo-large" \  --custom-api-key "$CUSTOM_API_KEY" \  --custom-provider-id "my-custom" \  --custom-compatibility anthropic \  --custom-image-input \  --gateway-port 18789 \  --gateway-bind loopback
 [/code]
 
-`--custom-api-key` is optional. If omitted, onboarding checks `CUSTOM_API_KEY`. OpenClaw marks common vision model IDs as image-capable automatically. Add `--custom-image-input` for unknown custom vision IDs, or `--custom-text-input` to force text-only metadata.Ref-mode variant:
+`--custom-api-key` is optional. If omitted, onboarding checks `CUSTOM_API_KEY`. OpenClaw marks common vision model IDs as image-capable automatically. Add `--custom-image-input` for unknown custom vision IDs, or `--custom-text-input` to force text-only metadata.
+
+Ref-mode variant:
+
+bashCopy code
 [code]
-    export CUSTOM_API_KEY="your-key"
-    openclaw onboard --non-interactive \
-      --mode local \
-      --auth-choice custom-api-key \
-      --custom-base-url "https://llm.example.com/v1" \
-      --custom-model-id "foo-large" \
-      --secret-input-mode ref \
-      --custom-provider-id "my-custom" \
-      --custom-compatibility anthropic \
-      --custom-image-input \
-      --gateway-port 18789 \
-      --gateway-bind loopback
-    
+    export CUSTOM_API_KEY="your-key"openclaw onboard --non-interactive \  --mode local \  --auth-choice custom-api-key \  --custom-base-url "https://llm.example.com/v1" \  --custom-model-id "foo-large" \  --secret-input-mode ref \  --custom-provider-id "my-custom" \  --custom-compatibility anthropic \  --custom-image-input \  --gateway-port 18789 \  --gateway-bind loopback
 [/code]
 
 In this mode, onboarding stores `apiKey` as `{ source: "env", provider: "default", id: "CUSTOM_API_KEY" }`.
 
 Anthropic setup-token remains available as a supported onboarding token path, but OpenClaw now prefers Claude CLI reuse when available. For production, prefer an Anthropic API key.
 
-## 
-
-​
-
-Add another agent
+## Add another agent
 
 Use `openclaw agents add <name>` to create a separate agent with its own workspace, sessions, and auth profiles. Running without `--workspace` launches the wizard.
-[code] 
-    openclaw agents add work \
-      --workspace ~/.openclaw/workspace-work \
-      --model openai/gpt-5.5 \
-      --bind whatsapp:biz \
-      --non-interactive \
-      --json
-    
+
+bashCopy code
+[code]
+    openclaw agents add work \  --workspace ~/.openclaw/workspace-work \  --model openai/gpt-5.5 \  --bind whatsapp:biz \  --non-interactive \  --json
 [/code]
 
 What it sets:
@@ -241,6 +115,7 @@ What it sets:
   * `agents.list[].workspace`
   * `agents.list[].agentDir`
 
+
 Notes:
 
   * Default workspaces follow `~/.openclaw/workspace-<agentId>`.
@@ -248,17 +123,11 @@ Notes:
   * Non-interactive flags: `--model`, `--agent-dir`, `--bind`, `--non-interactive`.
 
 
-## 
-
-​
-
-Related docs
+## Related docs
 
   * Onboarding hub: [Onboarding (CLI)](</start/wizard>)
   * Full reference: [CLI Setup Reference](</start/wizard-cli-reference>)
   * Command reference: [`openclaw onboard`](</cli/onboard>)
 
 
-[CLI reference](</start/wizard-cli-reference>)
-
-⌘I
+Was this useful?YesNo
