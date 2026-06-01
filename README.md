@@ -30,7 +30,6 @@
 ### Channels
 
 - [Chat channels](channels.md) — [source](https://docs.openclaw.ai/channels)
-- [SMS](channels/sms.md) — [source](https://docs.openclaw.ai/channels/sms)
 
 ### Concepts
 
@@ -39,19 +38,11 @@
 
 ### Tools
 
-- [Goal](tools/goal.md) — [source](https://docs.openclaw.ai/tools/goal)
 - [Overview](tools.md) — [source](https://docs.openclaw.ai/tools)
-- [Permission modes](tools/permission-modes.md) — [source](https://docs.openclaw.ai/tools/permission-modes)
-- [Skill Workshop](tools/skill-workshop.md) — [source](https://docs.openclaw.ai/tools/skill-workshop)
 
 ### Providers
 
-- [GMI Cloud](providers/gmi.md) — [source](https://docs.openclaw.ai/providers/gmi)
-- [NovitaAI](providers/novita.md) — [source](https://docs.openclaw.ai/providers/novita)
-- [Ollama Cloud](providers/ollama-cloud.md) — [source](https://docs.openclaw.ai/providers/ollama-cloud)
-- [PixVerse](providers/pixverse.md) — [source](https://docs.openclaw.ai/providers/pixverse)
 - [Provider directory](providers.md) — [source](https://docs.openclaw.ai/providers)
-- [Qwen OAuth / Portal](providers/qwen-oauth.md) — [source](https://docs.openclaw.ai/providers/qwen-oauth)
 
 ### Platforms
 
@@ -60,13 +51,10 @@
 ### Gateway
 
 - [Gateway runbook](gateway.md) — [source](https://docs.openclaw.ai/gateway)
-- [npm shrinkwrap](gateway/security/shrinkwrap.md) — [source](https://docs.openclaw.ai/gateway/security/shrinkwrap)
 
 ### Cli
 
 - [CLI reference](cli.md) — [source](https://docs.openclaw.ai/cli)
-- [Transcripts CLI](cli/transcripts.md) — [source](https://docs.openclaw.ai/cli/transcripts)
-- [Workboard CLI](cli/workboard.md) — [source](https://docs.openclaw.ai/cli/workboard)
 
 ### Help
 
@@ -75,24 +63,6 @@
 ### Vps
 
 - [Linux server](vps.md) — [source](https://docs.openclaw.ai/vps)
-
-### Plugins
-
-- [Channel inbound API](plugins/sdk-channel-inbound.md) — [source](https://docs.openclaw.ai/plugins/sdk-channel-inbound)
-- [Channel outbound API](plugins/sdk-channel-outbound.md) — [source](https://docs.openclaw.ai/plugins/sdk-channel-outbound)
-- [Workboard plugin](plugins/workboard.md) — [source](https://docs.openclaw.ai/plugins/workboard)
-
-### Reference
-
-- [Release performance sweep](reference/release-performance-sweep.md) — [source](https://docs.openclaw.ai/reference/release-performance-sweep)
-
-### Agent Runtime Architecture
-
-- [Agent runtime architecture](agent-runtime-architecture.md) — [source](https://docs.openclaw.ai/agent-runtime-architecture)
-
-### Openclaw Agent Runtime
-
-- [OpenClaw agent runtime workflow](openclaw-agent-runtime.md) — [source](https://docs.openclaw.ai/openclaw-agent-runtime)
 
 ---
 
