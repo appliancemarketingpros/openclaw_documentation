@@ -1,7 +1,7 @@
 ---
 title: Linux server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-05-25
+scraped_at: 2026-06-01
 ---
 
 Run the OpenClaw Gateway on any Linux server or cloud VPS. This page helps you pick a provider, explains how cloud deployments work, and covers generic Linux tuning that applies everywhere.

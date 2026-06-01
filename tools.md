@@ -1,7 +1,7 @@
 ---
 title: Overview
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-05-25
+scraped_at: 2026-06-01
 ---
 
 Use this page to choose the right Capabilities surface. **Tools** are callable actions, **skills** teach agents how to work, and **plugins** add runtime capabilities such as tools, providers, channels, hooks, and packaged skills.
@@ -16,11 +16,11 @@ If you need to... | Use this first | Then read
 ---|---|---  
 Let an agent act with existing capabilities | Built-in tools | Tool categories  
 Control what an agent can call | Tool policy | [Tools and custom providers](</gateway/config-tools>)  
-Teach an agent a workflow | Skills | [Skills](</tools/skills>) and [Creating skills](</tools/creating-skills>)  
+Teach an agent a workflow | Skills | [Skills](</tools/skills>), [Creating skills](</tools/creating-skills>), and [Skill Workshop](</tools/skill-workshop>)  
 Add a new integration or runtime surface | Plugins | [Plugins](</tools/plugin>) and [Build plugins](</plugins/building-plugins>)  
 Run work later or in the background | [Automation](</automation>) | [Automation overview](</automation>)  
 Coordinate multiple agents or harnesses | [Sub-agents](</tools/subagents>) | [ACP agents](</tools/acp-agents>) and [Agent send](</tools/agent-send>)  
-Search a large PI tool catalog | [Tool Search](</tools/tool-search>) | [Tool Search](</tools/tool-search>)  
+Search a large OpenClaw tool catalog | [Tool Search](</tools/tool-search>) | [Tool Search](</tools/tool-search>)  
   
 ## Choose tools, skills, or plugins
 
@@ -36,7 +36,7 @@ A skill is a `SKILL.md` instruction pack loaded into the agent prompt. Use a ski
 
 Skills can live in a workspace, shared skill directory, managed OpenClaw skill root, or plugin package.
 
-[Skills](</tools/skills>) | [Creating skills](</tools/creating-skills>) | [Skills config](</tools/skills-config>)
+[Skills](</tools/skills>) | [Skill Workshop](</tools/skill-workshop>) | [Creating skills](</tools/creating-skills>) | [Skills config](</tools/skills-config>)
 
 * ### Use a plugin when OpenClaw needs a new capability
 
@@ -55,11 +55,11 @@ Files | Read and change workspace files | `read`, `write`, `edit`, `apply_patch`
 Web | Search the web, search X posts, or fetch readable page content | `web_search`, `x_search`, `web_fetch` | [Web tools](</tools/web>), [Web fetch](</tools/web-fetch>)  
 Browser | Operate a browser session | `browser` | [Browser](</tools/browser>)  
 Messaging and channels | Send replies or channel actions | `message` | [Agent send](</tools/agent-send>)  
-Sessions and agents | Inspect sessions, delegate work, steer another run, or report status | `sessions_*`, `subagents`, `agents_list`, `session_status` | [Sub-agents](</tools/subagents>), [Session tool](</concepts/session-tool>)  
+Sessions and agents | Inspect sessions, delegate work, steer another run, or report status | `sessions_*`, `subagents`, `agents_list`, `session_status`, `goal` | [Goal](</tools/goal>), [Sub-agents](</tools/subagents>), [Session tool](</concepts/session-tool>)  
 Automation | Schedule work or respond to background events | `cron`, `heartbeat_respond` | [Automation](</automation>)  
 Gateway and nodes | Inspect Gateway state or paired target devices | `gateway`, `nodes` | [Gateway configuration](</gateway/configuration>), [Nodes](</nodes>)  
 Media | Analyze, generate, or speak media | `image`, `image_generate`, `music_generate`, `video_generate`, `tts` | [Media overview](</tools/media-overview>)  
-Large PI catalogs | Search and call many eligible tools without sending every schema to the model | `tool_search_code`, `tool_search`, `tool_describe` | [Tool Search](</tools/tool-search>)  
+Large OpenClaw catalogs | Search and call many eligible tools without sending every schema to the model | `tool_search_code`, `tool_search`, `tool_describe` | [Tool Search](</tools/tool-search>)  
   
 ## Plugin-provided tools
 
@@ -93,7 +93,6 @@ Choose the extension path by the job you need OpenClaw to do:
   * Install or manage an existing plugin with [Plugins](</tools/plugin>).
   * Build a new integration, provider, channel, tool, or hook with [Build plugins](</plugins/building-plugins>).
   * Add or tune reusable agent instructions with [Skills](</tools/skills>) and [Creating skills](</tools/creating-skills>).
-  * Package reusable workflow material with [Skill workshop](</plugins/skill-workshop>) when the workflow belongs in a plugin-distributed skill bundle.
   * Use [Plugin SDK](</plugins/sdk-overview>) and [Plugin manifest](</plugins/manifest>) when you need implementation contracts.
 
 
@@ -106,7 +105,7 @@ If the model cannot see or call a tool, start with the effective policy for the 
   3. Check channel permissions, sandbox state, and elevated access with [Sandbox vs tool policy vs elevated](</gateway/sandbox-vs-tool-policy-vs-elevated>) and [Elevated exec](</tools/elevated>).
   4. Check whether the owning plugin is installed and enabled in [Plugins](</tools/plugin>).
   5. For delegated runs, check per-agent restrictions in [Per-agent sandbox and tool restrictions](</tools/multi-agent-sandbox-tools>).
-  6. For large PI catalogs, confirm whether the run uses direct tool exposure or [Tool Search](</tools/tool-search>).
+  6. For large OpenClaw catalogs, confirm whether the run uses direct tool exposure or [Tool Search](</tools/tool-search>).
 
 
 ## Related
@@ -117,7 +116,8 @@ If the model cannot see or call a tool, start with the effective policy for the 
   * [Plugins](</tools/plugin>) for plugin installation and management
   * [Plugin SDK](</plugins/sdk-overview>) for plugin author reference
   * [Skills](</tools/skills>) for skill load order, gating, and config
-  * [Tool Search](</tools/tool-search>) for compact PI tool catalog discovery
+  * [Skill Workshop](</tools/skill-workshop>) for generated and reviewed skill creation
+  * [Tool Search](</tools/tool-search>) for compact OpenClaw tool catalog discovery
 
 
 Was this useful?YesNo

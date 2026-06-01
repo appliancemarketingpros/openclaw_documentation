@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-05-25
+scraped_at: 2026-06-01
 ---
 
 OpenClaw can use many LLM providers. Pick a provider, authenticate, then set the default model as `provider/model`.
@@ -37,6 +37,7 @@ json5Copy code
   * [fal](</providers/fal>)
   * [Fireworks](</providers/fireworks>)
   * [GitHub Copilot](</providers/github-copilot>)
+  * [GMI Cloud](</providers/gmi>)
   * [Google (Gemini)](</providers/google>)
   * [Gradium](</providers/gradium>)
   * [Groq (LPU inference)](</providers/groq>)
@@ -49,7 +50,9 @@ json5Copy code
   * [Mistral](</providers/mistral>)
   * [Moonshot AI (Kimi + Kimi Coding)](</providers/moonshot>)
   * [NVIDIA](</providers/nvidia>)
+  * [NovitaAI](</providers/novita>)
   * [Ollama (cloud + local models)](</providers/ollama>)
+  * [Ollama Cloud](</providers/ollama-cloud>)
   * [OpenAI (API + Codex)](</providers/openai>)
   * [OpenCode](</providers/opencode>)
   * [OpenCode Go](</providers/opencode-go>)
@@ -57,6 +60,7 @@ json5Copy code
   * [Perplexity (web search)](</providers/perplexity-provider>)
   * [Qianfan](</providers/qianfan>)
   * [Qwen Cloud](</providers/qwen>)
+  * [Qwen OAuth / Portal](</providers/qwen-oauth>)
   * [Runway](</providers/runway>)
   * [SenseAudio](</providers/senseaudio>)
   * [SGLang (local models)](</providers/sglang>)

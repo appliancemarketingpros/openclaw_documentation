@@ -1,7 +1,7 @@
 ---
 title: Showcase
 source_url: https://docs.openclaw.ai/start/showcase
-scraped_at: 2026-05-25
+scraped_at: 2026-06-01
 ---
 
 OpenClaw projects are not toy demos. People are shipping PR review loops, mobile apps, home automation, voice systems, devtools, and memory-heavy workflows from the channels they already use — chat-native builds on Telegram, WhatsApp, Discord, and terminals; real automation for booking, shopping, and support without waiting for an API; and physical-world integrations with printers, vacuums, cameras, and home systems.

@@ -1,7 +1,7 @@
 ---
 title: Personal assistant setup
 source_url: https://docs.openclaw.ai/start/openclaw
-scraped_at: 2026-05-25
+scraped_at: 2026-06-01
 ---
 
 OpenClaw is a self-hosted gateway that connects Discord, Google Chat, iMessage, Matrix, Microsoft Teams, Signal, Slack, Telegram, WhatsApp, Zalo, and more to AI agents. This guide covers the "personal assistant" setup: a dedicated WhatsApp number that behaves like your always-on AI assistant.
@@ -33,16 +33,8 @@ Start conservative:
 You want this:
 [code] 
     flowchart TB
-        A["<b>Your Phone (personal)
-    </b>
-    Your WhatsApp
-    +1-555-YOU"] -- message --> B["<b>Second Phone (assistant)
-    </b>
-    Assistant WA
-    +1-555-ASSIST"]
-        B -- linked via QR --> C["<b>Your Mac (openclaw)
-    </b>
-    AI agent"]
+        A["<b>Your Phone (personal)<br></b><br>Your WhatsApp<br>+1-555-YOU"] -- message --> B["<b>Second Phone (assistant)<br></b><br>Assistant WA<br>+1-555-ASSIST"]
+        B -- linked via QR --> C["<b>Your Mac (openclaw)<br></b><br>AI agent"]
 [/code]
 
 If you link your personal WhatsApp to OpenClaw, every message to you becomes "agent input". That's rarely what you want.
@@ -149,31 +141,24 @@ Inbound attachments (images/audio/docs) can be surfaced to your command via temp
   * `{{Transcript}}` (if audio transcription is enabled)
 
 
-Outbound attachments from the agent: include `MEDIA:<path-or-url>` on its own line (no spaces). The directive must start the line as plain text, outside code fences and without Markdown wrappers such as bold or inline code. Example:
+Outbound attachments from the agent use structured media fields on the message tool or reply payload, such as `media`, `mediaUrl`, `mediaUrls`, `path`, or `filePath`. Example message-tool arguments:
 
-CodeCopy code
+jsonCopy code
 [code]
-    Here's the screenshot.MEDIA:https://example.com/screenshot.png
+    {  "message": "Here's the screenshot.",  "mediaUrl": "https://example.com/screenshot.png"}
 [/code]
 
-OpenClaw extracts these and sends them as media alongside the text.
-
-These forms are not attachment directives and are sent as normal text:
-
-mdCopy code
-[code]
-    **MEDIA:https://example.com/screenshot.png**`MEDIA:https://example.com/screenshot.png`Here is the screenshot: MEDIA:https://example.com/screenshot.png
-[/code]
+OpenClaw sends structured media alongside the text. Legacy final assistant replies may still be normalized for compatibility, but tool output, browser output, streaming blocks, and message actions do not parse text as attachment commands.
 
 Local-path behavior follows the same file-read trust model as the agent:
 
-  * If `tools.fs.workspaceOnly` is `true`, outbound `MEDIA:` local paths stay restricted to the OpenClaw temp root, the media cache, agent workspace paths, and sandbox-generated files.
-  * If `tools.fs.workspaceOnly` is `false`, outbound `MEDIA:` can use host-local files the agent is already allowed to read.
+  * If `tools.fs.workspaceOnly` is `true`, outbound local media paths stay restricted to the OpenClaw temp root, the media cache, agent workspace paths, and sandbox-generated files.
+  * If `tools.fs.workspaceOnly` is `false`, outbound local media can use host-local files the agent is already allowed to read.
   * Local paths can be absolute, workspace-relative, or home-relative with `~/`.
-  * Host-local sends still only allow media and safe document types (images, audio, video, PDF, and Office documents). Plain text and secret-like files are not treated as sendable media.
+  * Host-local sends still only allow media and safe document types (images, audio, video, PDF, Office documents, and validated text documents such as Markdown/MD, TXT, JSON, YAML, and YML). This is an extension of the existing host-read trust boundary, not a secret scanner: if the agent can read a host-local `secret.txt` or `config.json`, it can attach that file when the extension and content validation match.
 
 
-That means generated images/files outside the workspace can now send when your fs policy already allows those reads, without reopening arbitrary host-text attachment exfiltration.
+That means generated images/files outside the workspace can now send when your fs policy already allows those reads, while arbitrary host-local text extensions remain blocked. Keep sensitive files outside the agent-readable filesystem, or keep `tools.fs.workspaceOnly=true` for stricter local-path sends.
 
 ## Operations checklist
 

@@ -1,7 +1,7 @@
 ---
 title: Getting started
 source_url: https://docs.openclaw.ai/start/getting-started
-scraped_at: 2026-05-25
+scraped_at: 2026-06-01
 ---
 
 Install OpenClaw, run onboarding, and chat with your AI assistant — all in about 5 minutes. By the end you will have a running Gateway, configured auth, and a working chat session.

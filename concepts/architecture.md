@@ -1,7 +1,7 @@
 ---
 title: Gateway architecture
 source_url: https://docs.openclaw.ai/concepts/architecture
-scraped_at: 2026-05-25
+scraped_at: 2026-06-01
 ---
 
 ## Overview
@@ -59,19 +59,15 @@ Protocol details:
         Client->>Gateway: req:connect
         Gateway-->>Client: res (ok)
         Note right of Gateway: or res error + close
-        Note left of Client: payload=hello-ok
-    snapshot: presence + health
+        Note left of Client: payload=hello-ok<br>snapshot: presence + health
     
         Gateway-->>Client: event:presence
         Gateway-->>Client: event:tick
     
         Client->>Gateway: req:agent
-        Gateway-->>Client: res:agent
-    ack {runId, status:"accepted"}
-        Gateway-->>Client: event:agent
-    (streaming)
-        Gateway-->>Client: res:agent
-    final {runId, status, summary}
+        Gateway-->>Client: res:agent<br>ack {runId, status:"accepted"}
+        Gateway-->>Client: event:agent<br>(streaming)
+        Gateway-->>Client: res:agent<br>final {runId, status, summary}
 [/code]
 
 ## Wire protocol (summary)

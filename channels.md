@@ -1,7 +1,7 @@
 ---
 title: Chat channels
 source_url: https://docs.openclaw.ai/channels
-scraped_at: 2026-05-25
+scraped_at: 2026-06-01
 ---
 
 OpenClaw can talk to you on any chat app you already use. Each channel connects via the Gateway. Text is supported everywhere; media and reactions vary by channel.
@@ -31,6 +31,7 @@ OpenClaw can talk to you on any chat app you already use. Each channel connects 
   * [QQ Bot](</channels/qqbot>) \- QQ Bot API; private chat, group chat, and rich media (bundled plugin).
   * [Signal](</channels/signal>) \- signal-cli; privacy-focused.
   * [Slack](</channels/slack>) \- Bolt SDK; workspace apps.
+  * [SMS](</channels/sms>) \- Twilio-backed SMS through the Gateway webhook (bundled plugin).
   * [Synology Chat](</channels/synology-chat>) \- Synology NAS Chat via outgoing+incoming webhooks (bundled plugin).
   * [Telegram](</channels/telegram>) \- Bot API via grammY; supports groups.
   * [Tlon](</channels/tlon>) \- Urbit-based messenger (bundled plugin).

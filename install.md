@@ -1,7 +1,7 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-05-25
+scraped_at: 2026-06-01
 ---
 
 ## System requirements
@@ -87,15 +87,6 @@ bashCopy code
     bun add -g openclaw@latestopenclaw onboard --install-daemon
 [/code]
 
-Troubleshooting: sharp build errors (npm)
-
-If `sharp` fails due to a globally installed libvips:
-
-bashCopy code
-[code]
-    SHARP_IGNORE_GLOBAL_LIBVIPS=1 npm install -g openclaw@latest
-[/code]
-
 ### From source
 
 For contributors or anyone who wants to run from a local checkout:
@@ -136,14 +127,28 @@ If you want managed startup after install:
 
 Deploy OpenClaw on a cloud server or VPS:
 
-[**VPS** [**Docker VM** [**Kubernetes** OPENCLAW_DOCS_MARKER:cardOpen:IHRpdGxlPSJGbHkuaW8iIGhyZWY9Ii9pbnN0YWxsL2ZseSI [Fly.io](<http://Fly.io>) OPENCLAW_DOCS_MARKER:cardClose: [**Hetzner** [**GCP** [**Azure** [**Railway** [**Render** [**Northflank** Update, migrate, or uninstall [**Updating** Keep OpenClaw up to date. ](</install/updating>) [**Migrating** Move to a new machine. ](</install/migrating>) [**Uninstall** Remove OpenClaw completely. ](</install/uninstall>) Troubleshooting: `openclaw` not found If the install succeeded but `openclaw` is not found in your terminal: bashCopy code
+[**VPS** Any Linux VPS. ](</vps>) [**Docker VM** Shared Docker steps. ](</install/docker-vm-runtime>) [**Kubernetes** K8s deployment. ](</install/kubernetes>) [**Fly.io** Deploy on Fly.io. ](</install/fly>) [**Hetzner** Hetzner deployment. ](</install/hetzner>) [**GCP** Google Cloud deployment. ](</install/gcp>) [**Azure** Azure deployment. ](</install/azure>) [**Railway** Railway deployment. ](</install/railway>) [**Render** Render deployment. ](</install/render>) [**Northflank** Northflank deployment. ](</install/northflank>)
+
+## Update, migrate, or uninstall
+
+[**Updating** Keep OpenClaw up to date. ](</install/updating>) [**Migrating** Move to a new machine. ](</install/migrating>) [**Uninstall** Remove OpenClaw completely. ](</install/uninstall>)
+
+## Troubleshooting: `openclaw` not found
+
+If the install succeeded but `openclaw` is not found in your terminal:
+
+bashCopy code
 [code]
     node -v           # Node installed?npm prefix -g     # Where are global packages?echo "$PATH"      # Is the global bin dir in PATH?
 [/code]
 
-If `$(npm prefix -g)/bin` is not in your `$PATH`, add it to your shell startup file (`~/.zshrc` or `~/.bashrc`): bashCopy code
+If `$(npm prefix -g)/bin` is not in your `$PATH`, add it to your shell startup file (`~/.zshrc` or `~/.bashrc`):
+
+bashCopy code
 [code]
     export PATH="$(npm prefix -g)/bin:$PATH"
 [/code]
 
-Then open a new terminal. See [Node setup](</install/node>) for more details. ](</install/northflank>) Was this useful?YesNo ](</install/render>)](</install/railway>)](</install/azure>)](</install/gcp>)](</install/hetzner>)](</install/kubernetes>)](</install/docker-vm-runtime>)](</vps>)
+Then open a new terminal. See [Node setup](</install/node>) for more details.
+
+Was this useful?YesNo

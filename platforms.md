@@ -1,7 +1,7 @@
 ---
 title: Platforms
 source_url: https://docs.openclaw.ai/platforms
-scraped_at: 2026-05-25
+scraped_at: 2026-06-01
 ---
 
 OpenClaw core is written in TypeScript. **Node is the recommended runtime**. Bun is not recommended for the Gateway — known issues with WhatsApp and Telegram channels; see [Bun (experimental)](</install/bun>) for details.
@@ -20,7 +20,7 @@ Companion apps exist for macOS (menu bar app) and mobile nodes (iOS/Android). Wi
 ## VPS and hosting
 
   * VPS hub: [VPS hosting](</vps>)
-  * [Fly.io](<http://Fly.io>): [Fly.io](</install/fly>)
+  * Fly.io: [Fly.io](</install/fly>)
   * Hetzner (Docker): [Hetzner](</install/hetzner>)
   * GCP (Compute Engine): [GCP](</install/gcp>)
   * Azure (Linux VM): [Azure](</install/azure>)

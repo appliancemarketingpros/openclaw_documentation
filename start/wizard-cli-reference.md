@@ -1,7 +1,7 @@
 ---
 title: CLI setup reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-05-25
+scraped_at: 2026-06-01
 ---
 
 This page is the full reference for `openclaw onboard`. For the short guide, see [Onboarding (CLI)](</start/wizard>).
@@ -137,7 +137,7 @@ OpenAI API key
 
 Uses `OPENAI_API_KEY` if present or prompts for a key, then stores the credential in auth profiles.
 
-Sets `agents.defaults.model` to `openai/gpt-5.5` when model is unset, `openai/*`, or `openai-codex/*`.
+Sets `agents.defaults.model` to `openai/gpt-5.5` when model is unset, `openai/*`, or legacy Codex model refs.
 
 xAI (Grok) OAuth
 
@@ -169,7 +169,7 @@ Prompts for account ID, gateway ID, and `CLOUDFLARE_AI_GATEWAY_API_KEY`. More de
 
 MiniMax
 
-Config is auto-written. Hosted default is `MiniMax-M2.7`; API-key setup uses `minimax/...`, and OAuth setup uses `minimax-portal/...`. More detail: [MiniMax](</providers/minimax>).
+Config is auto-written. Hosted default is `MiniMax-M3`; API-key setup uses `minimax/...`, and OAuth setup uses `minimax-portal/...`. More detail: [MiniMax](</providers/minimax>).
 
 StepFun
 
