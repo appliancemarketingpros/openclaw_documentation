@@ -1,7 +1,7 @@
 ---
 title: Overview
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-06-01
+scraped_at: 2026-06-02
 ---
 
 Use this page to choose the right Capabilities surface. **Tools** are callable actions, **skills** teach agents how to work, and **plugins** add runtime capabilities such as tools, providers, channels, hooks, and packaged skills.

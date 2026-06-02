@@ -1,7 +1,7 @@
 ---
 title: CLI setup reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-06-01
+scraped_at: 2026-06-02
 ---
 
 This page is the full reference for `openclaw onboard`. For the short guide, see [Onboarding (CLI)](</start/wizard>).
@@ -204,7 +204,7 @@ Non-interactive flags:
   * `--custom-model-id`
   * `--custom-api-key` (optional; falls back to `CUSTOM_API_KEY`)
   * `--custom-provider-id` (optional)
-  * `--custom-compatibility <openai|anthropic>` (optional; default `openai`)
+  * `--custom-compatibility <openai|openai-responses|anthropic>` (optional; default `openai`)
   * `--custom-image-input` / `--custom-text-input` (optional; override inferred model input capability)
 
 Skip

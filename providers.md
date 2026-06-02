@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-06-01
+scraped_at: 2026-06-02
 ---
 
 OpenClaw can use many LLM providers. Pick a provider, authenticate, then set the default model as `provider/model`.

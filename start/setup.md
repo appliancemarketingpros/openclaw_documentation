@@ -1,7 +1,7 @@
 ---
 title: Setup
 source_url: https://docs.openclaw.ai/start/setup
-scraped_at: 2026-06-01
+scraped_at: 2026-06-02
 ---
 
 ## TL;DR

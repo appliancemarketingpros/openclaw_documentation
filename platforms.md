@@ -1,7 +1,7 @@
 ---
 title: Platforms
 source_url: https://docs.openclaw.ai/platforms
-scraped_at: 2026-06-01
+scraped_at: 2026-06-02
 ---
 
 OpenClaw core is written in TypeScript. **Node is the recommended runtime**. Bun is not recommended for the Gateway — known issues with WhatsApp and Telegram channels; see [Bun (experimental)](</install/bun>) for details.
