@@ -1,8 +1,10 @@
 ---
 title: CLI reference
 source_url: https://docs.openclaw.ai/cli
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+ReferenceCLI commands
 
 `openclaw` is the main CLI entry point. Each core command has either a dedicated reference page or is documented with the command it aliases; this index lists the commands, the global flags, and the output styling rules that apply across the CLI.
 
@@ -89,3 +91,5 @@ See [Usage tracking](</concepts/usage-tracking>) for details.
 
 
 Was this useful?YesNo
+
+Open issue

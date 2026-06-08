@@ -1,8 +1,10 @@
 ---
 title: Onboarding (macOS app)
 source_url: https://docs.openclaw.ai/start/onboarding
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+Get startedFirst steps
 
 This doc describes the **current** first-run setup flow. The goal is a smooth "day 0" experience: pick where the Gateway runs, connect auth, run the wizard, and let the agent bootstrap itself. For a general overview of onboarding paths, see [Onboarding Overview](</start/onboarding-overview>).
 
@@ -64,3 +66,5 @@ After setup, the app opens a dedicated onboarding chat session so the agent can 
 
 
 Was this useful?YesNo
+
+Open issue

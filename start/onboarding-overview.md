@@ -1,8 +1,10 @@
 ---
 title: Onboarding overview
 source_url: https://docs.openclaw.ai/start/onboarding-overview
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+Get startedFirst steps
 
 OpenClaw has two onboarding paths. Both configure auth, the Gateway, and optional chat channels — they just differ in how you interact with the setup.
 
@@ -66,3 +68,5 @@ Multiple custom endpoints can coexist — each gets its own endpoint ID.
 
 
 Was this useful?YesNo
+
+Open issue

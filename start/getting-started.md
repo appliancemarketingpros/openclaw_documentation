@@ -1,8 +1,10 @@
 ---
 title: Getting started
 source_url: https://docs.openclaw.ai/start/getting-started
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+Get startedFirst steps
 
 Install OpenClaw, run onboarding, and chat with your AI assistant — all in about 5 minutes. By the end you will have a running Gateway, configured auth, and a working chat session.
 
@@ -113,3 +115,5 @@ Full reference: [Environment variables](</help/environment>).
 
 
 Was this useful?YesNo
+
+Open issue

@@ -1,8 +1,10 @@
 ---
 title: Setup
 source_url: https://docs.openclaw.ai/start/setup
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+InstallAdvanced setup
 
 ## TL;DR
 
@@ -169,3 +171,5 @@ For always-on or multi-user servers, consider a **system** service instead of a 
 
 
 Was this useful?YesNo
+
+Open issue

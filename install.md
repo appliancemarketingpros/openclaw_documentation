@@ -1,13 +1,15 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+InstallInstall overview
 
 ## System requirements
 
   * **Node 24** (recommended) or Node 22.19+ - the installer script handles this automatically
-  * **macOS, Linux, or Windows** \- both native Windows and WSL2 are supported; WSL2 is more stable. See [Windows](</platforms/windows>).
+  * **macOS, Linux, or Windows** \- Windows users can start with the native Windows Hub app, the PowerShell CLI installer, or a WSL2 Gateway. See [Windows](</platforms/windows>).
   * `pnpm` is only needed if you build from source
 
 
@@ -152,3 +154,5 @@ bashCopy code
 Then open a new terminal. See [Node setup](</install/node>) for more details.
 
 Was this useful?YesNo
+
+Open issue

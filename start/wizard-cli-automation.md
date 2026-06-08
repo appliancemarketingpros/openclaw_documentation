@@ -1,8 +1,10 @@
 ---
 title: CLI automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+Get startedGuides
 
 Use `--non-interactive` to automate `openclaw onboard`.
 
@@ -131,3 +133,5 @@ Notes:
 
 
 Was this useful?YesNo
+
+Open issue

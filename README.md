@@ -3,7 +3,7 @@
 > This repository contains a local Markdown mirror of the official [Openclaw documentation](https://docs.openclaw.ai/).
 > It is automatically updated every Monday to reflect any changes in the upstream documentation.
 
-**Last updated:** 2026-06-02
+**Last updated:** 2026-06-08
 
 ## Documentation Index
 
@@ -39,6 +39,7 @@
 ### Tools
 
 - [Overview](tools.md) — [source](https://docs.openclaw.ai/tools)
+- [Parallel search](tools/parallel-search.md) — [source](https://docs.openclaw.ai/tools/parallel-search)
 
 ### Providers
 

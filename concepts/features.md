@@ -1,12 +1,14 @@
 ---
 title: Features
 source_url: https://docs.openclaw.ai/concepts/features
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+Get startedOverview
 
 ## Highlights
 
-[**Channels** Discord, iMessage, Signal, Slack, Telegram, WhatsApp, WebChat, and more with a single Gateway. ](</channels>) [**Plugins** Bundled plugins add Matrix, Nextcloud Talk, Nostr, Twitch, Zalo, and more without separate installs in normal current releases. ](</tools/plugin>) [**Routing** Multi-agent routing with isolated sessions. ](</concepts/multi-agent>) [**Media** Images, audio, video, documents, and image/video generation. ](</nodes/images>) [**Apps and UI** Web Control UI and macOS companion app. ](</web/control-ui>) [**Mobile nodes** iOS and Android nodes with pairing, voice/chat, and rich device commands. ](</nodes>)
+[**Channels** Discord, iMessage, Signal, Slack, Telegram, WhatsApp, WebChat, and more with a single Gateway. ](</channels>) [**Plugins** Bundled plugins add Matrix, Nextcloud Talk, Nostr, Twitch, Zalo, and more without separate installs in normal current releases. ](</tools/plugin>) [**Routing** Multi-agent routing with isolated sessions. ](</concepts/multi-agent>) [**Media** Images, audio, video, documents, and image/video generation. ](</nodes/images>) [**Apps and UI** Windows Hub, Web Control UI, macOS app, and mobile nodes. ](</platforms>) [**Mobile nodes** iOS and Android nodes with pairing, voice/chat, and rich device commands. ](</nodes>)
 
 ## Full list
 
@@ -64,3 +66,5 @@ scraped_at: 2026-06-02
 [**Experimental features** Opt-in features that have not yet shipped to the default surface. ](</concepts/experimental-features>) [**Agent runtime** Agent runtime model and how runs are dispatched. ](</concepts/agent>) [**Channels** Connect Telegram, WhatsApp, Discord, Slack, and more from one Gateway. ](</channels>) [**Plugins** Bundled and third-party plugins that extend OpenClaw. ](</tools/plugin>)
 
 Was this useful?YesNo
+
+Open issue

@@ -1,8 +1,10 @@
 ---
 title: OpenClaw
 source_url: https://docs.openclaw.ai/
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+Get startedOverview
 
 # OpenClaw 🦞
 
@@ -112,3 +114,5 @@ json5Copy code
 [**Full feature list** Complete channel, routing, and media capabilities. ](</concepts/features>) [**Multi-agent routing** Workspace isolation and per-agent sessions. ](</concepts/multi-agent>) [**Security** Tokens, allowlists, and safety controls. ](</gateway/security>) [**Troubleshooting** Gateway diagnostics and common errors. ](</gateway/troubleshooting>) [**About and credits** Project origins, contributors, and license. ](</reference/credits>)
 
 Was this useful?YesNo
+
+Open issue

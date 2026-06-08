@@ -1,8 +1,10 @@
 ---
 title: Gateway architecture
 source_url: https://docs.openclaw.ai/concepts/architecture
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+AgentsFundamentals
 
 ## Overview
 
@@ -145,3 +147,5 @@ bashCopy code
 
 
 Was this useful?YesNo
+
+Open issue

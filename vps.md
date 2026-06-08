@@ -1,8 +1,10 @@
 ---
 title: Linux server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+InstallHosting
 
 Run the OpenClaw Gateway on any Linux server or cloud VPS. This page helps you pick a provider, explains how cloud deployments work, and covers generic Linux tuning that applies everywhere.
 
@@ -65,4 +67,4 @@ If you deliberately installed a system unit instead, edit `openclaw-gateway.serv
   * [Fly.io](</install/fly>)
   * [Hetzner](</install/hetzner>)
 
-](</install/raspberry-pi>) Was this useful?YesNo ](</install/exe-dev>)](</install/azure>)](</install/gcp>)](</install/hostinger>)](</install/hetzner>)](</install/fly>)](</install/oracle>)](</install/digitalocean>)](</install/northflank>)](</install/railway>)
+](</install/raspberry-pi>) Was this useful?YesNoOpen issue ](</install/exe-dev>)](</install/azure>)](</install/gcp>)](</install/hostinger>)](</install/hetzner>)](</install/fly>)](</install/oracle>)](</install/digitalocean>)](</install/northflank>)](</install/railway>)

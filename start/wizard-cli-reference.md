@@ -1,8 +1,10 @@
 ---
 title: CLI setup reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+Get startedGuides
 
 This page is the full reference for `openclaw onboard`. For the short guide, see [Onboarding (CLI)](</start/wizard>).
 
@@ -302,3 +304,5 @@ Signal setup behavior:
 
 
 Was this useful?YesNo
+
+Open issue

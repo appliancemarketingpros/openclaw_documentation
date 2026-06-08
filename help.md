@@ -1,8 +1,10 @@
 ---
 title: Help
 source_url: https://docs.openclaw.ai/help
-scraped_at: 2026-06-02
+scraped_at: 2026-06-08
 ---
+
+HelpStart here
 
 Quick "get unstuck" path for the most common problems:
 
@@ -42,3 +44,5 @@ Quick "get unstuck" path for the most common problems:
 
 
 Was this useful?YesNo
+
+Open issue
