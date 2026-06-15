@@ -50,7 +50,6 @@
 
 ### Gateway
 
-- [Gateway integrations for external apps](gateway/external-apps.md) — [source](https://docs.openclaw.ai/gateway/external-apps)
 - [Gateway runbook](gateway.md) — [source](https://docs.openclaw.ai/gateway)
 
 ### Cli
@@ -64,10 +63,6 @@
 ### Vps
 
 - [Linux server](vps.md) — [source](https://docs.openclaw.ai/vps)
-
-### Plugins
-
-- [llama.cpp Provider](plugins/llama-cpp.md) — [source](https://docs.openclaw.ai/plugins/llama-cpp)
 
 ---
 
