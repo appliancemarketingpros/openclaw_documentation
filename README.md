@@ -3,7 +3,7 @@
 > This repository contains a local Markdown mirror of the official [Openclaw documentation](https://docs.openclaw.ai/).
 > It is automatically updated every Monday to reflect any changes in the upstream documentation.
 
-**Last updated:** 2026-06-08
+**Last updated:** 2026-06-15
 
 ## Documentation Index
 
@@ -39,7 +39,6 @@
 ### Tools
 
 - [Overview](tools.md) — [source](https://docs.openclaw.ai/tools)
-- [Parallel search](tools/parallel-search.md) — [source](https://docs.openclaw.ai/tools/parallel-search)
 
 ### Providers
 
@@ -51,6 +50,7 @@
 
 ### Gateway
 
+- [Gateway integrations for external apps](gateway/external-apps.md) — [source](https://docs.openclaw.ai/gateway/external-apps)
 - [Gateway runbook](gateway.md) — [source](https://docs.openclaw.ai/gateway)
 
 ### Cli
@@ -64,6 +64,10 @@
 ### Vps
 
 - [Linux server](vps.md) — [source](https://docs.openclaw.ai/vps)
+
+### Plugins
+
+- [llama.cpp Provider](plugins/llama-cpp.md) — [source](https://docs.openclaw.ai/plugins/llama-cpp)
 
 ---
 

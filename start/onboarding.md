@@ -1,7 +1,7 @@
 ---
 title: Onboarding (macOS app)
 source_url: https://docs.openclaw.ai/start/onboarding
-scraped_at: 2026-06-08
+scraped_at: 2026-06-15
 ---
 
 Get startedFirst steps

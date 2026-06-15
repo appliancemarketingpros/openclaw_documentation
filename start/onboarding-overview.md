@@ -1,7 +1,7 @@
 ---
 title: Onboarding overview
 source_url: https://docs.openclaw.ai/start/onboarding-overview
-scraped_at: 2026-06-08
+scraped_at: 2026-06-15
 ---
 
 Get startedFirst steps
