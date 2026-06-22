@@ -30,8 +30,6 @@
 ### Channels
 
 - [Chat channels](channels.md) — [source](https://docs.openclaw.ai/channels)
-- [Raft](channels/raft.md) — [source](https://docs.openclaw.ai/channels/raft)
-- [Zalo ClawBot](channels/zaloclawbot.md) — [source](https://docs.openclaw.ai/channels/zaloclawbot)
 
 ### Concepts
 
@@ -44,7 +42,6 @@
 
 ### Providers
 
-- [Cohere](providers/cohere.md) — [source](https://docs.openclaw.ai/providers/cohere)
 - [Provider directory](providers.md) — [source](https://docs.openclaw.ai/providers)
 
 ### Platforms
@@ -66,13 +63,6 @@
 ### Vps
 
 - [Linux server](vps.md) — [source](https://docs.openclaw.ai/vps)
-
-### Clawhub
-
-- [Content Rights Requests](clawhub/content-rights.md) — [source](https://docs.openclaw.ai/clawhub/content-rights)
-- [Moderation and Account Safety](clawhub/moderation.md) — [source](https://docs.openclaw.ai/clawhub/moderation)
-- [Org and Namespace Claims](clawhub/namespace-claims.md) — [source](https://docs.openclaw.ai/clawhub/namespace-claims)
-- [Security Audits](clawhub/security-audits.md) — [source](https://docs.openclaw.ai/clawhub/security-audits)
 
 ---
 
