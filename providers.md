@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-06-15
+scraped_at: 2026-06-22
 ---
 
 ModelsOverview
@@ -31,6 +31,7 @@ json5Copy code
   * [BytePlus (International)](</concepts/model-providers#byteplus-international>)
   * [Cerebras](</providers/cerebras>)
   * [Chutes](</providers/chutes>)
+  * [Cohere](</providers/cohere>)
   * [Cloudflare AI Gateway](</providers/cloudflare-ai-gateway>)
   * [ComfyUI](</providers/comfy>)
   * [DeepSeek](</providers/deepseek>)
