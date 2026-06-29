@@ -1,7 +1,7 @@
 ---
 title: CLI reference
 source_url: https://docs.openclaw.ai/cli
-scraped_at: 2026-06-22
+scraped_at: 2026-06-29
 ---
 
 ReferenceCLI commands

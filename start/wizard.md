@@ -1,7 +1,7 @@
 ---
 title: Onboarding (CLI)
 source_url: https://docs.openclaw.ai/start/wizard
-scraped_at: 2026-06-22
+scraped_at: 2026-06-29
 ---
 
 Get startedFirst steps
@@ -12,6 +12,8 @@ bashCopy code
 [code]
     openclaw onboard
 [/code]
+
+QuickStart is usually only a few minutes, but full onboarding can take longer when provider sign-in, channel pairing, daemon install, network downloads, skills, or optional plugins need extra setup. The wizard shows this timeline up front, and optional steps can be skipped and revisited later with `openclaw configure`.
 
 ## Locale
 

@@ -1,7 +1,7 @@
 ---
 title: CLI automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-06-22
+scraped_at: 2026-06-29
 ---
 
 Get startedGuides
