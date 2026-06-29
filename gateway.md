@@ -1,7 +1,7 @@
 ---
 title: Gateway runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-06-22
+scraped_at: 2026-06-29
 ---
 
 Gateway & OpsGateway
@@ -192,7 +192,7 @@ Manual user-unit example when you need a custom install path:
 
 iniCopy code
 [code]
-    [Unit]Description=OpenClaw GatewayAfter=network-online.targetWants=network-online.target [Service]ExecStart=/usr/local/bin/openclaw gateway --port 18789Restart=alwaysRestartSec=5TimeoutStopSec=30TimeoutStartSec=30SuccessExitStatus=0 143KillMode=control-group [Install]WantedBy=default.target
+    [Unit]Description=OpenClaw GatewayAfter=network-online.targetWants=network-online.target [Service]ExecStart=/usr/local/bin/openclaw gateway --port 18789Restart=alwaysRestartSec=5TimeoutStopSec=30TimeoutStartSec=30SuccessExitStatus=0 143OOMPolicy=continueKillMode=control-group [Install]WantedBy=default.target
 [/code]
 
 ### Windows (native)

@@ -1,0 +1,115 @@
+---
+title: قایق بادی
+source_url: https://docs.openclaw.ai/fa/channels/raft
+scraped_at: 2026-06-29
+---
+
+ChannelsDeveloper and self-hosted
+
+پشتیبانی Raft یک عامل OpenClaw را از طریق CLI محلی Raft به یک عامل خارجی Raft متصل می‌کند. Raft اعلان‌های بیدارسازی احرازهویت‌شده را به Gateway می‌فرستد. سپس عامل از CLI‏ Raft برای بررسی و ارسال پیام‌ها استفاده می‌کند.
+
+## نصب
+
+Raft یک Plugin خارجی رسمی است. آن را روی میزبان Gateway نصب کنید:
+
+bashCopy code
+[code]
+    openclaw plugins install @openclaw/raftopenclaw gateway restart
+[/code]
+
+جزئیات: [Plugins](</fa/tools/plugin>)
+
+## پیش‌نیازها
+
+  * یک فضای کاری Raft با یک عامل خارجی.
+  * CLI‏ Raft نصب‌شده روی همان میزبانی که Gateway‏ OpenClaw روی آن قرار دارد.
+  * یک پروفایل CLI‏ Raft که از قبل وارد شده و با آن عامل خارجی مرتبط است.
+
+
+Plugin اعتبارنامه‌های Raft را ذخیره نمی‌کند. CLI‏ Raft این احراز هویت را در پروفایل خودش نگه می‌دارد.
+
+## پیکربندی
+
+پروفایل را در پیکربندی تنظیم کنید:
+
+json5Copy code
+[code]
+    {  channels: {    raft: {      enabled: true,      profile: "openclaw",    },  },}
+[/code]
+
+برای حساب پیش‌فرض، می‌توانید به‌جای آن `RAFT_PROFILE` را در محیط Gateway تنظیم کنید:
+
+bashCopy code
+[code]
+    RAFT_PROFILE=openclaw
+[/code]
+
+وقتی یک Gateway به بیش از یک عامل خارجی Raft متصل می‌شود، از یک حساب نام‌گذاری‌شده استفاده کنید:
+
+json5Copy code
+[code]
+    {  channels: {    raft: {      accounts: {        support: {          profile: "support-agent",        },        engineering: {          profile: "engineering-agent",        },      },    },  },}
+[/code]
+
+روند راه‌اندازی تعاملی همان پروفایل را ثبت می‌کند:
+
+bashCopy code
+[code]
+    openclaw channels setup raft
+[/code]
+
+## نحوه کار
+
+وقتی Gateway شروع به کار می‌کند، Plugin:
+
+  1. یک نقطه پایانی HTTP بیدارسازی فقط local loopback را روی یک درگاه موقت باز می‌کند.
+  2. `raft --profile <profile> agent bridge` را با آن نقطه پایانی و یک توکن مخصوص هر فرایند شروع می‌کند.
+  3. فقط اعلان‌های بیدارسازی احرازهویت‌شده و بدون محتوا را که دارای هویت بازپخش از پل محلی هستند می‌پذیرد.
+  4. وجود یکی از `eventId`،‏ `attemptId`،‏ `messageId`،‏ `delivery_id`،‏ `wake_id`، یا `id` را الزامی می‌کند.
+  5. تحویل‌های بیدارسازی تکرارشده اخیر را بر اساس شناسه رویداد پل، حتی در میان راه‌اندازی‌های دوباره Gateway، حذف تکراری می‌کند.
+  6. یک نشست زمان‌اجرای پایدار برای پل فعلی و یک دسته تخلیه فعالیت خالی برای پروتکل CLI‏ Raft برمی‌گرداند.
+  7. برای هر بیدارسازی پذیرفته‌شده، یک نوبت سریالی عامل OpenClaw را شروع می‌کند.
+
+
+پل مالک تلاش‌های مجدد تحویل Raft و اتصال‌های دوباره است. نوبت OpenClaw فقط یک اعلان بیدارسازی دریافت می‌کند، نه بدنه کپی‌شده پیام Raft. برای خواندن پیام‌های در انتظار و ارسال پاسخ خود از CLI استفاده می‌کند:
+
+bashCopy code
+[code]
+    raft --profile openclaw message checkraft --profile openclaw message send
+[/code]
+
+## تأیید
+
+بررسی کنید که OpenClaw بتواند CLI را پیدا کند و یک پروفایل پیکربندی‌شده داشته باشد:
+
+bashCopy code
+[code]
+    openclaw channels status --probeopenclaw plugins inspect raft --runtime --json
+[/code]
+
+سپس پیامی به عامل خارجی Raft بفرستید. لاگ Gateway باید شروع شدن پل Raft و سپس یک بیدارسازی ورودی را نشان دهد. عامل باید از پروفایل پیکربندی‌شده Raft برای بررسی پیام‌های در انتظار خود استفاده کند.
+
+## عیب‌یابی
+
+CLI‏ Raft موجود نیست
+
+CLI‏ Raft را روی میزبان Gateway نصب کنید و `raft` را در `PATH` سرویس در دسترس قرار دهید. آن را با `raft --help` تأیید کنید، سپس Gateway را دوباره راه‌اندازی کنید.
+
+پل بلافاصله خارج می‌شود
+
+تأیید کنید پروفایل پیکربندی‌شده وارد شده است و به عامل خارجی Raft موردنظر تعلق دارد. `raft --profile <profile> agent bridge` را مستقیماً اجرا کنید تا تشخیص CLI را ببینید.
+
+بیدارسازی می‌رسد اما هیچ پاسخ Raft ارسال نمی‌شود
+
+وقتی عامل CLI‏ Raft را فراخوانی نمی‌کند، این رفتار مورد انتظار است. پل بیدارسازی بدنه پیام‌ها یا پاسخ‌های نهایی خودکار را حمل نمی‌کند. سیاست ابزار عامل را بررسی کنید و مطمئن شوید که می‌تواند `raft --profile <profile> message check` و `message send` را اجرا کند.
+
+## منابع
+
+  * [Raft](<https://raft.build/>)
+  * [مستندات Raft](<https://docs.raft.build/welcome/>)
+  * [یکپارچه‌سازی Hermes Raft](<https://hermes-agent.nousresearch.com/docs/user-guide/messaging/raft>)
+
+
+Was this useful?YesNo
+
+Open issue

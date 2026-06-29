@@ -1,0 +1,3177 @@
+---
+title: رده‌بندی بلوغ
+source_url: https://docs.openclaw.ai/fa/maturity/taxonomy
+scraped_at: 2026-06-29
+---
+
+ReferenceRelease and CI
+
+# رده‌بندی بلوغ
+
+مدل پشت کارت امتیاز
+
+سطح‌ها > دسته‌ها > قابلیت‌ها > شواهد.
+
+50 سطح در 4 خانواده گروه‌بندی شده‌اند، و هر دسته به مستندات مرجع و شناسه‌های پوشش QA پیوند داده شده است.
+
+مرور حوزه‌های محصول / باز کردن رده‌بندی تفصیلی / [مشاهده امتیازها](</fa/maturity/scorecard>)
+
+## نحوه خواندن این صفحه
+
+سطح، یک حوزه محصول مانند زمان اجرای Gateway، Discord یا برنامه macOS است. هر سطح شامل دسته‌هایی است، و هر دسته شامل بررسی‌های سطح قابلیت است که سناریوهای QA پوشش می‌دهند. برای قضاوت در سطح انتشار از کارت امتیاز استفاده کنید؛ برای بررسی مدل زیربنای آن از این صفحه استفاده کنید.
+
+## سطح‌های بلوغ
+
+M0برنامه‌ریزی‌شدهمسیر مشخص است، اما هیچ مسیر کاربری پشتیبانی‌شده‌ای وجود ندارد.ارتقا: مسئله طراحی، مالک، و سطح هدف وجود دارند.
+
+M1آزمایشیپشت ملاحظات، پرچم‌ها، ساخت‌های منبع، یا جریان‌های فقط ویژه نگه‌دارندگان پیاده‌سازی شده است.ارتقا: نگه‌دارنده می‌تواند سناریو را از main فعلی اجرا کند.
+
+M2آلفاکاربران واقعی می‌توانند آن را امتحان کنند، اما تغییرات شکننده و تجربه کاربری ناقص مورد انتظار است.ارتقا: راه‌اندازی مستندشده، آزمون‌های پایه، ملاحظات شناخته‌شده، و دست‌کم یک اثبات در محیط واقعی.
+
+M3بتامسیر عمومی وجود دارد و گردش کار اصلی با ملاحظات محدود قابل استفاده است.ارتقا: مستندات نصب/به‌روزرسانی، آزمون‌های رگرسیون، راهنمای پشتیبانی، و اثبات موفق سناریو در محیط مورد انتظار.
+
+M4پایدارمسیر توصیه‌شده برای کاربران عادی. خرابی‌ها به‌عنوان رگرسیون تلقی می‌شوند.ارتقا: دروازه انتشار، مسیر doctor/عیب‌یابی، مستندات گسترده، و اثبات تکرارشونده در دنیای واقعی.
+
+M5فوق‌العادهصیقل‌خورده، دلپذیر، به‌خوبی ابزارگذاری‌شده، و قابل رقابت با بهترین گردش کار مشابه.ارتقا: پایدار به‌علاوه عبور از کارت امتیاز کاربری در میان کاربران نماینده.
+
+## حوزه‌های محصول
+
+### هسته
+
+CLI M4پایدار7 حوزه - 90% کامل زمان اجرای Gateway M4پایدار13 حوزه - 89% کامل زمان اجرای عامل M3بتا9 حوزه - 79% کامل موتور نشست، حافظه، و زمینه M3بتا9 حوزه - 79% کامل چارچوب کانال M3بتا8 حوزه - 79% کامل مشاهده‌پذیری M3بتا5 حوزه - 79% کامل برنامه وب Gateway M3بتا6 حوزه - 79% کامل Plugin‌ها M3بتا۹ حوزه - ۷۹٪ کامل امنیت، احراز هویت، جفت‌سازی، و اسرار M3بتا۶ حوزه - ۷۹٪ کامل اتوماسیون: Cron، هوک‌ها، وظایف، نظرسنجی M3بتا۶ حوزه - ۷۹٪ کامل درک رسانه و تولید رسانه M2آلفا۶ حوزه - ۶۸٪ کامل صدا و گفت‌وگوی بلادرنگ M2آلفا۶ حوزه - ۶۸٪ کامل TUI M2آلفا۵ حوزه - ۶۶٪ کامل ClawHub M2آلفا۴ حوزه - ۶۲٪ کامل OpenClaw App SDK M2آلفا۶ حوزه - ۵۳٪ کامل
+
+### پلتفرم
+
+میزبان Linux Gateway M4پایدار۵ حوزه - ۸۹٪ کامل میزبان macOS Gateway M4پایدار۷ حوزه - ۸۸٪ کامل میزبانی Docker و Podman M3بتا۴ حوزه - ۷۹٪ کامل Windows از طریق WSL2 M3بتا۶ حوزه - ۷۹٪ کامل Raspberry Pi و دستگاه‌های کوچک Linux M3بتا۴ حوزه - ۷۹٪ کامل برنامه همراه macOS M3بتا۸ حوزه - ۷۸٪ کامل برنامه Android M2آلفا۷ حوزه - ۶۶٪ کامل Windows بومی M2آلفا4 حوزه - 66٪ کامل میزبانی Kubernetes M2آلفا4 حوزه - 61٪ کامل برنامه iOS M1آزمایشی8 حوزه - 44٪ کامل مسیر نصب Nix M1آزمایشی5 حوزه - 44٪ کامل سطوح همراه watchOS M1آزمایشی5 حوزه - 44٪ کامل برنامه همراه Linux M0برنامه‌ریزی‌شده5 حوزه - 21٪ کامل برنامه همراه Windows بومی M0برنامه‌ریزی‌شده5 حوزه - 21٪ کامل
+
+### کانال
+
+Discord M4پایدار6 حوزه - 87٪ کامل Telegram M3بتا5 حوزه - 78٪ کامل Slack M3بتا5 حوزه - 78٪ کامل iMessage و BlueBubbles M3بتا5 حوزه - 78٪ کامل WhatsApp M3بتا5 حوزه - 78٪ کامل Matrix M2آلفا6 حوزه - 67٪ کامل Google Chat M2آلفا5 حوزه - 66٪ کامل Microsoft Teams M2آلفا5 حوزه - 66٪ کامل Signal M2آلفا5 حوزه - 66٪ کامل Feishu، QQ Bot، WeChat، Yuanbao، Zalo، Zalo Personal، کانال‌های منطقه‌ای M2آلفا4 حوزه - 58٪ کامل Mattermost، LINE، IRC، Nextcloud Talk، Nostr، Twitch، Tlon، Synology Chat M2آلفا4 حوزه - 54٪ کامل کانال تماس صوتی M1آزمایشی5 حوزه - 44٪ کامل
+
+### ارائه‌دهنده و ابزار
+
+ابزارهای خودکارسازی مرورگر، exec و sandbox M3بتا3 حوزه - 79٪ کامل مسیر ارائه‌دهنده OpenAI و Codex M3بتا5 حوزه - 79٪ کامل ابزارهای جست‌وجوی وب M3بتا4 حوزه - 79٪ کامل مسیر ارائه‌دهنده Anthropic M3بتا5 حوزه - 78٪ کامل مسیر ارائه‌دهنده Google M3بتا5 حوزه - 78٪ کامل مسیر ارائه‌دهنده OpenRouter M3بتا4 حوزه - 78٪ کامل ابزارهای تولید تصویر، ویدئو و موسیقی M2آلفا5 حوزه - 68٪ کامل ارائه‌دهندگان مدل محلی: Ollama، vLLM، SGLang، LM Studio M2آلفا5 حوزه - 68٪ کامل ارائه‌دهندگان میزبانی‌شده Long-tail M2آلفا3 حوزه - 68٪ کامل
+
+## جزئیات
+
+### هسته
+
+CLI - M4 پایدار - 7 حوزه
+
+مسیرهای راه‌اندازی و ترمیم معمول در مستندات نصب، CLI و Gateway مستند شده‌اند. مسیرهای ویژه Windows برای هر پلتفرم در ردیف‌های Windows از طریق WSL2 و Windows بومی پیگیری می‌شوند.
+
+پوشش آزمایشی - 4٪کیفیت پایدار - 83٪کامل‌بودن پایدار - 90٪جزئی - 6
+
+راه‌اندازی CLI ۶ قابلیت / با پشتیبانی LTS
+
+آزمایشی17%
+
+پایدار89%
+
+پایدار90%
+
+[نمایه](</fa/install>), [نصب‌کننده](</fa/install/installer>), [Node](</fa/install/node>), [به‌روزرسانی](</fa/install/updating>)
+
+راه‌اندازی آغازین و احراز هویت ۵ قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+بتا75%
+
+پایدار89%
+
+[آغاز راه‌اندازی](</fa/cli/onboard>), [پیکربندی](</fa/cli/configure>), [نمای کلی راه‌اندازی آغازین](</fa/start/onboarding-overview>)
+
+راه‌اندازی Plugin و کانال ۵ قابلیت
+
+آزمایشی0%
+
+بتا75%
+
+پایدار89%
+
+[آغاز راه‌اندازی](</fa/cli/onboard>), [Pluginها](</fa/cli/plugins>), [کانال‌ها](</fa/cli/channels>)
+
+مدیریت سرویس Gateway ۵ قابلیت / با پشتیبانی LTS
+
+آزمایشی14%
+
+پایدار87%
+
+پایدار90%
+
+[Gateway](</fa/cli/gateway>), [به‌روزرسانی](</fa/install/updating>), [عیب‌یابی](</fa/gateway/troubleshooting>)
+
+مشاهده‌پذیری CLI ۵ قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+پایدار89%
+
+پایدار90%
+
+[وضعیت](</fa/cli/status>), [سلامت](</fa/cli/health>), [گزارش‌ها](</fa/cli/logs>), [تشخیص‌ها](</fa/gateway/diagnostics>)
+
+عیب‌یاب ۱۰ قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+پایدار89%
+
+پایدار90%
+
+[عیب‌یاب](</fa/cli/doctor>), [عیب‌یاب](</fa/gateway/doctor>), [اسرار](</fa/gateway/secrets>), [عیب‌یابی](</fa/gateway/troubleshooting>)
+
+به‌روزرسانی‌ها و ارتقاها ۵ قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+بتا75%
+
+پایدار89%
+
+[به‌روزرسانی](</fa/install/updating>), [به‌روزرسانی](</fa/cli/update>), [عیب‌یابی](</fa/gateway/troubleshooting>)
+
+زمان اجرای Gateway - پایدار M4 - ۱۳ ناحیه
+
+معماری هسته، احراز هویت، جفت‌سازی، مستندات پروتکل، مستندات daemon و runbookهای CLI گسترده و به‌روز هستند.
+
+پوشش آزمایشی - 6%کیفیت پایدار - 81%کامل‌بودن پایدار - 89%جزئی - ۱۲
+
+تأییدها و اجرای ازراه‌دور ۶ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۰٪
+
+بتا۷۵٪
+
+پایدار۸۹٪
+
+[پروتکل](</fa/gateway/protocol>), [نمایه](</fa/gateway/security>)
+
+APIهای HTTP ۴ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۲۵٪
+
+پایدار۹۰٪
+
+پایدار۹۰٪
+
+[نمایه](</fa/gateway>), [API HTTP Openai](</fa/gateway/openai-http-api>), [API HTTP Openresponses](</fa/gateway/openresponses-http-api>), [API HTTP فراخوانی ابزارها](</fa/gateway/tools-invoke-http-api>), [قلاب‌ها](</fa/automation/hooks>), [نمایه](</fa/web>)
+
+سطح وب میزبانی‌شده ۴ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۰٪
+
+پایدار۸۹٪
+
+پایدار۹۰٪
+
+[نمایه](</fa/gateway>), [معماری](</fa/concepts/architecture>), [رابط کاربری کنترل](</fa/web/control-ui>), [گفت‌وگوی وب](</fa/web/webchat>), [بوم](</fa/refactor/canvas>)
+
+APIهای RPC و رویدادهای Gateway ۲۰ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۹٪
+
+پایدار۹۰٪
+
+پایدار۹۰٪
+
+[پروتکل](</fa/gateway/protocol>), [نمایه](</fa/gateway>), [معماری](</fa/concepts/architecture>)
+
+احراز هویت و جفت‌سازی دستگاه ۱۰ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۰٪
+
+بتا۷۵٪
+
+پایدار۸۹٪
+
+[پروتکل](</fa/gateway/protocol>), [جفت‌سازی](</fa/gateway/pairing>), [نمایه](</fa/gateway/security>)
+
+دسترسی و کشف شبکه ۶ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۰٪
+
+بتا۷۵٪
+
+پایدار۸۹٪
+
+[نمایه](</fa/gateway>), [کشف](</fa/gateway/discovery>), [پروتکل](</fa/gateway/protocol>)
+
+Nodeها و قابلیت‌های ازراه‌دور ۸ قابلیت
+
+آزمایشی۰٪
+
+بتا۷۵٪
+
+پایدار۸۹٪
+
+[پروتکل](</fa/gateway/protocol>), [معماری](</fa/concepts/architecture>), [نمایه](</fa/nodes>)
+
+سلامت، عیب‌یابی و ترمیم ۷ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۰٪
+
+بتا۷۵٪
+
+پایدار۸۹٪
+
+[فهرست](</fa/gateway>), [تشخیص‌ها](</fa/gateway/diagnostics>), [Doctor](</fa/gateway/doctor>)
+
+سازگاری پروتکل ۷ قابلیت / پشتیبانی‌شده با LTS
+
+آزمایشی0%
+
+بتا75%
+
+پایدار89%
+
+[پروتکل](</fa/gateway/protocol>), [معماری](</fa/concepts/architecture>), [Typebox](</fa/concepts/typebox>), [پروتکل پل](</fa/gateway/bridge-protocol>)
+
+نقش‌ها و مجوزها ۵ قابلیت / پشتیبانی‌شده با LTS
+
+آزمایشی0%
+
+بتا75%
+
+پایدار89%
+
+[پروتکل](</fa/gateway/protocol>), [فهرست](</fa/gateway/security>)
+
+چرخه حیات Gateway ۷ قابلیت / پشتیبانی‌شده با LTS
+
+آزمایشی33%
+
+پایدار90%
+
+پایدار90%
+
+[فهرست](</fa/gateway>), [معماری](</fa/concepts/architecture>)
+
+کنترل‌های امنیتی ۶ قابلیت / پشتیبانی‌شده با LTS
+
+آزمایشی0%
+
+بتا75%
+
+پایدار89%
+
+[فهرست](</fa/gateway/security>), [پروتکل](</fa/gateway/protocol>), [کشف](</fa/gateway/discovery>)
+
+اتصال WebSocket ۸ قابلیت / پشتیبانی‌شده با LTS
+
+آزمایشی13%
+
+پایدار90%
+
+پایدار90%
+
+[پروتکل](</fa/gateway/protocol>), [معماری](</fa/concepts/architecture>)
+
+زمان اجرای عامل - بتای M3 - ۹ حوزه
+
+حلقهٔ اصلی، مدل‌ها، مسیریابی ارائه‌دهنده و جریان‌دهی ابزارها قابلیت‌های درجه‌یک هستند، اما رفتار ارائه‌دهنده‌ها هر هفته تغییر می‌کند و برای هر انتشار به اثبات سناریویی نیاز دارد.
+
+پوشش آزمایشی - 33%کیفیت بتا - 78%کامل‌بودن بتا - 79%جزئی - 6
+
+اجرای نوبت عامل 3 قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی29%
+
+بتا79%
+
+بتا79%
+
+[حلقه عامل](</fa/concepts/agent-loop>), [عامل](</fa/cli/agent>), [محیط‌های اجرای عامل](</fa/concepts/agent-runtimes>)
+
+محیط‌های اجرای خارجی و زیرعامل‌ها 4 قابلیت
+
+آزمایشی30%
+
+بتا79%
+
+بتا79%
+
+[محیط‌های اجرای عامل](</fa/concepts/agent-runtimes>), [Anthropic](</fa/providers/anthropic>), [Google](</fa/providers/google>), [زیرعامل‌ها](</fa/tools/subagents>)
+
+اجرای ارائه‌دهنده میزبانی‌شده 5 قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی20%
+
+بتا79%
+
+بتا79%
+
+[Openai](</fa/providers/openai>), [Anthropic](</fa/providers/anthropic>), [Google](</fa/providers/google>), [مدل‌ها](</fa/concepts/models>)
+
+ارائه‌دهنده‌های محلی و خودمیزبان 5 قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[Ollama](</fa/providers/ollama>), [مدل‌ها](</fa/concepts/models>), [عامل](</fa/cli/agent>)
+
+انتخاب مدل و محیط اجرا 4 قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی25%
+
+بتا79%
+
+بتا79%
+
+[مدل‌ها](</fa/concepts/models>), [مدل‌ها](</fa/cli/models>), [Openai](</fa/providers/openai>), [محیط‌های اجرای عامل](</fa/concepts/agent-runtimes>)
+
+احراز هویت ارائه‌دهنده 10 قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی24%
+
+بتا79%
+
+بتا79%
+
+[مدل‌ها](</fa/concepts/models>), [عامل](</fa/cli/agent>), [مدل‌ها](</fa/cli/models>), [Openai](</fa/providers/openai>), [Anthropic](</fa/providers/anthropic>), [Google](</fa/providers/google>), [زیرعامل‌ها](</fa/tools/subagents>)
+
+جریان‌دهی و پیشرفت 2 قابلیت
+
+آلفا56%
+
+بتا79%
+
+بتا79%
+
+[جریان‌دهی](</fa/concepts/streaming>), [حلقه عامل](</fa/concepts/agent-loop>)
+
+فراخوانی‌های ابزار و مدیریت پاسخ 3 قابلیت / پشتیبانی‌شده در LTS
+
+آلفا65%
+
+بتا79%
+
+بتا79%
+
+[حلقه عامل](</fa/concepts/agent-loop>), [Ollama](</fa/providers/ollama>)
+
+کنترل‌های اجرای ابزار ۶ قابلیت / پشتیبانی‌شده در LTS
+
+آلفا50%
+
+بتا79%
+
+بتا79%
+
+[سیاست سندباکس در برابر ابزار در برابر دسترسی ارتقایافته](</fa/gateway/sandbox-vs-tool-policy-vs-elevated>)، [حلقه عامل](</fa/concepts/agent-loop>)، [زیرعامل‌ها](</fa/tools/subagents>)
+
+جلسه، حافظه، و موتور زمینه - بتای M3 - ۹ حوزه
+
+مستندات قوی و پیاده‌سازی فعال. بلوغ به دوام رونوشت، کیفیت Compaction، و برابری میان کلاینت‌ها بستگی دارد.
+
+پوشش آزمایشی - ۳۰٪کیفیت بتا - ۷۷٪کامل‌بودن بتا - ۷۹٪جزئی - ۶
+
+مدیریت نشست CLI و رونوشت ۲ قابلیت / پشتیبانی‌شده با LTS
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[نشست](</fa/concepts/session>), [Compaction مدیریت نشست](</fa/reference/session-management-compaction>), [نشست‌ها](</fa/cli/sessions>)
+
+مدیریت توکن ۳ قابلیت / پشتیبانی‌شده با LTS
+
+آزمایشی20%
+
+بتا79%
+
+بتا79%
+
+[Compaction](</fa/concepts/compaction>), [زمینه](</fa/concepts/context>), [Compaction مدیریت نشست](</fa/reference/session-management-compaction>)
+
+موتور زمینه ۲ قابلیت / پشتیبانی‌شده با LTS
+
+آلفا57%
+
+بتا79%
+
+بتا79%
+
+[زمینه](</fa/concepts/context>), [موتور زمینه](</fa/concepts/context-engine>), [چارچوب آزمون موتور زمینه Codex](</fa/plan/codex-context-engine-harness>)
+
+هم‌ترازی تاریخچه و نشست بین کلاینت‌ها ۲ قابلیت
+
+آزمایشی40%
+
+بتا79%
+
+بتا79%
+
+[گفت‌وگوی وب](</fa/web/webchat>), [Android](</fa/platforms/android>), [مسیریابی کانال](</fa/channels/channel-routing>)
+
+عیب‌یابی، نگهداری و بازیابی ۳ قابلیت
+
+آزمایشی40%
+
+بتا79%
+
+بتا79%
+
+[عیب‌یابی](</fa/gateway/diagnostics>), [Compaction مدیریت نشست](</fa/reference/session-management-compaction>), [پرچم‌ها](</fa/diagnostics/flags>)
+
+پرامپت‌های هسته و زمینه ۲ قابلیت / پشتیبانی‌شده با LTS
+
+آزمایشی38%
+
+بتا79%
+
+بتا79%
+
+[زمینه](</fa/concepts/context>), [بهداشت رونوشت](</fa/reference/transcript-hygiene>), [Discord](</fa/channels/discord>)
+
+حافظه ۵ قابلیت
+
+آزمایشی46%
+
+بتا79%
+
+بتا79%
+
+[پیکربندی حافظه](</fa/reference/memory-config>), [Qmd حافظه](</fa/concepts/memory-qmd>), [حافظه](</fa/concepts/memory>), [Discord](</fa/channels/discord>)
+
+مسیریابی نشست ۲ قابلیت / پشتیبانی‌شده با LTS
+
+آزمایشی25%
+
+بتا79%
+
+بتا79%
+
+[نشست](</fa/concepts/session>), [مسیریابی کانال](</fa/channels/channel-routing>), [Discord](</fa/channels/discord>)
+
+پایداری رونوشت ۲ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[Compaction مدیریت نشست](</fa/reference/session-management-compaction>)، [بهداشت رونوشت](</fa/reference/transcript-hygiene>)
+
+چارچوب کانال - M3 بتا - ۸ حوزه
+
+بسیاری از کانال‌ها قراردادهای تحویل و مسیریابی Gateway را به‌اشتراک می‌گذارند، اما رفتار کانال بسته به API بالادستی و محدودیت‌های سیاست حساب متفاوت است.
+
+پوشش آزمایشی - ۱۳٪کیفیت بتا - ۷۶٪کامل‌بودن بتا - ۷۹٪جزئی - ۵
+
+دستورها و تأییدهای کنش‌های کانال ۵ قابلیت
+
+آزمایشی0%
+
+بتا79%
+
+بتا79%
+
+[گروه‌ها](</fa/channels/groups>), [Discord](</fa/channels/discord>), [Google Chat](</fa/channels/googlechat>), [Signal](</fa/channels/signal>), [Matrix](</fa/channels/matrix>)
+
+راه‌اندازی کانال ۵ قابلیت / پشتیبانی‌شده توسط LTS
+
+آزمایشی14%
+
+بتا79%
+
+بتا79%
+
+[فهرست](</fa/channels>), [جفت‌سازی](</fa/channels/pairing>), [عیب‌یابی](</fa/channels/troubleshooting>), [Pluginهای کانال SDK](</fa/plugins/sdk-channel-plugins>)
+
+رفتار رشته گروه و اتاق محیطی ۵ قابلیت
+
+آزمایشی36%
+
+بتا79%
+
+بتا79%
+
+[گروه‌ها](</fa/channels/groups>), [پیام‌های گروهی](</fa/channels/group-messages>), [رویدادهای اتاق محیطی](</fa/channels/ambient-room-events>), [گروه‌های پخش همگانی](</fa/channels/broadcast-groups>), [Discord](</fa/channels/discord>)
+
+دسترسی ورودی و دروازه‌های هویت ۵ قابلیت / پشتیبانی‌شده توسط LTS
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[گروه‌های دسترسی](</fa/channels/access-groups>), [گروه‌ها](</fa/channels/groups>), [Discord](</fa/channels/discord>), [LINE](</fa/channels/line>)
+
+پیوست‌های رسانه‌ای و داده غنی کانال ۴ قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[LINE](</fa/channels/line>), [Signal](</fa/channels/signal>), [Google Chat](</fa/channels/googlechat>), [Matrix](</fa/channels/matrix>), [Discord](</fa/channels/discord>)
+
+تحویل خروجی و خط لوله پاسخ ۴ قابلیت / پشتیبانی‌شده توسط LTS
+
+آزمایشی38%
+
+بتا79%
+
+بتا79%
+
+[گروه‌ها](</fa/channels/groups>), [رویدادهای اتاق محیطی](</fa/channels/ambient-room-events>), [Discord](</fa/channels/discord>), [Matrix](</fa/channels/matrix>), [کانال‌های پیکربندی](</fa/gateway/config-channels>)
+
+مسیریابی و تحویل مکالمه ۱۰ قابلیت / پشتیبانی‌شده توسط LTS
+
+آزمایشی19%
+
+بتا79%
+
+بتا79%
+
+[مسیریابی کانال](</fa/channels/channel-routing>), [گروه‌ها](</fa/channels/groups>), [Discord](</fa/channels/discord>), [Matrix](</fa/channels/matrix>), [عیب‌یابی](</fa/channels/troubleshooting>), [مرجع پیکربندی](</fa/gateway/configuration-reference>)
+
+سلامت وضعیت و کنترل‌های اپراتور ۴ قابلیت / پشتیبانی‌شده توسط LTS
+
+آزمایشی0%
+
+بتا79%
+
+بتا79%
+
+[سلامت](</fa/gateway/health>), [مرجع پیکربندی](</fa/gateway/configuration-reference>), [عیب‌یابی](</fa/channels/troubleshooting>), [Discord](</fa/channels/discord>)
+
+مشاهده‌پذیری - بتای M3 - ۵ حوزه
+
+مستندات OTel، Prometheus، لاگ‌گیری و عیب‌یابی وجود دارد. به یک بازبینی بلوغ عمومی با محور «راهبران ابتدا باید به چه چیزهایی نگاه کنند» نیاز دارد.
+
+پوشش آزمایشی - 18٪کیفیت بتا - 75٪کامل‌بودن بتا - 79٪جزئی - 3
+
+سلامت و تعمیر 12 قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی28٪
+
+بتا79٪
+
+بتا79٪
+
+[سلامت](</fa/gateway/health>), [Telegram](</fa/channels/telegram>), [Doctor](</fa/cli/doctor>), [Doctor](</fa/gateway/doctor>), [زیرمسیرهای SDK](</fa/plugins/sdk-subpaths>), [سلامت](</fa/cli/health>), [پروتکل](</fa/gateway/protocol>)
+
+ثبت رویداد 5 قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی0٪
+
+آلفا68٪
+
+بتا79٪
+
+[ثبت رویداد](</fa/logging>), [ثبت رویداد](</fa/gateway/logging>), [گزارش‌ها](</fa/cli/logs>)
+
+گردآوری عیب‌یابی 8 قابلیت
+
+آزمایشی30٪
+
+بتا79٪
+
+بتا79٪
+
+[عیب‌یابی](</fa/gateway/diagnostics>), [سلامت](</fa/gateway/health>), [مهار Codex](</fa/plugins/codex-harness>), [پروتکل](</fa/gateway/protocol>)
+
+صدور تله‌متری 13 قابلیت
+
+آزمایشی33٪
+
+بتا79٪
+
+بتا79٪
+
+[قلاب‌ها](</fa/plugins/hooks>), [Opentelemetry](</fa/gateway/opentelemetry>), [ثبت رویداد](</fa/logging>), [زیرمسیرهای SDK](</fa/plugins/sdk-subpaths>), [Diagnostics Otel](</fa/plugins/reference/diagnostics-otel>), [Prometheus](</fa/gateway/prometheus>), [Diagnostics Prometheus](</fa/plugins/reference/diagnostics-prometheus>)
+
+عیب‌یابی نشست 4 قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی0٪
+
+آلفا68٪
+
+بتا79٪
+
+[Opentelemetry](</fa/gateway/opentelemetry>), [Prometheus](</fa/gateway/prometheus>), [عیب‌یابی](</fa/gateway/diagnostics>), [پروتکل](</fa/gateway/protocol>)
+
+برنامه وب Gateway - M3 بتا - 6 حوزه
+
+رابط کاربری وب با جریان‌های جفت‌سازی، گفت‌وگو، PWA، Talk، ارسال اعلان، و Gateway از راه دور مستند شده است. پس از کارت‌های امتیازی میان‌مرورگری و PWA موبایل ارتقا دهید.
+
+پوشش آزمایشی - 4٪کیفیت بتا - 74٪کامل‌بودن بتا - 79٪هیچ‌کدام
+
+گفت‌وگوی بی‌درنگ مرورگر 5 قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[رابط کاربری کنترل](</fa/web/control-ui>), [پروتکل](</fa/gateway/protocol>), [گفت‌وگو](</fa/nodes/talk>)
+
+دسترسی و اعتماد مرورگر 5 قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[رابط کاربری کنترل](</fa/web/control-ui>), [داشبورد](</fa/web/dashboard>), [Tailscale](</fa/gateway/tailscale>), [راه دور](</fa/gateway/remote>)
+
+پیکربندی 5 قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[رابط کاربری کنترل](</fa/web/control-ui>), [پیکربندی](</fa/gateway/configuration>)
+
+رابط کاربری مرورگر 10 قابلیت
+
+آزمایشی8%
+
+بتا79%
+
+بتا79%
+
+[رابط کاربری کنترل](</fa/web/control-ui>), [فهرست](</fa/web>), [داشبورد](</fa/web/dashboard>), [پروتکل](</fa/gateway/protocol>)
+
+گفت‌وگوهای وب‌چت 15 قابلیت
+
+آزمایشی10%
+
+بتا79%
+
+بتا79%
+
+[رابط کاربری کنترل](</fa/web/control-ui>), [وب‌چت](</fa/web/webchat>), [شروع به کار](</fa/start/getting-started>), [مسیریابی کانال](</fa/channels/channel-routing>), [عملیات امن فایل](</fa/gateway/security/secure-file-operations>)
+
+کنسول اپراتور 10 قابلیت
+
+آزمایشی8%
+
+بتا79%
+
+بتا79%
+
+[رابط کاربری کنترل](</fa/web/control-ui>), [سلامت](</fa/gateway/health>), [پروتکل](</fa/gateway/protocol>), [داشبورد](</fa/web/dashboard>)
+
+Pluginها - M3 بتا - 9 حوزه
+
+مستندات گسترده و شواهد قوی از زمان اجرای داخلی در سراسر manifestها، کشف، بارگذاری، معماری ارائه‌دهنده/ابزار، و مرزهای تأیید وجود دارد. این ردیف را تا زمانی که اثبات API/زیرمسیرهای SDK عمومی و توزیع خارجی قوی‌تر شود، در سطح بتا نگه دارید.
+
+پوشش آزمایشی - 12%کیفیت بتا - 72%کامل‌بودن بتا - 79%جزئی - 7
+
+تألیف و بسته‌بندی Pluginها 8 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[ساخت Pluginها](</fa/plugins/building-plugins>), [نمای کلی SDK](</fa/plugins/sdk-overview>), [نقاط ورود SDK](</fa/plugins/sdk-entrypoints>), [زیرمسیرهای SDK](</fa/plugins/sdk-subpaths>), [مانیفست](</fa/plugins/manifest>), [مرجع](</fa/plugins/reference>)
+
+Pluginهای همراه 5 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[فهرست موجودی Pluginها](</fa/plugins/plugin-inventory>), [Pluginها](</fa/cli/plugins>), [جزئیات داخلی معماری](</fa/plugins/architecture-internals>)
+
+Plugin بوم 6 قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[بوم](</fa/plugins/reference/canvas>), [بوم](</fa/refactor/canvas>), [مرجع پیکربندی](</fa/gateway/configuration-reference>)
+
+نصب و اجرای Pluginها 6 قابلیت / با پشتیبانی LTS
+
+آزمایشی35%
+
+بتا79%
+
+بتا79%
+
+[معماری](</fa/plugins/architecture>), [جزئیات داخلی معماری](</fa/plugins/architecture-internals>), [Pluginها](</fa/cli/plugins>)
+
+Pluginهای کانال 5 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[Pluginهای کانال SDK](</fa/plugins/sdk-channel-plugins>), [ورودی کانال SDK](</fa/plugins/sdk-channel-inbound>), [خروجی کانال SDK](</fa/plugins/sdk-channel-outbound>)
+
+Pluginهای ارائه‌دهنده و ابزار 6 قابلیت / با پشتیبانی LTS
+
+آزمایشی43%
+
+بتا79%
+
+بتا79%
+
+[Pluginهای ارائه‌دهنده SDK](</fa/plugins/sdk-provider-plugins>), [Pluginهای ابزار](</fa/plugins/tool-plugins>), [افزودن قابلیت‌ها](</fa/plugins/adding-capabilities>)
+
+تأییدهای Plugin 6 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[درخواست‌های مجوز Plugin](</fa/plugins/plugin-permission-requests>), [تأییدهای اجرا](</fa/tools/exec-approvals>), [Pluginهای کانال SDK](</fa/plugins/sdk-channel-plugins>)
+
+انتشار Pluginها 6 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[Pluginها](</fa/cli/plugins>)، [سازگاری](</fa/plugins/compatibility>)، [انتشار](</fa/clawhub/publishing>)
+
+آزمایش Pluginها ۶ قابلیت
+
+آزمایشی27%
+
+بتا79%
+
+بتا79%
+
+[آزمایش Sdk](</fa/plugins/sdk-testing>)، [راه‌اندازی Sdk](</fa/plugins/sdk-setup>)، [هارنس Codex](</fa/plugins/codex-harness>)
+
+امنیت، احراز هویت، جفت‌سازی، و اسرار - M3 بتا - 6 حوزه
+
+مستندات خوب و سطوح سخت‌سازی وجود دارند. پس از اینکه اجرای منظم سناریوهای ارتقا/امنیت ثابت کرد هیچ پسرفتی در راه‌اندازی وجود ندارد، ارتقا دهید.
+
+پوشش آزمایشی - 16%کیفیت بتا - 72%کامل‌بودن بتا - 79%جزئی - 5
+
+خط‌مشی تأیید و محافظت‌های ابزار 2 قابلیت / با پشتیبانی LTS
+
+آلفا50%
+
+بتا79%
+
+بتا79%
+
+[تأییدهای Exec](</fa/tools/exec-approvals>), [تأییدها](</fa/cli/approvals>), [درخواست‌های مجوز Plugin](</fa/plugins/plugin-permission-requests>), [بررسی‌های ممیزی](</fa/gateway/security/audit-checks>)
+
+احراز هویت Gateway و دسترسی راه دور 9 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[فهرست](</fa/gateway/security>), [دفترچه اجرای مواجهه](</fa/gateway/security/exposure-runbook>), [احراز هویت پراکسی مورداعتماد](</fa/gateway/trusted-proxy-auth>), [Tailscale](</fa/gateway/tailscale>), [راه دور](</fa/gateway/remote>), [مرجع پیکربندی](</fa/gateway/configuration-reference>), [Gateway](</fa/cli/gateway>), [Doctor](</fa/cli/doctor>), [رابط کاربری کنترل](</fa/web/control-ui>), [کنترل مرورگر](</fa/tools/browser-control>), [بررسی‌های ممیزی](</fa/gateway/security/audit-checks>)
+
+کنترل دسترسی کانال 3 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[جفت‌سازی](</fa/channels/pairing>), [Telegram](</fa/channels/telegram>), [گروه‌های دسترسی](</fa/channels/access-groups>), [بررسی‌های ممیزی](</fa/gateway/security/audit-checks>)
+
+جفت‌سازی دستگاه و Node 11 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[پروتکل](</fa/gateway/protocol>), [دستگاه‌ها](</fa/cli/devices>), [جفت‌سازی](</fa/channels/pairing>), [جفت‌سازی](</fa/gateway/pairing>), [دامنه‌های عملگر](</fa/gateway/operator-scopes>), [رابط کاربری کنترل](</fa/web/control-ui>), [وب‌چت](</fa/web/webchat>), [تأییدها](</fa/cli/approvals>)
+
+اعتماد Plugin 2 قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[Manifest](</fa/plugins/manifest>), [درخواست‌های مجوز Plugin](</fa/plugins/plugin-permission-requests>), [مدیریت Pluginها](</fa/plugins/manage-plugins>), [بررسی‌های ممیزی](</fa/gateway/security/audit-checks>)
+
+بهداشت اعتبارنامه و اسرار 5 قابلیت / با پشتیبانی LTS
+
+آزمایشی46%
+
+بتا79%
+
+بتا79%
+
+[احراز هویت](</fa/gateway/authentication>), [مدل‌ها](</fa/cli/models>), [Openai](</fa/providers/openai>), [Oauth](</fa/concepts/oauth>), [اسرار](</fa/gateway/secrets>), [اسرار](</fa/cli/secrets>), [سطح اعتبارنامه Secretref](</fa/reference/secretref-credential-surface>), [بررسی‌های ممیزی](</fa/gateway/security/audit-checks>)
+
+اتوماسیون: cron، هوک‌ها، وظایف، polling - M3 بتا - 6 حوزه
+
+مستند و قابل استفاده است، اما اثبات سناریو باید تحویل بدون نظارت، تلاش‌های مجدد، و دیده‌شدن شکست را پوشش دهد.
+
+پوشش آزمایشی - 2%کیفیت بتا - 72%کامل‌بودن بتا - 79%هیچ‌کدام
+
+کارهای Cron ۱۵ قابلیت
+
+آزمایشی0%
+
+بتا79%
+
+بتا79%
+
+[کارهای Cron](</fa/automation/cron-jobs>), [Cron](</fa/cli/cron>), [پروتکل](</fa/gateway/protocol>), [وظایف](</fa/automation/tasks>), [Discord](</fa/channels/discord>)
+
+ورود رویداد ۱۵ قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[Telegram](</fa/channels/telegram>), [Zalo](</fa/channels/zalo>), [عیب‌یابی](</fa/channels/troubleshooting>), [iMessage از Bluebubbles](</fa/channels/imessage-from-bluebubbles>), [یکپارچه‌سازی Gmail Pubsub](</fa/automation/cron-jobs#gmail-pubsub-integration>), [Gmail Pubsub](</fa/automation/cron-jobs>), [Webhookها](</fa/cli/webhooks>), [Webhookها](</fa/automation/cron-jobs#webhooks>), [Webhook](</fa/automation/cron-jobs>)
+
+قلاب‌های اتوماسیون ۱۱ قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[قلاب‌ها](</fa/automation/hooks>), [قلاب‌ها](</fa/cli/hooks>), [قلاب‌ها](</fa/plugins/hooks>), [درخواست‌های مجوز Plugin](</fa/plugins/plugin-permission-requests>), [زیرمسیرهای SDK](</fa/plugins/sdk-subpaths>)
+
+وظایف و جریان‌های پس‌زمینه ۱۰ قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[وظایف](</fa/automation/tasks>), [نمایه](</fa/automation>), [وظایف](</fa/cli/tasks>), [TaskFlow](</fa/automation/taskflow>), [زمان اجرای SDK](</fa/plugins/sdk-runtime>)
+
+Heartbeat ۵ قابلیت
+
+آزمایشی14%
+
+بتا79%
+
+بتا79%
+
+[نمایه](</fa/automation>), [Heartbeat](</fa/gateway/heartbeat>), [تعهدات](</fa/concepts/commitments>)
+
+کنترل‌های Polling ۱۰ قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[Poll](</fa/cli/message>), [پیام](</fa/cli/message>), [Telegram](</fa/channels/telegram>), [Msteams](</fa/channels/msteams>), [فرایند پس‌زمینه](</fa/gateway/background-process>)
+
+درک رسانه و تولید رسانه - M2 آلفا - ۶ حوزه
+
+سطح قابلیت گسترده‌ای وجود دارد، اما تفاوت میان ارائه‌دهندگان، محدودیت‌های فایل و برابری Node/اپلیکیشن باعث می‌شود این بخش هنوز پایدار نباشد.
+
+پوشش آزمایشی - 2%کیفیت آلفا - 64%کامل‌بودن آلفا - 68%هیچ‌کدام
+
+دریافت و دسترسی رسانه 8 قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[نمای کلی رسانه](</fa/tools/media-overview>), [درک رسانه](</fa/nodes/media-understanding>), [عملیات امن فایل](</fa/gateway/security/secure-file-operations>), [PDF](</fa/tools/pdf>), [تولید تصویر](</fa/tools/image-generation>), [QR](</fa/cli/qr>), [LINE](</fa/channels/line>), [WhatsApp](</fa/channels/whatsapp>)
+
+مدیریت رسانه در کانال 5 قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[تصاویر](</fa/nodes/images>), [نمای کلی رسانه](</fa/tools/media-overview>), [Discord](</fa/channels/discord>)
+
+پیکربندی رسانه 1 قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[نمای کلی رسانه](</fa/tools/media-overview>), [تولید تصویر](</fa/tools/image-generation>), [مانیفست](</fa/plugins/manifest>), [مهار Codex](</fa/plugins/codex-harness>)
+
+تحویل تبدیل متن به گفتار 2 قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[TTS](</fa/tools/tts>), [نمای کلی رسانه](</fa/tools/media-overview>), [Discord](</fa/channels/discord>)
+
+درک رسانه 12 قابلیت
+
+آزمایشی7%
+
+آلفا69%
+
+آلفا69%
+
+[صدا](</fa/nodes/audio>), [درک رسانه](</fa/nodes/media-understanding>), [نمای کلی رسانه](</fa/tools/media-overview>), [WhatsApp](</fa/channels/whatsapp>), [تصاویر](</fa/nodes/images>), [استنتاج](</fa/cli/infer>), [PDF](</fa/tools/pdf>)
+
+تولید رسانه 17 قابلیت
+
+آزمایشی5%
+
+آلفا69%
+
+آلفا69%
+
+[تولید تصویر](</fa/tools/image-generation>), [نمای کلی رسانه](</fa/tools/media-overview>), [Skills](</fa/tools/skills>), [تولید موسیقی](</fa/tools/music-generation>), [تولید ویدیو](</fa/tools/video-generation>)
+
+صدا و گفت‌وگوی بلادرنگ - M2 آلفا - 6 ناحیه
+
+چندین پیاده‌سازی در Control UI، برنامه‌ها، و ارائه‌دهندگان وجود دارد. پیش از بتا، به کارت‌های امتیاز تاخیر، حالت‌های شکست، و راه‌اندازی نیاز دارد.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 61%کامل‌بودن آلفا - 68%هیچ‌کدام
+
+ارائه‌دهندگان گفت‌وگو ۷ قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[Openai](</fa/providers/openai>)، [Google](</fa/providers/google>)، [Pluginهای ارائه‌دهنده SDK](</fa/plugins/sdk-provider-plugins>)، [گفت‌وگو](</fa/nodes/talk>)، [رابط کاربری کنترل](</fa/web/control-ui>)
+
+نشست‌های گفت‌وگوی بلادرنگ ۱۱ قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[گفت‌وگو](</fa/nodes/talk>)، [رابط کاربری کنترل](</fa/web/control-ui>)
+
+گفتار و رونویسی ۵ قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[گفت‌وگو](</fa/nodes/talk>)، [Openai](</fa/providers/openai>)، [Google](</fa/providers/google>)
+
+گفت‌وگوی اپلیکیشن بومی ۴ قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[گفت‌وگو](</fa/nodes/talk>)، [Voicewake](</fa/platforms/mac/voicewake>)
+
+بیدارباش صوتی و مسیریابی ۴ قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[Voicewake](</fa/nodes/voicewake>)، [Voicewake](</fa/platforms/mac/voicewake>)، [هم‌پوشانی صوتی](</fa/platforms/mac/voice-overlay>)
+
+مشاهده‌پذیری گفت‌وگو ۵ قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[رابط کاربری کنترل](</fa/web/control-ui>)، [هم‌پوشانی صوتی](</fa/platforms/mac/voice-overlay>)، [گفت‌وگو](</fa/nodes/talk>)
+
+TUI - آلفای M2 - ۵ حوزه
+
+در مستندات و منبع وجود دارد، اما به‌عنوان یک گردش‌کار اصلی کاربر کمتر دیده می‌شود. به تعریف صریح سناریو نیاز دارد.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 59%کامل بودن آلفا - 66%هیچ‌کدام
+
+حالت‌های زمان اجرا ۱۴ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[TUI](</fa/cli/tui>)، [TUI](</fa/web/tui>)، [نمایه](</fa/cli>)
+
+ورودی و فرمان‌ها ۸ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[TUI](</fa/web/tui>)
+
+مدیریت نشست ۳ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[TUI](</fa/web/tui>)، [نشست‌ها](</fa/cli/sessions>)
+
+اجرای پوسته محلی ۴ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[TUI](</fa/web/tui>)، [TUI](</fa/cli/tui>)
+
+رندرینگ و ایمنی خروجی ۴ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[TUI](</fa/web/tui>)، [QR](</fa/cli/qr>)، [گزارش‌ها](</fa/cli/logs>)، [تکمیل](</fa/cli/completion>)
+
+ClawHub - M2 آلفا - ۴ حوزه
+
+مستندات عمومی و مفهوم زیست‌بوم وجود دارد. به کارت‌های امتیازدهی نصب، اعتماد، به‌روزرسانی، بازگردانی و سازگاری نیاز دارد.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 58%کامل‌بودن آلفا - 62%هیچ‌کدام
+
+انتشار ۷ قابلیت
+
+آزمایشی0%
+
+آلفا54%
+
+آلفا55%
+
+[انتشار](</fa/clawhub/publishing>), [ایجاد Skills](</fa/tools/creating-skills>), [جامعه](</fa/plugins/community>)
+
+کشف کاتالوگ ۵ قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[Plugin](</fa/tools/plugin>), [Pluginها](</fa/cli/plugins>), [Skills](</fa/cli/skills>), [Skills](</fa/tools/skills>), [جامعه](</fa/plugins/community>)
+
+سازگاری و اعتماد ۱۲ قابلیت
+
+آزمایشی0%
+
+آلفا55%
+
+آلفا56%
+
+[Plugin](</fa/tools/plugin>), [Pluginها](</fa/cli/plugins>), [سازگاری](</fa/plugins/compatibility>), [موجودی Pluginها](</fa/plugins/plugin-inventory>), [انتشار](</fa/clawhub/publishing>), [Skills](</fa/tools/skills>), [پیکربندی Skills](</fa/tools/skills-config>)
+
+چرخه حیات و سلامت Plugin ۲۶ قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[Plugin](</fa/tools/plugin>), [Pluginها](</fa/cli/plugins>), [Skills](</fa/cli/skills>), [Skills](</fa/tools/skills>), [پروتکل](</fa/gateway/protocol>), [بسته‌ها](</fa/plugins/bundles>), [حل وابستگی](</fa/plugins/dependency-resolution>)
+
+OpenClaw App SDK - M2 Alpha - 6 areas
+
+OpenClaw App SDK یک قرارداد اپلیکیشن خارجی متمایز است که از زمان اجرای Gateway و Plugin SDK جداست. امتیازدهی فعلی یک مسیر واقعی `@openclaw/sdk` را نشان می‌دهد، همراه با شکاف‌هایی پیرامون بسته‌بندی عمومی، کشف خودکار، تأییدها، ابزارهای کمکی و سازگاری.
+
+پوشش آزمایشی - 3%کیفیت آلفا - 54%کامل‌بودن آلفا - 53%هیچ‌کدام
+
+API کلاینت ۴ قابلیت
+
+آزمایشی۰٪
+
+آلفا۵۱٪
+
+آلفا۵۰٪
+
+[OpenClaw SDK](</fa/gateway/external-apps>)، [طراحی API ‏OpenClaw SDK](</fa/gateway/external-apps>)
+
+دسترسی Gateway ۵ قابلیت
+
+آزمایشی۰٪
+
+آلفا۵۳٪
+
+آلفا۵۴٪
+
+[OpenClaw SDK](</fa/gateway/external-apps>)، [طراحی API ‏OpenClaw SDK](</fa/gateway/external-apps>)، [پروتکل](</fa/gateway/protocol>)، [نمایه](</fa/gateway/security>)
+
+گفت‌وگوهای عامل ۶ قابلیت
+
+آزمایشی۰٪
+
+آلفا۵۲٪
+
+آلفا۵۲٪
+
+[OpenClaw SDK](</fa/gateway/external-apps>)، [طراحی API ‏OpenClaw SDK](</fa/gateway/external-apps>)، [پروتکل](</fa/gateway/protocol>)
+
+رویدادها و تأییدها ۵ قابلیت
+
+آزمایشی۰٪
+
+آلفا۵۲٪
+
+آلفا۵۲٪
+
+[OpenClaw SDK](</fa/gateway/external-apps>)، [طراحی API ‏OpenClaw SDK](</fa/gateway/external-apps>)، [پروتکل](</fa/gateway/protocol>)
+
+کمک‌کارهای منبع ۵ قابلیت
+
+آزمایشی۱۷٪
+
+آلفا۶۲٪
+
+آلفا۵۳٪
+
+[OpenClaw SDK](</fa/gateway/external-apps>)، [طراحی API ‏OpenClaw SDK](</fa/gateway/external-apps>)
+
+سازگاری ۵ قابلیت
+
+آزمایشی۰٪
+
+آلفا۵۴٪
+
+آلفا۵۵٪
+
+[طراحی API ‏OpenClaw SDK](</fa/gateway/external-apps>)، [Typebox](</fa/concepts/typebox>)، [پروتکل](</fa/gateway/protocol>)
+
+### پلتفرم
+
+میزبان Gateway لینوکس - M4 پایدار - ۵ ناحیه
+
+زمان‌اجرای Node توصیه می‌شود، سرویس کاربر systemd مستندسازی شده است، و راهنمای VPS/container گسترده است.
+
+پوشش آزمایشی - ۰٪کیفیت بتا - ۷۵٪کامل‌بودن پایدار - ۸۹٪جزئی - ۴
+
+راه‌اندازی میزبان و به‌روزرسانی‌ها 4 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+بتا75%
+
+پایدار89%
+
+[نمایه](</fa/install>), [به‌روزرسانی](</fa/install/updating>), [Linux](</fa/platforms/linux>), [نمایه](</fa/platforms>)
+
+زمان اجرای Gateway و کنترل سرویس 6 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+بتا75%
+
+پایدار89%
+
+[نمایه](</fa/gateway>), [Gateway](</fa/cli/gateway>), [Linux](</fa/platforms/linux>), [VPS](</fa/vps>)
+
+دسترسی از راه دور و امنیت 6 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+بتا75%
+
+پایدار89%
+
+[از راه دور](</fa/gateway/remote>), [Tailscale](</fa/gateway/tailscale>), [راهنمای عملیاتی افشا](</fa/gateway/security/exposure-runbook>), [احراز هویت](</fa/gateway/authentication>), [اسرار](</fa/gateway/secrets>)
+
+عیب‌یابی و تعمیر 4 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+بتا75%
+
+پایدار89%
+
+[وضعیت](</fa/cli/status>), [گزارش‌ها](</fa/cli/logs>), [Doctor](</fa/cli/doctor>), [عیب‌یابی](</fa/gateway/diagnostics>), [نمایه](</fa/gateway>)
+
+هدف‌های استقرار 3 قابلیت
+
+آزمایشی0%
+
+بتا75%
+
+پایدار89%
+
+[VPS](</fa/vps>), [Docker](</fa/install/docker>), [Hetzner](</fa/install/hetzner>), [Digitalocean](</fa/install/digitalocean>), [Kubernetes](</fa/install/kubernetes>), [Podman](</fa/install/podman>)
+
+میزبان Gateway در macOS - M4 پایدار - 7 حوزه
+
+مسیر سرویس LaunchAgent، حالت‌های محلی/از راه دور Gateway، نصب CLI و یکپارچه‌سازی برنامه مستند شده‌اند.
+
+پوشش آزمایشی - 0%کیفیت بتا - 74%کامل‌بودن پایدار - 88%هیچ‌کدام
+
+راه‌اندازی CLI ۴ قابلیت
+
+آزمایشی0%
+
+بتا74%
+
+پایدار88%
+
+[Macos](</fa/platforms/macos>)، [Gateway بسته‌بندی‌شده](</fa/platforms/mac/bundled-gateway>)، [نصب‌کننده](</fa/install/installer>)، [Node](</fa/install/node>)
+
+یکپارچه‌سازی Gateway محلی ۹ قابلیت
+
+آزمایشی0%
+
+بتا74%
+
+پایدار88%
+
+[Macos](</fa/platforms/macos>)، [Gateway بسته‌بندی‌شده](</fa/platforms/mac/bundled-gateway>)، [راه‌دور](</fa/platforms/mac/remote>)، [نمایه](</fa/gateway>)، [Gateway](</fa/cli/gateway>)، [Bonjour](</fa/gateway/bonjour>)
+
+حالت Gateway راه‌دور ۵ قابلیت
+
+آزمایشی0%
+
+بتا74%
+
+پایدار88%
+
+[راه‌دور](</fa/platforms/mac/remote>)، [راه‌دور](</fa/gateway/remote>)، [Tailscale](</fa/gateway/tailscale>)
+
+چرخهٔ عمر سرویس Gateway ۱۰ قابلیت
+
+آزمایشی0%
+
+بتا74%
+
+پایدار88%
+
+[Macos](</fa/platforms/macos>)، [Gateway بسته‌بندی‌شده](</fa/platforms/mac/bundled-gateway>)، [Gateway](</fa/cli/gateway>)، [نمایه](</fa/gateway>)، [به‌روزرسانی](</fa/cli/update>)، [به‌روزرسانی](</fa/install/updating>)، [حذف نصب](</fa/install/uninstall>)، [عیب‌یابی](</fa/gateway/troubleshooting>)
+
+تشخیص و مشاهده‌پذیری ۴ قابلیت
+
+آزمایشی0%
+
+بتا74%
+
+پایدار88%
+
+[Gateway بسته‌بندی‌شده](</fa/platforms/mac/bundled-gateway>)، [Macos](</fa/platforms/macos>)، [Gateway](</fa/cli/gateway>)، [Doctor](</fa/gateway/doctor>)، [عیب‌یابی](</fa/gateway/troubleshooting>)
+
+مجوزها و قابلیت‌های بومی ۴ قابلیت
+
+آزمایشی0%
+
+بتا74%
+
+پایدار88%
+
+[Macos](</fa/platforms/macos>)، [راه‌دور](</fa/platforms/mac/remote>)
+
+نمایه‌ها و ایزوله‌سازی ۵ قابلیت
+
+آزمایشی0%
+
+بتا74%
+
+پایدار88%
+
+[چند Gateway](</fa/gateway/multiple-gateways>)، [نمایه](</fa/gateway>)، [Gateway](</fa/cli/gateway>)
+
+میزبانی Docker و Podman - M3 بتا - ۴ ناحیه
+
+مستندات نصب وجود دارند و مسیرهای رایج استقرار هستند. پس از آنکه اسموک انتشارهای تکرارشونده رفتار ارتقا و volume را ثبت کرد، ارتقا دهید.
+
+پوشش آزمایشی - 7%کیفیت بتا - 71%کامل‌بودن بتا - 79%هیچ‌کدام
+
+راه‌اندازی کانتینر ۶ قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[Docker](</fa/install/docker>)، [Podman](</fa/install/podman>)
+
+عملیات کانتینر ۱۱ قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[Podman](</fa/install/podman>)، [Docker Vm Runtime](</fa/install/docker-vm-runtime>)، [Docker](</fa/install/docker>)، [Hetzner](</fa/install/hetzner>)، [Hostinger](</fa/install/hostinger>)
+
+انتشار و اعتبارسنجی ایمیج ۵ قابلیت
+
+آزمایشی29%
+
+بتا79%
+
+بتا79%
+
+[Docker](</fa/install/docker>)، [Docker Vm Runtime](</fa/install/docker-vm-runtime>)، [اعتبارسنجی کامل انتشار](</fa/reference/full-release-validation>)
+
+سندباکس و ابزارهای عامل ۳ قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[Docker](</fa/install/docker>)، [Docker Vm Runtime](</fa/install/docker-vm-runtime>)
+
+Windows از طریق WSL2 - M3 بتا - ۶ حوزه
+
+مسیر پیشنهادی Windows با راهنمای systemd/سرویس کاربر و مستندات زنجیره بوت. پس از کارت‌های امتیاز نصب/به‌روزرسانی تکرارشده ارتقا دهید.
+
+پوشش آزمایشی - 6%کیفیت آلفا - 69%کامل‌بودن بتا - 79%جزئی - ۵
+
+راه‌اندازی WSL ۶ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۰٪
+
+آلفا۶۷٪
+
+بتا۷۹٪
+
+[ویندوز](</fa/platforms/windows>), [شروع به کار](</fa/start/getting-started>)
+
+CLI ۸ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۰٪
+
+آلفا۶۷٪
+
+بتا۷۹٪
+
+[ویندوز](</fa/platforms/windows>), [شروع به کار](</fa/start/getting-started>), [به‌روزرسانی](</fa/install/updating>), [Onboard](</fa/cli/onboard>), [Doctor](</fa/cli/doctor>), [وضعیت](</fa/cli/status>), [گزارش‌ها](</fa/cli/logs>)
+
+چرخهٔ عمر سرویس Gateway ۱۰ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۰٪
+
+آلفا۶۷٪
+
+بتا۷۹٪
+
+[ویندوز](</fa/platforms/windows>), [نمایه](</fa/gateway>), [Doctor](</fa/gateway/doctor>)
+
+دسترسی و در معرض قرارگیری Gateway ۱۱ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۰٪
+
+آلفا۶۷٪
+
+بتا۷۹٪
+
+[احراز هویت](</fa/gateway/authentication>), [اسرار](</fa/gateway/secrets>), [دسترسی راه دور](</fa/gateway/remote>), [دفترچهٔ عملیاتی در معرض قرارگیری](</fa/gateway/security/exposure-runbook>), [ویندوز](</fa/platforms/windows>)
+
+تشخیص و تعمیر ۶ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۳۸٪
+
+بتا۷۹٪
+
+بتا۷۹٪
+
+[ویندوز](</fa/platforms/windows>), [وضعیت](</fa/cli/status>), [گزارش‌ها](</fa/cli/logs>), [Doctor](</fa/cli/doctor>), [Doctor](</fa/gateway/doctor>)
+
+مرورگر و UI کنترل ۶ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۷٪
+
+بتا۷۹٪
+
+[عیب‌یابی CDP راه دور مرورگر WSL2 ویندوز](</fa/tools/browser-wsl2-windows-remote-cdp-troubleshooting>), [مرورگر](</fa/tools/browser>), [UI کنترل](</fa/web/control-ui>)
+
+Raspberry Pi و دستگاه‌های کوچک Linux - M3 بتا - ۴ حوزه
+
+مستندات پلتفرم وجود دارد و مسیر Gateway مبتنی بر Linux است. برای ارتقا به سطح بالاتر، به اثبات دودسنجی انتشار ویژهٔ سخت‌افزار نیاز دارد.
+
+پوشش آزمایشی - ۰٪کیفیت آلفا - ۶۷٪کامل‌بودن بتا - ۷۹٪هیچ‌کدام
+
+راه‌اندازی و سازگاری ۱۲ قابلیت
+
+آزمایشی0%
+
+آلفا67%
+
+بتا79%
+
+[Raspberry Pi](</fa/install/raspberry-pi>)، [نمایه](</fa/install>)، [پرسش‌های متداول اجرای نخست](</fa/help/faq-first-run>)، [پرسش‌های متداول](</fa/help/faq>)، [Linux](</fa/platforms/linux>)، [نصب‌کننده](</fa/install/installer>)
+
+دسترسی راه‌دور و احراز هویت ۹ قابلیت
+
+آزمایشی0%
+
+آلفا67%
+
+بتا79%
+
+[Raspberry Pi](</fa/install/raspberry-pi>)، [احراز هویت](</fa/gateway/authentication>)، [اسرار](</fa/gateway/secrets>)، [جفت‌سازی](</fa/gateway/pairing>)، [دستگاه‌ها](</fa/cli/devices>)، [راه‌دور](</fa/gateway/remote>)، [Tailscale](</fa/gateway/tailscale>)
+
+زمان اجرای Gateway ۱۰ قابلیت
+
+آزمایشی0%
+
+آلفا67%
+
+بتا79%
+
+[نمایه](</fa/gateway>)، [Gateway](</fa/cli/gateway>)، [Raspberry Pi](</fa/install/raspberry-pi>)، [Linux](</fa/platforms/linux>)، [Vps](</fa/vps>)
+
+کارایی و عیب‌یابی ۵ قابلیت
+
+آزمایشی0%
+
+آلفا67%
+
+بتا79%
+
+[Raspberry Pi](</fa/install/raspberry-pi>)، [Linux](</fa/platforms/linux>)، [سلامت](</fa/gateway/health>)، [عیب‌یابی](</fa/gateway/diagnostics>)
+
+برنامه همراه macOS - M3 بتا - ۸ حوزه
+
+برنامه نوار منوی غنی، مجوزها، حالت Node، Canvas، بیدارباش صوتی، WebChat و حالت راه‌دور وجود دارند. هنوز به اندازه‌ای سریع در حال تغییر است که از پایدار دانستن آن خودداری شود.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 66%کامل‌بودن بتا - 78%هیچ‌کدام
+
+Canvas ۴ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Canvas](</fa/platforms/mac/canvas>)، [Macos](</fa/platforms/macos>)، [Webchat](</fa/web/webchat>)
+
+راه‌اندازی محلی ۷ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Gateway همراه](</fa/platforms/mac/bundled-gateway>)، [Macos](</fa/platforms/macos>)، [فرایند فرزند](</fa/platforms/mac/child-process>)، [راه‌اندازی توسعه](</fa/platforms/mac/dev-setup>)
+
+وضعیت و تنظیمات ۵ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[نوار منو](</fa/platforms/mac/menu-bar>)، [آیکون](</fa/platforms/mac/icon>)، [Macos](</fa/platforms/macos>)، [سلامت](</fa/platforms/mac/health>)، [ثبت رخداد](</fa/platforms/mac/logging>)، [راه‌دور](</fa/platforms/mac/remote>)
+
+قابلیت‌های بومی ۵ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Macos](</fa/platforms/macos>)، [Xpc](</fa/platforms/mac/xpc>)، [مجوزها](</fa/platforms/mac/permissions>)، [امضاکردن](</fa/platforms/mac/signing>)، [Peekaboo](</fa/platforms/mac/peekaboo>)
+
+اتصال‌های راه‌دور ۳ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[راه‌دور](</fa/platforms/mac/remote>)، [Macos](</fa/platforms/macos>)، [راه‌دور](</fa/gateway/remote>)
+
+صدا و گفت‌وگو ۳ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Voicewake](</fa/platforms/mac/voicewake>)، [هم‌پوشانی صدا](</fa/platforms/mac/voice-overlay>)، [گفت‌وگو](</fa/nodes/talk>)، [Macos](</fa/platforms/macos>)
+
+WebChat ۳ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Webchat](</fa/platforms/mac/webchat>)، [Macos](</fa/platforms/macos>)، [Webchat](</fa/web/webchat>)
+
+WebChat راه‌دور ۵ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Webchat](</fa/platforms/mac/webchat>)، [راه‌دور](</fa/gateway/remote>)، [راه‌دور](</fa/platforms/mac/remote>)
+
+برنامه Android - آلفای M2 - ۷ حوزه
+
+مسیر عمومی Google Play وجود دارد، اما مستندات برنامه همچنان بازسازی را در وضعیت بسیار آلفا توصیف می‌کنند و کارهای سخت‌سازی انتشار را برجسته می‌کنند.
+
+پوشش آزمایشی - ۰٪کیفیت آلفا - ۵۹٪کامل بودن آلفا - ۶۶٪هیچ‌کدام
+
+ضبط رسانه ۱ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Android](</fa/platforms/android>)، [دوربین](</fa/nodes/camera>)
+
+چت موبایل ۱ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Android](</fa/platforms/android>)
+
+راه‌اندازی اتصال ۱ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Android](</fa/platforms/android>)، [Bonjour](</fa/gateway/bonjour>)، [جفت‌سازی](</fa/gateway/pairing>)
+
+توزیع ۳ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Android](</fa/platforms/android>)
+
+تنظیمات ۱ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Android](</fa/platforms/android>)
+
+صدا ۱ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Android](</fa/platforms/android>)، [گفت‌وگو](</fa/nodes/talk>)
+
+زمان‌اجرای دستگاه ۲ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Android](</fa/platforms/android>)، [عیب‌یابی](</fa/nodes/troubleshooting>)، [پروتکل](</fa/gateway/protocol>)
+
+ویندوز بومی - آلفای M2 - ۴ حوزه
+
+جریان‌های هسته‌ی CLI/Gateway کار می‌کنند، اما مستندات همچنان WSL2 را برای تجربه‌ی کامل توصیه می‌کنند و هشدارهای مربوط به اجرای بومی را فهرست می‌کنند.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 58%کامل‌بودن آلفا - 66%جزئی - ۱
+
+CLI ۹ قابلیت / تحت پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا54%
+
+آلفا64%
+
+[نمایه](</fa/install>)، [نصب‌کننده](</fa/install/installer>)، [Windows](</fa/platforms/windows>)، [شروع به کار](</fa/start/getting-started>)، [راه‌اندازی اولیه](</fa/cli/onboard>)
+
+مدیریت Gateway ۱۱ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Windows](</fa/platforms/windows>)، [نمایه](</fa/gateway>)، [Gateway](</fa/cli/gateway>)، [دکتر](</fa/cli/doctor>)
+
+شبکه‌سازی ۴ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Windows](</fa/platforms/windows>)، [نمایه](</fa/gateway>)، [Gateway](</fa/cli/gateway>)
+
+به‌روزرسانی‌ها ۴ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[به‌روزرسانی](</fa/install/updating>)، [CI](</fa/ci>)
+
+Kubernetes hosting - M2 Alpha - 4 areas
+
+میزبانی Kubernetes یک مسیر استقرار خوشه‌ای متمایز مبتنی بر Kustomize است. امتیازدهی فعلی یک مسیر استقرار حداقلی واقعی را نشان می‌دهد که در زمینه‌های CI مخصوص Kubernetes، بسته‌بندی ingress/TLS/NetworkPolicy، پشتیبان‌گیری/بازیابی، و سخت‌سازی مواجهه تولیدی شکاف‌هایی دارد.
+
+پوشش Experimental - 0%کیفیت Alpha - 55%کامل‌بودن Alpha - 61%هیچ‌کدام
+
+راه‌اندازی استقرار ۵ قابلیت
+
+Experimental0%
+
+Alpha55%
+
+Alpha61%
+
+[Kubernetes](</fa/install/kubernetes>)، [فهرست](</fa/install>)
+
+پیکربندی و اسرار ۵ قابلیت
+
+Experimental0%
+
+Alpha55%
+
+Alpha61%
+
+[Kubernetes](</fa/install/kubernetes>)، [اسرار](</fa/gateway/secrets>)، [محیط](</fa/help/environment>)
+
+دسترسی و در معرض‌گذاری ۵ قابلیت
+
+Experimental0%
+
+Alpha55%
+
+Alpha61%
+
+[Kubernetes](</fa/install/kubernetes>)، [احراز هویت](</fa/gateway/authentication>)، [راه‌دور](</fa/gateway/remote>)، [راهنمای عملیاتی در معرض‌گذاری](</fa/gateway/security/exposure-runbook>)
+
+چرخه عمر خوشه ۵ قابلیت
+
+Experimental0%
+
+Alpha55%
+
+Alpha61%
+
+[Kubernetes](</fa/install/kubernetes>)، [فهرست](</fa/gateway>)
+
+اپ iOS - M1 Experimental - ۸ ناحیه
+
+پیش‌نمایش داخلی / سوپر آلفا. جریان‌های TestFlight و push مبتنی بر relay وجود دارند، اما هنوز توزیع عمومی وجود ندارد.
+
+پوشش آزمایشی - 0%کیفیت آزمایشی - 41%کامل‌بودن آزمایشی - 44%هیچ‌کدام
+
+رسانه و اشتراک‌گذاری 1 قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Ios](</fa/platforms/ios>), [دوربین](</fa/nodes/camera>)
+
+بوم و صفحه‌نمایش 1 قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Ios](</fa/platforms/ios>), [بوم](</fa/plugins/reference/canvas>)
+
+گفتگو و نشست‌ها 1 قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Ios](</fa/platforms/ios>), [وب‌چت](</fa/web/webchat>), [پروتکل](</fa/gateway/protocol>)
+
+راه‌اندازی و عیب‌یابی Gateway 7 قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Ios](</fa/platforms/ios>), [جفت‌سازی](</fa/channels/pairing>)
+
+توزیع 1 قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Ios](</fa/platforms/ios>)
+
+فرمان‌های دستگاه 2 قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Ios](</fa/platforms/ios>), [پروتکل](</fa/gateway/protocol>)
+
+اعلان‌ها و پس‌زمینه 1 قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Ios](</fa/platforms/ios>), [پیکربندی](</fa/gateway/configuration>)
+
+صدا 1 قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Ios](</fa/platforms/ios>), [گفت‌وگو](</fa/nodes/talk>)
+
+مسیر نصب Nix - آزمایشی M1 - 5 حوزه
+
+جریان نصب اختیاری. پیش از ارتقا به آلفا/بتا به وعدهٔ پشتیبانی روشن‌تری نیاز دارد.
+
+پوشش آزمایشی - 0٪کیفیت آزمایشی - 41٪کامل‌بودن آزمایشی - 44٪هیچ‌کدام
+
+تحویل نصب ۴ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Nix](</fa/install/nix>)، [نمایه](</fa/install>)، [فهرست مستندات](</fa/start/docs-directory>)
+
+چرخه عمر Plugin ۴ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[مدیریت Pluginها](</fa/plugins/manage-plugins>)، [Plugin](</fa/tools/plugin>)، [Nix](</fa/install/nix>)
+
+فعال‌سازی و تجربه کاربری برنامه ۷ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Nix](</fa/install/nix>)
+
+پیکربندی و وضعیت ۷ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Nix](</fa/install/nix>)، [راه‌اندازی](</fa/cli/setup>)، [محیط](</fa/help/environment>)
+
+زمان اجرای سرویس و محافظ‌ها ۸ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Nix](</fa/install/nix>)، [راه‌اندازی](</fa/cli/setup>)، [Doctor](</fa/cli/doctor>)، [به‌روزرسانی](</fa/cli/update>)
+
+سطوح همراه watchOS - M1 آزمایشی - ۵ حوزه
+
+منبع شامل سطوح برنامه/افزونه Watch است؛ مستندات عمومی هنوز این را به‌عنوان یک قابلیت کاربری ارائه نمی‌کنند.
+
+پوشش آزمایشی - 0%کیفیت آزمایشی - 41%کامل‌بودن آزمایشی - 44%هیچ‌کدام
+
+تحویل و بازیابی ۷ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Ios](</fa/platforms/ios>)
+
+تأییدهای اجرا ۳ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[تأییدهای اجرا](</fa/tools/exec-approvals>), [Ios](</fa/platforms/ios>)
+
+توزیع و پشتیبانی ۶ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Ios](</fa/platforms/ios>)
+
+اعلان‌ها و پاسخ‌ها ۷ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Ios](</fa/platforms/ios>)
+
+رابط کاربری برنامه ساعت ۳ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[Ios](</fa/platforms/ios>)
+
+برنامه همراه Linux - M0 برنامه‌ریزی‌شده - ۵ حوزه
+
+مستندات می‌گویند برنامه‌های همراه بومی Linux برنامه‌ریزی شده‌اند؛ Gateway مسیر پشتیبانی‌شده Linux در حال حاضر است.
+
+پوشش آزمایشی - 0%کیفیت آزمایشی - 19%کامل‌بودن آزمایشی - 21%هیچ‌کدام
+
+توزیع برنامه ۳ قابلیت
+
+آزمایشی0%
+
+آزمایشی19%
+
+آزمایشی21%
+
+[Linux](</fa/platforms/linux>), [نمایه](</fa/platforms>), [نمایه](</fa/install>)
+
+اتصال Gateway ۴ قابلیت
+
+آزمایشی0%
+
+آزمایشی19%
+
+آزمایشی21%
+
+[Linux](</fa/platforms/linux>), [نمایه](</fa/gateway>), [جفت‌سازی](</fa/gateway/pairing>), [ریموت](</fa/gateway/remote>)
+
+گفت‌وگو و نشست‌ها ۳ قابلیت
+
+آزمایشی0%
+
+آزمایشی19%
+
+آزمایشی21%
+
+[Linux](</fa/platforms/linux>), [پروتکل](</fa/gateway/protocol>), [وب‌چت](</fa/web/webchat>)
+
+قابلیت‌های دسکتاپ ۹ قابلیت
+
+آزمایشی0%
+
+آزمایشی19%
+
+آزمایشی21%
+
+[Linux](</fa/platforms/linux>), [تأییدهای Exec](</fa/tools/exec-approvals>), [اسرار](</fa/gateway/secrets>), [نمایه](</fa/nodes>), [Exec](</fa/tools/exec>), [گفت‌وگو](</fa/nodes/talk>), [دوربین](</fa/nodes/camera>)
+
+وضعیت و عیب‌یابی ۷ قابلیت
+
+آزمایشی0%
+
+آزمایشی19%
+
+آزمایشی21%
+
+[Linux](</fa/platforms/linux>), [OpenClaw](</fa/start/openclaw>), [Doctor](</fa/gateway/doctor>)
+
+برنامه همراه بومی Windows - M0 برنامه‌ریزی‌شده - ۵ حوزه
+
+فقط برنامه‌ریزی‌شده.
+
+پوشش آزمایشی - 0%کیفیت آزمایشی - 19%کامل‌بودن آزمایشی - 21%هیچ‌کدام
+
+نصب و به‌روزرسانی‌ها ۴ قابلیت
+
+آزمایشی۰٪
+
+آزمایشی۱۹٪
+
+آزمایشی۲۱٪
+
+[Windows](</fa/platforms/windows>)، [نمایه](</fa/install>)
+
+اتصال Gateway ۳ قابلیت
+
+آزمایشی۰٪
+
+آزمایشی۱۹٪
+
+آزمایشی۲۱٪
+
+[Windows](</fa/platforms/windows>)، [نمایه](</fa/gateway>)، [جفت‌سازی](</fa/gateway/pairing>)، [راه‌دور](</fa/gateway/remote>)
+
+نشست‌های چت ۲ قابلیت
+
+آزمایشی۰٪
+
+آزمایشی۱۹٪
+
+آزمایشی۲۱٪
+
+[Windows](</fa/platforms/windows>)، [پروتکل](</fa/gateway/protocol>)
+
+وضعیت و تعمیر ۵ قابلیت
+
+آزمایشی۰٪
+
+آزمایشی۱۹٪
+
+آزمایشی۲۱٪
+
+[Windows](</fa/platforms/windows>)، [Doctor](</fa/gateway/doctor>)، [نمایه](</fa/gateway>)
+
+ابزارهای دسکتاپ و مجوزها ۱۰ قابلیت
+
+آزمایشی۰٪
+
+آزمایشی۱۹٪
+
+آزمایشی۲۱٪
+
+[Windows](</fa/platforms/windows>)، [نمایه](</fa/nodes>)، [Exec](</fa/tools/exec>)، [تأییدهای Exec](</fa/tools/exec-approvals>)، [نمایه](</fa/gateway/security>)
+
+### کانال
+
+Discord - M4 پایدار - ۶ ناحیه
+
+مستندات عمیق و پوشش گستردهٔ قابلیت‌ها. مسیرهای صوتی/واگذاری باید جداگانه به‌عنوان بتا/آلفا امتیازدهی شوند.
+
+پوشش آزمایشی - ۰٪کیفیت بتا - ۷۳٪کامل‌بودن پایدار - ۸۷٪جزئی - ۴
+
+راه‌اندازی و عملیات کانال 10 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+بتا73%
+
+پایدار87%
+
+[Discord](</fa/channels/discord>), [Discord](</fa/plugins/reference/discord>), [Fly](</fa/install/fly>), [فرمان‌های اسلش](</fa/tools/slash-commands>), [سلامت](</fa/gateway/health>), [کانال‌ها](</fa/cli/channels>), [کانال‌های پیکربندی](</fa/gateway/config-channels>)
+
+دسترسی و هویت 6 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+بتا73%
+
+پایدار87%
+
+[Discord](</fa/channels/discord>), [جفت‌سازی](</fa/channels/pairing>), [گروه‌های دسترسی](</fa/channels/access-groups>), [گروه‌ها](</fa/channels/groups>)
+
+مسیریابی و تحویل گفت‌وگو 12 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+بتا73%
+
+پایدار87%
+
+[Discord](</fa/channels/discord>), [مسیریابی کانال](</fa/channels/channel-routing>), [گروه‌ها](</fa/channels/groups>), [گروه‌های دسترسی](</fa/channels/access-groups>), [عامل‌های ACP](</fa/tools/acp-agents>), [زیرعامل‌ها](</fa/tools/subagents>)
+
+رسانه و محتوای غنی 1 قابلیت / با پشتیبانی LTS
+
+آزمایشی0%
+
+بتا73%
+
+پایدار87%
+
+[Discord](</fa/channels/discord>)
+
+کنترل‌ها و تأییدهای بومی 5 قابلیت
+
+آزمایشی0%
+
+بتا73%
+
+پایدار87%
+
+[Discord](</fa/channels/discord>), [فرمان‌های اسلش](</fa/tools/slash-commands>)
+
+صدا و تماس‌های بلادرنگ 5 قابلیت
+
+آزمایشی0%
+
+بتا73%
+
+پایدار87%
+
+[Discord](</fa/channels/discord>), [Openai](</fa/providers/openai>), [Elevenlabs](</fa/providers/elevenlabs>), [خودکارسازی QA E2E](</fa/concepts/qa-e2e-automation>), [کانال‌های پیکربندی](</fa/gateway/config-channels>)
+
+Telegram - M3 بتا - 5 ناحیه
+
+کانال اصلی برای استفاده منظم به‌اندازه کافی بالغ است، اما تجربه کاربری با نوسان زیاد و موارد خاص رسانه به اثبات سناریویی تکرارشونده نیاز دارند.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 68%کامل‌بودن بتا - 78%کامل - 5
+
+راه‌اندازی و عملیات کانال 10 قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Telegram](</fa/channels/telegram>)، [کانال‌های پیکربندی](</fa/gateway/config-channels>)، [کانال‌ها](</fa/cli/channels>)
+
+دسترسی و هویت 10 قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Telegram](</fa/channels/telegram>)، [جفت‌سازی](</fa/channels/pairing>)، [گروه‌های دسترسی](</fa/channels/access-groups>)، [گروه‌ها](</fa/channels/groups>)، [چندعامله](</fa/concepts/multi-agent>)
+
+مسیریابی و تحویل گفتگو 1 قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Telegram](</fa/channels/telegram>)، [گروه‌ها](</fa/channels/groups>)، [چندعامله](</fa/concepts/multi-agent>)
+
+رسانه و محتوای غنی 1 قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Telegram](</fa/channels/telegram>)، [موقعیت مکانی](</fa/channels/location>)
+
+کنترل‌های بومی و تأییدها 9 قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی0%
+
+بتا77%
+
+بتا79%
+
+[Telegram](</fa/channels/telegram>)، [تأییدهای اجرا](</fa/tools/exec-approvals>)، [واکنش‌ها](</fa/tools/reactions>)
+
+Slack - M3 بتا - 5 حوزه
+
+مستندات کانال و سطح مسیریابی درجه‌یک. به کارت‌های امتیازی سناریوی نصب فضای کاری/مدیر نیاز دارد.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 66%کامل‌بودن بتا - 78%کامل - 5
+
+راه‌اندازی و عملیات کانال 10 قابلیت / دارای پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Slack](</fa/channels/slack>), [Slack](</fa/plugins/reference/slack>), [رازها](</fa/gateway/secrets>), [خودکارسازی QA E2E](</fa/concepts/qa-e2e-automation>), [عیب‌یابی](</fa/channels/troubleshooting>)
+
+دسترسی و هویت 1 قابلیت / دارای پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Slack](</fa/channels/slack>), [جفت‌سازی](</fa/channels/pairing>)
+
+مسیریابی و تحویل مکالمه 5 قابلیت / دارای پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Slack](</fa/channels/slack>), [محافظت در برابر حلقه ربات](</fa/channels/bot-loop-protection>), [جفت‌سازی](</fa/channels/pairing>)
+
+رسانه و محتوای غنی 1 قابلیت / دارای پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Slack](</fa/channels/slack>), [خودکارسازی QA E2E](</fa/concepts/qa-e2e-automation>)
+
+کنترل‌ها و تأییدهای بومی 8 قابلیت / دارای پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Slack](</fa/channels/slack>), [دستورهای اسلش](</fa/tools/slash-commands>), [تأییدهای اجرا](</fa/tools/exec-approvals>)
+
+iMessage and BlueBubbles - M3 Beta - 5 areas
+
+iMessage پشتیبانی‌شده از طریق imsg روی میزبان macOS Messages واردشده اجرا می‌شود؛ پیکربندی‌های قدیمی BlueBubbles به مهاجرت نیاز دارند. مجوزهای macOS، پوشش SSH، API خصوصی/SIP و نکات احتیاطی مهاجرت را قابل مشاهده نگه دارید.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 66%کامل بودن بتا - 78%هیچ‌کدام
+
+راه‌اندازی و عملیات کانال ۱۱ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Bluebubbles Imessage](</fa/announcements/bluebubbles-imessage>), [Imessage From Bluebubbles](</fa/channels/imessage-from-bluebubbles>), [پیکربندی کانال‌ها](</fa/gateway/config-channels>), [Imessage](</fa/channels/imessage>)
+
+دسترسی و هویت ۶ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Imessage](</fa/channels/imessage>), [Imessage From Bluebubbles](</fa/channels/imessage-from-bluebubbles>), [پیکربندی کانال‌ها](</fa/gateway/config-channels>)
+
+مسیریابی و تحویل مکالمه ۴ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Imessage](</fa/channels/imessage>)
+
+رسانه و محتوای غنی ۷ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Imessage](</fa/channels/imessage>), [Imessage From Bluebubbles](</fa/channels/imessage-from-bluebubbles>), [پیکربندی کانال‌ها](</fa/gateway/config-channels>)
+
+کنترل‌ها و تأییدهای بومی ۳ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Imessage](</fa/channels/imessage>)
+
+WhatsApp - M3 بتا - ۵ حوزه
+
+مسیر اصلی مهم و مستند شده است؛ ناپایداری upstream Baileys/نشست آن را پایین‌تر از پایدار نگه می‌دارد.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 66%کامل‌بودن بتا - 78%هیچ‌کدام
+
+راه‌اندازی و عملیات کانال ۵ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[WhatsApp](</fa/channels/whatsapp>), [پیکربندی کانال‌ها](</fa/gateway/config-channels>), [WhatsApp](</fa/plugins/reference/whatsapp>), [اتوماسیون QA E2E](</fa/concepts/qa-e2e-automation>), [Doctor](</fa/gateway/doctor>)
+
+دسترسی و هویت ۷ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[WhatsApp](</fa/channels/whatsapp>), [پیکربندی کانال‌ها](</fa/gateway/config-channels>), [اتوماسیون QA E2E](</fa/concepts/qa-e2e-automation>), [جفت‌سازی](</fa/channels/pairing>)
+
+مسیریابی و تحویل مکالمه ۴ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[WhatsApp](</fa/channels/whatsapp>), [پیام‌های گروهی](</fa/channels/group-messages>)
+
+رسانه و محتوای غنی ۲ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[WhatsApp](</fa/channels/whatsapp>)
+
+کنترل‌ها و تأییدهای بومی ۲ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[WhatsApp](</fa/channels/whatsapp>)
+
+Matrix - M2 آلفا - ۶ حوزه
+
+از طریق plugin بسته‌بندی‌شده پشتیبانی می‌شود. به کارت‌های امتیازدهی برای پل، احراز هویت، و چرخه عمر اتاق نیاز دارد.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 60%کامل‌بودن آلفا - 67%هیچ‌کدام
+
+راه‌اندازی و عملیات کانال ۵ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۰٪
+
+آلفا۶۷٪
+
+[Matrix](</fa/channels/matrix>)، [مهاجرت Matrix](</fa/channels/matrix-migration>)
+
+دسترسی و هویت ۷ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۰٪
+
+آلفا۶۷٪
+
+[Matrix](</fa/channels/matrix>)، [گروه‌ها](</fa/channels/groups>)، [محافظت در برابر حلقه ربات](</fa/channels/bot-loop-protection>)
+
+مسیریابی و تحویل مکالمه ۱ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۰٪
+
+آلفا۶۷٪
+
+[Matrix](</fa/channels/matrix>)
+
+رسانه و محتوای غنی ۱ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۰٪
+
+آلفا۶۷٪
+
+[Matrix](</fa/channels/matrix>)
+
+کنترل‌ها و تأییدهای بومی ۶ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۰٪
+
+آلفا۶۷٪
+
+[Matrix](</fa/channels/matrix>)
+
+رمزنگاری و راستی‌آزمایی ۳ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۰٪
+
+آلفا۶۷٪
+
+[Matrix](</fa/channels/matrix>)، [مهاجرت Matrix](</fa/channels/matrix-migration>)
+
+Google Chat - M2 آلفا - ۵ حوزه
+
+کانال مستندسازی‌شده، اما راه‌اندازی سازمانی/مدیریتی ریسک بلوغ را افزایش می‌دهد.
+
+پوشش آزمایشی - ۰٪کیفیت آلفا - ۵۹٪کامل‌بودن آلفا - ۶۶٪هیچ‌کدام
+
+راه‌اندازی و عملیات کانال 16 قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Googlechat](</fa/channels/googlechat>), [Googlechat](</fa/plugins/reference/googlechat>), [پیکربندی کانال‌ها](</fa/gateway/config-channels>), [مرجع CLI راهنما](</fa/start/wizard-cli-reference>), [رازها](</fa/gateway/secrets>), [سطح اعتبارنامه Secretref](</fa/reference/secretref-credential-surface>), [سلامت](</fa/gateway/health>), [فهرست Plugin](</fa/plugins/plugin-inventory>), [نمایه](</fa/channels>)
+
+دسترسی و هویت 11 قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Googlechat](</fa/channels/googlechat>), [جفت‌سازی](</fa/channels/pairing>), [گروه‌های دسترسی](</fa/channels/access-groups>), [پیکربندی کانال‌ها](</fa/gateway/config-channels>), [محافظت در برابر حلقه ربات](</fa/channels/bot-loop-protection>), [مسیریابی کانال](</fa/channels/channel-routing>)
+
+مسیریابی و تحویل مکالمه 1 قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Googlechat](</fa/channels/googlechat>), [محافظت در برابر حلقه ربات](</fa/channels/bot-loop-protection>), [گروه‌های دسترسی](</fa/channels/access-groups>), [مسیریابی کانال](</fa/channels/channel-routing>)
+
+رسانه و محتوای غنی 1 قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Googlechat](</fa/channels/googlechat>), [پیام](</fa/cli/message>), [درک رسانه](</fa/nodes/media-understanding>), [سطح اعتبارنامه Secretref](</fa/reference/secretref-credential-surface>)
+
+کنترل‌های بومی و تأییدها 16 قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Googlechat](</fa/channels/googlechat>), [پیام](</fa/cli/message>), [درک رسانه](</fa/nodes/media-understanding>), [سطح اعتبارنامه Secretref](</fa/reference/secretref-credential-surface>), [واکنش‌ها](</fa/tools/reactions>), [دستورهای اسلش](</fa/tools/slash-commands>), [پیکربندی عامل‌ها](</fa/gateway/config-agents>), [بازسازی چرخه عمر پیام](</fa/concepts/message-lifecycle-refactor>)
+
+Microsoft Teams - M2 آلفا - 5 حوزه
+
+جریان‌های احراز هویت/مدیریت سازمانی به اثبات سناریوی صریح نیاز دارند.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 59%کامل‌بودن آلفا - 66%هیچ‌کدام
+
+راه‌اندازی و عملیات کانال 9 قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Msteams](</fa/channels/msteams>)، [Msteams](</fa/plugins/reference/msteams>)، [کانال‌های پیکربندی](</fa/gateway/config-channels>)، [سلامت](</fa/gateway/health>)
+
+دسترسی و هویت 9 قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Msteams](</fa/channels/msteams>)، [جفت‌سازی](</fa/channels/pairing>)، [گروه‌های دسترسی](</fa/channels/access-groups>)
+
+مسیریابی و تحویل مکالمه 5 قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Msteams](</fa/channels/msteams>)، [گروه‌ها](</fa/channels/groups>)، [مسیریابی کانال](</fa/channels/channel-routing>)
+
+رسانه و محتوای غنی 5 قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Msteams](</fa/channels/msteams>)
+
+کنترل‌ها و تأییدهای بومی 5 قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Msteams](</fa/channels/msteams>)، [تأییدهای پیشرفته اجرا](</fa/tools/exec-approvals-advanced>)
+
+Signal - M2 آلفا - 5 حوزه
+
+مستندات کانال پشتیبانی‌شده وجود دارد؛ به اثبات قوی‌تر برای نصب و اتصال مجدد نیاز دارد.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 59%کامل‌بودن آلفا - 66%هیچ‌کدام
+
+راه‌اندازی و عملیات کانال ۷ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Signal](</fa/channels/signal>), [Signal](</fa/plugins/reference/signal>)
+
+دسترسی و هویت ۶ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Signal](</fa/channels/signal>)
+
+مسیریابی و تحویل گفتگو ۱ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Signal](</fa/channels/signal>)
+
+رسانه و محتوای غنی ۷ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Signal](</fa/channels/signal>)
+
+کنترل‌ها و تأییدهای بومی ۳ قابلیت
+
+آزمایشی0%
+
+آلفا59%
+
+آلفا66%
+
+[Signal](</fa/channels/signal>)
+
+Feishu، QQ Bot، WeChat، Yuanbao، Zalo، Zalo Personal، کانال‌های منطقه‌ای - M2 آلفا - ۴ حوزه
+
+پوشش منطقه‌ای مهم، اما سطح پشتیبانی عمومی باید بر اساس نوع حساب، تأیید بالادستی و شواهد نگه‌دارنده تنظیم شود.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 55%کامل‌بودن آلفا - 58%ندارد
+
+راه‌اندازی و عملیات کانال ۶ قابلیت
+
+آزمایشی0%
+
+آلفا61%
+
+آلفا68%
+
+[نمایه](</fa/channels>)، [جفت‌سازی](</fa/channels/pairing>)، [Feishu](</fa/plugins/reference/feishu>)، [جزئیات داخلی معماری](</fa/plugins/architecture-internals>)
+
+دسترسی و هویت ۱ قابلیت
+
+آزمایشی0%
+
+آلفا53%
+
+آلفا54%
+
+مستندات پیوندشده‌ای وجود ندارد
+
+مسیریابی و تحویل گفتگو ۱ قابلیت
+
+آزمایشی0%
+
+آلفا53%
+
+آلفا54%
+
+مستندات پیوندشده‌ای وجود ندارد
+
+رسانه و محتوای غنی ۱ قابلیت
+
+آزمایشی0%
+
+آلفا53%
+
+آلفا54%
+
+مستندات پیوندشده‌ای وجود ندارد
+
+Mattermost، LINE، IRC، Nextcloud Talk، Nostr، Twitch، Tlon، Synology Chat - M2 آلفا - ۴ حوزه
+
+سطوح پشتیبانی‌شده وجود دارند، اما بلوغ احتمالاً بسته به پوشش بالادستی و نگه‌دارنده متفاوت است. بعداً جداگانه امتیازدهی کنید.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 53%کامل بودن آلفا - 54%هیچ‌کدام
+
+راه‌اندازی و عملیات کانال 1 قابلیت
+
+آزمایشی0%
+
+آلفا53%
+
+آلفا54%
+
+مستندات پیوندشده‌ای وجود ندارد
+
+دسترسی و هویت 1 قابلیت
+
+آزمایشی0%
+
+آلفا53%
+
+آلفا54%
+
+مستندات پیوندشده‌ای وجود ندارد
+
+مسیریابی و تحویل مکالمه 1 قابلیت
+
+آزمایشی0%
+
+آلفا53%
+
+آلفا54%
+
+مستندات پیوندشده‌ای وجود ندارد
+
+رسانه و محتوای غنی 1 قابلیت
+
+آزمایشی0%
+
+آلفا53%
+
+آلفا54%
+
+مستندات پیوندشده‌ای وجود ندارد
+
+Voice Call channel - M1 Experimental - 5 areas
+
+مسیر اختیاری/Plugin با رفتار بلادرنگ پیچیده. پیش از بتای عمومی به کارت امتیاز سناریو نیاز دارد.
+
+پوشش آزمایشی - 0%کیفیت آزمایشی - 41%کامل بودن آزمایشی - 44%هیچ‌کدام
+
+راه‌اندازی و عملیات کانال ۲ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[تماس صوتی](</fa/cli/voicecall>), [تماس صوتی](</fa/plugins/voice-call>), [پروتکل](</fa/gateway/protocol>)
+
+دسترسی و هویت ۱ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[تماس صوتی](</fa/plugins/voice-call>), [تماس صوتی](</fa/cli/voicecall>)
+
+مسیریابی و تحویل گفتگو ۱ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[تماس صوتی](</fa/plugins/voice-call>)
+
+رسانه و محتوای غنی ۲ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[تماس صوتی](</fa/plugins/voice-call>), [فهرست Plugin](</fa/plugins/plugin-inventory>)
+
+صدا و تماس‌های بی‌درنگ ۲ قابلیت
+
+آزمایشی0%
+
+آزمایشی41%
+
+آزمایشی44%
+
+[تماس صوتی](</fa/plugins/voice-call>)
+
+### ارائه‌دهنده و ابزار
+
+اتوماسیون مرورگر، exec، و ابزارهای sandbox - بتای M3 - ۳ حوزه
+
+ابزارهای اصلی مستندسازی شده‌اند، اما امنیت میزبان و تجربه کاربری مجوزها باید همچنان تحت بازبینی فعال کارت امتیازی بمانند.
+
+پوشش آزمایشی - 21%کیفیت بتا - 75%کامل بودن بتا - 79%جزئی - ۲
+
+خودکارسازی مرورگر ۸ قابلیت
+
+آزمایشی13%
+
+بتا79%
+
+بتا79%
+
+[کنترل مرورگر](</fa/tools/browser-control>), [آزمایش](</fa/help/testing>), [مرورگر](</fa/tools/browser>), [نمایه](</fa/gateway/security>), [بررسی‌های ممیزی](</fa/gateway/security/audit-checks>)
+
+فراخوانی و اجرای ابزار ۶ قابلیت / دارای پشتیبانی LTS
+
+آلفا50%
+
+بتا79%
+
+بتا79%
+
+[Exec](</fa/tools/exec>), [فرایند پس‌زمینه](</fa/gateway/background-process>), [API ‏HTTP فراخوانی ابزارها](</fa/gateway/tools-invoke-http-api>), [دامنه‌های عملگر](</fa/gateway/operator-scopes>), [پروتکل](</fa/gateway/protocol>), [تأییدیه‌های Exec](</fa/tools/exec-approvals>), [تأییدیه‌های پیشرفته Exec](</fa/tools/exec-approvals-advanced>), [Elevated](</fa/tools/elevated>)
+
+سیاست Sandbox و ابزار ۶ قابلیت / دارای پشتیبانی LTS
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[Sandboxing](</fa/gateway/sandboxing>), [Sandbox در برابر سیاست ابزار در برابر Elevated](</fa/gateway/sandbox-vs-tool-policy-vs-elevated>), [ابزارهای Sandbox چندعاملی](</fa/tools/multi-agent-sandbox-tools>), [مرجع Codex Harness](</fa/plugins/codex-harness-reference>), [ابزارهای پیکربندی](</fa/gateway/config-tools>)
+
+مسیر ارائه‌دهنده OpenAI و Codex - بتای M3 - ۵ حوزه
+
+مستندات عمیق، مسیر OAuth/اشتراک، صدای بی‌درنگ، تصویر، و رفتار سازگاری. تغییرات مداوم ارائه‌دهنده، بدون اثبات کارت امتیاز انتشار، این بخش را از وضعیت پایدار دور نگه می‌دارد.
+
+پوشش آزمایشی - 26%کیفیت بتا - 74%کامل‌بودن بتا - 79%جزئی - ۳
+
+مدل و احراز هویت ۶ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۴۴٪
+
+بتا۷۹٪
+
+بتا۷۹٪
+
+[Openai](</fa/providers/openai>)، [مهار Codex](</fa/plugins/codex-harness>)، [مدل‌ها](</fa/concepts/models>)، [Oauth](</fa/concepts/oauth>)، [مرجع مهار Codex](</fa/plugins/codex-harness-reference>)، [پایش احراز هویت](</fa/gateway/authentication>)
+
+پاسخ‌ها و سازگاری ابزار ۴ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۴۰٪
+
+بتا۷۹٪
+
+بتا۷۹٪
+
+[Openai](</fa/providers/openai>)، [API HTTP Openresponses](</fa/gateway/openresponses-http-api>)، [API HTTP Openai](</fa/gateway/openai-http-api>)، [Pluginهای بومی Codex](</fa/plugins/codex-native-plugins>)
+
+مهار بومی Codex ۲ قابلیت / پشتیبانی‌شده در LTS
+
+آزمایشی۴۴٪
+
+بتا۷۹٪
+
+بتا۷۹٪
+
+[مهار Codex](</fa/plugins/codex-harness>)، [زمان اجرای مهار Codex](</fa/plugins/codex-harness-runtime>)، [مرجع مهار Codex](</fa/plugins/codex-harness-reference>)، [Pluginهای بومی Codex](</fa/plugins/codex-native-plugins>)
+
+ورودی تصویر و چندوجهی ۲ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۷٪
+
+بتا۷۹٪
+
+[Openai](</fa/providers/openai>)، [تولید تصویر](</fa/tools/image-generation>)، [تصاویر](</fa/nodes/images>)
+
+صدا و صوت بلادرنگ ۲ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۷٪
+
+بتا۷۹٪
+
+[Openai](</fa/providers/openai>)، [Discord](</fa/channels/discord>)، [تماس صوتی](</fa/plugins/voice-call>)
+
+Web search tools - M3 Beta - 4 areas
+
+چند ارائه‌دهنده و مستندات وجود دارند. برای هر خانواده ارائه‌دهنده به اثبات سهمیه، خطا و SSRF نیاز است.
+
+پوشش آزمایشی - ۹٪کیفیت بتا - ۷۴٪کامل‌بودن بتا - ۷۹٪هیچ‌کدام
+
+ارائه‌دهندگان جست‌وجو 19 قابلیت
+
+آزمایشی11%
+
+بتا79%
+
+بتا79%
+
+[وب](</fa/tools/web>), [Brave Search](</fa/tools/brave-search>), [Tavily](</fa/tools/tavily>), [Exa Search](</fa/tools/exa-search>), [Firecrawl](</fa/tools/firecrawl>), [Perplexity Search](</fa/tools/perplexity-search>), [Duckduckgo Search](</fa/tools/duckduckgo-search>), [Searxng Search](</fa/tools/searxng-search>), [Gemini Search](</fa/tools/gemini-search>), [Grok Search](</fa/tools/grok-search>), [Kimi Search](</fa/tools/kimi-search>), [Minimax Search](</fa/tools/minimax-search>), [Ollama Search](</fa/tools/ollama-search>), [زیرمسیرهای SDK](</fa/plugins/sdk-subpaths>), [نمای کلی SDK](</fa/plugins/sdk-overview>), [مانیفست](</fa/plugins/manifest>)
+
+راه‌اندازی و عیب‌یابی 9 قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[وب](</fa/tools/web>), [واکشی وب](</fa/tools/web-fetch>), [پرسش‌های متداول](</fa/help/faq>), [هزینه‌های استفاده از API](</fa/reference/api-usage-costs>), [Brave Search](</fa/tools/brave-search>), [Perplexity Search](</fa/tools/perplexity-search>), [Tavily](</fa/tools/tavily>), [Firecrawl](</fa/tools/firecrawl>)
+
+ایمنی شبکه 4 قابلیت
+
+آزمایشی0%
+
+آلفا68%
+
+بتا79%
+
+[وب](</fa/tools/web>), [واکشی وب](</fa/tools/web-fetch>), [Firecrawl](</fa/tools/firecrawl>), [Searxng Search](</fa/tools/searxng-search>)
+
+دسترس‌پذیری ابزار و واکشی 11 قابلیت
+
+آزمایشی25%
+
+بتا79%
+
+بتا79%
+
+[ابزارهای پیکربندی](</fa/gateway/config-tools>), [واکشی وب](</fa/tools/web-fetch>), [وب](</fa/tools/web>), [پرسش‌های متداول](</fa/help/faq>)
+
+مسیر ارائه‌دهنده Anthropic - M3 بتا - 5 حوزه
+
+ارائه‌دهنده مدل درجه‌یک. به اثبات سناریوی دوره‌ای برای احراز هویت، کاتالوگ و فراخوانی ابزار نیاز دارد.
+
+پوشش آزمایشی - 0%کیفیت بتا - 71%کامل‌بودن بتا - 78%هیچ‌کدام
+
+احراز هویت و بازیابی ارائه‌دهنده ۹ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Anthropic](</fa/providers/anthropic>)، [Doctor](</fa/gateway/doctor>)، [نمونه‌های پیکربندی](</fa/gateway/configuration-examples>)، [عیب‌یابی](</fa/gateway/troubleshooting>)، [کش‌کردن پرامپت](</fa/reference/prompt-caching>)
+
+انتخاب مدل و Runtime ۱۰ قابلیت
+
+آزمایشی0%
+
+بتا78%
+
+بتا79%
+
+[Anthropic](</fa/providers/anthropic>)، [پیکربندی عامل‌ها](</fa/gateway/config-agents>)، [مدل‌ها](</fa/concepts/models>)، [بک‌اندهای CLI](</fa/gateway/cli-backends>)
+
+انتقال درخواست و معناشناسی نوبت ۱۰ قابلیت
+
+آزمایشی0%
+
+بتا77%
+
+بتا79%
+
+[Anthropic](</fa/providers/anthropic>)، [کش‌کردن پرامپت](</fa/reference/prompt-caching>)، [عیب‌یابی](</fa/gateway/troubleshooting>)، [بک‌اندهای CLI](</fa/gateway/cli-backends>)، [ارائه‌دهندگان مدل](</fa/concepts/model-providers>)
+
+کش پرامپت و زمینه ۵ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Anthropic](</fa/providers/anthropic>)، [کش‌کردن پرامپت](</fa/reference/prompt-caching>)، [عیب‌یابی](</fa/gateway/troubleshooting>)، [Heartbeat](</fa/gateway/heartbeat>)
+
+ورودی‌های رسانه ۴ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Anthropic](</fa/providers/anthropic>)، [پیکربندی عامل‌ها](</fa/gateway/config-agents>)
+
+مسیر ارائه‌دهنده Google - M3 بتا - ۵ حوزه
+
+ارائه‌دهنده درجه‌یک با سطوح مدل و بلادرنگ. به امتیازدهی جداگانه Live/Talk نیاز دارد.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 66%کامل‌بودن بتا - 78%هیچ‌کدام
+
+راه‌اندازی ارائه‌دهنده و اعتبارنامه‌ها ۱۰ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Google](</fa/providers/google>), [ارائه‌دهندگان مدل](</fa/concepts/model-providers>)
+
+مسیریابی مدل و نقاط پایانی ۱۰ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Google](</fa/providers/google>), [ارائه‌دهندگان مدل](</fa/concepts/model-providers>), [Google](</fa/plugins/reference/google>), [جستجوی Gemini](</fa/tools/gemini-search>)
+
+اجرای مستقیم Gemini ۹ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Google](</fa/providers/google>), [ارائه‌دهندگان مدل](</fa/concepts/model-providers>), [پرسش‌های متداول مدل‌ها](</fa/help/faq-models>), [آزمون زنده](</fa/help/testing-live>)
+
+رسانه، جستجو، و بلادرنگ ۱۰ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Google](</fa/plugins/reference/google>), [Google](</fa/providers/google>)
+
+کش کردن پرامپت ۵ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[کش کردن پرامپت](</fa/reference/prompt-caching>), [Google](</fa/providers/google>), [ارائه‌دهندگان مدل](</fa/concepts/model-providers>), [استفاده از توکن](</fa/reference/token-use>)
+
+مسیر ارائه‌دهنده OpenRouter - M3 بتا - ۴ ناحیه
+
+مسیر یکپارچه ارائه‌دهنده مستند شده و ارزشمند است، اما رفتارهای ویژه هر مدل متفاوت است.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 66%کامل بودن بتا - 78%هیچ‌کدام
+
+راه‌اندازی ارائه‌دهنده و احراز هویت ۱۴ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Openrouter](</fa/providers/openrouter>)، [ارائه‌دهندگان مدل](</fa/concepts/model-providers>)، [پیکربندی](</fa/cli/configure>)، [احراز هویت](</fa/gateway/authentication>)، [محیط](</fa/help/environment>)، [مدل‌ها](</fa/cli/models>)، [مدل‌ها](</fa/concepts/models>)
+
+زمان اجرای چت و نرمال‌سازی ۱۵ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Openrouter](</fa/providers/openrouter>)، [ارائه‌دهندگان مدل](</fa/concepts/model-providers>)، [کش‌کردن پرامپت](</fa/reference/prompt-caching>)
+
+بازیابی و عیب‌یابی ارائه‌دهنده ۵ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[انتقال خودکار مدل هنگام خطا](</fa/concepts/model-failover>)، [Openrouter](</fa/providers/openrouter>)، [مدل‌ها](</fa/cli/models>)
+
+تولید رسانه و گفتار ۷ قابلیت
+
+آزمایشی0%
+
+آلفا66%
+
+بتا78%
+
+[Openrouter](</fa/providers/openrouter>)، [تولید تصویر](</fa/tools/image-generation>)، [تولید موسیقی](</fa/tools/music-generation>)، [نمای کلی رسانه](</fa/tools/media-overview>)، [تولید ویدیو](</fa/tools/video-generation>)، [Tts](</fa/tools/tts>)
+
+ابزارهای تولید تصویر، ویدیو و موسیقی - M2 آلفا - ۵ حوزه
+
+قابلیت در میان ارائه‌دهندگان وجود دارد، اما کیفیت، تأخیر و سازگاری پارامترها آن‌قدر متغیر است که بدون اثبات جداگانه برای هر ارائه‌دهنده، برای بتا مناسب نیست.
+
+پوشش آزمایشی - 0%کیفیت آلفا - 61%کامل‌بودن آلفا - 68%هیچ‌کدام
+
+مسیریابی و کشف رسانه ۴ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۱٪
+
+آلفا۶۸٪
+
+[پیکربندی عامل‌ها](</fa/gateway/config-agents>), [تولید تصویر](</fa/tools/image-generation>), [تولید ویدئو](</fa/tools/video-generation>), [تولید موسیقی](</fa/tools/music-generation>)
+
+چرخه عمر و تحویل وظیفه ۱۲ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۱٪
+
+آلفا۶۸٪
+
+[نمای کلی رسانه](</fa/tools/media-overview>), [تولید تصویر](</fa/tools/image-generation>), [تولید ویدئو](</fa/tools/video-generation>), [تولید موسیقی](</fa/tools/music-generation>)
+
+تولید تصویر ۹ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۱٪
+
+آلفا۶۸٪
+
+[تولید تصویر](</fa/tools/image-generation>), [استنتاج](</fa/cli/infer>), [نمای کلی رسانه](</fa/tools/media-overview>)
+
+تولید ویدئو ۱۱ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۱٪
+
+آلفا۶۸٪
+
+[تولید ویدئو](</fa/tools/video-generation>), [Runway](</fa/providers/runway>), [Pixverse](</fa/providers/pixverse>), [Fal](</fa/providers/fal>), [Openrouter](</fa/providers/openrouter>)
+
+تولید موسیقی ۶ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۱٪
+
+آلفا۶۸٪
+
+[تولید موسیقی](</fa/tools/music-generation>)
+
+ارائه‌دهندگان مدل محلی: Ollama، vLLM، SGLang، LM Studio - M2 آلفا - ۵ حوزه
+
+مفید و مستندسازی‌شده، اما تغییرپذیری محیط زیاد است.
+
+پوشش آزمایشی - ۰٪کیفیت آلفا - ۶۱٪کامل‌بودن آلفا - ۶۸٪هیچ‌کدام
+
+راه‌اندازی، چرخه عمر و عیب‌یابی ارائه‌دهنده ۱۲ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۱٪
+
+آلفا۶۸٪
+
+[مدل‌های محلی](</fa/gateway/local-models>)، [Lmstudio](</fa/providers/lmstudio>)، [Ollama](</fa/providers/ollama>)، [Vllm](</fa/providers/vllm>)، [سرویس‌های مدل محلی](</fa/gateway/local-model-services>)، [پیکربندی عامل‌ها](</fa/gateway/config-agents>)، [عیب‌یابی](</fa/gateway/troubleshooting>)، [Doctor](</fa/gateway/doctor>)
+
+Pluginهای بومی ارائه‌دهنده ۱۰ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۱٪
+
+آلفا۶۸٪
+
+[Ollama](</fa/providers/ollama>)، [Lmstudio](</fa/providers/lmstudio>)
+
+سازگاری زمان اجرای سازگار با OpenAI ۸ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۱٪
+
+آلفا۶۸٪
+
+[Vllm](</fa/providers/vllm>)، [Sglang](</fa/providers/sglang>)، [مدل‌های محلی](</fa/gateway/local-models>)، [Lmstudio](</fa/providers/lmstudio>)
+
+حافظه و تعبیه‌سازی‌های محلی ۵ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۱٪
+
+آلفا۶۸٪
+
+[حافظه](</fa/concepts/memory>)، [Doctor](</fa/gateway/doctor>)
+
+ایمنی شبکه و کنترل‌های پرامپت ۲ قابلیت
+
+آزمایشی۰٪
+
+آلفا۶۱٪
+
+آلفا۶۸٪
+
+[نمایه](</fa/gateway/security>)، [ابزارهای پیکربندی](</fa/gateway/config-tools>)، [مدل‌های محلی](</fa/gateway/local-models>)
+
+ارائه‌دهندگان میزبانی‌شده دنباله‌بلند - M2 آلفا - ۳ حوزه
+
+بسیاری از صفحه‌های مستندات/مرجع وجود دارند؛ امتیاز باید از فراداده ارائه‌دهنده به‌همراه پوشش اسموک زنده تولید شود.
+
+پوشش آزمایشی - 0٪کیفیت Alpha - 61٪کامل‌بودن Alpha - 68٪هیچ‌کدام
+
+ارائه‌دهندگان LLM میزبانی‌شده 12 قابلیت
+
+آزمایشی0٪
+
+Alpha61٪
+
+Alpha68٪
+
+[نمایه](</fa/providers>), [ارائه‌دهندگان مدل](</fa/concepts/model-providers>), [آزمایش زنده](</fa/help/testing-live>), [Onboard](</fa/cli/onboard>)
+
+ارائه‌دهندگان رسانه میزبانی‌شده 8 قابلیت
+
+آزمایشی0٪
+
+Alpha61٪
+
+Alpha68٪
+
+[مانیفست](</fa/plugins/manifest>), [آزمایش زنده](</fa/help/testing-live>), [نمایه](</fa/providers>)
+
+عملیات ارائه‌دهنده 12 قابلیت
+
+آزمایشی0٪
+
+Alpha61٪
+
+Alpha68٪
+
+[نمایه](</fa/providers>), [ارائه‌دهندگان مدل](</fa/concepts/model-providers>), [مانیفست](</fa/plugins/manifest>), [آزمایش زنده](</fa/help/testing-live>), [مدل‌ها](</fa/cli/models>)
+
+Was this useful?YesNo
+
+Open issue
