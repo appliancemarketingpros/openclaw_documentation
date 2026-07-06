@@ -1,40 +1,41 @@
 ---
 title: CLI setup reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-06-29
+scraped_at: 2026-07-06
 ---
 
 Get startedGuides
 
-This page is the full reference for `openclaw onboard`. For the short guide, see [Onboarding (CLI)](</start/wizard>).
+This page covers step-by-step onboarding behavior, outputs, and internals. For a walkthrough, see [Onboarding (CLI)](</start/wizard>). For the full CLI flag reference (every `--flag`, non-interactive examples, provider-specific commands), see [`openclaw onboard`](</cli/onboard>).
 
 ## What the wizard does
 
 Local mode (default) walks you through:
 
-  * Model and auth setup (OpenAI Code subscription OAuth, Anthropic Claude CLI or API key, plus MiniMax, GLM, Ollama, Moonshot, StepFun, and AI Gateway options)
+  * Model and auth setup (Anthropic, OpenAI Code subscription OAuth, xAI, OpenCode, custom endpoints, and more provider-owned auth flows)
   * Workspace location and bootstrap files
-  * Gateway settings (port, bind, auth, tailscale)
-  * Channels and providers (Telegram, WhatsApp, Discord, Google Chat, Mattermost, Signal, iMessage, and other bundled channel plugins)
+  * Gateway settings (port, bind, auth, Tailscale)
+  * Channels and providers (Discord, Feishu, Google Chat, iMessage, Mattermost, Microsoft Teams, QQ Bot, Signal, Slack, Telegram, WhatsApp, and other bundled or plugin channels)
+  * Web search provider (optional)
   * Daemon install (LaunchAgent, systemd user unit, or native Windows Scheduled Task with Startup-folder fallback)
   * Health check
   * Skills setup
 
 
-Remote mode configures this machine to connect to a gateway elsewhere. It does not install or modify anything on the remote host.
+Remote mode configures this machine to connect to a Gateway elsewhere. It does not install or modify anything on the remote host.
 
 ## Local flow details
 
 * ### Existing config detection
 
-  * If `~/.openclaw/openclaw.json` exists, choose Keep, Modify, or Reset.
+  * If `~/.openclaw/openclaw.json` exists, choose **Keep current values** , **Review and update** , or **Reset before setup**.
   * Re-running the wizard does not wipe anything unless you explicitly choose Reset (or pass `--reset`).
-  * CLI `--reset` defaults to `config+creds+sessions`; use `--reset-scope full` to also remove workspace.
+  * CLI `--reset` defaults to `config+creds+sessions`; use `--reset-scope full` to also remove the workspace.
   * If config is invalid or contains legacy keys, the wizard stops and asks you to run `openclaw doctor` before continuing.
-  * Reset uses `trash` and offers scopes: 
+  * Reset moves state to Trash (never deletes directly) and offers scopes: 
     * Config only
     * Config + credentials + sessions
-    * Full reset (also removes workspace)
+    * Full reset (also removes the workspace)
 
 
 * ### Model and auth
@@ -45,13 +46,13 @@ Remote mode configures this machine to connect to a gateway elsewhere. It does n
 * ### Workspace
 
   * Default `~/.openclaw/workspace` (configurable).
-  * Seeds workspace files needed for first-run bootstrap ritual.
+  * Seeds workspace files needed for first-run bootstrap.
   * Workspace layout: [Agent workspace](</concepts/agent-workspace>).
 
 
 * ### Gateway
 
-  * Prompts for port, bind, auth mode, and tailscale exposure.
+  * Prompts for port, bind, auth mode, and Tailscale exposure.
   * Recommended: keep token auth enabled even for loopback so local WS clients must authenticate.
   * In token mode, interactive setup offers: 
     * **Generate/store plaintext token** (default)
@@ -76,6 +77,12 @@ Remote mode configures this machine to connect to a gateway elsewhere. It does n
   * DM security: default is pairing. First DM sends a code; approve via `openclaw pairing approve <channel> <code>` or use allowlists.
 
 
+* ### Web search
+
+  * Pick a provider (Brave, DuckDuckGo, Exa, Firecrawl, Gemini, Grok, Kimi, MiniMax Search, Ollama Web Search, Perplexity, SearXNG, Tavily) or skip.
+  * Skip this step with `--skip-search`; reconfigure later with `openclaw configure --section web`.
+
+
 * ### Daemon install
 
   * macOS: LaunchAgent 
@@ -86,7 +93,7 @@ Remote mode configures this machine to connect to a gateway elsewhere. It does n
   * Native Windows: Scheduled Task first 
     * If task creation is denied, OpenClaw falls back to a per-user Startup-folder login item and starts the gateway immediately.
     * Scheduled Tasks remain preferred because they provide better supervisor status.
-  * Runtime selection: Node (recommended; required for WhatsApp and Telegram). Bun is not recommended.
+  * Runtime selection: only Node is offered interactively. Bun can corrupt memory on WhatsApp/Telegram reconnect and is not a supported daemon runtime for those channels; pass `--daemon-runtime bun` only outside that combination.
 
 
 * ### Health check
@@ -99,7 +106,8 @@ Remote mode configures this machine to connect to a gateway elsewhere. It does n
 
   * Reads available skills and checks requirements.
   * Lets you choose node manager: npm, pnpm, or bun.
-  * Installs optional dependencies (some use Homebrew on macOS).
+  * Installs optional dependencies for trusted bundled skills when the required installer is available.
+  * Skips unavailable Homebrew, uv, and Go installers, then groups the affected skills with manual setup guidance. Run `openclaw doctor` after installing the missing prerequisites.
 
 
 * ### Finish
@@ -109,19 +117,39 @@ Remote mode configures this machine to connect to a gateway elsewhere. It does n
 
 ## Remote mode details
 
-Remote mode configures this machine to connect to a gateway elsewhere.
+Remote mode configures this machine to connect to a Gateway elsewhere. It does not install or modify anything on the remote host.
 
 What you set:
 
-  * Remote gateway URL (`ws://...`)
-  * Token if remote gateway auth is required (recommended)
+  * Remote gateway URL (`ws://...` or `wss://...`)
+  * Token, password, or no auth, matching the remote Gateway's configuration
 
+
+* ### Discovery (optional)
+
+If `dns-sd` (macOS) or `avahi-browse` (Linux) is available, onboarding offers to search for Bonjour/mDNS gateway beacons before falling back to manual URL entry. Wide-area DNS-SD discovery is also attempted when configured. Docs: [Gateway discovery](</gateway/discovery>), [Bonjour](</gateway/bonjour>).
+
+* ### Connection method
+
+When a beacon is selected, choose direct WebSocket or an SSH tunnel:
+
+  * **Direct** : connects over `wss://` and prompts to trust the discovered TLS fingerprint (trust-on-first-use pinning; only pinned if you accept).
+  * **SSH tunnel** : prints an `ssh -N -L 18789:127.0.0.1:18789 <user>@<host>` command to run first, then connects to the local tunnel endpoint.
+
+
+* ### Auth
+
+Choose token (recommended), password, or no auth, then optionally store it as a SecretRef instead of plaintext.
 
 ## Auth and model options
 
 Anthropic API key
 
 Uses `ANTHROPIC_API_KEY` if present or prompts for a key, then saves it for daemon use.
+
+Anthropic Claude CLI
+
+Preferred local path in interactive onboarding/configure; reuses an existing Claude CLI sign-in when available.
 
 OpenAI Code subscription (OAuth)
 
@@ -155,7 +183,7 @@ Prompts for `XAI_API_KEY` and configures xAI as a model provider. Use this when 
 
 OpenCode
 
-Prompts for `OPENCODE_API_KEY` (or `OPENCODE_ZEN_API_KEY`) and lets you choose the Zen or Go catalog. Setup URL: [opencode.ai/auth](<https://opencode.ai/auth>).
+Prompts for `OPENCODE_API_KEY` (or `OPENCODE_ZEN_API_KEY`) and lets you choose the Zen or Go catalog (one API key covers both). Setup URL: [opencode.ai/auth](<https://opencode.ai/auth>).
 
 API key (generic)
 
@@ -191,13 +219,15 @@ Moonshot (Kimi K2) and Kimi Coding configs are auto-written. More detail: [Moons
 
 Custom provider
 
-Works with OpenAI-compatible and Anthropic-compatible endpoints.
+Works with OpenAI-compatible, OpenAI Responses-compatible, and Anthropic-compatible endpoints.
 
 Interactive onboarding supports the same API key storage choices as other provider API key flows:
 
   * **Paste API key now** (plaintext)
   * **Use secret reference** (env ref or configured provider ref, with preflight validation)
 
+
+Onboarding infers image support for common vision model IDs (GPT-4o/4.1/5.x, Claude 3/4, Gemini, Qwen-VL, LLaVA, Pixtral, and similar) and only asks when the model name is unknown.
 
 Non-interactive flags:
 
@@ -216,7 +246,6 @@ Leaves auth unconfigured.
 Model behavior:
 
   * Pick default model from detected options, or enter provider and model manually.
-  * Custom-provider onboarding infers image support for common model IDs and asks only when the model name is unknown.
   * When onboarding starts from a provider auth choice, the model picker prefers that provider automatically. For Volcengine and BytePlus, the same preference also matches their coding-plan variants (`volcengine-plan/*`, `byteplus-plan/*`).
   * If that preferred-provider filter would be empty, the picker falls back to the full catalog instead of showing no models.
   * Wizard runs a model check and warns if the configured model is unknown or missing auth.
@@ -261,7 +290,7 @@ Typical fields in `~/.openclaw/openclaw.json`:
   * `gateway.*` (mode, bind, auth, tailscale)
   * `session.dmScope` (local onboarding defaults this to `per-channel-peer` when unset; existing explicit values are preserved)
   * `channels.telegram.botToken`, `channels.discord.token`, `channels.matrix.*`, `channels.signal.*`, `channels.imessage.*`
-  * Channel allowlists (Slack, Discord, Matrix, Microsoft Teams) when you opt in during prompts (names resolve to IDs when possible)
+  * Channel allowlists (Discord, iMessage, Signal, Slack, Telegram, WhatsApp) when you opt in during prompts; Discord and Slack also resolve entered names to IDs
   * `skills.install.nodeManager`
     * The `setup --node-manager` flag accepts `npm`, `pnpm`, or `bun`.
     * Manual config can still set `skills.install.nodeManager: "yarn"` later.
@@ -270,13 +299,25 @@ Typical fields in `~/.openclaw/openclaw.json`:
   * `wizard.lastRunCommit`
   * `wizard.lastRunCommand`
   * `wizard.lastRunMode`
+  * `wizard.securityAcknowledgedAt`
 
 
 `openclaw agents add` writes `agents.list[]` and optional `bindings`.
 
 WhatsApp credentials go under `~/.openclaw/credentials/whatsapp/<accountId>/`. Sessions are stored under `~/.openclaw/agents/<agentId>/sessions/`.
 
-Gateway wizard RPC:
+## Non-interactive setup
+
+`--non-interactive` requires `--accept-risk` (acknowledges that agents are powerful and full system access is risky):
+
+bashCopy code
+[code]
+    openclaw onboard --non-interactive --accept-risk \  --auth-choice apiKey \  --anthropic-api-key "$ANTHROPIC_API_KEY"
+[/code]
+
+Full flag reference and provider-specific examples: [`openclaw onboard`](</cli/onboard>), [CLI automation](</start/wizard-cli-automation>).
+
+## Gateway wizard RPC
 
   * `wizard.start`
   * `wizard.next`
@@ -286,14 +327,13 @@ Gateway wizard RPC:
 
 Clients (macOS app and Control UI) can render steps without re-implementing onboarding logic.
 
-Signal setup behavior:
+## Signal setup behavior
 
-  * Downloads the appropriate release asset
-  * Stores it under `~/.openclaw/tools/signal-cli/<version>/`
+  * Downloads the appropriate release asset from the official `signal-cli` GitHub releases (native build, Linux x86-64 only)
+  * On other platforms (macOS, non-x64 Linux), installs via Homebrew instead
+  * Stores the release-asset install under `~/.openclaw/tools/signal-cli/<version>/`
   * Writes `channels.signal.cliPath` in config
-  * JVM builds require Java 21
-  * Native builds are used when available
-  * Windows uses WSL2 and follows Linux signal-cli flow inside WSL
+  * Native Windows is not supported yet; run onboarding inside WSL2 to get the Linux install path
 
 
 ## Related docs

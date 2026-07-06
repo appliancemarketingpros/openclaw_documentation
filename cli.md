@@ -1,19 +1,19 @@
 ---
 title: CLI reference
 source_url: https://docs.openclaw.ai/cli
-scraped_at: 2026-06-29
+scraped_at: 2026-07-06
 ---
 
 ReferenceCLI commands
 
-`openclaw` is the main CLI entry point. Each core command has either a dedicated reference page or is documented with the command it aliases; this index lists the commands, the global flags, and the output styling rules that apply across the CLI.
+`openclaw` is the main CLI entry point. Each core command has a dedicated reference page or is documented with the command it aliases; this index lists the commands, global flags, and output styling rules that apply across the CLI.
 
-Use the setup commands by intent:
+Setup commands by intent:
 
-  * `openclaw setup` creates the baseline config and workspace without walking the full guided onboarding flow.
-  * `openclaw onboard` is the full guided first-run path for gateway, model auth, workspace, channels, skills, and health.
-  * `openclaw configure` changes targeted parts of an existing setup, such as model auth, gateway, channels, plugins, or skills.
-  * `openclaw channels add` configures channel accounts after the baseline exists; run it without flags for guided channel setup or with channel-specific flags for scripts.
+  * `openclaw setup` and `openclaw onboard` run the full guided first-run path for gateway, model auth, workspace, channels, skills, and health.
+  * `openclaw setup --baseline` creates the baseline config and workspace without walking the guided onboarding flow.
+  * `openclaw configure` changes targeted parts of an existing setup: model auth, gateway, channels, plugins, or skills.
+  * `openclaw channels add` configures channel accounts after the baseline exists; run without flags for guided setup, or with channel-specific flags for scripts.
 
 
 ## Command pages
@@ -21,8 +21,8 @@ Use the setup commands by intent:
 Area | Commands  
 ---|---  
 Setup and onboarding | [`crestodian`](</cli/crestodian>) · [`setup`](</cli/setup>) · [`onboard`](</cli/onboard>) · [`configure`](</cli/configure>) · [`config`](</cli/config>) · [`completion`](</cli/completion>) · [`doctor`](</cli/doctor>) · [`dashboard`](</cli/dashboard>)  
-Reset and uninstall | [`backup`](</cli/backup>) · [`reset`](</cli/reset>) · [`uninstall`](</cli/uninstall>) · [`update`](</cli/update>)  
-Messaging and agents | [`message`](</cli/message>) · [`agent`](</cli/agent>) · [`agents`](</cli/agents>) · [`acp`](</cli/acp>) · [`mcp`](</cli/mcp>)  
+Reset, backup, and migration | [`backup`](</cli/backup>) · [`migrate`](</cli/migrate>) · [`reset`](</cli/reset>) · [`uninstall`](</cli/uninstall>) · [`update`](</cli/update>)  
+Messaging and agents | [`message`](</cli/message>) · [`agent`](</cli/agent>) · [`agents`](</cli/agents>) · [`attach`](</cli/attach>) · [`acp`](</cli/acp>) · [`mcp`](</cli/mcp>)  
 Health and sessions | [`status`](</cli/status>) · [`health`](</cli/health>) · [`sessions`](</cli/sessions>)  
 Gateway and logs | [`gateway`](</cli/gateway>) · [`logs`](</cli/logs>) · [`system`](</cli/system>)  
 Models and inference | [`models`](</cli/models>) · [`infer`](</cli/infer>) · `capability` (alias for [`infer`](</cli/infer>)) · [`memory`](</cli/memory>) · [`commitments`](</cli/commitments>) · [`wiki`](</cli/wiki>)  
@@ -39,11 +39,12 @@ Plugins (optional) | [`path`](</cli/path>) · [`policy`](</cli/policy>) · [`voi
 
 Flag | Purpose  
 ---|---  
-`--dev` | Isolate state under `~/.openclaw-dev` and shift default ports  
-`--profile <name>` | Isolate state under `~/.openclaw-<name>`  
-`--container <name>` | Target a named container for execution  
+`--dev` | Isolate state under `~/.openclaw-dev`, default gateway port 19001, and shift derived ports  
+`--profile <name>` | Isolate state under `~/.openclaw-<name>` (`OPENCLAW_STATE_DIR`/`OPENCLAW_CONFIG_PATH`)  
+`--container <name>` | Run the CLI inside a running Podman/Docker container named `<name>` (default: env `OPENCLAW_CONTAINER`)  
+`--log-level <level>` | Override the global log level for file + console output  
 `--no-color` | Disable ANSI colors (`NO_COLOR=1` is also respected)  
-`--update` | Shorthand for [`openclaw update`](</cli/update>) (source installs only)  
+`--update` | Shorthand for [`openclaw update`](</cli/update>); works for both source checkouts and package installs  
 `-V`, `--version`, `-v` | Print version and exit  
   
 ## Output modes
@@ -54,13 +55,32 @@ Flag | Purpose
   * Long-running commands show a progress indicator (OSC 9;4 when supported).
 
 
-Palette source of truth: `src/terminal/palette.ts`.
+## Color palette
+
+OpenClaw uses a lobster palette for CLI output:
+
+Token | Hex | Used for  
+---|---|---  
+`accent` | `#FF5A2D` | Headings, labels, primary highlights  
+`accentBright` | `#FF7A3D` | Command names, emphasis  
+`accentDim` | `#D14A22` | Secondary highlight text  
+`info` | `#FF8A5B` | Informational values  
+`success` | `#2FBF71` | Success states  
+`warn` | `#FFB020` | Warnings, option flags, fallbacks  
+`error` | `#E23D2D` | Errors, failures  
+`muted` | `#8B7F77` | De-emphasis, metadata  
+  
+Palette source of truth: `packages/terminal-core/src/palette.ts`.
 
 ## Command tree
 
-Full command tree CodeCopy code
+Full command tree
+
+This map covers core commands and their primary subcommands. Plugin-added subcommands (for example under `skills`, `plugins`, and `wiki`) evolve independently; run `<command> --help` for the authoritative, current list.
+
+CodeCopy code
 [code]
-    openclaw [--dev] [--profile <name>] <command>crestodiansetuponboardconfigureconfig  get  set  unset  file  schema  validatecompletiondoctordashboardbackup  create  verifysecurity  auditsecrets  reload  audit  configure  applyresetuninstallupdate  wizard  statuschannels  list  status  capabilities  resolve  logs  add  remove  login  logoutdirectory  self  peers list  groups list|membersskills  search  install  update  list  info  checkplugins  list  inspect  install  uninstall  update  enable  disable  doctor  marketplace listworkboard  list  create  show  dispatchmemory  status  index  searchtranscripts  list  show  pathpath  resolve  find  set  validate  emitcommitments  list  dismisswiki  status  doctor  init  ingest  compile  lint  search  get  apply  bridge import  unsafe-local import  obsidian status|search|open|command|dailymessage  send  broadcast  poll  react  reactions  read  edit  delete  pin  unpin  pins  permissions  search  thread create|list|reply  emoji list|upload  sticker send|upload  role info|add|remove  channel info|list  member info  voice status  event list|create  timeout  kick  banagentagents  list  add  delete  bindings  bind  unbind  set-identityacpmcp  serve  list  show  set  unsetstatushealthsessions  cleanuptasks  list  audit  maintenance  show  notify  cancel  flow list|show|cancelgateway  call  usage-cost  health  status  probe  discover  install  uninstall  start  stop  restart  rundaemon  status  install  uninstall  start  stop  restartlogssystem  event  heartbeat last|enable|disable  presencemodels  list  status  set  set-image  aliases list|add|remove  fallbacks list|add|remove|clear  image-fallbacks list|add|remove|clear  scaninfer (alias: capability)  list  inspect  model run|list|inspect|providers|auth login|logout|status  image generate|edit|describe|describe-many|providers  audio transcribe|providers  tts convert|voices|providers|status|enable|disable|set-provider  video generate|describe|providers  web search|fetch|providers  embedding create|providers  auth add|login|login-github-copilot|setup-token|paste-token  auth order get|set|clearsandbox  list  recreate  explaincron  status  list  get  add  edit  rm  enable  disable  runs  runnodes  status  describe  list  pending  approve  reject  rename  invoke  notify  push  canvas snapshot|present|hide|navigate|eval  canvas a2ui push|reset  camera list|snap|clip  screen record  location getdevices  list  remove  clear  approve  reject  rotate  revokenode  run  status  install  uninstall  stop  restartapprovals  get  set  allowlist add|removeexec-policy  show  preset  setbrowser  status  start  stop  reset-profile  tabs  open  focus  close  profiles  create-profile  delete-profile  screenshot  snapshot  navigate  resize  click  type  press  hover  drag  select  upload  fill  dialog  wait  evaluate  console  pdfhooks  list  info  check  enable  disable  install  updatewebhooks  gmail setup|runproxy  start  run  coverage  sessions  query  blob  purgepairing  list  approveqrclawbot  qrdocsdns  setuptuichat (alias: tui --local)terminal (alias: tui --local)
+    openclaw [--dev] [--profile <name>] <command>crestodiansetuponboardconfigureconfig  get  set  unset  file  schema  validatecompletiondoctordashboardbackup  create  verifymigrate  list  plan <provider>  apply <provider>security  auditsecrets  reload  audit  configure  applyresetuninstallupdate  wizard  status  repairchannels  list  status  capabilities  resolve  logs  add  remove  login  logoutdirectory  self  peers list  groups list|membersskills  search  install  update  verify  workshop list|inspect|propose-create|propose-update|revise|apply|reject|quarantine  list  info  checkplugins  list  search  inspect  install  uninstall  update  enable  disable  doctor  build  validate  init  registry  marketplace list|entries|refreshworkboard  list  create  show  dispatchmemory  status  index  searchtranscripts  list  show  pathpath  resolve  find  set  validate  emitcommitments  list  dismisswiki  status  doctor  init  compile  lint  ingest  okf import  search  get  apply synthesis|metadata  bridge import  unsafe-local import  chatgpt import|rollback  obsidian status|search|open|command|dailymessage  send  broadcast  poll  react  reactions  read  edit  delete  pin  unpin  pins  permissions  search  thread create|list|reply  emoji list|upload  sticker send|upload  role info|add|remove  channel info|list  member info  voice status  event list|create  timeout  kick  banagentagents  list  add  delete  bindings  bind  unbind  set-identityattachacpmcp  serve  list  show  set  unsetstatushealthsessions  cleanuptasks  list  audit  maintenance  show  notify  cancel  flow list|show|cancelgateway  call  usage-cost  health  stability  diagnostics export  status  probe  discover  install  uninstall  start  stop  restart  rundaemon  status  install  uninstall  start  stop  restartlogssystem  event  heartbeat last|enable|disable  presencemodels  list  status  set  set-image  aliases list|add|remove  fallbacks list|add|remove|clear  image-fallbacks list|add|remove|clear  scan  auth list|add|login|setup-token|paste-token|paste-api-key|login-github-copilot  auth order get|set|clearinfer (alias: capability)  list  inspect  model run|list|inspect|providers|auth login|logout|status  image generate|edit|describe|describe-many|providers  audio transcribe|providers  tts convert|voices|personas|providers|status|enable|disable|set-provider|set-persona  video generate|describe|providers  web search|fetch|providers  embedding create|providerssandbox  list  recreate  explaincron  status  list  get  add  edit  rm  enable  disable  runs  runnodes  status  describe  list  pending  approve  reject  rename  invoke  notify  push  canvas snapshot|present|hide|navigate|eval  canvas a2ui push|reset  camera list|snap|clip  screen record  location getdevices  list  remove  clear  approve  reject  rotate  revokenode  run  status  install  uninstall  stop  restartapprovals  get  set  allowlist add|removeexec-policy  show  preset  setbrowser  status  start  stop  reset-profile  tabs  open  focus  close  profiles  create-profile  delete-profile  screenshot  snapshot  navigate  resize  click  type  press  hover  drag  select  upload  fill  dialog  wait  evaluate  console  pdfhooks  list  info  check  enable  disable  install  updatewebhooks  gmail setup|runproxy  start  run  coverage  sessions  query  blob  purgepairing  list  approveqrclawbot  qrdocsdns  setuptuichat (alias: tui --local)terminal (alias: tui --local)
 [/code]
 
 Plugins can add additional top-level commands, such as [`openclaw workboard`](</cli/workboard>) or `openclaw voicecall`.
@@ -71,15 +91,15 @@ Chat messages support `/...` commands. See [slash commands](</tools/slash-comman
 
 Highlights:
 
-  * `/status` — quick diagnostics.
-  * `/trace` — session-scoped plugin trace/debug lines.
-  * `/config` — persisted config changes.
-  * `/debug` — runtime-only config overrides (memory, not disk; requires `commands.debug: true`).
+  * `/status` \- quick diagnostics.
+  * `/trace` \- session-scoped plugin trace/debug lines.
+  * `/config` \- persisted config changes.
+  * `/debug` \- runtime-only config overrides (memory, not disk; requires `commands.debug: true`).
 
 
 ## Usage tracking
 
-`openclaw status --usage` and the Control UI surface provider usage/quota when OAuth/API credentials are available. Data comes directly from provider usage endpoints and is normalized to `X% left`. Providers with current usage windows: Anthropic, GitHub Copilot, Gemini CLI, OpenAI Codex, MiniMax, Xiaomi, and z.ai.
+`openclaw status --usage` and the Control UI surface provider usage/quota when OAuth/API credentials are available. Data comes directly from provider usage endpoints and is normalized to `X% left`. Providers with current usage windows: Anthropic, Gemini CLI, GitHub Copilot, MiniMax, OpenAI Codex, Xiaomi, and z.ai.
 
 See [Usage tracking](</concepts/usage-tracking>) for details.
 

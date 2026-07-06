@@ -1,16 +1,16 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-06-29
+scraped_at: 2026-07-06
 ---
 
 InstallInstall overview
 
 ## System requirements
 
-  * **Node 24** (recommended) or Node 22.19+ - the installer script handles this automatically
+  * **Node 22.19+, 23.11+, or 24+** \- Node 24 is the default target; the installer script handles this automatically.
   * **macOS, Linux, or Windows** \- Windows users can start with the native Windows Hub app, the PowerShell CLI installer, or a WSL2 Gateway. See [Windows](</platforms/windows>).
-  * `pnpm` is only needed if you build from source
+  * `pnpm` is only needed if you build from source.
 
 
 ## Recommended: installer script
@@ -127,9 +127,9 @@ If you want managed startup after install:
 
 ## Hosting and deployment
 
-Deploy OpenClaw on a cloud server or VPS:
+Deploy OpenClaw on a cloud server or VPS. See [Linux server](</vps>) for the full provider picker (DigitalOcean, Hetzner, Hostinger, Fly.io, GCP, Azure, Railway, Northflank, Oracle Cloud, Raspberry Pi, and more), or deploy declaratively on [Render](</install/render>).
 
-[**VPS** Any Linux VPS. ](</vps>) [**Docker VM** Shared Docker steps. ](</install/docker-vm-runtime>) [**Kubernetes** K8s deployment. ](</install/kubernetes>) [**Fly.io** Deploy on Fly.io. ](</install/fly>) [**Hetzner** Hetzner deployment. ](</install/hetzner>) [**GCP** Google Cloud deployment. ](</install/gcp>) [**Azure** Azure deployment. ](</install/azure>) [**Railway** Railway deployment. ](</install/railway>) [**Render** Render deployment. ](</install/render>) [**Northflank** Northflank deployment. ](</install/northflank>)
+[**VPS** Pick a provider. ](</vps>) [**Docker VM** Shared Docker steps. ](</install/docker-vm-runtime>) [**Kubernetes** K8s deployment. ](</install/kubernetes>)
 
 ## Update, migrate, or uninstall
 
@@ -137,21 +137,12 @@ Deploy OpenClaw on a cloud server or VPS:
 
 ## Troubleshooting: `openclaw` not found
 
-If the install succeeded but `openclaw` is not found in your terminal:
+Almost always a PATH issue: npm's global bin directory isn't on your shell's `PATH`. See [Node.js troubleshooting](</install/node#troubleshooting>) for the full fix, including the Windows path.
 
 bashCopy code
 [code]
     node -v           # Node installed?npm prefix -g     # Where are global packages?echo "$PATH"      # Is the global bin dir in PATH?
 [/code]
-
-If `$(npm prefix -g)/bin` is not in your `$PATH`, add it to your shell startup file (`~/.zshrc` or `~/.bashrc`):
-
-bashCopy code
-[code]
-    export PATH="$(npm prefix -g)/bin:$PATH"
-[/code]
-
-Then open a new terminal. See [Node setup](</install/node>) for more details.
 
 Was this useful?YesNo
 

@@ -1,7 +1,7 @@
 ---
 title: Gateway runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-06-29
+scraped_at: 2026-07-06
 ---
 
 Gateway & OpsGateway
@@ -26,7 +26,7 @@ bashCopy code
     openclaw gateway statusopenclaw statusopenclaw logs --follow
 [/code]
 
-Healthy baseline: `Runtime: running`, `Connectivity probe: ok`, and `Capability: ...` that matches what you expect. Use `openclaw gateway status --require-rpc` when you need read-scope RPC proof, not just reachability.
+Healthy baseline: `Runtime: running`, `Connectivity probe: ok`, and a `Capability` line that matches what you expect. Use `openclaw gateway status --require-rpc` for read-scope RPC proof, not just reachability.
 
 * ### Validate channel readiness
 
@@ -35,7 +35,7 @@ bashCopy code
     openclaw channels status --probe
 [/code]
 
-With a reachable gateway this runs live per-account channel probes and optional audits. If the gateway is unreachable, the CLI falls back to config-only channel summaries instead of live probe output.
+With a reachable gateway this runs live per-account channel probes and optional audits. If the gateway is unreachable, the CLI falls back to config-only channel summaries.
 
 ## Runtime model
 
@@ -45,13 +45,13 @@ With a reachable gateway this runs live per-account channel probes and optional 
     * HTTP APIs (`/v1/models`, `/v1/embeddings`, `/v1/chat/completions`, `/v1/responses`, `/tools/invoke`)
     * Plugin HTTP routes, such as optional `/api/v1/admin/rpc`
     * Control UI and hooks
-  * Default bind mode: `loopback`.
+  * Default bind mode: `loopback`. Inside a detected container environment the effective default is `auto` (resolves to `0.0.0.0` for port-forwarding), unless Tailscale serve/funnel is active, which always forces `loopback`.
   * Auth is required by default. Shared-secret setups use `gateway.auth.token` / `gateway.auth.password` (or `OPENCLAW_GATEWAY_TOKEN` / `OPENCLAW_GATEWAY_PASSWORD`), and non-loopback reverse-proxy setups can use `gateway.auth.mode: "trusted-proxy"`.
 
 
 ## OpenAI-compatible endpoints
 
-OpenClaw's highest-leverage compatibility surface is now:
+OpenClaw's highest-leverage compatibility surface:
 
   * `GET /v1/models`
   * `GET /v1/models/{id}`
@@ -67,12 +67,7 @@ Why this set matters:
   * Agent-native clients increasingly prefer `/v1/responses`.
 
 
-Planning note:
-
-  * `/v1/models` is agent-first: it returns `openclaw`, `openclaw/default`, and `openclaw/<agentId>`.
-  * `openclaw/default` is the stable alias that always maps to the configured default agent.
-  * Use `x-openclaw-model` when you want a backend provider/model override; otherwise the selected agent's normal model and embedding setup stays in control.
-
+`/v1/models` is agent-first: it returns `openclaw`, `openclaw/default`, and `openclaw/<agentId>` for every configured agent. `openclaw/default` is the stable alias that always maps to the configured default agent. Send `x-openclaw-model` when you want a backend provider/model override; otherwise the selected agent's normal model and embedding setup stays in control.
 
 All of these run on the main Gateway port and use the same trusted operator auth boundary as the rest of the Gateway HTTP API.
 
@@ -83,7 +78,7 @@ Admin HTTP RPC (`POST /api/v1/admin/rpc`) is a separate, default-off plugin rout
 Setting | Resolution order  
 ---|---  
 Gateway port | `--port` → `OPENCLAW_GATEWAY_PORT` → `gateway.port` → `18789`  
-Bind mode | CLI/override → `gateway.bind` → `loopback`  
+Bind mode | CLI/override → `gateway.bind` → `loopback` (or `auto` in containers)  
   
 Installed gateway services record the resolved `--port` in supervisor metadata. After changing `gateway.port`, run `openclaw doctor --fix` or `openclaw gateway install --force` so launchd/systemd/schtasks starts the process on the new port.
 
@@ -109,9 +104,7 @@ bashCopy code
 
 ## Multiple gateways (same host)
 
-Most installs should run one gateway per machine. A single gateway can host multiple agents and channels.
-
-You only need multiple gateways when you intentionally want isolation or a rescue bot.
+Most installs should run one gateway per machine. A single gateway can host multiple agents and channels. You only need multiple gateways when you intentionally want isolation or a rescue bot.
 
 Useful checks:
 
@@ -150,7 +143,7 @@ Preferred: Tailscale/VPN. Fallback: SSH tunnel.
 
 bashCopy code
 [code]
-    ssh -N -L 18789:127.0.0.1:18789 user@host
+    ssh -N -L 18789:127.0.0.1:18789 user@gateway-host
 [/code]
 
 Then connect clients locally to `ws://127.0.0.1:18789`.
@@ -170,7 +163,7 @@ bashCopy code
 
 Use `openclaw gateway restart` for restarts. Do not chain `openclaw gateway stop` and `openclaw gateway start` as a restart substitute.
 
-On macOS, `gateway stop` uses `launchctl bootout` by default — this removes the LaunchAgent from the current boot session without persisting a disable, so KeepAlive auto-recovery still works after unexpected crashes and `gateway start` re-enables cleanly. To persistently suppress auto-respawn across reboots, pass `--disable`: `openclaw gateway stop --disable`.
+On macOS, `gateway stop` uses `launchctl bootout` by default. This removes the LaunchAgent from the current boot session without persisting a disable, so KeepAlive auto-recovery still works after unexpected crashes and `gateway start` re-enables cleanly. To persistently suppress auto-respawn across reboots, pass `--disable`: `openclaw gateway stop --disable`.
 
 LaunchAgent labels are `ai.openclaw.gateway` (default) or `ai.openclaw.<profile>` (named profile). `openclaw doctor` audits and repairs service config drift.
 
@@ -185,14 +178,16 @@ For persistence after logout, enable lingering:
 
 bashCopy code
 [code]
-    sudo loginctl enable-linger <user>
+    sudo loginctl enable-linger $(whoami)
 [/code]
+
+On a headless server without a desktop session, also make sure `XDG_RUNTIME_DIR` is set (`export XDG_RUNTIME_DIR=/run/user/$(id -u)`) before retrying `systemctl --user` commands.
 
 Manual user-unit example when you need a custom install path:
 
 iniCopy code
 [code]
-    [Unit]Description=OpenClaw GatewayAfter=network-online.targetWants=network-online.target [Service]ExecStart=/usr/local/bin/openclaw gateway --port 18789Restart=alwaysRestartSec=5TimeoutStopSec=30TimeoutStartSec=30SuccessExitStatus=0 143OOMPolicy=continueKillMode=control-group [Install]WantedBy=default.target
+    [Unit]Description=OpenClaw GatewayAfter=network-online.targetWants=network-online.targetStartLimitBurst=5StartLimitIntervalSec=60 [Service]ExecStart=/usr/local/bin/openclaw gateway --port 18789Restart=alwaysRestartSec=5RestartPreventExitStatus=78TimeoutStopSec=30TimeoutStartSec=30SuccessExitStatus=0 143OOMPolicy=continueKillMode=control-group [Install]WantedBy=default.target
 [/code]
 
 ### Windows (native)
@@ -217,6 +212,8 @@ Use the same service body as the user unit, but install it under `/etc/systemd/s
 
 Do not also let `openclaw doctor --fix` install a user-level gateway service for the same profile/port. Doctor refuses that automatic install when it finds a system-level OpenClaw gateway service; use `OPENCLAW_SERVICE_REPAIR_POLICY=external` when the system unit owns the lifecycle.
 
+Invalid configuration errors exit with code `78`. Linux systemd units use `RestartPreventExitStatus=78` to stop relaunching until the config is fixed. launchd and Windows Task Scheduler do not have an equivalent per-exit-code stop rule, so the Gateway also persists rapid unclean boot history and suppresses channel/provider account auto-start after repeated startup failures. In that safe mode the control plane still starts for inspection and repair, config hot reloads and `secrets.reload` refuse automatic channel restarts, and an explicit operator `channels.start` request can override the suppression.
+
 ## Dev profile quick path
 
 bashCopy code
@@ -229,7 +226,7 @@ Defaults include isolated state/config and base gateway port `19001`.
 ## Protocol quick reference (operator view)
 
   * First client frame must be `connect`.
-  * Gateway returns `hello-ok` snapshot (`presence`, `health`, `stateVersion`, `uptimeMs`, limits/policy).
+  * Gateway returns a `hello-ok` frame with a `snapshot` (`presence`, `health`, `stateVersion`, `uptimeMs`) plus `policy` limits (`maxPayload`, `maxBufferedBytes`, `tickIntervalMs`).
   * `hello-ok.features.methods` / `events` are a conservative discovery list, not a generated dump of every callable helper route.
   * Requests: `req(method, params)` → `res(ok/payload|error)`.
   * Common events include `connect.challenge`, `agent`, `chat`, `session.message`, `session.operation`, `session.tool`, `sessions.changed`, `presence`, `tick`, `health`, `heartbeat`, pairing/approval lifecycle events, and `shutdown`.
@@ -268,7 +265,7 @@ Signature | Likely issue
 ---|---  
 `refusing to bind gateway ... without auth` | Non-loopback bind without a valid gateway auth path  
 `another gateway instance is already listening` / `EADDRINUSE` | Port conflict  
-`Gateway start blocked: set gateway.mode=local` | Config set to remote mode, or local-mode stamp is missing from a damaged config  
+`Gateway start blocked: set gateway.mode=local` | Config set to remote mode, or `gateway.mode` is missing from a damaged config  
 `unauthorized` during connect | Auth mismatch between client and gateway  
   
 For full diagnosis ladders, use [Gateway Troubleshooting](</gateway/troubleshooting>).
@@ -280,22 +277,14 @@ For full diagnosis ladders, use [Gateway Troubleshooting](</gateway/troubleshoot
   * Graceful shutdown emits `shutdown` event before socket close.
 
 
-* * *
-
-Related:
-
-  * [Troubleshooting](</gateway/troubleshooting>)
-  * [Background Process](</gateway/background-process>)
-  * [Configuration](</gateway/configuration>)
-  * [Health](</gateway/health>)
-  * [Doctor](</gateway/doctor>)
-  * [Authentication](</gateway/authentication>)
-
-
 ## Related
 
   * [Configuration](</gateway/configuration>)
   * [Gateway troubleshooting](</gateway/troubleshooting>)
+  * [Background process](</gateway/background-process>)
+  * [Health](</gateway/health>)
+  * [Doctor](</gateway/doctor>)
+  * [Authentication](</gateway/authentication>)
   * [Remote access](</gateway/remote>)
   * [Secrets management](</gateway/secrets>)
 

@@ -1,7 +1,7 @@
 ---
 title: OpenClaw
 source_url: https://docs.openclaw.ai/
-scraped_at: 2026-06-29
+scraped_at: 2026-07-06
 ---
 
 Get startedOverview
@@ -14,20 +14,20 @@ Get startedOverview
 
 **Any OS gateway for AI agents across Discord, Google Chat, iMessage, Matrix, Microsoft Teams, Signal, Slack, Telegram, WhatsApp, Zalo, and more.**
 
-Send a message, get an agent response from your pocket. Run one Gateway across built-in channels, bundled channel plugins, WebChat, and mobile nodes.
+Send a message, get an agent response from your pocket. Run one Gateway across channel plugins, WebChat, and mobile nodes.
 
 [**Get Started** Install OpenClaw and bring up the Gateway in minutes. ](</start/getting-started>) [**Run Onboarding** Guided setup with `openclaw onboard` and pairing flows. ](</start/wizard>) [**Open the Control UI** Launch the browser dashboard for chat, config, and sessions. ](</web/control-ui>)
 
 ## What is OpenClaw?
 
-OpenClaw is a **self-hosted gateway** that connects your favorite chat apps and channel surfaces — built-in channels plus bundled or external channel plugins such as Discord, Google Chat, iMessage, Matrix, Microsoft Teams, Signal, Slack, Telegram, WhatsApp, Zalo, and more — to AI coding agents. You run a single Gateway process on your own machine (or a server), and it becomes the bridge between your messaging apps and an always-available AI assistant.
+OpenClaw is a **self-hosted gateway** that connects your favorite chat apps — Discord, Google Chat, iMessage, Matrix, Microsoft Teams, Signal, Slack, Telegram, WhatsApp, Zalo, and more via channel plugins — to AI coding agents. You run a single Gateway process on your own machine (or a server), and it becomes the bridge between your messaging apps and an always-available AI assistant.
 
 **Who is it for?** Developers and power users who want a personal AI assistant they can message from anywhere — without giving up control of their data or relying on a hosted service.
 
 **What makes it different?**
 
   * **Self-hosted** : runs on your hardware, your rules
-  * **Multi-channel** : one Gateway serves built-in channels plus bundled or external channel plugins simultaneously
+  * **Multi-channel** : one Gateway serves every configured channel plugin simultaneously
   * **Agent-native** : built for coding agents with tool use, sessions, memory, and multi-agent routing
   * **Open source** : MIT licensed, community-driven
 
@@ -49,7 +49,7 @@ The Gateway is the single source of truth for sessions, routing, and channel con
 
 ## Key capabilities
 
-[**Multi-channel gateway** Discord, iMessage, Signal, Slack, Telegram, WhatsApp, WebChat, and more with a single Gateway process. ](</channels>) [**Plugin channels** Bundled plugins add Matrix, Nostr, Twitch, Zalo, and more in normal current releases. ](</tools/plugin>) [**Multi-agent routing** Isolated sessions per agent, workspace, or sender. ](</concepts/multi-agent>) [**Media support** Send and receive images, audio, and documents. ](</nodes/images>) [**Web Control UI** Browser dashboard for chat, config, sessions, and nodes. ](</web/control-ui>) [**Mobile nodes** Pair iOS and Android nodes for Canvas, camera, and voice-enabled workflows. ](</nodes>)
+[**Multi-channel gateway** Discord, iMessage, Signal, Slack, Telegram, WhatsApp, WebChat, and more with a single Gateway process. ](</channels>) [**Plugin channels** Channel plugins add Matrix, Nostr, Twitch, Zalo, and more; official plugins install on demand. ](</tools/plugin>) [**Multi-agent routing** Isolated sessions per agent, workspace, or sender. ](</concepts/multi-agent>) [**Media support** Send and receive images, audio, and documents. ](</nodes/images>) [**Web Control UI** Browser dashboard for chat, config, sessions, and nodes. ](</web/control-ui>) [**Mobile nodes** Pair iOS and Android nodes for Canvas, camera, and voice-enabled workflows. ](</nodes>)
 
 ## Quick start
 
@@ -94,7 +94,7 @@ Open the browser Control UI after the Gateway starts.
 
 Config lives at `~/.openclaw/openclaw.json`.
 
-  * If you **do nothing** , OpenClaw uses the bundled OpenClaw agent runtime with per-sender sessions.
+  * If you **do nothing** , OpenClaw uses the bundled OpenClaw agent runtime; DMs share the agent's main session, and each group chat gets its own session.
   * If you want to lock it down, start with `channels.whatsapp.allowFrom` and (for groups) mention rules.
 
 
@@ -107,7 +107,7 @@ json5Copy code
 
 ## Start here
 
-[**Docs hubs** All docs and guides, organized by use case. ](</start/hubs>) [**Configuration** Core Gateway settings, tokens, and provider config. ](</gateway/configuration>) [**Remote access** SSH and tailnet access patterns. ](</gateway/remote>) [**Channels** Channel-specific setup for Feishu, Microsoft Teams, WhatsApp, Telegram, Discord, and more. ](</channels/telegram>) [**Nodes** iOS and Android nodes with pairing, Canvas, camera, and device actions. ](</nodes>) [**Help** Common fixes and troubleshooting entry point. ](</help>)
+[**Docs hubs** All docs and guides, organized by use case. ](</start/hubs>) [**Configuration** Core Gateway settings, tokens, and provider config. ](</gateway/configuration>) [**Remote access** SSH and tailnet access patterns. ](</gateway/remote>) [**Channels** Channel-specific setup for Discord, Feishu, Microsoft Teams, Telegram, WhatsApp, and more. ](</channels/telegram>) [**Nodes** iOS and Android nodes with pairing, Canvas, camera, and device actions. ](</nodes>) [**Help** Common fixes and troubleshooting entry point. ](</help>)
 
 ## Learn more
 

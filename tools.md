@@ -1,7 +1,7 @@
 ---
 title: Overview
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-06-29
+scraped_at: 2026-07-06
 ---
 
 CapabilitiesOverview
@@ -57,7 +57,7 @@ Files | Read and change workspace files | `read`, `write`, `edit`, `apply_patch`
 Web | Search the web, search X posts, or fetch readable page content | `web_search`, `x_search`, `web_fetch` | [Web tools](</tools/web>), [Web fetch](</tools/web-fetch>)  
 Browser | Operate a browser session | `browser` | [Browser](</tools/browser>)  
 Messaging and channels | Send replies or channel actions | `message` | [Agent send](</tools/agent-send>)  
-Sessions and agents | Inspect sessions, delegate work, steer another run, or report status | `sessions_*`, `subagents`, `agents_list`, `session_status`, `goal` | [Goal](</tools/goal>), [Sub-agents](</tools/subagents>), [Session tool](</concepts/session-tool>)  
+Sessions and agents | Inspect sessions, delegate work, steer another run, or report status | `sessions_*`, `subagents`, `agents_list`, `session_status`, `get_goal`, `create_goal`, `update_goal` | [Goal](</tools/goal>), [Sub-agents](</tools/subagents>), [Session tool](</concepts/session-tool>)  
 Automation | Schedule work or respond to background events | `cron`, `heartbeat_respond` | [Automation](</automation>)  
 Gateway and nodes | Inspect Gateway state or paired target devices | `gateway`, `nodes` | [Gateway configuration](</gateway/configuration>), [Nodes](</nodes>)  
 Media | Analyze, generate, or speak media | `image`, `image_generate`, `music_generate`, `video_generate`, `tts` | [Media overview](</tools/media-overview>)  

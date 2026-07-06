@@ -1,7 +1,7 @@
 ---
 title: Onboarding overview
 source_url: https://docs.openclaw.ai/start/onboarding-overview
-scraped_at: 2026-06-29
+scraped_at: 2026-07-06
 ---
 
 Get startedFirst steps
@@ -13,7 +13,7 @@ OpenClaw has two onboarding paths. Both configure auth, the Gateway, and optiona
 | CLI onboarding | macOS app onboarding  
 ---|---|---  
 **Platforms** | macOS, Linux, Windows (native or WSL2) | macOS only  
-**Interface** | Terminal wizard | Guided UI in the app  
+**Interface** | Terminal wizard | Guided UI + Crestodian chat  
 **Best for** | Servers, headless, full control | Desktop Mac, visual setup  
 **Automation** | `--non-interactive` for scripts | Manual only  
 **Command** | `openclaw onboard` | Launch the app  
@@ -27,7 +27,7 @@ Regardless of which path you choose, onboarding sets up:
   1. **Model provider and auth** — API key, OAuth, or setup token for your chosen provider
   2. **Workspace** — directory for agent files, bootstrap templates, and memory
   3. **Gateway** — port, bind address, auth mode
-  4. **Channels** (optional) — built-in and bundled chat channels such as iMessage, Discord, Feishu, Google Chat, Mattermost, Microsoft Teams, Telegram, WhatsApp, and more
+  4. **Channels** (optional) — built-in and bundled chat channels such as Discord, Feishu, Google Chat, iMessage, Mattermost, Microsoft Teams, Telegram, WhatsApp, and more
   5. **Daemon** (optional) — background service so the Gateway starts automatically
 
 
@@ -46,7 +46,7 @@ Full reference: [Onboarding (CLI)](</start/wizard>) CLI command docs: [`openclaw
 
 ## macOS app onboarding
 
-Open the OpenClaw app. The first-run wizard walks you through the same steps with a visual interface.
+Open the OpenClaw app. For local setup, the first-run flow starts the Gateway, detects existing AI access (Claude Code, Codex, Gemini CLI, or API keys), live-tests the best option, and saves it only after a real reply — falling back automatically and offering a verified manual API-key step when nothing is found. Sensitive credentials use masked input. Remote setup connects to an already-configured Gateway instead, and the same AI check runs against that Gateway.
 
 Full reference: [Onboarding (macOS App)](</start/onboarding>)
 
@@ -54,9 +54,9 @@ Full reference: [Onboarding (macOS App)](</start/onboarding>)
 
 If your provider is not listed in onboarding, choose **Custom Provider** and enter:
 
-  * API compatibility mode (OpenAI-compatible, Anthropic-compatible, or auto-detect)
-  * Base URL and API key
-  * Model ID and optional alias
+  * Endpoint compatibility: OpenAI-compatible (`/chat/completions`), OpenAI Responses-compatible (`/responses`), Anthropic-compatible (`/messages`), or unknown (probes all three and auto-detects)
+  * Base URL and API key (API key is optional if the endpoint does not require one)
+  * Model ID and optional model alias
 
 
 Multiple custom endpoints can coexist — each gets its own endpoint ID.

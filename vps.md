@@ -1,7 +1,7 @@
 ---
 title: Linux server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-06-29
+scraped_at: 2026-07-06
 ---
 
 InstallHosting
@@ -10,17 +10,17 @@ Run the OpenClaw Gateway on any Linux server or cloud VPS. This page helps you p
 
 ## Pick a provider
 
-[**Railway** [**Northflank** [**DigitalOcean** [**Oracle Cloud** [**Fly.io** [**Hetzner** [**Hostinger** [**GCP** [**Azure** [**exe.dev** [**Raspberry Pi** **AWS (EC2 / Lightsail / free tier)** also works well. A community video walkthrough is available at [x.com/techfrenAJ/status/2014934471095812547](<https://x.com/techfrenAJ/status/2014934471095812547>) (community resource -- may become unavailable). How cloud setups work
+[**Azure** [**DigitalOcean** [**exe.dev** [**Fly.io** [**GCP** [**Hetzner** [**Hostinger** [**Northflank** [**Oracle Cloud** [**Railway** [**Raspberry Pi** **AWS (EC2 / Lightsail / free tier)** also works well. A community video walkthrough is available at [x.com/techfrenAJ/status/2014934471095812547](<https://x.com/techfrenAJ/status/2014934471095812547>) (community resource -- may become unavailable). How cloud setups work
 
   * The **Gateway runs on the VPS** and owns state + workspace.
   * You connect from your laptop or phone via the **Control UI** or **Tailscale/SSH**.
   * Treat the VPS as the source of truth and **back up** the state + workspace regularly.
-  * Secure default: keep the Gateway on loopback and access it via SSH tunnel or Tailscale Serve. If you bind to `lan` or `tailnet`, require `gateway.auth.token` or `gateway.auth.password`.
+  * Secure default: keep the Gateway on loopback and access it via SSH tunnel or Tailscale Serve. If you bind to `lan` or `tailnet`, the Gateway requires a shared secret (`gateway.auth.token` or `gateway.auth.password`) unless auth is delegated to a trusted proxy.
 
 Related pages: [Gateway remote access](</gateway/remote>), [Platforms hub](</platforms>). Harden admin access first Before you install OpenClaw on a public VPS, decide how you want to administer the box itself.
 
-  * If you want Tailnet-only admin access, install Tailscale first, join the VPS to your tailnet, verify a second SSH session over the Tailscale IP or MagicDNS name, then restrict public SSH.
-  * If you are not using Tailscale, apply the equivalent hardening for your SSH path before exposing more services.
+  * For Tailnet-only admin access: install Tailscale first, join the VPS to your tailnet, verify a second SSH session over the Tailscale IP or MagicDNS name, then restrict public SSH.
+  * Without Tailscale: apply the equivalent hardening for your SSH path before exposing more services.
   * This is separate from Gateway access. You can still keep OpenClaw bound to loopback and use an SSH tunnel or Tailscale Serve for the dashboard.
 
 Tailscale-specific Gateway options live in [Tailscale](</gateway/tailscale>). Shared company agent on a VPS Running a single agent for a team is a valid setup when every user is in the same trust boundary and the agent is business-only.
@@ -34,23 +34,17 @@ Security model details: [Security](</gateway/security>). Using nodes with a VPS 
     grep -q 'NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cache' ~/.bashrc || cat >> ~/.bashrc <<'EOF'export NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cachemkdir -p /var/tmp/openclaw-compile-cacheexport OPENCLAW_NO_RESPAWN=1EOFsource ~/.bashrc
 [/code]
 
-  * `NODE_COMPILE_CACHE` improves repeated command startup times.
+  * `NODE_COMPILE_CACHE` improves repeated command startup times; the first run warms the cache.
   * `OPENCLAW_NO_RESPAWN=1` keeps routine Gateway restarts in-process, which avoids extra process handoffs and keeps PID tracking simple on small hosts.
-  * First command run warms the cache; subsequent runs are faster.
   * For Raspberry Pi specifics, see [Raspberry Pi](</install/raspberry-pi>).
 
 systemd tuning checklist (optional) For VM hosts using `systemd`, consider:
 
-  * Add service env for a stable startup path: 
-    * `OPENCLAW_NO_RESPAWN=1`
-    * `NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cache`
-  * Keep restart behavior explicit: 
-    * `Restart=always`
-    * `RestartSec=2`
-    * `TimeoutStartSec=90`
-  * Prefer SSD-backed disks for state/cache paths to reduce random-I/O cold-start penalties.
+  * Service env for a stable startup path: `OPENCLAW_NO_RESPAWN=1` and `NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cache`
+  * Explicit restart behavior: `Restart=always`, `RestartSec=2`, `TimeoutStartSec=90`
+  * SSD-backed disks for state/cache paths to reduce random-I/O cold-start penalties.
 
-For the standard `openclaw onboard --install-daemon` path, edit the user unit: bashCopy code
+The standard `openclaw onboard --install-daemon` path installs a systemd user unit; edit it with: bashCopy code
 [code]
     systemctl --user edit openclaw-gateway.service
 [/code]
@@ -60,11 +54,11 @@ iniCopy code
     [Service]Environment=OPENCLAW_NO_RESPAWN=1Environment=NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cacheRestart=alwaysRestartSec=2TimeoutStartSec=90
 [/code]
 
-If you deliberately installed a system unit instead, edit `openclaw-gateway.service` via `sudo systemctl edit openclaw-gateway.service`. How `Restart=` policies help automated recovery: [systemd can automate service recovery](<https://www.redhat.com/en/blog/systemd-automate-recovery>). For Linux OOM behavior, child process victim selection, and `exit 137` diagnostics, see [Linux memory pressure and OOM kills](</platforms/linux#memory-pressure-and-oom-kills>). Related
+If you deliberately installed a system unit instead, edit it via `sudo systemctl edit openclaw-gateway.service`. How `Restart=` policies help automated recovery: [systemd can automate service recovery](<https://www.redhat.com/en/blog/systemd-automate-recovery>). For Linux OOM behavior, child process victim selection, and `exit 137` diagnostics, see [Linux memory pressure and OOM kills](</platforms/linux#memory-pressure-and-oom-kills>). Related
 
   * [Install overview](</install>)
   * [DigitalOcean](</install/digitalocean>)
   * [Fly.io](</install/fly>)
   * [Hetzner](</install/hetzner>)
 
-](</install/raspberry-pi>) Was this useful?YesNoOpen issue ](</install/exe-dev>)](</install/azure>)](</install/gcp>)](</install/hostinger>)](</install/hetzner>)](</install/fly>)](</install/oracle>)](</install/digitalocean>)](</install/northflank>)](</install/railway>)
+](</install/raspberry-pi>) Was this useful?YesNoOpen issue ](</install/railway>)](</install/oracle>)](</install/northflank>)](</install/hostinger>)](</install/hetzner>)](</install/gcp>)](</install/fly>)](</install/exe-dev>)](</install/digitalocean>)](</install/azure>)

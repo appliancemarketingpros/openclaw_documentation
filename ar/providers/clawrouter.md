@@ -1,0 +1,120 @@
+---
+title: ClawRouter
+source_url: https://docs.openclaw.ai/ar/providers/clawrouter
+scraped_at: 2026-07-06
+---
+
+ModelsProviders
+
+يوفّر ClawRouter لـ OpenClaw مفتاحًا واحدًا مضبوطًا بالسياسات لعدة مزوّدي نماذج علويين. يكتشف Plugin المضمّن النماذج المسموح بها فقط لذلك المفتاح، ويوجّه كل نموذج عبر البروتوكول المعلن له، ويعرض ميزانية المفتاح والاستخدام الإجمالي على أسطح استخدام OpenClaw.
+
+لا تثبّت أو تصادق كل Plugin لمزوّد علوي على مضيف OpenClaw. تبقى بيانات الاعتماد العلوية وإعادة التوجيه الخاصة بكل مزوّد في ClawRouter. لا يحتاج OpenClaw إلا إلى Plugin المضمّن `@openclaw/clawrouter` وبيان اعتماد ClawRouter مُصدر.
+
+الخاصية | القيمة  
+---|---  
+المزوّد | `clawrouter`  
+الحزمة | `@openclaw/clawrouter`  
+المصادقة | `CLAWROUTER_API_KEY`  
+عنوان URL الافتراضي | `https://clawrouter.openclaw.ai`  
+كتالوج النماذج | مضبوط بنطاق بيان الاعتماد عبر `/v1/catalog`  
+الحصص | الميزانية والاستخدام الشهريان عبر `/v1/usage`  
+  
+## البدء
+
+* ### Get a scoped credential
+
+اطلب من مسؤول ClawRouter لديك بيان اعتماد تتضمن سياسته المزوّدين والنماذج والميزانية الشهرية التي ينبغي أن تستخدمها. تُكشف بيانات الاعتماد مرة واحدة عند إصدارها.
+
+* ### Configure OpenClaw
+
+bashCopy code
+[code]
+    export CLAWROUTER_API_KEY="..."openclaw onboard --auth-choice clawrouter-api-keyopenclaw plugins enable clawrouter
+[/code]
+
+Plugin مضمّن مع OpenClaw. إذا كان إعدادك يضبط `plugins.allow`، فأضف `clawrouter` إلى تلك القائمة قبل تمكينه. بالنسبة إلى نشر مخصص، اضبط `models.providers.clawrouter.baseUrl` على أصل ClawRouter؛ والقيمة الافتراضية هي `https://clawrouter.openclaw.ai`.
+
+* ### List granted models
+
+bashCopy code
+[code]
+    openclaw models list --all --provider clawrouter
+[/code]
+
+استخدم مراجع النماذج المُعادة كما تظهر تمامًا. فهي تحتفظ بنطاق الاسم العلوي، مثل `clawrouter/openai/...` أو `clawrouter/anthropic/...` أو `clawrouter/google/...`. إذا كان `agents.defaults.models` قائمة سماح في إعدادك، فأضف إليها كل مرجع ClawRouter محدد.
+
+* ### Select a model
+
+bashCopy code
+[code]
+    openclaw models set clawrouter/<provider>/<model>
+[/code]
+
+يمكنك أيضًا تحديد نموذج مُعاد لتشغيل واحد باستخدام `openclaw agent --model clawrouter/<provider>/<model> --message "..."`.
+
+## اكتشاف النماذج
+
+`GET /v1/catalog` هو مصدر الحقيقة. لا يشحن OpenClaw قائمة ثانية وثابتة لنماذج ClawRouter. يظهر النموذج المُعد في ClawRouter عندما:
+
+  * تمنح سياسة بيان الاعتماد مزوّده؛
+  * يكون اتصال المزوّد مُمكّنًا وجاهزًا؛
+  * يعلن نموذج الكتالوج عن قدرة LLM مدعومة؛ و
+  * يعرّض الكتالوج عقد نقل يدعمه Plugin.
+
+
+لذلك لا تتطلب إضافة نموذج آخر إلى مزوّد ClawRouter مدعوم إصدارًا جديدًا من OpenClaw أو Plugin مزوّد آخر. سيكتشفه تحديث الكتالوج التالي. أما النموذج الذي يحتاج إلى بروتوكول سلكي جديد فيتطلب دعمًا في Plugin ClawRouter قبل أن يعلن عنه OpenClaw.
+
+## البروتوكول وPlugins المزوّدين
+
+لا تحتاج إلى تثبيت Plugin المصادقة لكل شركة علوية. يملك ClawRouter بيانات الاعتماد العلوية؛ ويخبر كتالوجه OpenClaw بأي نقل يستخدم. يدعم Plugin ما يلي:
+
+مسار الكتالوج | نقل OpenClaw  
+---|---  
+دردشة متوافقة مع OpenAI | `openai-completions`  
+Responses متوافقة مع OpenAI | `openai-responses`  
+Anthropic Messages أصلية | `anthropic-messages`  
+بث Google Gemini أصلي | `google-generative-ai`  
+  
+يطبّق Plugin أيضًا سياسات إعادة التشغيل ومخطط الأدوات المطابقة لتلك العائلات. لا تُعلَن صفوف الكتالوج التي تستخدم تنسيق طلب/بث آخر عمدًا كنماذج نصية في OpenClaw. طبّع هؤلاء المزوّدين إلى أحد العقود المدعومة في ClawRouter بدلًا من إرسال حمولة غير متوافقة.
+
+## الحصص والاستخدام
+
+تغذي استجابة ClawRouter ‏`/v1/usage` أسطح استخدام المزوّد العادية في OpenClaw. يعرض `/status` وحالة لوحة المعلومات ذات الصلة نافذة الميزانية الشهرية عندما يكون للمفتاح حد، إضافة إلى إجماليات الطلبات والرموز والإنفاق. أما المفاتيح غير المقيسة فما زالت تعرض الاستخدام الإجمالي دون نافذة نسبة مئوية.
+
+يستخدم البحث عن الحصة المفتاح مضبوط النطاق نفسه المستخدم لاكتشاف النماذج. لا يمنع فشل البحث عن الحصة تنفيذ النموذج.
+
+تحقق من اللقطة الحية باستخدام:
+
+bashCopy code
+[code]
+    openclaw status --usageopenclaw models status
+[/code]
+
+تتوفر لقطة المزوّد نفسها لـ `/status` في الدردشة وواجهة استخدام OpenClaw. الميزانية على مستوى السياسة، لذا يمكن أن تغيّر الطلبات التي يجريها عميل آخر باستخدام سياسة ClawRouter نفسها النسبة المتبقية.
+
+## استكشاف الأخطاء وإصلاحها
+
+العَرَض | ما يجب التحقق منه  
+---|---  
+لا توجد نماذج ClawRouter | تأكد من أن Plugin مُمكّن ومسموح به عبر `plugins.allow`، ثم تحقق من أن بيان الاعتماد نشط ويمنح مزوّدًا جاهزًا واحدًا على الأقل.  
+نموذج ClawRouter مُعد مفقود | افحص قدرة `/v1/catalog` وتنسيق مساره. تُرشَّح عقود النقل غير المدعومة عمدًا.  
+`Unknown model: clawrouter/...` | أضف مرجع الكتالوج الدقيق إلى `agents.defaults.models` عندما تُستخدم خريطة الإعداد تلك كقائمة سماح.  
+`401` أو `403` من الكتالوج أو الاستخدام | أعد إصدار بيان اعتماد ClawRouter أو أعد ضبط نطاقه؛ لا يعود OpenClaw إلى مفاتيح المزوّدين العلويين.  
+يفشل استدعاء النموذج بعد الاكتشاف | تحقق من اتصال المزوّد وسلامة الجهة العلوية في ClawRouter، ثم أعد المحاولة بعد تعافي حالة الجاهزية لديه.  
+يحتوي الاستخدام على إجماليات دون نسبة مئوية | السياسة غير مقيسة؛ أضف ميزانية شهرية في ClawRouter لعرض نافذة نسبة مئوية.  
+  
+## سلوك الأمان
+
+  * يقتصر اكتشاف الكتالوج على مفتاح الوكيل المُعد ويُخزَّن مؤقتًا لكل مفتاح.
+  * يُرفق مفتاح الوكيل عند إرسال الطلب فقط؛ ولا يُخزَّن في بيانات تعريف النموذج.
+  * تُعاد كتابة معرّفات نماذج Anthropic وGemini الأصلية إلى معرّفاتها العلوية عند الإرسال فقط.
+  * تفشل صفوف الكتالوج غير المدعومة أو غير الممنوحة بشكل مغلق ولا تكون قابلة للتحديد.
+
+
+## ذات صلة
+
+[**Model providers** إعداد المزوّدين واختيار النماذج. ](</ar/concepts/model-providers>) [**Usage tracking** أسطح الاستخدام والحالة في OpenClaw. ](</ar/concepts/usage-tracking>)
+
+Was this useful?YesNo
+
+Open issue

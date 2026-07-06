@@ -1,23 +1,22 @@
 ---
 title: Features
 source_url: https://docs.openclaw.ai/concepts/features
-scraped_at: 2026-06-29
+scraped_at: 2026-07-06
 ---
 
 Get startedOverview
 
 ## Highlights
 
-[**Channels** Discord, iMessage, Signal, Slack, Telegram, WhatsApp, WebChat, and more with a single Gateway. ](</channels>) [**Plugins** Bundled plugins add Matrix, Nextcloud Talk, Nostr, Twitch, Zalo, and more without separate installs in normal current releases. ](</tools/plugin>) [**Routing** Multi-agent routing with isolated sessions. ](</concepts/multi-agent>) [**Media** Images, audio, video, documents, and image/video generation. ](</nodes/images>) [**Apps and UI** Windows Hub, Web Control UI, macOS app, and mobile nodes. ](</platforms>) [**Mobile nodes** iOS and Android nodes with pairing, voice/chat, and rich device commands. ](</nodes>)
+[**Channels** Discord, iMessage, Signal, Slack, Telegram, WhatsApp, WebChat, and more with a single Gateway. ](</channels>) [**Plugins** Official plugins add Matrix, Nextcloud Talk, Nostr, Twitch, Zalo, and dozens more with one install command. ](</tools/plugin>) [**Routing** Multi-agent routing with isolated sessions. ](</concepts/multi-agent>) [**Media** Images, audio, video, documents, and image/video generation. ](</nodes/images>) [**Apps and UI** Windows Hub, browser Control UI, macOS menu bar app, and mobile nodes. ](</platforms>) [**Mobile nodes** iOS and Android nodes with pairing, voice/chat, and rich device commands. ](</nodes>)
 
 ## Full list
 
 **Channels:**
 
-  * Built-in channels include Discord, Google Chat, iMessage, IRC, Signal, Slack, Telegram, WebChat, and WhatsApp
-  * Bundled plugin channels include Feishu, LINE, Matrix, Mattermost, Microsoft Teams, Nextcloud Talk, Nostr, QQ Bot, Synology Chat, Tlon, Twitch, Zalo, and Zalo Personal
-  * Optional separately installed channel plugins include Voice Call and third-party packages such as WeChat
-  * Third-party channel plugins can extend the Gateway further, such as WeChat
+  * iMessage, Telegram, and WebChat ship with the core install; every other channel is an official plugin installed with `openclaw plugins install @openclaw/<id>` (or on demand during `openclaw onboard` / `openclaw channels add`)
+  * Official plugin channels: Discord, Feishu, Google Chat, IRC, LINE, Matrix, Mattermost, Microsoft Teams, Nextcloud Talk, Nostr, QQ Bot, Raft, Signal, Slack, SMS, Synology Chat, Tlon, Twitch, Voice Call, WhatsApp, Zalo, and Zalo Personal
+  * External plugin channels maintained outside the OpenClaw repo: WeChat, Yuanbao, and Zalo ClawBot
   * Group chat support with mention-based activation
   * DM safety with allowlists and pairing
 
@@ -34,7 +33,7 @@ Get startedOverview
 
   * 35+ model providers (Anthropic, OpenAI, Google, and more)
   * Subscription auth via OAuth (e.g. OpenAI Codex)
-  * Custom and self-hosted provider support (vLLM, SGLang, Ollama, and any OpenAI-compatible or Anthropic-compatible endpoint)
+  * Custom and self-hosted provider support (vLLM, SGLang, Ollama, llama.cpp, LM Studio, and any OpenAI-compatible or Anthropic-compatible endpoint)
 
 
 **Media:**
@@ -63,7 +62,7 @@ Get startedOverview
 
 ## Related
 
-[**Experimental features** Opt-in features that have not yet shipped to the default surface. ](</concepts/experimental-features>) [**Agent runtime** Agent runtime model and how runs are dispatched. ](</concepts/agent>) [**Channels** Connect Telegram, WhatsApp, Discord, Slack, and more from one Gateway. ](</channels>) [**Plugins** Bundled and third-party plugins that extend OpenClaw. ](</tools/plugin>)
+[**Experimental features** Opt-in features that have not yet shipped to the default surface. ](</concepts/experimental-features>) [**Agent runtime** Agent runtime model and how runs are dispatched. ](</concepts/agent>) [**Channels** Connect Telegram, WhatsApp, Discord, Slack, and more from one Gateway. ](</channels>) [**Plugins** Official and external plugins that extend OpenClaw. ](</tools/plugin>)
 
 Was this useful?YesNo
 

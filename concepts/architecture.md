@@ -1,7 +1,7 @@
 ---
 title: Gateway architecture
 source_url: https://docs.openclaw.ai/concepts/architecture
-scraped_at: 2026-06-29
+scraped_at: 2026-07-06
 ---
 
 AgentsFundamentals
@@ -9,12 +9,19 @@ AgentsFundamentals
 ## Overview
 
   * A single long-lived **Gateway** owns all messaging surfaces (WhatsApp via Baileys, Telegram via grammY, Slack, Discord, Signal, iMessage, WebChat).
+
   * Control-plane clients (macOS app, CLI, web UI, automations) connect to the Gateway over **WebSocket** on the configured bind host (default `127.0.0.1:18789`).
+
   * **Nodes** (macOS/iOS/Android/headless) also connect over **WebSocket** , but declare `role: node` with explicit caps/commands.
+
   * One Gateway per host; it is the only place that opens a WhatsApp session.
-  * The **canvas host** is served by the Gateway HTTP server under: 
+
+  * The **canvas host** is served by the Gateway HTTP server under:
+
     * `/__openclaw__/canvas/` (agent-editable HTML/CSS/JS)
-    * `/__openclaw__/a2ui/` (A2UI host) It uses the same port as the Gateway (default `18789`).
+    * `/__openclaw__/a2ui/` (A2UI host)
+
+It uses the same port as the Gateway (default `18789`).
 
 
 ## Components and flows
@@ -41,10 +48,7 @@ AgentsFundamentals
   * Expose commands like `canvas.*`, `camera.*`, `screen.record`, `location.get`.
 
 
-Protocol details:
-
-  * [Gateway protocol](</gateway/protocol>)
-
+Protocol details: [Gateway protocol](</gateway/protocol>)
 
 ### WebChat
 
@@ -87,15 +91,14 @@ Protocol details:
   * Nodes must include `role: "node"` plus caps/commands/permissions in `connect`.
 
 
-## Pairing + local trust
+## Pairing and local trust
 
   * All WS clients (operators + nodes) include a **device identity** on `connect`.
   * New device IDs require pairing approval; the Gateway issues a **device token** for subsequent connects.
   * Direct local loopback connects can be auto-approved to keep same-host UX smooth.
   * OpenClaw also has a narrow backend/container-local self-connect path for trusted shared-secret helper flows.
   * Tailnet and LAN connects, including same-host tailnet binds, still require explicit pairing approval.
-  * All connects must sign the `connect.challenge` nonce.
-  * Signature payload `v3` also binds `platform` \+ `deviceFamily`; the gateway pins paired metadata on reconnect and requires repair pairing for metadata changes.
+  * All connects must sign the `connect.challenge` nonce. Signature payload `v3` also binds `platform` and `deviceFamily`; the gateway pins paired metadata on reconnect and requires repair pairing for metadata changes.
   * **Non-local** connects still require explicit approval.
   * Gateway auth (`gateway.auth.*`) still applies to **all** connections, local or remote.
 
@@ -116,7 +119,7 @@ Details: [Gateway protocol](</gateway/protocol>), [Pairing](</channels/pairing>)
   * Alternative: SSH tunnel
 
 bashCopy code
-[code]ssh -N -L 18789:127.0.0.1:18789 user@host
+[code]ssh -N -L 18789:127.0.0.1:18789 user@gateway-host
 [/code]
 
   * The same handshake + auth token apply over the tunnel.
