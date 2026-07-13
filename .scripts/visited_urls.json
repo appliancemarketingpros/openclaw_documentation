@@ -2,128 +2,128 @@
   "https://docs.openclaw.ai/": {
     "title": "OpenClaw",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/index.md",
-    "hash": "da148e97c204997bfe07a2406828d72d",
-    "last_scraped": "2026-07-06 09:51:26"
+    "hash": "bf4d329a7e9fbba72cdf960cbc5eeda3",
+    "last_scraped": "2026-07-13 08:42:10"
   },
   "https://docs.openclaw.ai/install": {
     "title": "Install",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/install.md",
-    "hash": "17d47c127f1093d4c9c60a1ca85d08b4",
-    "last_scraped": "2026-07-06 09:51:27"
+    "hash": "2fbc5f9242fd0960153b9fff9983eeb7",
+    "last_scraped": "2026-07-13 08:42:10"
   },
   "https://docs.openclaw.ai/channels": {
     "title": "Chat channels",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/channels.md",
-    "hash": "0d47cf0c576952560b49d44a14b11a94",
-    "last_scraped": "2026-07-06 09:51:28"
+    "hash": "a8c9cd1824c25a0a878ea414437d2484",
+    "last_scraped": "2026-07-13 08:42:11"
   },
   "https://docs.openclaw.ai/concepts/architecture": {
     "title": "Gateway architecture",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/architecture.md",
-    "hash": "b8ca6e1f3c4c351984c652fc46a39bd7",
-    "last_scraped": "2026-07-06 09:51:28"
+    "hash": "ad902f7f3023d166877fbabe056811f5",
+    "last_scraped": "2026-07-13 08:42:12"
   },
   "https://docs.openclaw.ai/tools": {
     "title": "Overview",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tools.md",
-    "hash": "51b497a0c7575cb689f0fb0cdfcbbeb8",
-    "last_scraped": "2026-07-06 09:51:29"
+    "hash": "7eb33049acee3ae5d05b7d04208e4c22",
+    "last_scraped": "2026-07-13 08:42:12"
   },
   "https://docs.openclaw.ai/providers": {
     "title": "Provider directory",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers.md",
-    "hash": "e4455c00fde69992fd1f6060ecd84d12",
-    "last_scraped": "2026-07-06 09:51:30"
+    "hash": "01b71238f1864c237d1dbd8dde577962",
+    "last_scraped": "2026-07-13 08:42:13"
   },
   "https://docs.openclaw.ai/platforms": {
     "title": "Platforms",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/platforms.md",
-    "hash": "2022f00a90c05af459628cff32f41cd4",
-    "last_scraped": "2026-07-06 09:51:31"
+    "hash": "83e21066b44cba28445d095251176b1e",
+    "last_scraped": "2026-07-13 08:42:14"
   },
   "https://docs.openclaw.ai/gateway": {
     "title": "Gateway runbook",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway.md",
-    "hash": "b4c59828cf2c7b357742ba2023e9bea0",
-    "last_scraped": "2026-07-06 09:51:31"
+    "hash": "1feaa26bc423cea58a9218dc051510a0",
+    "last_scraped": "2026-07-13 08:42:14"
   },
   "https://docs.openclaw.ai/cli": {
     "title": "CLI reference",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/cli.md",
-    "hash": "68b692e74caa1b1d2aff3bb36fa89ee4",
-    "last_scraped": "2026-07-06 09:51:32"
+    "hash": "2bed44bde9bfcf867bc1bb3a4517c8b4",
+    "last_scraped": "2026-07-13 08:42:15"
   },
   "https://docs.openclaw.ai/help": {
     "title": "Help",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/help.md",
-    "hash": "8dbbe9f2047b6de394e7dd5cc5092b31",
-    "last_scraped": "2026-07-06 09:51:33"
+    "hash": "27a7941fee4d09d1023f8ca8abe2a54e",
+    "last_scraped": "2026-07-13 08:42:16"
   },
   "https://docs.openclaw.ai/start/getting-started": {
     "title": "Getting started",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/getting-started.md",
-    "hash": "92fbc1f476659c55de5c14bf8d47e865",
-    "last_scraped": "2026-07-06 09:51:34"
+    "hash": "076d2009f68af3dadc3458f6072f2d3f",
+    "last_scraped": "2026-07-13 08:42:16"
   },
   "https://docs.openclaw.ai/start/onboarding-overview": {
     "title": "Onboarding overview",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/onboarding-overview.md",
-    "hash": "c8a19544c9d40cc51f057601b220cd95",
-    "last_scraped": "2026-07-06 09:51:34"
+    "hash": "9c520d3a1d16c58d0d286328c32a5d89",
+    "last_scraped": "2026-07-13 08:42:17"
   },
   "https://docs.openclaw.ai/start/wizard": {
     "title": "Onboarding (CLI)",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard.md",
-    "hash": "bb5f46abbc7b8a976052c8c0a79d49e2",
-    "last_scraped": "2026-07-06 09:51:35"
+    "hash": "9591e899488ee72daac07a50ba698278",
+    "last_scraped": "2026-07-13 08:42:18"
   },
   "https://docs.openclaw.ai/start/onboarding": {
     "title": "Onboarding (macOS app)",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/onboarding.md",
-    "hash": "dc677333a10d4bf3a235a9066bcc726e",
-    "last_scraped": "2026-07-06 09:51:36"
+    "hash": "7cfdf2f083c4a6c75d9c45c1ce42ee32",
+    "last_scraped": "2026-07-13 08:42:18"
   },
   "https://docs.openclaw.ai/start/openclaw": {
     "title": "Personal assistant setup",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/openclaw.md",
-    "hash": "ec3d22ebace5f55691bfb6716521055b",
-    "last_scraped": "2026-07-06 09:51:37"
+    "hash": "9f4ebf999034168da979231b8b41cec6",
+    "last_scraped": "2026-07-13 08:42:19"
   },
   "https://docs.openclaw.ai/start/wizard-cli-reference": {
     "title": "CLI setup reference",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard-cli-reference.md",
-    "hash": "01a05b18e55ee8f991095a76078c118d",
-    "last_scraped": "2026-07-06 09:51:37"
+    "hash": "a4d36f17fba5a2369c7ff1c5b9e77413",
+    "last_scraped": "2026-07-13 08:42:20"
   },
   "https://docs.openclaw.ai/start/wizard-cli-automation": {
     "title": "CLI automation",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard-cli-automation.md",
-    "hash": "a7cfee3662f56a43c17f4cad43d841c7",
-    "last_scraped": "2026-07-06 09:51:38"
+    "hash": "7242761f4c92174ac4132463ccc45529",
+    "last_scraped": "2026-07-13 08:42:20"
   },
   "https://docs.openclaw.ai/start/showcase": {
     "title": "Showcase",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/showcase.md",
-    "hash": "8cf7bdec9935fba817119a1472f64f07",
-    "last_scraped": "2026-07-06 09:51:39"
+    "hash": "103633b5013c9195b2611b4a2abb8a43",
+    "last_scraped": "2026-07-13 08:42:21"
   },
   "https://docs.openclaw.ai/concepts/features": {
     "title": "Features",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/features.md",
-    "hash": "56b7b65356836ddff60df293d08b1637",
-    "last_scraped": "2026-07-06 09:51:40"
+    "hash": "67e79b7817b8677054959c88034830c3",
+    "last_scraped": "2026-07-13 08:42:22"
   },
   "https://docs.openclaw.ai/start/setup": {
     "title": "Setup",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/setup.md",
-    "hash": "ce9395604038522ec397f7f8e84b7d63",
-    "last_scraped": "2026-07-06 09:51:40"
+    "hash": "38c913fa5e21e8a05edb5184f1d4777f",
+    "last_scraped": "2026-07-13 08:42:23"
   },
   "https://docs.openclaw.ai/vps": {
     "title": "Linux server",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vps.md",
-    "hash": "05fbc53e3598433947757b1d4a5f2973",
-    "last_scraped": "2026-07-06 09:51:41"
+    "hash": "6dea306fc2f50cb38c2dcb6e38d32e97",
+    "last_scraped": "2026-07-13 08:42:23"
   },
   "https://docs.openclaw.ai/web": {
     "title": "Web",
@@ -96589,5 +96589,3591 @@
     "title": null,
     "error": true,
     "last_scraped": "2026-07-06 09:54:07"
+  },
+  "https://docs.openclaw.ai/concepts/session-state": {
+    "title": "Session state awareness",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/session-state.md",
+    "hash": "db6cb922da49bf1e9334c8af938df7d8",
+    "last_scraped": "2026-07-13 08:42:24"
+  },
+  "https://docs.openclaw.ai/concepts/session-search": {
+    "title": "Session search",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/session-search.md",
+    "hash": "8663fb14894488a228d2b1f51bc57ce9",
+    "last_scraped": "2026-07-13 08:42:25"
+  },
+  "https://docs.openclaw.ai/tools/show-widget": {
+    "title": "Show widget",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tools/show-widget.md",
+    "hash": "e053645c142d997891e13d61bafae0e8",
+    "last_scraped": "2026-07-13 08:42:25"
+  },
+  "https://docs.openclaw.ai/plugins/vault": {
+    "title": "Vault SecretRefs",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/vault.md",
+    "hash": "e8e4bfb325c306907aa16d6a1a733f58",
+    "last_scraped": "2026-07-13 08:42:26"
+  },
+  "https://docs.openclaw.ai/plugins/codex-supervision": {
+    "title": "Supervise Codex sessions",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/codex-supervision.md",
+    "hash": "fedbfb0cda8cc5eb2171109d234d6591",
+    "last_scraped": "2026-07-13 08:42:27"
+  },
+  "https://docs.openclaw.ai/tools/self-learning": {
+    "title": "Self-learning",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tools/self-learning.md",
+    "hash": "77d2e9a0dff0b8adeb4a6709f79137d0",
+    "last_scraped": "2026-07-13 08:42:27"
+  },
+  "https://docs.openclaw.ai/providers/meta": {
+    "title": "Meta",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers/meta.md",
+    "hash": "60c6b170cc407361aaba9c78907ff51b",
+    "last_scraped": "2026-07-13 08:42:28"
+  },
+  "https://docs.openclaw.ai/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers/longcat.md",
+    "hash": "3fa27742adcede6e4200670e92843e9a",
+    "last_scraped": "2026-07-13 08:42:29"
+  },
+  "https://docs.openclaw.ai/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers/featherless.md",
+    "hash": "0eab9b77934e636e0d874907109e484e",
+    "last_scraped": "2026-07-13 08:42:29"
+  },
+  "https://docs.openclaw.ai/platforms/ios-healthkit": {
+    "title": "HealthKit summaries",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/platforms/ios-healthkit.md",
+    "hash": "b0aa2dbde5b05b1287cf3af8f0e0ba10",
+    "last_scraped": "2026-07-13 08:42:30"
+  },
+  "https://docs.openclaw.ai/gateway/multi-tenant-hosting": {
+    "title": "Multi-tenant hosting",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/multi-tenant-hosting.md",
+    "hash": "afe03cd0800c11807026bdfe1ed5b1bc",
+    "last_scraped": "2026-07-13 08:42:31"
+  },
+  "https://docs.openclaw.ai/nodes/computer-use": {
+    "title": "Computer use",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nodes/computer-use.md",
+    "hash": "25f9521d4550c4e41df00ba03fbf8af2",
+    "last_scraped": "2026-07-13 08:42:32"
+  },
+  "https://docs.openclaw.ai/gateway/restart-recovery": {
+    "title": "Restart recovery",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/restart-recovery.md",
+    "hash": "d81876cbd9d24f5c32854dba19867e9d",
+    "last_scraped": "2026-07-13 08:42:32"
+  },
+  "https://docs.openclaw.ai/web/lobster": {
+    "title": "The Lobster",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/web/lobster.md",
+    "hash": "f645708f8795d9e27e87b0c5e9f36fce",
+    "last_scraped": "2026-07-13 08:42:33"
+  },
+  "https://docs.openclaw.ai/gateway/1password": {
+    "title": "1Password",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/1password.md",
+    "hash": "e223d898d247fcebce424aaeafeceae7",
+    "last_scraped": "2026-07-13 08:42:34"
+  },
+  "https://docs.openclaw.ai/web/workspaces": {
+    "title": "Workspaces",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/web/workspaces.md",
+    "hash": "9151df026a63d7087c543b90a9c2363d",
+    "last_scraped": "2026-07-13 08:42:34"
+  },
+  "https://docs.openclaw.ai/nodes/presence": {
+    "title": "Active computer presence",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nodes/presence.md",
+    "hash": "e5d6b99424a81b34ecd58d2517f2881a",
+    "last_scraped": "2026-07-13 08:42:35"
+  },
+  "https://docs.openclaw.ai/gateway/audit": {
+    "title": "Audit history",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/audit.md",
+    "hash": "afb325a46c43c063a402c264c1d67325",
+    "last_scraped": "2026-07-13 08:42:36"
+  },
+  "https://docs.openclaw.ai/cli/promos": {
+    "title": "Promos",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/cli/promos.md",
+    "hash": "d459843d2d81100fa8cfcd4437161a50",
+    "last_scraped": "2026-07-13 08:42:36"
+  },
+  "https://docs.openclaw.ai/cli/audit": {
+    "title": "Audit records",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/cli/audit.md",
+    "hash": "fe51a0f13212f0c4e9e3b1c87b8d832e",
+    "last_scraped": "2026-07-13 08:42:37"
+  },
+  "https://docs.openclaw.ai/cli/fleet": {
+    "title": "Fleet",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/cli/fleet.md",
+    "hash": "ac1aa88ac18be611a56bf5f616a3d2b5",
+    "last_scraped": "2026-07-13 08:42:38"
+  },
+  "https://docs.openclaw.ai/fr/concepts/session-state": {
+    "title": "Connaissance de l\u2019\u00e9tat de la session",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/concepts/session-state.md",
+    "hash": "5c4c7a1a4d1d939757432584e90067cb",
+    "last_scraped": "2026-07-13 08:42:38"
+  },
+  "https://docs.openclaw.ai/ja-JP/concepts/session-state": {
+    "title": "\u30bb\u30c3\u30b7\u30e7\u30f3\u72b6\u614b\u306e\u8a8d\u8b58",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/concepts/session-state.md",
+    "hash": "d38f591f17ae497c01b0705ef27211c1",
+    "last_scraped": "2026-07-13 08:42:39"
+  },
+  "https://docs.openclaw.ai/es/concepts/session-state": {
+    "title": "Conocimiento del estado de la sesi\u00f3n",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/concepts/session-state.md",
+    "hash": "2cde51430ba84b4cdeb0a03679230832",
+    "last_scraped": "2026-07-13 08:42:40"
+  },
+  "https://docs.openclaw.ai/ko/concepts/session-state": {
+    "title": "\uc138\uc158 \uc0c1\ud0dc \uc778\uc2dd",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/concepts/session-state.md",
+    "hash": "a37e0f916d0e87ef756e86e20bc49a19",
+    "last_scraped": "2026-07-13 08:42:40"
+  },
+  "https://docs.openclaw.ai/concepts/session-state.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:42:41"
+  },
+  "https://docs.openclaw.ai/zh-TW/concepts/session-state": {
+    "title": "\u5de5\u4f5c\u968e\u6bb5\u72c0\u614b\u611f\u77e5",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/concepts/session-state.md",
+    "hash": "7c380ced4d39be9b395dd94be871a9f7",
+    "last_scraped": "2026-07-13 08:42:42"
+  },
+  "https://docs.openclaw.ai/pt-BR/concepts/session-state": {
+    "title": "Reconhecimento do estado da sess\u00e3o",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/concepts/session-state.md",
+    "hash": "76c03d20d97dbe4da2735fca1e2c62c4",
+    "last_scraped": "2026-07-13 08:42:42"
+  },
+  "https://docs.openclaw.ai/zh-CN/concepts/session-state": {
+    "title": "\u4f1a\u8bdd\u72b6\u6001\u611f\u77e5",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/concepts/session-state.md",
+    "hash": "49cf78c4d02fd74f3a6b84ff3134049b",
+    "last_scraped": "2026-07-13 08:42:43"
+  },
+  "https://docs.openclaw.ai/es/concepts/session-search": {
+    "title": "B\u00fasqueda de sesiones",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/concepts/session-search.md",
+    "hash": "0272baae4e74d579ce521e0310c4005e",
+    "last_scraped": "2026-07-13 08:42:44"
+  },
+  "https://docs.openclaw.ai/de/concepts/session-search": {
+    "title": "Sitzungssuche",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/concepts/session-search.md",
+    "hash": "d4723937b1430faeecdf8f07ed9d376b",
+    "last_scraped": "2026-07-13 08:42:44"
+  },
+  "https://docs.openclaw.ai/fr/concepts/session-search": {
+    "title": "Recherche de sessions",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/concepts/session-search.md",
+    "hash": "057410b5a95be454d05dc2f314da1474",
+    "last_scraped": "2026-07-13 08:42:45"
+  },
+  "https://docs.openclaw.ai/ja-JP/concepts/session-search": {
+    "title": "\u30bb\u30c3\u30b7\u30e7\u30f3\u691c\u7d22",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/concepts/session-search.md",
+    "hash": "edfcc6181992007b2e577a9fd5bd1797",
+    "last_scraped": "2026-07-13 08:42:46"
+  },
+  "https://docs.openclaw.ai/ko/concepts/session-search": {
+    "title": "\uc138\uc158 \uac80\uc0c9",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/concepts/session-search.md",
+    "hash": "9fb698dc8267cf5a237f43aed6e66be5",
+    "last_scraped": "2026-07-13 08:42:47"
+  },
+  "https://docs.openclaw.ai/zh-TW/concepts/session-search": {
+    "title": "\u5de5\u4f5c\u968e\u6bb5\u641c\u5c0b",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/concepts/session-search.md",
+    "hash": "f1d67dac8cf92f3c695842b019c81376",
+    "last_scraped": "2026-07-13 08:42:47"
+  },
+  "https://docs.openclaw.ai/zh-CN/concepts/session-search": {
+    "title": "\u4f1a\u8bdd\u641c\u7d22",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/concepts/session-search.md",
+    "hash": "f46d6a63387a1cce200ab8c6a72c5d7a",
+    "last_scraped": "2026-07-13 08:42:48"
+  },
+  "https://docs.openclaw.ai/pt-BR/concepts/session-search": {
+    "title": "Pesquisa de sess\u00f5es",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/concepts/session-search.md",
+    "hash": "9d388bbb9a590ad22f46020e1cfcd415",
+    "last_scraped": "2026-07-13 08:42:49"
+  },
+  "https://docs.openclaw.ai/concepts/session-search.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:42:49"
+  },
+  "https://docs.openclaw.ai/ja-JP/tools/show-widget": {
+    "title": "\u30a6\u30a3\u30b8\u30a7\u30c3\u30c8\u3092\u8868\u793a",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/tools/show-widget.md",
+    "hash": "62bb3232bbeae37714a381cbd783a1aa",
+    "last_scraped": "2026-07-13 08:42:50"
+  },
+  "https://docs.openclaw.ai/nl/tools/show-widget": {
+    "title": "Widget weergeven",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/tools/show-widget.md",
+    "hash": "de3e2a1850fbd8cda24eea004ef659f8",
+    "last_scraped": "2026-07-13 08:42:50"
+  },
+  "https://docs.openclaw.ai/de/tools/show-widget": {
+    "title": "Widget anzeigen",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/tools/show-widget.md",
+    "hash": "9af4c396316e0465f084860572167114",
+    "last_scraped": "2026-07-13 08:42:51"
+  },
+  "https://docs.openclaw.ai/fr/tools/show-widget": {
+    "title": "Afficher le widget",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/tools/show-widget.md",
+    "hash": "37e2a3644f244b125d3e2bb7bcd60ca8",
+    "last_scraped": "2026-07-13 08:42:52"
+  },
+  "https://docs.openclaw.ai/tr/tools/show-widget": {
+    "title": "Widget'\u0131 g\u00f6ster",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/tools/show-widget.md",
+    "hash": "59283944fac0c2f0ba1bc91b59a8067c",
+    "last_scraped": "2026-07-13 08:42:52"
+  },
+  "https://docs.openclaw.ai/id/tools/show-widget": {
+    "title": "Tampilkan widget",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/tools/show-widget.md",
+    "hash": "78c4358716a7dbfe08628fdd47a243e0",
+    "last_scraped": "2026-07-13 08:42:53"
+  },
+  "https://docs.openclaw.ai/zh-TW/tools/show-widget": {
+    "title": "\u986f\u793a\u5c0f\u5de5\u5177",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/tools/show-widget.md",
+    "hash": "e6f2d639bbb7e53fdb9f82522ae8a850",
+    "last_scraped": "2026-07-13 08:42:54"
+  },
+  "https://docs.openclaw.ai/uk/tools/show-widget": {
+    "title": "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u0438 \u0432\u0456\u0434\u0436\u0435\u0442",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/tools/show-widget.md",
+    "hash": "ef80318e0b181e929faf91b0f050faed",
+    "last_scraped": "2026-07-13 08:42:54"
+  },
+  "https://docs.openclaw.ai/pt-BR/tools/show-widget": {
+    "title": "Mostrar widget",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/tools/show-widget.md",
+    "hash": "22b73a97af11de9b9d9bea5c8096068f",
+    "last_scraped": "2026-07-13 08:42:55"
+  },
+  "https://docs.openclaw.ai/es/tools/show-widget": {
+    "title": "Mostrar widget",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/tools/show-widget.md",
+    "hash": "f111186cd14a80634a01e28bf4daaf5a",
+    "last_scraped": "2026-07-13 08:42:56"
+  },
+  "https://docs.openclaw.ai/fa/tools/show-widget": {
+    "title": "\u0646\u0645\u0627\u06cc\u0634 \u0648\u06cc\u062c\u062a",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/tools/show-widget.md",
+    "hash": "227fbe40dc5f6bed9a1a494f237e7bfe",
+    "last_scraped": "2026-07-13 08:42:56"
+  },
+  "https://docs.openclaw.ai/ko/tools/show-widget": {
+    "title": "\uc704\uc82f \ud45c\uc2dc",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/tools/show-widget.md",
+    "hash": "1579dff0d59c2679b33f0cbf4f679926",
+    "last_scraped": "2026-07-13 08:42:57"
+  },
+  "https://docs.openclaw.ai/ar/tools/show-widget": {
+    "title": "\u0625\u0638\u0647\u0627\u0631 \u0627\u0644\u0623\u062f\u0627\u0629 \u0627\u0644\u0645\u0635\u063a\u0651\u0631\u0629",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/tools/show-widget.md",
+    "hash": "1b1ee0fc72cc8c46d6dee5619982d243",
+    "last_scraped": "2026-07-13 08:42:58"
+  },
+  "https://docs.openclaw.ai/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:42:58"
+  },
+  "https://docs.openclaw.ai/it/tools/show-widget": {
+    "title": "Mostra widget",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/tools/show-widget.md",
+    "hash": "8f95e284e05c1cea0495fe4a898c0ed6",
+    "last_scraped": "2026-07-13 08:42:59"
+  },
+  "https://docs.openclaw.ai/pl/tools/show-widget": {
+    "title": "Poka\u017c wid\u017cet",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/tools/show-widget.md",
+    "hash": "a832ef977f30f6611564b7206d344a1f",
+    "last_scraped": "2026-07-13 08:43:00"
+  },
+  "https://docs.openclaw.ai/zh-CN/tools/show-widget": {
+    "title": "\u663e\u793a\u5c0f\u7ec4\u4ef6",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/tools/show-widget.md",
+    "hash": "d1e5406df5ab4b8e1ee8ef12df541b5e",
+    "last_scraped": "2026-07-13 08:43:00"
+  },
+  "https://docs.openclaw.ai/th/tools/show-widget": {
+    "title": "\u0e41\u0e2a\u0e14\u0e07\u0e27\u0e34\u0e14\u0e40\u0e08\u0e47\u0e15",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/tools/show-widget.md",
+    "hash": "05cc432db0295e594eaa117a096063f6",
+    "last_scraped": "2026-07-13 08:43:01"
+  },
+  "https://docs.openclaw.ai/ru/tools/show-widget": {
+    "title": "\u041f\u043e\u043a\u0430\u0437\u0430\u0442\u044c \u0432\u0438\u0434\u0436\u0435\u0442",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/tools/show-widget.md",
+    "hash": "79a1ee5a743b133be0aa4979ff6ae04d",
+    "last_scraped": "2026-07-13 08:43:02"
+  },
+  "https://docs.openclaw.ai/vi/tools/show-widget": {
+    "title": "Hi\u1ec3n th\u1ecb ti\u1ec7n \u00edch con",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/tools/show-widget.md",
+    "hash": "5c0dd921d41a46555793c7cf9ecae4c5",
+    "last_scraped": "2026-07-13 08:43:02"
+  },
+  "https://docs.openclaw.ai/de/plugins/vault": {
+    "title": "Vault-SecretRefs",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/plugins/vault.md",
+    "hash": "766932c27876d0fd013c25a0e1e36859",
+    "last_scraped": "2026-07-13 08:43:03"
+  },
+  "https://docs.openclaw.ai/pl/plugins/vault": {
+    "title": "SecretRefs magazynu tajemnic",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/plugins/vault.md",
+    "hash": "6734c3abde2cd7035dec1c5264757ee6",
+    "last_scraped": "2026-07-13 08:43:04"
+  },
+  "https://docs.openclaw.ai/pt-BR/plugins/vault": {
+    "title": "SecretRefs do cofre",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/plugins/vault.md",
+    "hash": "7d6d82d6e30f137239a80df89bda5786",
+    "last_scraped": "2026-07-13 08:43:04"
+  },
+  "https://docs.openclaw.ai/uk/plugins/vault": {
+    "title": "SecretRef-\u0438 \u0441\u0445\u043e\u0432\u0438\u0449\u0430 \u0441\u0435\u043a\u0440\u0435\u0442\u0456\u0432",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/plugins/vault.md",
+    "hash": "7a47fe608c9970497408ab5b4fa4294b",
+    "last_scraped": "2026-07-13 08:43:05"
+  },
+  "https://docs.openclaw.ai/es/plugins/vault": {
+    "title": "SecretRefs de la b\u00f3veda",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/plugins/vault.md",
+    "hash": "dca4fb462fb97e9e8cd26c1c598e0a58",
+    "last_scraped": "2026-07-13 08:43:06"
+  },
+  "https://docs.openclaw.ai/fr/plugins/vault": {
+    "title": "SecretRefs du coffre-fort",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/plugins/vault.md",
+    "hash": "5a30b3ec832372315852a495b39875fb",
+    "last_scraped": "2026-07-13 08:43:07"
+  },
+  "https://docs.openclaw.ai/id/plugins/vault": {
+    "title": "SecretRefs Vault",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/plugins/vault.md",
+    "hash": "5bd3dc5c5c53e1fda79bb3ac36818c17",
+    "last_scraped": "2026-07-13 08:43:07"
+  },
+  "https://docs.openclaw.ai/fa/plugins/vault": {
+    "title": "\u0627\u0631\u062c\u0627\u0639\u200c\u0647\u0627\u06cc \u0631\u0627\u0632 Vault",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/plugins/vault.md",
+    "hash": "ec7f4bbdf104d4f696c619f96ad1a78f",
+    "last_scraped": "2026-07-13 08:43:08"
+  },
+  "https://docs.openclaw.ai/th/plugins/vault": {
+    "title": "SecretRefs \u0e02\u0e2d\u0e07 Vault",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/plugins/vault.md",
+    "hash": "040eefc464b258a32968c2b67a556717",
+    "last_scraped": "2026-07-13 08:43:09"
+  },
+  "https://docs.openclaw.ai/nl/plugins/vault": {
+    "title": "Kluis-SecretRefs",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/plugins/vault.md",
+    "hash": "f1990656f060d83cee6c519e1b12ebc1",
+    "last_scraped": "2026-07-13 08:43:09"
+  },
+  "https://docs.openclaw.ai/zh-TW/plugins/vault": {
+    "title": "\u4fdd\u96aa\u5eab SecretRefs",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/plugins/vault.md",
+    "hash": "22f76ce33a8da378eac1b48b1555d74e",
+    "last_scraped": "2026-07-13 08:43:10"
+  },
+  "https://docs.openclaw.ai/tr/plugins/vault": {
+    "title": "Kasa SecretRef'leri",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/plugins/vault.md",
+    "hash": "45bb4b51b7dbf8120c519c5cd0bbab62",
+    "last_scraped": "2026-07-13 08:43:11"
+  },
+  "https://docs.openclaw.ai/ja-JP/plugins/vault": {
+    "title": "Vault SecretRef",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/plugins/vault.md",
+    "hash": "ec30770b0944f8f547adc937bf12cdee",
+    "last_scraped": "2026-07-13 08:43:12"
+  },
+  "https://docs.openclaw.ai/vi/plugins/vault": {
+    "title": "SecretRef c\u1ee7a kho b\u00ed m\u1eadt",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/plugins/vault.md",
+    "hash": "17055fcdbe8cad650ecde0c8821ac5d6",
+    "last_scraped": "2026-07-13 08:43:12"
+  },
+  "https://docs.openclaw.ai/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:43:13"
+  },
+  "https://docs.openclaw.ai/it/plugins/vault": {
+    "title": "SecretRef del vault",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/plugins/vault.md",
+    "hash": "8d77325a525b56221e04eab0fdb8747f",
+    "last_scraped": "2026-07-13 08:43:14"
+  },
+  "https://docs.openclaw.ai/zh-CN/plugins/vault": {
+    "title": "\u4fdd\u7ba1\u5e93 SecretRefs",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/plugins/vault.md",
+    "hash": "4d5ac5673b8a198c410ccb624291ce70",
+    "last_scraped": "2026-07-13 08:43:14"
+  },
+  "https://docs.openclaw.ai/ar/plugins/vault": {
+    "title": "\u0645\u0631\u0627\u062c\u0639 \u0623\u0633\u0631\u0627\u0631 \u0627\u0644\u062e\u0632\u0646\u0629",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/plugins/vault.md",
+    "hash": "2db9207056ae3df21ae9a5e45b144e89",
+    "last_scraped": "2026-07-13 08:43:15"
+  },
+  "https://docs.openclaw.ai/ru/plugins/vault": {
+    "title": "SecretRefs \u0445\u0440\u0430\u043d\u0438\u043b\u0438\u0449\u0430 \u0441\u0435\u043a\u0440\u0435\u0442\u043e\u0432",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/plugins/vault.md",
+    "hash": "d7eca993ceebe03ef8b9a7bfa4285aec",
+    "last_scraped": "2026-07-13 08:43:16"
+  },
+  "https://docs.openclaw.ai/ko/plugins/vault": {
+    "title": "Vault SecretRef\ub4e4",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/plugins/vault.md",
+    "hash": "704aedd4ee3654a40acda4bfd0e4f012",
+    "last_scraped": "2026-07-13 08:43:16"
+  },
+  "https://docs.openclaw.ai/fr/plugins/codex-supervision": {
+    "title": "Superviser les sessions Codex",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/plugins/codex-supervision.md",
+    "hash": "ceb01871b694d72d30baa60a524d11e8",
+    "last_scraped": "2026-07-13 08:43:17"
+  },
+  "https://docs.openclaw.ai/plugins/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:43:18"
+  },
+  "https://docs.openclaw.ai/specs/codex-supervision": {
+    "title": "Codex supervision",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/specs/codex-supervision.md",
+    "hash": "f967de768e5da5aa8cba248eb53f26e3",
+    "last_scraped": "2026-07-13 08:43:18"
+  },
+  "https://docs.openclaw.ai/pt-BR/plugins/codex-supervision": {
+    "title": "Supervisionar sess\u00f5es do Codex",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/plugins/codex-supervision.md",
+    "hash": "ec53f8de98d589105798f169341ffe31",
+    "last_scraped": "2026-07-13 08:43:19"
+  },
+  "https://docs.openclaw.ai/ko/plugins/codex-supervision": {
+    "title": "Codex \uc138\uc158 \uac10\ub3c5\ud558\uae30",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/plugins/codex-supervision.md",
+    "hash": "589144e0efdf08b1476b110a49b079f3",
+    "last_scraped": "2026-07-13 08:43:20"
+  },
+  "https://docs.openclaw.ai/zh-TW/plugins/codex-supervision": {
+    "title": "\u76e3\u7763 Codex \u5de5\u4f5c\u968e\u6bb5",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/plugins/codex-supervision.md",
+    "hash": "ea60c7b9b474c094ae48f73ff92b4d52",
+    "last_scraped": "2026-07-13 08:43:20"
+  },
+  "https://docs.openclaw.ai/es/plugins/codex-supervision": {
+    "title": "Supervisar sesiones de Codex",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/plugins/codex-supervision.md",
+    "hash": "030a1b6fb7bcc67d77dee2d389a188af",
+    "last_scraped": "2026-07-13 08:43:21"
+  },
+  "https://docs.openclaw.ai/zh-CN/plugins/codex-supervision": {
+    "title": "\u76d1\u7763 Codex \u4f1a\u8bdd",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/plugins/codex-supervision.md",
+    "hash": "8bedc1dfc70f4f0beeb616f9cc586630",
+    "last_scraped": "2026-07-13 08:43:22"
+  },
+  "https://docs.openclaw.ai/ja-JP/plugins/codex-supervision": {
+    "title": "Codex \u30bb\u30c3\u30b7\u30e7\u30f3\u3092\u76e3\u8996\u3059\u308b",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/plugins/codex-supervision.md",
+    "hash": "5c78e04767b13e7019657d37f3a00221",
+    "last_scraped": "2026-07-13 08:43:23"
+  },
+  "https://docs.openclaw.ai/de/plugins/codex-supervision": {
+    "title": "Codex-Sitzungen \u00fcberwachen",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/plugins/codex-supervision.md",
+    "hash": "7d772553a150328c9972de34c6cdc5e1",
+    "last_scraped": "2026-07-13 08:43:23"
+  },
+  "https://docs.openclaw.ai/tools/self-learning.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:43:24"
+  },
+  "https://docs.openclaw.ai/ar/providers/meta": {
+    "title": "\u0628\u064a\u0627\u0646\u0627\u062a \u0648\u0635\u0641\u064a\u0629",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/providers/meta.md",
+    "hash": "60020d52e4dd9ac7c77d223d70106dab",
+    "last_scraped": "2026-07-13 08:43:25"
+  },
+  "https://docs.openclaw.ai/it/providers/meta": {
+    "title": "Meta",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/providers/meta.md",
+    "hash": "f9499230bbe8d4657931dd7909bbdbb8",
+    "last_scraped": "2026-07-13 08:43:25"
+  },
+  "https://docs.openclaw.ai/pl/providers/meta": {
+    "title": "Meta",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/providers/meta.md",
+    "hash": "39b8b7c56f81f5d634869d34dcab7a67",
+    "last_scraped": "2026-07-13 08:43:26"
+  },
+  "https://docs.openclaw.ai/th/providers/meta": {
+    "title": "\u0e40\u0e21\u0e15\u0e32",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/providers/meta.md",
+    "hash": "b89005e76d828b785601b48da6c3c1ba",
+    "last_scraped": "2026-07-13 08:43:27"
+  },
+  "https://docs.openclaw.ai/pt-BR/providers/meta": {
+    "title": "Metadados",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/providers/meta.md",
+    "hash": "cf74bc728d15a2abbed6bda88ed9acdd",
+    "last_scraped": "2026-07-13 08:43:27"
+  },
+  "https://docs.openclaw.ai/zh-TW/providers/meta": {
+    "title": "\u4e2d\u7e7c\u8cc7\u6599",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/providers/meta.md",
+    "hash": "f2eaad694d61227c489b4c6e218b3e18",
+    "last_scraped": "2026-07-13 08:43:28"
+  },
+  "https://docs.openclaw.ai/fa/providers/meta": {
+    "title": "\u0641\u0631\u0627\u062f\u0627\u062f\u0647",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/providers/meta.md",
+    "hash": "37d5aeb9f8337d4488a5483c6f618cbd",
+    "last_scraped": "2026-07-13 08:43:29"
+  },
+  "https://docs.openclaw.ai/zh-CN/providers/meta": {
+    "title": "Meta",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/providers/meta.md",
+    "hash": "f2efe510d2f77e3189932a5cdd9f812e",
+    "last_scraped": "2026-07-13 08:43:29"
+  },
+  "https://docs.openclaw.ai/ko/providers/meta": {
+    "title": "\uba54\ud0c0",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/providers/meta.md",
+    "hash": "36e92d4c0c74a283386f0e30ad106055",
+    "last_scraped": "2026-07-13 08:43:30"
+  },
+  "https://docs.openclaw.ai/vi/providers/meta": {
+    "title": "Si\u00eau d\u1eef li\u1ec7u",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/providers/meta.md",
+    "hash": "83e6260c0fe77f3846da8be183287145",
+    "last_scraped": "2026-07-13 08:43:31"
+  },
+  "https://docs.openclaw.ai/de/providers/meta": {
+    "title": "Metadaten",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/providers/meta.md",
+    "hash": "742b06be7efe39ded57b0d8e184250e8",
+    "last_scraped": "2026-07-13 08:43:31"
+  },
+  "https://docs.openclaw.ai/es/providers/meta": {
+    "title": "Metadatos",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/providers/meta.md",
+    "hash": "91c0684b6907f9a6746fc67f136f438b",
+    "last_scraped": "2026-07-13 08:43:32"
+  },
+  "https://docs.openclaw.ai/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:43:33"
+  },
+  "https://docs.openclaw.ai/tr/providers/meta": {
+    "title": "Meta",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/providers/meta.md",
+    "hash": "dc6b73be15dc415a0d326c387c36f0c2",
+    "last_scraped": "2026-07-13 08:43:33"
+  },
+  "https://docs.openclaw.ai/nl/providers/meta": {
+    "title": "Meta",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/providers/meta.md",
+    "hash": "a3180e70e3072c46b3f45430d2132f42",
+    "last_scraped": "2026-07-13 08:43:34"
+  },
+  "https://docs.openclaw.ai/ja-JP/providers/meta": {
+    "title": "\u30e1\u30bf",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/providers/meta.md",
+    "hash": "5d92f983d4b944ac030e0447e55ca942",
+    "last_scraped": "2026-07-13 08:43:35"
+  },
+  "https://docs.openclaw.ai/uk/providers/meta": {
+    "title": "\u041c\u0435\u0442\u0430",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/providers/meta.md",
+    "hash": "d817e68cb53cd1c94d3b3745586f010b",
+    "last_scraped": "2026-07-13 08:43:35"
+  },
+  "https://docs.openclaw.ai/id/providers/meta": {
+    "title": "Meta",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/providers/meta.md",
+    "hash": "b798d57f009349c88f1ac5f14fd47bbb",
+    "last_scraped": "2026-07-13 08:43:36"
+  },
+  "https://docs.openclaw.ai/fr/providers/meta": {
+    "title": "M\u00e9ta",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/providers/meta.md",
+    "hash": "3f27b205ed8c4ec260af4a23fe7e257f",
+    "last_scraped": "2026-07-13 08:43:37"
+  },
+  "https://docs.openclaw.ai/zh-CN/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/providers/longcat.md",
+    "hash": "cd4e8130925077935558e2443bb18fca",
+    "last_scraped": "2026-07-13 08:43:37"
+  },
+  "https://docs.openclaw.ai/pl/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/providers/longcat.md",
+    "hash": "53d6ae19cfbd45f10132087ba9d44b4b",
+    "last_scraped": "2026-07-13 08:43:38"
+  },
+  "https://docs.openclaw.ai/es/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/providers/longcat.md",
+    "hash": "aae6f9b3ced6732b5299a1b934cf0e88",
+    "last_scraped": "2026-07-13 08:43:39"
+  },
+  "https://docs.openclaw.ai/it/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/providers/longcat.md",
+    "hash": "03afa9db817d72f2039770cbacedc4c7",
+    "last_scraped": "2026-07-13 08:43:39"
+  },
+  "https://docs.openclaw.ai/ja-JP/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/providers/longcat.md",
+    "hash": "5dfd97cc8e4462414ea717ab92e8606d",
+    "last_scraped": "2026-07-13 08:43:40"
+  },
+  "https://docs.openclaw.ai/vi/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/providers/longcat.md",
+    "hash": "ac4d5619bdf4b97c8b21a7a3c198137b",
+    "last_scraped": "2026-07-13 08:43:41"
+  },
+  "https://docs.openclaw.ai/de/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/providers/longcat.md",
+    "hash": "6a52feb12b8612634e5a1fc44c9d69c9",
+    "last_scraped": "2026-07-13 08:43:41"
+  },
+  "https://docs.openclaw.ai/fa/providers/longcat": {
+    "title": "\u0644\u0627\u0646\u06af\u200c\u06a9\u062a",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/providers/longcat.md",
+    "hash": "4cfb11bba971aeb41fcec793de1f7a19",
+    "last_scraped": "2026-07-13 08:43:42"
+  },
+  "https://docs.openclaw.ai/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:43:43"
+  },
+  "https://docs.openclaw.ai/uk/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/providers/longcat.md",
+    "hash": "9424c615b4331b9a593f1d93d73e2c0a",
+    "last_scraped": "2026-07-13 08:43:43"
+  },
+  "https://docs.openclaw.ai/ru/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/providers/longcat.md",
+    "hash": "4c7587e6dcedaea801e19c035e064297",
+    "last_scraped": "2026-07-13 08:43:44"
+  },
+  "https://docs.openclaw.ai/fr/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/providers/longcat.md",
+    "hash": "c742a5e4ee82e0cbe30977a0eba7b792",
+    "last_scraped": "2026-07-13 08:43:45"
+  },
+  "https://docs.openclaw.ai/pt-BR/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/providers/longcat.md",
+    "hash": "4828563c374b336c4740ee9d4f96b6e7",
+    "last_scraped": "2026-07-13 08:43:45"
+  },
+  "https://docs.openclaw.ai/id/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/providers/longcat.md",
+    "hash": "6d39d1af49a134ad8cf8b2030b7bd177",
+    "last_scraped": "2026-07-13 08:43:46"
+  },
+  "https://docs.openclaw.ai/th/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/providers/longcat.md",
+    "hash": "62eead87f434831d9e7ed912eab4c3b3",
+    "last_scraped": "2026-07-13 08:43:47"
+  },
+  "https://docs.openclaw.ai/ar/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/providers/longcat.md",
+    "hash": "c43102dad0992cce69a98393ce5c3777",
+    "last_scraped": "2026-07-13 08:43:47"
+  },
+  "https://docs.openclaw.ai/zh-TW/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/providers/longcat.md",
+    "hash": "eb5d774e8661bf77cd541e834b2bb687",
+    "last_scraped": "2026-07-13 08:43:48"
+  },
+  "https://docs.openclaw.ai/nl/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/providers/longcat.md",
+    "hash": "074390ab4d3f0fd0402ab58d1a825dc2",
+    "last_scraped": "2026-07-13 08:43:49"
+  },
+  "https://docs.openclaw.ai/tr/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/providers/longcat.md",
+    "hash": "b033145df8772654aeaec955111181af",
+    "last_scraped": "2026-07-13 08:43:49"
+  },
+  "https://docs.openclaw.ai/ko/providers/longcat": {
+    "title": "LongCat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/providers/longcat.md",
+    "hash": "ae1022d678b7b401669510e427c0a6b6",
+    "last_scraped": "2026-07-13 08:43:50"
+  },
+  "https://docs.openclaw.ai/uk/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/providers/featherless.md",
+    "hash": "dcd5805fc20104ba8bfcf5f81a930851",
+    "last_scraped": "2026-07-13 08:43:51"
+  },
+  "https://docs.openclaw.ai/it/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/providers/featherless.md",
+    "hash": "3fc9f18de43be626d85f6d613c461177",
+    "last_scraped": "2026-07-13 08:43:51"
+  },
+  "https://docs.openclaw.ai/ja-JP/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/providers/featherless.md",
+    "hash": "9885780e7b56933895fb052d778eaa8f",
+    "last_scraped": "2026-07-13 08:43:52"
+  },
+  "https://docs.openclaw.ai/fa/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/providers/featherless.md",
+    "hash": "5a46583e3b603a09f77d33b8a7851257",
+    "last_scraped": "2026-07-13 08:43:53"
+  },
+  "https://docs.openclaw.ai/pl/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/providers/featherless.md",
+    "hash": "32cbf712729f1681daa34aa4341f6867",
+    "last_scraped": "2026-07-13 08:43:53"
+  },
+  "https://docs.openclaw.ai/vi/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/providers/featherless.md",
+    "hash": "b73400ed104844fa00a658aab6a463f7",
+    "last_scraped": "2026-07-13 08:43:54"
+  },
+  "https://docs.openclaw.ai/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:43:55"
+  },
+  "https://docs.openclaw.ai/zh-TW/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/providers/featherless.md",
+    "hash": "98293e7584a8babb919e83eaea13fa75",
+    "last_scraped": "2026-07-13 08:43:55"
+  },
+  "https://docs.openclaw.ai/pt-BR/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/providers/featherless.md",
+    "hash": "86aa6104cf5e4d3b80d9b86ed5ad603c",
+    "last_scraped": "2026-07-13 08:43:56"
+  },
+  "https://docs.openclaw.ai/nl/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/providers/featherless.md",
+    "hash": "236dd019a25f6f48dd46682e6ffff065",
+    "last_scraped": "2026-07-13 08:43:57"
+  },
+  "https://docs.openclaw.ai/tr/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/providers/featherless.md",
+    "hash": "5e3b323c3ed1aa42531fd240c0768d98",
+    "last_scraped": "2026-07-13 08:43:57"
+  },
+  "https://docs.openclaw.ai/fr/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/providers/featherless.md",
+    "hash": "4def7a2e11e266b28b637f33624fc32e",
+    "last_scraped": "2026-07-13 08:43:58"
+  },
+  "https://docs.openclaw.ai/es/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/providers/featherless.md",
+    "hash": "bcaa3440372bb28dcea3e1b6482e54b6",
+    "last_scraped": "2026-07-13 08:43:59"
+  },
+  "https://docs.openclaw.ai/th/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/providers/featherless.md",
+    "hash": "b2e088a2c382d8a8f32b36cc8a60ed71",
+    "last_scraped": "2026-07-13 08:43:59"
+  },
+  "https://docs.openclaw.ai/ko/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/providers/featherless.md",
+    "hash": "642a4db9ed12ffe9c43ab4ee16d9f38c",
+    "last_scraped": "2026-07-13 08:44:00"
+  },
+  "https://docs.openclaw.ai/zh-CN/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/providers/featherless.md",
+    "hash": "848de35a5d2ba91e297e50d07a5d122e",
+    "last_scraped": "2026-07-13 08:44:01"
+  },
+  "https://docs.openclaw.ai/id/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/providers/featherless.md",
+    "hash": "736de0267b903df38549599490f19726",
+    "last_scraped": "2026-07-13 08:44:01"
+  },
+  "https://docs.openclaw.ai/de/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/providers/featherless.md",
+    "hash": "be237d4fcbdb5a7c1737329ffa5d3e6a",
+    "last_scraped": "2026-07-13 08:44:02"
+  },
+  "https://docs.openclaw.ai/ar/providers/featherless": {
+    "title": "Featherless AI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/providers/featherless.md",
+    "hash": "a43b71e3dc0736b56793aff0f8d456ac",
+    "last_scraped": "2026-07-13 08:44:03"
+  },
+  "https://docs.openclaw.ai/platforms/ios-healthkit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:44:03"
+  },
+  "https://docs.openclaw.ai/pt-BR/gateway/multi-tenant-hosting": {
+    "title": "Hospedagem multi-tenant",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/gateway/multi-tenant-hosting.md",
+    "hash": "7e8594326dbb7ccd90b3828590d50f89",
+    "last_scraped": "2026-07-13 08:44:04"
+  },
+  "https://docs.openclaw.ai/ja-JP/gateway/multi-tenant-hosting": {
+    "title": "\u30de\u30eb\u30c1\u30c6\u30ca\u30f3\u30c8\u30db\u30b9\u30c6\u30a3\u30f3\u30b0",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/gateway/multi-tenant-hosting.md",
+    "hash": "bbbe6735cbfe91d011104558fa7a0ef0",
+    "last_scraped": "2026-07-13 08:44:05"
+  },
+  "https://docs.openclaw.ai/de/gateway/multi-tenant-hosting": {
+    "title": "Mandantenf\u00e4higes Hosting",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/gateway/multi-tenant-hosting.md",
+    "hash": "8fbf3fe738e24fca869cb1d205d98c77",
+    "last_scraped": "2026-07-13 08:44:05"
+  },
+  "https://docs.openclaw.ai/fr/gateway/multi-tenant-hosting": {
+    "title": "H\u00e9bergement mutualis\u00e9",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/gateway/multi-tenant-hosting.md",
+    "hash": "8e85c53cfd05450e331eda0c1eba7213",
+    "last_scraped": "2026-07-13 08:44:06"
+  },
+  "https://docs.openclaw.ai/ko/gateway/multi-tenant-hosting": {
+    "title": "\uba40\ud2f0\ud14c\ub10c\ud2b8 \ud638\uc2a4\ud305",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/gateway/multi-tenant-hosting.md",
+    "hash": "a93605c030008674aa58b3777037ed67",
+    "last_scraped": "2026-07-13 08:44:07"
+  },
+  "https://docs.openclaw.ai/gateway/multi-tenant-hosting.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:44:07"
+  },
+  "https://docs.openclaw.ai/zh-TW/gateway/multi-tenant-hosting": {
+    "title": "\u591a\u79df\u6236\u8a17\u7ba1",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/gateway/multi-tenant-hosting.md",
+    "hash": "0f0408ab632029a0fdcec80e9d901d11",
+    "last_scraped": "2026-07-13 08:44:08"
+  },
+  "https://docs.openclaw.ai/zh-CN/gateway/multi-tenant-hosting": {
+    "title": "\u591a\u79df\u6237\u6258\u7ba1",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/gateway/multi-tenant-hosting.md",
+    "hash": "56cc72d3551b3585b43fac32690316b9",
+    "last_scraped": "2026-07-13 08:44:09"
+  },
+  "https://docs.openclaw.ai/es/gateway/multi-tenant-hosting": {
+    "title": "Alojamiento multiinquilino",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/gateway/multi-tenant-hosting.md",
+    "hash": "9d2b6d6fbaea962a5c37ce009627b5c0",
+    "last_scraped": "2026-07-13 08:44:09"
+  },
+  "https://docs.openclaw.ai/vi/nodes/computer-use": {
+    "title": "S\u1eed d\u1ee5ng m\u00e1y t\u00ednh",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/nodes/computer-use.md",
+    "hash": "7865aac266061a9b3e89c8a8ed5088a4",
+    "last_scraped": "2026-07-13 08:44:10"
+  },
+  "https://docs.openclaw.ai/uk/nodes/computer-use": {
+    "title": "\u041a\u0435\u0440\u0443\u0432\u0430\u043d\u043d\u044f \u043a\u043e\u043c\u043f\u2019\u044e\u0442\u0435\u0440\u043e\u043c",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/nodes/computer-use.md",
+    "hash": "063578b92cdcee3326f2eb367471236a",
+    "last_scraped": "2026-07-13 08:44:11"
+  },
+  "https://docs.openclaw.ai/pl/nodes/computer-use": {
+    "title": "Obs\u0142uga komputera",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/nodes/computer-use.md",
+    "hash": "7df0e557488e582c83daa1f2bbed3cbe",
+    "last_scraped": "2026-07-13 08:44:11"
+  },
+  "https://docs.openclaw.ai/tr/nodes/computer-use": {
+    "title": "Bilgisayar kullan\u0131m\u0131",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/nodes/computer-use.md",
+    "hash": "69b7551e653cae3de521ebc1416a0e8e",
+    "last_scraped": "2026-07-13 08:44:12"
+  },
+  "https://docs.openclaw.ai/ko/nodes/computer-use": {
+    "title": "\ucef4\ud4e8\ud130 \uc0ac\uc6a9",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/nodes/computer-use.md",
+    "hash": "bf3eb9d838e3329583a360f4fec725f7",
+    "last_scraped": "2026-07-13 08:44:13"
+  },
+  "https://docs.openclaw.ai/it/nodes/computer-use": {
+    "title": "Uso del computer",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/nodes/computer-use.md",
+    "hash": "85d17a9cdb563c4330fbe41593438009",
+    "last_scraped": "2026-07-13 08:44:13"
+  },
+  "https://docs.openclaw.ai/nl/nodes/computer-use": {
+    "title": "Computergebruik",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/nodes/computer-use.md",
+    "hash": "d1335334083266872142af8f46ff1d4d",
+    "last_scraped": "2026-07-13 08:44:14"
+  },
+  "https://docs.openclaw.ai/ja-JP/nodes/computer-use": {
+    "title": "\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc\u64cd\u4f5c",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/nodes/computer-use.md",
+    "hash": "803ebb99048ae72bbedcb63cea114197",
+    "last_scraped": "2026-07-13 08:44:15"
+  },
+  "https://docs.openclaw.ai/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:44:15"
+  },
+  "https://docs.openclaw.ai/es/nodes/computer-use": {
+    "title": "Uso de la computadora",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/nodes/computer-use.md",
+    "hash": "10e624ca5dce6b15c28e9a6e62899bea",
+    "last_scraped": "2026-07-13 08:44:16"
+  },
+  "https://docs.openclaw.ai/id/nodes/computer-use": {
+    "title": "Penggunaan komputer",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/nodes/computer-use.md",
+    "hash": "9b776eb0e3681d83975e9b6412ff5db3",
+    "last_scraped": "2026-07-13 08:44:17"
+  },
+  "https://docs.openclaw.ai/zh-CN/nodes/computer-use": {
+    "title": "\u8ba1\u7b97\u673a\u4f7f\u7528",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/nodes/computer-use.md",
+    "hash": "380f47944a12e2dfeefd2c59043bdee3",
+    "last_scraped": "2026-07-13 08:44:17"
+  },
+  "https://docs.openclaw.ai/pt-BR/nodes/computer-use": {
+    "title": "Uso do computador",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/nodes/computer-use.md",
+    "hash": "fed39e15b4f83516663db2b50f032185",
+    "last_scraped": "2026-07-13 08:44:18"
+  },
+  "https://docs.openclaw.ai/de/nodes/computer-use": {
+    "title": "Computernutzung",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/nodes/computer-use.md",
+    "hash": "ebfb3e042002c5bde3114a8bd310b413",
+    "last_scraped": "2026-07-13 08:44:19"
+  },
+  "https://docs.openclaw.ai/zh-TW/nodes/computer-use": {
+    "title": "\u96fb\u8166\u64cd\u4f5c",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/nodes/computer-use.md",
+    "hash": "fb2aea61bd7d811f00af7c6a483bfa58",
+    "last_scraped": "2026-07-13 08:44:19"
+  },
+  "https://docs.openclaw.ai/ar/nodes/computer-use": {
+    "title": "\u0627\u0633\u062a\u062e\u062f\u0627\u0645 \u0627\u0644\u062d\u0627\u0633\u0648\u0628",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/nodes/computer-use.md",
+    "hash": "5646b46f0d60106e7625b4025b5934c1",
+    "last_scraped": "2026-07-13 08:44:20"
+  },
+  "https://docs.openclaw.ai/fa/nodes/computer-use": {
+    "title": "\u0627\u0633\u062a\u0641\u0627\u062f\u0647 \u0627\u0632 \u0631\u0627\u06cc\u0627\u0646\u0647",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/nodes/computer-use.md",
+    "hash": "08e7368ba1c1ab879c780f2c99f6e07b",
+    "last_scraped": "2026-07-13 08:44:21"
+  },
+  "https://docs.openclaw.ai/fr/nodes/computer-use": {
+    "title": "Utilisation de l\u2019ordinateur",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/nodes/computer-use.md",
+    "hash": "bf6746d7285d319408902e5119e9c809",
+    "last_scraped": "2026-07-13 08:44:21"
+  },
+  "https://docs.openclaw.ai/th/nodes/computer-use": {
+    "title": "\u0e01\u0e32\u0e23\u0e43\u0e0a\u0e49\u0e07\u0e32\u0e19\u0e04\u0e2d\u0e21\u0e1e\u0e34\u0e27\u0e40\u0e15\u0e2d\u0e23\u0e4c",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/nodes/computer-use.md",
+    "hash": "c212d9c7425d7ae1b904054671b24d15",
+    "last_scraped": "2026-07-13 08:44:22"
+  },
+  "https://docs.openclaw.ai/ko/gateway/restart-recovery": {
+    "title": "\uc7ac\uc2dc\uc791 \ubcf5\uad6c",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/gateway/restart-recovery.md",
+    "hash": "4ae03b503de317a8e6ee142052604564",
+    "last_scraped": "2026-07-13 08:44:23"
+  },
+  "https://docs.openclaw.ai/es/gateway/restart-recovery": {
+    "title": "Recuperaci\u00f3n tras el reinicio",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/gateway/restart-recovery.md",
+    "hash": "4931c45647f9840b6e012d80066f62e4",
+    "last_scraped": "2026-07-13 08:44:23"
+  },
+  "https://docs.openclaw.ai/ja-JP/gateway/restart-recovery": {
+    "title": "\u518d\u8d77\u52d5\u304b\u3089\u306e\u5fa9\u65e7",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/gateway/restart-recovery.md",
+    "hash": "9b920b162ea997c687d594d00e4b8010",
+    "last_scraped": "2026-07-13 08:44:24"
+  },
+  "https://docs.openclaw.ai/zh-TW/gateway/restart-recovery": {
+    "title": "\u91cd\u65b0\u555f\u52d5\u5fa9\u539f",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/gateway/restart-recovery.md",
+    "hash": "74e1a8bddcc072e0e2b9d59dfa234421",
+    "last_scraped": "2026-07-13 08:44:25"
+  },
+  "https://docs.openclaw.ai/de/gateway/restart-recovery": {
+    "title": "Neustartwiederherstellung",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/gateway/restart-recovery.md",
+    "hash": "ead366fd41b4ab5236f5e4580bbabc72",
+    "last_scraped": "2026-07-13 08:44:25"
+  },
+  "https://docs.openclaw.ai/pt-BR/gateway/restart-recovery": {
+    "title": "Recupera\u00e7\u00e3o ap\u00f3s reinicializa\u00e7\u00e3o",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/gateway/restart-recovery.md",
+    "hash": "aaf7e5fa537f7717ac6095f7436ef2cb",
+    "last_scraped": "2026-07-13 08:44:26"
+  },
+  "https://docs.openclaw.ai/gateway/restart-recovery.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:44:27"
+  },
+  "https://docs.openclaw.ai/fr/gateway/restart-recovery": {
+    "title": "R\u00e9cup\u00e9ration apr\u00e8s red\u00e9marrage",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/gateway/restart-recovery.md",
+    "hash": "50248642c16a6c72fe5a7d47d8d3e69a",
+    "last_scraped": "2026-07-13 08:44:27"
+  },
+  "https://docs.openclaw.ai/zh-CN/gateway/restart-recovery": {
+    "title": "\u91cd\u542f\u6062\u590d",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/gateway/restart-recovery.md",
+    "hash": "5e2a9a205afd227fc92f1293a734a9fa",
+    "last_scraped": "2026-07-13 08:44:28"
+  },
+  "https://docs.openclaw.ai/pt-BR/web/lobster": {
+    "title": "O Lobster",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/web/lobster.md",
+    "hash": "e2d5be890a7c17509f8f23ce37114667",
+    "last_scraped": "2026-07-13 08:44:29"
+  },
+  "https://docs.openclaw.ai/de/web/lobster": {
+    "title": "Der Lobster",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/web/lobster.md",
+    "hash": "06cbcd666deadde05014987a74b358fd",
+    "last_scraped": "2026-07-13 08:44:29"
+  },
+  "https://docs.openclaw.ai/ko/web/lobster": {
+    "title": "Lobster",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/web/lobster.md",
+    "hash": "3a2fc45a2868b7792b21a7156116da9b",
+    "last_scraped": "2026-07-13 08:44:30"
+  },
+  "https://docs.openclaw.ai/ja-JP/web/lobster": {
+    "title": "Lobster",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/web/lobster.md",
+    "hash": "f3586c6764d9b66500f7c7796e65cc81",
+    "last_scraped": "2026-07-13 08:44:31"
+  },
+  "https://docs.openclaw.ai/zh-TW/web/lobster": {
+    "title": "Lobster",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/web/lobster.md",
+    "hash": "20d1044f8160fc64d7b9b6a6c9d4ee63",
+    "last_scraped": "2026-07-13 08:44:31"
+  },
+  "https://docs.openclaw.ai/es/web/lobster": {
+    "title": "Lobster",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/web/lobster.md",
+    "hash": "acd925a65b8784e10aa28424df5c59ef",
+    "last_scraped": "2026-07-13 08:44:32"
+  },
+  "https://docs.openclaw.ai/web/lobster.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:44:33"
+  },
+  "https://docs.openclaw.ai/zh-CN/web/lobster": {
+    "title": "Lobster",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/web/lobster.md",
+    "hash": "c4169e3103491ad927f5b5934a607018",
+    "last_scraped": "2026-07-13 08:44:33"
+  },
+  "https://docs.openclaw.ai/fr/web/lobster": {
+    "title": "Le Lobster",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/web/lobster.md",
+    "hash": "9369c259de63e201f44cbf3245a3cd6a",
+    "last_scraped": "2026-07-13 08:44:34"
+  },
+  "https://docs.openclaw.ai/gateway/1password.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:44:34"
+  },
+  "https://docs.openclaw.ai/pt-BR/web/workspaces": {
+    "title": "Espa\u00e7os de trabalho",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/web/workspaces.md",
+    "hash": "0ff1893149d14fe8b4ff5e6e3f771032",
+    "last_scraped": "2026-07-13 08:44:35"
+  },
+  "https://docs.openclaw.ai/zh-TW/web/workspaces": {
+    "title": "\u5de5\u4f5c\u5340",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/web/workspaces.md",
+    "hash": "286032669e5e7685e986c64548c067e3",
+    "last_scraped": "2026-07-13 08:44:36"
+  },
+  "https://docs.openclaw.ai/uk/web/workspaces": {
+    "title": "\u0420\u043e\u0431\u043e\u0447\u0456 \u043f\u0440\u043e\u0441\u0442\u043e\u0440\u0438",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/web/workspaces.md",
+    "hash": "60d67a7a022c7785fb861d0d3fec3bb5",
+    "last_scraped": "2026-07-13 08:44:36"
+  },
+  "https://docs.openclaw.ai/ar/web/workspaces": {
+    "title": "\u0645\u0633\u0627\u062d\u0627\u062a \u0627\u0644\u0639\u0645\u0644",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/web/workspaces.md",
+    "hash": "3db30c7090218821535f28ea5d421d29",
+    "last_scraped": "2026-07-13 08:44:37"
+  },
+  "https://docs.openclaw.ai/th/web/workspaces": {
+    "title": "\u0e1e\u0e37\u0e49\u0e19\u0e17\u0e35\u0e48\u0e17\u0e33\u0e07\u0e32\u0e19",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/web/workspaces.md",
+    "hash": "c1ab19322f80670e10220995fcb7b78a",
+    "last_scraped": "2026-07-13 08:44:38"
+  },
+  "https://docs.openclaw.ai/nl/web/workspaces": {
+    "title": "Werkruimten",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/web/workspaces.md",
+    "hash": "ba76f80c9b42e08822ed6d4bf28ef5d4",
+    "last_scraped": "2026-07-13 08:44:38"
+  },
+  "https://docs.openclaw.ai/pl/web/workspaces": {
+    "title": "Obszary robocze",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/web/workspaces.md",
+    "hash": "cd0fed31c31bdda05810a2783ade9e0a",
+    "last_scraped": "2026-07-13 08:44:39"
+  },
+  "https://docs.openclaw.ai/fr/web/workspaces": {
+    "title": "Espaces de travail",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/web/workspaces.md",
+    "hash": "e6f5c4734bb4007fa09da9a43801b311",
+    "last_scraped": "2026-07-13 08:44:40"
+  },
+  "https://docs.openclaw.ai/fa/web/workspaces": {
+    "title": "\u0641\u0636\u0627\u0647\u0627\u06cc \u06a9\u0627\u0631\u06cc",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/web/workspaces.md",
+    "hash": "ad77aa8604a5e8a23d5fe0023a20a48e",
+    "last_scraped": "2026-07-13 08:44:40"
+  },
+  "https://docs.openclaw.ai/de/web/workspaces": {
+    "title": "Arbeitsbereiche",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/web/workspaces.md",
+    "hash": "23555fc6dde33d0837901fc4a7be981e",
+    "last_scraped": "2026-07-13 08:44:41"
+  },
+  "https://docs.openclaw.ai/ko/web/workspaces": {
+    "title": "\uc791\uc5c5 \uacf5\uac04",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/web/workspaces.md",
+    "hash": "02c0ced2521ec491574fe7a046f72c47",
+    "last_scraped": "2026-07-13 08:44:42"
+  },
+  "https://docs.openclaw.ai/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:44:42"
+  },
+  "https://docs.openclaw.ai/ja-JP/web/workspaces": {
+    "title": "\u30ef\u30fc\u30af\u30b9\u30da\u30fc\u30b9",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/web/workspaces.md",
+    "hash": "baaf62145149eb8d08629adfbdaf2f4f",
+    "last_scraped": "2026-07-13 08:44:43"
+  },
+  "https://docs.openclaw.ai/es/web/workspaces": {
+    "title": "Espacios de trabajo",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/web/workspaces.md",
+    "hash": "9ab3013784ed15b4d43039258859b74a",
+    "last_scraped": "2026-07-13 08:44:44"
+  },
+  "https://docs.openclaw.ai/it/web/workspaces": {
+    "title": "Spazi di lavoro",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/web/workspaces.md",
+    "hash": "092d55a02fda9b6788a8d98335c3987d",
+    "last_scraped": "2026-07-13 08:44:44"
+  },
+  "https://docs.openclaw.ai/zh-CN/web/workspaces": {
+    "title": "\u5de5\u4f5c\u533a",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/web/workspaces.md",
+    "hash": "65758842838a25bfed4c2afa38bc6619",
+    "last_scraped": "2026-07-13 08:44:45"
+  },
+  "https://docs.openclaw.ai/ru/web/workspaces": {
+    "title": "\u0420\u0430\u0431\u043e\u0447\u0438\u0435 \u043f\u0440\u043e\u0441\u0442\u0440\u0430\u043d\u0441\u0442\u0432\u0430",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/web/workspaces.md",
+    "hash": "42fee4af1a0b73534aab7f1dbd8e6c1a",
+    "last_scraped": "2026-07-13 08:44:46"
+  },
+  "https://docs.openclaw.ai/vi/web/workspaces": {
+    "title": "Kh\u00f4ng gian l\u00e0m vi\u1ec7c",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/web/workspaces.md",
+    "hash": "46bcf851f9641aff2c4b62f835e7c6b9",
+    "last_scraped": "2026-07-13 08:44:47"
+  },
+  "https://docs.openclaw.ai/tr/web/workspaces": {
+    "title": "\u00c7al\u0131\u015fma alanlar\u0131",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/web/workspaces.md",
+    "hash": "f58c3ad241559923e310f39ea1f1a23c",
+    "last_scraped": "2026-07-13 08:44:47"
+  },
+  "https://docs.openclaw.ai/id/web/workspaces": {
+    "title": "Ruang kerja",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/web/workspaces.md",
+    "hash": "de35a732a77ad529c03fa20b0037d5e7",
+    "last_scraped": "2026-07-13 08:44:48"
+  },
+  "https://docs.openclaw.ai/pt-BR/nodes/presence": {
+    "title": "Presen\u00e7a ativa no computador",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/nodes/presence.md",
+    "hash": "97eba048c07f23944d403a9e6b03c01c",
+    "last_scraped": "2026-07-13 08:44:49"
+  },
+  "https://docs.openclaw.ai/zh-CN/nodes/presence": {
+    "title": "\u6d3b\u8dc3\u7684\u8ba1\u7b97\u673a\u72b6\u6001",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/nodes/presence.md",
+    "hash": "5198650e530e138e434464039c21a97c",
+    "last_scraped": "2026-07-13 08:44:49"
+  },
+  "https://docs.openclaw.ai/de/nodes/presence": {
+    "title": "Aktive Computerpr\u00e4senz",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/nodes/presence.md",
+    "hash": "8f8539d0f1f74d31b102777036fca95c",
+    "last_scraped": "2026-07-13 08:44:50"
+  },
+  "https://docs.openclaw.ai/ja-JP/nodes/presence": {
+    "title": "\u30a2\u30af\u30c6\u30a3\u30d6\u306a\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf\u30fc\u306e\u5b58\u5728\u72b6\u614b",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/nodes/presence.md",
+    "hash": "de870485ad55f49655771d7d0f313d76",
+    "last_scraped": "2026-07-13 08:44:51"
+  },
+  "https://docs.openclaw.ai/zh-TW/nodes/presence": {
+    "title": "\u96fb\u8166\u76ee\u524d\u5728\u7dda",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/nodes/presence.md",
+    "hash": "1933f94eba1609f81c62fb35529f7299",
+    "last_scraped": "2026-07-13 08:44:51"
+  },
+  "https://docs.openclaw.ai/nodes/presence.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:44:52"
+  },
+  "https://docs.openclaw.ai/fr/nodes/presence": {
+    "title": "Pr\u00e9sence active sur l\u2019ordinateur",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/nodes/presence.md",
+    "hash": "37c16ca955794f5561003d706d2ce562",
+    "last_scraped": "2026-07-13 08:44:53"
+  },
+  "https://docs.openclaw.ai/ko/nodes/presence": {
+    "title": "\ud65c\uc131 \ucef4\ud4e8\ud130 \uc0c1\ud0dc",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/nodes/presence.md",
+    "hash": "5ceb691abe7fd1e197fdab974fd0bdd8",
+    "last_scraped": "2026-07-13 08:44:53"
+  },
+  "https://docs.openclaw.ai/es/nodes/presence": {
+    "title": "Presencia activa en el equipo",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/nodes/presence.md",
+    "hash": "4b91e9f034dffd36b5bac025c92ea303",
+    "last_scraped": "2026-07-13 08:44:54"
+  },
+  "https://docs.openclaw.ai/gateway/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:44:54"
+  },
+  "https://docs.openclaw.ai/de/gateway/audit": {
+    "title": "Pr\u00fcfverlauf",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/gateway/audit.md",
+    "hash": "506ca2e64986797c6459c66084bf3640",
+    "last_scraped": "2026-07-13 08:44:55"
+  },
+  "https://docs.openclaw.ai/zh-TW/gateway/audit": {
+    "title": "\u7a3d\u6838\u6b77\u7a0b",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/gateway/audit.md",
+    "hash": "a6f18fffb5534ca762b8fbdac615c81a",
+    "last_scraped": "2026-07-13 08:44:56"
+  },
+  "https://docs.openclaw.ai/zh-CN/gateway/audit": {
+    "title": "\u5ba1\u8ba1\u5386\u53f2",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/gateway/audit.md",
+    "hash": "219eeab9abf4f5051c5e6ad2d9fb6a8c",
+    "last_scraped": "2026-07-13 08:44:56"
+  },
+  "https://docs.openclaw.ai/fr/gateway/audit": {
+    "title": "Historique d\u2019audit",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/gateway/audit.md",
+    "hash": "0f5ffd9142de310c0882aa3585f00f24",
+    "last_scraped": "2026-07-13 08:44:57"
+  },
+  "https://docs.openclaw.ai/pt-BR/gateway/audit": {
+    "title": "Hist\u00f3rico de auditoria",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/gateway/audit.md",
+    "hash": "847a723ee4254028507cb49f07bbf193",
+    "last_scraped": "2026-07-13 08:44:58"
+  },
+  "https://docs.openclaw.ai/ja-JP/gateway/audit": {
+    "title": "\u76e3\u67fb\u5c65\u6b74",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/gateway/audit.md",
+    "hash": "f88234412d278a2bb15aa9a472b58bdd",
+    "last_scraped": "2026-07-13 08:44:58"
+  },
+  "https://docs.openclaw.ai/es/gateway/audit": {
+    "title": "Historial de auditor\u00eda",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/gateway/audit.md",
+    "hash": "a0545468ff305839a45556375aed6e5c",
+    "last_scraped": "2026-07-13 08:44:59"
+  },
+  "https://docs.openclaw.ai/ko/gateway/audit": {
+    "title": "\uac10\uc0ac \uae30\ub85d",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/gateway/audit.md",
+    "hash": "6a6051e3e25ee112f1b0df2a30ec235f",
+    "last_scraped": "2026-07-13 08:45:00"
+  },
+  "https://docs.openclaw.ai/pt-BR/cli/promos": {
+    "title": "Promo\u00e7\u00f5es",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/cli/promos.md",
+    "hash": "9098cdf816ecdc5990b4991d77e2eb5d",
+    "last_scraped": "2026-07-13 08:45:01"
+  },
+  "https://docs.openclaw.ai/ko/cli/promos": {
+    "title": "\ud504\ub85c\ubaa8\uc158",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/cli/promos.md",
+    "hash": "2054392506b6f83996f156f1177eb7f2",
+    "last_scraped": "2026-07-13 08:45:01"
+  },
+  "https://docs.openclaw.ai/th/cli/promos": {
+    "title": "\u0e42\u0e1b\u0e23\u0e42\u0e21\u0e0a\u0e31\u0e19",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/cli/promos.md",
+    "hash": "bf999da649f27053de72d9040ae3e326",
+    "last_scraped": "2026-07-13 08:45:02"
+  },
+  "https://docs.openclaw.ai/es/cli/promos": {
+    "title": "Promociones",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/cli/promos.md",
+    "hash": "cca3019f36c65f00196236f6bfddf149",
+    "last_scraped": "2026-07-13 08:45:03"
+  },
+  "https://docs.openclaw.ai/zh-CN/cli/promos": {
+    "title": "\u63a8\u5e7f\u6d3b\u52a8",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/cli/promos.md",
+    "hash": "ca15ff0057549fb5385339a9ddb7f61c",
+    "last_scraped": "2026-07-13 08:45:03"
+  },
+  "https://docs.openclaw.ai/nl/cli/promos": {
+    "title": "Promoties",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/cli/promos.md",
+    "hash": "a4976607d11286f4871b93d7ced06fe4",
+    "last_scraped": "2026-07-13 08:45:04"
+  },
+  "https://docs.openclaw.ai/uk/cli/promos": {
+    "title": "\u041f\u0440\u043e\u043c\u043e\u0430\u043a\u0446\u0456\u0457",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/cli/promos.md",
+    "hash": "724b60ea8230210ab6ebd793a5c3aa56",
+    "last_scraped": "2026-07-13 08:45:05"
+  },
+  "https://docs.openclaw.ai/ar/cli/promos": {
+    "title": "\u0627\u0644\u0639\u0631\u0648\u0636 \u0627\u0644\u062a\u0631\u0648\u064a\u062c\u064a\u0629",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/cli/promos.md",
+    "hash": "f7584c4d1f417e7422ed5fb7bf3ce071",
+    "last_scraped": "2026-07-13 08:45:05"
+  },
+  "https://docs.openclaw.ai/it/cli/promos": {
+    "title": "Promozioni",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/cli/promos.md",
+    "hash": "a784e58a6b11911754c52df67b3a5b2a",
+    "last_scraped": "2026-07-13 08:45:06"
+  },
+  "https://docs.openclaw.ai/fa/cli/promos": {
+    "title": "\u062a\u0628\u0644\u06cc\u063a\u0627\u062a",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/cli/promos.md",
+    "hash": "bd6aa3fa30a96f67c55f8705d0ae4de0",
+    "last_scraped": "2026-07-13 08:45:07"
+  },
+  "https://docs.openclaw.ai/ru/cli/promos": {
+    "title": "\u041f\u0440\u043e\u043c\u043e\u0430\u043a\u0446\u0438\u0438",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/cli/promos.md",
+    "hash": "78842a571e316007f0e77dab92db71c4",
+    "last_scraped": "2026-07-13 08:45:07"
+  },
+  "https://docs.openclaw.ai/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:08"
+  },
+  "https://docs.openclaw.ai/zh-TW/cli/promos": {
+    "title": "\u4fc3\u92b7\u6d3b\u52d5",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/cli/promos.md",
+    "hash": "beff421f32edaa4f9ec46d98ea386eb3",
+    "last_scraped": "2026-07-13 08:45:08"
+  },
+  "https://docs.openclaw.ai/ja-JP/cli/promos": {
+    "title": "\u30d7\u30ed\u30e2\u30fc\u30b7\u30e7\u30f3",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/cli/promos.md",
+    "hash": "f1248cd038d244260dbdb00e0f3a0e86",
+    "last_scraped": "2026-07-13 08:45:09"
+  },
+  "https://docs.openclaw.ai/vi/cli/promos": {
+    "title": "Khuy\u1ebfn m\u00e3i",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/cli/promos.md",
+    "hash": "4595eb623c13f0e0a4f11cccd349fdb4",
+    "last_scraped": "2026-07-13 08:45:10"
+  },
+  "https://docs.openclaw.ai/id/cli/promos": {
+    "title": "Promosi",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/cli/promos.md",
+    "hash": "8d4cf9ffe340fbfe3eab98aa5b170e12",
+    "last_scraped": "2026-07-13 08:45:10"
+  },
+  "https://docs.openclaw.ai/tr/cli/promos": {
+    "title": "Promosyonlar",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/cli/promos.md",
+    "hash": "30461328cd18b001d3210300f24d720a",
+    "last_scraped": "2026-07-13 08:45:11"
+  },
+  "https://docs.openclaw.ai/fr/cli/promos": {
+    "title": "Promotions",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/cli/promos.md",
+    "hash": "00fd25cd1a1405a09d39fa3ac0d67490",
+    "last_scraped": "2026-07-13 08:45:12"
+  },
+  "https://docs.openclaw.ai/de/cli/promos": {
+    "title": "Werbeaktionen",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/cli/promos.md",
+    "hash": "0f2f134f096d876785d3db5d16cc5cdc",
+    "last_scraped": "2026-07-13 08:45:12"
+  },
+  "https://docs.openclaw.ai/pl/cli/promos": {
+    "title": "Promocje",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/cli/promos.md",
+    "hash": "53978bc2b20bef0d3b576d1480531fa3",
+    "last_scraped": "2026-07-13 08:45:13"
+  },
+  "https://docs.openclaw.ai/cli/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:14"
+  },
+  "https://docs.openclaw.ai/pt-BR/cli/audit": {
+    "title": "Registros de auditoria",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/cli/audit.md",
+    "hash": "4aff36fbd97e1ea36b15a4de229a2250",
+    "last_scraped": "2026-07-13 08:45:14"
+  },
+  "https://docs.openclaw.ai/es/cli/audit": {
+    "title": "Registros de auditor\u00eda",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/cli/audit.md",
+    "hash": "4d403361b32d14e0322b40aeb86cb71d",
+    "last_scraped": "2026-07-13 08:45:15"
+  },
+  "https://docs.openclaw.ai/de/cli/audit": {
+    "title": "Auditprotokolle",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/cli/audit.md",
+    "hash": "d4424d743d889d2308a15bf8a7c5735d",
+    "last_scraped": "2026-07-13 08:45:16"
+  },
+  "https://docs.openclaw.ai/ko/cli/audit": {
+    "title": "\uac10\uc0ac \uae30\ub85d",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/cli/audit.md",
+    "hash": "9e657250cd908dc8033be9e392f6532c",
+    "last_scraped": "2026-07-13 08:45:16"
+  },
+  "https://docs.openclaw.ai/zh-TW/cli/audit": {
+    "title": "\u7a3d\u6838\u8a18\u9304",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/cli/audit.md",
+    "hash": "bb461d8e2ad3829ecade662f965b3f8d",
+    "last_scraped": "2026-07-13 08:45:17"
+  },
+  "https://docs.openclaw.ai/zh-CN/cli/audit": {
+    "title": "\u5ba1\u8ba1\u8bb0\u5f55",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/cli/audit.md",
+    "hash": "d1985141de61bc8edf31ab06efa95268",
+    "last_scraped": "2026-07-13 08:45:18"
+  },
+  "https://docs.openclaw.ai/ja-JP/cli/audit": {
+    "title": "\u76e3\u67fb\u8a18\u9332",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/cli/audit.md",
+    "hash": "92464b4f3c8935c50567bb450bfe02b7",
+    "last_scraped": "2026-07-13 08:45:18"
+  },
+  "https://docs.openclaw.ai/fr/cli/audit": {
+    "title": "Journaux d\u2019audit",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/cli/audit.md",
+    "hash": "3032ce8bb86b8eea1168510fee21503a",
+    "last_scraped": "2026-07-13 08:45:19"
+  },
+  "https://docs.openclaw.ai/zh-TW/cli/fleet": {
+    "title": "\u6a5f\u7fa4",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/cli/fleet.md",
+    "hash": "49bd36742a9feb4d3aa2aab911ab118e",
+    "last_scraped": "2026-07-13 08:45:20"
+  },
+  "https://docs.openclaw.ai/es/cli/fleet": {
+    "title": "Flota",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/cli/fleet.md",
+    "hash": "6db7f97464621a85e90b47bd636a35c2",
+    "last_scraped": "2026-07-13 08:45:20"
+  },
+  "https://docs.openclaw.ai/zh-CN/cli/fleet": {
+    "title": "\u673a\u7fa4",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/cli/fleet.md",
+    "hash": "69b924f490f3949b3d34de2e135f9a1d",
+    "last_scraped": "2026-07-13 08:45:21"
+  },
+  "https://docs.openclaw.ai/ko/cli/fleet": {
+    "title": "\ud50c\ub9bf",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/cli/fleet.md",
+    "hash": "fdfc1df7266d4a9ca84724dc130afdf9",
+    "last_scraped": "2026-07-13 08:45:22"
+  },
+  "https://docs.openclaw.ai/fr/cli/fleet": {
+    "title": "Flotte",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/cli/fleet.md",
+    "hash": "18bfe1e1838a9c1fe190119c05806069",
+    "last_scraped": "2026-07-13 08:45:23"
+  },
+  "https://docs.openclaw.ai/ja-JP/cli/fleet": {
+    "title": "\u30d5\u30ea\u30fc\u30c8",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/cli/fleet.md",
+    "hash": "5e029b6804bfabdd1fea368cbc9b87a4",
+    "last_scraped": "2026-07-13 08:45:23"
+  },
+  "https://docs.openclaw.ai/cli/fleet.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:24"
+  },
+  "https://docs.openclaw.ai/de/cli/fleet": {
+    "title": "Flotte",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/cli/fleet.md",
+    "hash": "9c6d3e50917d074ca45dc2926608fffd",
+    "last_scraped": "2026-07-13 08:45:25"
+  },
+  "https://docs.openclaw.ai/pt-BR/cli/fleet": {
+    "title": "Frota",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/cli/fleet.md",
+    "hash": "5e93a740525a3ffc2eb723e890e4c9cc",
+    "last_scraped": "2026-07-13 08:45:25"
+  },
+  "https://docs.openclaw.ai/fr/concepts/session-state.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:26"
+  },
+  "https://docs.openclaw.ai/fr/concepts/managed-worktrees": {
+    "title": "Worktrees g\u00e9r\u00e9s",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/concepts/managed-worktrees.md",
+    "hash": "9e95c4f5b493ee1bc70a6149e756c190",
+    "last_scraped": "2026-07-13 08:45:27"
+  },
+  "https://docs.openclaw.ai/ja-JP/concepts/session-state.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:27"
+  },
+  "https://docs.openclaw.ai/ja-JP/concepts/managed-worktrees": {
+    "title": "\u7ba1\u7406\u5bfe\u8c61\u306e\u30ef\u30fc\u30af\u30c4\u30ea\u30fc",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/concepts/managed-worktrees.md",
+    "hash": "926aacc54c3515a1a9232b8024670d86",
+    "last_scraped": "2026-07-13 08:45:28"
+  },
+  "https://docs.openclaw.ai/es/concepts/managed-worktrees": {
+    "title": "\u00c1rboles de trabajo administrados",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/concepts/managed-worktrees.md",
+    "hash": "ba512789d515cfe54dc20824347703f2",
+    "last_scraped": "2026-07-13 08:45:29"
+  },
+  "https://docs.openclaw.ai/es/concepts/session-state.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:29"
+  },
+  "https://docs.openclaw.ai/ko/concepts/session-state.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:30"
+  },
+  "https://docs.openclaw.ai/ko/concepts/managed-worktrees": {
+    "title": "\uad00\ub9ac\ud615 \uc791\uc5c5 \ud2b8\ub9ac",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/concepts/managed-worktrees.md",
+    "hash": "46eda7137ccd0c160f7dc1c4dff217fb",
+    "last_scraped": "2026-07-13 08:45:31"
+  },
+  "https://docs.openclaw.ai/zh-TW/concepts/session-state.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:31"
+  },
+  "https://docs.openclaw.ai/zh-TW/concepts/managed-worktrees": {
+    "title": "\u53d7\u7ba1\u7406\u7684\u5de5\u4f5c\u6a39",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/concepts/managed-worktrees.md",
+    "hash": "92c3a9789118332f03e471ff9320de73",
+    "last_scraped": "2026-07-13 08:45:32"
+  },
+  "https://docs.openclaw.ai/pt-BR/concepts/managed-worktrees": {
+    "title": "Worktrees gerenciadas",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/concepts/managed-worktrees.md",
+    "hash": "08abc7e5aed325f3203bebfbfca257a5",
+    "last_scraped": "2026-07-13 08:45:33"
+  },
+  "https://docs.openclaw.ai/pt-BR/concepts/session-state.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:33"
+  },
+  "https://docs.openclaw.ai/zh-CN/concepts/session-state.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:34"
+  },
+  "https://docs.openclaw.ai/es/concepts/session-search.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:35"
+  },
+  "https://docs.openclaw.ai/de/concepts/session-search.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:35"
+  },
+  "https://docs.openclaw.ai/de/concepts/managed-worktrees": {
+    "title": "Verwaltete Arbeitsb\u00e4ume",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/concepts/managed-worktrees.md",
+    "hash": "758284063d64a6e20b6cf069e7dd4cb1",
+    "last_scraped": "2026-07-13 08:45:36"
+  },
+  "https://docs.openclaw.ai/fr/concepts/session-search.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:37"
+  },
+  "https://docs.openclaw.ai/ja-JP/concepts/session-search.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:37"
+  },
+  "https://docs.openclaw.ai/ko/concepts/session-search.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:38"
+  },
+  "https://docs.openclaw.ai/zh-TW/concepts/session-search.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:39"
+  },
+  "https://docs.openclaw.ai/zh-CN/concepts/session-search.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:39"
+  },
+  "https://docs.openclaw.ai/pt-BR/concepts/session-search.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:40"
+  },
+  "https://docs.openclaw.ai/ja-JP/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:40"
+  },
+  "https://docs.openclaw.ai/ja-JP/tools/chrome-extension": {
+    "title": "Chrome \u62e1\u5f35\u6a5f\u80fd",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/tools/chrome-extension.md",
+    "hash": "afb26eb5fc53936a48837b51c9e3c94f",
+    "last_scraped": "2026-07-13 08:45:41"
+  },
+  "https://docs.openclaw.ai/nl/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:42"
+  },
+  "https://docs.openclaw.ai/nl/plugins/logbook": {
+    "title": "Logboekplugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/plugins/logbook.md",
+    "hash": "2701e4d2f34a98c556531aa48c8aa6eb",
+    "last_scraped": "2026-07-13 08:45:42"
+  },
+  "https://docs.openclaw.ai/nl/tools/chrome-extension": {
+    "title": "Chrome-extensie",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/tools/chrome-extension.md",
+    "hash": "734f9826643ae097d60f643d16bd6e0b",
+    "last_scraped": "2026-07-13 08:45:43"
+  },
+  "https://docs.openclaw.ai/de/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:44"
+  },
+  "https://docs.openclaw.ai/de/tools/chrome-extension": {
+    "title": "Chrome-Erweiterung",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/tools/chrome-extension.md",
+    "hash": "4f7929f712f59313ee6cf41e9951bbad",
+    "last_scraped": "2026-07-13 08:45:45"
+  },
+  "https://docs.openclaw.ai/de/plugins/logbook": {
+    "title": "Logbuch-Plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/plugins/logbook.md",
+    "hash": "c5d8af989b9fc32c65a8334d37386a7c",
+    "last_scraped": "2026-07-13 08:45:45"
+  },
+  "https://docs.openclaw.ai/fr/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:46"
+  },
+  "https://docs.openclaw.ai/fr/tools/chrome-extension": {
+    "title": "Extension Chrome",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/tools/chrome-extension.md",
+    "hash": "80fd73e97a0e788af1b3265ff8dcaa7f",
+    "last_scraped": "2026-07-13 08:45:47"
+  },
+  "https://docs.openclaw.ai/fr/plugins/logbook": {
+    "title": "Plugin de journal de bord",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/plugins/logbook.md",
+    "hash": "8a6fac1967ca48a256f5e2a19aec57b3",
+    "last_scraped": "2026-07-13 08:45:47"
+  },
+  "https://docs.openclaw.ai/tr/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:48"
+  },
+  "https://docs.openclaw.ai/tr/plugins/logbook": {
+    "title": "Logbook Plugin'i",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/plugins/logbook.md",
+    "hash": "02525dc1c0734369b8055af5d8584639",
+    "last_scraped": "2026-07-13 08:45:49"
+  },
+  "https://docs.openclaw.ai/tr/tools/chrome-extension": {
+    "title": "Chrome Uzant\u0131s\u0131",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/tools/chrome-extension.md",
+    "hash": "d04c8e731100f977336db8da9174a4a9",
+    "last_scraped": "2026-07-13 08:45:49"
+  },
+  "https://docs.openclaw.ai/id/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:50"
+  },
+  "https://docs.openclaw.ai/id/plugins/logbook": {
+    "title": "Plugin buku log",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/plugins/logbook.md",
+    "hash": "d9c91fbd7fd919c775e94d135b4a407e",
+    "last_scraped": "2026-07-13 08:45:51"
+  },
+  "https://docs.openclaw.ai/id/tools/chrome-extension": {
+    "title": "Ekstensi Chrome",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/tools/chrome-extension.md",
+    "hash": "cb3f39cf08fdb1972b7e671513bc0e83",
+    "last_scraped": "2026-07-13 08:45:51"
+  },
+  "https://docs.openclaw.ai/zh-TW/tools/chrome-extension": {
+    "title": "Chrome \u64f4\u5145\u529f\u80fd",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/tools/chrome-extension.md",
+    "hash": "d3c596189356e80c99ab5dea11d98bd8",
+    "last_scraped": "2026-07-13 08:45:52"
+  },
+  "https://docs.openclaw.ai/zh-TW/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:53"
+  },
+  "https://docs.openclaw.ai/uk/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:53"
+  },
+  "https://docs.openclaw.ai/uk/tools/chrome-extension": {
+    "title": "\u0420\u043e\u0437\u0448\u0438\u0440\u0435\u043d\u043d\u044f Chrome",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/tools/chrome-extension.md",
+    "hash": "c265fa34f85421d281c844afecb11cae",
+    "last_scraped": "2026-07-13 08:45:54"
+  },
+  "https://docs.openclaw.ai/uk/plugins/logbook": {
+    "title": "Plugin \u0436\u0443\u0440\u043d\u0430\u043b\u0443 \u043f\u043e\u0434\u0456\u0439",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/plugins/logbook.md",
+    "hash": "7917da9e20eae0cf2b90495d2147642e",
+    "last_scraped": "2026-07-13 08:45:55"
+  },
+  "https://docs.openclaw.ai/pt-BR/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:55"
+  },
+  "https://docs.openclaw.ai/pt-BR/tools/chrome-extension": {
+    "title": "Extens\u00e3o do Chrome",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/tools/chrome-extension.md",
+    "hash": "16867b991c0243be048d1ca3a84d256e",
+    "last_scraped": "2026-07-13 08:45:56"
+  },
+  "https://docs.openclaw.ai/pt-BR/plugins/logbook": {
+    "title": "Plugin de di\u00e1rio de bordo",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/plugins/logbook.md",
+    "hash": "f4189102aebe18f7d9dc19724b40a218",
+    "last_scraped": "2026-07-13 08:45:57"
+  },
+  "https://docs.openclaw.ai/es/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:57"
+  },
+  "https://docs.openclaw.ai/es/tools/chrome-extension": {
+    "title": "Extensi\u00f3n de Chrome",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/tools/chrome-extension.md",
+    "hash": "df544764b6b62c9d7315cc4f0b411a6b",
+    "last_scraped": "2026-07-13 08:45:58"
+  },
+  "https://docs.openclaw.ai/fa/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:45:59"
+  },
+  "https://docs.openclaw.ai/fa/plugins/logbook": {
+    "title": "Plugin \u062f\u0641\u062a\u0631 \u062b\u0628\u062a \u0648\u0642\u0627\u06cc\u0639",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/plugins/logbook.md",
+    "hash": "c20696f34b40b3078e839112db2619d5",
+    "last_scraped": "2026-07-13 08:45:59"
+  },
+  "https://docs.openclaw.ai/fa/tools/chrome-extension": {
+    "title": "\u0627\u0641\u0632\u0648\u0646\u0647\u0654 Chrome",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/tools/chrome-extension.md",
+    "hash": "10d652bc22770561be78bf297be32e4e",
+    "last_scraped": "2026-07-13 08:46:00"
+  },
+  "https://docs.openclaw.ai/ko/plugins/logbook": {
+    "title": "\ub85c\uadf8\ubd81 Plugin",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/plugins/logbook.md",
+    "hash": "198f6be657384a015f7a9297442057f2",
+    "last_scraped": "2026-07-13 08:46:01"
+  },
+  "https://docs.openclaw.ai/ko/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:01"
+  },
+  "https://docs.openclaw.ai/ko/tools/chrome-extension": {
+    "title": "Chrome \ud655\uc7a5 \ud504\ub85c\uadf8\ub7a8",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/tools/chrome-extension.md",
+    "hash": "5023999598b00b76b6e6bc008579de83",
+    "last_scraped": "2026-07-13 08:46:02"
+  },
+  "https://docs.openclaw.ai/ar/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:03"
+  },
+  "https://docs.openclaw.ai/ar/tools/chrome-extension": {
+    "title": "\u0625\u0636\u0627\u0641\u0629 Chrome",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/tools/chrome-extension.md",
+    "hash": "eb3fca5efc0ceadd08ec1a2446a14409",
+    "last_scraped": "2026-07-13 08:46:03"
+  },
+  "https://docs.openclaw.ai/ar/plugins/logbook": {
+    "title": "Plugin \u0627\u0644\u0633\u062c\u0644 \u0627\u0644\u064a\u0648\u0645\u064a",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/plugins/logbook.md",
+    "hash": "49c7d3dcba07feb8f624b18bbed4745d",
+    "last_scraped": "2026-07-13 08:46:04"
+  },
+  "https://docs.openclaw.ai/it/tools/chrome-extension": {
+    "title": "Estensione di Chrome",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/tools/chrome-extension.md",
+    "hash": "deedc876e521cc202b86b354404f7022",
+    "last_scraped": "2026-07-13 08:46:05"
+  },
+  "https://docs.openclaw.ai/it/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:05"
+  },
+  "https://docs.openclaw.ai/it/plugins/logbook": {
+    "title": "Plugin del registro di attivit\u00e0",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/plugins/logbook.md",
+    "hash": "3eef4b23d4b2217a3cb00ce583361457",
+    "last_scraped": "2026-07-13 08:46:06"
+  },
+  "https://docs.openclaw.ai/pl/plugins/logbook": {
+    "title": "Plugin dziennika",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/plugins/logbook.md",
+    "hash": "e72904fa2b84cc393fc21ff4a838b719",
+    "last_scraped": "2026-07-13 08:46:07"
+  },
+  "https://docs.openclaw.ai/pl/tools/chrome-extension": {
+    "title": "Rozszerzenie Chrome",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/tools/chrome-extension.md",
+    "hash": "1f7b110723881f739cf6032d71c12a57",
+    "last_scraped": "2026-07-13 08:46:08"
+  },
+  "https://docs.openclaw.ai/pl/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:08"
+  },
+  "https://docs.openclaw.ai/zh-CN/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:09"
+  },
+  "https://docs.openclaw.ai/th/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:09"
+  },
+  "https://docs.openclaw.ai/th/plugins/logbook": {
+    "title": "Plugin \u0e2a\u0e21\u0e38\u0e14\u0e1a\u0e31\u0e19\u0e17\u0e36\u0e01",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/plugins/logbook.md",
+    "hash": "7635b1c20be0700fd72087ec851f1d21",
+    "last_scraped": "2026-07-13 08:46:10"
+  },
+  "https://docs.openclaw.ai/th/tools/chrome-extension": {
+    "title": "\u0e2a\u0e48\u0e27\u0e19\u0e02\u0e22\u0e32\u0e22 Chrome",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/tools/chrome-extension.md",
+    "hash": "2c2ffc0cdb73a00bd74b8189fdda2fe5",
+    "last_scraped": "2026-07-13 08:46:11"
+  },
+  "https://docs.openclaw.ai/ru/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:11"
+  },
+  "https://docs.openclaw.ai/ru/tools/chrome-extension": {
+    "title": "\u0420\u0430\u0441\u0448\u0438\u0440\u0435\u043d\u0438\u0435 Chrome",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/tools/chrome-extension.md",
+    "hash": "278c4093af5a99c63599546f7ae23e9a",
+    "last_scraped": "2026-07-13 08:46:12"
+  },
+  "https://docs.openclaw.ai/ru/plugins/logbook": {
+    "title": "Plugin \u0436\u0443\u0440\u043d\u0430\u043b\u0430 \u0441\u043e\u0431\u044b\u0442\u0438\u0439",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/plugins/logbook.md",
+    "hash": "b7bac5919a8d49a086eadf8eace70dd8",
+    "last_scraped": "2026-07-13 08:46:13"
+  },
+  "https://docs.openclaw.ai/vi/tools/show-widget.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:13"
+  },
+  "https://docs.openclaw.ai/vi/plugins/logbook": {
+    "title": "Plugin nh\u1eadt k\u00fd",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/plugins/logbook.md",
+    "hash": "b2ef954e6e50900af5f8f9ecfba5422b",
+    "last_scraped": "2026-07-13 08:46:14"
+  },
+  "https://docs.openclaw.ai/vi/tools/chrome-extension": {
+    "title": "Ti\u1ec7n \u00edch m\u1edf r\u1ed9ng Chrome",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/tools/chrome-extension.md",
+    "hash": "b1baee2e91e372da706be3966ead4228",
+    "last_scraped": "2026-07-13 08:46:15"
+  },
+  "https://docs.openclaw.ai/de/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:16"
+  },
+  "https://docs.openclaw.ai/pl/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:16"
+  },
+  "https://docs.openclaw.ai/pt-BR/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:17"
+  },
+  "https://docs.openclaw.ai/uk/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:17"
+  },
+  "https://docs.openclaw.ai/es/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:18"
+  },
+  "https://docs.openclaw.ai/fr/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:19"
+  },
+  "https://docs.openclaw.ai/id/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:19"
+  },
+  "https://docs.openclaw.ai/fa/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:20"
+  },
+  "https://docs.openclaw.ai/th/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:21"
+  },
+  "https://docs.openclaw.ai/nl/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:21"
+  },
+  "https://docs.openclaw.ai/zh-TW/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:22"
+  },
+  "https://docs.openclaw.ai/tr/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:22"
+  },
+  "https://docs.openclaw.ai/ja-JP/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:23"
+  },
+  "https://docs.openclaw.ai/vi/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:24"
+  },
+  "https://docs.openclaw.ai/it/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:24"
+  },
+  "https://docs.openclaw.ai/zh-CN/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:25"
+  },
+  "https://docs.openclaw.ai/ar/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:26"
+  },
+  "https://docs.openclaw.ai/ru/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:26"
+  },
+  "https://docs.openclaw.ai/ko/plugins/vault.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:27"
+  },
+  "https://docs.openclaw.ai/fr/plugins/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:27"
+  },
+  "https://docs.openclaw.ai/fr/specs/codex-supervision": {
+    "title": "Supervision de Codex",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/specs/codex-supervision.md",
+    "hash": "a40f4e4ce567a90b4231ecd1b981c679",
+    "last_scraped": "2026-07-13 08:46:28"
+  },
+  "https://docs.openclaw.ai/de/specs/codex-supervision": {
+    "title": "Codex-\u00dcberwachung",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/specs/codex-supervision.md",
+    "hash": "199a6d0a6c3f30f687c1c5ac329282ca",
+    "last_scraped": "2026-07-13 08:46:29"
+  },
+  "https://docs.openclaw.ai/ja-JP/specs/codex-supervision": {
+    "title": "Codex \u306e\u76e3\u7763",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/specs/codex-supervision.md",
+    "hash": "8edf8997be83b4c593f377df20f20ba9",
+    "last_scraped": "2026-07-13 08:46:29"
+  },
+  "https://docs.openclaw.ai/pt-BR/specs/codex-supervision": {
+    "title": "Supervis\u00e3o do Codex",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/specs/codex-supervision.md",
+    "hash": "aa653d2c3739a728f700a1576f9d8b53",
+    "last_scraped": "2026-07-13 08:46:30"
+  },
+  "https://docs.openclaw.ai/es/specs/codex-supervision": {
+    "title": "Supervisi\u00f3n de Codex",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/specs/codex-supervision.md",
+    "hash": "c9668bb228980e1bc3598ab7730b4b68",
+    "last_scraped": "2026-07-13 08:46:31"
+  },
+  "https://docs.openclaw.ai/zh-CN/specs/codex-supervision": {
+    "title": "Codex \u76d1\u7763",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/specs/codex-supervision.md",
+    "hash": "51014fbef930fc75ac4aeb29a7722c82",
+    "last_scraped": "2026-07-13 08:46:32"
+  },
+  "https://docs.openclaw.ai/specs/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:32"
+  },
+  "https://docs.openclaw.ai/zh-TW/specs/codex-supervision": {
+    "title": "Codex \u76e3\u7763",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/specs/codex-supervision.md",
+    "hash": "369a91e5ac4b671755a35d7fb648d66e",
+    "last_scraped": "2026-07-13 08:46:33"
+  },
+  "https://docs.openclaw.ai/ko/specs/codex-supervision": {
+    "title": "Codex \uac10\ub3c5",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/specs/codex-supervision.md",
+    "hash": "ea6ab87487cec3de66e851d9f930d86e",
+    "last_scraped": "2026-07-13 08:46:33"
+  },
+  "https://docs.openclaw.ai/pt-BR/plugins/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:34"
+  },
+  "https://docs.openclaw.ai/ko/plugins/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:35"
+  },
+  "https://docs.openclaw.ai/zh-TW/plugins/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:35"
+  },
+  "https://docs.openclaw.ai/es/plugins/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:36"
+  },
+  "https://docs.openclaw.ai/zh-CN/plugins/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:37"
+  },
+  "https://docs.openclaw.ai/ja-JP/plugins/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:37"
+  },
+  "https://docs.openclaw.ai/de/plugins/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:38"
+  },
+  "https://docs.openclaw.ai/ar/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:38"
+  },
+  "https://docs.openclaw.ai/it/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:39"
+  },
+  "https://docs.openclaw.ai/pl/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:40"
+  },
+  "https://docs.openclaw.ai/th/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:40"
+  },
+  "https://docs.openclaw.ai/pt-BR/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:41"
+  },
+  "https://docs.openclaw.ai/zh-TW/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:42"
+  },
+  "https://docs.openclaw.ai/fa/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:42"
+  },
+  "https://docs.openclaw.ai/zh-CN/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:43"
+  },
+  "https://docs.openclaw.ai/ko/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:44"
+  },
+  "https://docs.openclaw.ai/vi/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:44"
+  },
+  "https://docs.openclaw.ai/de/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:45"
+  },
+  "https://docs.openclaw.ai/es/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:46"
+  },
+  "https://docs.openclaw.ai/tr/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:46"
+  },
+  "https://docs.openclaw.ai/nl/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:47"
+  },
+  "https://docs.openclaw.ai/ja-JP/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:48"
+  },
+  "https://docs.openclaw.ai/uk/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:48"
+  },
+  "https://docs.openclaw.ai/id/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:49"
+  },
+  "https://docs.openclaw.ai/fr/providers/meta.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:49"
+  },
+  "https://docs.openclaw.ai/zh-CN/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:50"
+  },
+  "https://docs.openclaw.ai/pl/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:51"
+  },
+  "https://docs.openclaw.ai/es/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:51"
+  },
+  "https://docs.openclaw.ai/it/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:52"
+  },
+  "https://docs.openclaw.ai/ja-JP/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:53"
+  },
+  "https://docs.openclaw.ai/vi/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:53"
+  },
+  "https://docs.openclaw.ai/de/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:54"
+  },
+  "https://docs.openclaw.ai/fa/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:54"
+  },
+  "https://docs.openclaw.ai/uk/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:55"
+  },
+  "https://docs.openclaw.ai/ru/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:56"
+  },
+  "https://docs.openclaw.ai/fr/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:56"
+  },
+  "https://docs.openclaw.ai/pt-BR/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:57"
+  },
+  "https://docs.openclaw.ai/id/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:58"
+  },
+  "https://docs.openclaw.ai/th/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:58"
+  },
+  "https://docs.openclaw.ai/ar/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:46:59"
+  },
+  "https://docs.openclaw.ai/zh-TW/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:00"
+  },
+  "https://docs.openclaw.ai/nl/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:00"
+  },
+  "https://docs.openclaw.ai/tr/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:01"
+  },
+  "https://docs.openclaw.ai/ko/providers/longcat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:02"
+  },
+  "https://docs.openclaw.ai/uk/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:02"
+  },
+  "https://docs.openclaw.ai/it/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:03"
+  },
+  "https://docs.openclaw.ai/ja-JP/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:03"
+  },
+  "https://docs.openclaw.ai/fa/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:04"
+  },
+  "https://docs.openclaw.ai/pl/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:05"
+  },
+  "https://docs.openclaw.ai/vi/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:05"
+  },
+  "https://docs.openclaw.ai/zh-TW/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:06"
+  },
+  "https://docs.openclaw.ai/pt-BR/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:07"
+  },
+  "https://docs.openclaw.ai/nl/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:07"
+  },
+  "https://docs.openclaw.ai/tr/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:08"
+  },
+  "https://docs.openclaw.ai/fr/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:09"
+  },
+  "https://docs.openclaw.ai/es/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:09"
+  },
+  "https://docs.openclaw.ai/th/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:10"
+  },
+  "https://docs.openclaw.ai/ko/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:10"
+  },
+  "https://docs.openclaw.ai/zh-CN/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:11"
+  },
+  "https://docs.openclaw.ai/id/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:12"
+  },
+  "https://docs.openclaw.ai/de/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:12"
+  },
+  "https://docs.openclaw.ai/ar/providers/featherless.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:13"
+  },
+  "https://docs.openclaw.ai/pt-BR/gateway/multi-tenant-hosting.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:13"
+  },
+  "https://docs.openclaw.ai/ja-JP/gateway/multi-tenant-hosting.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:14"
+  },
+  "https://docs.openclaw.ai/de/gateway/multi-tenant-hosting.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:15"
+  },
+  "https://docs.openclaw.ai/fr/gateway/multi-tenant-hosting.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:15"
+  },
+  "https://docs.openclaw.ai/ko/gateway/multi-tenant-hosting.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:16"
+  },
+  "https://docs.openclaw.ai/zh-TW/gateway/multi-tenant-hosting.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:17"
+  },
+  "https://docs.openclaw.ai/zh-CN/gateway/multi-tenant-hosting.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:17"
+  },
+  "https://docs.openclaw.ai/es/gateway/multi-tenant-hosting.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:18"
+  },
+  "https://docs.openclaw.ai/vi/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:19"
+  },
+  "https://docs.openclaw.ai/uk/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:19"
+  },
+  "https://docs.openclaw.ai/pl/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:20"
+  },
+  "https://docs.openclaw.ai/tr/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:20"
+  },
+  "https://docs.openclaw.ai/ko/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:21"
+  },
+  "https://docs.openclaw.ai/it/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:22"
+  },
+  "https://docs.openclaw.ai/nl/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:22"
+  },
+  "https://docs.openclaw.ai/ja-JP/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:23"
+  },
+  "https://docs.openclaw.ai/es/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:24"
+  },
+  "https://docs.openclaw.ai/id/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:24"
+  },
+  "https://docs.openclaw.ai/zh-CN/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:25"
+  },
+  "https://docs.openclaw.ai/pt-BR/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:25"
+  },
+  "https://docs.openclaw.ai/de/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:26"
+  },
+  "https://docs.openclaw.ai/zh-TW/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:27"
+  },
+  "https://docs.openclaw.ai/ar/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:27"
+  },
+  "https://docs.openclaw.ai/fa/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:28"
+  },
+  "https://docs.openclaw.ai/fr/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:29"
+  },
+  "https://docs.openclaw.ai/th/nodes/computer-use.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:29"
+  },
+  "https://docs.openclaw.ai/ko/gateway/restart-recovery.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:30"
+  },
+  "https://docs.openclaw.ai/es/gateway/restart-recovery.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:31"
+  },
+  "https://docs.openclaw.ai/ja-JP/gateway/restart-recovery.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:31"
+  },
+  "https://docs.openclaw.ai/zh-TW/gateway/restart-recovery.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:32"
+  },
+  "https://docs.openclaw.ai/de/gateway/restart-recovery.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:32"
+  },
+  "https://docs.openclaw.ai/pt-BR/gateway/restart-recovery.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:33"
+  },
+  "https://docs.openclaw.ai/fr/gateway/restart-recovery.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:34"
+  },
+  "https://docs.openclaw.ai/zh-CN/gateway/restart-recovery.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:34"
+  },
+  "https://docs.openclaw.ai/pt-BR/web/lobster.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:35"
+  },
+  "https://docs.openclaw.ai/de/web/lobster.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:36"
+  },
+  "https://docs.openclaw.ai/ko/web/lobster.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:36"
+  },
+  "https://docs.openclaw.ai/ja-JP/web/lobster.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:37"
+  },
+  "https://docs.openclaw.ai/zh-TW/web/lobster.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:37"
+  },
+  "https://docs.openclaw.ai/es/web/lobster.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:38"
+  },
+  "https://docs.openclaw.ai/zh-CN/web/lobster.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:39"
+  },
+  "https://docs.openclaw.ai/fr/web/lobster.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:39"
+  },
+  "https://docs.openclaw.ai/pt-BR/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:40"
+  },
+  "https://docs.openclaw.ai/zh-TW/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:41"
+  },
+  "https://docs.openclaw.ai/uk/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:41"
+  },
+  "https://docs.openclaw.ai/ar/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:42"
+  },
+  "https://docs.openclaw.ai/th/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:42"
+  },
+  "https://docs.openclaw.ai/nl/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:43"
+  },
+  "https://docs.openclaw.ai/pl/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:44"
+  },
+  "https://docs.openclaw.ai/fr/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:44"
+  },
+  "https://docs.openclaw.ai/fa/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:45"
+  },
+  "https://docs.openclaw.ai/de/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:46"
+  },
+  "https://docs.openclaw.ai/ko/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:46"
+  },
+  "https://docs.openclaw.ai/ja-JP/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:47"
+  },
+  "https://docs.openclaw.ai/es/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:47"
+  },
+  "https://docs.openclaw.ai/it/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:48"
+  },
+  "https://docs.openclaw.ai/zh-CN/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:49"
+  },
+  "https://docs.openclaw.ai/ru/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:49"
+  },
+  "https://docs.openclaw.ai/vi/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:50"
+  },
+  "https://docs.openclaw.ai/tr/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:51"
+  },
+  "https://docs.openclaw.ai/id/web/workspaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:51"
+  },
+  "https://docs.openclaw.ai/pt-BR/nodes/presence.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:52"
+  },
+  "https://docs.openclaw.ai/zh-CN/nodes/presence.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:52"
+  },
+  "https://docs.openclaw.ai/de/nodes/presence.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:53"
+  },
+  "https://docs.openclaw.ai/ja-JP/nodes/presence.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:54"
+  },
+  "https://docs.openclaw.ai/zh-TW/nodes/presence.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:54"
+  },
+  "https://docs.openclaw.ai/fr/nodes/presence.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:55"
+  },
+  "https://docs.openclaw.ai/ko/nodes/presence.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:56"
+  },
+  "https://docs.openclaw.ai/es/nodes/presence.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:56"
+  },
+  "https://docs.openclaw.ai/de/gateway/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:57"
+  },
+  "https://docs.openclaw.ai/zh-TW/gateway/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:58"
+  },
+  "https://docs.openclaw.ai/zh-CN/gateway/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:58"
+  },
+  "https://docs.openclaw.ai/fr/gateway/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:47:59"
+  },
+  "https://docs.openclaw.ai/pt-BR/gateway/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:00"
+  },
+  "https://docs.openclaw.ai/ja-JP/gateway/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:00"
+  },
+  "https://docs.openclaw.ai/es/gateway/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:01"
+  },
+  "https://docs.openclaw.ai/ko/gateway/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:01"
+  },
+  "https://docs.openclaw.ai/pt-BR/reference/openclaw-ai": {
+    "title": "pacote @openclaw/ai",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/reference/openclaw-ai.md",
+    "hash": "8fb32418dfbfd55047075dade986fc96",
+    "last_scraped": "2026-07-13 08:48:02"
+  },
+  "https://docs.openclaw.ai/pt-BR/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:03"
+  },
+  "https://docs.openclaw.ai/ko/reference/openclaw-ai": {
+    "title": "@openclaw/ai \ud328\ud0a4\uc9c0",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/reference/openclaw-ai.md",
+    "hash": "682c34dfbe52f1d771c67a9e0ad0ef4f",
+    "last_scraped": "2026-07-13 08:48:04"
+  },
+  "https://docs.openclaw.ai/ko/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:04"
+  },
+  "https://docs.openclaw.ai/th/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:05"
+  },
+  "https://docs.openclaw.ai/th/reference/openclaw-ai": {
+    "title": "\u0e41\u0e1e\u0e47\u0e01\u0e40\u0e01\u0e08 @openclaw/ai",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/reference/openclaw-ai.md",
+    "hash": "14af42558c061ac75e4241a134b62dee",
+    "last_scraped": "2026-07-13 08:48:05"
+  },
+  "https://docs.openclaw.ai/es/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:06"
+  },
+  "https://docs.openclaw.ai/zh-CN/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:07"
+  },
+  "https://docs.openclaw.ai/nl/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:07"
+  },
+  "https://docs.openclaw.ai/nl/reference/openclaw-ai": {
+    "title": "@openclaw/ai-pakket",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/reference/openclaw-ai.md",
+    "hash": "6e8266d56d2e3dc14e811a79fcaad011",
+    "last_scraped": "2026-07-13 08:48:08"
+  },
+  "https://docs.openclaw.ai/uk/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:09"
+  },
+  "https://docs.openclaw.ai/uk/reference/openclaw-ai": {
+    "title": "\u043f\u0430\u043a\u0435\u0442 @openclaw/ai",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/reference/openclaw-ai.md",
+    "hash": "95ce96494e2c0b0e10831318708c2343",
+    "last_scraped": "2026-07-13 08:48:09"
+  },
+  "https://docs.openclaw.ai/ar/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:10"
+  },
+  "https://docs.openclaw.ai/ar/reference/openclaw-ai": {
+    "title": "\u062d\u0632\u0645\u0629 @openclaw/ai",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/reference/openclaw-ai.md",
+    "hash": "effc20b7638dd95f3a20153f09608068",
+    "last_scraped": "2026-07-13 08:48:11"
+  },
+  "https://docs.openclaw.ai/it/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:11"
+  },
+  "https://docs.openclaw.ai/it/reference/openclaw-ai": {
+    "title": "Pacchetto @openclaw/ai",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/reference/openclaw-ai.md",
+    "hash": "deb13739e3acbde6a3001aa147a276c9",
+    "last_scraped": "2026-07-13 08:48:12"
+  },
+  "https://docs.openclaw.ai/fa/reference/openclaw-ai": {
+    "title": "\u0628\u0633\u062a\u0647\u0654 @openclaw/ai",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/reference/openclaw-ai.md",
+    "hash": "4edd72d06dce2e5bbb9e974fd049437a",
+    "last_scraped": "2026-07-13 08:48:13"
+  },
+  "https://docs.openclaw.ai/fa/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:13"
+  },
+  "https://docs.openclaw.ai/ru/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:14"
+  },
+  "https://docs.openclaw.ai/ru/reference/openclaw-ai": {
+    "title": "\u041f\u0430\u043a\u0435\u0442 @openclaw/ai",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/reference/openclaw-ai.md",
+    "hash": "cda4677c8a4f9a6ee0fbcee9e3cd1fb2",
+    "last_scraped": "2026-07-13 08:48:14"
+  },
+  "https://docs.openclaw.ai/zh-TW/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:15"
+  },
+  "https://docs.openclaw.ai/ja-JP/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:16"
+  },
+  "https://docs.openclaw.ai/vi/reference/openclaw-ai": {
+    "title": "G\u00f3i @openclaw/ai",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/reference/openclaw-ai.md",
+    "hash": "869c98f82ccb620412e587f1ae41cf1d",
+    "last_scraped": "2026-07-13 08:48:16"
+  },
+  "https://docs.openclaw.ai/vi/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:17"
+  },
+  "https://docs.openclaw.ai/id/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:18"
+  },
+  "https://docs.openclaw.ai/id/reference/openclaw-ai": {
+    "title": "Paket @openclaw/ai",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/reference/openclaw-ai.md",
+    "hash": "2e650dbb6ec6477a7c150fc30b005e65",
+    "last_scraped": "2026-07-13 08:48:18"
+  },
+  "https://docs.openclaw.ai/tr/reference/openclaw-ai": {
+    "title": "@openclaw/ai paketi",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/reference/openclaw-ai.md",
+    "hash": "2883712074282024c1d9c5c799b21790",
+    "last_scraped": "2026-07-13 08:48:19"
+  },
+  "https://docs.openclaw.ai/tr/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:20"
+  },
+  "https://docs.openclaw.ai/fr/reference/openclaw-ai": {
+    "title": "Package @openclaw/ai",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/reference/openclaw-ai.md",
+    "hash": "04a803baf31f17d865e576c6dd16a15f",
+    "last_scraped": "2026-07-13 08:48:20"
+  },
+  "https://docs.openclaw.ai/fr/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:21"
+  },
+  "https://docs.openclaw.ai/de/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:22"
+  },
+  "https://docs.openclaw.ai/de/reference/openclaw-ai": {
+    "title": "@openclaw/ai-Paket",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/reference/openclaw-ai.md",
+    "hash": "f785b4b3383118449bf3d42d2d1547df",
+    "last_scraped": "2026-07-13 08:48:22"
+  },
+  "https://docs.openclaw.ai/pl/cli/promos.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:23"
+  },
+  "https://docs.openclaw.ai/pl/reference/openclaw-ai": {
+    "title": "pakiet @openclaw/ai",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/reference/openclaw-ai.md",
+    "hash": "6cfe8dd46c5eed4174a0ec35f50bf3d8",
+    "last_scraped": "2026-07-13 08:48:24"
+  },
+  "https://docs.openclaw.ai/pt-BR/cli/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:24"
+  },
+  "https://docs.openclaw.ai/es/cli/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:25"
+  },
+  "https://docs.openclaw.ai/de/cli/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:25"
+  },
+  "https://docs.openclaw.ai/ko/cli/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:26"
+  },
+  "https://docs.openclaw.ai/zh-TW/cli/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:27"
+  },
+  "https://docs.openclaw.ai/zh-CN/cli/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:27"
+  },
+  "https://docs.openclaw.ai/ja-JP/cli/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:28"
+  },
+  "https://docs.openclaw.ai/fr/cli/audit.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:29"
+  },
+  "https://docs.openclaw.ai/zh-TW/cli/fleet.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:29"
+  },
+  "https://docs.openclaw.ai/es/cli/fleet.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:30"
+  },
+  "https://docs.openclaw.ai/zh-CN/cli/fleet.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:31"
+  },
+  "https://docs.openclaw.ai/ko/cli/fleet.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:31"
+  },
+  "https://docs.openclaw.ai/fr/cli/fleet.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:32"
+  },
+  "https://docs.openclaw.ai/ja-JP/cli/fleet.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:32"
+  },
+  "https://docs.openclaw.ai/de/cli/fleet.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:33"
+  },
+  "https://docs.openclaw.ai/pt-BR/cli/fleet.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:34"
+  },
+  "https://docs.openclaw.ai/vi/concepts/managed-worktrees": {
+    "title": "C\u00e1c c\u00e2y l\u00e0m vi\u1ec7c \u0111\u01b0\u1ee3c qu\u1ea3n l\u00fd",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/concepts/managed-worktrees.md",
+    "hash": "23c723e011809e35e8e52315ad0e56ef",
+    "last_scraped": "2026-07-13 08:48:34"
+  },
+  "https://docs.openclaw.ai/zh-CN/concepts/managed-worktrees": {
+    "title": "\u6258\u7ba1\u5de5\u4f5c\u6811",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/concepts/managed-worktrees.md",
+    "hash": "062f772284443019417f3871ee2f0883",
+    "last_scraped": "2026-07-13 08:48:35"
+  },
+  "https://docs.openclaw.ai/id/concepts/managed-worktrees": {
+    "title": "Worktree terkelola",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/concepts/managed-worktrees.md",
+    "hash": "40735bab53eef75a60bbc5f8f656acd5",
+    "last_scraped": "2026-07-13 08:48:36"
+  },
+  "https://docs.openclaw.ai/uk/concepts/managed-worktrees": {
+    "title": "\u041a\u0435\u0440\u043e\u0432\u0430\u043d\u0456 \u0440\u043e\u0431\u043e\u0447\u0456 \u0434\u0435\u0440\u0435\u0432\u0430",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/concepts/managed-worktrees.md",
+    "hash": "5f4ca27190528a587b4adfb53763d9fd",
+    "last_scraped": "2026-07-13 08:48:36"
+  },
+  "https://docs.openclaw.ai/tr/concepts/managed-worktrees": {
+    "title": "Y\u00f6netilen \u00e7al\u0131\u015fma a\u011fa\u00e7lar\u0131",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/concepts/managed-worktrees.md",
+    "hash": "d0d0a67893f0583660b3f6e7254ebedc",
+    "last_scraped": "2026-07-13 08:48:37"
+  },
+  "https://docs.openclaw.ai/ar/concepts/managed-worktrees": {
+    "title": "\u0645\u0633\u0627\u062d\u0627\u062a \u0627\u0644\u0639\u0645\u0644 \u0627\u0644\u0645\u064f\u062f\u0627\u0631\u0629",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/concepts/managed-worktrees.md",
+    "hash": "efbebf9be838e5f557eae89dea6e1bc7",
+    "last_scraped": "2026-07-13 08:48:38"
+  },
+  "https://docs.openclaw.ai/th/concepts/managed-worktrees": {
+    "title": "\u0e40\u0e27\u0e34\u0e23\u0e4c\u0e01\u0e17\u0e23\u0e35\u0e17\u0e35\u0e48\u0e21\u0e35\u0e01\u0e32\u0e23\u0e08\u0e31\u0e14\u0e01\u0e32\u0e23",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/concepts/managed-worktrees.md",
+    "hash": "4712b2f6ec5ce4bf8b557176efcec933",
+    "last_scraped": "2026-07-13 08:48:38"
+  },
+  "https://docs.openclaw.ai/fa/concepts/managed-worktrees": {
+    "title": "\u062f\u0631\u062e\u062a\u200c\u0647\u0627\u06cc \u06a9\u0627\u0631\u06cc \u0645\u062f\u06cc\u0631\u06cc\u062a\u200c\u0634\u062f\u0647",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/concepts/managed-worktrees.md",
+    "hash": "7bdab5fdc6fc89fcd20f6178d513cd99",
+    "last_scraped": "2026-07-13 08:48:39"
+  },
+  "https://docs.openclaw.ai/ru/concepts/managed-worktrees": {
+    "title": "\u0423\u043f\u0440\u0430\u0432\u043b\u044f\u0435\u043c\u044b\u0435 \u0440\u0430\u0431\u043e\u0447\u0438\u0435 \u0434\u0435\u0440\u0435\u0432\u044c\u044f",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/concepts/managed-worktrees.md",
+    "hash": "0f024312e5dcd8a0c822a3936264cc27",
+    "last_scraped": "2026-07-13 08:48:40"
+  },
+  "https://docs.openclaw.ai/pl/concepts/managed-worktrees": {
+    "title": "Zarz\u0105dzane drzewa robocze",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/concepts/managed-worktrees.md",
+    "hash": "7115d6670723d20c3e79af22fde91c53",
+    "last_scraped": "2026-07-13 08:48:40"
+  },
+  "https://docs.openclaw.ai/fr/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:41"
+  },
+  "https://docs.openclaw.ai/nl/concepts/managed-worktrees": {
+    "title": "Beheerde worktrees",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/concepts/managed-worktrees.md",
+    "hash": "d2b90c48fc0ce0cdc6cd5ac2da6e117b",
+    "last_scraped": "2026-07-13 08:48:42"
+  },
+  "https://docs.openclaw.ai/it/concepts/managed-worktrees": {
+    "title": "Worktree gestiti",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/concepts/managed-worktrees.md",
+    "hash": "124e7f4c337f03e6fd80270ca5202ed4",
+    "last_scraped": "2026-07-13 08:48:42"
+  },
+  "https://docs.openclaw.ai/ja-JP/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:43"
+  },
+  "https://docs.openclaw.ai/es/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:44"
+  },
+  "https://docs.openclaw.ai/ko/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:44"
+  },
+  "https://docs.openclaw.ai/zh-TW/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:45"
+  },
+  "https://docs.openclaw.ai/pt-BR/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:46"
+  },
+  "https://docs.openclaw.ai/de/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:46"
+  },
+  "https://docs.openclaw.ai/ja-JP/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:47"
+  },
+  "https://docs.openclaw.ai/zh-CN/tools/chrome-extension": {
+    "title": "Chrome \u6269\u5c55\u7a0b\u5e8f",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/tools/chrome-extension.md",
+    "hash": "e96b4ca6daef19c974ea006a8cf04926",
+    "last_scraped": "2026-07-13 08:48:48"
+  },
+  "https://docs.openclaw.ai/nl/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:48"
+  },
+  "https://docs.openclaw.ai/nl/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:49"
+  },
+  "https://docs.openclaw.ai/de/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:50"
+  },
+  "https://docs.openclaw.ai/de/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:50"
+  },
+  "https://docs.openclaw.ai/fr/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:51"
+  },
+  "https://docs.openclaw.ai/fr/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:52"
+  },
+  "https://docs.openclaw.ai/tr/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:52"
+  },
+  "https://docs.openclaw.ai/tr/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:53"
+  },
+  "https://docs.openclaw.ai/id/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:53"
+  },
+  "https://docs.openclaw.ai/id/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:54"
+  },
+  "https://docs.openclaw.ai/zh-TW/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:55"
+  },
+  "https://docs.openclaw.ai/uk/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:55"
+  },
+  "https://docs.openclaw.ai/uk/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:56"
+  },
+  "https://docs.openclaw.ai/pt-BR/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:57"
+  },
+  "https://docs.openclaw.ai/pt-BR/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:57"
+  },
+  "https://docs.openclaw.ai/es/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:58"
+  },
+  "https://docs.openclaw.ai/fa/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:59"
+  },
+  "https://docs.openclaw.ai/fa/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:48:59"
+  },
+  "https://docs.openclaw.ai/ko/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:00"
+  },
+  "https://docs.openclaw.ai/ko/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:01"
+  },
+  "https://docs.openclaw.ai/ar/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:01"
+  },
+  "https://docs.openclaw.ai/ar/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:02"
+  },
+  "https://docs.openclaw.ai/it/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:02"
+  },
+  "https://docs.openclaw.ai/it/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:03"
+  },
+  "https://docs.openclaw.ai/pl/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:04"
+  },
+  "https://docs.openclaw.ai/pl/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:04"
+  },
+  "https://docs.openclaw.ai/th/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:05"
+  },
+  "https://docs.openclaw.ai/th/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:06"
+  },
+  "https://docs.openclaw.ai/ru/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:06"
+  },
+  "https://docs.openclaw.ai/ru/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:07"
+  },
+  "https://docs.openclaw.ai/vi/plugins/logbook.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:08"
+  },
+  "https://docs.openclaw.ai/vi/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:08"
+  },
+  "https://docs.openclaw.ai/fr/specs/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:09"
+  },
+  "https://docs.openclaw.ai/de/specs/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:09"
+  },
+  "https://docs.openclaw.ai/ja-JP/specs/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:10"
+  },
+  "https://docs.openclaw.ai/pt-BR/specs/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:11"
+  },
+  "https://docs.openclaw.ai/es/specs/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:11"
+  },
+  "https://docs.openclaw.ai/zh-CN/specs/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:12"
+  },
+  "https://docs.openclaw.ai/zh-TW/specs/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:13"
+  },
+  "https://docs.openclaw.ai/ko/specs/codex-supervision.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:13"
+  },
+  "https://docs.openclaw.ai/pt-BR/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:14"
+  },
+  "https://docs.openclaw.ai/ko/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:15"
+  },
+  "https://docs.openclaw.ai/th/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:15"
+  },
+  "https://docs.openclaw.ai/nl/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:16"
+  },
+  "https://docs.openclaw.ai/uk/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:17"
+  },
+  "https://docs.openclaw.ai/ar/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:17"
+  },
+  "https://docs.openclaw.ai/it/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:18"
+  },
+  "https://docs.openclaw.ai/fa/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:19"
+  },
+  "https://docs.openclaw.ai/ru/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:19"
+  },
+  "https://docs.openclaw.ai/vi/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:20"
+  },
+  "https://docs.openclaw.ai/id/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:20"
+  },
+  "https://docs.openclaw.ai/tr/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:21"
+  },
+  "https://docs.openclaw.ai/fr/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:22"
+  },
+  "https://docs.openclaw.ai/de/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:22"
+  },
+  "https://docs.openclaw.ai/pl/reference/openclaw-ai.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:23"
+  },
+  "https://docs.openclaw.ai/vi/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:24"
+  },
+  "https://docs.openclaw.ai/zh-CN/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:24"
+  },
+  "https://docs.openclaw.ai/id/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:25"
+  },
+  "https://docs.openclaw.ai/uk/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:26"
+  },
+  "https://docs.openclaw.ai/tr/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:26"
+  },
+  "https://docs.openclaw.ai/ar/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:27"
+  },
+  "https://docs.openclaw.ai/th/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:27"
+  },
+  "https://docs.openclaw.ai/fa/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:28"
+  },
+  "https://docs.openclaw.ai/ru/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:29"
+  },
+  "https://docs.openclaw.ai/pl/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:29"
+  },
+  "https://docs.openclaw.ai/nl/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:30"
+  },
+  "https://docs.openclaw.ai/it/concepts/managed-worktrees.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:31"
+  },
+  "https://docs.openclaw.ai/zh-CN/tools/chrome-extension.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-07-13 08:49:31"
   }
 }

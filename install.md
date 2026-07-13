@@ -1,14 +1,14 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-07-06
+scraped_at: 2026-07-13
 ---
 
 InstallInstall overview
 
 ## System requirements
 
-  * **Node 22.19+, 23.11+, or 24+** \- Node 24 is the default target; the installer script handles this automatically.
+  * **Node 22.22.3+, 24.15+, or 25.9+** \- Node 24 is the default target; the installer script handles this automatically.
   * **macOS, Linux, or Windows** \- Windows users can start with the native Windows Hub app, the PowerShell CLI installer, or a WSL2 Gateway. See [Windows](</platforms/windows>).
   * `pnpm` is only needed if you build from source.
 
@@ -109,7 +109,7 @@ bashCopy code
 
 ### Containers and package managers
 
-[**Docker** Containerized or headless deployments. ](</install/docker>) [**Podman** Rootless container alternative to Docker. ](</install/podman>) [**Nix** Declarative install via Nix flake. ](</install/nix>) [**Ansible** Automated fleet provisioning. ](</install/ansible>) [**Bun** CLI-only usage via the Bun runtime. ](</install/bun>)
+[**Docker** Containerized or headless deployments. ](</install/docker>) [**Podman** Rootless container alternative to Docker. ](</install/podman>) [**Nix** Declarative install via Nix flake. ](</install/nix>) [**Ansible** Automated fleet provisioning. ](</install/ansible>) [**Bun** Optional dependency installer and package-script runner. ](</install/bun>)
 
 ## Verify the install
 

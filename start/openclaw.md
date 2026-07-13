@@ -1,7 +1,7 @@
 ---
 title: Personal assistant setup
 source_url: https://docs.openclaw.ai/start/openclaw
-scraped_at: 2026-07-06
+scraped_at: 2026-07-13
 ---
 
 Get startedGuides
@@ -110,8 +110,9 @@ json5Copy code
 
 ## Sessions and memory
 
-  * Session files: `~/.openclaw/agents/<agentId>/sessions/{{SessionId}}.jsonl`
-  * Session metadata (token usage, last route, etc): `~/.openclaw/agents/<agentId>/sessions/sessions.json`
+  * Session rows, transcript rows, and metadata (token usage, last route, etc): `~/.openclaw/agents/<agentId>/agent/openclaw-agent.sqlite`
+  * Legacy/archive transcript artifacts: `~/.openclaw/agents/<agentId>/sessions/`
+  * Legacy row migration source: `~/.openclaw/agents/<agentId>/sessions/sessions.json`
   * `/new` or `/reset` starts a fresh session for that chat (configurable via `session.resetTriggers`). If sent alone, OpenClaw acknowledges the reset without invoking the model.
   * `/compact [instructions]` compacts the session context and reports the remaining context budget.
 

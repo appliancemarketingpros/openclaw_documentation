@@ -1,7 +1,7 @@
 ---
 title: Overview
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-07-06
+scraped_at: 2026-07-13
 ---
 
 CapabilitiesOverview
@@ -18,7 +18,7 @@ If you need to... | Use this first | Then read
 ---|---|---  
 Let an agent act with existing capabilities | Built-in tools | Tool categories  
 Control what an agent can call | Tool policy | [Tools and custom providers](</gateway/config-tools>)  
-Teach an agent a workflow | Skills | [Skills](</tools/skills>), [Creating skills](</tools/creating-skills>), and [Skill Workshop](</tools/skill-workshop>)  
+Teach an agent a workflow | Skills | [Skills](</tools/skills>), [Creating skills](</tools/creating-skills>), [Skill Workshop](</tools/skill-workshop>), and [Self-learning](</tools/self-learning>)  
 Add a new integration or runtime surface | Plugins | [Plugins](</tools/plugin>) and [Build plugins](</plugins/building-plugins>)  
 Run work later or in the background | [Automation](</automation>) | [Automation overview](</automation>)  
 Coordinate multiple agents or harnesses | [Sub-agents](</tools/subagents>) | [ACP agents](</tools/acp-agents>) and [Agent send](</tools/agent-send>)  
@@ -38,7 +38,7 @@ A skill is a `SKILL.md` instruction pack loaded into the agent prompt. Use a ski
 
 Skills can live in a workspace, shared skill directory, managed OpenClaw skill root, or plugin package.
 
-[Skills](</tools/skills>) | [Skill Workshop](</tools/skill-workshop>) | [Creating skills](</tools/creating-skills>) | [Skills config](</tools/skills-config>)
+[Skills](</tools/skills>) | [Skill Workshop](</tools/skill-workshop>) | [Self-learning](</tools/self-learning>) | [Creating skills](</tools/creating-skills>) | [Skills config](</tools/skills-config>)
 
 * ### Use a plugin when OpenClaw needs a new capability
 
@@ -70,6 +70,7 @@ Plugins can register additional tools. Plugin authors wire tools through `api.re
 Common plugin-provided tools include:
 
   * [Diffs](</tools/diffs>) for rendering file and markdown diffs
+  * [Show widget](</tools/show-widget>) for self-contained inline SVG and HTML in web chat
   * [LLM Task](</tools/llm-task>) for JSON-only workflow steps
   * [Lobster](</tools/lobster>) for typed workflows with resumable approvals
   * [Tokenjuice](</tools/tokenjuice>) for compacting noisy `exec` and `bash` tool output

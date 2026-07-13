@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-07-06
+scraped_at: 2026-07-13
 ---
 
 ModelsOverview
@@ -39,6 +39,7 @@ json5Copy code
   * [ds4 (local DeepSeek V4)](</providers/ds4>)
   * [ElevenLabs](</providers/elevenlabs>)
   * [fal](</providers/fal>)
+  * [Featherless AI](</providers/featherless>)
   * [Fireworks](</providers/fireworks>)
   * [GitHub Copilot](</providers/github-copilot>)
   * [GMI Cloud](</providers/gmi>)
@@ -50,6 +51,7 @@ json5Copy code
   * [Kilocode](</providers/kilocode>)
   * [LiteLLM (unified gateway)](</providers/litellm>)
   * [LM Studio (local models)](</providers/lmstudio>)
+  * [LongCat](</providers/longcat>)
   * [MiniMax](</providers/minimax>)
   * [Mistral](</providers/mistral>)
   * [Moonshot AI (Kimi + Kimi Coding)](</providers/moonshot>)

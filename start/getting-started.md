@@ -1,7 +1,7 @@
 ---
 title: Getting started
 source_url: https://docs.openclaw.ai/start/getting-started
-scraped_at: 2026-07-06
+scraped_at: 2026-07-13
 ---
 
 Get startedFirst steps
@@ -10,7 +10,7 @@ Install OpenClaw, run onboarding, and chat with your AI assistant in about 5 min
 
 ## What you need
 
-  * **Node.js 22.19+, 23.11+, or 24+** (24 is the recommended default)
+  * **Node.js 22.22.3+, 24.15+, or 25.9+** (24 is the recommended default)
   * **An API key** from a model provider (Anthropic, OpenAI, Google, etc.) — onboarding will prompt you
 
 

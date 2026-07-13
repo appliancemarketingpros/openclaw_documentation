@@ -1,14 +1,14 @@
 ---
 title: OpenClaw
 source_url: https://docs.openclaw.ai/
-scraped_at: 2026-07-06
+scraped_at: 2026-07-13
 ---
 
 Get startedOverview
 
 # OpenClaw 🦞
 
-![OpenClaw](/assets/openclaw-logo-text-dark.png) ![OpenClaw](/assets/openclaw-logo-text.png)
+![OpenClaw](/assets/openclaw-hero-light.png) ![OpenClaw](/assets/openclaw-hero-dark.png)
 
 > _"EXFOLIATE! EXFOLIATE!"_ — A space lobster, probably
 
@@ -16,7 +16,13 @@ Get startedOverview
 
 Send a message, get an agent response from your pocket. Run one Gateway across channel plugins, WebChat, and mobile nodes.
 
-[**Get Started** Install OpenClaw and bring up the Gateway in minutes. ](</start/getting-started>) [**Run Onboarding** Guided setup with `openclaw onboard` and pairing flows. ](</start/wizard>) [**Open the Control UI** Launch the browser dashboard for chat, config, and sessions. ](</web/control-ui>)
+[**Get Started** Install OpenClaw and bring up the Gateway in minutes. ](</start/getting-started>) [**Run Onboarding** Guided setup with `openclaw onboard` and pairing flows. ](</start/wizard>) [**Connect a Channel** Link Discord, Signal, Telegram, WhatsApp, and more to chat from anywhere. ](</channels>) [**Open the Control UI** Launch the browser dashboard for chat, config, and sessions. ](</web/control-ui>)
+
+## Browse docs
+
+Mobile browsers may show the section menu without the full desktop tab bar. Use these hub links to reach the same top-level docs areas from the page body.
+
+[**Get started** Overview, showcase, first steps, and setup guides. ](</>) [**Install** Install paths, updates, containers, hosting, and advanced setup. ](</install>) [**Channels** Messaging channels, pairing, routing, access groups, and channel QA. ](</channels>) [**Agents** Architecture, sessions, context, memory, and multi-agent routing. ](</concepts/architecture>) [**Capabilities** Tools, skills, cron, webhooks, and automation capabilities. ](</tools>) [**ClawHub** Plugin marketplace, publishing, curation, and trust guidance. ](</clawhub>) [**Models** Providers, model configuration, failover, and local model services. ](</providers>) [**Platforms** macOS, Windows, iOS, Android, nodes, and web surfaces. ](</platforms>) [**Gateway & Ops** Gateway configuration, security, diagnostics, and operations. ](</gateway>) [**Reference** CLI reference, schemas, RPC, release notes, and templates. ](</cli>) [**Help** Troubleshooting, FAQs, testing, diagnostics, and environment checks. ](</help>)
 
 ## What is OpenClaw?
 
@@ -32,7 +38,7 @@ OpenClaw is a **self-hosted gateway** that connects your favorite chat apps — 
   * **Open source** : MIT licensed, community-driven
 
 
-**What do you need?** Node 24 (recommended), or Node 22 LTS (`22.19+`) for compatibility, an API key from your chosen provider, and 5 minutes. For best quality and security, use the strongest latest-generation model available.
+**What do you need?** Node 24.15+ (recommended), Node 22 LTS (`22.22.3+`) for compatibility, or Node 25.9+, an API key from your chosen provider, and 5 minutes. For best quality and security, use the strongest latest-generation model available.
 
 ## How it works
 [code] 

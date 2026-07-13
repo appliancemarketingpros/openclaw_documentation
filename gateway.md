@@ -1,7 +1,7 @@
 ---
 title: Gateway runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-07-06
+scraped_at: 2026-07-13
 ---
 
 Gateway & OpsGateway
@@ -229,7 +229,7 @@ Defaults include isolated state/config and base gateway port `19001`.
   * Gateway returns a `hello-ok` frame with a `snapshot` (`presence`, `health`, `stateVersion`, `uptimeMs`) plus `policy` limits (`maxPayload`, `maxBufferedBytes`, `tickIntervalMs`).
   * `hello-ok.features.methods` / `events` are a conservative discovery list, not a generated dump of every callable helper route.
   * Requests: `req(method, params)` → `res(ok/payload|error)`.
-  * Common events include `connect.challenge`, `agent`, `chat`, `session.message`, `session.operation`, `session.tool`, `sessions.changed`, `presence`, `tick`, `health`, `heartbeat`, pairing/approval lifecycle events, and `shutdown`.
+  * Common events include `connect.challenge`, `agent`, `chat`, `session.message`, `session.operation`, `session.tool`, opt-in `session.approval`, `sessions.changed`, `presence`, `tick`, `health`, `heartbeat`, pairing/approval lifecycle events, and `shutdown`.
 
 
 Agent runs are two-stage:
