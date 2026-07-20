@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-07-13
+scraped_at: 2026-07-20
 ---
 
 ModelsOverview
@@ -28,6 +28,7 @@ json5Copy code
   * [Anthropic (API + Claude CLI)](</providers/anthropic>)
   * [Arcee AI (Trinity models)](</providers/arcee>)
   * [Azure Speech](</providers/azure-speech>)
+  * [Baseten (Inkling + Model APIs)](</providers/baseten>)
   * [BytePlus (International)](</concepts/model-providers#byteplus-international>)
   * [Cerebras](</providers/cerebras>)
   * [Chutes](</providers/chutes>)
@@ -66,7 +67,6 @@ json5Copy code
   * [Perplexity (web search)](</providers/perplexity-provider>)
   * [Qianfan](</providers/qianfan>)
   * [Qwen Cloud](</providers/qwen>)
-  * [Qwen OAuth / Portal](</providers/qwen-oauth>)
   * [Runway](</providers/runway>)
   * [SenseAudio](</providers/senseaudio>)
   * [SGLang (local models)](</providers/sglang>)

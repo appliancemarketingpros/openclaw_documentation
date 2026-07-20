@@ -1,7 +1,7 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-07-13
+scraped_at: 2026-07-20
 ---
 
 InstallInstall overview
