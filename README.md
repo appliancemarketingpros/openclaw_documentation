@@ -35,7 +35,6 @@
 
 - [Features](concepts/features.md) — [source](https://docs.openclaw.ai/concepts/features)
 - [Gateway architecture](concepts/architecture.md) — [source](https://docs.openclaw.ai/concepts/architecture)
-- [Multi-user mode](concepts/multi-user.md) — [source](https://docs.openclaw.ai/concepts/multi-user)
 
 ### Tools
 
@@ -51,14 +50,11 @@
 
 ### Gateway
 
-- [Building a Gateway client](gateway/clients.md) — [source](https://docs.openclaw.ai/gateway/clients)
-- [Embedding OpenClaw](gateway/embedding.md) — [source](https://docs.openclaw.ai/gateway/embedding)
 - [Gateway runbook](gateway.md) — [source](https://docs.openclaw.ai/gateway)
 
 ### Cli
 
 - [CLI reference](cli.md) — [source](https://docs.openclaw.ai/cli)
-- [Claws](cli/claws.md) — [source](https://docs.openclaw.ai/cli/claws)
 
 ### Help
 
@@ -67,64 +63,6 @@
 ### Vps
 
 - [Linux server](vps.md) — [source](https://docs.openclaw.ai/vps)
-
-### Web
-
-- [Session Dashboards](web/dashboards.md) — [source](https://docs.openclaw.ai/web/dashboards)
-
-### De
-
-- [Claws](de/cli/claws.md) — [source](https://docs.openclaw.ai/de/cli/claws)
-- [Dashboard-Architektur](de/web/dashboard-architecture.md) — [source](https://docs.openclaw.ai/de/web/dashboard-architecture)
-- [Datenbankschemas](de/reference/database-schemas.md) — [source](https://docs.openclaw.ai/de/reference/database-schemas)
-- [Die Hauptsitzung](de/concepts/main-session.md) — [source](https://docs.openclaw.ai/de/concepts/main-session)
-- [Erstellen eines Gateway-Clients](de/gateway/clients.md) — [source](https://docs.openclaw.ai/de/gateway/clients)
-- [Mehrbenutzermodus](de/concepts/multi-user.md) — [source](https://docs.openclaw.ai/de/concepts/multi-user)
-- [OpenClaw einbetten](de/gateway/embedding.md) — [source](https://docs.openclaw.ai/de/gateway/embedding)
-- [Pull-Request-Review-Ablauf](de/reference/pull-request-review-flow.md) — [source](https://docs.openclaw.ai/de/reference/pull-request-review-flow)
-- [Ratenbegrenzung](de/gateway/security/rate-limiting.md) — [source](https://docs.openclaw.ai/de/gateway/security/rate-limiting)
-- [Sitzungs-Dashboards](de/web/dashboards.md) — [source](https://docs.openclaw.ai/de/web/dashboards)
-- [v2026.7.1](de/releases/2026.7.1.md) — [source](https://docs.openclaw.ai/de/releases/2026.7.1)
-
-### Es
-
-- [Creación de un cliente de Gateway](es/gateway/clients.md) — [source](https://docs.openclaw.ai/es/gateway/clients)
-- [Garras](es/cli/claws.md) — [source](https://docs.openclaw.ai/es/cli/claws)
-- [Integración de OpenClaw](es/gateway/embedding.md) — [source](https://docs.openclaw.ai/es/gateway/embedding)
-- [Modo multiusuario](es/concepts/multi-user.md) — [source](https://docs.openclaw.ai/es/concepts/multi-user)
-- [Paneles de sesiones](es/web/dashboards.md) — [source](https://docs.openclaw.ai/es/web/dashboards)
-
-### Hi
-
-- [Gateway क्लाइंट बनाना](hi/gateway/clients.md) — [source](https://docs.openclaw.ai/hi/gateway/clients)
-- [OpenClaw को एम्बेड करना](hi/gateway/embedding.md) — [source](https://docs.openclaw.ai/hi/gateway/embedding)
-- [सत्र डैशबोर्ड](hi/web/dashboards.md) — [source](https://docs.openclaw.ai/hi/web/dashboards)
-
-### Id
-
-- [Dasbor Sesi](id/web/dashboards.md) — [source](https://docs.openclaw.ai/id/web/dashboards)
-- [Membangun klien Gateway](id/gateway/clients.md) — [source](https://docs.openclaw.ai/id/gateway/clients)
-- [Menyematkan OpenClaw](id/gateway/embedding.md) — [source](https://docs.openclaw.ai/id/gateway/embedding)
-
-### Th
-
-- [การฝัง OpenClaw](th/gateway/embedding.md) — [source](https://docs.openclaw.ai/th/gateway/embedding)
-- [การสร้างไคลเอนต์ Gateway](th/gateway/clients.md) — [source](https://docs.openclaw.ai/th/gateway/clients)
-- [แดชบอร์ดเซสชัน](th/web/dashboards.md) — [source](https://docs.openclaw.ai/th/web/dashboards)
-
-### Vi
-
-- [Bảng điều khiển phiên làm việc](vi/web/dashboards.md) — [source](https://docs.openclaw.ai/vi/web/dashboards)
-- [Nhúng OpenClaw](vi/gateway/embedding.md) — [source](https://docs.openclaw.ai/vi/gateway/embedding)
-- [Xây dựng ứng dụng khách Gateway](vi/gateway/clients.md) — [source](https://docs.openclaw.ai/vi/gateway/clients)
-
-### Zh Tw
-
-- [利爪](zh-TW/cli/claws.md) — [source](https://docs.openclaw.ai/zh-TW/cli/claws)
-- [多使用者模式](zh-TW/concepts/multi-user.md) — [source](https://docs.openclaw.ai/zh-TW/concepts/multi-user)
-- [嵌入 OpenClaw](zh-TW/gateway/embedding.md) — [source](https://docs.openclaw.ai/zh-TW/gateway/embedding)
-- [工作階段儀表板](zh-TW/web/dashboards.md) — [source](https://docs.openclaw.ai/zh-TW/web/dashboards)
-- [建構閘道用戶端](zh-TW/gateway/clients.md) — [source](https://docs.openclaw.ai/zh-TW/gateway/clients)
 
 ---
 
