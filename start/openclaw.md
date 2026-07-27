@@ -1,7 +1,7 @@
 ---
 title: Personal assistant setup
 source_url: https://docs.openclaw.ai/start/openclaw
-scraped_at: 2026-07-20
+scraped_at: 2026-07-27
 ---
 
 Get startedGuides
@@ -65,7 +65,7 @@ When onboarding finishes, OpenClaw auto-opens the dashboard and prints a clean (
 
 OpenClaw reads operating instructions and "memory" from its workspace directory.
 
-By default, OpenClaw uses `~/.openclaw/workspace` as the agent workspace, and creates it (plus starter `AGENTS.md`, `SOUL.md`, `TOOLS.md`, `IDENTITY.md`, `USER.md`, `HEARTBEAT.md`) automatically on onboarding or first agent run. `BOOTSTRAP.md` is only created for a brand-new workspace and should not come back after you delete it. `MEMORY.md` is optional and never auto-created; when present, it loads for normal sessions. Subagent sessions only inject `AGENTS.md` and `TOOLS.md`.
+By default, OpenClaw uses `~/.openclaw/workspace` as the agent workspace, and creates it (plus starter `AGENTS.md`, `SOUL.md`, `TOOLS.md`, `IDENTITY.md`, `USER.md`) automatically on onboarding or first agent run. `BOOTSTRAP.md` is only created for a brand-new workspace and should not come back after you delete it. `MEMORY.md` is optional and never auto-created; when present, it loads for normal sessions. Subagent sessions only inject `AGENTS.md` and `TOOLS.md`.
 
 To create the workspace and config folders without running the full onboarding wizard:
 
@@ -105,7 +105,7 @@ Example:
 
 json5Copy code
 [code]
-    {  logging: { level: "info" },  agents: {    defaults: {      model: { primary: "anthropic/claude-opus-4-8" },      workspace: "~/.openclaw/workspace",      thinkingDefault: "high",      timeoutSeconds: 1800,      // Start with 0; enable later.      heartbeat: { every: "0m" },    },    list: [      {        id: "main",        default: true,        groupChat: {          mentionPatterns: ["@openclaw", "openclaw"],        },      },    ],  },  channels: {    whatsapp: {      allowFrom: ["+15555550123"],      groups: {        "*": { requireMention: true },      },    },  },  session: {    scope: "per-sender",    resetTriggers: ["/new", "/reset"],    reset: {      mode: "daily",      atHour: 4,      idleMinutes: 10080,    },  },}
+    {  logging: { level: "info" },  agents: {    defaults: {      model: { primary: "anthropic/claude-opus-5" },      workspace: "~/.openclaw/workspace",      thinkingDefault: "high",      timeoutSeconds: 1800,      // Start with 0; enable later.      heartbeat: { every: "0m" },    },    list: [      {        id: "main",        default: true,        groupChat: {          mentionPatterns: ["@openclaw", "openclaw"],        },      },    ],  },  channels: {    whatsapp: {      allowFrom: ["+15555550123"],      groups: {        "*": { requireMention: true },      },    },  },  session: {    scope: "per-sender",    resetTriggers: ["/new", "/reset"],    reset: {      mode: "daily",      atHour: 4,      idleMinutes: 10080,    },  },}
 [/code]
 
 ## Sessions and memory
@@ -119,10 +119,10 @@ json5Copy code
 
 ## Heartbeats (proactive mode)
 
-By default, OpenClaw runs a heartbeat every 30 minutes with the prompt: `Read HEARTBEAT.md if it exists (workspace context). Follow it strictly. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.` Set `agents.defaults.heartbeat.every: "0m"` to disable.
+By default, OpenClaw runs a heartbeat every 30 minutes with the prompt: `Follow the heartbeat monitor scratch context when provided. Recurring tasks are cron jobs; create or change their schedules with cron tools or the openclaw cron CLI, not heartbeat scratch. Do not infer or repeat old tasks from prior chats. If nothing needs attention, reply HEARTBEAT_OK.` Set `agents.defaults.heartbeat.every: "0m"` to disable. Heartbeat checklists live in the monitor's cron scratch (see [Heartbeat](</gateway/heartbeat>)); `openclaw doctor --fix` migrates a legacy workspace `HEARTBEAT.md` into it.
 
-  * If `HEARTBEAT.md` exists but is effectively empty (only blank lines, Markdown/HTML comments, Markdown headings like `# Heading`, fence markers, or empty checklist stubs), OpenClaw skips the heartbeat run to save API calls.
-  * If the file is missing, the heartbeat still runs and the model decides what to do.
+  * If the monitor scratch exists but is effectively empty (only blank lines, Markdown/HTML comments, Markdown headings like `# Heading`, fence markers, or empty checklist stubs), OpenClaw skips the heartbeat run to save API calls.
+  * If no scratch exists, the heartbeat still runs and the model decides what to do.
   * If the agent replies with `HEARTBEAT_OK` (optionally with short padding; see `agents.defaults.heartbeat.ackMaxChars`), OpenClaw suppresses outbound delivery for that heartbeat.
   * By default, heartbeat delivery to DM-style `user:<id>` targets is allowed. Set `agents.defaults.heartbeat.directPolicy: "block"` to suppress direct-target delivery while keeping heartbeat runs active.
   * Heartbeats run full agent turns - shorter intervals burn more tokens.
@@ -136,10 +136,15 @@ json5Copy code
 
 Inbound attachments (images/audio/docs) can be surfaced to your command via templates:
 
-  * `{{MediaPath}}` (local temp file path)
-  * `{{MediaUrl}}` (pseudo-URL)
+  * `{{AttachmentPath}}` (local temp file path)
+  * `{{AttachmentUrl}}` (original URL or provider reference)
+  * `{{AttachmentContentType}}` (MIME content type)
+  * `{{AttachmentDir}}` (directory containing the local path)
+  * `{{AttachmentIndex}}` (zero-based source fact index)
   * `{{Transcript}}` (if audio transcription is enabled)
 
+
+The older `{{MediaPath}}`, `{{MediaUrl}}`, `{{MediaType}}`, and `{{MediaDir}}` names remain available as deprecated compatibility aliases.
 
 Outbound attachments from the agent use structured media fields on the message tool or reply payload, such as `media`, `mediaUrl`, `mediaUrls`, `path`, or `filePath`. Example message-tool arguments:
 
@@ -167,7 +172,7 @@ bashCopy code
     openclaw status          # local status (creds, sessions, queued events)openclaw status --all    # full diagnosis (read-only, pasteable)openclaw status --deep   # probe channels (WhatsApp Web + Telegram + Discord + Slack + Signal)openclaw health --json   # gateway health snapshot over the WS connection
 [/code]
 
-Logs live under `/tmp/openclaw/` (default: `openclaw-YYYY-MM-DD.log`).
+Logs live under `/tmp/openclaw/`: `openclaw-YYYY-MM-DD.log` for the default profile and `openclaw-<profile>-YYYY-MM-DD.log` for named profiles.
 
 ## Next steps
 

@@ -1,7 +1,7 @@
 ---
 title: OpenClaw
 source_url: https://docs.openclaw.ai/
-scraped_at: 2026-07-20
+scraped_at: 2026-07-27
 ---
 
 Get startedOverview
@@ -15,6 +15,8 @@ Get startedOverview
 **Any OS gateway for AI agents across Discord, Google Chat, iMessage, Matrix, Microsoft Teams, Signal, Slack, Telegram, WhatsApp, Zalo, and more.**
 
 Send a message, get an agent response from your pocket. Run one Gateway across channel plugins, WebChat, and mobile nodes.
+
+Developed in the open by the [OpenClaw Foundation](<https://openclaw.org>), a non-profit.
 
 [**Get Started** Install OpenClaw and bring up the Gateway in minutes. ](</start/getting-started>) [**Run Onboarding** Guided setup with `openclaw onboard` and pairing flows. ](</start/wizard>) [**Connect a Channel** Link Discord, Signal, Telegram, WhatsApp, and more to chat from anywhere. ](</channels>) [**Open the Control UI** Launch the browser dashboard for chat, config, and sessions. ](</web/control-ui>)
 

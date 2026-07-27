@@ -1,7 +1,7 @@
 ---
 title: Onboarding (CLI)
 source_url: https://docs.openclaw.ai/start/wizard
-scraped_at: 2026-07-20
+scraped_at: 2026-07-27
 ---
 
 Get startedFirst steps
@@ -93,9 +93,9 @@ Use `openclaw agents add <name>` to create a separate agent with its own workspa
 
 What it sets:
 
-  * `agents.list[].name`
-  * `agents.list[].workspace`
-  * `agents.list[].agentDir`
+  * `agents.entries.*.name`
+  * `agents.entries.*.workspace`
+  * `agents.entries.*.agentDir`
 
 
 Notes:

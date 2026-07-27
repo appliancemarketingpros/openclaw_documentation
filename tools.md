@@ -1,7 +1,7 @@
 ---
 title: Overview
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-07-20
+scraped_at: 2026-07-27
 ---
 
 CapabilitiesOverview
@@ -118,7 +118,7 @@ If the model cannot see or call a tool, start with the effective policy for the 
 
 ## Related
 
-  * [Automation](</automation>) for cron, tasks, heartbeat, commitments, hooks, standing orders, and Task Flow
+  * [Automation](</automation>) for cron, tasks, heartbeat, hooks, standing orders, and Task Flow
   * [Agents](</concepts/agent>) for the agent model, sessions, memory, and multi-agent coordination
   * [Tools and custom providers](</gateway/config-tools>) for the canonical tool policy reference
   * [Plugins](</tools/plugin>) for plugin installation and management

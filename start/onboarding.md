@@ -1,7 +1,7 @@
 ---
 title: Onboarding (macOS app)
 source_url: https://docs.openclaw.ai/start/onboarding
-scraped_at: 2026-07-20
+scraped_at: 2026-07-27
 ---
 
 Get startedFirst steps
@@ -45,7 +45,7 @@ Local setup installs the global `openclaw` CLI via npm, pnpm, or bun, preferring
 
 A connected Gateway that already has a configured agent model skips this page entirely and opens the normal agent UI. OpenClaw and provider setup only run for a fresh or incomplete Gateway.
 
-Once the Gateway is ready, onboarding looks for AI access you already have: a Claude Code or Codex login, `OPENAI_API_KEY` / `ANTHROPIC_API_KEY`, or a tool-capable model already installed in a reachable Ollama or LM Studio server. Detection runs on the Gateway host, including when the macOS app connects to a Linux Gateway. The best option is tested with a real completion and only saved after it answers; when a test fails the app automatically tries the next option and shows why the previous one failed. If several options are found you can switch between them before continuing. Automatic local discovery never pulls or downloads a model.
+Once the Gateway is ready, onboarding looks for AI access you already have: a Claude Code or Codex login, `OPENAI_API_KEY` / `ANTHROPIC_API_KEY`, or a tool-capable model with at least 16K of measured effective context already installed in a reachable Ollama or LM Studio server. Detection runs on the Gateway host, including when the macOS app connects to a Linux Gateway. The best option is tested with a real completion and only saved after it answers; when a test fails the app automatically tries the next option and shows why the previous one failed. If several options are found you can switch between them before continuing. Automatic local discovery never pulls or downloads a model.
 
 To use a Claude subscription when the Gateway host has no Claude CLI login, run `claude setup-token` on any machine with Claude Code installed, then paste the printed token as **Anthropic setup-token** under **Connect with an API key or token**.
 

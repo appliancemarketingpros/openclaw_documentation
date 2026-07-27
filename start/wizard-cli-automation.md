@@ -1,7 +1,7 @@
 ---
 title: CLI automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-07-20
+scraped_at: 2026-07-27
 ---
 
 Get startedGuides
@@ -107,7 +107,7 @@ bashCopy code
     openclaw agents add work \  --workspace ~/.openclaw/workspace-work \  --model openai/gpt-5.6-sol \  --bind whatsapp:biz \  --non-interactive \  --json
 [/code]
 
-Config keys it writes (`agents.list[]` entry for the new agent id):
+Config keys it writes (`agents.entries.*` entry for the new agent id):
 
   * `name`
   * `workspace`
