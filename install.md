@@ -1,14 +1,14 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-07-27
+scraped_at: 2026-08-03
 ---
 
 InstallInstall overview
 
 ## System requirements
 
-  * **Node 22.22.3+, 24.15+, or 25.9+** \- Node 24 is the default target; the installer script handles this automatically.
+  * **Node 22.22.3+, 24.15+, or 25.9+** \- Node 26 is the recommended default; the installer script provisions it automatically when Node is missing.
   * **macOS, Linux, or Windows** \- Windows users can start with the native Windows Hub app, the PowerShell CLI installer, or a WSL2 Gateway. See [Windows](</platforms/windows>).
   * `pnpm` is only needed if you build from source.
 
@@ -79,7 +79,7 @@ bashCopy code
 
 bashCopy code
 [code]
-    pnpm add -g openclaw@latestpnpm approve-builds -gopenclaw onboard --install-daemon
+    pnpm add -g --allow-build=openclaw openclaw@latestopenclaw onboard --install-daemon
 [/code]
 
 ### bun

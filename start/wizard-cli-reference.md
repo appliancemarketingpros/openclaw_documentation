@@ -1,7 +1,7 @@
 ---
 title: CLI setup reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-07-27
+scraped_at: 2026-08-03
 ---
 
 Get startedGuides

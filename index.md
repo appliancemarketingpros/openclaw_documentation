@@ -1,7 +1,7 @@
 ---
 title: OpenClaw
 source_url: https://docs.openclaw.ai/
-scraped_at: 2026-07-27
+scraped_at: 2026-08-03
 ---
 
 Get startedOverview
@@ -40,7 +40,7 @@ OpenClaw is a **self-hosted gateway** that connects your favorite chat apps — 
   * **Open source** : MIT licensed, community-driven
 
 
-**What do you need?** Node 24.15+ (recommended), Node 22 LTS (`22.22.3+`) for compatibility, or Node 25.9+, an API key from your chosen provider, and 5 minutes. For best quality and security, use the strongest latest-generation model available.
+**What do you need?** Node 26 (recommended), or another supported release: Node 22.22.3+, Node 24.15+, or Node 25.9+. You also need an API key from your chosen provider and 5 minutes. For best quality and security, use the strongest latest-generation model available.
 
 ## How it works
 [code] 

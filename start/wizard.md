@@ -1,7 +1,7 @@
 ---
 title: Onboarding (CLI)
 source_url: https://docs.openclaw.ai/start/wizard
-scraped_at: 2026-07-27
+scraped_at: 2026-08-03
 ---
 
 Get startedFirst steps
@@ -15,7 +15,9 @@ CLI onboarding is the recommended terminal setup path on macOS, Linux, and Windo
 
 Guided onboarding establishes inference first. It detects available AI access, requires a real completion, and only then starts [OpenClaw](</cli/openclaw>) to configure the rest of OpenClaw. Choosing **Skip for now** exits onboarding without starting OpenClaw.
 
-The classic wizard remains available for custom providers, remote Gateway setup, channel pairing, daemon controls, skills, and imports. Run it explicitly with `openclaw onboard --classic`; the guided inference picker does not delegate into it. After inference passes, OpenClaw can use `open channel wizard for <channel>` to hand channel setup that needs secrets to a masked terminal wizard. To change the model provider or its authentication, exit OpenClaw and run `openclaw onboard`; OpenClaw does not open guided or classic provider flows.
+The classic wizard remains available for custom providers, remote Gateway setup, channel pairing, daemon controls, skills, and imports. Run it explicitly with `openclaw onboard --classic`; the guided inference picker does not delegate into it. After inference passes, OpenClaw can use `open channel wizard for <channel>` to hand channel setup that needs secrets to a masked terminal wizard. Workspace skills and web search are configured the same conversational way: `configure skills` and `configure web search` host those setup flows in the chat, and `open search wizard` hands credential entry to the masked terminal wizard. For a local Gateway, `configure gateway` guides port, bind, auth, and Tailscale settings but saves config without restarting; say `restart gateway` afterward, or use `open gateway wizard` for masked terminal credential entry and then run `openclaw gateway restart`. Remote Gateway mode remains an onboarding or `openclaw configure` choice rather than a hosted chat wizard.
+
+After onboarding has created the default agent workspace, `import memory` can copy detected local memory into it. This conversational import does not change config or import credentials or skills, needs no Gateway restart, and reports per-source partial or failed copies honestly. To change the model provider or its authentication, exit OpenClaw and run `openclaw onboard`; OpenClaw does not open guided or classic provider flows.
 
 ## Locale
 
@@ -40,7 +42,7 @@ bashCopy code
 Plain `openclaw onboard` follows this path:
 
   1. Accept the security notice.
-  2. Detect configured models, API-key environment variables, supported local AI CLIs, and already installed tool-capable models from reachable Ollama or LM Studio servers on the Gateway host. This read-only pass never downloads a model. Gemini CLI, Antigravity, Pi, and OpenCode installs are also reported when they cannot serve as the reusable inference route for guided setup. Gemini and Antigravity cannot enforce the tool-free probe; Pi and OpenCode are whole-agent harnesses rather than setup inference routes.
+  2. Detect configured models, API-key environment variables, supported local AI CLIs, and already installed tool-capable models from reachable Ollama or LM Studio servers on the Gateway host. This read-only pass never downloads a model. Pi and OpenCode installs may also be reported for context when they cannot serve as the reusable inference route. Gemini CLI and Antigravity are not offered as detected setup routes.
   3. Test the first detected candidate with a real completion. On failure, show the reason and continue to the next usable candidate.
   4. If detection is exhausted, choose OpenAI, Anthropic, xAI (Grok), Google, or OpenRouter, or choose **More…** for the remaining providers. Each provider's regions, plans, and supported browser, device, API-key, or token methods appear in a second menu and are tested with the same real completion. Choose **Skip for now** to exit without starting OpenClaw.
   5. Persist only the verified model route and any credential/plugin state it requires. Workspace and Gateway settings remain untouched.

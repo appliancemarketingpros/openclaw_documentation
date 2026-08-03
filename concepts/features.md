@@ -1,7 +1,7 @@
 ---
 title: Features
 source_url: https://docs.openclaw.ai/concepts/features
-scraped_at: 2026-07-27
+scraped_at: 2026-08-03
 ---
 
 Get startedOverview
@@ -14,8 +14,8 @@ Get startedOverview
 
 **Channels:**
 
-  * iMessage, Telegram, and WebChat ship with the core install; every other channel is an official plugin installed with `openclaw plugins install @openclaw/<id>` (or on demand during `openclaw onboard` / `openclaw channels add`)
-  * Official plugin channels: Discord, Feishu, Google Chat, IRC, LINE, Matrix, Mattermost, Microsoft Teams, Nextcloud Talk, Nostr, QQ Bot, Raft, Signal, Slack, SMS, Synology Chat, Tlon, Twitch, Voice Call, WhatsApp, Zalo, and Zalo Personal
+  * Telegram and WebChat ship with the core install; every other channel is an official plugin installed with `openclaw plugins install @openclaw/<id>` (or on demand during `openclaw onboard` / `openclaw channels add`)
+  * Official plugin channels: Discord, Feishu, Google Chat, iMessage, IRC, LINE, Matrix, Mattermost, Microsoft Teams, Nextcloud Talk, Nostr, QQ Bot, Raft, Signal, Slack, SMS, Synology Chat, Tlon, Twitch, Voice Call, WhatsApp, Zalo, and Zalo Personal
   * External plugin channels maintained outside the OpenClaw repo: WeChat, Yuanbao, and Zalo ClawBot
   * Group chat support with mention-based activation
   * DM safety with allowlists and pairing
@@ -39,6 +39,7 @@ Get startedOverview
 **Media:**
 
   * Images, audio, video, and documents in and out
+  * [Inline audio and video playback](</nodes/media-playback>) across the Control UI, iOS/macOS, Android, and the Linux companion
   * Shared image generation and video generation capability surfaces
   * Voice note transcription
   * Text-to-speech with multiple providers

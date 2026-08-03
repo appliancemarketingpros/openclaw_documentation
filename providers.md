@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-07-27
+scraped_at: 2026-08-03
 ---
 
 ModelsOverview
@@ -86,7 +86,7 @@ json5Copy code
 
 ## Shared overview pages
 
-  * [Additional provider variants](</providers/models#additional-provider-variants>) \- Anthropic Vertex, Copilot Proxy, and Gemini CLI OAuth
+  * [Additional provider variants](</providers/models#additional-provider-variants>) \- Anthropic Vertex, Copilot Proxy, and the optional Gemini CLI runtime
   * [Image Generation](</tools/image-generation>) \- Shared `image_generate` tool, provider selection, and failover
   * [Music Generation](</tools/music-generation>) \- Shared `music_generate` tool, provider selection, and failover
   * [Video Generation](</tools/video-generation>) \- Shared `video_generate` tool, provider selection, and failover

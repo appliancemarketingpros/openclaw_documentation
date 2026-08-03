@@ -1,7 +1,7 @@
 ---
 title: Getting started
 source_url: https://docs.openclaw.ai/start/getting-started
-scraped_at: 2026-07-27
+scraped_at: 2026-08-03
 ---
 
 Get startedFirst steps
@@ -10,7 +10,7 @@ Install OpenClaw, run onboarding, and chat with your AI assistant in about 5 min
 
 ## What you need
 
-  * **Node.js 22.22.3+, 24.15+, or 25.9+** (24 is the recommended default)
+  * **Node.js 22.22.3+, 24.15+, or 25.9+** (Node 26 is the recommended runtime)
   * **An API key** from a model provider (Anthropic, OpenAI, Google, etc.) — onboarding will prompt you
 
 
@@ -82,7 +82,7 @@ Then set:
 
 jsonCopy code
 [code]
-    {"gateway": {  "controlUi": {    "enabled": true,    "root": "$HOME/.openclaw/control-ui-custom"  }}}
+    {"gateway": {  "controlUi": {    "enabled": true,    "root": "${HOME}/.openclaw/control-ui-custom"  }}}
 [/code]
 
 Restart the gateway and reopen the dashboard:

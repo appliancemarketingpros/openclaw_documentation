@@ -1,7 +1,7 @@
 ---
 title: Onboarding overview
 source_url: https://docs.openclaw.ai/start/onboarding-overview
-scraped_at: 2026-07-27
+scraped_at: 2026-08-03
 ---
 
 Get startedFirst steps
@@ -16,7 +16,7 @@ OpenClaw has terminal and macOS app onboarding. Both establish inference first: 
 **Interface** | Inference setup, then OpenClaw | Inference setup, then OpenClaw  
 **Best for** | Servers, headless, full control | Desktop Mac, visual setup  
 **Automation** | `--non-interactive` for scripts | Manual only  
-**Command** | `openclaw onboard` | Launch the app  
+**Command** | `openclaw onboard` | [Download the app](</platforms/macos#download>), then launch it  
   
 Most users should start with **CLI onboarding** — it works everywhere and gives you the most control.
 
@@ -55,11 +55,11 @@ Full reference: [Onboarding (CLI)](</start/wizard>) CLI command docs: [`openclaw
 
 ## macOS app onboarding
 
-Open the OpenClaw app. If its configured local or remote Gateway is reachable and the default agent already has a configured model, the app skips onboarding and OpenClaw and opens the normal agent UI immediately.
+[Download the macOS app](</platforms/macos#download>), then open it. If its configured local or remote Gateway is reachable and the default agent already has a configured model, the app skips onboarding and OpenClaw and opens the normal agent UI immediately.
 
 For a fresh or incomplete Gateway, the first-run flow detects existing AI access (Claude Code, Codex, or API keys), live-tests the best option, and saves it only after a real reply — falling back automatically and offering a verified manual API-key step when nothing is found. Sensitive credentials use masked input. Once inference passes, OpenClaw starts and helps configure the rest.
 
-Gemini CLI remains available for normal agents after setup, but it is not offered for this inference gate because it cannot enforce the tool-free probe.
+Gemini CLI remains available as an explicitly configured runtime after setup, but Gemini CLI and Antigravity are not offered as detected inference routes. Use Google AI Studio API-key or Vertex AI for guided setup. The optional Gemini CLI runtime specifically requires an AI Studio API-key profile.
 
 Full reference: [Onboarding (macOS App)](</start/onboarding>)
 

@@ -1,7 +1,7 @@
 ---
 title: Linux server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-07-27
+scraped_at: 2026-08-03
 ---
 
 InstallHosting
@@ -10,7 +10,7 @@ Run the OpenClaw Gateway on any Linux server or cloud VPS. This page helps you p
 
 ## Pick a provider
 
-[**Azure** [**DigitalOcean** [**exe.dev** [**Fly.io** [**GCP** [**Hetzner** [**Hostinger** [**Northflank** [**Oracle Cloud** [**Railway** [**Raspberry Pi** **AWS (EC2 / Lightsail / free tier)** also works well. A community video walkthrough is available at [x.com/techfrenAJ/status/2014934471095812547](<https://x.com/techfrenAJ/status/2014934471095812547>) (community resource -- may become unavailable). How cloud setups work
+[**Azure** [**Daytona** [**DigitalOcean** [**exe.dev** [**Fly.io** [**GCP** [**Hetzner** [**Hostinger** [**Northflank** [**Oracle Cloud** [**Railway** [**Raspberry Pi** **AWS (EC2 / Lightsail / free tier)** also works well. A community video walkthrough is available at [x.com/techfrenAJ/status/2014934471095812547](<https://x.com/techfrenAJ/status/2014934471095812547>) (community resource -- may become unavailable). How cloud setups work
 
   * The **Gateway runs on the VPS** and owns state + workspace.
   * You connect from your laptop or phone via the **Control UI** or **Tailscale/SSH**.
@@ -61,4 +61,4 @@ If you deliberately installed a system unit instead, edit it via `sudo systemctl
   * [Fly.io](</install/fly>)
   * [Hetzner](</install/hetzner>)
 
-](</install/raspberry-pi>) Was this useful?YesNoOpen issue ](</install/railway>)](</install/oracle>)](</install/northflank>)](</install/hostinger>)](</install/hetzner>)](</install/gcp>)](</install/fly>)](</install/exe-dev>)](</install/digitalocean>)](</install/azure>)
+](</install/raspberry-pi>) Was this useful?YesNoOpen issue ](</install/railway>)](</install/oracle>)](</install/northflank>)](</install/hostinger>)](</install/hetzner>)](</install/gcp>)](</install/fly>)](</install/exe-dev>)](</install/digitalocean>)](</install/daytona>)](</install/azure>)

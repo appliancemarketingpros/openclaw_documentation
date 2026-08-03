@@ -1,7 +1,7 @@
 ---
 title: Onboarding (macOS app)
 source_url: https://docs.openclaw.ai/start/onboarding
-scraped_at: 2026-07-27
+scraped_at: 2026-08-03
 ---
 
 Get startedFirst steps
@@ -49,9 +49,9 @@ Once the Gateway is ready, onboarding looks for AI access you already have: a Cl
 
 To use a Claude subscription when the Gateway host has no Claude CLI login, run `claude setup-token` on any machine with Claude Code installed, then paste the printed token as **Anthropic setup-token** under **Connect with an API key or token**.
 
-Installed Gemini CLI, Antigravity, Pi, and OpenCode CLIs are shown for context when they cannot be selected as the reusable guided-setup inference route. Gemini and Antigravity cannot enforce the tool-free inference probe. Pi and OpenCode are whole-agent harnesses rather than setup inference routes; their session integrations require separate runtime and plugin setup.
+Pi and OpenCode installs may be shown for context when they cannot be selected as the reusable guided-setup inference route. They are whole-agent harnesses, not setup inference routes; their session integrations require separate runtime and plugin setup. Gemini CLI and Antigravity are not offered as detected setup routes.
 
-You can also sign in through the provider's own OAuth or device-pairing flow. The built-in choices include OpenAI/ChatGPT, OpenRouter, GitHub Copilot, Google Gemini CLI, xAI, MiniMax Global and CN, and Chutes. The list comes from the Gateway's active text-inference provider plugins rather than a fixed app list, so another provider can opt in without adding provider-specific macOS code.
+You can also sign in through the provider's own OAuth or device-pairing flow. The built-in choices include OpenAI/ChatGPT, OpenRouter, GitHub Copilot, xAI, MiniMax Global and CN, and Chutes. Google is available through the supported AI Studio API-key route. The list comes from the Gateway's active text-inference provider plugins rather than a fixed app list, so another provider can opt in without adding provider-specific macOS code.
 
 The manual key/token picker uses the same provider registry. In every route, the provider supplies its starter model and configuration; OpenClaw verifies the credential with the same live test before storing its auth profile. Next remains locked until one backend has passed, so the first agent chat cannot start without working inference. After that live check passes, OpenClaw becomes available to help configure the remaining workspace, Gateway, channels, and other optional features. When OpenClaw offers a short list of choices, the app shows native option cards; choosing one sends the selection, and **Skip for now** always leaves the choice optional. OpenClaw is also available later under Settings → OpenClaw.
 
