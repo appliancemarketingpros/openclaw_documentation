@@ -1,7 +1,7 @@
 ---
 title: Platforms
 source_url: https://docs.openclaw.ai/platforms
-scraped_at: 2026-08-03
+scraped_at: 2026-08-10
 ---
 
 PlatformsPlatforms overview
@@ -12,11 +12,12 @@ Companion apps exist for Windows Hub, macOS (menu bar app), and mobile nodes (iO
 
 ## Choose your OS
 
-  * macOS: [macOS](</platforms/macos>)
-  * iOS: [iOS](</platforms/ios>)
   * Android: [Android](</platforms/android>)
-  * Windows: [Windows](</platforms/windows>)
+  * ChromeOS: [ChromeOS (Crostini)](</platforms/chromeos>)
+  * iOS: [iOS](</platforms/ios>)
   * Linux: [Linux](</platforms/linux>)
+  * macOS: [macOS](</platforms/macos>)
+  * Windows: [Windows](</platforms/windows>)
 
 
 ## VPS and hosting

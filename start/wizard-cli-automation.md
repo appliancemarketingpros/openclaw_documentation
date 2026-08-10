@@ -1,7 +1,7 @@
 ---
 title: CLI automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-08-03
+scraped_at: 2026-08-10
 ---
 
 Get startedGuides
@@ -19,7 +19,7 @@ Add `--json` for a machine-readable summary.
 
   * `--gateway-port` defaults to `18789`; only pass it to override.
   * `--skip-bootstrap` skips creating default workspace files, for automation that pre-seeds its own workspace.
-  * `--secret-input-mode ref` stores an env-backed reference (`{ source: "env", provider: "default", id: "&lt;ENV_VAR&gt;" }`) in the auth profile instead of the plaintext key. In non-interactive `ref` mode, the provider env var must already be set in the process environment: passing an inline key flag without its matching env var fails fast.
+  * `--secret-input-mode ref` stores new credentials as env-backed references (`{ source: "env", provider: "default", id: "&lt;ENV_VAR&gt;" }`); set the provider env var when adding a credential or passing an inline key flag. Existing resolvable named profiles and their `env`, `file`, or `exec` references are reused unchanged, without a new credential write or additional provider env var. Existing plaintext is not migrated; run `openclaw secrets configure --apply`, then `openclaw secrets audit --check`. See [Secrets management](</gateway/secrets>).
 
 bashCopy code
 [code]
