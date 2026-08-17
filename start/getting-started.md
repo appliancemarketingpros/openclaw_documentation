@@ -1,7 +1,7 @@
 ---
 title: Getting started
 source_url: https://docs.openclaw.ai/start/getting-started
-scraped_at: 2026-08-10
+scraped_at: 2026-08-17
 ---
 
 Get startedFirst steps

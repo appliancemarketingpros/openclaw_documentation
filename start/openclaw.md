@@ -1,7 +1,7 @@
 ---
 title: Personal assistant setup
 source_url: https://docs.openclaw.ai/start/openclaw
-scraped_at: 2026-08-10
+scraped_at: 2026-08-17
 ---
 
 Get startedGuides
@@ -105,7 +105,7 @@ Example:
 
 json5Copy code
 [code]
-    {  logging: { level: "info" },  agents: {    defaults: {      model: { primary: "anthropic/claude-opus-5" },      workspace: "~/.openclaw/workspace",      thinkingDefault: "high",      timeoutSeconds: 1800,      // Start with 0; enable later.      heartbeat: { every: "0m" },    },    list: [      {        id: "main",        default: true,        groupChat: {          mentionPatterns: ["@openclaw", "openclaw"],        },      },    ],  },  channels: {    whatsapp: {      allowFrom: ["+15555550123"],      groups: {        "*": { requireMention: true },      },    },  },  session: {    scope: "per-sender",    resetTriggers: ["/new", "/reset"],    reset: {      mode: "daily",      atHour: 4,      idleMinutes: 10080,    },  },}
+    {  logging: { level: "info" },  agents: {    defaults: {      model: { primary: "anthropic/claude-opus-5" },      workspace: "~/.openclaw/workspace",      thinkingDefault: "high",      timeoutSeconds: 1800,      // Start with 0; enable later.      heartbeat: { every: "0m" },    },    entries: {      main: {        default: true,        groupChat: {          mentionPatterns: ["@openclaw", "openclaw"],        },      },    },  },  channels: {    whatsapp: {      allowFrom: ["+15555550123"],      groups: {        "*": { requireMention: true },      },    },  },  session: {    scope: "per-sender",    resetTriggers: ["/new", "/reset"],    reset: {      mode: "daily",      atHour: 4,      idleMinutes: 10080,    },  },}
 [/code]
 
 ## Sessions and memory

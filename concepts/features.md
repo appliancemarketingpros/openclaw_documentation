@@ -1,7 +1,7 @@
 ---
 title: Features
 source_url: https://docs.openclaw.ai/concepts/features
-scraped_at: 2026-08-10
+scraped_at: 2026-08-17
 ---
 
 Get startedOverview
@@ -25,7 +25,7 @@ Get startedOverview
 
   * Embedded agent runtime with tool streaming
   * Multi-agent routing with isolated sessions per workspace or sender
-  * Sessions: direct chats collapse into shared `main`; groups are isolated
+  * Sessions: direct chats collapse into shared `main`; groups are isolated by default
   * Streaming and chunking for long responses
 
 

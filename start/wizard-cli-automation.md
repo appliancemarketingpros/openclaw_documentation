@@ -1,12 +1,14 @@
 ---
 title: CLI automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-08-10
+scraped_at: 2026-08-17
 ---
 
 Get startedGuides
 
 Use `openclaw onboard --non-interactive` to script setup. It requires `--accept-risk`: non-interactive setup can write credentials and daemon config without a confirmation prompt, so the flag is the explicit risk acknowledgement.
+
+Each command can install a managed Gateway with `--install-daemon`, require an already-running compatible Gateway by omitting daemon flags, explicitly leave the Gateway stopped with `--skip-daemon`, or use `--skip-health` for config-only setup. The explicit skip still probes for an existing Gateway and reports whether one is reachable, but an absent listener is informational rather than a setup failure.
 
 ## Baseline non-interactive example
 
@@ -19,70 +21,70 @@ Add `--json` for a machine-readable summary.
 
   * `--gateway-port` defaults to `18789`; only pass it to override.
   * `--skip-bootstrap` skips creating default workspace files, for automation that pre-seeds its own workspace.
-  * `--secret-input-mode ref` stores new credentials as env-backed references (`{ source: "env", provider: "default", id: "&lt;ENV_VAR&gt;" }`); set the provider env var when adding a credential or passing an inline key flag. Existing resolvable named profiles and their `env`, `file`, or `exec` references are reused unchanged, without a new credential write or additional provider env var. Existing plaintext is not migrated; run `openclaw secrets configure --apply`, then `openclaw secrets audit --check`. See [Secrets management](</gateway/secrets>).
+  * `--secret-input-mode ref` stores new credentials as env-backed references (`{ source: "env", provider: "default", id: "&lt;ENV_VAR&gt;" }`); set the provider env var when adding a credential or passing an inline key flag. Existing resolvable named profiles and their `env`, `file`, `exec`, or `store` references are reused unchanged, without a new credential write or additional provider env var. Existing plaintext is not migrated; run `openclaw secrets configure --apply`, then `openclaw secrets audit --check`. See [Secrets management](</gateway/secrets>).
 
 bashCopy code
 [code]
-    openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice openai-api-key \  --secret-input-mode ref
+    openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice openai-api-key \  --secret-input-mode ref
 [/code]
 
 ## Provider-specific examples
 
 Anthropic API key example bashCopy code
 [code]
-    openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice apiKey \  --anthropic-api-key "$ANTHROPIC_API_KEY" \  --gateway-bind loopback
+    openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice apiKey \  --anthropic-api-key "$ANTHROPIC_API_KEY" \  --gateway-bind loopback
 [/code]
 
 Cloudflare AI Gateway example bashCopy code
 [code]
-    openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice cloudflare-ai-gateway-api-key \  --cloudflare-ai-gateway-account-id "your-account-id" \  --cloudflare-ai-gateway-gateway-id "your-gateway-id" \  --cloudflare-ai-gateway-api-key "$CLOUDFLARE_AI_GATEWAY_API_KEY" \  --gateway-bind loopback
+    openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice cloudflare-ai-gateway-api-key \  --cloudflare-ai-gateway-account-id "your-account-id" \  --cloudflare-ai-gateway-gateway-id "your-gateway-id" \  --cloudflare-ai-gateway-api-key "$CLOUDFLARE_AI_GATEWAY_API_KEY" \  --gateway-bind loopback
 [/code]
 
 Gemini example bashCopy code
 [code]
-    openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice gemini-api-key \  --gemini-api-key "$GEMINI_API_KEY" \  --gateway-bind loopback
+    openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice gemini-api-key \  --gemini-api-key "$GEMINI_API_KEY" \  --gateway-bind loopback
 [/code]
 
 Mistral example bashCopy code
 [code]
-    openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice mistral-api-key \  --mistral-api-key "$MISTRAL_API_KEY" \  --gateway-bind loopback
+    openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice mistral-api-key \  --mistral-api-key "$MISTRAL_API_KEY" \  --gateway-bind loopback
 [/code]
 
 Moonshot example bashCopy code
 [code]
-    openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice moonshot-api-key \  --moonshot-api-key "$MOONSHOT_API_KEY" \  --gateway-bind loopback
+    openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice moonshot-api-key \  --moonshot-api-key "$MOONSHOT_API_KEY" \  --gateway-bind loopback
 [/code]
 
 Ollama example bashCopy code
 [code]
-    openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice ollama \  --custom-model-id "qwen3.5:27b" \  --gateway-bind loopback
+    openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice ollama \  --custom-model-id "qwen3.5:27b" \  --gateway-bind loopback
 [/code]
 
 OpenCode example bashCopy code
 [code]
-    openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice opencode-zen \  --opencode-zen-api-key "$OPENCODE_API_KEY" \  --gateway-bind loopback
+    openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice opencode-zen \  --opencode-zen-api-key "$OPENCODE_API_KEY" \  --gateway-bind loopback
 [/code]
 
 Swap to `--auth-choice opencode-go --opencode-go-api-key "$OPENCODE_API_KEY"` for the Go catalog.
 
 Synthetic example bashCopy code
 [code]
-    openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice synthetic-api-key \  --synthetic-api-key "$SYNTHETIC_API_KEY" \  --gateway-bind loopback
+    openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice synthetic-api-key \  --synthetic-api-key "$SYNTHETIC_API_KEY" \  --gateway-bind loopback
 [/code]
 
 Vercel AI Gateway example bashCopy code
 [code]
-    openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice ai-gateway-api-key \  --ai-gateway-api-key "$AI_GATEWAY_API_KEY" \  --gateway-bind loopback
+    openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice ai-gateway-api-key \  --ai-gateway-api-key "$AI_GATEWAY_API_KEY" \  --gateway-bind loopback
 [/code]
 
 Z.AI example bashCopy code
 [code]
-    openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice zai-api-key \  --zai-api-key "$ZAI_API_KEY" \  --gateway-bind loopback
+    openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice zai-api-key \  --zai-api-key "$ZAI_API_KEY" \  --gateway-bind loopback
 [/code]
 
 Custom provider example bashCopy code
 [code]
-    openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice custom-api-key \  --custom-base-url "https://llm.example.com/v1" \  --custom-model-id "foo-large" \  --custom-api-key "$CUSTOM_API_KEY" \  --custom-provider-id "my-custom" \  --custom-compatibility anthropic \  --custom-image-input \  --gateway-bind loopback
+    openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice custom-api-key \  --custom-base-url "https://llm.example.com/v1" \  --custom-model-id "foo-large" \  --custom-api-key "$CUSTOM_API_KEY" \  --custom-provider-id "my-custom" \  --custom-compatibility anthropic \  --custom-image-input \  --gateway-bind loopback
 [/code]
 
 `--custom-api-key` is optional; some endpoints do not require auth. If omitted, onboarding checks `CUSTOM_API_KEY` in env. `--custom-provider-id` is optional and auto-derived from the base URL when omitted. `--custom-compatibility` defaults to `openai` (other values: `openai-responses`, `anthropic`).
@@ -93,7 +95,7 @@ Ref-mode variant, storing `apiKey` as `{ source: "env", provider: "default", id:
 
 bashCopy code
 [code]
-    export CUSTOM_API_KEY="your-key"openclaw onboard --non-interactive --accept-risk \  --mode local \  --auth-choice custom-api-key \  --custom-base-url "https://llm.example.com/v1" \  --custom-model-id "foo-large" \  --secret-input-mode ref \  --custom-provider-id "my-custom" \  --custom-compatibility anthropic \  --custom-image-input \  --gateway-bind loopback
+    export CUSTOM_API_KEY="your-key"openclaw onboard --non-interactive --accept-risk --skip-health \  --mode local \  --auth-choice custom-api-key \  --custom-base-url "https://llm.example.com/v1" \  --custom-model-id "foo-large" \  --secret-input-mode ref \  --custom-provider-id "my-custom" \  --custom-compatibility anthropic \  --custom-image-input \  --gateway-bind loopback
 [/code]
 
 Anthropic setup-token auth remains supported, but OpenClaw prefers Claude CLI reuse when a local Claude CLI login is available. For production, prefer an Anthropic API key.
@@ -119,7 +121,7 @@ Notes:
 
   * Default workspace (when `--workspace` is omitted in the interactive wizard): `~/.openclaw/workspace-<agentId>`.
   * `--bind <channel[:accountId]>` is repeatable; add bindings to route inbound messages to the new agent (the wizard can also do this interactively).
-  * The agent name is normalized to a valid agent id; `main` is reserved.
+  * The agent name is normalized to a valid agent id. `main` is allowed, but an existing named installation may require `openclaw doctor --fix` to finish legacy-session and shared-auth ownership migrations before creating it.
 
 
 ## Related docs

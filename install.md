@@ -1,7 +1,7 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-08-10
+scraped_at: 2026-08-17
 ---
 
 InstallInstall overview
@@ -109,7 +109,7 @@ bashCopy code
 
 ### Containers and package managers
 
-[**Docker** Containerized or headless deployments. ](</install/docker>) [**Podman** Rootless container alternative to Docker. ](</install/podman>) [**Nix** Declarative install via Nix flake. ](</install/nix>) [**Ansible** Automated fleet provisioning. ](</install/ansible>) [**Bun** Optional dependency installer and package-script runner. ](</install/bun>)
+[**Ansible** Automated fleet provisioning. ](</install/ansible>) [**Bun** Optional dependency installer and package-script runner. ](</install/bun>) [**ClawDock** Community Docker Compose setup and shell helpers. ](</install/clawdock>) [**Docker** Containerized or headless deployments. ](</install/docker>) [**Nix** Declarative install via Nix flake. ](</install/nix>) [**Podman** Rootless container alternative to Docker. ](</install/podman>)
 
 ## Verify the install
 
@@ -127,13 +127,13 @@ If you want managed startup after install:
 
 ## Hosting and deployment
 
-Deploy OpenClaw on a cloud server or VPS. See [Linux server](</vps>) for the full provider picker (DigitalOcean, Hetzner, Hostinger, Fly.io, GCP, Azure, Railway, Northflank, Oracle Cloud, Raspberry Pi, and more), or deploy declaratively on [Render](</install/render>).
+Deploy OpenClaw on a cloud server or VPS. See [Linux server](</vps>) for the full provider picker (DigitalOcean, Hetzner, Hostinger, Fly.io, GCP, Azure, Railway, Northflank, Oracle Cloud, Raspberry Pi, and more), deploy declaratively on [Render](</install/render>), or try the experimental [Cloudflare Containers](</install/cloudflare>) template.
 
-[**VPS** Pick a provider. ](</vps>) [**Docker VM** Shared Docker steps. ](</install/docker-vm-runtime>) [**Kubernetes** K8s deployment. ](</install/kubernetes>)
+[**Cloudflare** Experimental Worker + Container deployment. ](</install/cloudflare>) [**Docker VM** Shared Docker steps. ](</install/docker-vm-runtime>) [**Kubernetes** K8s deployment. ](</install/kubernetes>) [**macOS VM** Isolated local or hosted macOS deployment. ](</install/macos-vm>) [**Upstash Box** Managed Linux host with SSH-tunneled access. ](</install/upstash>) [**VPS** Pick a provider. ](</vps>)
 
-## Update, migrate, or uninstall
+## Back up, update, migrate, or uninstall
 
-[**Updating** Keep OpenClaw up to date. ](</install/updating>) [**Migrating** Move to a new machine. ](</install/migrating>) [**Uninstall** Remove OpenClaw completely. ](</install/uninstall>)
+[**Backups** Create, verify, and restore state archives. ](</install/backups>) [**Updating** Keep OpenClaw up to date. ](</install/updating>) [**Migrating** Move to a new machine. ](</install/migrating>) [**Uninstall** Remove OpenClaw completely. ](</install/uninstall>)
 
 ## Troubleshooting: `openclaw` not found
 
