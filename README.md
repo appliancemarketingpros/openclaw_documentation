@@ -25,8 +25,6 @@
 
 ### Install
 
-- [Backups](install/backups.md) — [source](https://docs.openclaw.ai/install/backups)
-- [Cloudflare Containers](install/cloudflare.md) — [source](https://docs.openclaw.ai/install/cloudflare)
 - [Install](install.md) — [source](https://docs.openclaw.ai/install)
 
 ### Channels
@@ -53,12 +51,10 @@
 ### Gateway
 
 - [Gateway runbook](gateway.md) — [source](https://docs.openclaw.ai/gateway)
-- [Portals](gateway/portals.md) — [source](https://docs.openclaw.ai/gateway/portals)
 
 ### Cli
 
 - [CLI reference](cli.md) — [source](https://docs.openclaw.ai/cli)
-- [Connect](cli/connect.md) — [source](https://docs.openclaw.ai/cli/connect)
 
 ### Help
 

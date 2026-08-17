@@ -70,10 +70,14 @@ If you already manage Node yourself:
 
 ### npm
 
+On npm 12 or npm 11.16+:
+
 bashCopy code
 [code]
-    npm install -g openclaw@latestopenclaw onboard --install-daemon
+    npm install -g openclaw@latest --allow-scripts=openclawopenclaw onboard --install-daemon
 [/code]
+
+On npm 11.12 and earlier, use the same command without `--allow-scripts=openclaw`. Do not use npm 11.13–11.15 for this install; upgrade to npm 11.16+ first.
 
 ### pnpm
 
@@ -86,7 +90,7 @@ bashCopy code
 
 bashCopy code
 [code]
-    bun add -g openclaw@latestopenclaw onboard --install-daemon
+    bun add -g --trust openclaw@latestopenclaw onboard --install-daemon
 [/code]
 
 ### From source
