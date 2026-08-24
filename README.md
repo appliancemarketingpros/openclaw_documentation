@@ -3,7 +3,7 @@
 > This repository contains a local Markdown mirror of the official [Openclaw documentation](https://docs.openclaw.ai/).
 > It is automatically updated every Monday to reflect any changes in the upstream documentation.
 
-**Last updated:** 2026-08-17
+**Last updated:** 2026-08-24
 
 ## Documentation Index
 
@@ -26,6 +26,7 @@
 ### Install
 
 - [Install](install.md) — [source](https://docs.openclaw.ai/install)
+- [Update troubleshooting](install/update-troubleshooting.md) — [source](https://docs.openclaw.ai/install/update-troubleshooting)
 
 ### Channels
 
@@ -38,7 +39,9 @@
 
 ### Tools
 
+- [Custodian skills](tools/custodian-skills.md) — [source](https://docs.openclaw.ai/tools/custodian-skills)
 - [Overview](tools.md) — [source](https://docs.openclaw.ai/tools)
+- [Progress card](tools/progress-card.md) — [source](https://docs.openclaw.ai/tools/progress-card)
 
 ### Providers
 
@@ -50,7 +53,10 @@
 
 ### Gateway
 
+- [Cloudflare Tunnel and Access](gateway/cloudflare-access.md) — [source](https://docs.openclaw.ai/gateway/cloudflare-access)
 - [Gateway runbook](gateway.md) — [source](https://docs.openclaw.ai/gateway)
+- [Session permission modes](gateway/permission-modes.md) — [source](https://docs.openclaw.ai/gateway/permission-modes)
+- [Usage telemetry and update checks](gateway/telemetry.md) — [source](https://docs.openclaw.ai/gateway/telemetry)
 
 ### Cli
 

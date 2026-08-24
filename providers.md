@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-08-17
+scraped_at: 2026-08-24
 ---
 
 ModelsOverview
@@ -51,6 +51,7 @@ json5Copy code
   * [inferrs (local models)](</providers/inferrs>)
   * [Kilocode](</providers/kilocode>)
   * [LiteLLM (unified gateway)](</providers/litellm>)
+  * [llama.cpp (managed or existing server)](</plugins/llama-cpp>)
   * [LM Studio (local models)](</providers/lmstudio>)
   * [LongCat](</providers/longcat>)
   * [MiniMax](</providers/minimax>)

@@ -1,7 +1,7 @@
 ---
 title: Onboarding (CLI)
 source_url: https://docs.openclaw.ai/start/wizard
-scraped_at: 2026-08-17
+scraped_at: 2026-08-24
 ---
 
 Get startedFirst steps
@@ -57,7 +57,7 @@ Run `openclaw onboard --classic` to open the full wizard. Its **Setup mode** men
 
   * With no configured default model, **QuickStart (recommended)** is selected by default, followed by **Manual setup**.
   * With a configured default model, **Keep existing model config** appears first and is selected by default, followed by **QuickStart (recommended)** and **Manual setup**.
-  * Each detected migration source adds an **Import from <source>** choice after the setup choices.
+  * When a migration provider is available, **Import from another agent** appears after the setup choices. Selecting it opens provider-specific entries such as **Import from Claude** , **Import from Codex** , and **Import from Hermes**. Detected sources appear first with their paths; other available providers ask for a source path. Use Back from the provider list to return to **Setup mode** before an import begins.
 
 
 Pass `--flow quickstart` or `--flow manual` (alias `advanced`) to select a classic setup flow and skip that prompt. Import flags select the import flow directly instead of showing a menu that could discard the requested import.
@@ -89,9 +89,10 @@ Local mode (default) walks through these steps:
   2. **Model/Auth** \- pick a provider auth flow (API key, OAuth, or provider-specific manual auth), including Custom Provider (OpenAI-compatible, OpenAI Responses-compatible, Anthropic-compatible, or Unknown auto-detect). Pick a default model. Fresh OpenAI API-key and ChatGPT/Codex setup default to `openai/gpt-5.6-sol`. The bare direct-API `openai/gpt-5.6` alias remains supported and resolves to Sol. Re-running setup preserves an existing explicit model, including `openai/gpt-5.5`. Select `openai/gpt-5.5` explicitly if the account does not expose GPT-5.6. Security note: if this agent will run tools or process webhook/hook content, prefer the strongest latest-generation model available and keep tool policy strict - weaker or older tiers are easier to prompt-inject. For non-interactive runs, `--secret-input-mode ref` stores new credentials as env-backed refs; set the provider env var when adding a credential. Existing resolvable named profiles and their `env`, `file`, `exec`, or `store` refs are reused unchanged without a new credential write or additional provider env var. Previously stored plaintext is not migrated; see [Secrets management](</gateway/secrets>). Interactive secret reference mode can point at an environment variable or a configured provider ref (`file` or `exec`), with a fast preflight check before saving. After model/auth setup, the wizard offers an optional live completion test; a failure can return to model/auth setup once or be ignored without blocking the rest of the classic wizard. Ignoring it does not unlock OpenClaw; conversational setup still requires a passing inference check.
   3. **Gateway** \- port, bind address, auth mode, Tailscale exposure. In interactive token mode, choose plaintext token storage (default) or opt into a SecretRef. Non-interactive SecretRef path: `--gateway-token-ref-env &lt;ENV_VAR&gt;`.
   4. **Channels** \- built-in and official plugin chat channels, including Discord, Feishu, Google Chat, iMessage, Mattermost, Microsoft Teams, QQ Bot, Signal, Slack, Telegram, WhatsApp, and more.
-  5. **Daemon** \- installs a LaunchAgent (macOS), a systemd user unit (Linux/WSL2), or a native Windows Scheduled Task with a per-user Startup-folder fallback. If token auth is required and `gateway.auth.token` is SecretRef-managed, daemon install validates it but does not persist a resolved token into supervisor service environment metadata; an unresolved SecretRef blocks install with guidance. If both `gateway.auth.token` and `gateway.auth.password` are set while `gateway.auth.mode` is unset, install is blocked until you set the mode explicitly.
-  6. **Health check** \- starts the Gateway and verifies it is reachable.
-  7. **Skills** \- installs recommended skills and their optional dependencies.
+  5. **Web search** \- configures an optional search provider.
+  6. **Skills** \- installs recommended skills and their optional dependencies.
+  7. **Daemon** \- installs a LaunchAgent (macOS), a systemd user unit (Linux/WSL2), or a native Windows Scheduled Task with a per-user Startup-folder fallback. If token auth is required and `gateway.auth.token` is SecretRef-managed, daemon install validates it but does not persist a resolved token into supervisor service environment metadata; an unresolved SecretRef blocks install with guidance. If both `gateway.auth.token` and `gateway.auth.password` are set while `gateway.auth.mode` is unset, install is blocked until you set the mode explicitly.
+  8. **Health check** \- starts the Gateway and verifies it is reachable.
 
 
 `--flow import` runs a detected migration flow (for example Hermes) in the classic wizard instead of fresh setup; see [Migrate](</cli/migrate>) and the migration guides under [Install](</install/migrating-hermes>). `openclaw onboard --modern` is a compatibility alias for [OpenClaw](</cli/openclaw>). It uses the same inference gate as `openclaw setup`: verified inference starts the assistant, while an interactive failure returns to guided inference setup.

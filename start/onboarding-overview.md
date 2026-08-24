@@ -1,7 +1,7 @@
 ---
 title: Onboarding overview
 source_url: https://docs.openclaw.ai/start/onboarding-overview
-scraped_at: 2026-08-17
+scraped_at: 2026-08-24
 ---
 
 Get startedFirst steps
@@ -49,7 +49,7 @@ The guided flow detects existing AI access, live-tests candidates in order, and 
 
 After inference passes, OpenClaw can hand channel setup to a masked terminal wizard. It does not open guided or classic provider setup; exit OpenClaw and run `openclaw onboard` to change the model provider or its authentication.
 
-Use `openclaw onboard --classic` for detailed model/auth, channel, skill, remote Gateway, or import setup. Adding `--install-daemon` also selects the classic flow and installs the background service in one step. Use `openclaw openclaw` for conversational non-inference setup and repair. `openclaw onboard --modern` is a compatibility alias that uses the same live-inference gate.
+Use `openclaw onboard --classic` for detailed model/auth, channel, skill, remote Gateway, or import setup. Adding `--install-daemon` also selects the classic flow and installs the background service in one step. Use `openclaw setup` for conversational non-inference setup and repair. `openclaw onboard --modern` is a compatibility alias that uses the same live-inference gate.
 
 Full reference: [Onboarding (CLI)](</start/wizard>) CLI command docs: [`openclaw onboard`](</cli/onboard>)
 

@@ -1,7 +1,7 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-08-17
+scraped_at: 2026-08-24
 ---
 
 InstallInstall overview
@@ -77,7 +77,7 @@ bashCopy code
     npm install -g openclaw@latest --allow-scripts=openclawopenclaw onboard --install-daemon
 [/code]
 
-On npm 11.12 and earlier, use the same command without `--allow-scripts=openclaw`. Do not use npm 11.13–11.15 for this install; upgrade to npm 11.16+ first.
+On npm 11.15 and earlier, use the same command without `--allow-scripts=openclaw`.
 
 ### pnpm
 

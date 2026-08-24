@@ -1,7 +1,7 @@
 ---
 title: Features
 source_url: https://docs.openclaw.ai/concepts/features
-scraped_at: 2026-08-17
+scraped_at: 2026-08-24
 ---
 
 Get startedOverview
@@ -49,8 +49,8 @@ Get startedOverview
 
   * WebChat and browser Control UI
   * macOS menu bar companion app
-  * iOS node with pairing, Canvas, camera, screen recording, location, and voice
-  * Android node with pairing, chat, voice, Canvas, camera, and device commands
+  * iOS node with pairing, camera, screen recording, location, and voice
+  * Android node with pairing, chat, voice, camera, and device commands
 
 
 **Tools and automation:**

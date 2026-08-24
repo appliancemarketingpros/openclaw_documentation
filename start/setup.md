@@ -1,7 +1,7 @@
 ---
 title: Setup
 source_url: https://docs.openclaw.ai/start/setup
-scraped_at: 2026-08-17
+scraped_at: 2026-08-24
 ---
 
 InstallAdvanced setup

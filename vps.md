@@ -1,7 +1,7 @@
 ---
 title: Linux server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-08-17
+scraped_at: 2026-08-24
 ---
 
 InstallHosting
@@ -29,7 +29,7 @@ Tailscale-specific Gateway options live in [Tailscale](</gateway/tailscale>). Sh
   * Do not sign that runtime into personal Apple/Google accounts or personal browser/password-manager profiles.
   * If users are adversarial to each other, split by gateway/host/OS user.
 
-Security model details: [Security](</gateway/security>). Using nodes with a VPS You can keep the Gateway in the cloud and pair **nodes** on your local devices (Mac/iOS/Android/headless). Nodes provide local screen/camera/canvas and `system.run` capabilities while the Gateway stays in the cloud. Docs: [Nodes](</nodes>), [Nodes CLI](</cli/nodes>). Startup tuning for small VMs and ARM hosts If CLI commands feel slow on low-power VMs (or ARM hosts), enable Node's module compile cache: bashCopy code
+Security model details: [Security](</gateway/security>). Using nodes with a VPS You can keep the Gateway in the cloud and pair **nodes** on your local devices (Mac/iOS/Android/headless). Nodes provide local screen/camera and `system.run` capabilities while the Gateway stays in the cloud. A paired Mac can also present hosted widgets in its native panel. Docs: [Nodes](</nodes>), [Nodes CLI](</cli/nodes>). Startup tuning for small VMs and ARM hosts If CLI commands feel slow on low-power VMs (or ARM hosts), enable Node's module compile cache: bashCopy code
 [code]
     grep -q 'NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cache' ~/.bashrc || cat >> ~/.bashrc <<'EOF'export NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cachemkdir -p /var/tmp/openclaw-compile-cacheexport OPENCLAW_NO_RESPAWN=1EOFsource ~/.bashrc
 [/code]

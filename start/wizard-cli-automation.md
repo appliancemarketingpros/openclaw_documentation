@@ -1,7 +1,7 @@
 ---
 title: CLI automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-08-17
+scraped_at: 2026-08-24
 ---
 
 Get startedGuides
@@ -22,6 +22,8 @@ Add `--json` for a machine-readable summary.
   * `--gateway-port` defaults to `18789`; only pass it to override.
   * `--skip-bootstrap` skips creating default workspace files, for automation that pre-seeds its own workspace.
   * `--secret-input-mode ref` stores new credentials as env-backed references (`{ source: "env", provider: "default", id: "&lt;ENV_VAR&gt;" }`); set the provider env var when adding a credential or passing an inline key flag. Existing resolvable named profiles and their `env`, `file`, `exec`, or `store` references are reused unchanged, without a new credential write or additional provider env var. Existing plaintext is not migrated; run `openclaw secrets configure --apply`, then `openclaw secrets audit --check`. See [Secrets management](</gateway/secrets>).
+  * The gateway token follows the same mode. Setup generates that value itself, so reference mode has no env var to point at unless you supply one: with `OPENCLAW_GATEWAY_TOKEN` exported, `gateway.auth.token` becomes an `env` ref to it; otherwise the token goes into the SQLite secret store as `OPENCLAW_GATEWAY_TOKEN` and config keeps a `store` ref. Either way `openclaw.json` holds no plaintext gateway token. Inspect the entry with `openclaw secrets store list`.
+  * In reference mode, explicit `--gateway-password` and `--remote-password` must match `OPENCLAW_GATEWAY_PASSWORD`, and `--remote-token` must match `OPENCLAW_GATEWAY_TOKEN`. Missing or mismatched environment values fail before setup changes state; matching credentials are stored as env SecretRefs.
 
 bashCopy code
 [code]

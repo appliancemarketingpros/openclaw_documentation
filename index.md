@@ -1,7 +1,7 @@
 ---
 title: OpenClaw
 source_url: https://docs.openclaw.ai/
-scraped_at: 2026-08-17
+scraped_at: 2026-08-24
 ---
 
 Get startedOverview
@@ -57,7 +57,7 @@ The Gateway is the single source of truth for sessions, routing, and channel con
 
 ## Key capabilities
 
-[**Multi-channel gateway** Discord, iMessage, Signal, Slack, Telegram, WhatsApp, WebChat, and more with a single Gateway process. ](</channels>) [**Plugin channels** Channel plugins add Matrix, Nostr, Twitch, Zalo, and more; official plugins install on demand. ](</tools/plugin>) [**Multi-agent routing** Isolated sessions per agent, workspace, or sender. ](</concepts/multi-agent>) [**Media support** Send and receive images, audio, and documents. ](</nodes/images>) [**Web Control UI** Browser dashboard for chat, config, sessions, and nodes. ](</web/control-ui>) [**Mobile nodes** Pair iOS and Android nodes for Canvas, camera, and voice-enabled workflows. ](</nodes>)
+[**Multi-channel gateway** Discord, iMessage, Signal, Slack, Telegram, WhatsApp, WebChat, and more with a single Gateway process. ](</channels>) [**Plugin channels** Channel plugins add Matrix, Nostr, Twitch, Zalo, and more; official plugins install on demand. ](</tools/plugin>) [**Multi-agent routing** Isolated sessions per agent, workspace, or sender. ](</concepts/multi-agent>) [**Media support** Send and receive images, audio, and documents. ](</nodes/images>) [**Web Control UI** Browser dashboard for chat, config, sessions, and nodes. ](</web/control-ui>) [**Mobile nodes** Pair iOS and Android nodes for camera, screen, and voice-enabled workflows. ](</nodes>)
 
 ## Quick start
 
@@ -70,7 +70,7 @@ bashCopy code
     npm install -g openclaw@latest --allow-scripts=openclaw
 [/code]
 
-On npm 11.12 and earlier, omit `--allow-scripts=openclaw`. Upgrade npm 11.13–11.15 before installing.
+On npm 11.15 and earlier, omit `--allow-scripts=openclaw`.
 
 * ### Onboard and install the service
 
@@ -119,7 +119,7 @@ json5Copy code
 
 ## Start here
 
-[**Docs hubs** All docs and guides, organized by use case. ](</start/hubs>) [**Configuration** Core Gateway settings, tokens, and provider config. ](</gateway/configuration>) [**Remote access** SSH and tailnet access patterns. ](</gateway/remote>) [**Channels** Channel-specific setup for Discord, Feishu, Microsoft Teams, Telegram, WhatsApp, and more. ](</channels/telegram>) [**Nodes** iOS and Android nodes with pairing, Canvas, camera, and device actions. ](</nodes>) [**Help** Common fixes and troubleshooting entry point. ](</help>)
+[**Docs hubs** All docs and guides, organized by use case. ](</start/hubs>) [**Configuration** Core Gateway settings, tokens, and provider config. ](</gateway/configuration>) [**Remote access** SSH and tailnet access patterns. ](</gateway/remote>) [**Channels** Channel-specific setup for Discord, Feishu, Microsoft Teams, Telegram, WhatsApp, and more. ](</channels/telegram>) [**Nodes** iOS and Android nodes with pairing, camera, screen, and device actions. ](</nodes>) [**Help** Common fixes and troubleshooting entry point. ](</help>)
 
 ## Learn more
 

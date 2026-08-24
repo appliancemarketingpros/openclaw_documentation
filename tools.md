@@ -1,7 +1,7 @@
 ---
 title: Overview
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-08-17
+scraped_at: 2026-08-24
 ---
 
 CapabilitiesOverview
@@ -80,7 +80,7 @@ Common plugin-provided tools include:
   * [Lobster](</tools/lobster>) for typed workflows with resumable approvals
   * [Tokenjuice](</tools/tokenjuice>) for compacting noisy `exec` and `bash` tool output
   * [Tool Search](</tools/tool-search>) for discovering and calling large tool catalogs without putting every schema in the prompt
-  * [Canvas](</plugins/reference/canvas>) for node Canvas control and A2UI rendering
+  * [Canvas](</plugins/reference/canvas>) for the macOS widget-panel presenter and A2UI dashboard content
 
 
 ## Configure access and approvals
