@@ -1,17 +1,30 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-08-24
+scraped_at: 2026-08-31
 ---
 
 InstallInstall overview
 
 ## System requirements
 
-  * **Node 22.22.3+, 24.15+, or 25.9+** \- Node 26 is the recommended default; the installer script provisions it automatically when Node is missing.
+  * **Node 22.22.3+, 24.15+, or 25.9+** \- Node 26 is recommended; the installer provisions Node 26 on macOS and Node 24 LTS on Linux when Node is missing.
   * **macOS, Linux, or Windows** \- Windows users can start with the native Windows Hub app, the PowerShell CLI installer, or a WSL2 Gateway. See [Windows](</platforms/windows>).
   * `pnpm` is only needed if you build from source.
 
+
+## Download the desktop app
+
+Prefer a normal app download over the CLI? OpenClaw ships desktop companions:
+
+  * **Windows** : the [Windows Hub](</platforms/windows#recommended-windows-hub>) companion app — a signed installer you download and run like any Windows app, with setup, tray status, chat, and node mode: 
+    * [OpenClawCompanion-Setup-x64.exe](<https://github.com/openclaw/openclaw-windows-node/releases/latest/download/OpenClawCompanion-Setup-x64.exe>)
+    * [OpenClawCompanion-Setup-arm64.exe](<https://github.com/openclaw/openclaw-windows-node/releases/latest/download/OpenClawCompanion-Setup-arm64.exe>)
+    * All Hub releases: [Windows Hub releases page](<https://github.com/openclaw/openclaw-windows-node/releases/latest>)
+  * **macOS** : the [macOS menu bar app](</platforms/macos>) — download the `OpenClaw-<version>.dmg` (preferred) or `.zip` asset from [OpenClaw GitHub releases](<https://github.com/openclaw/openclaw/releases>), then install and launch **OpenClaw.app**. See the [macOS app page](</platforms/macos>) for details, including what to do when the newest release ships no macOS asset.
+
+
+Both desktop apps can provision a local Gateway during first-run setup, or connect to an existing remote Gateway.
 
 ## Recommended: installer script
 
@@ -90,7 +103,7 @@ bashCopy code
 
 bashCopy code
 [code]
-    bun add -g --trust openclaw@latestopenclaw onboard --install-daemon
+    bun add -g --trust openclaw@latestbun run --bun openclaw onboard --install-daemon --daemon-runtime bun
 [/code]
 
 ### From source
@@ -99,10 +112,14 @@ For contributors or anyone who wants to run from a local checkout:
 
 bashCopy code
 [code]
-    git clone https://github.com/openclaw/openclaw.gitcd openclawpnpm install && pnpm build && pnpm ui:buildpnpm link --globalopenclaw onboard --install-daemon
+    git clone https://github.com/openclaw/openclaw.gitcd openclawcorepack enablepnpm install && pnpm build && pnpm ui:buildpnpm add --global "openclaw@link:$PWD"openclaw onboard --install-daemon
 [/code]
 
-Or skip the link and use `pnpm openclaw ...` from inside the repo. See [Setup](</start/setup>) for full development workflows.
+`pnpm add --global "openclaw@link:$PWD"` links the CLI to this checkout without changing its package files. If pnpm reports that its global bin directory is not on `PATH`, run `pnpm setup`, reopen your shell, and retry.
+
+Corepack selects the exact pnpm version from `package.json` (currently pnpm 12). If Corepack is unavailable, install that version explicitly with `npm install -g pnpm@12.1.0 --allow-scripts=pnpm@12.1.0`; keep npm install scripts and optional dependencies enabled so pnpm can provision its native executable.
+
+Or skip the global install and use `pnpm openclaw ...` from inside the repo. See [Setup](</start/setup>) for full development workflows.
 
 ### Install from the GitHub main checkout
 
@@ -113,7 +130,7 @@ bashCopy code
 
 ### Containers and package managers
 
-[**Ansible** Automated fleet provisioning. ](</install/ansible>) [**Bun** Optional dependency installer and package-script runner. ](</install/bun>) [**ClawDock** Community Docker Compose setup and shell helpers. ](</install/clawdock>) [**Docker** Containerized or headless deployments. ](</install/docker>) [**Nix** Declarative install via Nix flake. ](</install/nix>) [**Podman** Rootless container alternative to Docker. ](</install/podman>)
+[**Ansible** Automated fleet provisioning. ](</install/ansible>) [**Bun** Optional dependency installer and package-script runner. ](</install/bun>) [**Docker** Containerized or headless deployments. ](</install/docker>) [**Nix** Declarative install via Nix flake. ](</install/nix>) [**Podman** Rootless container alternative to Docker. ](</install/podman>)
 
 ## Verify the install
 

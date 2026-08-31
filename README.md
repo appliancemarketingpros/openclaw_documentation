@@ -3,7 +3,7 @@
 > This repository contains a local Markdown mirror of the official [Openclaw documentation](https://docs.openclaw.ai/).
 > It is automatically updated every Monday to reflect any changes in the upstream documentation.
 
-**Last updated:** 2026-08-24
+**Last updated:** 2026-08-31
 
 ## Documentation Index
 
@@ -22,26 +22,28 @@
 - [Personal assistant setup](start/openclaw.md) — [source](https://docs.openclaw.ai/start/openclaw)
 - [Setup](start/setup.md) — [source](https://docs.openclaw.ai/start/setup)
 - [Showcase](start/showcase.md) — [source](https://docs.openclaw.ai/start/showcase)
+- [Team setup](start/teams.md) — [source](https://docs.openclaw.ai/start/teams)
+- [Why OpenClaw](start/why-openclaw.md) — [source](https://docs.openclaw.ai/start/why-openclaw)
 
 ### Install
 
 - [Install](install.md) — [source](https://docs.openclaw.ai/install)
-- [Update troubleshooting](install/update-troubleshooting.md) — [source](https://docs.openclaw.ai/install/update-troubleshooting)
 
 ### Channels
 
+- [A2A](channels/a2a.md) — [source](https://docs.openclaw.ai/channels/a2a)
 - [Chat channels](channels.md) — [source](https://docs.openclaw.ai/channels)
 
 ### Concepts
 
 - [Features](concepts/features.md) — [source](https://docs.openclaw.ai/concepts/features)
 - [Gateway architecture](concepts/architecture.md) — [source](https://docs.openclaw.ai/concepts/architecture)
+- [Memory provenance and deletion](concepts/memory-provenance.md) — [source](https://docs.openclaw.ai/concepts/memory-provenance)
 
 ### Tools
 
-- [Custodian skills](tools/custodian-skills.md) — [source](https://docs.openclaw.ai/tools/custodian-skills)
 - [Overview](tools.md) — [source](https://docs.openclaw.ai/tools)
-- [Progress card](tools/progress-card.md) — [source](https://docs.openclaw.ai/tools/progress-card)
+- [Secrets](tools/secrets.md) — [source](https://docs.openclaw.ai/tools/secrets)
 
 ### Providers
 
@@ -53,14 +55,13 @@
 
 ### Gateway
 
-- [Cloudflare Tunnel and Access](gateway/cloudflare-access.md) — [source](https://docs.openclaw.ai/gateway/cloudflare-access)
+- [Cloud Sessions](gateway/cloud-sessions.md) — [source](https://docs.openclaw.ai/gateway/cloud-sessions)
 - [Gateway runbook](gateway.md) — [source](https://docs.openclaw.ai/gateway)
-- [Session permission modes](gateway/permission-modes.md) — [source](https://docs.openclaw.ai/gateway/permission-modes)
-- [Usage telemetry and update checks](gateway/telemetry.md) — [source](https://docs.openclaw.ai/gateway/telemetry)
 
 ### Cli
 
 - [CLI reference](cli.md) — [source](https://docs.openclaw.ai/cli)
+- [Triage](cli/triage.md) — [source](https://docs.openclaw.ai/cli/triage)
 
 ### Help
 
@@ -69,6 +70,98 @@
 ### Vps
 
 - [Linux server](vps.md) — [source](https://docs.openclaw.ai/vps)
+
+### Automation
+
+- [IMAP email trigger](automation/imap.md) — [source](https://docs.openclaw.ai/automation/imap)
+
+### Plugins
+
+- [Geolocation plugin](plugins/geolocation.md) — [source](https://docs.openclaw.ai/plugins/geolocation)
+
+### Security
+
+- [Incident response](security/incident-response.md) — [source](https://docs.openclaw.ai/security/incident-response)
+
+### Ar
+
+- [الاستجابة للحوادث](ar/security/incident-response.md) — [source](https://docs.openclaw.ai/ar/security/incident-response)
+
+### De
+
+- [Reaktion auf Sicherheitsvorfälle](de/security/incident-response.md) — [source](https://docs.openclaw.ai/de/security/incident-response)
+
+### Es
+
+- [Respuesta ante incidentes](es/security/incident-response.md) — [source](https://docs.openclaw.ai/es/security/incident-response)
+
+### Fa
+
+- [پاسخ‌گویی به رخداد](fa/security/incident-response.md) — [source](https://docs.openclaw.ai/fa/security/incident-response)
+
+### Fr
+
+- [Réponse aux incidents](fr/security/incident-response.md) — [source](https://docs.openclaw.ai/fr/security/incident-response)
+
+### Hi
+
+- [घटना प्रतिक्रिया](hi/security/incident-response.md) — [source](https://docs.openclaw.ai/hi/security/incident-response)
+
+### Id
+
+- [Respons insiden](id/security/incident-response.md) — [source](https://docs.openclaw.ai/id/security/incident-response)
+
+### It
+
+- [Risposta agli incidenti](it/security/incident-response.md) — [source](https://docs.openclaw.ai/it/security/incident-response)
+
+### Ja Jp
+
+- [インシデント対応](ja-JP/security/incident-response.md) — [source](https://docs.openclaw.ai/ja-JP/security/incident-response)
+
+### Ko
+
+- [인시던트 대응](ko/security/incident-response.md) — [source](https://docs.openclaw.ai/ko/security/incident-response)
+
+### Nl
+
+- [Incidentrespons](nl/security/incident-response.md) — [source](https://docs.openclaw.ai/nl/security/incident-response)
+
+### Pl
+
+- [Reagowanie na incydenty](pl/security/incident-response.md) — [source](https://docs.openclaw.ai/pl/security/incident-response)
+
+### Pt Br
+
+- [Resposta a incidentes](pt-BR/security/incident-response.md) — [source](https://docs.openclaw.ai/pt-BR/security/incident-response)
+
+### Ru
+
+- [Реагирование на инциденты](ru/security/incident-response.md) — [source](https://docs.openclaw.ai/ru/security/incident-response)
+
+### Th
+
+- [การตอบสนองต่อเหตุการณ์](th/security/incident-response.md) — [source](https://docs.openclaw.ai/th/security/incident-response)
+
+### Tr
+
+- [Olay müdahalesi](tr/security/incident-response.md) — [source](https://docs.openclaw.ai/tr/security/incident-response)
+
+### Uk
+
+- [Реагування на інциденти](uk/security/incident-response.md) — [source](https://docs.openclaw.ai/uk/security/incident-response)
+
+### Vi
+
+- [Ứng phó sự cố](vi/security/incident-response.md) — [source](https://docs.openclaw.ai/vi/security/incident-response)
+
+### Zh Cn
+
+- [事件响应](zh-CN/security/incident-response.md) — [source](https://docs.openclaw.ai/zh-CN/security/incident-response)
+
+### Zh Tw
+
+- [事件回應](zh-TW/security/incident-response.md) — [source](https://docs.openclaw.ai/zh-TW/security/incident-response)
 
 ---
 

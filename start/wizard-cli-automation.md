@@ -1,7 +1,7 @@
 ---
 title: CLI automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-08-24
+scraped_at: 2026-08-31
 ---
 
 Get startedGuides
@@ -9,6 +9,26 @@ Get startedGuides
 Use `openclaw onboard --non-interactive` to script setup. It requires `--accept-risk`: non-interactive setup can write credentials and daemon config without a confirmation prompt, so the flag is the explicit risk acknowledgement.
 
 Each command can install a managed Gateway with `--install-daemon`, require an already-running compatible Gateway by omitting daemon flags, explicitly leave the Gateway stopped with `--skip-daemon`, or use `--skip-health` for config-only setup. The explicit skip still probes for an existing Gateway and reports whether one is reachable, but an absent listener is informational rather than a setup failure.
+
+## Review required plugins
+
+Non-interactive onboarding cannot accept new external plugin capabilities. `--accept-risk` acknowledges onboarding risk only; it does not grant plugin consent. Before automating a setup that needs an external provider or runtime, review that plugin's source and declared capabilities, then preinstall it with explicit consent. For OpenAI setup, install the official Codex runtime:
+
+bashCopy code
+[code]
+    # After reviewing the plugin and its declared capabilities:openclaw plugins install codex --accept-capabilities
+[/code]
+
+The `codex` selector lets OpenClaw's official catalog choose the runtime package. Then run your onboarding command below. If onboarding reports a required plugin capability review, review and install the named plugin and rerun the same command. For an already-installed plugin that needs approval to enable it, use `openclaw plugins enable <plugin-id> --accept-capabilities`.
+
+External channel plugins need the same preparation before scripted `openclaw channels add`; for example, after reviewing Discord:
+
+bashCopy code
+[code]
+    openclaw plugins install discord --accept-capabilitiesopenclaw channels add --channel discord --token "$DISCORD_BOT_TOKEN"
+[/code]
+
+Bundled plugins are exempt. Consent applies to the reviewed plugin operation, not every subsequent install. See [Capability consent](</plugins/manage-plugins#capability-consent>) for artifact review, enablement, and update rules.
 
 ## Baseline non-interactive example
 

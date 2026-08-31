@@ -1,7 +1,7 @@
 ---
 title: Linux server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-08-24
+scraped_at: 2026-08-31
 ---
 
 InstallHosting
@@ -41,20 +41,21 @@ Security model details: [Security](</gateway/security>). Using nodes with a VPS 
 systemd tuning checklist (optional) For VM hosts using `systemd`, consider:
 
   * Service env for a stable startup path: `OPENCLAW_NO_RESPAWN=1` and `NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cache`
-  * Explicit restart behavior: `Restart=always`, `RestartSec=2`, `TimeoutStartSec=90`
+  * A longer startup timeout for slow hosts: `TimeoutStartSec=90`.
+  * The managed unit owns the generic restart policy: `Restart=always`, `RestartSec=5`.
   * SSD-backed disks for state/cache paths to reduce random-I/O cold-start penalties.
 
-The standard `openclaw onboard --install-daemon` path installs a systemd user unit; edit it with: bashCopy code
+The standard `openclaw onboard --install-daemon` path installs a systemd user unit; customize only host-specific startup settings with: bashCopy code
 [code]
     systemctl --user edit openclaw-gateway.service
 [/code]
 
 iniCopy code
 [code]
-    [Service]Environment=OPENCLAW_NO_RESPAWN=1Environment=NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cacheRestart=alwaysRestartSec=2TimeoutStartSec=90
+    [Service]Environment=OPENCLAW_NO_RESPAWN=1Environment=NODE_COMPILE_CACHE=/var/tmp/openclaw-compile-cacheTimeoutStartSec=90
 [/code]
 
-If you deliberately installed a system unit instead, edit it via `sudo systemctl edit openclaw-gateway.service`. How `Restart=` policies help automated recovery: [systemd can automate service recovery](<https://www.redhat.com/en/blog/systemd-automate-recovery>). For Linux OOM behavior, child process victim selection, and `exit 137` diagnostics, see [Linux memory pressure and OOM kills](</platforms/linux#memory-pressure-and-oom-kills>). Related
+If you deliberately installed a system unit instead, edit it via `sudo systemctl edit openclaw-gateway.service`. For the canonical managed unit body and its restart policy, see the [Gateway runbook](</gateway>). For Linux OOM behavior, child process victim selection, and `exit 137` diagnostics, see [Linux memory pressure and OOM kills](</platforms/linux#memory-pressure-and-oom-kills>). Related
 
   * [Install overview](</install>)
   * [DigitalOcean](</install/digitalocean>)

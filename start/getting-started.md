@@ -1,7 +1,7 @@
 ---
 title: Getting started
 source_url: https://docs.openclaw.ai/start/getting-started
-scraped_at: 2026-08-24
+scraped_at: 2026-08-31
 ---
 
 Get startedFirst steps
@@ -87,6 +87,21 @@ bashCopy code
     openclaw gateway restartopenclaw dashboard
 [/code]
 
+## If setup does not work
+
+One command turns the current state of your install into a diagnosis you can act on:
+
+bashCopy code
+[code]
+    openclaw triage
+[/code]
+
+It runs read-only health checks, writes a sanitized prompt describing what it found, and then offers to hand that prompt to a coding agent it detects on your machine — Claude Code, Codex CLI, or the built-in OpenClaw agent — so the agent starts with the diagnosis already loaded. Pick "just print the commands" if you would rather run the handoff yourself.
+
+Nothing leaves your machine until you choose an agent, and secrets, tokens, raw chat payloads, and raw logs are excluded from the prompt.
+
+To read the findings yourself instead, run [`openclaw doctor`](</cli/doctor>). For symptom-first routes, see [Troubleshooting](</help/troubleshooting>).
+
 ## What to do next
 
 [**Connect a channel** Discord, Feishu, iMessage, Matrix, Microsoft Teams, Signal, Slack, Telegram, WhatsApp, Zalo, and more. ](</channels>) [**Pairing and safety** Control who can message your agent. ](</channels/pairing>) [**Configure the Gateway** Models, tools, sandbox, and advanced settings. ](</gateway/configuration>) [**Browse tools** Browser, exec, web search, skills, and plugins. ](</tools>)
@@ -107,6 +122,8 @@ Full reference: [Environment variables](</help/environment>).
   * [Install overview](</install>)
   * [Channels overview](</channels>)
   * [Setup](</start/setup>)
+  * [Triage](</cli/triage>)
+  * [Troubleshooting](</help/troubleshooting>)
 
 
 Was this useful?YesNo
