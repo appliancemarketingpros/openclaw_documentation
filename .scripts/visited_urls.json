@@ -2,128 +2,128 @@
   "https://docs.openclaw.ai/": {
     "title": "OpenClaw",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/index.md",
-    "hash": "6b60c04d8fdb0f2d52c9be7667f7006b",
-    "last_scraped": "2026-08-31 11:59:39"
+    "hash": "e4247289428fcc7a995f198c4862b144",
+    "last_scraped": "2026-09-07 10:53:54"
   },
   "https://docs.openclaw.ai/install": {
     "title": "Install",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/install.md",
-    "hash": "d83758a7a98e7df35d9b149cb0b85054",
-    "last_scraped": "2026-08-31 11:59:40"
+    "hash": "d69e6f09f18758d79b78967803e92c60",
+    "last_scraped": "2026-09-07 10:53:55"
   },
   "https://docs.openclaw.ai/channels": {
     "title": "Chat channels",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/channels.md",
-    "hash": "b6420c7d1b42ddc3c0f60f5e03213121",
-    "last_scraped": "2026-08-31 11:59:41"
+    "hash": "5350755eba84599c09d7938c4ef02be5",
+    "last_scraped": "2026-09-07 10:53:56"
   },
   "https://docs.openclaw.ai/concepts/architecture": {
     "title": "Gateway architecture",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/architecture.md",
-    "hash": "be8037272df0a0f46082575c945aeae4",
-    "last_scraped": "2026-08-31 11:59:42"
+    "hash": "dbb3e4fe09ceda01b2840af8a7cee12f",
+    "last_scraped": "2026-09-07 10:53:57"
   },
   "https://docs.openclaw.ai/tools": {
     "title": "Overview",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tools.md",
-    "hash": "694db06f8d5ee79e91848cd5a186cbaa",
-    "last_scraped": "2026-08-31 11:59:42"
+    "hash": "57e6902c258304ad41830efb16d03840",
+    "last_scraped": "2026-09-07 10:53:58"
   },
   "https://docs.openclaw.ai/providers": {
     "title": "Provider directory",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers.md",
-    "hash": "522a5f2e594bcf6163bf5cbf5f74fc5e",
-    "last_scraped": "2026-08-31 11:59:43"
+    "hash": "85b36ffb798a7919c3c247487d88b6aa",
+    "last_scraped": "2026-09-07 10:53:58"
   },
   "https://docs.openclaw.ai/platforms": {
     "title": "Platforms",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/platforms.md",
-    "hash": "041f576a8514293457b48e77633f4988",
-    "last_scraped": "2026-08-31 11:59:44"
+    "hash": "ddf4d3dfd8e0a531d174ab2d84e6723f",
+    "last_scraped": "2026-09-07 10:53:59"
   },
   "https://docs.openclaw.ai/gateway": {
     "title": "Gateway runbook",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway.md",
-    "hash": "894718bb43dcdb54cb721287581d18c6",
-    "last_scraped": "2026-08-31 11:59:45"
+    "hash": "7eb19e8a74311d0b3fd9934400e16808",
+    "last_scraped": "2026-09-07 10:54:00"
   },
   "https://docs.openclaw.ai/cli": {
     "title": "CLI reference",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/cli.md",
-    "hash": "01fa0d7cc30f2fbc1a405f2ef576674c",
-    "last_scraped": "2026-08-31 11:59:45"
+    "hash": "1afcb9a65021021c292b424a27a11026",
+    "last_scraped": "2026-09-07 10:54:01"
   },
   "https://docs.openclaw.ai/help": {
     "title": "Help",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/help.md",
-    "hash": "138c402d74c450051b66c67578579470",
-    "last_scraped": "2026-08-31 11:59:46"
+    "hash": "ecdb4a7a8a2a32ce67cd9732dd3fa274",
+    "last_scraped": "2026-09-07 10:54:01"
   },
   "https://docs.openclaw.ai/start/getting-started": {
     "title": "Getting started",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/getting-started.md",
-    "hash": "f4313d29ebb5c8b4199baa06cff83223",
-    "last_scraped": "2026-08-31 11:59:47"
+    "hash": "8ed9f653694e86611c81e4ebb771566c",
+    "last_scraped": "2026-09-07 10:54:02"
   },
   "https://docs.openclaw.ai/start/onboarding-overview": {
     "title": "Onboarding overview",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/onboarding-overview.md",
-    "hash": "16ffb9ecdc96d414602f5bce00b91ef8",
-    "last_scraped": "2026-08-31 11:59:48"
+    "hash": "8e87f0febecf6ffd5f0faf769145a2ee",
+    "last_scraped": "2026-09-07 10:54:03"
   },
   "https://docs.openclaw.ai/start/wizard": {
     "title": "Onboarding (CLI)",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard.md",
-    "hash": "c8fab39c3ced362fc68f691810600a2d",
-    "last_scraped": "2026-08-31 11:59:48"
+    "hash": "0bca22b0b0e25f524ef5962f9093b822",
+    "last_scraped": "2026-09-07 10:54:04"
   },
   "https://docs.openclaw.ai/start/onboarding": {
     "title": "Onboarding (macOS app)",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/onboarding.md",
-    "hash": "d606de798e536b54d8694077e5f2a79d",
-    "last_scraped": "2026-08-31 11:59:49"
+    "hash": "7df4a337cdb406e93f085bfa659274f4",
+    "last_scraped": "2026-09-07 10:54:05"
   },
   "https://docs.openclaw.ai/start/openclaw": {
     "title": "Personal assistant setup",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/openclaw.md",
-    "hash": "0f9a7d6fc02432bcfb14992de3f2f2cc",
-    "last_scraped": "2026-08-31 11:59:50"
+    "hash": "9a350416a047a11f3d0a4a40e56a9306",
+    "last_scraped": "2026-09-07 10:54:05"
   },
   "https://docs.openclaw.ai/start/wizard-cli-reference": {
     "title": "CLI setup reference",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard-cli-reference.md",
-    "hash": "f5c1363fad32deaea79814d445b150bc",
-    "last_scraped": "2026-08-31 11:59:51"
+    "hash": "2169a6ab0cbad3c2f8e18f4ecb3ffa59",
+    "last_scraped": "2026-09-07 10:54:06"
   },
   "https://docs.openclaw.ai/start/wizard-cli-automation": {
     "title": "CLI automation",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard-cli-automation.md",
-    "hash": "6919b9d7229550317f4efa3e67452788",
-    "last_scraped": "2026-08-31 11:59:51"
+    "hash": "29272780794c4539e145bdf65d057bfc",
+    "last_scraped": "2026-09-07 10:54:07"
   },
   "https://docs.openclaw.ai/start/showcase": {
     "title": "Showcase",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/showcase.md",
-    "hash": "b1ae263d8e776190f1846383e18d7304",
-    "last_scraped": "2026-08-31 11:59:52"
+    "hash": "0258cab403bbe6082e2d38e03dbd3598",
+    "last_scraped": "2026-09-07 10:54:08"
   },
   "https://docs.openclaw.ai/concepts/features": {
     "title": "Features",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/features.md",
-    "hash": "d81a7cf19608c47e00ca7c7335f5405e",
-    "last_scraped": "2026-08-31 11:59:53"
+    "hash": "d69122aee04c2313b702cdd241835201",
+    "last_scraped": "2026-09-07 10:54:08"
   },
   "https://docs.openclaw.ai/start/setup": {
     "title": "Setup",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/setup.md",
-    "hash": "e9fdf4d2e59be5a0ed16eaf521a55cf5",
-    "last_scraped": "2026-08-31 11:59:54"
+    "hash": "78e7908182b0201a936b30c264d82a9d",
+    "last_scraped": "2026-09-07 10:54:09"
   },
   "https://docs.openclaw.ai/vps": {
     "title": "Linux server",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vps.md",
-    "hash": "84274d51cf0c7ed1512e3ff96338c9bb",
-    "last_scraped": "2026-08-31 11:59:54"
+    "hash": "0e19995fb3b126762202732904167cfc",
+    "last_scraped": "2026-09-07 10:54:10"
   },
   "https://docs.openclaw.ai/web": {
     "title": "Web",
@@ -105697,5 +105697,1402 @@
     "title": null,
     "error": true,
     "last_scraped": "2026-08-31 12:00:40"
+  },
+  "https://docs.openclaw.ai/web/control-ui/panels": {
+    "title": "Panels and docks",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/web/control-ui/panels.md",
+    "hash": "7ac1edc88f78d5e5fc78f702cc9cb2c8",
+    "last_scraped": "2026-09-07 10:54:11"
+  },
+  "https://docs.openclaw.ai/plugins/feature-plugins": {
+    "title": "Feature plugins",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/feature-plugins.md",
+    "hash": "016de6f9c89fafba43135304fd20646d",
+    "last_scraped": "2026-09-07 10:54:12"
+  },
+  "https://docs.openclaw.ai/providers/llmman": {
+    "title": "llmman",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers/llmman.md",
+    "hash": "f9e7fe3c2a286b344ab760db8472a90c",
+    "last_scraped": "2026-09-07 10:54:12"
+  },
+  "https://docs.openclaw.ai/web/control-ui/security-model": {
+    "title": "Security model",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/web/control-ui/security-model.md",
+    "hash": "588c564bae03b67c9f0c79482ef60473",
+    "last_scraped": "2026-09-07 10:54:13"
+  },
+  "https://docs.openclaw.ai/gateway/config-browser-ui-desktop": {
+    "title": "Configuration \u2014 browser, UI, and desktop",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/config-browser-ui-desktop.md",
+    "hash": "6c3e4617c2f97be6f52b615f294761c8",
+    "last_scraped": "2026-09-07 10:54:14"
+  },
+  "https://docs.openclaw.ai/web/control-ui/chat": {
+    "title": "Chat",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/web/control-ui/chat.md",
+    "hash": "84b5e019fffe613384d705a50f150ad0",
+    "last_scraped": "2026-09-07 10:54:15"
+  },
+  "https://docs.openclaw.ai/web/control-ui/settings": {
+    "title": "Settings",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/web/control-ui/settings.md",
+    "hash": "8b180d7bd9884c8afee003654bfdf99b",
+    "last_scraped": "2026-09-07 10:54:16"
+  },
+  "https://docs.openclaw.ai/web/control-ui/offline-and-reconnect": {
+    "title": "Offline and reconnect",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/web/control-ui/offline-and-reconnect.md",
+    "hash": "bb1b14594f67a24b7e95788b2984bff0",
+    "last_scraped": "2026-09-07 10:54:16"
+  },
+  "https://docs.openclaw.ai/gateway/config-gateway": {
+    "title": "Configuration \u2014 gateway",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/config-gateway.md",
+    "hash": "bbcff719ca567e6b25c6b9a1bcd19d25",
+    "last_scraped": "2026-09-07 10:54:17"
+  },
+  "https://docs.openclaw.ai/gateway/config-cloud-workers": {
+    "title": "Configuration \u2014 cloud worker environments",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/config-cloud-workers.md",
+    "hash": "34803cfa1963232650b50819c6cccd1a",
+    "last_scraped": "2026-09-07 10:54:18"
+  },
+  "https://docs.openclaw.ai/web/control-ui/connect-and-pair": {
+    "title": "Connect and pair",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/web/control-ui/connect-and-pair.md",
+    "hash": "a19d3479f420c65badfd471a3d0ea01b",
+    "last_scraped": "2026-09-07 10:54:19"
+  },
+  "https://docs.openclaw.ai/gateway/config-runtime": {
+    "title": "Configuration \u2014 runtime basics",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/config-runtime.md",
+    "hash": "01217199ef6b9848a85e081a0b1c4d45",
+    "last_scraped": "2026-09-07 10:54:20"
+  },
+  "https://docs.openclaw.ai/gateway/config-observability": {
+    "title": "Configuration \u2014 audit, logging, diagnostics, and telemetry",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/config-observability.md",
+    "hash": "1129b2d230bd247bc66e12632f0fc11e",
+    "last_scraped": "2026-09-07 10:54:20"
+  },
+  "https://docs.openclaw.ai/gateway/config-extensions": {
+    "title": "Configuration \u2014 MCP, skills, and plugins",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/config-extensions.md",
+    "hash": "9ef6f6f5d8e668fa25bef1e4f5791068",
+    "last_scraped": "2026-09-07 10:54:21"
+  },
+  "https://docs.openclaw.ai/web/control-ui/feature-reference": {
+    "title": "Feature and RPC reference",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/web/control-ui/feature-reference.md",
+    "hash": "2c8059de10268e8be32f50e9369f4a39",
+    "last_scraped": "2026-09-07 10:54:22"
+  },
+  "https://docs.openclaw.ai/gateway/config-secrets-env": {
+    "title": "Configuration \u2014 environment, secrets, and includes",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/config-secrets-env.md",
+    "hash": "e294e7754a06e8264e049772841364b3",
+    "last_scraped": "2026-09-07 10:54:23"
+  },
+  "https://docs.openclaw.ai/web/control-ui/development": {
+    "title": "Build and develop",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/web/control-ui/development.md",
+    "hash": "c2b4841bfa1a83b7d25090e46cba4a5f",
+    "last_scraped": "2026-09-07 10:54:24"
+  },
+  "https://docs.openclaw.ai/gateway/config-hooks": {
+    "title": "Configuration \u2014 hooks",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/config-hooks.md",
+    "hash": "268b3ba155f3261e1ec8445266045937",
+    "last_scraped": "2026-09-07 10:54:24"
+  },
+  "https://docs.openclaw.ai/web/control-ui/sessions-and-sidebar": {
+    "title": "Sessions and sidebar",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/web/control-ui/sessions-and-sidebar.md",
+    "hash": "1363b98b68bb3bd5425ca7f065a72357",
+    "last_scraped": "2026-09-07 10:54:25"
+  },
+  "https://docs.openclaw.ai/gateway/config-automation": {
+    "title": "Configuration \u2014 automations and media template variables",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway/config-automation.md",
+    "hash": "3f9c2e79f6ceba9fc68f37c14690c8e0",
+    "last_scraped": "2026-09-07 10:54:26"
+  },
+  "https://docs.openclaw.ai/reference/templates/SOUL.dev": {
+    "title": "SOUL.dev template",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/reference/templates/SOUL.dev.md",
+    "hash": "c697406e06262e649cb90ea86d80189d",
+    "last_scraped": "2026-09-07 10:54:27"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/package-json": {
+    "title": "Manifest versus package.json",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/manifest/package-json.md",
+    "hash": "e70206ebce1d5cf3b69f4c5dec40be50",
+    "last_scraped": "2026-09-07 10:54:28"
+  },
+  "https://docs.openclaw.ai/reference/templates/USER.dev": {
+    "title": "USER.dev template",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/reference/templates/USER.dev.md",
+    "hash": "84d39b29905efffba6b3f7798530bba3",
+    "last_scraped": "2026-09-07 10:54:28"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/setup-and-auth": {
+    "title": "Manifest setup and auth fields",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/manifest/setup-and-auth.md",
+    "hash": "f23d20a82c3f2778fe32535ca40f251b",
+    "last_scraped": "2026-09-07 10:54:29"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/capabilities": {
+    "title": "Manifest capability fields",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/manifest/capabilities.md",
+    "hash": "641498e177d52c054dc551f518bec772",
+    "last_scraped": "2026-09-07 10:54:30"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/models": {
+    "title": "Manifest model fields",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/manifest/models.md",
+    "hash": "8971eccb15e9923a56384b520923fc1c",
+    "last_scraped": "2026-09-07 10:54:31"
+  },
+  "https://docs.openclaw.ai/reference/templates/AGENTS.dev": {
+    "title": "AGENTS.dev template",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/reference/templates/AGENTS.dev.md",
+    "hash": "9ed00741b90fdc75edbcec3b09b949c1",
+    "last_scraped": "2026-09-07 10:54:32"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/config-and-secrets": {
+    "title": "Manifest config and secret fields",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/manifest/config-and-secrets.md",
+    "hash": "63977d60780b2a5b8d23063f51cd1809",
+    "last_scraped": "2026-09-07 10:54:32"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/providers": {
+    "title": "Manifest provider fields",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/manifest/providers.md",
+    "hash": "81d74b94df6d3280f71a491e60d88ba3",
+    "last_scraped": "2026-09-07 10:54:33"
+  },
+  "https://docs.openclaw.ai/reference/templates/IDENTITY.dev": {
+    "title": "IDENTITY.dev template",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/reference/templates/IDENTITY.dev.md",
+    "hash": "0dce066f593e6a175ec983ebeea4b247",
+    "last_scraped": "2026-09-07 10:54:34"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/surfaces": {
+    "title": "Manifest host surface fields",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/manifest/surfaces.md",
+    "hash": "0b4f39969e8b97259bd93aeba003d7a9",
+    "last_scraped": "2026-09-07 10:54:35"
+  },
+  "https://docs.openclaw.ai/web/control-ui/panels.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:36"
+  },
+  "https://docs.openclaw.ai/plugins/feature-plugins.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:36"
+  },
+  "https://docs.openclaw.ai/providers/llmman.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:37"
+  },
+  "https://docs.openclaw.ai/web/control-ui/security-model.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:38"
+  },
+  "https://docs.openclaw.ai/gateway/config-browser-ui-desktop.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:39"
+  },
+  "https://docs.openclaw.ai/web/control-ui/chat.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:39"
+  },
+  "https://docs.openclaw.ai/web/control-ui/settings.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:40"
+  },
+  "https://docs.openclaw.ai/web/control-ui/offline-and-reconnect.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:41"
+  },
+  "https://docs.openclaw.ai/gateway/config-gateway.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:42"
+  },
+  "https://docs.openclaw.ai/gateway/config-cloud-workers.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:42"
+  },
+  "https://docs.openclaw.ai/web/control-ui/connect-and-pair.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:43"
+  },
+  "https://docs.openclaw.ai/gateway/config-runtime.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:44"
+  },
+  "https://docs.openclaw.ai/gateway/config-observability.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:45"
+  },
+  "https://docs.openclaw.ai/gateway/config-extensions.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:45"
+  },
+  "https://docs.openclaw.ai/web/control-ui/feature-reference.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:46"
+  },
+  "https://docs.openclaw.ai/gateway/config-secrets-env.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:47"
+  },
+  "https://docs.openclaw.ai/web/control-ui/development.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:47"
+  },
+  "https://docs.openclaw.ai/gateway/config-hooks.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:48"
+  },
+  "https://docs.openclaw.ai/web/control-ui/sessions-and-sidebar.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:49"
+  },
+  "https://docs.openclaw.ai/gateway/config-automation.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:54:50"
+  },
+  "https://docs.openclaw.ai/ja-JP/reference/templates/SOUL.dev": {
+    "title": "SOUL.dev \u30c6\u30f3\u30d7\u30ec\u30fc\u30c8",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/reference/templates/SOUL.dev.md",
+    "hash": "bf2204f48e6101bf057676c088a86acc",
+    "last_scraped": "2026-09-07 10:54:50"
+  },
+  "https://docs.openclaw.ai/th/reference/templates/SOUL.dev": {
+    "title": "\u0e40\u0e17\u0e21\u0e40\u0e1e\u0e25\u0e15 SOUL.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/reference/templates/SOUL.dev.md",
+    "hash": "9d7c22daa637a884cd303f7d2225cdeb",
+    "last_scraped": "2026-09-07 10:54:51"
+  },
+  "https://docs.openclaw.ai/ko/reference/templates/SOUL.dev": {
+    "title": "SOUL.dev \ud15c\ud50c\ub9bf",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/reference/templates/SOUL.dev.md",
+    "hash": "590f480a8c73b2246b67074c635ac3ed",
+    "last_scraped": "2026-09-07 10:54:52"
+  },
+  "https://docs.openclaw.ai/vi/reference/templates/SOUL.dev": {
+    "title": "M\u1eabu SOUL.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/reference/templates/SOUL.dev.md",
+    "hash": "d2b6f4217c3bbc2845fc58c8a86d7b68",
+    "last_scraped": "2026-09-07 10:54:53"
+  },
+  "https://docs.openclaw.ai/pt-BR/reference/templates/SOUL.dev": {
+    "title": "Modelo SOUL.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/reference/templates/SOUL.dev.md",
+    "hash": "2006f56cee0dc48a36a19172326e48dd",
+    "last_scraped": "2026-09-07 10:54:54"
+  },
+  "https://docs.openclaw.ai/fa/reference/templates/SOUL.dev": {
+    "title": "\u0642\u0627\u0644\u0628 SOUL.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/reference/templates/SOUL.dev.md",
+    "hash": "81574a2a96fdcbec7c5a964cbe382c1f",
+    "last_scraped": "2026-09-07 10:54:54"
+  },
+  "https://docs.openclaw.ai/it/reference/templates/SOUL.dev": {
+    "title": "Modello SOUL.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/reference/templates/SOUL.dev.md",
+    "hash": "0c6fd977e8732fbd669496531574defe",
+    "last_scraped": "2026-09-07 10:54:55"
+  },
+  "https://docs.openclaw.ai/zh-TW/reference/templates/SOUL.dev": {
+    "title": "SOUL.dev \u7bc4\u672c",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/reference/templates/SOUL.dev.md",
+    "hash": "2204e1387a67e9e10e96dc1296fdc54d",
+    "last_scraped": "2026-09-07 10:54:56"
+  },
+  "https://docs.openclaw.ai/pl/reference/templates/SOUL.dev": {
+    "title": "Szablon SOUL.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/reference/templates/SOUL.dev.md",
+    "hash": "0e250c6aa92e5a3311765c5fcf51f33d",
+    "last_scraped": "2026-09-07 10:54:57"
+  },
+  "https://docs.openclaw.ai/tr/reference/templates/SOUL.dev": {
+    "title": "SOUL.dev \u015fablonu",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/reference/templates/SOUL.dev.md",
+    "hash": "b286877bb282615c1a85330fe6056a36",
+    "last_scraped": "2026-09-07 10:54:58"
+  },
+  "https://docs.openclaw.ai/uk/reference/templates/SOUL.dev": {
+    "title": "\u0428\u0430\u0431\u043b\u043e\u043d SOUL.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/reference/templates/SOUL.dev.md",
+    "hash": "4af03c6f292f58d71748be62263cd85f",
+    "last_scraped": "2026-09-07 10:54:58"
+  },
+  "https://docs.openclaw.ai/es/reference/templates/SOUL.dev": {
+    "title": "Plantilla SOUL.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/reference/templates/SOUL.dev.md",
+    "hash": "eba2538a15439b7b7f4dfa3f77e6fe30",
+    "last_scraped": "2026-09-07 10:54:59"
+  },
+  "https://docs.openclaw.ai/de/reference/templates/SOUL.dev": {
+    "title": "SOUL.dev-Vorlage",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/reference/templates/SOUL.dev.md",
+    "hash": "e9bb5dbdc324dcab2fc9a33139934f9a",
+    "last_scraped": "2026-09-07 10:55:00"
+  },
+  "https://docs.openclaw.ai/id/reference/templates/SOUL.dev": {
+    "title": "Templat SOUL.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/reference/templates/SOUL.dev.md",
+    "hash": "c09ea6c32334888d08a9db49b6ad809c",
+    "last_scraped": "2026-09-07 10:55:01"
+  },
+  "https://docs.openclaw.ai/fr/reference/templates/SOUL.dev": {
+    "title": "Mod\u00e8le SOUL.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/reference/templates/SOUL.dev.md",
+    "hash": "e5daf52e32936b0468dbf2d408d47728",
+    "last_scraped": "2026-09-07 10:55:02"
+  },
+  "https://docs.openclaw.ai/nl/reference/templates/SOUL.dev": {
+    "title": "SOUL.dev-sjabloon",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/reference/templates/SOUL.dev.md",
+    "hash": "f6e0de1013a94fa2cb5d79083577d210",
+    "last_scraped": "2026-09-07 10:55:02"
+  },
+  "https://docs.openclaw.ai/hi/reference/templates/SOUL.dev": {
+    "title": "SOUL.dev \u091f\u0947\u092e\u094d\u092a\u0932\u0947\u091f",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/hi/reference/templates/SOUL.dev.md",
+    "hash": "d194f98800e6289e78e9702ba1481f9d",
+    "last_scraped": "2026-09-07 10:55:03"
+  },
+  "https://docs.openclaw.ai/ru/reference/templates/SOUL.dev": {
+    "title": "\u0428\u0430\u0431\u043b\u043e\u043d SOUL.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/reference/templates/SOUL.dev.md",
+    "hash": "6893c54dad86990081c0823995810c70",
+    "last_scraped": "2026-09-07 10:55:04"
+  },
+  "https://docs.openclaw.ai/ar/reference/templates/SOUL.dev": {
+    "title": "\u0642\u0627\u0644\u0628 SOUL.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/reference/templates/SOUL.dev.md",
+    "hash": "35c7a0edf71b703f275813f0dc6abf47",
+    "last_scraped": "2026-09-07 10:55:05"
+  },
+  "https://docs.openclaw.ai/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:55:06"
+  },
+  "https://docs.openclaw.ai/zh-CN/reference/templates/SOUL.dev": {
+    "title": "SOUL.dev \u6a21\u677f",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/reference/templates/SOUL.dev.md",
+    "hash": "5efed689f122a423e65b8fbb710c65a9",
+    "last_scraped": "2026-09-07 10:55:07"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/package-json.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:55:07"
+  },
+  "https://docs.openclaw.ai/th/reference/templates/USER.dev": {
+    "title": "\u0e40\u0e17\u0e21\u0e40\u0e1e\u0e25\u0e15 USER.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/reference/templates/USER.dev.md",
+    "hash": "42f59072a1679d7d8f0b6b3794f0bc59",
+    "last_scraped": "2026-09-07 10:55:08"
+  },
+  "https://docs.openclaw.ai/vi/reference/templates/USER.dev": {
+    "title": "M\u1eabu USER.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/reference/templates/USER.dev.md",
+    "hash": "ed295e0287244bab930fde1cbb1a8aa1",
+    "last_scraped": "2026-09-07 10:55:09"
+  },
+  "https://docs.openclaw.ai/es/reference/templates/USER.dev": {
+    "title": "Plantilla USER.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/reference/templates/USER.dev.md",
+    "hash": "2be41ff151b43c0397d3826a489f4d3f",
+    "last_scraped": "2026-09-07 10:55:10"
+  },
+  "https://docs.openclaw.ai/ru/reference/templates/USER.dev": {
+    "title": "\u0428\u0430\u0431\u043b\u043e\u043d USER.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/reference/templates/USER.dev.md",
+    "hash": "7a7672629acc27cc7d05b8aca5c565be",
+    "last_scraped": "2026-09-07 10:55:10"
+  },
+  "https://docs.openclaw.ai/ar/reference/templates/USER.dev": {
+    "title": "\u0642\u0627\u0644\u0628 USER.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/reference/templates/USER.dev.md",
+    "hash": "86a9f6b83eb60e6ae69ab0a92dbb19ce",
+    "last_scraped": "2026-09-07 10:55:11"
+  },
+  "https://docs.openclaw.ai/pt-BR/reference/templates/USER.dev": {
+    "title": "Modelo USER.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/reference/templates/USER.dev.md",
+    "hash": "e4afe524d4b7b1064b7fc3afc18547ad",
+    "last_scraped": "2026-09-07 10:55:12"
+  },
+  "https://docs.openclaw.ai/nl/reference/templates/USER.dev": {
+    "title": "USER.dev-sjabloon",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/reference/templates/USER.dev.md",
+    "hash": "fb51be14e7a61df2b573f72a342d8f7a",
+    "last_scraped": "2026-09-07 10:55:13"
+  },
+  "https://docs.openclaw.ai/fa/reference/templates/USER.dev": {
+    "title": "\u0642\u0627\u0644\u0628 USER.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/reference/templates/USER.dev.md",
+    "hash": "75541e9a2503be7fca7cbd98b6bf57ba",
+    "last_scraped": "2026-09-07 10:55:13"
+  },
+  "https://docs.openclaw.ai/id/reference/templates/USER.dev": {
+    "title": "Templat USER.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/reference/templates/USER.dev.md",
+    "hash": "29ad3b73a71c31ca60abd3f49eb3a42d",
+    "last_scraped": "2026-09-07 10:55:14"
+  },
+  "https://docs.openclaw.ai/pl/reference/templates/USER.dev": {
+    "title": "Szablon USER.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/reference/templates/USER.dev.md",
+    "hash": "4c5fd993be2e09326efea3a76d4a8a6b",
+    "last_scraped": "2026-09-07 10:55:15"
+  },
+  "https://docs.openclaw.ai/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:55:16"
+  },
+  "https://docs.openclaw.ai/ja-JP/reference/templates/USER.dev": {
+    "title": "USER.dev \u30c6\u30f3\u30d7\u30ec\u30fc\u30c8",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/reference/templates/USER.dev.md",
+    "hash": "6b32dc25476ee6f2af85956ebcfff360",
+    "last_scraped": "2026-09-07 10:55:17"
+  },
+  "https://docs.openclaw.ai/zh-TW/reference/templates/USER.dev": {
+    "title": "USER.dev \u7bc4\u672c",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/reference/templates/USER.dev.md",
+    "hash": "ca7132c6ad3a0efea1b6c424f355c012",
+    "last_scraped": "2026-09-07 10:55:17"
+  },
+  "https://docs.openclaw.ai/de/reference/templates/USER.dev": {
+    "title": "USER.dev-Vorlage",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/reference/templates/USER.dev.md",
+    "hash": "f6eca132c2738a0ce0e5adb35175673c",
+    "last_scraped": "2026-09-07 10:55:18"
+  },
+  "https://docs.openclaw.ai/it/reference/templates/USER.dev": {
+    "title": "Modello USER.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/reference/templates/USER.dev.md",
+    "hash": "eb167dfaba3f7e1abf0b9093c40ae28c",
+    "last_scraped": "2026-09-07 10:55:19"
+  },
+  "https://docs.openclaw.ai/zh-CN/reference/templates/USER.dev": {
+    "title": "USER.dev \u6a21\u677f",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/reference/templates/USER.dev.md",
+    "hash": "cc36ae4808ad84d0180ab7cc540c5437",
+    "last_scraped": "2026-09-07 10:55:20"
+  },
+  "https://docs.openclaw.ai/fr/reference/templates/USER.dev": {
+    "title": "mod\u00e8le USER.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/reference/templates/USER.dev.md",
+    "hash": "3e0ea48aef1cd51fb6382f403d92721c",
+    "last_scraped": "2026-09-07 10:55:20"
+  },
+  "https://docs.openclaw.ai/hi/reference/templates/USER.dev": {
+    "title": "USER.dev \u091f\u0947\u092e\u094d\u092a\u0932\u0947\u091f",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/hi/reference/templates/USER.dev.md",
+    "hash": "f39edac371a4542054205f62ac62a830",
+    "last_scraped": "2026-09-07 10:55:21"
+  },
+  "https://docs.openclaw.ai/ko/reference/templates/USER.dev": {
+    "title": "USER.dev \ud15c\ud50c\ub9bf",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/reference/templates/USER.dev.md",
+    "hash": "74511ea4b3eaf2ea6b5e6d364b6d7030",
+    "last_scraped": "2026-09-07 10:55:22"
+  },
+  "https://docs.openclaw.ai/tr/reference/templates/USER.dev": {
+    "title": "USER.dev \u015fablonu",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/reference/templates/USER.dev.md",
+    "hash": "43333bcd9ff1c9673937d5ad5cf2d3bd",
+    "last_scraped": "2026-09-07 10:55:23"
+  },
+  "https://docs.openclaw.ai/uk/reference/templates/USER.dev": {
+    "title": "\u0428\u0430\u0431\u043b\u043e\u043d USER.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/reference/templates/USER.dev.md",
+    "hash": "abcab0708df92aa2806150684c0bb146",
+    "last_scraped": "2026-09-07 10:55:23"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/setup-and-auth.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:55:24"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/capabilities.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:55:25"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/models.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:55:26"
+  },
+  "https://docs.openclaw.ai/ar/reference/templates/AGENTS.dev": {
+    "title": "\u0642\u0627\u0644\u0628 AGENTS.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/reference/templates/AGENTS.dev.md",
+    "hash": "c7d2d89044ab58fb2f62d7e9820bc850",
+    "last_scraped": "2026-09-07 10:55:26"
+  },
+  "https://docs.openclaw.ai/pl/reference/templates/AGENTS.dev": {
+    "title": "Szablon AGENTS.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/reference/templates/AGENTS.dev.md",
+    "hash": "6f1f8dc76f59145f367a561420ac41ff",
+    "last_scraped": "2026-09-07 10:55:27"
+  },
+  "https://docs.openclaw.ai/nl/reference/templates/AGENTS.dev": {
+    "title": "AGENTS.dev-sjabloon",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/reference/templates/AGENTS.dev.md",
+    "hash": "de8abd01f247433f3cde1478e000b6f3",
+    "last_scraped": "2026-09-07 10:55:28"
+  },
+  "https://docs.openclaw.ai/it/reference/templates/AGENTS.dev": {
+    "title": "Modello AGENTS.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/reference/templates/AGENTS.dev.md",
+    "hash": "33a8ab576a6f705e5d99a973da44ab1e",
+    "last_scraped": "2026-09-07 10:55:29"
+  },
+  "https://docs.openclaw.ai/es/reference/templates/AGENTS.dev": {
+    "title": "Plantilla de AGENTS.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/reference/templates/AGENTS.dev.md",
+    "hash": "32742bfc41bb5d7416cbcd96ec3e8585",
+    "last_scraped": "2026-09-07 10:55:29"
+  },
+  "https://docs.openclaw.ai/uk/reference/templates/AGENTS.dev": {
+    "title": "\u0428\u0430\u0431\u043b\u043e\u043d AGENTS.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/reference/templates/AGENTS.dev.md",
+    "hash": "87d091ff2573f54fa18cad57e7450352",
+    "last_scraped": "2026-09-07 10:55:30"
+  },
+  "https://docs.openclaw.ai/ja-JP/reference/templates/AGENTS.dev": {
+    "title": "AGENTS.dev \u30c6\u30f3\u30d7\u30ec\u30fc\u30c8",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/reference/templates/AGENTS.dev.md",
+    "hash": "c0a3ace4aa6d9314bd0e8e75f3f139bc",
+    "last_scraped": "2026-09-07 10:55:31"
+  },
+  "https://docs.openclaw.ai/th/reference/templates/AGENTS.dev": {
+    "title": "\u0e40\u0e17\u0e21\u0e40\u0e1e\u0e25\u0e15 AGENTS.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/reference/templates/AGENTS.dev.md",
+    "hash": "7cb79c081946ebc3aecc32be485be061",
+    "last_scraped": "2026-09-07 10:55:32"
+  },
+  "https://docs.openclaw.ai/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:55:33"
+  },
+  "https://docs.openclaw.ai/zh-CN/reference/templates/AGENTS.dev": {
+    "title": "AGENTS.dev \u6a21\u677f",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/reference/templates/AGENTS.dev.md",
+    "hash": "4e94e49dda9a1f2888e2ab967f5bfbcb",
+    "last_scraped": "2026-09-07 10:55:34"
+  },
+  "https://docs.openclaw.ai/ko/reference/templates/AGENTS.dev": {
+    "title": "AGENTS.dev \ud15c\ud50c\ub9bf",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/reference/templates/AGENTS.dev.md",
+    "hash": "5e36a2d4c3d3d5b2b6e11d653a375fc9",
+    "last_scraped": "2026-09-07 10:55:34"
+  },
+  "https://docs.openclaw.ai/fa/reference/templates/AGENTS.dev": {
+    "title": "\u0642\u0627\u0644\u0628 AGENTS.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/reference/templates/AGENTS.dev.md",
+    "hash": "5c6c3081efd5262bf9ed6910275a3f45",
+    "last_scraped": "2026-09-07 10:55:35"
+  },
+  "https://docs.openclaw.ai/id/reference/templates/AGENTS.dev": {
+    "title": "Templat AGENTS.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/reference/templates/AGENTS.dev.md",
+    "hash": "44c98380483228237556d992af42e33e",
+    "last_scraped": "2026-09-07 10:55:36"
+  },
+  "https://docs.openclaw.ai/pt-BR/reference/templates/AGENTS.dev": {
+    "title": "Modelo AGENTS.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/reference/templates/AGENTS.dev.md",
+    "hash": "417c0085f769c1e49e383c56c377c41d",
+    "last_scraped": "2026-09-07 10:55:37"
+  },
+  "https://docs.openclaw.ai/zh-TW/reference/templates/AGENTS.dev": {
+    "title": "AGENTS.dev \u7bc4\u672c",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/reference/templates/AGENTS.dev.md",
+    "hash": "32ac101b332a0a661d681c9b1c6ba2a3",
+    "last_scraped": "2026-09-07 10:55:38"
+  },
+  "https://docs.openclaw.ai/hi/reference/templates/AGENTS.dev": {
+    "title": "AGENTS.dev \u091f\u0947\u092e\u094d\u092a\u0932\u0947\u091f",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/hi/reference/templates/AGENTS.dev.md",
+    "hash": "7f8273693a4826f37ff48570564dfe14",
+    "last_scraped": "2026-09-07 10:55:39"
+  },
+  "https://docs.openclaw.ai/fr/reference/templates/AGENTS.dev": {
+    "title": "Mod\u00e8le AGENTS.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/reference/templates/AGENTS.dev.md",
+    "hash": "a5b949fdf822ec211a982af694aa7b36",
+    "last_scraped": "2026-09-07 10:55:40"
+  },
+  "https://docs.openclaw.ai/de/reference/templates/AGENTS.dev": {
+    "title": "AGENTS.dev-Vorlage",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/reference/templates/AGENTS.dev.md",
+    "hash": "fb4b7cdf1a7a11c0e2333464aeaf1896",
+    "last_scraped": "2026-09-07 10:55:40"
+  },
+  "https://docs.openclaw.ai/tr/reference/templates/AGENTS.dev": {
+    "title": "AGENTS.dev \u015fablonu",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/reference/templates/AGENTS.dev.md",
+    "hash": "185a6bb820c97c1967c88810ff54b19f",
+    "last_scraped": "2026-09-07 10:55:41"
+  },
+  "https://docs.openclaw.ai/ru/reference/templates/AGENTS.dev": {
+    "title": "\u0428\u0430\u0431\u043b\u043e\u043d AGENTS.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/reference/templates/AGENTS.dev.md",
+    "hash": "b340067b03d7511fbcfa6b3aedcd276b",
+    "last_scraped": "2026-09-07 10:55:42"
+  },
+  "https://docs.openclaw.ai/vi/reference/templates/AGENTS.dev": {
+    "title": "M\u1eabu AGENTS.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/reference/templates/AGENTS.dev.md",
+    "hash": "e166491b3306e14aca571cea497db964",
+    "last_scraped": "2026-09-07 10:55:43"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/config-and-secrets.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:55:43"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/providers.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:55:44"
+  },
+  "https://docs.openclaw.ai/ko/reference/templates/IDENTITY.dev": {
+    "title": "IDENTITY.dev \ud15c\ud50c\ub9bf",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ko/reference/templates/IDENTITY.dev.md",
+    "hash": "7668f4fbe5e88dbf22409f73f60f6646",
+    "last_scraped": "2026-09-07 10:55:45"
+  },
+  "https://docs.openclaw.ai/id/reference/templates/IDENTITY.dev": {
+    "title": "Templat IDENTITY.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/id/reference/templates/IDENTITY.dev.md",
+    "hash": "449115cf88813094a737289fd34883ca",
+    "last_scraped": "2026-09-07 10:55:46"
+  },
+  "https://docs.openclaw.ai/pt-BR/reference/templates/IDENTITY.dev": {
+    "title": "Modelo IDENTITY.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pt-BR/reference/templates/IDENTITY.dev.md",
+    "hash": "c9bf11017434eae8d62febc9fb086bcf",
+    "last_scraped": "2026-09-07 10:55:47"
+  },
+  "https://docs.openclaw.ai/fr/reference/templates/IDENTITY.dev": {
+    "title": "Mod\u00e8le IDENTITY.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fr/reference/templates/IDENTITY.dev.md",
+    "hash": "05a93bb3261fb8fd5aeb60d9d0a8ed02",
+    "last_scraped": "2026-09-07 10:55:47"
+  },
+  "https://docs.openclaw.ai/uk/reference/templates/IDENTITY.dev": {
+    "title": "\u0428\u0430\u0431\u043b\u043e\u043d IDENTITY.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/uk/reference/templates/IDENTITY.dev.md",
+    "hash": "cb53e42c7d0cba47310b8971c82209e3",
+    "last_scraped": "2026-09-07 10:55:48"
+  },
+  "https://docs.openclaw.ai/tr/reference/templates/IDENTITY.dev": {
+    "title": "IDENTITY.dev \u015fablonu",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/reference/templates/IDENTITY.dev.md",
+    "hash": "26718a15c766bdb0886cc52d6b59c04c",
+    "last_scraped": "2026-09-07 10:55:49"
+  },
+  "https://docs.openclaw.ai/vi/reference/templates/IDENTITY.dev": {
+    "title": "M\u1eabu IDENTITY.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vi/reference/templates/IDENTITY.dev.md",
+    "hash": "99e43c0ae6fea2b49cf775229bf7dc6a",
+    "last_scraped": "2026-09-07 10:55:50"
+  },
+  "https://docs.openclaw.ai/th/reference/templates/IDENTITY.dev": {
+    "title": "\u0e40\u0e17\u0e21\u0e40\u0e1e\u0e25\u0e15 IDENTITY.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/th/reference/templates/IDENTITY.dev.md",
+    "hash": "aee6a510785287974700fd3ef5ab3a86",
+    "last_scraped": "2026-09-07 10:55:50"
+  },
+  "https://docs.openclaw.ai/ar/reference/templates/IDENTITY.dev": {
+    "title": "\u0642\u0627\u0644\u0628 IDENTITY.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ar/reference/templates/IDENTITY.dev.md",
+    "hash": "c6c2f02d9750c8ce372af6d057c8090e",
+    "last_scraped": "2026-09-07 10:55:51"
+  },
+  "https://docs.openclaw.ai/ru/reference/templates/IDENTITY.dev": {
+    "title": "\u0428\u0430\u0431\u043b\u043e\u043d IDENTITY.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ru/reference/templates/IDENTITY.dev.md",
+    "hash": "93ffc8a709c4b8649f9339644b315096",
+    "last_scraped": "2026-09-07 10:55:52"
+  },
+  "https://docs.openclaw.ai/es/reference/templates/IDENTITY.dev": {
+    "title": "Plantilla de IDENTITY.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/es/reference/templates/IDENTITY.dev.md",
+    "hash": "db5599f54da8d8fd8c156a68118e7cbb",
+    "last_scraped": "2026-09-07 10:55:53"
+  },
+  "https://docs.openclaw.ai/hi/reference/templates/IDENTITY.dev": {
+    "title": "IDENTITY.dev \u091f\u0947\u092e\u094d\u092a\u0932\u0947\u091f",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/hi/reference/templates/IDENTITY.dev.md",
+    "hash": "6317ee8339f76dbad50c735924bf65df",
+    "last_scraped": "2026-09-07 10:55:53"
+  },
+  "https://docs.openclaw.ai/zh-TW/reference/templates/IDENTITY.dev": {
+    "title": "IDENTITY.dev \u7bc4\u672c",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-TW/reference/templates/IDENTITY.dev.md",
+    "hash": "9be001626a33010a6b65c45b6f78c7c2",
+    "last_scraped": "2026-09-07 10:55:54"
+  },
+  "https://docs.openclaw.ai/ja-JP/reference/templates/IDENTITY.dev": {
+    "title": "IDENTITY.dev \u30c6\u30f3\u30d7\u30ec\u30fc\u30c8",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/reference/templates/IDENTITY.dev.md",
+    "hash": "d341afdfcba1def75d708154134b207a",
+    "last_scraped": "2026-09-07 10:55:55"
+  },
+  "https://docs.openclaw.ai/zh-CN/reference/templates/IDENTITY.dev": {
+    "title": "IDENTITY.dev \u6a21\u677f",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/reference/templates/IDENTITY.dev.md",
+    "hash": "f3215d5eaa9968b1e8a0e9e2c9f62caa",
+    "last_scraped": "2026-09-07 10:55:56"
+  },
+  "https://docs.openclaw.ai/de/reference/templates/IDENTITY.dev": {
+    "title": "IDENTITY.dev-Vorlage",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/de/reference/templates/IDENTITY.dev.md",
+    "hash": "062b8f371be5a84da38681c19f8d4a50",
+    "last_scraped": "2026-09-07 10:55:57"
+  },
+  "https://docs.openclaw.ai/nl/reference/templates/IDENTITY.dev": {
+    "title": "IDENTITY.dev-sjabloon",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/reference/templates/IDENTITY.dev.md",
+    "hash": "277973b1a05d4a70983321a941bc4fe8",
+    "last_scraped": "2026-09-07 10:55:57"
+  },
+  "https://docs.openclaw.ai/pl/reference/templates/IDENTITY.dev": {
+    "title": "Szablon IDENTITY.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/pl/reference/templates/IDENTITY.dev.md",
+    "hash": "0c64f4c5d80ebf4c59a0eb0371f09b4b",
+    "last_scraped": "2026-09-07 10:55:58"
+  },
+  "https://docs.openclaw.ai/it/reference/templates/IDENTITY.dev": {
+    "title": "Modello IDENTITY.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/it/reference/templates/IDENTITY.dev.md",
+    "hash": "7e186b01f8391db4e0003ebc073ff881",
+    "last_scraped": "2026-09-07 10:55:59"
+  },
+  "https://docs.openclaw.ai/fa/reference/templates/IDENTITY.dev": {
+    "title": "\u0627\u0644\u06af\u0648\u06cc IDENTITY.dev",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/reference/templates/IDENTITY.dev.md",
+    "hash": "8c96343c878aeefffd8893fd20f7444c",
+    "last_scraped": "2026-09-07 10:56:00"
+  },
+  "https://docs.openclaw.ai/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:00"
+  },
+  "https://docs.openclaw.ai/plugins/manifest/surfaces.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:01"
+  },
+  "https://docs.openclaw.ai/ja-JP/reference/pull-request-review-flow": {
+    "title": "\u30d7\u30eb\u30ea\u30af\u30a8\u30b9\u30c8\u30ec\u30d3\u30e5\u30fc\u306e\u6d41\u308c",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/reference/pull-request-review-flow.md",
+    "hash": "235c24c45f7ee4f0f0c850ac893ebf8d",
+    "last_scraped": "2026-09-07 10:56:02"
+  },
+  "https://docs.openclaw.ai/ja-JP/reference/database-schemas": {
+    "title": "\u30c7\u30fc\u30bf\u30d9\u30fc\u30b9\u30b9\u30ad\u30fc\u30de",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/reference/database-schemas.md",
+    "hash": "2c0df6bc3a07f02feef999c3c71fcef4",
+    "last_scraped": "2026-09-07 10:56:03"
+  },
+  "https://docs.openclaw.ai/ja-JP/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:03"
+  },
+  "https://docs.openclaw.ai/ja-JP/cli/claws": {
+    "title": "\u30af\u30ed\u30fc\u30ba",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/ja-JP/cli/claws.md",
+    "hash": "4b84ac20e22a9efe549ccee01d2df7f9",
+    "last_scraped": "2026-09-07 10:56:04"
+  },
+  "https://docs.openclaw.ai/th/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:05"
+  },
+  "https://docs.openclaw.ai/ko/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:06"
+  },
+  "https://docs.openclaw.ai/vi/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:07"
+  },
+  "https://docs.openclaw.ai/pt-BR/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:07"
+  },
+  "https://docs.openclaw.ai/fa/reference/database-schemas": {
+    "title": "\u0637\u0631\u062d\u200c\u0648\u0627\u0631\u0647\u200c\u0647\u0627\u06cc \u067e\u0627\u06cc\u06af\u0627\u0647 \u062f\u0627\u062f\u0647",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/reference/database-schemas.md",
+    "hash": "97453358219ffded7855f87ff79e5613",
+    "last_scraped": "2026-09-07 10:56:08"
+  },
+  "https://docs.openclaw.ai/fa/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:09"
+  },
+  "https://docs.openclaw.ai/fa/reference/pull-request-review-flow": {
+    "title": "\u062c\u0631\u06cc\u0627\u0646 \u0628\u0627\u0632\u0628\u06cc\u0646\u06cc Pull request",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/reference/pull-request-review-flow.md",
+    "hash": "cc7d295b2d023ec97b9ba70e68987eb1",
+    "last_scraped": "2026-09-07 10:56:10"
+  },
+  "https://docs.openclaw.ai/fa/cli/claws": {
+    "title": "\u0686\u0646\u06af\u0627\u0644\u200c\u0647\u0627",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/fa/cli/claws.md",
+    "hash": "581b13980323e159acb6a710a23e4bbf",
+    "last_scraped": "2026-09-07 10:56:11"
+  },
+  "https://docs.openclaw.ai/it/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:11"
+  },
+  "https://docs.openclaw.ai/zh-TW/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:12"
+  },
+  "https://docs.openclaw.ai/pl/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:13"
+  },
+  "https://docs.openclaw.ai/tr/cli/claws": {
+    "title": "Pen\u00e7eler",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/cli/claws.md",
+    "hash": "2495f356226c9d2613631ed0eb75d651",
+    "last_scraped": "2026-09-07 10:56:14"
+  },
+  "https://docs.openclaw.ai/tr/reference/pull-request-review-flow": {
+    "title": "Pull request inceleme ak\u0131\u015f\u0131",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/reference/pull-request-review-flow.md",
+    "hash": "714e0334c33b201a7817165174b9f8ef",
+    "last_scraped": "2026-09-07 10:56:14"
+  },
+  "https://docs.openclaw.ai/tr/reference/database-schemas": {
+    "title": "Veritaban\u0131 \u015femalar\u0131",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tr/reference/database-schemas.md",
+    "hash": "f074c81e64bf4283d7c3005c476d8612",
+    "last_scraped": "2026-09-07 10:56:15"
+  },
+  "https://docs.openclaw.ai/tr/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:16"
+  },
+  "https://docs.openclaw.ai/uk/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:17"
+  },
+  "https://docs.openclaw.ai/es/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:18"
+  },
+  "https://docs.openclaw.ai/de/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:18"
+  },
+  "https://docs.openclaw.ai/id/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:19"
+  },
+  "https://docs.openclaw.ai/fr/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:20"
+  },
+  "https://docs.openclaw.ai/nl/reference/pull-request-review-flow": {
+    "title": "Reviewflow voor pull requests",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/reference/pull-request-review-flow.md",
+    "hash": "36ac47d9d460644a806436407750589d",
+    "last_scraped": "2026-09-07 10:56:21"
+  },
+  "https://docs.openclaw.ai/nl/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:22"
+  },
+  "https://docs.openclaw.ai/nl/cli/claws": {
+    "title": "Klauwen",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/cli/claws.md",
+    "hash": "89aad2248f4c69c80932c78ab6e6279b",
+    "last_scraped": "2026-09-07 10:56:22"
+  },
+  "https://docs.openclaw.ai/nl/reference/database-schemas": {
+    "title": "Databaseschema's",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/nl/reference/database-schemas.md",
+    "hash": "d6d6d0ab7f69374bba62a2f2e4d8d5a2",
+    "last_scraped": "2026-09-07 10:56:23"
+  },
+  "https://docs.openclaw.ai/hi/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:24"
+  },
+  "https://docs.openclaw.ai/hi/cli/claws": {
+    "title": "\u0915\u094d\u0932\u0949\u091c\u093c",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/hi/cli/claws.md",
+    "hash": "966c78b37eed96af014a39b47c9d95af",
+    "last_scraped": "2026-09-07 10:56:25"
+  },
+  "https://docs.openclaw.ai/ru/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:26"
+  },
+  "https://docs.openclaw.ai/ar/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:26"
+  },
+  "https://docs.openclaw.ai/zh-CN/reference/templates/SOUL.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:27"
+  },
+  "https://docs.openclaw.ai/zh-CN/reference/database-schemas": {
+    "title": "\u6570\u636e\u5e93\u67b6\u6784",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/reference/database-schemas.md",
+    "hash": "6b9775e941596f5f93cf0bcab95bd696",
+    "last_scraped": "2026-09-07 10:56:28"
+  },
+  "https://docs.openclaw.ai/zh-CN/cli/claws": {
+    "title": "Claws",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/cli/claws.md",
+    "hash": "60869ce4e32583885b76e1337d70a0a1",
+    "last_scraped": "2026-09-07 10:56:29"
+  },
+  "https://docs.openclaw.ai/zh-CN/reference/pull-request-review-flow": {
+    "title": "PR \u5ba1\u67e5\u6d41\u7a0b",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/zh-CN/reference/pull-request-review-flow.md",
+    "hash": "d9f870383b5f370a49d31e59f4aaa3e1",
+    "last_scraped": "2026-09-07 10:56:30"
+  },
+  "https://docs.openclaw.ai/th/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:30"
+  },
+  "https://docs.openclaw.ai/vi/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:31"
+  },
+  "https://docs.openclaw.ai/es/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:32"
+  },
+  "https://docs.openclaw.ai/ru/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:33"
+  },
+  "https://docs.openclaw.ai/ar/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:33"
+  },
+  "https://docs.openclaw.ai/pt-BR/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:34"
+  },
+  "https://docs.openclaw.ai/nl/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:35"
+  },
+  "https://docs.openclaw.ai/fa/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:36"
+  },
+  "https://docs.openclaw.ai/id/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:36"
+  },
+  "https://docs.openclaw.ai/pl/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:37"
+  },
+  "https://docs.openclaw.ai/ja-JP/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:38"
+  },
+  "https://docs.openclaw.ai/zh-TW/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:39"
+  },
+  "https://docs.openclaw.ai/de/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:39"
+  },
+  "https://docs.openclaw.ai/it/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:40"
+  },
+  "https://docs.openclaw.ai/zh-CN/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:41"
+  },
+  "https://docs.openclaw.ai/fr/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:42"
+  },
+  "https://docs.openclaw.ai/hi/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:43"
+  },
+  "https://docs.openclaw.ai/ko/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:43"
+  },
+  "https://docs.openclaw.ai/tr/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:44"
+  },
+  "https://docs.openclaw.ai/uk/reference/templates/USER.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:45"
+  },
+  "https://docs.openclaw.ai/ar/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:46"
+  },
+  "https://docs.openclaw.ai/pl/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:47"
+  },
+  "https://docs.openclaw.ai/nl/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:47"
+  },
+  "https://docs.openclaw.ai/it/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:48"
+  },
+  "https://docs.openclaw.ai/es/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:49"
+  },
+  "https://docs.openclaw.ai/uk/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:50"
+  },
+  "https://docs.openclaw.ai/ja-JP/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:50"
+  },
+  "https://docs.openclaw.ai/th/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:51"
+  },
+  "https://docs.openclaw.ai/zh-CN/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:52"
+  },
+  "https://docs.openclaw.ai/ko/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:53"
+  },
+  "https://docs.openclaw.ai/fa/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:54"
+  },
+  "https://docs.openclaw.ai/id/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:55"
+  },
+  "https://docs.openclaw.ai/pt-BR/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:55"
+  },
+  "https://docs.openclaw.ai/zh-TW/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:56"
+  },
+  "https://docs.openclaw.ai/hi/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:57"
+  },
+  "https://docs.openclaw.ai/fr/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:58"
+  },
+  "https://docs.openclaw.ai/de/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:56:58"
+  },
+  "https://docs.openclaw.ai/tr/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:00"
+  },
+  "https://docs.openclaw.ai/ru/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:00"
+  },
+  "https://docs.openclaw.ai/vi/reference/templates/AGENTS.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:01"
+  },
+  "https://docs.openclaw.ai/ko/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:02"
+  },
+  "https://docs.openclaw.ai/id/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:03"
+  },
+  "https://docs.openclaw.ai/pt-BR/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:04"
+  },
+  "https://docs.openclaw.ai/fr/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:04"
+  },
+  "https://docs.openclaw.ai/uk/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:05"
+  },
+  "https://docs.openclaw.ai/tr/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:06"
+  },
+  "https://docs.openclaw.ai/vi/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:07"
+  },
+  "https://docs.openclaw.ai/th/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:08"
+  },
+  "https://docs.openclaw.ai/ar/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:09"
+  },
+  "https://docs.openclaw.ai/ru/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:10"
+  },
+  "https://docs.openclaw.ai/es/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:10"
+  },
+  "https://docs.openclaw.ai/hi/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:11"
+  },
+  "https://docs.openclaw.ai/zh-TW/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:12"
+  },
+  "https://docs.openclaw.ai/ja-JP/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:13"
+  },
+  "https://docs.openclaw.ai/zh-CN/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:13"
+  },
+  "https://docs.openclaw.ai/de/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:14"
+  },
+  "https://docs.openclaw.ai/nl/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:15"
+  },
+  "https://docs.openclaw.ai/pl/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:16"
+  },
+  "https://docs.openclaw.ai/it/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:16"
+  },
+  "https://docs.openclaw.ai/fa/reference/templates/IDENTITY.dev.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:17"
+  },
+  "https://docs.openclaw.ai/ja-JP/reference/pull-request-review-flow.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:18"
+  },
+  "https://docs.openclaw.ai/ja-JP/reference/database-schemas.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:19"
+  },
+  "https://docs.openclaw.ai/ja-JP/cli/claws.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:20"
+  },
+  "https://docs.openclaw.ai/fa/reference/database-schemas.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:21"
+  },
+  "https://docs.openclaw.ai/fa/reference/pull-request-review-flow.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:21"
+  },
+  "https://docs.openclaw.ai/fa/cli/claws.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:22"
+  },
+  "https://docs.openclaw.ai/tr/cli/claws.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:23"
+  },
+  "https://docs.openclaw.ai/tr/reference/pull-request-review-flow.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:24"
+  },
+  "https://docs.openclaw.ai/tr/reference/database-schemas.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:25"
+  },
+  "https://docs.openclaw.ai/nl/reference/pull-request-review-flow.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:26"
+  },
+  "https://docs.openclaw.ai/nl/cli/claws.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:26"
+  },
+  "https://docs.openclaw.ai/nl/reference/database-schemas.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:27"
+  },
+  "https://docs.openclaw.ai/hi/cli/claws.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:28"
+  },
+  "https://docs.openclaw.ai/zh-CN/reference/database-schemas.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:29"
+  },
+  "https://docs.openclaw.ai/zh-CN/cli/claws.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:29"
+  },
+  "https://docs.openclaw.ai/zh-CN/reference/pull-request-review-flow.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-09-07 10:57:30"
   }
 }

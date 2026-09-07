@@ -1,7 +1,7 @@
 ---
 title: OpenClaw
 source_url: https://docs.openclaw.ai/
-scraped_at: 2026-08-31
+scraped_at: 2026-09-07
 ---
 
 Get startedOverview
@@ -12,11 +12,11 @@ Get startedOverview
 
 > _"EXFOLIATE! EXFOLIATE!"_ — A space lobster, probably
 
-**Any OS gateway for AI agents across Discord, Google Chat, iMessage, Matrix, Microsoft Teams, Signal, Slack, Telegram, WhatsApp, Zalo, and more.**
+**Your AI assistant, on your own hardware, in every chat app you already use.**
 
-Send a message, get an agent response from your pocket. Run one Gateway across channel plugins, WebChat, and mobile nodes.
+One Gateway. Any model. Any device. No hosted service in the middle.
 
-Developed in the open by the [OpenClaw Foundation](<https://openclaw.org>), a non-profit.
+Developed in the open by the [OpenClaw Foundation](<https://openclaw.org>), an independent 501(c)(3). No paid tier, no telemetry by default beyond a [version check](</gateway/telemetry>) you can turn off, no lab owns it.
 
 [**Get Started** Install OpenClaw and bring up the Gateway in minutes. ](</start/getting-started>) [**Run Onboarding** Guided setup with `openclaw onboard` and pairing flows. ](</start/wizard>) [**Connect a Channel** Link Discord, Signal, Telegram, WhatsApp, and more to chat from anywhere. ](</channels>) [**Open the Control UI** Launch the browser dashboard for chat, config, and sessions. ](</web/control-ui>)
 
@@ -24,7 +24,7 @@ Developed in the open by the [OpenClaw Foundation](<https://openclaw.org>), a no
 
 Mobile browsers may show the section menu without the full desktop tab bar. Use these hub links to reach the same top-level docs areas from the page body.
 
-[**Get started** Overview, showcase, first steps, and setup guides. ](</>) [**Install** Install paths, updates, containers, hosting, and advanced setup. ](</install>) [**Channels** Messaging channels, pairing, routing, access groups, and channel QA. ](</channels>) [**Agents** Architecture, sessions, context, memory, and multi-agent routing. ](</concepts/architecture>) [**Capabilities** Tools, skills, cron, webhooks, and automation capabilities. ](</tools>) [**ClawHub** Plugin marketplace, publishing, curation, and trust guidance. ](</clawhub>) [**Models** Providers, model configuration, failover, and local model services. ](</providers>) [**Platforms** macOS, Windows, iOS, Android, nodes, and web surfaces. ](</platforms>) [**Gateway & Ops** Gateway configuration, security, diagnostics, and operations. ](</gateway>) [**Reference** CLI reference, schemas, RPC, release notes, and templates. ](</cli>) [**Help** Troubleshooting, FAQs, testing, diagnostics, and environment checks. ](</help>)
+[**Get started** Overview, showcase, first steps, and setup guides. ](</start/getting-started>) [**Install** Install paths, updates, containers, hosting, and advanced setup. ](</install>) [**Channels** Messaging channels, pairing, routing, access groups, and channel QA. ](</channels>) [**Agents** Architecture, sessions, context, memory, and multi-agent routing. ](</concepts/architecture>) [**Capabilities** Tools, skills, cron, webhooks, and automation capabilities. ](</tools>) [**ClawHub** Plugin marketplace, publishing, curation, and trust guidance. ](</clawhub>) [**Models** Providers, model configuration, failover, and local model services. ](</providers>) [**Platforms** macOS, Windows, iOS, Android, nodes, and web surfaces. ](</platforms>) [**Gateway & Ops** Gateway configuration, security, diagnostics, and operations. ](</gateway>) [**Reference** CLI reference, schemas, RPC, release notes, and templates. ](</cli>) [**Help** Troubleshooting, FAQs, testing, diagnostics, and environment checks. ](</help>)
 
 ## What is OpenClaw?
 
@@ -65,20 +65,33 @@ The Gateway is the single source of truth for sessions, routing, and channel con
 
 * ### Install OpenClaw
 
-On npm 12 or npm 11.16+:
+### macOS / Linux / WSL2
 
 bashCopy code
 [code]
-    npm install -g openclaw@latest --allow-scripts=openclaw
+    curl -fsSL https://openclaw.ai/install.sh | bash
 [/code]
 
-On npm 11.15 and earlier, omit `--allow-scripts=openclaw`.
+### Windows (PowerShell)
 
-* ### Onboard and install the service
+powershellCopy code
+[code]
+    iwr -useb https://openclaw.ai/install.ps1 | iex
+[/code]
+
+The installer detects your OS, installs Node if needed, installs OpenClaw, and then starts onboarding. Other install methods (npm, pnpm, bun, Docker, Nix, from source) are on the [Install](</install>) page.
+
+* ### Complete onboarding
+
+Onboarding offers **Quick start** and **Custom setup**. Quick start reuses detected AI access, verifies it with a real completion, and opens the web dashboard with a Gateway in the foreground. Custom setup walks the full guided flow. `openclaw onboard --classic` opens the classic step-by-step wizard instead.
+
+* ### Install the Gateway service
+
+Quick start leaves the Gateway in the foreground. Press **Ctrl+C** , then install the background service:
 
 bashCopy code
 [code]
-    openclaw onboard --install-daemon
+    openclaw gateway install
 [/code]
 
 * ### Chat
@@ -121,7 +134,7 @@ json5Copy code
 
 ## Start here
 
-[**Docs hubs** All docs and guides, organized by use case. ](</start/hubs>) [**Configuration** Core Gateway settings, tokens, and provider config. ](</gateway/configuration>) [**Remote access** SSH and tailnet access patterns. ](</gateway/remote>) [**Channels** Channel-specific setup for Discord, Feishu, Microsoft Teams, Telegram, WhatsApp, and more. ](</channels/telegram>) [**Nodes** iOS and Android nodes with pairing, camera, screen, and device actions. ](</nodes>) [**Help** Common fixes and troubleshooting entry point. ](</help>)
+[**Docs hubs** All docs and guides, organized by use case. ](</start/hubs>) [**Configuration** Core Gateway settings, tokens, and provider config. ](</gateway/configuration>) [**Remote access** SSH and tailnet access patterns. ](</gateway/remote>) [**Channels** Channel-specific setup for Discord, Feishu, Microsoft Teams, Telegram, WhatsApp, and more. ](</channels>) [**Nodes** iOS and Android nodes with pairing, camera, screen, and device actions. ](</nodes>) [**Help** Common fixes and troubleshooting entry point. ](</help>)
 
 ## Learn more
 

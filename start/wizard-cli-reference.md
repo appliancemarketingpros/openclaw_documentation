@@ -1,7 +1,7 @@
 ---
 title: CLI setup reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-08-31
+scraped_at: 2026-09-07
 ---
 
 Get startedGuides
@@ -10,7 +10,11 @@ This page covers step-by-step onboarding behavior, outputs, and internals. For a
 
 ## What the wizard does
 
-Local mode (default) walks you through:
+Fresh local guided onboarding shows a one-line pointer to the [security guide](</gateway/security>) and one choice: **Quick start** or **Custom setup**. Quick start records the security acknowledgment; Custom setup shows the full security note and asks for confirmation. Quick start reuses detected AI access, verifies it, saves config, and opens the web dashboard with a foreground Gateway. It uses agent name `main` and full access, leaves telemetry consent unset, and skips route confirmation, memory import, and app recommendations. **Ctrl+C** stops the Gateway without removing config; `openclaw gateway install` enables background operation later.
+
+Custom setup keeps the full guided prompts. If quick start finds no usable route, it continues with manual provider setup and the remaining guided steps, including Gateway service installation. The quick-start defaults for agent name (`main`), access mode (full access), and telemetry (consent unset) stay. See [Guided default](</start/wizard#guided-default>).
+
+The classic wizard (`openclaw onboard --classic`) in local mode walks you through:
 
   * Workspace location and bootstrap files
   * Model and auth setup (Anthropic, OpenAI Code subscription OAuth, xAI, OpenCode, custom endpoints, and more provider-owned auth flows)
@@ -25,6 +29,8 @@ Local mode (default) walks you through:
 Remote mode configures this machine to connect to a Gateway elsewhere. It does not install or modify anything on the remote host.
 
 ## Local flow details
+
+These steps describe the classic wizard. The guided quick-start lane is described [above](</start/wizard-cli-reference#what-the-wizard-does>).
 
 * ### Setup mode
 
@@ -67,7 +73,7 @@ Remote mode configures this machine to connect to a Gateway elsewhere. It does n
     * **Use SecretRef** (opt-in)
     * QuickStart reuses an existing `gateway.auth.token` SecretRef from an `env`, `file`, `exec`, or `store` provider for its probe and dashboard handoff. An unresolved configured ref stops onboarding with remediation guidance instead of silently weakening Gateway auth.
   * In password mode, interactive setup also supports plaintext or SecretRef storage.
-  * Non-interactive token SecretRef path: `--gateway-token-ref-env &lt;ENV_VAR&gt;`. 
+  * Non-interactive token SecretRef path: `--gateway-token-ref-env <ENV_VAR>`. 
     * Requires a non-empty env var in the onboarding process environment.
     * Cannot be combined with `--gateway-token`.
   * Disable auth only if you fully trust every local process.
@@ -300,7 +306,7 @@ Credential storage mode:
   * Gateway auth credentials support plaintext and SecretRef choices in interactive setup: 
     * Token mode: **Generate/store plaintext token** (default) or **Use SecretRef**.
     * Password mode: plaintext or SecretRef.
-  * Non-interactive token SecretRef path: `--gateway-token-ref-env &lt;ENV_VAR&gt;`.
+  * Non-interactive token SecretRef path: `--gateway-token-ref-env <ENV_VAR>`.
   * The named environment variable must be non-empty in the onboarding process. `--gateway-token` and `--gateway-token-ref-env` are mutually exclusive.
   * Existing plaintext setups continue to work unchanged.
 

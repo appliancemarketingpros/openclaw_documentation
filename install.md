@@ -1,7 +1,7 @@
 ---
 title: Install
 source_url: https://docs.openclaw.ai/install
-scraped_at: 2026-08-31
+scraped_at: 2026-09-07
 ---
 
 InstallInstall overview
@@ -117,7 +117,7 @@ bashCopy code
 
 `pnpm add --global "openclaw@link:$PWD"` links the CLI to this checkout without changing its package files. If pnpm reports that its global bin directory is not on `PATH`, run `pnpm setup`, reopen your shell, and retry.
 
-Corepack selects the exact pnpm version from `package.json` (currently pnpm 12). If Corepack is unavailable, install that version explicitly with `npm install -g pnpm@12.1.0 --allow-scripts=pnpm@12.1.0`; keep npm install scripts and optional dependencies enabled so pnpm can provision its native executable.
+Corepack selects the exact pnpm version from `package.json` (currently pnpm 12). If Corepack is unavailable, install that version explicitly with `npm install -g pnpm@12.3.4 --allow-scripts=pnpm@12.3.4`; keep npm install scripts and optional dependencies enabled so pnpm can provision its native executable.
 
 Or skip the global install and use `pnpm openclaw ...` from inside the repo. See [Setup](</start/setup>) for full development workflows.
 
@@ -145,6 +145,10 @@ If you want managed startup after install:
   * Linux/WSL2: systemd user service via the same commands
   * Native Windows: Scheduled Task first, with a per-user Startup-folder login item fallback if task creation is denied
 
+
+## Next: run onboarding and connect a channel
+
+[**Getting started** Run onboarding, install the Gateway service, and open the dashboard. ](</start/getting-started>) [**Connect a channel** Message your agent from Telegram, Discord, Slack, WhatsApp, and more. ](</channels>)
 
 ## Hosting and deployment
 

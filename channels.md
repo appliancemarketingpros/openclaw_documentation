@@ -1,7 +1,7 @@
 ---
 title: Chat channels
 source_url: https://docs.openclaw.ai/channels
-scraped_at: 2026-08-31
+scraped_at: 2026-09-07
 ---
 
 ChannelsOverview
@@ -9,6 +9,17 @@ ChannelsOverview
 OpenClaw can talk to you on any chat app you already use. Each channel connects via the Gateway. Text is supported everywhere; media and reactions vary by channel.
 
 Entries marked "bundled plugin" or "included in core" ship with the core install. Channels marked "official plugin" install with one command (`openclaw plugins install @openclaw/<id>`) or on demand during `openclaw onboard` / `openclaw channels add`, then need a Gateway restart. "External plugin" channels are maintained outside the OpenClaw repo.
+
+## Which channel should I connect first?
+
+Start with **Telegram**. It needs a bot token and no plugin install, so it is the fastest channel to get working. WhatsApp requires QR pairing and stores more state on disk.
+
+bashCopy code
+[code]
+    openclaw channels add --channel telegram --token <bot-token>
+[/code]
+
+Run `openclaw channels add` with no flags to pick a channel from a list instead. Adding a channel needs a Gateway restart before the new account starts. Full walkthrough: [Telegram](</channels/telegram>). Command reference: [`openclaw channels`](</cli/channels>).
 
 ## Supported channels
 
@@ -87,7 +98,6 @@ When history is unavailable or unreadable, the introduction is still posted from
 ## Notes
 
   * Channels can run simultaneously; configure multiple and OpenClaw will route per chat.
-  * Fastest setup is usually **Telegram** (simple bot token, no plugin install). WhatsApp requires QR pairing and stores more state on disk.
   * Group behavior varies by channel; see [Groups](</channels/groups>).
   * DM pairing and allowlists are enforced for safety; see [Security](</gateway/security>).
   * Troubleshooting: [Channel troubleshooting](</channels/troubleshooting>).

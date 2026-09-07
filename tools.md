@@ -1,7 +1,7 @@
 ---
 title: Overview
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-08-31
+scraped_at: 2026-09-07
 ---
 
 CapabilitiesOverview
@@ -54,12 +54,13 @@ The table lists representative tools so you can recognize the surface. It is not
 
 Category | Use when the agent needs to... | Representative tools | Read next  
 ---|---|---|---  
-Runtime | Run commands, manage processes, use shared operator terminals, or use provider-backed Python | `exec`, `process`, `terminal`, `code_execution` | [Exec](</tools/exec>), [Control UI terminal](</web/control-ui#operator-terminal>), [Code execution](</tools/code-execution>)  
+Runtime | Run commands, manage processes, use shared operator terminals, or use provider-backed Python | `exec`, `process`, `terminal`, `code_execution` | [Exec](</tools/exec>), [Control UI terminal](</web/control-ui/panels#operator-terminal>), [Code execution](</tools/code-execution>)  
 Files | Read and change workspace files | `read`, `write`, `edit`, `apply_patch` | [Apply patch](</tools/apply-patch>)  
 Human input | Pause for a structured decision owned by the user, or obtain a credential without seeing it | `ask_user`, `secrets` | [Ask user](</tools/ask-user>), [Secrets](</tools/secrets>)  
 Web | Search the web, search X posts, or fetch readable page content | `web_search`, `x_search`, `web_fetch` | [Web tools](</tools/web>), [Web fetch](</tools/web-fetch>)  
 Browser | Operate a browser session | `browser` | [Browser](</tools/browser>)  
 Operator UI | Arrange connected Control UI panes, panels, and navigation | `screen` | [Screen](</tools/screen>)  
+Session progress | Update the parent session's durable progress card; unavailable to sub-agents | `progress_card` | [Progress card](</tools/progress-card>)  
 Messaging and channels | Send replies or channel actions | `message` | [Agent send](</tools/agent-send>)  
 Sessions and agents | Inspect sessions, delegate work, orchestrate collectors, steer another run, or report status | `sessions_*`, `agents_wait`, `subagents`, `agents_list`, `session_status`, `get_goal`, `create_goal`, `update_goal` | [Goal](</tools/goal>), [Swarm](</tools/swarm>), [Sub-agents](</tools/subagents>), [Session tool](</concepts/session-tool>)  
 Automation | Schedule work or respond to background events | `cron`, `heartbeat_respond` | [Automation](</automation>)  
@@ -111,6 +112,8 @@ Choose the extension path by the job you need OpenClaw to do:
 
 
 ## Troubleshoot missing tools
+
+Configured `tools.exec` and `tools.fs` sections do not grant tool access. The profile migration warning suggests `alsoAllow` entries only when other active global, agent, and provider policies permit those tools.
 
 If the model cannot see or call a tool, start with the effective policy for the current turn:
 

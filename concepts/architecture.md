@@ -1,10 +1,10 @@
 ---
 title: Gateway architecture
 source_url: https://docs.openclaw.ai/concepts/architecture
-scraped_at: 2026-08-31
+scraped_at: 2026-09-07
 ---
 
-AgentsFundamentals
+AgentsAgent runtime
 
 ## Overview
 

@@ -1,7 +1,7 @@
 ---
 title: Gateway runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-08-31
+scraped_at: 2026-09-07
 ---
 
 Gateway & OpsGateway
@@ -152,6 +152,8 @@ See: [Remote Gateway](</gateway/remote>), [Authentication](</gateway/authenticat
 
 ## Supervision and service lifecycle
 
+Native service-control commands receive only the operating-system environment needed for executable lookup, account identity, locale, and service-manager routing. They do not inherit application credentials or arbitrary shell variables. The Gateway payload and its installed service definition retain their separately configured environments.
+
 Use supervised runs for production-like reliability.
 
 ### macOS (launchd)
@@ -201,7 +203,7 @@ Manual user-unit example when you need a custom install path:
 
 iniCopy code
 [code]
-    [Unit]Description=OpenClaw GatewayAfter=network-online.targetWants=network-online.targetStartLimitBurst=5StartLimitIntervalSec=60 [Service]ExecStart=/usr/local/bin/openclaw gateway --port 18789Restart=alwaysRestartSec=5RestartPreventExitStatus=78TimeoutStopSec=30TimeoutStartSec=30SuccessExitStatus=0 143OOMPolicy=continueKillMode=control-group [Install]WantedBy=default.target
+    [Unit]Description=OpenClaw GatewayAfter=network-online.targetWants=network-online.targetStartLimitBurst=5StartLimitIntervalSec=60 [Service]ExecStart=/usr/local/bin/openclaw gateway --port 18789Restart=alwaysRestartSec=5RestartPreventExitStatus=78TimeoutStopSec=330TimeoutStartSec=30SuccessExitStatus=0 143OOMPolicy=continueKillMode=mixed [Install]WantedBy=default.target
 [/code]
 
 ### Windows (native)
