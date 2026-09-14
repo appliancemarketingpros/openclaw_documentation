@@ -1,7 +1,7 @@
 ---
 title: Features
 source_url: https://docs.openclaw.ai/concepts/features
-scraped_at: 2026-09-07
+scraped_at: 2026-09-14
 ---
 
 Get startedOverview
@@ -14,7 +14,7 @@ Get startedOverview
 
 **Channels:**
 
-  * Telegram and WebChat ship with the core install; every other channel is an official plugin installed with `openclaw plugins install @openclaw/<id>` (or on demand during `openclaw onboard` / `openclaw channels add`)
+  * A2A, Reef, Telegram, and WebChat ship with the core install; every other channel is an official plugin installed with `openclaw plugins install @openclaw/<id>` (or on demand during `openclaw onboard` / `openclaw channels add`)
   * Official plugin channels: Discord, Feishu, Google Chat, iMessage, IRC, LINE, Matrix, Mattermost, Microsoft Teams, Nextcloud Talk, Nostr, QQ Bot, Raft, Signal, Slack, SMS, Synology Chat, Tlon, Twitch, Voice Call, WhatsApp, Zalo, and Zalo Personal
   * External plugin channels maintained outside the OpenClaw repo: WeChat, Yuanbao, and Zalo ClawBot
   * Group chat support with mention-based activation
@@ -31,7 +31,7 @@ Get startedOverview
 
 **Auth and providers:**
 
-  * 35+ model providers (Anthropic, OpenAI, Google, and more)
+  * Many [model providers](</providers>) (Anthropic, OpenAI, Google, and more) — the provider directory is the maintained list
   * Subscription auth via OAuth (e.g. OpenAI Codex)
   * Custom and self-hosted provider support (vLLM, SGLang, Ollama, llama.cpp, LM Studio, and any OpenAI-compatible or Anthropic-compatible endpoint)
 

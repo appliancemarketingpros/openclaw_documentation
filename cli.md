@@ -1,19 +1,19 @@
 ---
 title: CLI reference
 source_url: https://docs.openclaw.ai/cli
-scraped_at: 2026-09-07
+scraped_at: 2026-09-14
 ---
 
 ReferenceCLI commands
 
-`openclaw` is the main CLI entry point. Each core command has a dedicated reference page or is documented with the command it aliases; this index lists the commands, global flags, and output styling rules that apply across the CLI.
+`openclaw` is the main CLI entry point. Each core command has a dedicated reference page or is documented with the command it aliases. This index lists the commands, global flags, and output styling rules that apply across the CLI.
 
 Setup commands by intent:
 
   * `openclaw setup` and `openclaw onboard` verify inference first, then start OpenClaw for Gateway, workspace, channels, skills, and health setup.
   * `openclaw setup --baseline` creates the baseline config and workspace without walking the guided onboarding flow.
   * `openclaw configure` changes targeted parts of an existing setup: model auth, gateway, channels, plugins, or skills.
-  * `openclaw channels add` configures channel accounts after the baseline exists; a channel selection alone uses guided setup, while account, credential, or channel-config flags use the direct path for scripts.
+  * `openclaw channels add` configures channel accounts after the baseline exists. A channel selection alone uses guided setup. Account, credential, or channel-config flags use the direct path for scripts.
 
 
 ## Command pages
@@ -22,18 +22,19 @@ Area | Commands
 ---|---  
 Setup and onboarding | [`openclaw`](</cli/openclaw>) · [`setup`](</cli/setup>) · [`onboard`](</cli/onboard>) · [`configure`](</cli/configure>) · [`config`](</cli/config>) · [`completion`](</cli/completion>) · [`doctor`](</cli/doctor>) · [`dashboard`](</cli/dashboard>)  
 Reset, backup, and migration | [`backup`](</cli/backup>) · [`database`](</reference/database-schemas>) · [`migrate`](</cli/migrate>) · [`reset`](</cli/reset>) · [`uninstall`](</cli/uninstall>) · [`update`](</cli/update>)  
-Messaging and agents | [`message`](</cli/message>) · [`agent`](</cli/agent>) · [`agents`](</cli/agents>) · [`attach`](</cli/attach>) · [`acp`](</cli/acp>) · [`mcp`](</cli/mcp>)  
+Messaging and agents | [`message`](</cli/message>) · [`agent`](</cli/agent>) · [`agents`](</cli/agents>) · [`claws`](</cli/claws>) · [`attach`](</cli/attach>) · [`acp`](</cli/acp>) · [`mcp`](</cli/mcp>)  
 Health and sessions | [`status`](</cli/status>) · [`health`](</cli/health>) · [`triage`](</cli/triage>) · [`sessions`](</cli/sessions>) · [`resume`](</cli/resume>) · [`audit`](</cli/audit>)  
 Gateway and logs | [`fleet`](</cli/fleet>) · [`gateway`](</cli/gateway>) · [`logs`](</cli/logs>) · [`system`](</cli/system>)  
 Models and inference | [`models`](</cli/models>) · [`promos`](</cli/promos>) · [`infer`](</cli/infer>) · `capability` (alias for [`infer`](</cli/infer>)) · [`memory`](</cli/memory>) · [`wiki`](</cli/wiki>)  
-Network and nodes | [`connect`](</cli/connect>) · [`directory`](</cli/directory>) · [`nodes`](</cli/nodes>) · [`devices`](</cli/devices>) · [`node`](</cli/node>) · [`worker`](</cli/worker>)  
+Network and nodes | [`connect`](</cli/connect>) · [`directory`](</cli/directory>) · [`nodes`](</cli/nodes>) · [`node`](</cli/node>) · [`worker`](</cli/worker>)  
 Runtime and sandbox | [`approvals`](</cli/approvals>) · `exec-policy` (see [`approvals`](</cli/approvals>)) · [`sandbox`](</cli/sandbox>) · [`tui`](</cli/tui>) · `chat`/`terminal` (aliases for [`tui --local`](</cli/tui>)) · [`browser`](</cli/browser>)  
-Automation | [`cron`](</cli/cron>) · [`tasks`](</cli/tasks>) · [`hooks`](</cli/hooks>) · [`webhooks`](</cli/webhooks>) · [`transcripts`](</cli/transcripts>)  
+Worktrees | [`worktrees`](</concepts/managed-worktrees>)  
+Automation | [`cron`](</cli/cron>) (alias `automations`) · [`tasks`](</cli/tasks>) · [`hooks`](</cli/hooks>) · [`webhooks`](</cli/webhooks>) · [`transcripts`](</cli/transcripts>)  
 Discovery and docs | [`dns`](</cli/dns>) · [`docs`](</cli/docs>)  
-Pairing and channels | [`pairing`](</cli/pairing>) · [`qr`](</cli/qr>) · [`channels`](</cli/channels>)  
+Pairing and channels | [`pairing`](</cli/pairing>) · [`qr`](</cli/qr>) · [`devices`](</cli/devices>) · [`channels`](</cli/channels>)  
 Security and plugins | [`security`](</cli/security>) · [`secrets`](</cli/secrets>) · [`skills`](</cli/skills>) · [`plugins`](</cli/plugins>) · [`proxy`](</cli/proxy>)  
 Legacy aliases | [`daemon`](</cli/daemon>) (gateway service) · [`clawbot`](</cli/clawbot>) (namespace)  
-Plugins (optional) | [`path`](</cli/path>) · [`policy`](</cli/policy>) · [`voicecall`](</cli/voicecall>) · [`workboard`](</cli/workboard>) (if installed)  
+Plugins (optional) | [`file-transfer`](</cli/file-transfer>) · [`path`](</cli/path>) · [`policy`](</cli/policy>) · [`voicecall`](</cli/voicecall>) · [`workboard`](</cli/workboard>) (if installed)  
   
 ## Global flags
 
@@ -56,10 +57,10 @@ Use `--` to stop option parsing. Command words still dispatch after it: for exam
 ## Output modes
 
   * ANSI colors and progress indicators render only in TTY sessions.
-  * OSC-8 hyperlinks render as clickable links where supported; otherwise the CLI falls back to plain URLs.
-  * On bounded reporting commands, `--json` reserves stdout for one JSON document; styling and progress output are suppressed, and warnings and diagnostics stay on stderr.
+  * OSC-8 hyperlinks render as clickable links where supported. Otherwise the CLI prints plain URLs.
+  * On bounded reporting commands, `--json` reserves stdout for one JSON document. The CLI suppresses styling and progress output. Warnings and diagnostics stay on stderr.
   * Interactive UIs and wizards, long-running servers and streams, shell integration, and pure side-effect commands may omit `--json` when they have no meaningful report to return.
-  * Long-running commands show a progress indicator (OSC 9;4 when supported).
+  * Long-running commands show a progress indicator (`OSC 9;4` when supported).
 
 
 ### JSON failures
@@ -71,7 +72,7 @@ jsonCopy code
     {  "ok": false,  "error": {    "type": "cli_error",    "message": "Description of the failure"  }}
 [/code]
 
-A command may add domain-specific fields, such as per-item results, beside this envelope. Failure messages are sanitized. Human-readable diagnostics may also be written to stderr, so scripts should parse stdout and still check the exit status.
+A command may add domain-specific fields, such as per-item results, beside this envelope. Gateway-backed agent turns that fail after the Gateway accepted the run also record the accepted `runId` and `origin: "gateway"` beside the envelope, so scripts can report the in-flight run. Failure messages are sanitized. Human-readable diagnostics may also be written to stderr, so scripts should parse stdout and still check the exit status.
 
 ## Color palette
 
@@ -94,11 +95,11 @@ Palette source of truth: `packages/terminal-core/src/palette.ts`.
 
 Full command tree
 
-This map covers core commands and their primary subcommands. Plugin-added subcommands (for example under `skills`, `plugins`, and `wiki`) evolve independently; run `<command> --help` for the authoritative, current list.
+This map covers core commands and their primary subcommands. Plugin-added subcommands (for example under `skills`, `plugins`, and `wiki`) evolve independently. Run `<command> --help` for the authoritative, current list.
 
 CodeCopy code
 [code]
-    openclaw [--dev] [--profile <name>] <command>openclawsetuponboardconfigureconfig  get  set  patch  unset  file  schema  validatedatabase  preflight  ownership    status    claimcompletiondoctortriagedashboardbackup  create  verify  restore  sqlite    create    list    verify    restore  git    init    create    log    verify    restore  enable  disablemigrate  list  plan <provider>  apply <provider>security  auditsecrets  reload  audit  configure  applyresetuninstallupdate  wizard  status  repairchannels  list  status  capabilities  resolve  logs  dead-letters list|resubmit  add  remove  login  logoutdirectory  self  peers list  groups list|membersskills  search  install  update  verify  workshop list|inspect|propose-create|propose-update|revise|apply|reject|quarantine  list  info  checkplugins  list  search  inspect  install  uninstall  update  enable  disable  doctor  build  validate  init  registry  marketplace list|entries|refreshworkboard  list  create  show  dispatchmemory  status  index  searchtranscripts  list  show  pathpath  resolve  find  set  validate  emitwiki  status  doctor  init  compile  lint  ingest  okf import  search  get  apply synthesis|metadata  bridge import  unsafe-local import  chatgpt import|rollback  obsidian status|search|open|command|dailymessage  send  broadcast  poll  react  reactions  read  edit  delete  pin  unpin  pins  permissions  search  thread create|list|reply  emoji list|upload  sticker send|upload  role info|add|remove  channel info|list  member info  voice status  event list|create  timeout  kick  banagentagents  list  add  delete  bindings  bind  unbind  set-identityattachacpmcp  serve  list  show  set  unsetstatushealthsessions  cleanupaudittasks  list  audit  maintenance  show  notify  cancel  flow list|show|cancelgateway  call  usage-cost  health  stability  diagnostics export  status  probe  discover  install  uninstall  start  stop  restart  runfleet  create  backup  restore  doctor  list  status  logs  start  stop  restart  upgrade  rmdaemon  status  install  uninstall  start  stop  restartlogssystem  event  heartbeat last|enable|disable  presencemodels  list  status  set  set-image  aliases list|add|remove  fallbacks list|add|remove|clear  image-fallbacks list|add|remove|clear  scan  auth list|add|login|setup-token|paste-token|paste-api-key|login-github-copilot  auth order get|set|clearpromos  list  claim <slug>infer (alias: capability)  list  inspect  model run|list|inspect|providers|auth login|logout|status  image generate|edit|describe|describe-many|providers  audio transcribe|providers  tts convert|voices|personas|providers|status|enable|disable|set-provider|set-persona  video generate|describe|providers  web search|fetch|providers  embedding create|providerssandbox  list  recreate  explaincron  status  list  get  add  edit  rm  enable  disable  runs  runnodes  status  describe  list  pending  approve  reject  rename  invoke  notify  push  canvas present|hide|navigate  camera list|snap|clip  screen record  location getdevices  list  remove  clear  approve  reject  rotate  revokenode  run  status  install  uninstall  stop  restartconnectworkerapprovals  get  set  allowlist add|removeexec-policy  show  preset  setbrowser  status  start  stop  reset-profile  tabs  open  focus  close  profiles  create-profile  delete-profile  screenshot  snapshot  navigate  resize  click  type  press  hover  drag  select  upload  fill  dialog  wait  evaluate  console  pdfhooks  list  info  check  enable  disable  install  updatewebhooks  gmail setup|runproxy  start  run  coverage  sessions  query  blob  purgepairing  list  approveqrclawbot  qrdocsdns  setupresumetuichat (alias: tui --local)terminal (alias: tui --local)
+    openclaw [--dev] [--profile <name>] <command>openclawsetuponboardconfigureconfig  get  set  patch  unset  file  schema  validatedatabase  preflight  ownership    status    claimcompletiondoctortriagedashboardbackup  create  verify  restore  sqlite    create    list    verify    restore  git    init    create    log    verify    restore  enable  disablemigrate  list  plan <provider>  apply <provider>security  auditsecrets  reload  store  audit  configure  applyresetuninstallupdate  wizard  status  repairchannels  list  status  capabilities  resolve  logs  dead-letters list|resubmit  add  remove  login  logoutdirectory  self  peers list  groups list|membersskills  search  install  update  verify  workshop list|inspect|propose-create|propose-update|revise|apply|reject|quarantine  list  info  checkplugins  list  search  inspect  install  uninstall  update  enable  disable  doctor  build  validate  pack  init  registry  marketplace list|entries|refreshworkboard  list  create  show  dispatchmemory  status  index  searchtranscripts  list  show  pathpath  resolve  find  set  validate  emitwiki  status  doctor  init  compile  lint  ingest  okf import  search  get  apply synthesis|metadata  bridge import  unsafe-local import  chatgpt import|rollback  obsidian status|search|open|command|dailymessage  send  broadcast  poll  react  reactions  read  edit  delete  pin  unpin  pins  permissions  search  thread create|list|reply  emoji list|upload  sticker send|upload  role info|add|remove  channel info|list  member info  voice status  event list|create  timeout  kick  banagentagents  list  add  delete  bindings  bind  unbind  set-identityattachacpmcp  serve  list  show  set  unsetstatushealthsessions  cleanupaudittasks  list  audit  maintenance  show  notify  cancel  flow list|show|cancelgateway  call  usage-cost  health  stability  diagnostics export  status  probe  discover  install  uninstall  start  stop  restart  runfleet  create  backup  restore  doctor  list  status  logs  start  stop  restart  upgrade  rmworktrees  list  create  remove  restore  gcdaemon  status  install  uninstall  start  stop  restartlogssystem  event  heartbeat last|enable|disable  presencemodels  list  status  set  set-image  aliases list|add|remove  fallbacks list|add|remove|clear  image-fallbacks list|add|remove|clear  scan  auth list|add|login|setup-token|paste-token|paste-api-key|login-github-copilot  auth order get|set|clearpromos  list  claim <slug>infer (alias: capability)  list  inspect  model run|list|inspect|providers|auth login|logout|status  image generate|edit|describe|describe-many|providers  audio transcribe|providers  tts convert|voices|personas|providers|status|enable|disable|set-provider|set-persona  video generate|describe|providers  web search|fetch|providers  embedding create|providerssandbox  list  recreate  explaincron  status  list  get  add  edit  rm  enable  disable  runs  runnodes  status  describe  list  pending  approve  reject  rename  invoke  notify  push  canvas present|hide|navigate  camera list|snap|clip  screen record  location getdevices  list  remove  clear  approve  reject  rotate  revokenode  run  status  install  uninstall  stop  restartconnectworkerapprovals  get  set  allowlist add|removeexec-policy  show  preset  setbrowser  status  start  stop  reset-profile  tabs  open  focus  close  profiles  create-profile  delete-profile  screenshot  snapshot  navigate  resize  click  type  press  hover  drag  select  upload  fill  dialog  wait  evaluate  console  pdfhooks  list  info  check  enable  disable  install  updatewebhooks  gmail setup|runproxy  start  run  coverage  sessions  query  blob  purgepairing  list  approveqrclawbot  qrdocsdns  setupresumetuichat (alias: tui --local)terminal (alias: tui --local)
 [/code]
 
 Plugins can add additional top-level commands, such as [`openclaw workboard`](</cli/workboard>) or `openclaw voicecall`.
@@ -112,7 +113,7 @@ Highlights:
   * `/status` \- quick diagnostics.
   * `/trace` \- session-scoped plugin trace/debug lines.
   * `/config` \- persisted config changes.
-  * `/debug` \- runtime-only config overrides (memory, not disk; requires `commands.debug: true`).
+  * `/debug` \- runtime-only config overrides in memory, not on disk. Requires `commands.debug: true`.
 
 
 ## Usage tracking

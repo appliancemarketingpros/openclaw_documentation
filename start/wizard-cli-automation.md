@@ -1,10 +1,10 @@
 ---
 title: CLI automation
 source_url: https://docs.openclaw.ai/start/wizard-cli-automation
-scraped_at: 2026-09-07
+scraped_at: 2026-09-14
 ---
 
-Get startedGuides
+Get startedSetup guides and reference
 
 Use `openclaw onboard --non-interactive` to script setup. It requires `--accept-risk`: non-interactive setup can write credentials and daemon config without a confirmation prompt, so the flag is the explicit risk acknowledgement.
 
@@ -12,23 +12,18 @@ Each command can install a managed Gateway with `--install-daemon`, require an a
 
 ## Review required plugins
 
-Non-interactive onboarding cannot accept new external plugin capabilities. `--accept-risk` acknowledges onboarding risk only; it does not grant plugin consent. Before automating a setup that needs an external provider or runtime, review that plugin's source and declared capabilities, then preinstall it with explicit consent. For OpenAI setup, install the official Codex runtime:
+Bundled plugins and verified plugins from OpenClaw's official catalog do not require capability consent during setup. This includes the official Codex runtime installed for OpenAI setup.
+
+Non-interactive onboarding cannot accept new third-party plugin capabilities. `--accept-risk` acknowledges onboarding risk only; it does not grant plugin consent. Before automating a setup that needs a third-party provider, runtime, or channel plugin, review its source and declared capabilities, then preinstall it with explicit consent:
 
 bashCopy code
 [code]
-    # After reviewing the plugin and its declared capabilities:openclaw plugins install codex --accept-capabilities
+    openclaw plugins install <plugin-spec> --accept-capabilities
 [/code]
 
-The `codex` selector lets OpenClaw's official catalog choose the runtime package. Then run your onboarding command below. If onboarding reports a required plugin capability review, review and install the named plugin and rerun the same command. For an already-installed plugin that needs approval to enable it, use `openclaw plugins enable <plugin-id> --accept-capabilities`.
+If onboarding reports a required plugin capability review, review and install the named plugin and rerun the same command. For an already-installed plugin that needs approval to enable it, use `openclaw plugins enable <plugin-id> --accept-capabilities`.
 
-External channel plugins need the same preparation before scripted `openclaw channels add`; for example, after reviewing Discord:
-
-bashCopy code
-[code]
-    openclaw plugins install discord --accept-capabilitiesopenclaw channels add --channel discord --token "$DISCORD_BOT_TOKEN"
-[/code]
-
-Bundled plugins are exempt. Consent applies to the reviewed plugin operation, not every subsequent install. See [Capability consent](</plugins/manage-plugins#capability-consent>) for artifact review, enablement, and update rules.
+Consent applies to the reviewed plugin operation, not every subsequent install. See [Capability consent](</plugins/manage-plugins#capability-consent>) for artifact review, enablement, and update rules.
 
 ## Baseline non-interactive example
 
@@ -40,6 +35,7 @@ bashCopy code
 Add `--json` for a machine-readable summary.
 
   * `--gateway-port` defaults to `18789`. Only pass it to override that default.
+  * Local onboarding generates a Gateway secret in token mode by default and preserves existing password mode. Use `--gateway-auth password` with `--gateway-password <value>` to supply a password explicitly; the password flag also selects password mode on its own. Tailscale Funnel requires password mode.
   * `--skip-bootstrap` skips creating default workspace files, for automation that pre-seeds its own workspace.
   * `--secret-input-mode ref` stores new credentials as env-backed references, in the form `{ source: "env", provider: "default", id: "<ENV_VAR>" }`. Set the provider env var when you add a credential or pass an inline key flag. Existing resolvable named profiles and their `env`, `file`, `exec`, or `store` references are reused unchanged, without a new credential write or additional provider env var. Existing plaintext is not migrated. Run `openclaw secrets configure --apply`, then `openclaw secrets audit --check`. See [Secrets management](</gateway/secrets>).
   * The gateway token follows the same mode. Setup generates that value itself, so reference mode has no env var to point at unless you supply one. With `OPENCLAW_GATEWAY_TOKEN` exported, `gateway.auth.token` becomes an `env` ref to it. Otherwise the token goes into the SQLite secret store as `OPENCLAW_GATEWAY_TOKEN`, and config keeps a `store` ref. Either way `openclaw.json` holds no plaintext gateway token. Inspect the entry with `openclaw secrets store list`.
@@ -128,7 +124,7 @@ Anthropic setup-token auth remains supported, but OpenClaw prefers Claude CLI re
 
 bashCopy code
 [code]
-    openclaw agents add work \  --workspace ~/.openclaw/workspace-work \  --model openai/gpt-5.6-sol \  --bind whatsapp:biz \  --non-interactive \  --json
+    openclaw agents add work \  --workspace ~/.openclaw/workspace-work \  --model openai/gpt-6-astra \  --bind whatsapp:biz \  --non-interactive \  --json
 [/code]
 
 Config keys it writes (`agents.entries.*` entry for the new agent id):

@@ -1,7 +1,7 @@
 ---
 title: Gateway architecture
 source_url: https://docs.openclaw.ai/concepts/architecture
-scraped_at: 2026-09-07
+scraped_at: 2026-09-14
 ---
 
 AgentsAgent runtime
@@ -14,7 +14,7 @@ AgentsAgent runtime
 
   * **Nodes** (macOS/iOS/Android/headless) also connect over **WebSocket** , but declare `role: node` with explicit caps/commands.
 
-  * One Gateway per host; it is the only place that opens a WhatsApp session.
+  * One Gateway per host. It is the only place that opens a WhatsApp session.
 
   * The **hosted widget surface** is served by the Gateway HTTP server under:
 
@@ -44,8 +44,8 @@ It uses the same port as the Gateway (default `18789`).
 ### Nodes (macOS / iOS / Android / headless)
 
   * Connect to the **same WS server** with `role: node`.
-  * Provide a device identity in `connect`; pairing is **device-based** (role `node`) and approval lives in the device pairing store.
-  * Expose commands like `camera.*`, `screen.record`, and `location.get`; the macOS app also exposes widget-panel commands under `canvas.*`.
+  * Provide a device identity in `connect`. Pairing is **device-based** (role `node`) and approval lives in the device pairing store.
+  * Expose commands like `camera.*`, `screen.record`, and `location.get`. The macOS app also exposes widget-panel commands under `canvas.*`.
 
 
 Protocol details: [Gateway protocol](</gateway/protocol>)
@@ -84,21 +84,21 @@ Protocol details: [Gateway protocol](</gateway/protocol>)
     * Requests: `{type:"req", id, method, params}` → `{type:"res", id, ok, payload|error}`
     * Events: `{type:"event", event, payload, seq?, stateVersion?}`
   * `hello-ok.features.methods` / `events` are discovery metadata, not a generated dump of every callable helper route.
-  * Shared-secret auth uses `connect.params.auth.token` or `connect.params.auth.password`, depending on the configured gateway auth mode.
+  * Shared-secret auth accepts the configured secret in either `connect.params.auth.token` or `connect.params.auth.password`. `gateway.auth.mode` selects the configured value (`gateway.auth.token` or `gateway.auth.password`), not the required wire field.
   * Identity-bearing modes such as Tailscale Serve (`gateway.auth.allowTailscale: true`) or non-loopback `gateway.auth.mode: "trusted-proxy"` satisfy auth from request headers instead of `connect.params.auth.*`.
-  * Private-ingress `gateway.auth.mode: "none"` disables shared-secret auth entirely; keep that mode off public/untrusted ingress.
-  * Idempotency keys are required for side-effecting methods (`send`, `agent`) to safely retry; the server keeps a short-lived dedupe cache.
+  * Private-ingress `gateway.auth.mode: "none"` disables shared-secret auth entirely. Keep that mode off public or untrusted ingress.
+  * Idempotency keys are required for side-effecting methods (`send`, `agent`) to safely retry. The server keeps a short-lived dedupe cache.
   * Nodes must include `role: "node"` plus caps/commands/permissions in `connect`.
 
 
 ## Pairing and local trust
 
   * All WS clients (operators + nodes) include a **device identity** on `connect`.
-  * New device IDs require pairing approval; the Gateway issues a **device token** for subsequent connects.
+  * New device IDs require pairing approval. The Gateway issues a **device token** for subsequent connects.
   * Direct local loopback connects can be auto-approved to keep same-host UX smooth.
   * OpenClaw also has a narrow backend/container-local self-connect path for trusted shared-secret helper flows.
   * Tailnet and LAN connects, including same-host tailnet binds, still require explicit pairing approval.
-  * All connects must sign the `connect.challenge` nonce. Signature payload `v3` also binds `platform` and `deviceFamily`; the gateway pins paired metadata on reconnect and requires repair pairing for metadata changes.
+  * All connects must sign the `connect.challenge` nonce. Signature payload `v3` also binds `platform` and `deviceFamily`. The gateway pins paired metadata on reconnect and requires repair pairing for metadata changes.
   * **Non-local** connects still require explicit approval.
   * Gateway auth (`gateway.auth.*`) still applies to **all** connections, local or remote.
 
@@ -137,8 +137,8 @@ bashCopy code
 ## Invariants
 
   * Exactly one Gateway controls a single Baileys session per host.
-  * Handshake is mandatory; any non-JSON or non-connect first frame is a hard close.
-  * Events are not replayed; clients must refresh on gaps.
+  * Handshake is mandatory. Any non-JSON or non-connect first frame is a hard close.
+  * Events are not replayed. Clients must refresh on gaps.
 
 
 ## Related
@@ -147,6 +147,7 @@ bashCopy code
   * [Gateway Protocol](</gateway/protocol>) — WebSocket protocol contract
   * [Queue](</concepts/queue>) — command queue and concurrency
   * [Security](</gateway/security>) — trust model and hardening
+  * [Network](</network>) — the hub for how OpenClaw connects, pairs, and secures devices across localhost, LAN, and tailnet
 
 
 Was this useful?YesNo

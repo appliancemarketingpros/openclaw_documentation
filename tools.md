@@ -1,7 +1,7 @@
 ---
 title: Overview
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-09-07
+scraped_at: 2026-09-14
 ---
 
 CapabilitiesOverview
@@ -65,6 +65,7 @@ Messaging and channels | Send replies or channel actions | `message` | [Agent se
 Sessions and agents | Inspect sessions, delegate work, orchestrate collectors, steer another run, or report status | `sessions_*`, `agents_wait`, `subagents`, `agents_list`, `session_status`, `get_goal`, `create_goal`, `update_goal` | [Goal](</tools/goal>), [Swarm](</tools/swarm>), [Sub-agents](</tools/subagents>), [Session tool](</concepts/session-tool>)  
 Automation | Schedule work or respond to background events | `cron`, `heartbeat_respond` | [Automation](</automation>)  
 Gateway and nodes | Inspect Gateway state or paired target devices | `gateway`, `nodes` | [Gateway configuration](</gateway/configuration>), [Nodes](</nodes>)  
+Plugin lifecycle | Inspect, install, enable, disable, remove, or reload plugins | `plugins` | [Agent plugin management](</plugins/manage-plugins#manage-plugins-from-an-agent-conversation>)  
 Media | Analyze, generate, or speak media | `view_image`, `image_generate`, `music_generate`, `video_generate`, `tts` | [Media overview](</tools/media-overview>)  
 Large OpenClaw catalogs | Search, call, and combine many eligible tools without sending every schema to the model | `exec`, `wait`, `tool_search_code`, `tool_search`, `tool_describe` | [Code Mode](</tools/code-mode>), [Tool Search](</tools/tool-search>)  
   
@@ -137,6 +138,7 @@ If the model cannot see or call a tool, start with the effective policy for the 
   * [Tool Search](</tools/tool-search>) for compact OpenClaw tool catalog discovery
   * [Code Mode](</tools/code-mode>) for compact JavaScript or TypeScript workflows over a hidden OpenClaw tool catalog
   * [Swarm](</tools/swarm>) for structured fan-out and collection from Code Mode
+  * [Tools invoke API](</gateway/tools-invoke-http-api>) — call these tools over HTTP
 
 
 Was this useful?YesNo

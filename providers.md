@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-09-07
+scraped_at: 2026-09-14
 ---
 
 ModelsOverview
@@ -68,6 +68,7 @@ json5Copy code
   * [Perplexity (web search)](</providers/perplexity-provider>)
   * [Qianfan](</providers/qianfan>)
   * [Qwen Cloud](</providers/qwen>)
+  * [Radius](</providers/radius>)
   * [Runway](</providers/runway>)
   * [SenseAudio](</providers/senseaudio>)
   * [SGLang (local models)](</providers/sglang>)

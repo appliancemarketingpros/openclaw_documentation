@@ -1,7 +1,7 @@
 ---
 title: Help
 source_url: https://docs.openclaw.ai/help
-scraped_at: 2026-09-07
+scraped_at: 2026-09-14
 ---
 
 HelpStart here
@@ -34,6 +34,7 @@ Fastest path to unstuck, by symptom:
   * [Testing](</help/testing>) \- test suites and Docker runners
   * [Update and plugin tests](</help/testing-updates-plugins>) \- package update, migration, and plugin install validation
   * [Live tests](</help/testing-live>) \- network-touching provider and CLI smokes
+  * [Scripts](</help/scripts>) \- helper scripts under `scripts/` and when to prefer the CLI
 
 
 ## Community and meta

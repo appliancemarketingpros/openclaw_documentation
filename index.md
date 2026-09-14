@@ -1,7 +1,7 @@
 ---
 title: OpenClaw
 source_url: https://docs.openclaw.ai/
-scraped_at: 2026-09-07
+scraped_at: 2026-09-14
 ---
 
 Get startedOverview
@@ -24,7 +24,7 @@ Developed in the open by the [OpenClaw Foundation](<https://openclaw.org>), an i
 
 Mobile browsers may show the section menu without the full desktop tab bar. Use these hub links to reach the same top-level docs areas from the page body.
 
-[**Get started** Overview, showcase, first steps, and setup guides. ](</start/getting-started>) [**Install** Install paths, updates, containers, hosting, and advanced setup. ](</install>) [**Channels** Messaging channels, pairing, routing, access groups, and channel QA. ](</channels>) [**Agents** Architecture, sessions, context, memory, and multi-agent routing. ](</concepts/architecture>) [**Capabilities** Tools, skills, cron, webhooks, and automation capabilities. ](</tools>) [**ClawHub** Plugin marketplace, publishing, curation, and trust guidance. ](</clawhub>) [**Models** Providers, model configuration, failover, and local model services. ](</providers>) [**Platforms** macOS, Windows, iOS, Android, nodes, and web surfaces. ](</platforms>) [**Gateway & Ops** Gateway configuration, security, diagnostics, and operations. ](</gateway>) [**Reference** CLI reference, schemas, RPC, release notes, and templates. ](</cli>) [**Help** Troubleshooting, FAQs, testing, diagnostics, and environment checks. ](</help>)
+[**Get started** Overview, showcase, first steps, and setup guides. ](</start/getting-started>) [**Install** Install paths, updates, containers, hosting, and advanced setup. ](</install>) [**Channels** Messaging channels, pairing, routing, access groups, and channel QA. ](</channels>) [**Agents** Architecture, sessions, context, memory, and multi-agent routing. ](</concepts/architecture>) [**Capabilities** Tools, skills, cron, webhooks, and automation capabilities. ](</tools>) [**ClawHub** Plugin marketplace, publishing, curation, and trust guidance. ](</clawhub>) [**Models** Providers, model configuration, failover, and local model services. ](</providers>) [**Platforms** macOS, Windows, iOS, Android, nodes, and web surfaces. ](</platforms>) [**Gateway & Ops** Gateway configuration, security, diagnostics, and operations. ](</gateway>) [**Reference** CLI reference, schemas, RPC, and templates. ](</cli>) [**Releases** Release notes for each version, with highlights and source links. ](</releases>) [**Help** Troubleshooting, FAQs, testing, diagnostics, and environment checks. ](</help>)
 
 ## What is OpenClaw?
 
@@ -42,7 +42,7 @@ OpenClaw is a **self-hosted gateway** that connects your favorite chat apps — 
 
 The full architecture case — a trusted gateway, untrusted execution, deterministic policy, and how one product spans personal and team use — is in [Why OpenClaw](</start/why-openclaw>).
 
-**What do you need?** Node 26 (recommended), or another supported release: Node 22.22.3+, Node 24.15+, or Node 25.9+. You also need an API key from your chosen provider and 5 minutes. For best quality and security, use the strongest latest-generation model available.
+**What do you need?** Node 26 (recommended), or another supported release: Node 24.16+ or Node 26.1+. You also need an API key from your chosen provider and 5 minutes. For best quality and security, use the strongest latest-generation model available.
 
 ## How it works
 [code] 
@@ -59,7 +59,7 @@ The Gateway is the single source of truth for sessions, routing, and channel con
 
 ## Key capabilities
 
-[**Multi-channel gateway** Discord, iMessage, Signal, Slack, Telegram, WhatsApp, WebChat, and more with a single Gateway process. ](</channels>) [**Plugin channels** Channel plugins add Matrix, Nostr, Twitch, Zalo, and more; official plugins install on demand. ](</tools/plugin>) [**Multi-agent routing** Isolated sessions per agent, workspace, or sender. ](</concepts/multi-agent>) [**Media support** Send and receive images, audio, and documents. ](</nodes/images>) [**Web Control UI** Browser dashboard for chat, config, sessions, and nodes. ](</web/control-ui>) [**Mobile nodes** Pair iOS and Android nodes for camera, screen, and voice-enabled workflows. ](</nodes>)
+[**Multi-channel gateway** Discord, iMessage, Signal, Slack, Telegram, WhatsApp, WebChat, and more with a single Gateway process. ](</channels>) [**Plugin channels** Channel plugins add Matrix, Nostr, Twitch, Zalo, and more; official plugins install on demand. ](</tools/plugin>) [**Multi-agent routing** Isolated sessions per agent, workspace, or sender. ](</concepts/multi-agent>) [**Media support** Send and receive images, audio, and documents. ](</nodes/images>) [**Web Control UI** Browser dashboard for chat, config, sessions, and nodes. ](</web/control-ui>) [**Mobile nodes** Pair iOS and Android nodes for camera, screen, and voice-enabled workflows. ](</nodes>) [**Skills** Teach the agent repeatable procedures it loads on demand. ](</tools/skills>) [**Automation** Run work on a schedule with cron jobs, hooks, and webhooks. ](</automation>) [**Build plugins** Write your own channel, provider, and tool plugins against the plugin SDK. ](</plugins/building-plugins>)
 
 ## Quick start
 

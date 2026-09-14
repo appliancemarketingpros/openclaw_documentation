@@ -1,7 +1,7 @@
 ---
 title: Setup
 source_url: https://docs.openclaw.ai/start/setup
-scraped_at: 2026-09-07
+scraped_at: 2026-09-14
 ---
 
 InstallAdvanced setup
@@ -17,14 +17,14 @@ Pick a setup workflow based on how often you want updates and whether you want t
 
 ## Prereqs (from source)
 
-  * Node 24.15+ recommended (Node 22 LTS, currently `22.22.3+`, still supported)
+  * Node 24.16+ LTS or Node 26.1+ (recommended)
   * `pnpm` required for source checkouts. OpenClaw loads bundled plugins from the `extensions/*` pnpm workspace packages in dev mode, so root `npm install` does not prepare the full source tree.
   * Docker (optional; only for containerized setup/e2e - see [Docker](</install/docker>))
 
 
 Use the pnpm version pinned in `package.json`. The workspace applies a seven-day publication cooldown to npm dependencies, with trusted `@openai/codex` and `@openai/codex-*` packages exempt. The standalone pnpm toolchain is managed separately.
 
-For npm tooling that reads the project's `.npmrc`, use npm **11.19 or newer** for install and `npm pack` cooldowns and Codex exclusions. Node 22's bundled npm 10 ignores these settings; Node runtime support does not imply support for its bundled npm as a source resolver. [Published/global installs](</install>) do not inherit the repository's `.npmrc`. Source installs continue to use pnpm.
+For npm tooling that reads the project's `.npmrc`, use npm **11.19 or newer** for install and `npm pack` cooldowns and Codex exclusions. Node runtime support does not imply support for its bundled npm as a source resolver. [Published/global installs](</install>) do not inherit the repository's `.npmrc`. Source installs continue to use pnpm.
 
 pnpm owns root and plugin-local dependencies, including workspace links and versions that differ between packages. Postinstall and build preparation preserve those trees. If an older checkout pruned plugin-local dependencies, run `pnpm install --frozen-lockfile` after updating to restore them before testing.
 
@@ -50,7 +50,7 @@ bashCopy code
     pnpm openclaw setup --baseline
 [/code]
 
-(Bare `openclaw setup`, without `--baseline`, is an alias for `openclaw onboard` and runs the full interactive wizard.)
+(Bare `openclaw setup`, without `--baseline`, opens an interactive OpenClaw chat on a configured system and falls through to guided onboarding on a fresh one. See [Setup CLI](</cli/setup>) for the full routing order.)
 
 ## Run the Gateway from this repo
 
@@ -159,7 +159,7 @@ Use this when debugging auth or deciding what to back up:
     * `~/.openclaw/credentials/<channel>-<accountId>-allowFrom.json` (non-default accounts)
   * **Model auth profiles** : shared and agent-local SQLite auth stores; see [Auth credential semantics](</auth-credential-semantics#agent-copy-portability>) for inheritance and legacy shared-store relocation
   * **File-backed secrets payload (optional)** : `~/.openclaw/secrets.json`
-  * **Legacy OAuth import** : `~/.openclaw/credentials/oauth.json` More detail: [Security](</gateway/security#credential-storage-map>).
+  * **Legacy OAuth import** : `~/.openclaw/credentials/oauth.json` More detail: [Security](</gateway/security/secrets-and-storage#credential-storage-map>).
 
 
 ## Updating (without wrecking your setup)
