@@ -1,7 +1,7 @@
 ---
 title: Gateway runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-09-14
+scraped_at: 2026-09-21
 ---
 
 Gateway & OpsGateway
@@ -165,7 +165,9 @@ bashCopy code
 
 Use `openclaw gateway restart` for restarts. Do not chain `openclaw gateway stop` and `openclaw gateway start` as a restart substitute.
 
-On macOS, `gateway stop` uses `launchctl bootout` by default. This removes the LaunchAgent from the current boot session without persisting a disable, so KeepAlive auto-recovery still works after unexpected crashes and `gateway start` re-enables cleanly. To persistently suppress auto-respawn across reboots, pass `--disable`: `openclaw gateway stop --disable`.
+On macOS, `gateway stop` uses `launchctl bootout` and verifies that the LaunchAgent is unloaded and its process has exited before reporting success. This removes the LaunchAgent from the current boot session without persisting a disable, so KeepAlive auto-recovery still works after unexpected crashes and `gateway start` re-enables cleanly. To also persistently suppress auto-respawn across reboots, pass `--disable`: `openclaw gateway stop --disable`.
+
+If shutdown cannot be verified, the command fails with the exact `launchctl bootout gui/<uid>/<label>` command to run from an external terminal in the service owner's logged-in macOS session. A free Gateway port alone does not prove that the service is stopped.
 
 LaunchAgent labels are `ai.openclaw.gateway` (default) or `ai.openclaw.<profile>` (named profile). `openclaw doctor` audits and repairs service config drift.
 
@@ -208,7 +210,7 @@ iniCopy code
     [Unit]Description=OpenClaw GatewayAfter=network-online.targetWants=network-online.targetStartLimitBurst=10StartLimitIntervalSec=300 [Service]ExecStart=/usr/local/bin/openclaw gateway --port 18789Restart=alwaysRestartSec=5RestartPreventExitStatus=78TimeoutStopSec=330TimeoutStartSec=30SuccessExitStatus=0 143OOMPolicy=continueKillMode=mixed [Install]WantedBy=default.target
 [/code]
 
-`TimeoutStopSec=330` covers the Gateway's five-minute cooperative drain plus teardown reserve. To inspect the current managed unit body, run `systemctl --user cat openclaw-gateway.service` (or `systemctl --user cat openclaw-gateway-<profile>.service` for a named profile).
+`TimeoutStopSec=330` covers the Gateway's maximum 315-second stop drain plus a 15-second cleanup and exit margin. The Gateway clamps its drain to the installed unit's effective stop timeout; see [Systemd stop deadlines](</gateway/restart-recovery#systemd-stop-deadlines>). To inspect the current managed unit body, run `systemctl --user cat openclaw-gateway.service` (or `systemctl --user cat openclaw-gateway-<profile>.service` for a named profile).
 
 ### Windows (native)
 
@@ -235,6 +237,8 @@ Replace `<user>` with the non-root account that owns the OpenClaw state and conf
 When `Group=` is omitted, systemd uses the selected account's primary group. By default, `User=` also supplies that account's `HOME`, which OpenClaw uses for normal state and configuration lookup. For intentional custom locations, set `OPENCLAW_STATE_DIR` and `OPENCLAW_CONFIG_PATH` in the unit environment. Do not copy configuration into root's home as a workaround. On a single-user host, the user unit above with `loginctl enable-linger` is the supported way to keep the Gateway running without a login session.
 
 Do not also let `openclaw doctor --fix` install a user-level gateway service for the same profile/port. Doctor refuses that automatic install when it finds a system-level OpenClaw gateway service; use `OPENCLAW_SERVICE_REPAIR_POLICY=external` when the system unit owns the lifecycle.
+
+`openclaw gateway status --deep` inspects the installed system unit and reports `systemd system`. Run Doctor from the non-root `User=` account with the same state and config paths. For offline repair, stop the unit through its system service owner first, run `openclaw doctor --fix`, then start the unit through that owner. Doctor can verify a stopped system unit without rewriting its definition or creating a competing user service. An unavailable manager or an unverified service account still blocks maintenance.
 
 After writing the unit, reload systemd and enable it:
 

@@ -1,7 +1,7 @@
 ---
 title: Onboarding (CLI)
 source_url: https://docs.openclaw.ai/start/wizard
-scraped_at: 2026-09-14
+scraped_at: 2026-09-21
 ---
 
 Get startedFirst steps
@@ -100,7 +100,7 @@ Pass `--flow quickstart` or `--flow manual` (alias `advanced`) to select a class
   * Workspace default (or existing workspace)
   * Gateway port **18789**
   * Gateway auth **Token** (auto-generated, even on loopback)
-  * Tool policy: `tools.profile: "coding"` for new setups (an existing explicit profile is preserved)
+  * Tool policy: `tools.profile: "full"` when no profile is configured; explicit profiles and other policies are preserved. Execution permissions remain separate. See [Tool profiles](</gateway/config-tools/tool-policy#tool-profiles>).
   * DM sessions: onboarding preserves an explicit `session.dmScope` and otherwise leaves it unset, so the `"main"` default keeps all direct messages across channels in the agent's rolling main session—the personal-agent default. For shared or multi-user inboxes, use `"per-channel-peer"`; `openclaw security audit` recommends isolation when it detects multi-user DM traffic. Details: [CLI setup reference](</start/wizard-cli-reference#outputs-and-internals>)
   * Tailscale exposure **Off**
   * Telegram and WhatsApp DMs default to **allowlist** : Telegram asks for a numeric Telegram user ID, WhatsApp asks for a phone number

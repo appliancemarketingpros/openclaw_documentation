@@ -1,7 +1,7 @@
 ---
 title: CLI setup reference
 source_url: https://docs.openclaw.ai/start/wizard-cli-reference
-scraped_at: 2026-09-14
+scraped_at: 2026-09-21
 ---
 
 Get startedSetup guides and reference
@@ -153,7 +153,7 @@ If `dns-sd` (macOS) or `avahi-browse` (Linux) is available, onboarding offers to
 When a beacon is selected, choose direct WebSocket or an SSH tunnel:
 
   * **Direct** : connects over `wss://` and prompts to trust the discovered TLS fingerprint (trust-on-first-use pinning; only pinned if you accept).
-  * **SSH tunnel** : prints an `ssh -N -L 18789:127.0.0.1:18789 <user>@<host>` command to run first, then connects to the local tunnel endpoint.
+  * **SSH tunnel** : prints an `ssh -N -L 18789:127.0.0.1:<gateway-port> <user>@<host>` command using the resolved Gateway service port, with `-p <ssh-port>` when advertised. Run it first, then connect to the local tunnel endpoint at `ws://127.0.0.1:18789`.
 
 
 * ### Auth
@@ -336,7 +336,7 @@ Typical fields in `~/.openclaw/openclaw.json`:
   * `agents.defaults.workspace`
   * `agents.defaults.skipBootstrap` when `--skip-bootstrap` is passed
   * `agents.defaults.model` and provider config when the selected provider needs it
-  * `tools.profile` (local onboarding defaults to `"coding"` when unset; existing explicit values are preserved)
+  * `tools.profile` (local onboarding selects `"full"` when unset, including on a rerun; explicit profiles and other tool policies are preserved). Full tool selection is not Full Access execution permissions. See [Tool profiles](</gateway/config-tools/tool-policy#tool-profiles>).
   * `gateway.*` (mode, bind, auth, tailscale)
   * `session.dmScope` (onboarding preserves explicit values and otherwise leaves it unset, so the `main` default keeps all direct messages across channels in the agent's rolling main session—the personal-agent default. For shared or multi-user inboxes, use `per-channel-peer`; `openclaw security audit` recommends isolation when it detects multi-user DM traffic)
   * `channels.telegram.botToken`, `channels.discord.token`, `channels.matrix.*`, `channels.signal.*`, `channels.imessage.*`
