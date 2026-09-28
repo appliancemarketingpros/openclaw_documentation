@@ -1,14 +1,14 @@
 ---
-title: OpenClaw
+title: OpenClawDocs.
 source_url: https://docs.openclaw.ai/
-scraped_at: 2026-09-21
+scraped_at: 2026-09-28
 ---
 
 Get startedOverview
 
-# OpenClaw 🦞
+[**Get Started** Install OpenClaw and bring up the Gateway in minutes. ](</start/getting-started>) [**Run Onboarding** Guided setup with `openclaw onboard` and pairing flows. ](</start/wizard>) [**Connect a Channel** Link Discord, Signal, Telegram, WhatsApp, and more to chat from anywhere. ](</channels>) [**Open the Control UI** Launch the browser dashboard for chat, config, and sessions. ](</web/control-ui>)
 
-![OpenClaw](/assets/openclaw-hero-light.png) ![OpenClaw](/assets/openclaw-hero-dark.png)
+# OpenClaw 🦞
 
 > _"EXFOLIATE! EXFOLIATE!"_ — A space lobster, probably
 
@@ -17,8 +17,6 @@ Get startedOverview
 One Gateway. Any model. Any device. No hosted service in the middle.
 
 Developed in the open by the [OpenClaw Foundation](<https://openclaw.org>), an independent 501(c)(3). No paid tier, no telemetry by default beyond a [version check](</gateway/telemetry>) you can turn off, no lab owns it.
-
-[**Get Started** Install OpenClaw and bring up the Gateway in minutes. ](</start/getting-started>) [**Run Onboarding** Guided setup with `openclaw onboard` and pairing flows. ](</start/wizard>) [**Connect a Channel** Link Discord, Signal, Telegram, WhatsApp, and more to chat from anywhere. ](</channels>) [**Open the Control UI** Launch the browser dashboard for chat, config, and sessions. ](</web/control-ui>)
 
 ## Browse docs
 

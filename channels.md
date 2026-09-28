@@ -1,7 +1,7 @@
 ---
 title: Chat channels
 source_url: https://docs.openclaw.ai/channels
-scraped_at: 2026-09-21
+scraped_at: 2026-09-28
 ---
 
 ChannelsOverview

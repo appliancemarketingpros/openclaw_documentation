@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-09-21
+scraped_at: 2026-09-28
 ---
 
 ModelsOverview
@@ -74,6 +74,7 @@ json5Copy code
   * [SGLang (local models)](</providers/sglang>)
   * [StepFun](</providers/stepfun>)
   * [Synthetic](</providers/synthetic>)
+  * [Telnyx (AI inference)](</providers/telnyx>)
   * [Tencent Cloud (TokenHub / TokenPlan)](</providers/tencent>)
   * [Together AI](</providers/together>)
   * [Venice (Venice AI, privacy-focused)](</providers/venice>)

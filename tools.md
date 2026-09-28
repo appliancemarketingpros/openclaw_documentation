@@ -1,7 +1,7 @@
 ---
 title: Overview
 source_url: https://docs.openclaw.ai/tools
-scraped_at: 2026-09-21
+scraped_at: 2026-09-28
 ---
 
 CapabilitiesOverview
@@ -69,6 +69,8 @@ Plugin lifecycle | Inspect, install, enable, disable, remove, or reload plugins 
 Media | Analyze, generate, or speak media | `view_image`, `image_generate`, `music_generate`, `video_generate`, `tts` | [Media overview](</tools/media-overview>)  
 Large OpenClaw catalogs | Search, call, and combine many eligible tools without sending every schema to the model | `exec`, `wait`, `tool_search_code`, `tool_search`, `tool_describe` | [Code Mode](</tools/code-mode>), [Tool Search](</tools/tool-search>)  
   
+On multi-user Gateways, `personal_instructions` reads and updates the authenticated requester’s personal `USER.md` through the Gateway, even when the chat uses a project worktree. It is included in the coding and messaging profiles; it does not widen general file-tool access. See [User model](</concepts/user-model#personal-user-files-on-a-shared-gateway>).
+
 The `edit` tool supports targeted formatting changes, including removing trailing spaces or replacing Unicode quotes, dashes, and spaces. These changes are applied even when the old and new text would compare equal after fuzzy normalization. Identical replacement requests and edits that produce unchanged content still report no changes.
 
 ## Plugin-provided tools

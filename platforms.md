@@ -1,7 +1,7 @@
 ---
 title: Platforms
 source_url: https://docs.openclaw.ai/platforms
-scraped_at: 2026-09-21
+scraped_at: 2026-09-28
 ---
 
 PlatformsPlatforms overview
