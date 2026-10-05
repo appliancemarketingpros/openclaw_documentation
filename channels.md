@@ -1,7 +1,7 @@
 ---
 title: Chat channels
 source_url: https://docs.openclaw.ai/channels
-scraped_at: 2026-09-28
+scraped_at: 2026-10-05
 ---
 
 ChannelsOverview
@@ -51,6 +51,7 @@ Run `openclaw channels add` with no flags to pick a channel from a list instead.
   * [WeChat](</channels/wechat>) \- WeChat channel setup through the external openclaw-weixin plugin (external plugin).
   * [WeCom](</channels/wecom>) \- Install the external WeCom plugin and find its versioned setup documentation (external plugin).
   * [WhatsApp](</channels/whatsapp>) \- WhatsApp channel support, access controls, delivery behavior, and operations (official plugin).
+  * [X / Twitter](</channels/x>) \- X / Twitter mentions, allowlisted public replies, thread context, and event modes (bundled plugin).
   * [Yuanbao](</channels/yuanbao>) \- Yuanbao bot overview, features, and configuration (external plugin).
   * [Zalo](</channels/zalo>) \- Zalo bot support status, capabilities, and configuration (official plugin).
   * [Zalo ClawBot](</channels/zaloclawbot>) \- Zalo ClawBot channel setup through the external openclaw-zaloclawbot plugin (external plugin).

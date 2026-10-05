@@ -1,7 +1,7 @@
 ---
 title: Help
 source_url: https://docs.openclaw.ai/help
-scraped_at: 2026-09-28
+scraped_at: 2026-10-05
 ---
 
 HelpStart here

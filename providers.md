@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-09-28
+scraped_at: 2026-10-05
 ---
 
 ModelsOverview
@@ -48,6 +48,7 @@ json5Copy code
   * [Gradium](</providers/gradium>)
   * [Groq (LPU inference)](</providers/groq>)
   * [Hugging Face (Inference)](</providers/huggingface>)
+  * [Kie AI](</providers/kie>)
   * [Kilocode](</providers/kilocode>)
   * [LiteLLM (unified gateway)](</providers/litellm>)
   * [llama.cpp (managed or existing server)](</plugins/llama-cpp>)
