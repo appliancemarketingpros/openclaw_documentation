@@ -1,7 +1,7 @@
 ---
 title: Linux server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-10-05
+scraped_at: 2026-10-12
 ---
 
 InstallHosting

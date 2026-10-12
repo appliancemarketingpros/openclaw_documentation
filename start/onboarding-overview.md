@@ -1,7 +1,7 @@
 ---
 title: Onboarding overview
 source_url: https://docs.openclaw.ai/start/onboarding-overview
-scraped_at: 2026-10-05
+scraped_at: 2026-10-12
 ---
 
 Get startedFirst steps
@@ -76,7 +76,7 @@ Platform and remote-access details: [Linux app](</platforms/linux>) and [Remote 
 
 If your provider is not listed, run `openclaw onboard` in a terminal on the Gateway host, choose **Custom Provider** (under **More…** when shown), and enter:
 
-  * Endpoint compatibility: OpenAI-compatible (`/chat/completions`), OpenAI Responses-compatible (`/responses`), Anthropic-compatible (`/messages`), or unknown (probes all three and auto-detects)
+  * Endpoint compatibility: OpenAI-compatible (`/chat/completions`), OpenAI Responses-compatible (`/responses`), Anthropic-compatible (`/messages`), or unknown (checks all three and auto-detects)
   * Base URL and API key (API key is optional if the endpoint does not require one)
   * Model ID and optional model alias
 
