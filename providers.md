@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-10-12
+scraped_at: 2026-10-19
 ---
 
 ModelsOverview
@@ -50,6 +50,7 @@ json5Copy code
   * [Hugging Face (Inference)](</providers/huggingface>)
   * [Kie AI](</providers/kie>)
   * [Kilocode](</providers/kilocode>)
+  * [Levanto Sage (typed decisions, not chat)](</providers/levanto>)
   * [LiteLLM (unified gateway)](</providers/litellm>)
   * [llama.cpp (managed or existing server)](</plugins/llama-cpp>)
   * [llmman (local + hybrid local/hosted models)](</providers/llmman>)
@@ -58,15 +59,18 @@ json5Copy code
   * [MiniMax](</providers/minimax>)
   * [Mistral](</providers/mistral>)
   * [Moonshot AI (Kimi + Kimi Coding)](</providers/moonshot>)
+  * [Neon AI Gateway](</providers/neon>)
   * [NovitaAI](</providers/novita>)
   * [NVIDIA](</providers/nvidia>)
   * [Ollama (cloud + local models)](</providers/ollama>)
   * [Ollama Cloud](</providers/ollama-cloud>)
+  * [oMLX (local Apple Silicon models)](</providers/omlx>)
   * [OpenAI (API + Codex)](</providers/openai>)
   * [OpenCode](</providers/opencode>)
   * [OpenCode Go](</providers/opencode-go>)
   * [OpenRouter](</providers/openrouter>)
   * [Perplexity (web search)](</providers/perplexity-provider>)
+  * [Poolside (Laguna)](</providers/poolside>)
   * [Qianfan](</providers/qianfan>)
   * [Qwen Cloud](</providers/qwen>)
   * [Radius](</providers/radius>)
