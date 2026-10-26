@@ -1,7 +1,7 @@
 ---
 title: CLI reference
 source_url: https://docs.openclaw.ai/cli
-scraped_at: 2026-10-19
+scraped_at: 2026-10-26
 ---
 
 This map covers core commands and their primary subcommands. Plugin-added subcommands (for example under `skills`, `plugins`, and `wiki`) evolve independently. Run `<command> --help` for the authoritative, current list.

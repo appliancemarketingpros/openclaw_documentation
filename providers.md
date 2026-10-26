@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-10-19
+scraped_at: 2026-10-26
 ---
 
 ModelsOverview
@@ -22,6 +22,7 @@ json5Copy code
 
 ## Provider docs
 
+  * [Abliteration](</providers/abliteration>)
   * [Alibaba Model Studio](</providers/alibaba>)
   * [Amazon Bedrock](</providers/bedrock>)
   * [Amazon Bedrock Mantle](</providers/bedrock-mantle>)
@@ -51,6 +52,7 @@ json5Copy code
   * [Kie AI](</providers/kie>)
   * [Kilocode](</providers/kilocode>)
   * [Levanto Sage (typed decisions, not chat)](</providers/levanto>)
+  * [Liquid Inference](</providers/liquid-inference>)
   * [LiteLLM (unified gateway)](</providers/litellm>)
   * [llama.cpp (managed or existing server)](</plugins/llama-cpp>)
   * [llmman (local + hybrid local/hosted models)](</providers/llmman>)
@@ -74,6 +76,7 @@ json5Copy code
   * [Qianfan](</providers/qianfan>)
   * [Qwen Cloud](</providers/qwen>)
   * [Radius](</providers/radius>)
+  * [Requesty (unified router)](</providers/requesty>)
   * [Runway](</providers/runway>)
   * [SenseAudio](</providers/senseaudio>)
   * [SGLang (local models)](</providers/sglang>)

@@ -1,7 +1,7 @@
 ---
 title: Gateway runbook
 source_url: https://docs.openclaw.ai/gateway
-scraped_at: 2026-10-19
+scraped_at: 2026-10-26
 ---
 
 **Note**

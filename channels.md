@@ -1,7 +1,7 @@
 ---
 title: Chat channels
 source_url: https://docs.openclaw.ai/channels
-scraped_at: 2026-10-19
+scraped_at: 2026-10-26
 ---
 
 ChannelsOverview
@@ -67,7 +67,7 @@ Run `openclaw channels add` with no flags to pick a channel from a list instead.
 
 Discord, LINE, Matrix, Slack, and Telegram post one room-specific introduction when the bot joins an allowed group, instead of joining silently. The introduction says what the room appears to be for and names a few concrete jobs the bot could take on there, grounded in what that platform can actually show it.
 
-**Disabling.** Introductions are on by default. Turn them off per channel with `channels.<channel>.joinIntro: false`, or override a single account with `channels.<channel>.accounts.<accountId>.joinIntro`. Resolution order is the account value, then the channel value, then the default of `true`. There is no per-room switch, because a room is only configurable after the bot has already joined it. Only Discord, LINE, Matrix, Slack, and Telegram accept this option; other channels reject it rather than accepting a setting they never read.
+**Disabling.** Introductions are on by default. Turn them off per channel with `channels.<channel>.joinIntro: false`, or override a single account with `channels.<channel>.accounts.<accountId>.joinIntro`. Resolution order is the account value, then the channel value, then the default of `true`. There is no per-room introduction switch. Only Discord, LINE, Matrix, Slack, and Telegram accept this option; other channels reject it rather than accepting a setting they never read.
 
 **What it reads.** Core requests up to 100 recent messages plus room metadata, then truncates the whole snapshot to 12,000 characters, dropping the oldest messages first. What each platform can supply differs:
 
@@ -81,7 +81,7 @@ Telegram | Group title, description, pinned message | None - the Bot API cannot 
   
 When history is unavailable or unreadable, the introduction is still posted from room metadata alone and says what it can see rather than inventing activity.
 
-**Where it posts.** LINE, Matrix, Slack, and Telegram introduce in the room that was joined. Discord joins a server rather than a channel, so it uses the system channel when it can both view and send there, otherwise the first text channel that qualifies; if no channel qualifies, it records a skip instead of posting.
+**Where it posts.** LINE, Matrix, Slack, and Telegram introduce in the room that was joined. Slack excludes direct messages and group DMs, and Enterprise Slack introductions retain the listener workspace. Telegram forum introductions use the General topic's access policy and configured agent. Discord joins a server rather than a channel, so it uses the system channel when it can both view and send there, otherwise the first text channel that qualifies; if no channel qualifies, it records a skip instead of posting.
 
 **How often.** Once per room. A durable claim is recorded per channel, account, and room with a 90-day lifetime, so reconnects and gateway restarts do not repeat an introduction. Discord additionally ignores server-available events older than five minutes, so restarting never mass-introduces into servers the bot already belonged to. Matrix ignores startup room snapshots and membership updates that leave the bot joined, such as display-name changes. An unaccepted Matrix invite does not trigger an introduction. A re-invite after the claim expires introduces again.
 

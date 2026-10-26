@@ -3,7 +3,7 @@
 > This repository contains a local Markdown mirror of the official [Openclaw documentation](https://docs.openclaw.ai/).
 > It is automatically updated every Monday to reflect any changes in the upstream documentation.
 
-**Last updated:** 2026-10-19
+**Last updated:** 2026-10-26
 
 ## Documentation Index
 
@@ -26,7 +26,6 @@
 ### Install
 
 - [Install](install.md) — [source](https://docs.openclaw.ai/install)
-- [Standalone builds](install/standalone.md) — [source](https://docs.openclaw.ai/install/standalone)
 
 ### Channels
 
@@ -36,20 +35,18 @@
 
 - [Features](concepts/features.md) — [source](https://docs.openclaw.ai/concepts/features)
 - [Gateway architecture](concepts/architecture.md) — [source](https://docs.openclaw.ai/concepts/architecture)
-- [Session controller](concepts/session-controller.md) — [source](https://docs.openclaw.ai/concepts/session-controller)
 
 ### Tools
 
-- [Auto Review](tools/autoreview.md) — [source](https://docs.openclaw.ai/tools/autoreview)
 - [Overview](tools.md) — [source](https://docs.openclaw.ai/tools)
 
 ### Providers
 
-- [Levanto Sage](providers/levanto.md) — [source](https://docs.openclaw.ai/providers/levanto)
-- [Neon AI Gateway](providers/neon.md) — [source](https://docs.openclaw.ai/providers/neon)
-- [Poolside (Laguna)](providers/poolside.md) — [source](https://docs.openclaw.ai/providers/poolside)
+- [Abliteration](providers/abliteration.md) — [source](https://docs.openclaw.ai/providers/abliteration)
+- [Bifrost](providers/bifrost.md) — [source](https://docs.openclaw.ai/providers/bifrost)
+- [Liquid Inference](providers/liquid-inference.md) — [source](https://docs.openclaw.ai/providers/liquid-inference)
 - [Provider directory](providers.md) — [source](https://docs.openclaw.ai/providers)
-- [oMLX](providers/omlx.md) — [source](https://docs.openclaw.ai/providers/omlx)
+- [Requesty](providers/requesty.md) — [source](https://docs.openclaw.ai/providers/requesty)
 
 ### Platforms
 
@@ -57,9 +54,7 @@
 
 ### Gateway
 
-- [Cloud environment file](gateway/cloud-workers/environment-file.md) — [source](https://docs.openclaw.ai/gateway/cloud-workers/environment-file)
 - [Gateway runbook](gateway.md) — [source](https://docs.openclaw.ai/gateway)
-- [PostgreSQL operator guide](gateway/postgresql.md) — [source](https://docs.openclaw.ai/gateway/postgresql)
 
 ### Cli
 
@@ -67,41 +62,36 @@
 
 ### Help
 
+- [Get support](help/support.md) — [source](https://docs.openclaw.ai/help/support)
 - [Help](help.md) — [source](https://docs.openclaw.ai/help)
 
 ### Vps
 
 - [Linux server](vps.md) — [source](https://docs.openclaw.ai/vps)
 
-### Automation
-
-- [MCP Events](automation/mcp-events.md) — [source](https://docs.openclaw.ai/automation/mcp-events)
-
 ### Plugins
 
-- [Agent Guidance](plugins/agent-guidance.md) — [source](https://docs.openclaw.ai/plugins/agent-guidance)
-- [Awaited transcript and TTS helpers](plugins/sdk-migration/async-transcript-and-tts.md) — [source](https://docs.openclaw.ai/plugins/sdk-migration/async-transcript-and-tts)
-- [MCP Relay](plugins/mcp-relay.md) — [source](https://docs.openclaw.ai/plugins/mcp-relay)
-- [Migrate synchronous SQLite APIs](plugins/sdk-migration/sqlite-async.md) — [source](https://docs.openclaw.ai/plugins/sdk-migration/sqlite-async)
-- [Muse Code agent runtime](plugins/muse.md) — [source](https://docs.openclaw.ai/plugins/muse)
-- [Remote Control UI ingress](plugins/sdk-gateway-ingress.md) — [source](https://docs.openclaw.ai/plugins/sdk-gateway-ingress)
-- [SubQ](plugins/subq.md) — [source](https://docs.openclaw.ai/plugins/subq)
-
-### Reference
-
-- [Database engines (experimental)](reference/database-engines.md) — [source](https://docs.openclaw.ai/reference/database-engines)
+- [Knowledge](plugins/knowledge.md) — [source](https://docs.openclaw.ai/plugins/knowledge)
+- [Knowledge Control UI](plugins/knowledge/control-ui.md) — [source](https://docs.openclaw.ai/plugins/knowledge/control-ui)
+- [Knowledge as memory provider](plugins/knowledge/memory-provider.md) — [source](https://docs.openclaw.ai/plugins/knowledge/memory-provider)
+- [Knowledge corrections and merges](plugins/knowledge/corrections.md) — [source](https://docs.openclaw.ai/plugins/knowledge/corrections)
+- [Knowledge evidence files](plugins/knowledge/evidence.md) — [source](https://docs.openclaw.ai/plugins/knowledge/evidence)
+- [Knowledge ingestion workflows](plugins/knowledge/ingestion.md) — [source](https://docs.openclaw.ai/plugins/knowledge/ingestion)
+- [Knowledge local history](plugins/knowledge/local-history.md) — [source](https://docs.openclaw.ai/plugins/knowledge/local-history)
+- [Knowledge maintenance](plugins/knowledge/maintenance.md) — [source](https://docs.openclaw.ai/plugins/knowledge/maintenance)
+- [Knowledge records and ontology](plugins/knowledge/records-and-ontology.md) — [source](https://docs.openclaw.ai/plugins/knowledge/records-and-ontology)
+- [Knowledge retrieval and dates](plugins/knowledge/retrieval.md) — [source](https://docs.openclaw.ai/plugins/knowledge/retrieval)
+- [Knowledge stores and access](plugins/knowledge/stores-and-access.md) — [source](https://docs.openclaw.ai/plugins/knowledge/stores-and-access)
+- [Knowledge tools](plugins/knowledge/tools.md) — [source](https://docs.openclaw.ai/plugins/knowledge/tools)
+- [Plugin runtime compatibility](plugins/runtime-compatibility.md) — [source](https://docs.openclaw.ai/plugins/runtime-compatibility)
+- [Visitor Access plugin reference](plugins/reference/visitor-access.md) — [source](https://docs.openclaw.ai/plugins/reference/visitor-access)
+- [X plugin reference](plugins/reference/x.md) — [source](https://docs.openclaw.ai/plugins/reference/x)
 
 ### Releases
 
-- [v2026.10.2](releases/2026.10.2.md) — [source](https://docs.openclaw.ai/releases/2026.10.2)
-- [v2026.10.3](releases/2026.10.3.md) — [source](https://docs.openclaw.ai/releases/2026.10.3)
-- [v2026.10.4](releases/2026.10.4.md) — [source](https://docs.openclaw.ai/releases/2026.10.4)
-
-### Sv
-
-- [Kom igång](sv/start/getting-started.md) — [source](https://docs.openclaw.ai/sv/start/getting-started)
-- [LINE](sv/channels/line.md) — [source](https://docs.openclaw.ai/sv/channels/line)
-- [OpenClaw](sv.md) — [source](https://docs.openclaw.ai/sv)
+- [OpenClaw v2026.10.7](releases/2026.10.7.md) — [source](https://docs.openclaw.ai/releases/2026.10.7)
+- [v2026.10.5](releases/2026.10.5.md) — [source](https://docs.openclaw.ai/releases/2026.10.5)
+- [v2026.10.6](releases/2026.10.6.md) — [source](https://docs.openclaw.ai/releases/2026.10.6)
 
 ---
 

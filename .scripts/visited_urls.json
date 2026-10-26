@@ -2,128 +2,128 @@
   "https://docs.openclaw.ai/": {
     "title": "OpenClaw",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/index.md",
-    "hash": "d553ffa1104d4c7dee097922f4afa1dd",
-    "last_scraped": "2026-10-19 11:25:03"
+    "hash": "b3e3b957ef3c12fb7ff7cc4255abb7a8",
+    "last_scraped": "2026-10-26 11:43:12"
   },
   "https://docs.openclaw.ai/install": {
     "title": "Install",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/install.md",
-    "hash": "075776b023d1abf601aff06411a82577",
-    "last_scraped": "2026-10-19 11:25:04"
+    "hash": "1dd7c87144bd784d95b323b16e760775",
+    "last_scraped": "2026-10-26 11:43:13"
   },
   "https://docs.openclaw.ai/channels": {
     "title": "Chat channels",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/channels.md",
-    "hash": "a8c74631e0035797b93d3eef6624fb86",
-    "last_scraped": "2026-10-19 11:25:05"
+    "hash": "c9bda6fff4ba5501dd86864a5b94cd0b",
+    "last_scraped": "2026-10-26 11:43:14"
   },
   "https://docs.openclaw.ai/concepts/architecture": {
     "title": "Gateway architecture",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/architecture.md",
-    "hash": "c56c3b25149d71eb677516e75a8e6209",
-    "last_scraped": "2026-10-19 11:25:06"
+    "hash": "277fac79703ee86a86f9e554927b6ef4",
+    "last_scraped": "2026-10-26 11:43:15"
   },
   "https://docs.openclaw.ai/tools": {
     "title": "Overview",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/tools.md",
-    "hash": "144e9034b7ccbc9d7464159f161f0f45",
-    "last_scraped": "2026-10-19 11:25:07"
+    "hash": "476829cf73b33fca4d1b09b388efe1cd",
+    "last_scraped": "2026-10-26 11:43:15"
   },
   "https://docs.openclaw.ai/providers": {
     "title": "Provider directory",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers.md",
-    "hash": "33cb9bce24e4f5b022645ead269223c8",
-    "last_scraped": "2026-10-19 11:25:08"
+    "hash": "d928f56d37b177330352456d8528a6ee",
+    "last_scraped": "2026-10-26 11:43:16"
   },
   "https://docs.openclaw.ai/platforms": {
     "title": "Platforms",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/platforms.md",
-    "hash": "dc9d3300d2847b0fbee999cca2ac23d7",
-    "last_scraped": "2026-10-19 11:25:08"
+    "hash": "66d79f6434bba3a844182541065bd9b8",
+    "last_scraped": "2026-10-26 11:43:17"
   },
   "https://docs.openclaw.ai/gateway": {
     "title": "Gateway runbook",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/gateway.md",
-    "hash": "fc3de09029e8564270c6a033126f5fc9",
-    "last_scraped": "2026-10-19 11:25:09"
+    "hash": "8f0aecb9e1a2b0618437b3fa5db0ee3c",
+    "last_scraped": "2026-10-26 11:43:18"
   },
   "https://docs.openclaw.ai/cli": {
     "title": "CLI reference",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/cli.md",
-    "hash": "eb8562719cf6e2654663fa4cd1d529c4",
-    "last_scraped": "2026-10-19 11:25:10"
+    "hash": "157d1d286fd88df092d7e6e3baaf1387",
+    "last_scraped": "2026-10-26 11:43:19"
   },
   "https://docs.openclaw.ai/help": {
     "title": "Help",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/help.md",
-    "hash": "d861d607c97dc625812d64a10658718f",
-    "last_scraped": "2026-10-19 11:25:11"
+    "hash": "3c33b2ef92862902e3ec4f3718ed6206",
+    "last_scraped": "2026-10-26 11:43:20"
   },
   "https://docs.openclaw.ai/start/getting-started": {
     "title": "Getting started",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/getting-started.md",
-    "hash": "27ab4330100f66858a960e4041b5a78b",
-    "last_scraped": "2026-10-19 11:25:12"
+    "hash": "1d4ebe94e2d1e8057881d226c8823f17",
+    "last_scraped": "2026-10-26 11:43:21"
   },
   "https://docs.openclaw.ai/start/onboarding-overview": {
     "title": "Onboarding overview",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/onboarding-overview.md",
-    "hash": "30ccfff399586c6c37189fda1a7c6ec3",
-    "last_scraped": "2026-10-19 11:25:13"
+    "hash": "7d9551f286eccf193a39a2c3b2562227",
+    "last_scraped": "2026-10-26 11:43:22"
   },
   "https://docs.openclaw.ai/start/wizard": {
     "title": "Onboarding (CLI)",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard.md",
-    "hash": "68d29620debc47c29d3bed4c2668f2b8",
-    "last_scraped": "2026-10-19 11:25:14"
+    "hash": "d763a3224f516b9bdeb152693a5c56fb",
+    "last_scraped": "2026-10-26 11:43:22"
   },
   "https://docs.openclaw.ai/start/onboarding": {
     "title": "Onboarding (macOS app)",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/onboarding.md",
-    "hash": "0ca5baf91f308e69cd5e5a0df4c45ca5",
-    "last_scraped": "2026-10-19 11:25:15"
+    "hash": "23e5a7fb9d39602a10512e0ba309bf80",
+    "last_scraped": "2026-10-26 11:43:23"
   },
   "https://docs.openclaw.ai/start/openclaw": {
     "title": "Personal assistant setup",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/openclaw.md",
-    "hash": "ff9b06ad2bb787e150da085ff8724ca3",
-    "last_scraped": "2026-10-19 11:25:16"
+    "hash": "ce671650e12e94009682a043741a30ea",
+    "last_scraped": "2026-10-26 11:43:24"
   },
   "https://docs.openclaw.ai/start/wizard-cli-reference": {
     "title": "CLI setup reference",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard-cli-reference.md",
-    "hash": "c13485dee6fb8c31e9ee2ef00605867f",
-    "last_scraped": "2026-10-19 11:25:17"
+    "hash": "6b2bdd0a2ce648dbb1aef39265ad7cd3",
+    "last_scraped": "2026-10-26 11:43:25"
   },
   "https://docs.openclaw.ai/start/wizard-cli-automation": {
     "title": "CLI automation",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/wizard-cli-automation.md",
-    "hash": "176cd5fc42675371f7dd385485f4f1bb",
-    "last_scraped": "2026-10-19 11:25:18"
+    "hash": "f5be154894566c02c915aa74e3515750",
+    "last_scraped": "2026-10-26 11:43:26"
   },
   "https://docs.openclaw.ai/start/showcase": {
     "title": "Showcase",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/showcase.md",
-    "hash": "5971419022528e0f8b912f24e38b52da",
-    "last_scraped": "2026-10-19 11:25:19"
+    "hash": "c00a5c01cda2b1b368609254fc0bdb09",
+    "last_scraped": "2026-10-26 11:43:26"
   },
   "https://docs.openclaw.ai/concepts/features": {
     "title": "Features",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/concepts/features.md",
-    "hash": "2d97d68838e8ccbb776671f030efca56",
-    "last_scraped": "2026-10-19 11:25:19"
+    "hash": "f1ca53c4aec616345d6b5bf907d9c5e3",
+    "last_scraped": "2026-10-26 11:43:27"
   },
   "https://docs.openclaw.ai/start/setup": {
     "title": "Setup",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/start/setup.md",
-    "hash": "048520fe6f9505019628eafe1b41f1f6",
-    "last_scraped": "2026-10-19 11:25:20"
+    "hash": "f26ee4adcebd250d287af312e6bc0423",
+    "last_scraped": "2026-10-26 11:43:28"
   },
   "https://docs.openclaw.ai/vps": {
     "title": "Linux server",
     "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/vps.md",
-    "hash": "b00e6be9c54faaff6341a46dee996617",
-    "last_scraped": "2026-10-19 11:25:21"
+    "hash": "195b9136200135ad5cfb473d99a85899",
+    "last_scraped": "2026-10-26 11:43:29"
   },
   "https://docs.openclaw.ai/web": {
     "title": "Web",
@@ -115054,5 +115054,258 @@
     "title": null,
     "error": true,
     "last_scraped": "2026-10-19 11:26:01"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/corrections": {
+    "title": "Knowledge corrections and merges",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/knowledge/corrections.md",
+    "hash": "010c38d3087237b5b927262a065ed0b8",
+    "last_scraped": "2026-10-26 11:43:30"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/maintenance": {
+    "title": "Knowledge maintenance",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/knowledge/maintenance.md",
+    "hash": "d78230882b5b714fecf85660b81eaa24",
+    "last_scraped": "2026-10-26 11:43:31"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/tools": {
+    "title": "Knowledge tools",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/knowledge/tools.md",
+    "hash": "359c0a2a3bd9b1a422021b047ce7c5fe",
+    "last_scraped": "2026-10-26 11:43:32"
+  },
+  "https://docs.openclaw.ai/providers/bifrost": {
+    "title": "Bifrost",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers/bifrost.md",
+    "hash": "e7872673d7636a892022a2103cc51c05",
+    "last_scraped": "2026-10-26 11:43:32"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/control-ui": {
+    "title": "Knowledge Control UI",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/knowledge/control-ui.md",
+    "hash": "6a2e31f78ccf8fc9edf94e21a9bf133b",
+    "last_scraped": "2026-10-26 11:43:33"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/retrieval": {
+    "title": "Knowledge retrieval and dates",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/knowledge/retrieval.md",
+    "hash": "0cde2b221e76e03e320203b9e27bac03",
+    "last_scraped": "2026-10-26 11:43:34"
+  },
+  "https://docs.openclaw.ai/releases/2026.10.5": {
+    "title": "v2026.10.5",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/releases/2026.10.5.md",
+    "hash": "9de7efb50c2f3145fcb4724de9f3e7fb",
+    "last_scraped": "2026-10-26 11:43:36"
+  },
+  "https://docs.openclaw.ai/releases/2026.10.7": {
+    "title": "OpenClaw v2026.10.7",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/releases/2026.10.7.md",
+    "hash": "253e740855d06e19c8b582f1e7a11586",
+    "last_scraped": "2026-10-26 11:43:36"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/records-and-ontology": {
+    "title": "Knowledge records and ontology",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/knowledge/records-and-ontology.md",
+    "hash": "a321debe9c3b5265c5deac3e78ce6af0",
+    "last_scraped": "2026-10-26 11:43:37"
+  },
+  "https://docs.openclaw.ai/help/support": {
+    "title": "Get support",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/help/support.md",
+    "hash": "f0d2a031406433eedb96a1990c161db8",
+    "last_scraped": "2026-10-26 11:43:38"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge": {
+    "title": "Knowledge",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/knowledge.md",
+    "hash": "263b6656669f0404576ebb4b1e579919",
+    "last_scraped": "2026-10-26 11:43:39"
+  },
+  "https://docs.openclaw.ai/providers/abliteration": {
+    "title": "Abliteration",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers/abliteration.md",
+    "hash": "636265f45c5226b737f760a4994bb6ce",
+    "last_scraped": "2026-10-26 11:43:40"
+  },
+  "https://docs.openclaw.ai/plugins/runtime-compatibility": {
+    "title": "Plugin runtime compatibility",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/runtime-compatibility.md",
+    "hash": "08058f58db7baada21ddd32bc009a3f2",
+    "last_scraped": "2026-10-26 11:43:41"
+  },
+  "https://docs.openclaw.ai/releases/2026.10.6": {
+    "title": "v2026.10.6",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/releases/2026.10.6.md",
+    "hash": "41f606ec582c63089524b712298a7c91",
+    "last_scraped": "2026-10-26 11:43:42"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/memory-provider": {
+    "title": "Knowledge as memory provider",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/knowledge/memory-provider.md",
+    "hash": "b5f7ff00281441c6d5a9f0972849905d",
+    "last_scraped": "2026-10-26 11:43:43"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/stores-and-access": {
+    "title": "Knowledge stores and access",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/knowledge/stores-and-access.md",
+    "hash": "ef8659581bedaee29a103de9f4e4e144",
+    "last_scraped": "2026-10-26 11:43:44"
+  },
+  "https://docs.openclaw.ai/providers/requesty": {
+    "title": "Requesty",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers/requesty.md",
+    "hash": "5d920a89812d364476be7006a613f835",
+    "last_scraped": "2026-10-26 11:43:44"
+  },
+  "https://docs.openclaw.ai/providers/liquid-inference": {
+    "title": "Liquid Inference",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/providers/liquid-inference.md",
+    "hash": "0f77e6cfdb4b910df9991e6c1b4eadba",
+    "last_scraped": "2026-10-26 11:43:45"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/ingestion": {
+    "title": "Knowledge ingestion workflows",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/knowledge/ingestion.md",
+    "hash": "3c361dd38c83bad107ca995d3c309b72",
+    "last_scraped": "2026-10-26 11:43:46"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/local-history": {
+    "title": "Knowledge local history",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/knowledge/local-history.md",
+    "hash": "bdaae1ab2082f342e5a72ca551725cfc",
+    "last_scraped": "2026-10-26 11:43:47"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/evidence": {
+    "title": "Knowledge evidence files",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/knowledge/evidence.md",
+    "hash": "3a727c47779a9f00a8a78c924aa667b6",
+    "last_scraped": "2026-10-26 11:43:48"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/corrections.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:49"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/maintenance.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:49"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/tools.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:50"
+  },
+  "https://docs.openclaw.ai/providers/bifrost.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:50"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/control-ui.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:51"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/retrieval.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:51"
+  },
+  "https://docs.openclaw.ai/plugins/reference/x": {
+    "title": "X plugin reference",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/x.md",
+    "hash": "ba901cdd91aa5073378b50d6754f2dbc",
+    "last_scraped": "2026-10-26 11:43:52"
+  },
+  "https://docs.openclaw.ai/plugins/reference/visitor-access": {
+    "title": "Visitor Access plugin reference",
+    "filepath": "/home/runner/work/openclaw_documentation/openclaw_documentation/plugins/reference/visitor-access.md",
+    "hash": "27c4a8190b643ac38ca538c00a0a262a",
+    "last_scraped": "2026-10-26 11:43:53"
+  },
+  "https://docs.openclaw.ai/releases/2026.10.5.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:54"
+  },
+  "https://docs.openclaw.ai/releases/2026.10.7.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:54"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/records-and-ontology.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:55"
+  },
+  "https://docs.openclaw.ai/help/support.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:55"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:56"
+  },
+  "https://docs.openclaw.ai/providers/abliteration.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:57"
+  },
+  "https://docs.openclaw.ai/plugins/runtime-compatibility.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:57"
+  },
+  "https://docs.openclaw.ai/releases/2026.10.6.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:58"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/memory-provider.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:58"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/stores-and-access.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:59"
+  },
+  "https://docs.openclaw.ai/providers/requesty.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:43:59"
+  },
+  "https://docs.openclaw.ai/providers/liquid-inference.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:44:00"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/ingestion.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:44:00"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/local-history.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:44:01"
+  },
+  "https://docs.openclaw.ai/plugins/knowledge/evidence.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:44:02"
+  },
+  "https://docs.openclaw.ai/plugins/reference/x.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:44:02"
+  },
+  "https://docs.openclaw.ai/plugins/reference/visitor-access.md": {
+    "title": null,
+    "error": true,
+    "last_scraped": "2026-10-26 11:44:03"
   }
 }
