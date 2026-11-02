@@ -1,7 +1,7 @@
 ---
 title: Onboarding (CLI)
 source_url: https://docs.openclaw.ai/start/wizard
-scraped_at: 2026-10-26
+scraped_at: 2026-11-02
 ---
 
 **Info**

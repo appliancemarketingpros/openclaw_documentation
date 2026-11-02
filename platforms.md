@@ -1,12 +1,12 @@
 ---
 title: Platforms
 source_url: https://docs.openclaw.ai/platforms
-scraped_at: 2026-10-26
+scraped_at: 2026-11-02
 ---
 
 PlatformsPlatforms overview
 
-OpenClaw core is written in TypeScript. **Node is the primary, default, and recommended runtime**. Bun 1.4.3+ builds with WAL-reset-safe `node:sqlite` can run the CLI, Gateway, and managed node host as an explicit opt-in; see [Bun](</install/bun>).
+OpenClaw core is written in TypeScript. **Node is the primary, default, and recommended runtime**. Bun 1.4.4+ builds with WAL-reset-safe `node:sqlite` can run the CLI, Gateway, and managed node host as an explicit opt-in; see [Bun](</install/bun>).
 
 Companion apps exist for Linux, Windows Hub, macOS (menu bar app), and mobile nodes (iOS/Android). On Windows, the native [Windows Hub](</platforms/windows#recommended-windows-hub>) is the recommended desktop app; the cross-platform [Tauri app](</platforms/windows#backup-tauri-desktop-app>) is the backup. Choose the native PowerShell install for terminal-first use, or WSL2 for the most Linux-compatible Gateway runtime.
 

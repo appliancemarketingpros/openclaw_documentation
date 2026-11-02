@@ -1,7 +1,7 @@
 ---
 title: Provider directory
 source_url: https://docs.openclaw.ai/providers
-scraped_at: 2026-10-26
+scraped_at: 2026-11-02
 ---
 
 ModelsOverview
@@ -52,6 +52,7 @@ json5Copy code
   * [Kie AI](</providers/kie>)
   * [Kilocode](</providers/kilocode>)
   * [Levanto Sage (typed decisions, not chat)](</providers/levanto>)
+  * [Liquid AI (Decision models)](</providers/liquid-ai>)
   * [Liquid Inference](</providers/liquid-inference>)
   * [LiteLLM (unified gateway)](</providers/litellm>)
   * [llama.cpp (managed or existing server)](</plugins/llama-cpp>)
@@ -71,6 +72,7 @@ json5Copy code
   * [OpenCode](</providers/opencode>)
   * [OpenCode Go](</providers/opencode-go>)
   * [OpenRouter](</providers/openrouter>)
+  * [Particle](</providers/particle>)
   * [Perplexity (web search)](</providers/perplexity-provider>)
   * [Poolside (Laguna)](</providers/poolside>)
   * [Qianfan](</providers/qianfan>)

@@ -3,7 +3,7 @@
 > This repository contains a local Markdown mirror of the official [Openclaw documentation](https://docs.openclaw.ai/).
 > It is automatically updated every Monday to reflect any changes in the upstream documentation.
 
-**Last updated:** 2026-10-26
+**Last updated:** 2026-11-02
 
 ## Documentation Index
 
@@ -26,6 +26,7 @@
 ### Install
 
 - [Install](install.md) — [source](https://docs.openclaw.ai/install)
+- [NVIDIA Jetson](install/jetson.md) — [source](https://docs.openclaw.ai/install/jetson)
 
 ### Channels
 
@@ -42,11 +43,10 @@
 
 ### Providers
 
-- [Abliteration](providers/abliteration.md) — [source](https://docs.openclaw.ai/providers/abliteration)
-- [Bifrost](providers/bifrost.md) — [source](https://docs.openclaw.ai/providers/bifrost)
-- [Liquid Inference](providers/liquid-inference.md) — [source](https://docs.openclaw.ai/providers/liquid-inference)
+- [Google (Vertex AI)](providers/google-vertex.md) — [source](https://docs.openclaw.ai/providers/google-vertex)
+- [Liquid AI](providers/liquid-ai.md) — [source](https://docs.openclaw.ai/providers/liquid-ai)
+- [Particle](providers/particle.md) — [source](https://docs.openclaw.ai/providers/particle)
 - [Provider directory](providers.md) — [source](https://docs.openclaw.ai/providers)
-- [Requesty](providers/requesty.md) — [source](https://docs.openclaw.ai/providers/requesty)
 
 ### Platforms
 
@@ -59,10 +59,10 @@
 ### Cli
 
 - [CLI reference](cli.md) — [source](https://docs.openclaw.ai/cli)
+- [Templates](cli/templates.md) — [source](https://docs.openclaw.ai/cli/templates)
 
 ### Help
 
-- [Get support](help/support.md) — [source](https://docs.openclaw.ai/help/support)
 - [Help](help.md) — [source](https://docs.openclaw.ai/help)
 
 ### Vps
@@ -71,27 +71,12 @@
 
 ### Plugins
 
-- [Knowledge](plugins/knowledge.md) — [source](https://docs.openclaw.ai/plugins/knowledge)
-- [Knowledge Control UI](plugins/knowledge/control-ui.md) — [source](https://docs.openclaw.ai/plugins/knowledge/control-ui)
-- [Knowledge as memory provider](plugins/knowledge/memory-provider.md) — [source](https://docs.openclaw.ai/plugins/knowledge/memory-provider)
-- [Knowledge corrections and merges](plugins/knowledge/corrections.md) — [source](https://docs.openclaw.ai/plugins/knowledge/corrections)
-- [Knowledge evidence files](plugins/knowledge/evidence.md) — [source](https://docs.openclaw.ai/plugins/knowledge/evidence)
-- [Knowledge ingestion workflows](plugins/knowledge/ingestion.md) — [source](https://docs.openclaw.ai/plugins/knowledge/ingestion)
-- [Knowledge local history](plugins/knowledge/local-history.md) — [source](https://docs.openclaw.ai/plugins/knowledge/local-history)
-- [Knowledge maintenance](plugins/knowledge/maintenance.md) — [source](https://docs.openclaw.ai/plugins/knowledge/maintenance)
-- [Knowledge records and ontology](plugins/knowledge/records-and-ontology.md) — [source](https://docs.openclaw.ai/plugins/knowledge/records-and-ontology)
-- [Knowledge retrieval and dates](plugins/knowledge/retrieval.md) — [source](https://docs.openclaw.ai/plugins/knowledge/retrieval)
-- [Knowledge stores and access](plugins/knowledge/stores-and-access.md) — [source](https://docs.openclaw.ai/plugins/knowledge/stores-and-access)
-- [Knowledge tools](plugins/knowledge/tools.md) — [source](https://docs.openclaw.ai/plugins/knowledge/tools)
-- [Plugin runtime compatibility](plugins/runtime-compatibility.md) — [source](https://docs.openclaw.ai/plugins/runtime-compatibility)
-- [Visitor Access plugin reference](plugins/reference/visitor-access.md) — [source](https://docs.openclaw.ai/plugins/reference/visitor-access)
-- [X plugin reference](plugins/reference/x.md) — [source](https://docs.openclaw.ai/plugins/reference/x)
+- [Knowledge scribes](plugins/knowledge/scribes.md) — [source](https://docs.openclaw.ai/plugins/knowledge/scribes)
 
 ### Releases
 
-- [OpenClaw v2026.10.7](releases/2026.10.7.md) — [source](https://docs.openclaw.ai/releases/2026.10.7)
-- [v2026.10.5](releases/2026.10.5.md) — [source](https://docs.openclaw.ai/releases/2026.10.5)
-- [v2026.10.6](releases/2026.10.6.md) — [source](https://docs.openclaw.ai/releases/2026.10.6)
+- [v2026.10.8](releases/2026.10.8.md) — [source](https://docs.openclaw.ai/releases/2026.10.8)
+- [v2026.10.9](releases/2026.10.9.md) — [source](https://docs.openclaw.ai/releases/2026.10.9)
 
 ---
 
