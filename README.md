@@ -3,7 +3,7 @@
 > This repository contains a local Markdown mirror of the official [Openclaw documentation](https://docs.openclaw.ai/).
 > It is automatically updated every Monday to reflect any changes in the upstream documentation.
 
-**Last updated:** 2026-11-02
+**Last updated:** 2026-11-09
 
 ## Documentation Index
 
@@ -16,6 +16,7 @@
 - [CLI automation](start/wizard-cli-automation.md) — [source](https://docs.openclaw.ai/start/wizard-cli-automation)
 - [CLI setup reference](start/wizard-cli-reference.md) — [source](https://docs.openclaw.ai/start/wizard-cli-reference)
 - [Getting started](start/getting-started.md) — [source](https://docs.openclaw.ai/start/getting-started)
+- [Multiplayer](start/multiplayer.md) — [source](https://docs.openclaw.ai/start/multiplayer)
 - [Onboarding (CLI)](start/wizard.md) — [source](https://docs.openclaw.ai/start/wizard)
 - [Onboarding (macOS app)](start/onboarding.md) — [source](https://docs.openclaw.ai/start/onboarding)
 - [Onboarding overview](start/onboarding-overview.md) — [source](https://docs.openclaw.ai/start/onboarding-overview)
@@ -26,7 +27,6 @@
 ### Install
 
 - [Install](install.md) — [source](https://docs.openclaw.ai/install)
-- [NVIDIA Jetson](install/jetson.md) — [source](https://docs.openclaw.ai/install/jetson)
 
 ### Channels
 
@@ -39,14 +39,13 @@
 
 ### Tools
 
+- [Deep Research](tools/deep-research.md) — [source](https://docs.openclaw.ai/tools/deep-research)
 - [Overview](tools.md) — [source](https://docs.openclaw.ai/tools)
 
 ### Providers
 
-- [Google (Vertex AI)](providers/google-vertex.md) — [source](https://docs.openclaw.ai/providers/google-vertex)
-- [Liquid AI](providers/liquid-ai.md) — [source](https://docs.openclaw.ai/providers/liquid-ai)
-- [Particle](providers/particle.md) — [source](https://docs.openclaw.ai/providers/particle)
 - [Provider directory](providers.md) — [source](https://docs.openclaw.ai/providers)
+- [Rerank (Decision models)](providers/rerank.md) — [source](https://docs.openclaw.ai/providers/rerank)
 
 ### Platforms
 
@@ -59,7 +58,6 @@
 ### Cli
 
 - [CLI reference](cli.md) — [source](https://docs.openclaw.ai/cli)
-- [Templates](cli/templates.md) — [source](https://docs.openclaw.ai/cli/templates)
 
 ### Help
 
@@ -71,12 +69,13 @@
 
 ### Plugins
 
-- [Knowledge scribes](plugins/knowledge/scribes.md) — [source](https://docs.openclaw.ai/plugins/knowledge/scribes)
+- [Research adapters](plugins/research-adapters.md) — [source](https://docs.openclaw.ai/plugins/research-adapters)
 
 ### Releases
 
-- [v2026.10.8](releases/2026.10.8.md) — [source](https://docs.openclaw.ai/releases/2026.10.8)
-- [v2026.10.9](releases/2026.10.9.md) — [source](https://docs.openclaw.ai/releases/2026.10.9)
+- [v2026.10.10](releases/2026.10.10.md) — [source](https://docs.openclaw.ai/releases/2026.10.10)
+- [v2026.11.1](releases/2026.11.1.md) — [source](https://docs.openclaw.ai/releases/2026.11.1)
+- [v2026.11.2](releases/2026.11.2.md) — [source](https://docs.openclaw.ai/releases/2026.11.2)
 
 ---
 

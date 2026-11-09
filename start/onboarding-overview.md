@@ -1,7 +1,7 @@
 ---
 title: Onboarding overview
 source_url: https://docs.openclaw.ai/start/onboarding-overview
-scraped_at: 2026-11-02
+scraped_at: 2026-11-09
 ---
 
 Get startedFirst steps
@@ -46,7 +46,7 @@ bashCopy code
     openclaw onboard
 [/code]
 
-On a fresh install the guided flow offers **Quick start** and **Custom setup** , detects the AI access you already have, verifies your one chosen connection with a real completion, and only then configures the rest of the setup. Both lanes, the provider picker, **Skip for now** , and the foreground Gateway are described step by step in [Onboarding (CLI)](</start/wizard#guided-default>).
+On a fresh install the guided flow offers **Quick start** and **Custom setup** , detects the AI access you already have, verifies your one chosen connection with a real completion, and only then configures the rest of the setup. Both lanes, the provider picker, **Skip for now** , and the background Gateway choice are described step by step in [Onboarding (CLI)](</start/wizard#guided-default>).
 
 After inference passes, OpenClaw can hand channel setup to a masked terminal wizard. It does not open guided or classic provider setup. Exit OpenClaw and run `openclaw onboard` to change the model provider or its authentication.
 
@@ -71,7 +71,7 @@ Automatic setup keeps an existing configured model. Otherwise it tries usable co
 
 The first connection that passes a live completion becomes the primary model. If Codex detection or runtime inspection fails, automatic setup shows the error and stops rather than selecting a local model. Fix the reported problem and retry, or choose another available provider manually. A missing Codex executable or login still allows the remaining connections to be tried. If none works, OpenClaw installs or enables the official Codex plugin and uses its existing login, or asks you to sign in with ChatGPT. Apple Foundation Models is a utility option and is never chosen as the primary model.
 
-When automatic setup reuses Codex, it shares the Gateway user's `CODEX_HOME` (or `~/.codex`), including the login, threads, and `config.toml`. Codex owns authentication and token refresh; OpenClaw does not copy the OAuth tokens into its auth store. Choose **Use a separate login** on the setup card, or sign in with ChatGPT or an OpenAI API key through **Model Setup** , to use an isolated OpenClaw agent home, even after reusing a native login. See [Codex login and isolation](</start/onboarding#codex-login-and-isolation>) to switch between these modes.
+When automatic setup reuses Codex, it shares the Gateway user's `CODEX_HOME` (or `~/.codex`), including the login, threads, and `config.toml`. Codex owns authentication and token refresh; OpenClaw does not copy the OAuth tokens into its auth store. Choose **Sign in separately** on the setup card, or sign in with ChatGPT or an OpenAI API key through **Models** , to use an isolated OpenClaw agent home, even after reusing a native login. See [Codex login and isolation](</start/onboarding#codex-login-and-isolation>) to switch between these modes.
 
 After inference works, OpenClaw continues its existing guided conversation for optional setup, including memory import and channels. You can dismiss the summary; it stays dismissed for that Gateway. Fresh installs leave native Claude/Codex conversation discovery off. Permissions are requested when needed and remain available in **Settings → Permissions**.
 
@@ -85,7 +85,7 @@ Full reference: [Onboarding (macOS App)](</start/onboarding>)
 
 [Install the Linux desktop companion](</platforms/linux>), then open it. The welcome screen lets you choose a Gateway on **this computer** or **another computer**. Local setup installs any missing CLI and Node in a private managed runtime, then starts the systemd user service. Remote setup connects to a discovered Gateway, a manually entered Gateway URL, or a Gateway reached through an SSH tunnel; token and password authentication are supported.
 
-Model Setup checks existing provider access and offers sign-in or API-key entry when needed. The selected Gateway verifies a real model response before guided onboarding begins. An already configured Gateway opens the normal agent UI after verification instead. Restart/reopen recovery uses a temporary record bound to the Gateway, agent, and authentication: a known model is verified without repeating activation, while an unknown result needs the explicit **Verify & use selected model** action. Expiry, cleared or unavailable browser storage, or changed connection ownership can prevent recovery. See [First-run setup](</platforms/linux#first-run-setup>) for recovery details.
+Models checks existing provider access and offers sign-in or API-key entry when needed. The selected Gateway verifies a real model response before guided onboarding begins. An already configured Gateway opens the normal agent UI after verification instead. Restart/reopen recovery uses a temporary record bound to the Gateway, agent, and authentication: a known model is verified without repeating activation, while an unknown result needs the explicit **Verify & use selected model** action. Expiry, cleared or unavailable browser storage, or changed connection ownership can prevent recovery. See [First-run setup](</platforms/linux#first-run-setup>) for recovery details.
 
 Platform and remote-access details: [Linux app](</platforms/linux>) and [Remote access](</gateway/remote>).
 
@@ -100,7 +100,9 @@ If your provider is not listed, run `openclaw onboard` in a terminal on the Gate
 
 Multiple custom endpoints can coexist — each gets its own endpoint ID. Guided setup verifies a real model reply before saving the provider and activating its model. A failed or cancelled check preserves the previous configuration. The classic wizard also retains its custom-provider setup.
 
-If the endpoint refuses the connection or its hostname cannot be found, setup reports the failed connection immediately instead of waiting through normal chat retries. Start the server or correct the URL and network settings on the Gateway host, then retry. Ordinary agent sessions keep their connection retries.
+If the endpoint refuses the connection or its hostname cannot be found, setup reports the failed connection immediately instead of waiting through normal chat retries. Start the server or correct the URL and network settings on the Gateway host, then retry. Server errors, rate limits, and overload responses are also reported after the first attempt, so retry setup once the provider recovers. Ordinary agent sessions keep their retries.
+
+While the check runs, the dialog shows how long it has been waiting, and you can cancel at any time without changing your configuration. A remote API that has not answered after 30 seconds fails the check. Local model servers, CLI runtimes, and native harnesses get up to 90 seconds because they may need to start or load a model first.
 
 ## Related
 
