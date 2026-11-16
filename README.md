@@ -3,7 +3,7 @@
 > This repository contains a local Markdown mirror of the official [Openclaw documentation](https://docs.openclaw.ai/).
 > It is automatically updated every Monday to reflect any changes in the upstream documentation.
 
-**Last updated:** 2026-11-09
+**Last updated:** 2026-11-16
 
 ## Documentation Index
 
@@ -16,7 +16,6 @@
 - [CLI automation](start/wizard-cli-automation.md) — [source](https://docs.openclaw.ai/start/wizard-cli-automation)
 - [CLI setup reference](start/wizard-cli-reference.md) — [source](https://docs.openclaw.ai/start/wizard-cli-reference)
 - [Getting started](start/getting-started.md) — [source](https://docs.openclaw.ai/start/getting-started)
-- [Multiplayer](start/multiplayer.md) — [source](https://docs.openclaw.ai/start/multiplayer)
 - [Onboarding (CLI)](start/wizard.md) — [source](https://docs.openclaw.ai/start/wizard)
 - [Onboarding (macOS app)](start/onboarding.md) — [source](https://docs.openclaw.ai/start/onboarding)
 - [Onboarding overview](start/onboarding-overview.md) — [source](https://docs.openclaw.ai/start/onboarding-overview)
@@ -26,6 +25,7 @@
 
 ### Install
 
+- [Boat](install/boat.md) — [source](https://docs.openclaw.ai/install/boat)
 - [Install](install.md) — [source](https://docs.openclaw.ai/install)
 
 ### Channels
@@ -34,18 +34,20 @@
 
 ### Concepts
 
+- [Agents and Templates](concepts/agents-and-templates.md) — [source](https://docs.openclaw.ai/concepts/agents-and-templates)
 - [Features](concepts/features.md) — [source](https://docs.openclaw.ai/concepts/features)
 - [Gateway architecture](concepts/architecture.md) — [source](https://docs.openclaw.ai/concepts/architecture)
 
 ### Tools
 
-- [Deep Research](tools/deep-research.md) — [source](https://docs.openclaw.ai/tools/deep-research)
 - [Overview](tools.md) — [source](https://docs.openclaw.ai/tools)
 
 ### Providers
 
+- [Celeris](providers/celeris.md) — [source](https://docs.openclaw.ai/providers/celeris)
+- [Fastino](providers/fastino.md) — [source](https://docs.openclaw.ai/providers/fastino)
+- [Nace](providers/nace.md) — [source](https://docs.openclaw.ai/providers/nace)
 - [Provider directory](providers.md) — [source](https://docs.openclaw.ai/providers)
-- [Rerank (Decision models)](providers/rerank.md) — [source](https://docs.openclaw.ai/providers/rerank)
 
 ### Platforms
 
@@ -58,6 +60,8 @@
 ### Cli
 
 - [CLI reference](cli.md) — [source](https://docs.openclaw.ai/cli)
+- [OpenClaw ID](cli/id.md) — [source](https://docs.openclaw.ai/cli/id)
+- [Pair](cli/pair.md) — [source](https://docs.openclaw.ai/cli/pair)
 
 ### Help
 
@@ -67,15 +71,9 @@
 
 - [Linux server](vps.md) — [source](https://docs.openclaw.ai/vps)
 
-### Plugins
-
-- [Research adapters](plugins/research-adapters.md) — [source](https://docs.openclaw.ai/plugins/research-adapters)
-
 ### Releases
 
-- [v2026.10.10](releases/2026.10.10.md) — [source](https://docs.openclaw.ai/releases/2026.10.10)
-- [v2026.11.1](releases/2026.11.1.md) — [source](https://docs.openclaw.ai/releases/2026.11.1)
-- [v2026.11.2](releases/2026.11.2.md) — [source](https://docs.openclaw.ai/releases/2026.11.2)
+- [v2026.11.3](releases/2026.11.3.md) — [source](https://docs.openclaw.ai/releases/2026.11.3)
 
 ---
 

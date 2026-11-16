@@ -1,7 +1,7 @@
 ---
 title: Linux server
 source_url: https://docs.openclaw.ai/vps
-scraped_at: 2026-11-09
+scraped_at: 2026-11-16
 ---
 
 InstallHosting
@@ -10,7 +10,7 @@ Run the OpenClaw Gateway on any Linux server or cloud VPS. This page helps you p
 
 ## Pick a provider
 
-[**Azure** Linux VM ](</install/azure>) [**Daytona** Cloud sandbox with preview URLs ](</install/daytona>) [**DigitalOcean** Simple paid VPS ](</install/digitalocean>) [**exe.dev** VM with HTTPS proxy ](</install/exe-dev>) [**Fly.io** Fly Machines ](</install/fly>) [**GCP** Compute Engine ](</install/gcp>) [**Hetzner** Docker on Hetzner VPS ](</install/hetzner>) [**Hostinger** VPS with one-click setup ](</install/hostinger>) [**Northflank** One-click, browser setup ](</install/northflank>) [**Oracle Cloud** Always Free ARM tier ](</install/oracle>) [**Railway** One-click, browser setup ](</install/railway>) [**Render** Managed web service ](</install/render>) [**Raspberry Pi** ARM self-hosted ](</install/raspberry-pi>) [**Upstash Box** SSH-managed sandbox box ](</install/upstash>)
+[**Azure** Linux VM ](</install/azure>) [**Boat** Ubuntu sandbox with private SSH forwarding ](</install/boat>) [**Daytona** Cloud sandbox with preview URLs ](</install/daytona>) [**DigitalOcean** Simple paid VPS ](</install/digitalocean>) [**exe.dev** VM with HTTPS proxy ](</install/exe-dev>) [**Fly.io** Fly Machines ](</install/fly>) [**GCP** Compute Engine ](</install/gcp>) [**Hetzner** Docker on Hetzner VPS ](</install/hetzner>) [**Hostinger** VPS with one-click setup ](</install/hostinger>) [**Northflank** One-click, browser setup ](</install/northflank>) [**Oracle Cloud** Always Free ARM tier ](</install/oracle>) [**Railway** One-click, browser setup ](</install/railway>) [**Render** Managed web service ](</install/render>) [**Raspberry Pi** ARM self-hosted ](</install/raspberry-pi>) [**Upstash Box** SSH-managed sandbox box ](</install/upstash>)
 
 **AWS (EC2 / Lightsail / free tier)** also works well. A community video walkthrough is available at [x.com/techfrenAJ/status/2014934471095812547](<https://x.com/techfrenAJ/status/2014934471095812547>) (community resource -- may become unavailable).
 
