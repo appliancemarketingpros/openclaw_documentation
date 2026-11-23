@@ -1,7 +1,7 @@
 ---
 title: Onboarding overview
 source_url: https://docs.openclaw.ai/start/onboarding-overview
-scraped_at: 2026-11-16
+scraped_at: 2026-11-23
 ---
 
 Get startedFirst steps
@@ -69,7 +69,7 @@ Automatic setup keeps an existing configured model. Otherwise it tries usable co
   5. Eligible loaded models in Ollama, LM Studio, or llama.cpp.
 
 
-The first connection that passes a live completion becomes the primary model. If Codex detection or runtime inspection fails, automatic setup shows the error and stops rather than selecting a local model. Fix the reported problem and retry, or choose another available provider manually. A missing Codex executable or login still allows the remaining connections to be tried. If none works, OpenClaw installs or enables the official Codex plugin and uses its existing login, or asks you to sign in with ChatGPT. Apple Foundation Models is a utility option and is never chosen as the primary model.
+The first connection that passes a live completion becomes the primary model. If Codex detection or runtime inspection fails, automatic setup shows the error and stops rather than selecting a local model. Fix the reported problem and retry, or choose another available provider manually. A missing Codex executable or login still allows the remaining connections to be tried. If none works, OpenClaw installs or enables the official Codex plugin and uses its existing login, or offers ChatGPT sign-in. If a connection failed for a reason other than credentials, setup shows **Couldn’t connect your AI** and the failed attempts instead of presenting sign-in as the diagnosis. You can still choose ChatGPT sign-in as another connection. Missing or expired credentials without other failures keep the sign-in prompt. Apple Foundation Models is a utility option and is never chosen as the primary model.
 
 When automatic setup reuses Codex, it shares the Gateway user's `CODEX_HOME` (or `~/.codex`), including the login, threads, and `config.toml`. Codex owns authentication and token refresh; OpenClaw does not copy the OAuth tokens into its auth store. Choose **Sign in separately** on the setup card, or sign in with ChatGPT or an OpenAI API key through **Models** , to use an isolated OpenClaw agent home, even after reusing a native login. See [Codex login and isolation](</start/onboarding#codex-login-and-isolation>) to switch between these modes.
 
